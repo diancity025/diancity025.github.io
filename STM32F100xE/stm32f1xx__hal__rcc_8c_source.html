@@ -864,7 +864,7 @@
 <a name="l00797"></a>00797   <span class="comment">/* Check the parameters */</span>
 <a name="l00798"></a>00798   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(RCC_ClkInitStruct != NULL);
 <a name="l00799"></a>00799   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__RCC__Private__Macros.html#gaedf7abbab300ed340b88d5f665910707">IS_RCC_CLOCKTYPE</a>(RCC_ClkInitStruct-&gt;<a class="code" href="structRCC__ClkInitTypeDef.html#a93a53676a1cfc5b55b8b990e7ff4dac5">ClockType</a>));
-<a name="l00800"></a>00800   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__FLASH__Private__Macros.html#gad8585a26722685574b9586a771a9aa8a">IS_FLASH_LATENCY</a>(FLatency));
+<a name="l00800"></a>00800   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__FLASH__Private__Macros.html#gad8585a26722685574b9586a771a9aa8a">IS_FLASH_LATENCY</a>(FLatency));
 <a name="l00801"></a>00801 
 <a name="l00802"></a>00802   <span class="comment">/* To correctly read data from FLASH memory, the number of wait states (LATENCY) </span>
 <a name="l00803"></a>00803 <span class="comment">  must be correctly programmed according to the frequency of the CPU clock </span>
@@ -1399,7 +1399,7 @@
 <a name="l01332"></a>01332   *pFLatency = (uint32_t)(FLASH-&gt;ACR &amp; FLASH_ACR_LATENCY); 
 <a name="l01333"></a>01333 <span class="preprocessor">#else</span>
 <a name="l01334"></a>01334 <span class="preprocessor"></span>  <span class="comment">/* For VALUE lines devices, only LATENCY_0 can be set*/</span>
-<a name="l01335"></a>01335   *pFLatency = (uint32_t)<a class="code" href="group/group__FLASH__Latency.html#ga1276f51e97dc9857ca261fae4eb890f3">FLASH_LATENCY_0</a>; 
+<a name="l01335"></a>01335   *pFLatency = (uint32_t)<a class="code" href="group__FLASH__Latency.html#ga1276f51e97dc9857ca261fae4eb890f3">FLASH_LATENCY_0</a>; 
 <a name="l01336"></a>01336 <span class="preprocessor">#endif</span>
 <a name="l01337"></a>01337 <span class="preprocessor"></span>}
 <a name="l01338"></a>01338 <span class="comment"></span>

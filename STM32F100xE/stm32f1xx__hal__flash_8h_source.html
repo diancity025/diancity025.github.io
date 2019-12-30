@@ -106,7 +106,7 @@
 <a name="l00039"></a>00039 <span class="comment">/** @addtogroup FLASH_Private_Constants</span>
 <a name="l00040"></a>00040 <span class="comment">  * @{</span>
 <a name="l00041"></a>00041 <span class="comment">  */</span>
-<a name="l00042"></a><a class="code" href="group/group__FLASH__Private__Constants.html#ga76e8ea58ef37913dcdb61efae2d6ab8f">00042</a> <span class="preprocessor">#define FLASH_TIMEOUT_VALUE              50000U </span><span class="comment">/* 50 s */</span>
+<a name="l00042"></a><a class="code" href="group__FLASH__Private__Constants.html#ga76e8ea58ef37913dcdb61efae2d6ab8f">00042</a> <span class="preprocessor">#define FLASH_TIMEOUT_VALUE              50000U </span><span class="comment">/* 50 s */</span>
 <a name="l00043"></a>00043 <span class="comment">/**</span>
 <a name="l00044"></a>00044 <span class="comment">  * @}</span>
 <a name="l00045"></a>00045 <span class="comment">  */</span>
@@ -115,7 +115,7 @@
 <a name="l00048"></a>00048 <span class="comment">  * @{</span>
 <a name="l00049"></a>00049 <span class="comment">  */</span>
 <a name="l00050"></a>00050 
-<a name="l00051"></a><a class="code" href="group/group__FLASH__Private__Macros.html#gaa189973d36fcbbaf7f758c682247ad39">00051</a> <span class="preprocessor">#define IS_FLASH_TYPEPROGRAM(VALUE)  (((VALUE) == FLASH_TYPEPROGRAM_HALFWORD) || \</span>
+<a name="l00051"></a><a class="code" href="group__FLASH__Private__Macros.html#gaa189973d36fcbbaf7f758c682247ad39">00051</a> <span class="preprocessor">#define IS_FLASH_TYPEPROGRAM(VALUE)  (((VALUE) == FLASH_TYPEPROGRAM_HALFWORD) || \</span>
 <a name="l00052"></a>00052 <span class="preprocessor">                                      ((VALUE) == FLASH_TYPEPROGRAM_WORD)     || \</span>
 <a name="l00053"></a>00053 <span class="preprocessor">                                      ((VALUE) == FLASH_TYPEPROGRAM_DOUBLEWORD))  </span>
 <a name="l00054"></a>00054 <span class="preprocessor"></span>
@@ -125,7 +125,7 @@
 <a name="l00058"></a>00058 <span class="preprocessor">                                       ((__LATENCY__) == FLASH_LATENCY_2))</span>
 <a name="l00059"></a>00059 <span class="preprocessor"></span>
 <a name="l00060"></a>00060 <span class="preprocessor">#else</span>
-<a name="l00061"></a><a class="code" href="group/group__FLASH__Private__Macros.html#gad8585a26722685574b9586a771a9aa8a">00061</a> <span class="preprocessor"></span><span class="preprocessor">#define IS_FLASH_LATENCY(__LATENCY__)   ((__LATENCY__) == FLASH_LATENCY_0)</span>
+<a name="l00061"></a><a class="code" href="group__FLASH__Private__Macros.html#gad8585a26722685574b9586a771a9aa8a">00061</a> <span class="preprocessor"></span><span class="preprocessor">#define IS_FLASH_LATENCY(__LATENCY__)   ((__LATENCY__) == FLASH_LATENCY_0)</span>
 <a name="l00062"></a>00062 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* FLASH_ACR_LATENCY */</span>
 <a name="l00063"></a>00063 <span class="comment">/**</span>
 <a name="l00064"></a>00064 <span class="comment">  * @}</span>
@@ -139,22 +139,22 @@
 <a name="l00072"></a>00072 <span class="comment">/**</span>
 <a name="l00073"></a>00073 <span class="comment">  * @brief  FLASH Procedure structure definition</span>
 <a name="l00074"></a>00074 <span class="comment">  */</span>
-<a name="l00075"></a><a class="code" href="group/group__FLASH__Exported__Types.html#ga2b0268387bc11bcab76be9ce7c43eaaf">00075</a> <span class="keyword">typedef</span> <span class="keyword">enum</span> 
+<a name="l00075"></a><a class="code" href="group__FLASH__Exported__Types.html#ga2b0268387bc11bcab76be9ce7c43eaaf">00075</a> <span class="keyword">typedef</span> <span class="keyword">enum</span> 
 <a name="l00076"></a>00076 {
-<a name="l00077"></a><a class="code" href="group/group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa8d1dcf61f621d71484d13ac02f651b3d">00077</a>   <a class="code" href="group/group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa8d1dcf61f621d71484d13ac02f651b3d">FLASH_PROC_NONE</a>              = 0U, 
-<a name="l00078"></a><a class="code" href="group/group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa60f5b29ffaa88e477958199c079f945f">00078</a>   <a class="code" href="group/group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa60f5b29ffaa88e477958199c079f945f">FLASH_PROC_PAGEERASE</a>         = 1U,
-<a name="l00079"></a><a class="code" href="group/group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa1b046d01356b498d6675040f17362f0b">00079</a>   <a class="code" href="group/group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa1b046d01356b498d6675040f17362f0b">FLASH_PROC_MASSERASE</a>         = 2U,
-<a name="l00080"></a><a class="code" href="group/group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa4f383adc9c7cb418c2bcbe175115a3da">00080</a>   <a class="code" href="group/group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa4f383adc9c7cb418c2bcbe175115a3da">FLASH_PROC_PROGRAMHALFWORD</a>   = 3U,
-<a name="l00081"></a><a class="code" href="group/group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa81dab33c2d1048925ed82cc344f0cb17">00081</a>   <a class="code" href="group/group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa81dab33c2d1048925ed82cc344f0cb17">FLASH_PROC_PROGRAMWORD</a>       = 4U,
-<a name="l00082"></a><a class="code" href="group/group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa7e71cd5c5f3051d5e6600d95ec092b12">00082</a>   <a class="code" href="group/group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa7e71cd5c5f3051d5e6600d95ec092b12">FLASH_PROC_PROGRAMDOUBLEWORD</a> = 5U
-<a name="l00083"></a>00083 } <a class="code" href="group/group__FLASH__Exported__Types.html#ga2b0268387bc11bcab76be9ce7c43eaaf" title="FLASH Procedure structure definition.">FLASH_ProcedureTypeDef</a>;
+<a name="l00077"></a><a class="code" href="group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa8d1dcf61f621d71484d13ac02f651b3d">00077</a>   <a class="code" href="group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa8d1dcf61f621d71484d13ac02f651b3d">FLASH_PROC_NONE</a>              = 0U, 
+<a name="l00078"></a><a class="code" href="group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa60f5b29ffaa88e477958199c079f945f">00078</a>   <a class="code" href="group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa60f5b29ffaa88e477958199c079f945f">FLASH_PROC_PAGEERASE</a>         = 1U,
+<a name="l00079"></a><a class="code" href="group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa1b046d01356b498d6675040f17362f0b">00079</a>   <a class="code" href="group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa1b046d01356b498d6675040f17362f0b">FLASH_PROC_MASSERASE</a>         = 2U,
+<a name="l00080"></a><a class="code" href="group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa4f383adc9c7cb418c2bcbe175115a3da">00080</a>   <a class="code" href="group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa4f383adc9c7cb418c2bcbe175115a3da">FLASH_PROC_PROGRAMHALFWORD</a>   = 3U,
+<a name="l00081"></a><a class="code" href="group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa81dab33c2d1048925ed82cc344f0cb17">00081</a>   <a class="code" href="group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa81dab33c2d1048925ed82cc344f0cb17">FLASH_PROC_PROGRAMWORD</a>       = 4U,
+<a name="l00082"></a><a class="code" href="group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa7e71cd5c5f3051d5e6600d95ec092b12">00082</a>   <a class="code" href="group__FLASH__Exported__Types.html#gga2b0268387bc11bcab76be9ce7c43eaafa7e71cd5c5f3051d5e6600d95ec092b12">FLASH_PROC_PROGRAMDOUBLEWORD</a> = 5U
+<a name="l00083"></a>00083 } <a class="code" href="group__FLASH__Exported__Types.html#ga2b0268387bc11bcab76be9ce7c43eaaf" title="FLASH Procedure structure definition.">FLASH_ProcedureTypeDef</a>;
 <a name="l00084"></a>00084 <span class="comment"></span>
 <a name="l00085"></a>00085 <span class="comment">/** </span>
 <a name="l00086"></a>00086 <span class="comment">  * @brief  FLASH handle Structure definition  </span>
 <a name="l00087"></a>00087 <span class="comment">  */</span>
 <a name="l00088"></a><a class="code" href="structFLASH__ProcessTypeDef.html">00088</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
 <a name="l00089"></a>00089 {
-<a name="l00090"></a><a class="code" href="structFLASH__ProcessTypeDef.html#adcc5fdaba7d53dffdab0510a4dd7d179">00090</a>   __IO <a class="code" href="group/group__FLASH__Exported__Types.html#ga2b0268387bc11bcab76be9ce7c43eaaf" title="FLASH Procedure structure definition.">FLASH_ProcedureTypeDef</a> <a class="code" href="structFLASH__ProcessTypeDef.html#adcc5fdaba7d53dffdab0510a4dd7d179">ProcedureOnGoing</a>; <span class="comment">/*!&lt; Internal variable to indicate which procedure is ongoing or not in IT context */</span>
+<a name="l00090"></a><a class="code" href="structFLASH__ProcessTypeDef.html#adcc5fdaba7d53dffdab0510a4dd7d179">00090</a>   __IO <a class="code" href="group__FLASH__Exported__Types.html#ga2b0268387bc11bcab76be9ce7c43eaaf" title="FLASH Procedure structure definition.">FLASH_ProcedureTypeDef</a> <a class="code" href="structFLASH__ProcessTypeDef.html#adcc5fdaba7d53dffdab0510a4dd7d179">ProcedureOnGoing</a>; <span class="comment">/*!&lt; Internal variable to indicate which procedure is ongoing or not in IT context */</span>
 <a name="l00091"></a>00091   
 <a name="l00092"></a><a class="code" href="structFLASH__ProcessTypeDef.html#afa5ed8957c6ebd485308c38b155fcb39">00092</a>   __IO uint32_t               <a class="code" href="structFLASH__ProcessTypeDef.html#afa5ed8957c6ebd485308c38b155fcb39">DataRemaining</a>;    <span class="comment">/*!&lt; Internal variable to save the remaining pages to erase or half-word to program in IT context */</span>
 <a name="l00093"></a>00093 
@@ -181,10 +181,10 @@
 <a name="l00114"></a>00114 <span class="comment">  * @{</span>
 <a name="l00115"></a>00115 <span class="comment">  */</span>
 <a name="l00116"></a>00116 
-<a name="l00117"></a><a class="code" href="group/group__FLASH__Error__Codes.html#gae7fb9ee7198d393aba27ade3a9f50a70">00117</a> <span class="preprocessor">#define HAL_FLASH_ERROR_NONE      0x00U  </span><span class="comment">/*!&lt; No error */</span>
-<a name="l00118"></a><a class="code" href="group/group__FLASH__Error__Codes.html#ga516a75e6f98eed9daefa0b442a74c04b">00118</a> <span class="preprocessor">#define HAL_FLASH_ERROR_PROG      0x01U  </span><span class="comment">/*!&lt; Programming error */</span>
-<a name="l00119"></a><a class="code" href="group/group__FLASH__Error__Codes.html#ga27e871d85f9311272098315bc3723075">00119</a> <span class="preprocessor">#define HAL_FLASH_ERROR_WRP       0x02U  </span><span class="comment">/*!&lt; Write protection error */</span>
-<a name="l00120"></a><a class="code" href="group/group__FLASH__Error__Codes.html#ga9fe984a57c2e92c27c4217468d1b2d93">00120</a> <span class="preprocessor">#define HAL_FLASH_ERROR_OPTV      0x04U  </span><span class="comment">/*!&lt; Option validity error */</span>
+<a name="l00117"></a><a class="code" href="group__FLASH__Error__Codes.html#gae7fb9ee7198d393aba27ade3a9f50a70">00117</a> <span class="preprocessor">#define HAL_FLASH_ERROR_NONE      0x00U  </span><span class="comment">/*!&lt; No error */</span>
+<a name="l00118"></a><a class="code" href="group__FLASH__Error__Codes.html#ga516a75e6f98eed9daefa0b442a74c04b">00118</a> <span class="preprocessor">#define HAL_FLASH_ERROR_PROG      0x01U  </span><span class="comment">/*!&lt; Programming error */</span>
+<a name="l00119"></a><a class="code" href="group__FLASH__Error__Codes.html#ga27e871d85f9311272098315bc3723075">00119</a> <span class="preprocessor">#define HAL_FLASH_ERROR_WRP       0x02U  </span><span class="comment">/*!&lt; Write protection error */</span>
+<a name="l00120"></a><a class="code" href="group__FLASH__Error__Codes.html#ga9fe984a57c2e92c27c4217468d1b2d93">00120</a> <span class="preprocessor">#define HAL_FLASH_ERROR_OPTV      0x04U  </span><span class="comment">/*!&lt; Option validity error */</span>
 <a name="l00121"></a>00121 <span class="comment"></span>
 <a name="l00122"></a>00122 <span class="comment">/**</span>
 <a name="l00123"></a>00123 <span class="comment">  * @}</span>
@@ -193,9 +193,9 @@
 <a name="l00126"></a>00126 <span class="comment">/** @defgroup FLASH_Type_Program FLASH Type Program</span>
 <a name="l00127"></a>00127 <span class="comment">  * @{</span>
 <a name="l00128"></a>00128 <span class="comment">  */</span> 
-<a name="l00129"></a><a class="code" href="group/group__FLASH__Type__Program.html#ga2b607dfc2efd463a8530e327bc755582">00129</a> <span class="preprocessor">#define FLASH_TYPEPROGRAM_HALFWORD             0x01U  </span><span class="comment">/*!&lt;Program a half-word (16-bit) at a specified address.*/</span>
-<a name="l00130"></a><a class="code" href="group/group__FLASH__Type__Program.html#gadd25c6821539030ba6711e7c0d586c3e">00130</a> <span class="preprocessor">#define FLASH_TYPEPROGRAM_WORD                 0x02U  </span><span class="comment">/*!&lt;Program a word (32-bit) at a specified address.*/</span>
-<a name="l00131"></a><a class="code" href="group/group__FLASH__Type__Program.html#gabdc2b0b4d2e66c2be90fafbfbf1e225f">00131</a> <span class="preprocessor">#define FLASH_TYPEPROGRAM_DOUBLEWORD           0x03U  </span><span class="comment">/*!&lt;Program a double word (64-bit) at a specified address*/</span>
+<a name="l00129"></a><a class="code" href="group__FLASH__Type__Program.html#ga2b607dfc2efd463a8530e327bc755582">00129</a> <span class="preprocessor">#define FLASH_TYPEPROGRAM_HALFWORD             0x01U  </span><span class="comment">/*!&lt;Program a half-word (16-bit) at a specified address.*/</span>
+<a name="l00130"></a><a class="code" href="group__FLASH__Type__Program.html#gadd25c6821539030ba6711e7c0d586c3e">00130</a> <span class="preprocessor">#define FLASH_TYPEPROGRAM_WORD                 0x02U  </span><span class="comment">/*!&lt;Program a word (32-bit) at a specified address.*/</span>
+<a name="l00131"></a><a class="code" href="group__FLASH__Type__Program.html#gabdc2b0b4d2e66c2be90fafbfbf1e225f">00131</a> <span class="preprocessor">#define FLASH_TYPEPROGRAM_DOUBLEWORD           0x03U  </span><span class="comment">/*!&lt;Program a double word (64-bit) at a specified address*/</span>
 <a name="l00132"></a>00132 <span class="comment"></span>
 <a name="l00133"></a>00133 <span class="comment">/**</span>
 <a name="l00134"></a>00134 <span class="comment">  * @}</span>
@@ -217,7 +217,7 @@
 <a name="l00150"></a>00150 <span class="preprocessor"></span><span class="comment">/** @defgroup FLASH_Latency FLASH Latency</span>
 <a name="l00151"></a>00151 <span class="comment">  * @{</span>
 <a name="l00152"></a>00152 <span class="comment">  */</span>
-<a name="l00153"></a><a class="code" href="group/group__FLASH__Latency.html#ga1276f51e97dc9857ca261fae4eb890f3">00153</a> <span class="preprocessor">#define FLASH_LATENCY_0            0x00000000U    </span><span class="comment">/*!&lt; FLASH Zero Latency cycle */</span>
+<a name="l00153"></a><a class="code" href="group__FLASH__Latency.html#ga1276f51e97dc9857ca261fae4eb890f3">00153</a> <span class="preprocessor">#define FLASH_LATENCY_0            0x00000000U    </span><span class="comment">/*!&lt; FLASH Zero Latency cycle */</span>
 <a name="l00154"></a>00154 <span class="comment"></span>
 <a name="l00155"></a>00155 <span class="comment">/**</span>
 <a name="l00156"></a>00156 <span class="comment">  * @}</span>
@@ -246,7 +246,7 @@
 <a name="l00179"></a>00179 <span class="comment">            8 MHz that can be obtained with the use of HSI or HSE but not of PLL.</span>
 <a name="l00180"></a>00180 <span class="comment">  * @retval None</span>
 <a name="l00181"></a>00181 <span class="comment">  */</span>
-<a name="l00182"></a><a class="code" href="group/group__FLASH__Half__Cycle.html#ga65eb4c393cbc94747449b8aab349200a">00182</a> <span class="preprocessor">#define __HAL_FLASH_HALF_CYCLE_ACCESS_ENABLE()  (FLASH-&gt;ACR |= FLASH_ACR_HLFCYA)</span>
+<a name="l00182"></a><a class="code" href="group__FLASH__Half__Cycle.html#ga65eb4c393cbc94747449b8aab349200a">00182</a> <span class="preprocessor">#define __HAL_FLASH_HALF_CYCLE_ACCESS_ENABLE()  (FLASH-&gt;ACR |= FLASH_ACR_HLFCYA)</span>
 <a name="l00183"></a>00183 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00184"></a>00184 <span class="comment">/**</span>
 <a name="l00185"></a>00185 <span class="comment">  * @brief  Disable the FLASH half cycle access.</span>
@@ -254,7 +254,7 @@
 <a name="l00187"></a>00187 <span class="comment">            8 MHz that can be obtained with the use of HSI or HSE but not of PLL.</span>
 <a name="l00188"></a>00188 <span class="comment">  * @retval None</span>
 <a name="l00189"></a>00189 <span class="comment">  */</span>
-<a name="l00190"></a><a class="code" href="group/group__FLASH__Half__Cycle.html#ga2e0c8e2c00a86896027c0cf1c95fbba1">00190</a> <span class="preprocessor">#define __HAL_FLASH_HALF_CYCLE_ACCESS_DISABLE() (FLASH-&gt;ACR &amp;= (~FLASH_ACR_HLFCYA))</span>
+<a name="l00190"></a><a class="code" href="group__FLASH__Half__Cycle.html#ga2e0c8e2c00a86896027c0cf1c95fbba1">00190</a> <span class="preprocessor">#define __HAL_FLASH_HALF_CYCLE_ACCESS_DISABLE() (FLASH-&gt;ACR &amp;= (~FLASH_ACR_HLFCYA))</span>
 <a name="l00191"></a>00191 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00192"></a>00192 <span class="comment">/**</span>
 <a name="l00193"></a>00193 <span class="comment">  * @}</span>
@@ -295,13 +295,13 @@
 <a name="l00228"></a>00228 <span class="comment">  * @brief  Enable the FLASH prefetch buffer.</span>
 <a name="l00229"></a>00229 <span class="comment">  * @retval None</span>
 <a name="l00230"></a>00230 <span class="comment">  */</span> 
-<a name="l00231"></a><a class="code" href="group/group__FLASH__Prefetch.html#gad36059641057f824516303ea92734e6f">00231</a> <span class="preprocessor">#define __HAL_FLASH_PREFETCH_BUFFER_ENABLE()    (FLASH-&gt;ACR |= FLASH_ACR_PRFTBE)</span>
+<a name="l00231"></a><a class="code" href="group__FLASH__Prefetch.html#gad36059641057f824516303ea92734e6f">00231</a> <span class="preprocessor">#define __HAL_FLASH_PREFETCH_BUFFER_ENABLE()    (FLASH-&gt;ACR |= FLASH_ACR_PRFTBE)</span>
 <a name="l00232"></a>00232 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00233"></a>00233 <span class="comment">/**</span>
 <a name="l00234"></a>00234 <span class="comment">  * @brief  Disable the FLASH prefetch buffer.</span>
 <a name="l00235"></a>00235 <span class="comment">  * @retval None</span>
 <a name="l00236"></a>00236 <span class="comment">  */</span>
-<a name="l00237"></a><a class="code" href="group/group__FLASH__Prefetch.html#ga646a4cb92e85659334d14a8c78f0ede8">00237</a> <span class="preprocessor">#define __HAL_FLASH_PREFETCH_BUFFER_DISABLE()   (FLASH-&gt;ACR &amp;= (~FLASH_ACR_PRFTBE))</span>
+<a name="l00237"></a><a class="code" href="group__FLASH__Prefetch.html#ga646a4cb92e85659334d14a8c78f0ede8">00237</a> <span class="preprocessor">#define __HAL_FLASH_PREFETCH_BUFFER_DISABLE()   (FLASH-&gt;ACR &amp;= (~FLASH_ACR_PRFTBE))</span>
 <a name="l00238"></a>00238 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00239"></a>00239 <span class="comment">/**</span>
 <a name="l00240"></a>00240 <span class="comment">  * @}</span>
@@ -323,14 +323,14 @@
 <a name="l00256"></a>00256 <span class="comment">  * @{</span>
 <a name="l00257"></a>00257 <span class="comment">  */</span>
 <a name="l00258"></a>00258 <span class="comment">/* IO operation functions *****************************************************/</span>
-<a name="l00259"></a>00259 HAL_StatusTypeDef <a class="code" href="group/group__FLASH__Exported__Functions__Group1.html#gab94b3dc16c5c6fcc30ba2cb897de8bae" title="Program halfword, word or double word at a specified address.">HAL_FLASH_Program</a>(uint32_t TypeProgram, uint32_t Address, uint64_t Data);
-<a name="l00260"></a>00260 HAL_StatusTypeDef <a class="code" href="group/group__FLASH__Exported__Functions__Group1.html#ga85ee0375f81ac12bf0acd013189f68d3" title="Program halfword, word or double word at a specified address with interrupt enabled.">HAL_FLASH_Program_IT</a>(uint32_t TypeProgram, uint32_t Address, uint64_t Data);
+<a name="l00259"></a>00259 HAL_StatusTypeDef <a class="code" href="group__FLASH__Exported__Functions__Group1.html#gab94b3dc16c5c6fcc30ba2cb897de8bae" title="Program halfword, word or double word at a specified address.">HAL_FLASH_Program</a>(uint32_t TypeProgram, uint32_t Address, uint64_t Data);
+<a name="l00260"></a>00260 HAL_StatusTypeDef <a class="code" href="group__FLASH__Exported__Functions__Group1.html#ga85ee0375f81ac12bf0acd013189f68d3" title="Program halfword, word or double word at a specified address with interrupt enabled.">HAL_FLASH_Program_IT</a>(uint32_t TypeProgram, uint32_t Address, uint64_t Data);
 <a name="l00261"></a>00261 
 <a name="l00262"></a>00262 <span class="comment">/* FLASH IRQ handler function */</span>
-<a name="l00263"></a>00263 <span class="keywordtype">void</span>       <a class="code" href="group/group__FLASH__Exported__Functions__Group1.html#ga083f13f6a000dfcb80c7a27853eba528" title="This function handles FLASH interrupt request.">HAL_FLASH_IRQHandler</a>(<span class="keywordtype">void</span>);
+<a name="l00263"></a>00263 <span class="keywordtype">void</span>       <a class="code" href="group__FLASH__Exported__Functions__Group1.html#ga083f13f6a000dfcb80c7a27853eba528" title="This function handles FLASH interrupt request.">HAL_FLASH_IRQHandler</a>(<span class="keywordtype">void</span>);
 <a name="l00264"></a>00264 <span class="comment">/* Callbacks in non blocking modes */</span> 
-<a name="l00265"></a>00265 <span class="keywordtype">void</span>       <a class="code" href="group/group__FLASH__Exported__Functions__Group1.html#ga71a7e85ede66fae4eadaf8854f81b5c8" title="FLASH end of operation interrupt callback.">HAL_FLASH_EndOfOperationCallback</a>(uint32_t ReturnValue);
-<a name="l00266"></a>00266 <span class="keywordtype">void</span>       <a class="code" href="group/group__FLASH__Exported__Functions__Group1.html#ga237e17bd9b1d257bd8e2880227b8484e" title="FLASH operation error interrupt callback.">HAL_FLASH_OperationErrorCallback</a>(uint32_t ReturnValue);
+<a name="l00265"></a>00265 <span class="keywordtype">void</span>       <a class="code" href="group__FLASH__Exported__Functions__Group1.html#ga71a7e85ede66fae4eadaf8854f81b5c8" title="FLASH end of operation interrupt callback.">HAL_FLASH_EndOfOperationCallback</a>(uint32_t ReturnValue);
+<a name="l00266"></a>00266 <span class="keywordtype">void</span>       <a class="code" href="group__FLASH__Exported__Functions__Group1.html#ga237e17bd9b1d257bd8e2880227b8484e" title="FLASH operation error interrupt callback.">HAL_FLASH_OperationErrorCallback</a>(uint32_t ReturnValue);
 <a name="l00267"></a>00267 <span class="comment"></span>
 <a name="l00268"></a>00268 <span class="comment">/**</span>
 <a name="l00269"></a>00269 <span class="comment">  * @}</span>
@@ -340,11 +340,11 @@
 <a name="l00273"></a>00273 <span class="comment">  * @{</span>
 <a name="l00274"></a>00274 <span class="comment">  */</span>
 <a name="l00275"></a>00275 <span class="comment">/* Peripheral Control functions ***********************************************/</span>
-<a name="l00276"></a>00276 HAL_StatusTypeDef <a class="code" href="group/group__FLASH__Exported__Functions__Group2.html#ga23d4ff42a8873bac585c92ce4f633747" title="Unlock the FLASH control register access.">HAL_FLASH_Unlock</a>(<span class="keywordtype">void</span>);
-<a name="l00277"></a>00277 HAL_StatusTypeDef <a class="code" href="group/group__FLASH__Exported__Functions__Group2.html#gae07eeca0b0aa9d5047f8df88d82f4bcd" title="Locks the FLASH control register access.">HAL_FLASH_Lock</a>(<span class="keywordtype">void</span>);
-<a name="l00278"></a>00278 HAL_StatusTypeDef <a class="code" href="group/group__FLASH__Exported__Functions__Group2.html#ga6e8f380b7a938592f0b6f05d0ebf69c3" title="Unlock the FLASH Option Control Registers access.">HAL_FLASH_OB_Unlock</a>(<span class="keywordtype">void</span>);
-<a name="l00279"></a>00279 HAL_StatusTypeDef <a class="code" href="group/group__FLASH__Exported__Functions__Group2.html#ga3ff599bd7eba88f7a169a537ccbf3e3f" title="Lock the FLASH Option Control Registers access.">HAL_FLASH_OB_Lock</a>(<span class="keywordtype">void</span>);
-<a name="l00280"></a>00280 <span class="keywordtype">void</span> <a class="code" href="group/group__FLASH__Exported__Functions__Group2.html#gafcb7356053078fd0d53fc7dc7376fdab" title="Launch the option byte loading.">HAL_FLASH_OB_Launch</a>(<span class="keywordtype">void</span>);
+<a name="l00276"></a>00276 HAL_StatusTypeDef <a class="code" href="group__FLASH__Exported__Functions__Group2.html#ga23d4ff42a8873bac585c92ce4f633747" title="Unlock the FLASH control register access.">HAL_FLASH_Unlock</a>(<span class="keywordtype">void</span>);
+<a name="l00277"></a>00277 HAL_StatusTypeDef <a class="code" href="group__FLASH__Exported__Functions__Group2.html#gae07eeca0b0aa9d5047f8df88d82f4bcd" title="Locks the FLASH control register access.">HAL_FLASH_Lock</a>(<span class="keywordtype">void</span>);
+<a name="l00278"></a>00278 HAL_StatusTypeDef <a class="code" href="group__FLASH__Exported__Functions__Group2.html#ga6e8f380b7a938592f0b6f05d0ebf69c3" title="Unlock the FLASH Option Control Registers access.">HAL_FLASH_OB_Unlock</a>(<span class="keywordtype">void</span>);
+<a name="l00279"></a>00279 HAL_StatusTypeDef <a class="code" href="group__FLASH__Exported__Functions__Group2.html#ga3ff599bd7eba88f7a169a537ccbf3e3f" title="Lock the FLASH Option Control Registers access.">HAL_FLASH_OB_Lock</a>(<span class="keywordtype">void</span>);
+<a name="l00280"></a>00280 <span class="keywordtype">void</span> <a class="code" href="group__FLASH__Exported__Functions__Group2.html#gafcb7356053078fd0d53fc7dc7376fdab" title="Launch the option byte loading.">HAL_FLASH_OB_Launch</a>(<span class="keywordtype">void</span>);
 <a name="l00281"></a>00281 <span class="comment"></span>
 <a name="l00282"></a>00282 <span class="comment">/**</span>
 <a name="l00283"></a>00283 <span class="comment">  * @}</span>
@@ -354,7 +354,7 @@
 <a name="l00287"></a>00287 <span class="comment">  * @{</span>
 <a name="l00288"></a>00288 <span class="comment">  */</span>
 <a name="l00289"></a>00289 <span class="comment">/* Peripheral State and Error functions ***************************************/</span>
-<a name="l00290"></a>00290 uint32_t <a class="code" href="group/group__FLASH__Exported__Functions__Group3.html#ga20e71ba6b2a09cd5b9f0bd369f842de3" title="Get the specific FLASH error flag.">HAL_FLASH_GetError</a>(<span class="keywordtype">void</span>);
+<a name="l00290"></a>00290 uint32_t <a class="code" href="group__FLASH__Exported__Functions__Group3.html#ga20e71ba6b2a09cd5b9f0bd369f842de3" title="Get the specific FLASH error flag.">HAL_FLASH_GetError</a>(<span class="keywordtype">void</span>);
 <a name="l00291"></a>00291 <span class="comment"></span>
 <a name="l00292"></a>00292 <span class="comment">/**</span>
 <a name="l00293"></a>00293 <span class="comment">  * @}</span>
@@ -368,7 +368,7 @@
 <a name="l00301"></a>00301 <span class="comment">/** @addtogroup FLASH_Private_Functions</span>
 <a name="l00302"></a>00302 <span class="comment"> * @{</span>
 <a name="l00303"></a>00303 <span class="comment"> */</span>
-<a name="l00304"></a>00304 HAL_StatusTypeDef       <a class="code" href="group/group__FLASH__Private__Functions.html#gaf89afc110a32ac9dcf0d06b89ffd9224" title="Wait for a FLASH operation to complete.">FLASH_WaitForLastOperation</a>(uint32_t Timeout);
+<a name="l00304"></a>00304 HAL_StatusTypeDef       <a class="code" href="group__FLASH__Private__Functions.html#gaf89afc110a32ac9dcf0d06b89ffd9224" title="Wait for a FLASH operation to complete.">FLASH_WaitForLastOperation</a>(uint32_t Timeout);
 <a name="l00305"></a>00305 <span class="preprocessor">#if defined(FLASH_BANK2_END)</span>
 <a name="l00306"></a>00306 <span class="preprocessor"></span>HAL_StatusTypeDef       FLASH_WaitForLastOperationBank2(uint32_t Timeout);
 <a name="l00307"></a>00307 <span class="preprocessor">#endif </span><span class="comment">/* FLASH_BANK2_END */</span>
