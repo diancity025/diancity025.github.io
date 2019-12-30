@@ -208,10 +208,10 @@
 <a name="l00141"></a>00141 <span class="comment"> */</span>
 <a name="l00142"></a>00142 
 <a name="l00143"></a>00143 <span class="comment">/* Initialization/de-initialization functions  ********************************/</span>
-<a name="l00144"></a>00144 HAL_StatusTypeDef <a class="code" href="group__SRAM__Exported__Functions__Group1.html#gad1262ed791ecbe67fef4ad989a090095" title="Performs the SRAM device initialization sequence.">HAL_SRAM_Init</a>(SRAM_HandleTypeDef *hsram, FSMC_NORSRAM_TimingTypeDef *Timing, FSMC_NORSRAM_TimingTypeDef *ExtTiming);
-<a name="l00145"></a>00145 HAL_StatusTypeDef <a class="code" href="group__SRAM__Exported__Functions__Group1.html#gabadc6ca2f2ff6332e22ff01d704282c0" title="Performs the SRAM device De-initialization sequence.">HAL_SRAM_DeInit</a>(SRAM_HandleTypeDef *hsram);
-<a name="l00146"></a>00146 <span class="keywordtype">void</span> <a class="code" href="group__SRAM__Exported__Functions__Group1.html#gadef4665dc60557b4245a3ec86e64564f" title="SRAM MSP Init.">HAL_SRAM_MspInit</a>(SRAM_HandleTypeDef *hsram);
-<a name="l00147"></a>00147 <span class="keywordtype">void</span> <a class="code" href="group__SRAM__Exported__Functions__Group1.html#ga5d8c14615d75dd6d84b057d91e7278e5" title="SRAM MSP DeInit.">HAL_SRAM_MspDeInit</a>(SRAM_HandleTypeDef *hsram);
+<a name="l00144"></a>00144 HAL_StatusTypeDef <a class="code" href="group/group__SRAM__Exported__Functions__Group1.html#gad1262ed791ecbe67fef4ad989a090095" title="Performs the SRAM device initialization sequence.">HAL_SRAM_Init</a>(SRAM_HandleTypeDef *hsram, FSMC_NORSRAM_TimingTypeDef *Timing, FSMC_NORSRAM_TimingTypeDef *ExtTiming);
+<a name="l00145"></a>00145 HAL_StatusTypeDef <a class="code" href="group/group__SRAM__Exported__Functions__Group1.html#gabadc6ca2f2ff6332e22ff01d704282c0" title="Performs the SRAM device De-initialization sequence.">HAL_SRAM_DeInit</a>(SRAM_HandleTypeDef *hsram);
+<a name="l00146"></a>00146 <span class="keywordtype">void</span> <a class="code" href="group/group__SRAM__Exported__Functions__Group1.html#gadef4665dc60557b4245a3ec86e64564f" title="SRAM MSP Init.">HAL_SRAM_MspInit</a>(SRAM_HandleTypeDef *hsram);
+<a name="l00147"></a>00147 <span class="keywordtype">void</span> <a class="code" href="group/group__SRAM__Exported__Functions__Group1.html#ga5d8c14615d75dd6d84b057d91e7278e5" title="SRAM MSP DeInit.">HAL_SRAM_MspDeInit</a>(SRAM_HandleTypeDef *hsram);
 <a name="l00148"></a>00148 <span class="comment"></span>
 <a name="l00149"></a>00149 <span class="comment">/**</span>
 <a name="l00150"></a>00150 <span class="comment">  * @}</span>
@@ -222,17 +222,17 @@
 <a name="l00155"></a>00155 <span class="comment"> */</span>
 <a name="l00156"></a>00156 
 <a name="l00157"></a>00157 <span class="comment">/* I/O operation functions  ***************************************************/</span>
-<a name="l00158"></a>00158 HAL_StatusTypeDef <a class="code" href="group__SRAM__Exported__Functions__Group2.html#gaa397cd69f463cdaef60620dc504221ee" title="Reads 8-bit buffer from SRAM memory.">HAL_SRAM_Read_8b</a>(SRAM_HandleTypeDef *hsram, uint32_t *pAddress, uint8_t *pDstBuffer, uint32_t BufferSize);
-<a name="l00159"></a>00159 HAL_StatusTypeDef <a class="code" href="group__SRAM__Exported__Functions__Group2.html#ga1ae829a51e3be3af706e864b87253919" title="Writes 8-bit buffer to SRAM memory.">HAL_SRAM_Write_8b</a>(SRAM_HandleTypeDef *hsram, uint32_t *pAddress, uint8_t *pSrcBuffer, uint32_t BufferSize);
-<a name="l00160"></a>00160 HAL_StatusTypeDef <a class="code" href="group__SRAM__Exported__Functions__Group2.html#ga671719ff18c1897edd9c29718f6d4f0a" title="Reads 16-bit buffer from SRAM memory.">HAL_SRAM_Read_16b</a>(SRAM_HandleTypeDef *hsram, uint32_t *pAddress, uint16_t *pDstBuffer, uint32_t BufferSize);
-<a name="l00161"></a>00161 HAL_StatusTypeDef <a class="code" href="group__SRAM__Exported__Functions__Group2.html#ga6c57c8dff53c8bd9fcbadeeb3572d799" title="Writes 16-bit buffer to SRAM memory.">HAL_SRAM_Write_16b</a>(SRAM_HandleTypeDef *hsram, uint32_t *pAddress, uint16_t *pSrcBuffer, uint32_t BufferSize);
-<a name="l00162"></a>00162 HAL_StatusTypeDef <a class="code" href="group__SRAM__Exported__Functions__Group2.html#gaecd5d8df61a34b1b59e3f18157ddf2b8" title="Reads 32-bit buffer from SRAM memory.">HAL_SRAM_Read_32b</a>(SRAM_HandleTypeDef *hsram, uint32_t *pAddress, uint32_t *pDstBuffer, uint32_t BufferSize);
-<a name="l00163"></a>00163 HAL_StatusTypeDef <a class="code" href="group__SRAM__Exported__Functions__Group2.html#ga7adf2d13d0cd9906e3054a6ef712c068" title="Writes 32-bit buffer to SRAM memory.">HAL_SRAM_Write_32b</a>(SRAM_HandleTypeDef *hsram, uint32_t *pAddress, uint32_t *pSrcBuffer, uint32_t BufferSize);
-<a name="l00164"></a>00164 HAL_StatusTypeDef <a class="code" href="group__SRAM__Exported__Functions__Group2.html#gac33cd97247fe18d437544895b83acf04" title="Reads a Words data from the SRAM memory using DMA transfer.">HAL_SRAM_Read_DMA</a>(SRAM_HandleTypeDef *hsram, uint32_t *pAddress, uint32_t *pDstBuffer, uint32_t BufferSize);
-<a name="l00165"></a>00165 HAL_StatusTypeDef <a class="code" href="group__SRAM__Exported__Functions__Group2.html#ga00d6551fd89c7a5b0ce068a0b4e42840" title="Writes a Words data buffer to SRAM memory using DMA transfer.">HAL_SRAM_Write_DMA</a>(SRAM_HandleTypeDef *hsram, uint32_t *pAddress, uint32_t *pSrcBuffer, uint32_t BufferSize);
+<a name="l00158"></a>00158 HAL_StatusTypeDef <a class="code" href="group/group__SRAM__Exported__Functions__Group2.html#gaa397cd69f463cdaef60620dc504221ee" title="Reads 8-bit buffer from SRAM memory.">HAL_SRAM_Read_8b</a>(SRAM_HandleTypeDef *hsram, uint32_t *pAddress, uint8_t *pDstBuffer, uint32_t BufferSize);
+<a name="l00159"></a>00159 HAL_StatusTypeDef <a class="code" href="group/group__SRAM__Exported__Functions__Group2.html#ga1ae829a51e3be3af706e864b87253919" title="Writes 8-bit buffer to SRAM memory.">HAL_SRAM_Write_8b</a>(SRAM_HandleTypeDef *hsram, uint32_t *pAddress, uint8_t *pSrcBuffer, uint32_t BufferSize);
+<a name="l00160"></a>00160 HAL_StatusTypeDef <a class="code" href="group/group__SRAM__Exported__Functions__Group2.html#ga671719ff18c1897edd9c29718f6d4f0a" title="Reads 16-bit buffer from SRAM memory.">HAL_SRAM_Read_16b</a>(SRAM_HandleTypeDef *hsram, uint32_t *pAddress, uint16_t *pDstBuffer, uint32_t BufferSize);
+<a name="l00161"></a>00161 HAL_StatusTypeDef <a class="code" href="group/group__SRAM__Exported__Functions__Group2.html#ga6c57c8dff53c8bd9fcbadeeb3572d799" title="Writes 16-bit buffer to SRAM memory.">HAL_SRAM_Write_16b</a>(SRAM_HandleTypeDef *hsram, uint32_t *pAddress, uint16_t *pSrcBuffer, uint32_t BufferSize);
+<a name="l00162"></a>00162 HAL_StatusTypeDef <a class="code" href="group/group__SRAM__Exported__Functions__Group2.html#gaecd5d8df61a34b1b59e3f18157ddf2b8" title="Reads 32-bit buffer from SRAM memory.">HAL_SRAM_Read_32b</a>(SRAM_HandleTypeDef *hsram, uint32_t *pAddress, uint32_t *pDstBuffer, uint32_t BufferSize);
+<a name="l00163"></a>00163 HAL_StatusTypeDef <a class="code" href="group/group__SRAM__Exported__Functions__Group2.html#ga7adf2d13d0cd9906e3054a6ef712c068" title="Writes 32-bit buffer to SRAM memory.">HAL_SRAM_Write_32b</a>(SRAM_HandleTypeDef *hsram, uint32_t *pAddress, uint32_t *pSrcBuffer, uint32_t BufferSize);
+<a name="l00164"></a>00164 HAL_StatusTypeDef <a class="code" href="group/group__SRAM__Exported__Functions__Group2.html#gac33cd97247fe18d437544895b83acf04" title="Reads a Words data from the SRAM memory using DMA transfer.">HAL_SRAM_Read_DMA</a>(SRAM_HandleTypeDef *hsram, uint32_t *pAddress, uint32_t *pDstBuffer, uint32_t BufferSize);
+<a name="l00165"></a>00165 HAL_StatusTypeDef <a class="code" href="group/group__SRAM__Exported__Functions__Group2.html#ga00d6551fd89c7a5b0ce068a0b4e42840" title="Writes a Words data buffer to SRAM memory using DMA transfer.">HAL_SRAM_Write_DMA</a>(SRAM_HandleTypeDef *hsram, uint32_t *pAddress, uint32_t *pSrcBuffer, uint32_t BufferSize);
 <a name="l00166"></a>00166 
-<a name="l00167"></a>00167 <span class="keywordtype">void</span> <a class="code" href="group__SRAM__Exported__Functions__Group1.html#ga2bf0dbdbf22983eb8e1525771a6c576d" title="DMA transfer complete callback.">HAL_SRAM_DMA_XferCpltCallback</a>(<a class="code" href="struct____DMA__HandleTypeDef.html" title="DMA handle Structure definition.">DMA_HandleTypeDef</a> *hdma);
-<a name="l00168"></a>00168 <span class="keywordtype">void</span> <a class="code" href="group__SRAM__Exported__Functions__Group1.html#gaec2eb361d2917226b22a4d1989977ada" title="DMA transfer complete error callback.">HAL_SRAM_DMA_XferErrorCallback</a>(<a class="code" href="struct____DMA__HandleTypeDef.html" title="DMA handle Structure definition.">DMA_HandleTypeDef</a> *hdma);
+<a name="l00167"></a>00167 <span class="keywordtype">void</span> <a class="code" href="group/group__SRAM__Exported__Functions__Group1.html#ga2bf0dbdbf22983eb8e1525771a6c576d" title="DMA transfer complete callback.">HAL_SRAM_DMA_XferCpltCallback</a>(<a class="code" href="struct____DMA__HandleTypeDef.html" title="DMA handle Structure definition.">DMA_HandleTypeDef</a> *hdma);
+<a name="l00168"></a>00168 <span class="keywordtype">void</span> <a class="code" href="group/group__SRAM__Exported__Functions__Group1.html#gaec2eb361d2917226b22a4d1989977ada" title="DMA transfer complete error callback.">HAL_SRAM_DMA_XferErrorCallback</a>(<a class="code" href="struct____DMA__HandleTypeDef.html" title="DMA handle Structure definition.">DMA_HandleTypeDef</a> *hdma);
 <a name="l00169"></a>00169 
 <a name="l00170"></a>00170 <span class="preprocessor">#if (USE_HAL_SRAM_REGISTER_CALLBACKS == 1)</span>
 <a name="l00171"></a>00171 <span class="preprocessor"></span><span class="comment">/* SRAM callback registering/unregistering */</span>
@@ -250,8 +250,8 @@
 <a name="l00183"></a>00183 <span class="comment"> */</span>
 <a name="l00184"></a>00184 
 <a name="l00185"></a>00185 <span class="comment">/* SRAM Control functions  ****************************************************/</span>
-<a name="l00186"></a>00186 HAL_StatusTypeDef <a class="code" href="group__SRAM__Exported__Functions__Group3.html#ga52f56b344b30d6756152f6789d90dc16" title="Enables dynamically SRAM write operation.">HAL_SRAM_WriteOperation_Enable</a>(SRAM_HandleTypeDef *hsram);
-<a name="l00187"></a>00187 HAL_StatusTypeDef <a class="code" href="group__SRAM__Exported__Functions__Group3.html#ga4bfd376d61a63cea7c845753cca4f3e7" title="Disables dynamically SRAM write operation.">HAL_SRAM_WriteOperation_Disable</a>(SRAM_HandleTypeDef *hsram);
+<a name="l00186"></a>00186 HAL_StatusTypeDef <a class="code" href="group/group__SRAM__Exported__Functions__Group3.html#ga52f56b344b30d6756152f6789d90dc16" title="Enables dynamically SRAM write operation.">HAL_SRAM_WriteOperation_Enable</a>(SRAM_HandleTypeDef *hsram);
+<a name="l00187"></a>00187 HAL_StatusTypeDef <a class="code" href="group/group__SRAM__Exported__Functions__Group3.html#ga4bfd376d61a63cea7c845753cca4f3e7" title="Disables dynamically SRAM write operation.">HAL_SRAM_WriteOperation_Disable</a>(SRAM_HandleTypeDef *hsram);
 <a name="l00188"></a>00188 <span class="comment"></span>
 <a name="l00189"></a>00189 <span class="comment">/**</span>
 <a name="l00190"></a>00190 <span class="comment">  * @}</span>
@@ -262,7 +262,7 @@
 <a name="l00195"></a>00195 <span class="comment"> */</span>
 <a name="l00196"></a>00196 
 <a name="l00197"></a>00197 <span class="comment">/* SRAM  State functions ******************************************************/</span>
-<a name="l00198"></a>00198 HAL_SRAM_StateTypeDef <a class="code" href="group__SRAM__Exported__Functions__Group4.html#gacbdc09f3583e442e2b56ef5906721fc8" title="Returns the SRAM controller state.">HAL_SRAM_GetState</a>(SRAM_HandleTypeDef *hsram);
+<a name="l00198"></a>00198 HAL_SRAM_StateTypeDef <a class="code" href="group/group__SRAM__Exported__Functions__Group4.html#gacbdc09f3583e442e2b56ef5906721fc8" title="Returns the SRAM controller state.">HAL_SRAM_GetState</a>(SRAM_HandleTypeDef *hsram);
 <a name="l00199"></a>00199 <span class="comment"></span>
 <a name="l00200"></a>00200 <span class="comment">/**</span>
 <a name="l00201"></a>00201 <span class="comment">  * @}</span>

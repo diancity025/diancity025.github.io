@@ -142,11 +142,11 @@
 <a name="l00075"></a>00075 <span class="comment">/** @defgroup SYSTEM_LL_EC_TRACE DBGMCU TRACE Pin Assignment</span>
 <a name="l00076"></a>00076 <span class="comment">  * @{</span>
 <a name="l00077"></a>00077 <span class="comment">  */</span>
-<a name="l00078"></a><a class="code" href="group__SYSTEM__LL__EC__TRACE.html#ga1c12f4a70013ea20c5920bfd06c31df9">00078</a> <span class="preprocessor">#define LL_DBGMCU_TRACE_NONE               0x00000000U                                     </span><span class="comment">/*!&lt; TRACE pins not assigned (default state) */</span>
-<a name="l00079"></a><a class="code" href="group__SYSTEM__LL__EC__TRACE.html#gafcf137b9de370c712eb7a4969a73bafa">00079</a> <span class="preprocessor">#define LL_DBGMCU_TRACE_ASYNCH             DBGMCU_CR_TRACE_IOEN                            </span><span class="comment">/*!&lt; TRACE pin assignment for Asynchronous Mode */</span>
-<a name="l00080"></a><a class="code" href="group__SYSTEM__LL__EC__TRACE.html#ga81dc95f771bb2accbd82199bd629fbf6">00080</a> <span class="preprocessor">#define LL_DBGMCU_TRACE_SYNCH_SIZE1        (DBGMCU_CR_TRACE_IOEN | DBGMCU_CR_TRACE_MODE_0) </span><span class="comment">/*!&lt; TRACE pin assignment for Synchronous Mode with a TRACEDATA size of 1 */</span>
-<a name="l00081"></a><a class="code" href="group__SYSTEM__LL__EC__TRACE.html#ga4fcefc99079766a4eb25e61548e866c8">00081</a> <span class="preprocessor">#define LL_DBGMCU_TRACE_SYNCH_SIZE2        (DBGMCU_CR_TRACE_IOEN | DBGMCU_CR_TRACE_MODE_1) </span><span class="comment">/*!&lt; TRACE pin assignment for Synchronous Mode with a TRACEDATA size of 2 */</span>
-<a name="l00082"></a><a class="code" href="group__SYSTEM__LL__EC__TRACE.html#gaff0db126b0ec11df100181d198291c03">00082</a> <span class="preprocessor">#define LL_DBGMCU_TRACE_SYNCH_SIZE4        (DBGMCU_CR_TRACE_IOEN | DBGMCU_CR_TRACE_MODE)   </span><span class="comment">/*!&lt; TRACE pin assignment for Synchronous Mode with a TRACEDATA size of 4 */</span>
+<a name="l00078"></a><a class="code" href="group/group__SYSTEM__LL__EC__TRACE.html#ga1c12f4a70013ea20c5920bfd06c31df9">00078</a> <span class="preprocessor">#define LL_DBGMCU_TRACE_NONE               0x00000000U                                     </span><span class="comment">/*!&lt; TRACE pins not assigned (default state) */</span>
+<a name="l00079"></a><a class="code" href="group/group__SYSTEM__LL__EC__TRACE.html#gafcf137b9de370c712eb7a4969a73bafa">00079</a> <span class="preprocessor">#define LL_DBGMCU_TRACE_ASYNCH             DBGMCU_CR_TRACE_IOEN                            </span><span class="comment">/*!&lt; TRACE pin assignment for Asynchronous Mode */</span>
+<a name="l00080"></a><a class="code" href="group/group__SYSTEM__LL__EC__TRACE.html#ga81dc95f771bb2accbd82199bd629fbf6">00080</a> <span class="preprocessor">#define LL_DBGMCU_TRACE_SYNCH_SIZE1        (DBGMCU_CR_TRACE_IOEN | DBGMCU_CR_TRACE_MODE_0) </span><span class="comment">/*!&lt; TRACE pin assignment for Synchronous Mode with a TRACEDATA size of 1 */</span>
+<a name="l00081"></a><a class="code" href="group/group__SYSTEM__LL__EC__TRACE.html#ga4fcefc99079766a4eb25e61548e866c8">00081</a> <span class="preprocessor">#define LL_DBGMCU_TRACE_SYNCH_SIZE2        (DBGMCU_CR_TRACE_IOEN | DBGMCU_CR_TRACE_MODE_1) </span><span class="comment">/*!&lt; TRACE pin assignment for Synchronous Mode with a TRACEDATA size of 2 */</span>
+<a name="l00082"></a><a class="code" href="group/group__SYSTEM__LL__EC__TRACE.html#gaff0db126b0ec11df100181d198291c03">00082</a> <span class="preprocessor">#define LL_DBGMCU_TRACE_SYNCH_SIZE4        (DBGMCU_CR_TRACE_IOEN | DBGMCU_CR_TRACE_MODE)   </span><span class="comment">/*!&lt; TRACE pin assignment for Synchronous Mode with a TRACEDATA size of 4 */</span>
 <a name="l00083"></a>00083 <span class="comment">/**</span>
 <a name="l00084"></a>00084 <span class="comment">  * @}</span>
 <a name="l00085"></a>00085 <span class="comment">  */</span>
@@ -154,32 +154,32 @@
 <a name="l00087"></a>00087 <span class="comment">/** @defgroup SYSTEM_LL_EC_APB1_GRP1_STOP_IP DBGMCU APB1 GRP1 STOP IP</span>
 <a name="l00088"></a>00088 <span class="comment">  * @{</span>
 <a name="l00089"></a>00089 <span class="comment">  */</span>
-<a name="l00090"></a><a class="code" href="group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#gad11455bc3edbb4b148841527ab59f41a">00090</a> <span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_TIM2_STOP      DBGMCU_CR_DBG_TIM2_STOP          </span><span class="comment">/*!&lt; TIM2 counter stopped when core is halted */</span>
-<a name="l00091"></a><a class="code" href="group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#ga55fa989bcb95f0228d112753e1a5653a">00091</a> <span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_TIM3_STOP      DBGMCU_CR_DBG_TIM3_STOP          </span><span class="comment">/*!&lt; TIM3 counter stopped when core is halted */</span>
-<a name="l00092"></a><a class="code" href="group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#gadc97fe124e7db709f764e3006e1c2405">00092</a> <span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_TIM4_STOP      DBGMCU_CR_DBG_TIM4_STOP          </span><span class="comment">/*!&lt; TIM4 counter stopped when core is halted */</span>
+<a name="l00090"></a><a class="code" href="group/group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#gad11455bc3edbb4b148841527ab59f41a">00090</a> <span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_TIM2_STOP      DBGMCU_CR_DBG_TIM2_STOP          </span><span class="comment">/*!&lt; TIM2 counter stopped when core is halted */</span>
+<a name="l00091"></a><a class="code" href="group/group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#ga55fa989bcb95f0228d112753e1a5653a">00091</a> <span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_TIM3_STOP      DBGMCU_CR_DBG_TIM3_STOP          </span><span class="comment">/*!&lt; TIM3 counter stopped when core is halted */</span>
+<a name="l00092"></a><a class="code" href="group/group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#gadc97fe124e7db709f764e3006e1c2405">00092</a> <span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_TIM4_STOP      DBGMCU_CR_DBG_TIM4_STOP          </span><span class="comment">/*!&lt; TIM4 counter stopped when core is halted */</span>
 <a name="l00093"></a>00093 <span class="preprocessor">#if defined(DBGMCU_CR_DBG_TIM5_STOP)</span>
-<a name="l00094"></a><a class="code" href="group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#ga7145dda60caf2030c27767d85a1157ec">00094</a> <span class="preprocessor"></span><span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_TIM5_STOP      DBGMCU_CR_DBG_TIM5_STOP          </span><span class="comment">/*!&lt; TIM5 counter stopped when core is halted */</span>
+<a name="l00094"></a><a class="code" href="group/group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#ga7145dda60caf2030c27767d85a1157ec">00094</a> <span class="preprocessor"></span><span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_TIM5_STOP      DBGMCU_CR_DBG_TIM5_STOP          </span><span class="comment">/*!&lt; TIM5 counter stopped when core is halted */</span>
 <a name="l00095"></a>00095 <span class="preprocessor">#endif </span><span class="comment">/* DBGMCU_CR_DBG_TIM5_STOP */</span>
 <a name="l00096"></a>00096 <span class="preprocessor">#if defined(DBGMCU_CR_DBG_TIM6_STOP)</span>
-<a name="l00097"></a><a class="code" href="group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#gafa721901059d8428cd694228a60f21a5">00097</a> <span class="preprocessor"></span><span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_TIM6_STOP      DBGMCU_CR_DBG_TIM6_STOP          </span><span class="comment">/*!&lt; TIM6 counter stopped when core is halted */</span>
+<a name="l00097"></a><a class="code" href="group/group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#gafa721901059d8428cd694228a60f21a5">00097</a> <span class="preprocessor"></span><span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_TIM6_STOP      DBGMCU_CR_DBG_TIM6_STOP          </span><span class="comment">/*!&lt; TIM6 counter stopped when core is halted */</span>
 <a name="l00098"></a>00098 <span class="preprocessor">#endif </span><span class="comment">/* DBGMCU_CR_DBG_TIM6_STOP */</span>
 <a name="l00099"></a>00099 <span class="preprocessor">#if defined(DBGMCU_CR_DBG_TIM7_STOP)</span>
-<a name="l00100"></a><a class="code" href="group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#ga0e9fbd66ec0622443c6cc41c31d24390">00100</a> <span class="preprocessor"></span><span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_TIM7_STOP      DBGMCU_CR_DBG_TIM7_STOP          </span><span class="comment">/*!&lt; TIM7 counter stopped when core is halted */</span>
+<a name="l00100"></a><a class="code" href="group/group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#ga0e9fbd66ec0622443c6cc41c31d24390">00100</a> <span class="preprocessor"></span><span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_TIM7_STOP      DBGMCU_CR_DBG_TIM7_STOP          </span><span class="comment">/*!&lt; TIM7 counter stopped when core is halted */</span>
 <a name="l00101"></a>00101 <span class="preprocessor">#endif </span><span class="comment">/* DBGMCU_CR_DBG_TIM7_STOP */</span>
 <a name="l00102"></a>00102 <span class="preprocessor">#if defined(DBGMCU_CR_DBG_TIM12_STOP)</span>
-<a name="l00103"></a><a class="code" href="group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#ga0e9a1e766229121a6e7cd5000ea451cd">00103</a> <span class="preprocessor"></span><span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_TIM12_STOP     DBGMCU_CR_DBG_TIM12_STOP         </span><span class="comment">/*!&lt; TIM12 counter stopped when core is halted */</span>
+<a name="l00103"></a><a class="code" href="group/group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#ga0e9a1e766229121a6e7cd5000ea451cd">00103</a> <span class="preprocessor"></span><span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_TIM12_STOP     DBGMCU_CR_DBG_TIM12_STOP         </span><span class="comment">/*!&lt; TIM12 counter stopped when core is halted */</span>
 <a name="l00104"></a>00104 <span class="preprocessor">#endif </span><span class="comment">/* DBGMCU_CR_DBG_TIM12_STOP */</span>
 <a name="l00105"></a>00105 <span class="preprocessor">#if defined(DBGMCU_CR_DBG_TIM13_STOP)</span>
-<a name="l00106"></a><a class="code" href="group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#gace076062e65caac3efa0fadf56ff31b3">00106</a> <span class="preprocessor"></span><span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_TIM13_STOP     DBGMCU_CR_DBG_TIM13_STOP         </span><span class="comment">/*!&lt; TIM13 counter stopped when core is halted */</span>
+<a name="l00106"></a><a class="code" href="group/group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#gace076062e65caac3efa0fadf56ff31b3">00106</a> <span class="preprocessor"></span><span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_TIM13_STOP     DBGMCU_CR_DBG_TIM13_STOP         </span><span class="comment">/*!&lt; TIM13 counter stopped when core is halted */</span>
 <a name="l00107"></a>00107 <span class="preprocessor">#endif </span><span class="comment">/* DBGMCU_CR_DBG_TIM13_STOP */</span>
 <a name="l00108"></a>00108 <span class="preprocessor">#if defined(DBGMCU_CR_DBG_TIM14_STOP)</span>
-<a name="l00109"></a><a class="code" href="group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#gafdb7e655170f0accdb98b6e39667975c">00109</a> <span class="preprocessor"></span><span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_TIM14_STOP     DBGMCU_CR_DBG_TIM14_STOP         </span><span class="comment">/*!&lt; TIM14 counter stopped when core is halted */</span>
+<a name="l00109"></a><a class="code" href="group/group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#gafdb7e655170f0accdb98b6e39667975c">00109</a> <span class="preprocessor"></span><span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_TIM14_STOP     DBGMCU_CR_DBG_TIM14_STOP         </span><span class="comment">/*!&lt; TIM14 counter stopped when core is halted */</span>
 <a name="l00110"></a>00110 <span class="preprocessor">#endif </span><span class="comment">/* DBGMCU_CR_DBG_TIM14_STOP */</span>
-<a name="l00111"></a><a class="code" href="group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#gad024f8366ca0a125573fb25e6c3cb6db">00111</a> <span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_WWDG_STOP      DBGMCU_CR_DBG_WWDG_STOP          </span><span class="comment">/*!&lt; Debug Window Watchdog stopped when Core is halted */</span>
-<a name="l00112"></a><a class="code" href="group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#gadeef133afed17003b3e756f950ab552a">00112</a> <span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_IWDG_STOP      DBGMCU_CR_DBG_IWDG_STOP          </span><span class="comment">/*!&lt; Debug Independent Watchdog stopped when Core is halted */</span>
-<a name="l00113"></a><a class="code" href="group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#ga086390ab7059f3a51822d12149108a24">00113</a> <span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_I2C1_STOP      DBGMCU_CR_DBG_I2C1_SMBUS_TIMEOUT </span><span class="comment">/*!&lt; I2C1 SMBUS timeout mode stopped when Core is halted */</span>
+<a name="l00111"></a><a class="code" href="group/group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#gad024f8366ca0a125573fb25e6c3cb6db">00111</a> <span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_WWDG_STOP      DBGMCU_CR_DBG_WWDG_STOP          </span><span class="comment">/*!&lt; Debug Window Watchdog stopped when Core is halted */</span>
+<a name="l00112"></a><a class="code" href="group/group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#gadeef133afed17003b3e756f950ab552a">00112</a> <span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_IWDG_STOP      DBGMCU_CR_DBG_IWDG_STOP          </span><span class="comment">/*!&lt; Debug Independent Watchdog stopped when Core is halted */</span>
+<a name="l00113"></a><a class="code" href="group/group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#ga086390ab7059f3a51822d12149108a24">00113</a> <span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_I2C1_STOP      DBGMCU_CR_DBG_I2C1_SMBUS_TIMEOUT </span><span class="comment">/*!&lt; I2C1 SMBUS timeout mode stopped when Core is halted */</span>
 <a name="l00114"></a>00114 <span class="preprocessor">#if defined(DBGMCU_CR_DBG_I2C2_SMBUS_TIMEOUT)</span>
-<a name="l00115"></a><a class="code" href="group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#ga41503eda717c2dead2eb5c083af032b1">00115</a> <span class="preprocessor"></span><span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_I2C2_STOP      DBGMCU_CR_DBG_I2C2_SMBUS_TIMEOUT </span><span class="comment">/*!&lt; I2C2 SMBUS timeout mode stopped when Core is halted */</span>
+<a name="l00115"></a><a class="code" href="group/group__SYSTEM__LL__EC__APB1__GRP1__STOP__IP.html#ga41503eda717c2dead2eb5c083af032b1">00115</a> <span class="preprocessor"></span><span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_I2C2_STOP      DBGMCU_CR_DBG_I2C2_SMBUS_TIMEOUT </span><span class="comment">/*!&lt; I2C2 SMBUS timeout mode stopped when Core is halted */</span>
 <a name="l00116"></a>00116 <span class="preprocessor">#endif </span><span class="comment">/* DBGMCU_CR_DBG_I2C2_SMBUS_TIMEOUT */</span>
 <a name="l00117"></a>00117 <span class="preprocessor">#if defined(DBGMCU_CR_DBG_CAN1_STOP)</span>
 <a name="l00118"></a>00118 <span class="preprocessor"></span><span class="preprocessor">#define LL_DBGMCU_APB1_GRP1_CAN1_STOP      DBGMCU_CR_DBG_CAN1_STOP          </span><span class="comment">/*!&lt; CAN1 debug stopped when Core is halted  */</span>
@@ -194,7 +194,7 @@
 <a name="l00127"></a>00127 <span class="comment">/** @defgroup SYSTEM_LL_EC_APB2_GRP1_STOP_IP DBGMCU APB2 GRP1 STOP IP</span>
 <a name="l00128"></a>00128 <span class="comment">  * @{</span>
 <a name="l00129"></a>00129 <span class="comment">  */</span>
-<a name="l00130"></a><a class="code" href="group__SYSTEM__LL__EC__APB2__GRP1__STOP__IP.html#ga459e7902333c747b5331998e09a09247">00130</a> <span class="preprocessor">#define LL_DBGMCU_APB2_GRP1_TIM1_STOP      DBGMCU_CR_DBG_TIM1_STOP   </span><span class="comment">/*!&lt; TIM1 counter stopped when core is halted */</span>
+<a name="l00130"></a><a class="code" href="group/group__SYSTEM__LL__EC__APB2__GRP1__STOP__IP.html#ga459e7902333c747b5331998e09a09247">00130</a> <span class="preprocessor">#define LL_DBGMCU_APB2_GRP1_TIM1_STOP      DBGMCU_CR_DBG_TIM1_STOP   </span><span class="comment">/*!&lt; TIM1 counter stopped when core is halted */</span>
 <a name="l00131"></a>00131 <span class="preprocessor">#if defined(DBGMCU_CR_DBG_TIM8_STOP)</span>
 <a name="l00132"></a>00132 <span class="preprocessor"></span><span class="preprocessor">#define LL_DBGMCU_APB2_GRP1_TIM8_STOP      DBGMCU_CR_DBG_TIM8_STOP   </span><span class="comment">/*!&lt; TIM8 counter stopped when core is halted */</span>
 <a name="l00133"></a>00133 <span class="preprocessor">#endif </span><span class="comment">/* DBGMCU_CR_DBG_CAN1_STOP */</span>
@@ -208,13 +208,13 @@
 <a name="l00141"></a>00141 <span class="preprocessor"></span><span class="preprocessor">#define LL_DBGMCU_APB2_GRP1_TIM11_STOP     DBGMCU_CR_DBG_TIM11_STOP   </span><span class="comment">/*!&lt; TIM11 counter stopped when core is halted */</span>
 <a name="l00142"></a>00142 <span class="preprocessor">#endif </span><span class="comment">/* DBGMCU_CR_DBG_TIM11_STOP */</span>
 <a name="l00143"></a>00143 <span class="preprocessor">#if defined(DBGMCU_CR_DBG_TIM15_STOP)</span>
-<a name="l00144"></a><a class="code" href="group__SYSTEM__LL__EC__APB2__GRP1__STOP__IP.html#ga6483fd1b431081fa2825c693bb1faf6c">00144</a> <span class="preprocessor"></span><span class="preprocessor">#define LL_DBGMCU_APB2_GRP1_TIM15_STOP     DBGMCU_CR_DBG_TIM15_STOP   </span><span class="comment">/*!&lt; TIM15 counter stopped when core is halted */</span>
+<a name="l00144"></a><a class="code" href="group/group__SYSTEM__LL__EC__APB2__GRP1__STOP__IP.html#ga6483fd1b431081fa2825c693bb1faf6c">00144</a> <span class="preprocessor"></span><span class="preprocessor">#define LL_DBGMCU_APB2_GRP1_TIM15_STOP     DBGMCU_CR_DBG_TIM15_STOP   </span><span class="comment">/*!&lt; TIM15 counter stopped when core is halted */</span>
 <a name="l00145"></a>00145 <span class="preprocessor">#endif </span><span class="comment">/* DBGMCU_CR_DBG_TIM15_STOP */</span>
 <a name="l00146"></a>00146 <span class="preprocessor">#if defined(DBGMCU_CR_DBG_TIM16_STOP)</span>
-<a name="l00147"></a><a class="code" href="group__SYSTEM__LL__EC__APB2__GRP1__STOP__IP.html#gace486eefcd94bf0a1828494c5e1c68cc">00147</a> <span class="preprocessor"></span><span class="preprocessor">#define LL_DBGMCU_APB2_GRP1_TIM16_STOP     DBGMCU_CR_DBG_TIM16_STOP   </span><span class="comment">/*!&lt; TIM16 counter stopped when core is halted */</span>
+<a name="l00147"></a><a class="code" href="group/group__SYSTEM__LL__EC__APB2__GRP1__STOP__IP.html#gace486eefcd94bf0a1828494c5e1c68cc">00147</a> <span class="preprocessor"></span><span class="preprocessor">#define LL_DBGMCU_APB2_GRP1_TIM16_STOP     DBGMCU_CR_DBG_TIM16_STOP   </span><span class="comment">/*!&lt; TIM16 counter stopped when core is halted */</span>
 <a name="l00148"></a>00148 <span class="preprocessor">#endif </span><span class="comment">/* DBGMCU_CR_DBG_TIM16_STOP */</span>
 <a name="l00149"></a>00149 <span class="preprocessor">#if defined(DBGMCU_CR_DBG_TIM17_STOP)</span>
-<a name="l00150"></a><a class="code" href="group__SYSTEM__LL__EC__APB2__GRP1__STOP__IP.html#ga1feb30bfa22085e6505d0e70d5999b8f">00150</a> <span class="preprocessor"></span><span class="preprocessor">#define LL_DBGMCU_APB2_GRP1_TIM17_STOP     DBGMCU_CR_DBG_TIM17_STOP   </span><span class="comment">/*!&lt; TIM17 counter stopped when core is halted */</span>
+<a name="l00150"></a><a class="code" href="group/group__SYSTEM__LL__EC__APB2__GRP1__STOP__IP.html#ga1feb30bfa22085e6505d0e70d5999b8f">00150</a> <span class="preprocessor"></span><span class="preprocessor">#define LL_DBGMCU_APB2_GRP1_TIM17_STOP     DBGMCU_CR_DBG_TIM17_STOP   </span><span class="comment">/*!&lt; TIM17 counter stopped when core is halted */</span>
 <a name="l00151"></a>00151 <span class="preprocessor">#endif </span><span class="comment">/* DBGMCU_CR_DBG_TIM17_STOP */</span>
 <a name="l00152"></a>00152 <span class="comment">/**</span>
 <a name="l00153"></a>00153 <span class="comment">  * @}</span>
@@ -260,7 +260,7 @@
 <a name="l00193"></a>00193 <span class="comment">  * @rmtoll DBGMCU_IDCODE DEV_ID        LL_DBGMCU_GetDeviceID</span>
 <a name="l00194"></a>00194 <span class="comment">  * @retval Values between Min_Data=0x00 and Max_Data=0xFFF</span>
 <a name="l00195"></a>00195 <span class="comment">  */</span>
-<a name="l00196"></a><a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#ga8199b3960aade9d3b7682a369e035a4c">00196</a> __STATIC_INLINE uint32_t <a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#ga8199b3960aade9d3b7682a369e035a4c" title="Return the device identifier.">LL_DBGMCU_GetDeviceID</a>(<span class="keywordtype">void</span>)
+<a name="l00196"></a><a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#ga8199b3960aade9d3b7682a369e035a4c">00196</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#ga8199b3960aade9d3b7682a369e035a4c" title="Return the device identifier.">LL_DBGMCU_GetDeviceID</a>(<span class="keywordtype">void</span>)
 <a name="l00197"></a>00197 {
 <a name="l00198"></a>00198   <span class="keywordflow">return</span> (uint32_t)(READ_BIT(DBGMCU-&gt;IDCODE, DBGMCU_IDCODE_DEV_ID));
 <a name="l00199"></a>00199 }
@@ -276,7 +276,7 @@
 <a name="l00209"></a>00209 <span class="comment">  * @rmtoll DBGMCU_IDCODE REV_ID        LL_DBGMCU_GetRevisionID</span>
 <a name="l00210"></a>00210 <span class="comment">  * @retval Values between Min_Data=0x00 and Max_Data=0xFFFF</span>
 <a name="l00211"></a>00211 <span class="comment">  */</span>
-<a name="l00212"></a><a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#ga933646724791647b477bdb8172adc244">00212</a> __STATIC_INLINE uint32_t <a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#ga933646724791647b477bdb8172adc244" title="Return the device revision identifier.">LL_DBGMCU_GetRevisionID</a>(<span class="keywordtype">void</span>)
+<a name="l00212"></a><a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#ga933646724791647b477bdb8172adc244">00212</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#ga933646724791647b477bdb8172adc244" title="Return the device revision identifier.">LL_DBGMCU_GetRevisionID</a>(<span class="keywordtype">void</span>)
 <a name="l00213"></a>00213 {
 <a name="l00214"></a>00214   <span class="keywordflow">return</span> (uint32_t)(READ_BIT(DBGMCU-&gt;IDCODE, DBGMCU_IDCODE_REV_ID) &gt;&gt; DBGMCU_IDCODE_REV_ID_Pos);
 <a name="l00215"></a>00215 }
@@ -286,7 +286,7 @@
 <a name="l00219"></a>00219 <span class="comment">  * @rmtoll DBGMCU_CR    DBG_SLEEP     LL_DBGMCU_EnableDBGSleepMode</span>
 <a name="l00220"></a>00220 <span class="comment">  * @retval None</span>
 <a name="l00221"></a>00221 <span class="comment">  */</span>
-<a name="l00222"></a><a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#ga4e20c89f058489907ab28523dadc8810">00222</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#ga4e20c89f058489907ab28523dadc8810" title="Enable the Debug Module during SLEEP mode.">LL_DBGMCU_EnableDBGSleepMode</a>(<span class="keywordtype">void</span>)
+<a name="l00222"></a><a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#ga4e20c89f058489907ab28523dadc8810">00222</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#ga4e20c89f058489907ab28523dadc8810" title="Enable the Debug Module during SLEEP mode.">LL_DBGMCU_EnableDBGSleepMode</a>(<span class="keywordtype">void</span>)
 <a name="l00223"></a>00223 {
 <a name="l00224"></a>00224   SET_BIT(DBGMCU-&gt;CR, DBGMCU_CR_DBG_SLEEP);
 <a name="l00225"></a>00225 }
@@ -296,7 +296,7 @@
 <a name="l00229"></a>00229 <span class="comment">  * @rmtoll DBGMCU_CR    DBG_SLEEP     LL_DBGMCU_DisableDBGSleepMode</span>
 <a name="l00230"></a>00230 <span class="comment">  * @retval None</span>
 <a name="l00231"></a>00231 <span class="comment">  */</span>
-<a name="l00232"></a><a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#gaa7d552f88c3e8a81459559ee342e7281">00232</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#gaa7d552f88c3e8a81459559ee342e7281" title="Disable the Debug Module during SLEEP mode.">LL_DBGMCU_DisableDBGSleepMode</a>(<span class="keywordtype">void</span>)
+<a name="l00232"></a><a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#gaa7d552f88c3e8a81459559ee342e7281">00232</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#gaa7d552f88c3e8a81459559ee342e7281" title="Disable the Debug Module during SLEEP mode.">LL_DBGMCU_DisableDBGSleepMode</a>(<span class="keywordtype">void</span>)
 <a name="l00233"></a>00233 {
 <a name="l00234"></a>00234   CLEAR_BIT(DBGMCU-&gt;CR, DBGMCU_CR_DBG_SLEEP);
 <a name="l00235"></a>00235 }
@@ -306,7 +306,7 @@
 <a name="l00239"></a>00239 <span class="comment">  * @rmtoll DBGMCU_CR    DBG_STOP      LL_DBGMCU_EnableDBGStopMode</span>
 <a name="l00240"></a>00240 <span class="comment">  * @retval None</span>
 <a name="l00241"></a>00241 <span class="comment">  */</span>
-<a name="l00242"></a><a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#ga9d2f820035039791534902618a542609">00242</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#ga9d2f820035039791534902618a542609" title="Enable the Debug Module during STOP mode.">LL_DBGMCU_EnableDBGStopMode</a>(<span class="keywordtype">void</span>)
+<a name="l00242"></a><a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#ga9d2f820035039791534902618a542609">00242</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#ga9d2f820035039791534902618a542609" title="Enable the Debug Module during STOP mode.">LL_DBGMCU_EnableDBGStopMode</a>(<span class="keywordtype">void</span>)
 <a name="l00243"></a>00243 {
 <a name="l00244"></a>00244   SET_BIT(DBGMCU-&gt;CR, DBGMCU_CR_DBG_STOP);
 <a name="l00245"></a>00245 }
@@ -316,7 +316,7 @@
 <a name="l00249"></a>00249 <span class="comment">  * @rmtoll DBGMCU_CR    DBG_STOP      LL_DBGMCU_DisableDBGStopMode</span>
 <a name="l00250"></a>00250 <span class="comment">  * @retval None</span>
 <a name="l00251"></a>00251 <span class="comment">  */</span>
-<a name="l00252"></a><a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#ga61d1b6f9de665b82c34a58c3b8b129fd">00252</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#ga61d1b6f9de665b82c34a58c3b8b129fd" title="Disable the Debug Module during STOP mode.">LL_DBGMCU_DisableDBGStopMode</a>(<span class="keywordtype">void</span>)
+<a name="l00252"></a><a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#ga61d1b6f9de665b82c34a58c3b8b129fd">00252</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#ga61d1b6f9de665b82c34a58c3b8b129fd" title="Disable the Debug Module during STOP mode.">LL_DBGMCU_DisableDBGStopMode</a>(<span class="keywordtype">void</span>)
 <a name="l00253"></a>00253 {
 <a name="l00254"></a>00254   CLEAR_BIT(DBGMCU-&gt;CR, DBGMCU_CR_DBG_STOP);
 <a name="l00255"></a>00255 }
@@ -326,7 +326,7 @@
 <a name="l00259"></a>00259 <span class="comment">  * @rmtoll DBGMCU_CR    DBG_STANDBY   LL_DBGMCU_EnableDBGStandbyMode</span>
 <a name="l00260"></a>00260 <span class="comment">  * @retval None</span>
 <a name="l00261"></a>00261 <span class="comment">  */</span>
-<a name="l00262"></a><a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#ga2d8b13f41a5ed8731d3cf8148d8d999b">00262</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#ga2d8b13f41a5ed8731d3cf8148d8d999b" title="Enable the Debug Module during STANDBY mode.">LL_DBGMCU_EnableDBGStandbyMode</a>(<span class="keywordtype">void</span>)
+<a name="l00262"></a><a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#ga2d8b13f41a5ed8731d3cf8148d8d999b">00262</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#ga2d8b13f41a5ed8731d3cf8148d8d999b" title="Enable the Debug Module during STANDBY mode.">LL_DBGMCU_EnableDBGStandbyMode</a>(<span class="keywordtype">void</span>)
 <a name="l00263"></a>00263 {
 <a name="l00264"></a>00264   SET_BIT(DBGMCU-&gt;CR, DBGMCU_CR_DBG_STANDBY);
 <a name="l00265"></a>00265 }
@@ -336,7 +336,7 @@
 <a name="l00269"></a>00269 <span class="comment">  * @rmtoll DBGMCU_CR    DBG_STANDBY   LL_DBGMCU_DisableDBGStandbyMode</span>
 <a name="l00270"></a>00270 <span class="comment">  * @retval None</span>
 <a name="l00271"></a>00271 <span class="comment">  */</span>
-<a name="l00272"></a><a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#ga78196523cc335cdfe64b472821de1569">00272</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#ga78196523cc335cdfe64b472821de1569" title="Disable the Debug Module during STANDBY mode.">LL_DBGMCU_DisableDBGStandbyMode</a>(<span class="keywordtype">void</span>)
+<a name="l00272"></a><a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#ga78196523cc335cdfe64b472821de1569">00272</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#ga78196523cc335cdfe64b472821de1569" title="Disable the Debug Module during STANDBY mode.">LL_DBGMCU_DisableDBGStandbyMode</a>(<span class="keywordtype">void</span>)
 <a name="l00273"></a>00273 {
 <a name="l00274"></a>00274   CLEAR_BIT(DBGMCU-&gt;CR, DBGMCU_CR_DBG_STANDBY);
 <a name="l00275"></a>00275 }
@@ -353,7 +353,7 @@
 <a name="l00286"></a>00286 <span class="comment">  *         @arg @ref LL_DBGMCU_TRACE_SYNCH_SIZE4</span>
 <a name="l00287"></a>00287 <span class="comment">  * @retval None</span>
 <a name="l00288"></a>00288 <span class="comment">  */</span>
-<a name="l00289"></a><a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#ga54edf499a7cda232f04e97f9939fbeb5">00289</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#ga54edf499a7cda232f04e97f9939fbeb5" title="Set Trace pin assignment control.">LL_DBGMCU_SetTracePinAssignment</a>(uint32_t PinAssignment)
+<a name="l00289"></a><a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#ga54edf499a7cda232f04e97f9939fbeb5">00289</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#ga54edf499a7cda232f04e97f9939fbeb5" title="Set Trace pin assignment control.">LL_DBGMCU_SetTracePinAssignment</a>(uint32_t PinAssignment)
 <a name="l00290"></a>00290 {
 <a name="l00291"></a>00291   MODIFY_REG(DBGMCU-&gt;CR, DBGMCU_CR_TRACE_IOEN | DBGMCU_CR_TRACE_MODE, PinAssignment);
 <a name="l00292"></a>00292 }
@@ -369,7 +369,7 @@
 <a name="l00302"></a>00302 <span class="comment">  *         @arg @ref LL_DBGMCU_TRACE_SYNCH_SIZE2</span>
 <a name="l00303"></a>00303 <span class="comment">  *         @arg @ref LL_DBGMCU_TRACE_SYNCH_SIZE4</span>
 <a name="l00304"></a>00304 <span class="comment">  */</span>
-<a name="l00305"></a><a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#gac3d7b690f0f3ce0ce09479c48382c72b">00305</a> __STATIC_INLINE uint32_t <a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#gac3d7b690f0f3ce0ce09479c48382c72b" title="Get Trace pin assignment control.">LL_DBGMCU_GetTracePinAssignment</a>(<span class="keywordtype">void</span>)
+<a name="l00305"></a><a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#gac3d7b690f0f3ce0ce09479c48382c72b">00305</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#gac3d7b690f0f3ce0ce09479c48382c72b" title="Get Trace pin assignment control.">LL_DBGMCU_GetTracePinAssignment</a>(<span class="keywordtype">void</span>)
 <a name="l00306"></a>00306 {
 <a name="l00307"></a>00307   <span class="keywordflow">return</span> (uint32_t)(READ_BIT(DBGMCU-&gt;CR, DBGMCU_CR_TRACE_IOEN | DBGMCU_CR_TRACE_MODE));
 <a name="l00308"></a>00308 }
@@ -412,7 +412,7 @@
 <a name="l00345"></a>00345 <span class="comment">  *         (*) value not defined in all devices.</span>
 <a name="l00346"></a>00346 <span class="comment">  * @retval None</span>
 <a name="l00347"></a>00347 <span class="comment">  */</span>
-<a name="l00348"></a><a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#ga369d05c75fbfd100ec7b5b214c82fa4b">00348</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#ga369d05c75fbfd100ec7b5b214c82fa4b" title="Freeze APB1 peripherals (group1 peripherals)">LL_DBGMCU_APB1_GRP1_FreezePeriph</a>(uint32_t Periphs)
+<a name="l00348"></a><a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#ga369d05c75fbfd100ec7b5b214c82fa4b">00348</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#ga369d05c75fbfd100ec7b5b214c82fa4b" title="Freeze APB1 peripherals (group1 peripherals)">LL_DBGMCU_APB1_GRP1_FreezePeriph</a>(uint32_t Periphs)
 <a name="l00349"></a>00349 {
 <a name="l00350"></a>00350   SET_BIT(DBGMCU-&gt;CR, Periphs);
 <a name="l00351"></a>00351 }
@@ -456,7 +456,7 @@
 <a name="l00389"></a>00389 <span class="comment">  *         (*) value not defined in all devices.</span>
 <a name="l00390"></a>00390 <span class="comment">  * @retval None</span>
 <a name="l00391"></a>00391 <span class="comment">  */</span>
-<a name="l00392"></a><a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#ga214c02a808ab1fdbf1287920c9c15830">00392</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#ga214c02a808ab1fdbf1287920c9c15830" title="Unfreeze APB1 peripherals (group1 peripherals)">LL_DBGMCU_APB1_GRP1_UnFreezePeriph</a>(uint32_t Periphs)
+<a name="l00392"></a><a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#ga214c02a808ab1fdbf1287920c9c15830">00392</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#ga214c02a808ab1fdbf1287920c9c15830" title="Unfreeze APB1 peripherals (group1 peripherals)">LL_DBGMCU_APB1_GRP1_UnFreezePeriph</a>(uint32_t Periphs)
 <a name="l00393"></a>00393 {
 <a name="l00394"></a>00394   CLEAR_BIT(DBGMCU-&gt;CR, Periphs);
 <a name="l00395"></a>00395 }
@@ -484,7 +484,7 @@
 <a name="l00417"></a>00417 <span class="comment">  *         (*) value not defined in all devices.</span>
 <a name="l00418"></a>00418 <span class="comment">  * @retval None</span>
 <a name="l00419"></a>00419 <span class="comment">  */</span>
-<a name="l00420"></a><a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#ga62ece5b43be41131bf070780573e22b0">00420</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#ga62ece5b43be41131bf070780573e22b0" title="Freeze APB2 peripherals.">LL_DBGMCU_APB2_GRP1_FreezePeriph</a>(uint32_t Periphs)
+<a name="l00420"></a><a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#ga62ece5b43be41131bf070780573e22b0">00420</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#ga62ece5b43be41131bf070780573e22b0" title="Freeze APB2 peripherals.">LL_DBGMCU_APB2_GRP1_FreezePeriph</a>(uint32_t Periphs)
 <a name="l00421"></a>00421 {
 <a name="l00422"></a>00422   SET_BIT(DBGMCU-&gt;CR, Periphs);
 <a name="l00423"></a>00423 }
@@ -512,7 +512,7 @@
 <a name="l00445"></a>00445 <span class="comment">  *         (*) value not defined in all devices.</span>
 <a name="l00446"></a>00446 <span class="comment">  * @retval None</span>
 <a name="l00447"></a>00447 <span class="comment">  */</span>
-<a name="l00448"></a><a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#gade2423ecb2514974136a87894a0487ae">00448</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__SYSTEM__LL__EF__DBGMCU.html#gade2423ecb2514974136a87894a0487ae" title="Unfreeze APB2 peripherals.">LL_DBGMCU_APB2_GRP1_UnFreezePeriph</a>(uint32_t Periphs)
+<a name="l00448"></a><a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#gade2423ecb2514974136a87894a0487ae">00448</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__SYSTEM__LL__EF__DBGMCU.html#gade2423ecb2514974136a87894a0487ae" title="Unfreeze APB2 peripherals.">LL_DBGMCU_APB2_GRP1_UnFreezePeriph</a>(uint32_t Periphs)
 <a name="l00449"></a>00449 {
 <a name="l00450"></a>00450   CLEAR_BIT(DBGMCU-&gt;CR, Periphs);
 <a name="l00451"></a>00451 }<span class="comment"></span>
@@ -588,7 +588,7 @@
 <a name="l00521"></a>00521 <span class="comment">  * @rmtoll FLASH_ACR    HLFCYA        LL_FLASH_EnableHalfCycleAccess</span>
 <a name="l00522"></a>00522 <span class="comment">  * @retval None</span>
 <a name="l00523"></a>00523 <span class="comment">  */</span>
-<a name="l00524"></a><a class="code" href="group__SYSTEM__LL__Exported__Functions.html#gadd64bd8e27822c22ef06603e29a3f25d">00524</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__SYSTEM__LL__Exported__Functions.html#gadd64bd8e27822c22ef06603e29a3f25d" title="Enable Flash Half Cycle Access.">LL_FLASH_EnableHalfCycleAccess</a>(<span class="keywordtype">void</span>)
+<a name="l00524"></a><a class="code" href="group/group__SYSTEM__LL__Exported__Functions.html#gadd64bd8e27822c22ef06603e29a3f25d">00524</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__SYSTEM__LL__Exported__Functions.html#gadd64bd8e27822c22ef06603e29a3f25d" title="Enable Flash Half Cycle Access.">LL_FLASH_EnableHalfCycleAccess</a>(<span class="keywordtype">void</span>)
 <a name="l00525"></a>00525 {
 <a name="l00526"></a>00526   SET_BIT(FLASH-&gt;ACR, FLASH_ACR_HLFCYA);
 <a name="l00527"></a>00527 }
@@ -598,7 +598,7 @@
 <a name="l00531"></a>00531 <span class="comment">  * @rmtoll FLASH_ACR    HLFCYA        LL_FLASH_DisableHalfCycleAccess</span>
 <a name="l00532"></a>00532 <span class="comment">  * @retval None</span>
 <a name="l00533"></a>00533 <span class="comment">  */</span>
-<a name="l00534"></a><a class="code" href="group__SYSTEM__LL__Exported__Functions.html#ga0cd3c15de8fc703b2b8555f8a8530163">00534</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__SYSTEM__LL__Exported__Functions.html#ga0cd3c15de8fc703b2b8555f8a8530163" title="Disable Flash Half Cycle Access.">LL_FLASH_DisableHalfCycleAccess</a>(<span class="keywordtype">void</span>)
+<a name="l00534"></a><a class="code" href="group/group__SYSTEM__LL__Exported__Functions.html#ga0cd3c15de8fc703b2b8555f8a8530163">00534</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__SYSTEM__LL__Exported__Functions.html#ga0cd3c15de8fc703b2b8555f8a8530163" title="Disable Flash Half Cycle Access.">LL_FLASH_DisableHalfCycleAccess</a>(<span class="keywordtype">void</span>)
 <a name="l00535"></a>00535 {
 <a name="l00536"></a>00536   CLEAR_BIT(FLASH-&gt;ACR, FLASH_ACR_HLFCYA);
 <a name="l00537"></a>00537 }
@@ -608,7 +608,7 @@
 <a name="l00541"></a>00541 <span class="comment">  * @rmtoll FLASH_ACR    HLFCYA        LL_FLASH_IsHalfCycleAccessEnabled</span>
 <a name="l00542"></a>00542 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l00543"></a>00543 <span class="comment">  */</span>
-<a name="l00544"></a><a class="code" href="group__SYSTEM__LL__Exported__Functions.html#gafccb01eaca3cfa989261d0f5b1cb15a3">00544</a> __STATIC_INLINE uint32_t <a class="code" href="group__SYSTEM__LL__Exported__Functions.html#gafccb01eaca3cfa989261d0f5b1cb15a3" title="Check if Flash Half Cycle Access is enabled or not.">LL_FLASH_IsHalfCycleAccessEnabled</a>(<span class="keywordtype">void</span>)
+<a name="l00544"></a><a class="code" href="group/group__SYSTEM__LL__Exported__Functions.html#gafccb01eaca3cfa989261d0f5b1cb15a3">00544</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__SYSTEM__LL__Exported__Functions.html#gafccb01eaca3cfa989261d0f5b1cb15a3" title="Check if Flash Half Cycle Access is enabled or not.">LL_FLASH_IsHalfCycleAccessEnabled</a>(<span class="keywordtype">void</span>)
 <a name="l00545"></a>00545 {
 <a name="l00546"></a>00546   <span class="keywordflow">return</span> (READ_BIT(FLASH-&gt;ACR, FLASH_ACR_HLFCYA) == (FLASH_ACR_HLFCYA));
 <a name="l00547"></a>00547 }

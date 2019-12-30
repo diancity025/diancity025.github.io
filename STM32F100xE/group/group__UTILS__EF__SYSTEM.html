@@ -51,7 +51,7 @@
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">SYSTEM</div>  </div>
-<div class="ingroups"><a class="el" href="group__UTILS__LL__Exported__Functions.html">UTILS Exported Functions</a></div></div><!--header-->
+<div class="ingroups"><a class="el" href="group/group__UTILS__LL__Exported__Functions.html">UTILS Exported Functions</a></div></div><!--header-->
 <div class="contents">
 
 <p>System Configuration functions.  
@@ -59,11 +59,11 @@
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UTILS__EF__SYSTEM.html#ga5af902d59c4c2d9dc5e189df0bc71ecd">LL_SetSystemCoreClock</a> (uint32_t HCLKFrequency)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UTILS__EF__SYSTEM.html#ga5af902d59c4c2d9dc5e189df0bc71ecd">LL_SetSystemCoreClock</a> (uint32_t HCLKFrequency)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This function sets directly SystemCoreClock CMSIS variable.  <a href="#ga5af902d59c4c2d9dc5e189df0bc71ecd"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">ErrorStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UTILS__EF__SYSTEM.html#ga7ada5e4210f6ef80ef9f55bf9dd048c6">LL_PLL_ConfigSystemClock_HSI</a> (<a class="el" href="structLL__UTILS__PLLInitTypeDef.html">LL_UTILS_PLLInitTypeDef</a> *UTILS_PLLInitStruct, <a class="el" href="structLL__UTILS__ClkInitTypeDef.html">LL_UTILS_ClkInitTypeDef</a> *UTILS_ClkInitStruct)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">ErrorStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UTILS__EF__SYSTEM.html#ga7ada5e4210f6ef80ef9f55bf9dd048c6">LL_PLL_ConfigSystemClock_HSI</a> (<a class="el" href="structLL__UTILS__PLLInitTypeDef.html">LL_UTILS_PLLInitTypeDef</a> *UTILS_PLLInitStruct, <a class="el" href="structLL__UTILS__ClkInitTypeDef.html">LL_UTILS_ClkInitTypeDef</a> *UTILS_ClkInitStruct)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This function configures system clock with HSI as clock source of the PLL.  <a href="#ga7ada5e4210f6ef80ef9f55bf9dd048c6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">ErrorStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UTILS__EF__SYSTEM.html#gaf6c8553d03464d4646b63321b97d25e2">LL_PLL_ConfigSystemClock_HSE</a> (uint32_t HSEFrequency, uint32_t HSEBypass, <a class="el" href="structLL__UTILS__PLLInitTypeDef.html">LL_UTILS_PLLInitTypeDef</a> *UTILS_PLLInitStruct, <a class="el" href="structLL__UTILS__ClkInitTypeDef.html">LL_UTILS_ClkInitTypeDef</a> *UTILS_ClkInitStruct)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">ErrorStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UTILS__EF__SYSTEM.html#gaf6c8553d03464d4646b63321b97d25e2">LL_PLL_ConfigSystemClock_HSE</a> (uint32_t HSEFrequency, uint32_t HSEBypass, <a class="el" href="structLL__UTILS__PLLInitTypeDef.html">LL_UTILS_PLLInitTypeDef</a> *UTILS_PLLInitStruct, <a class="el" href="structLL__UTILS__ClkInitTypeDef.html">LL_UTILS_ClkInitTypeDef</a> *UTILS_ClkInitStruct)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This function configures system clock with HSE as clock source of the PLL.  <a href="#gaf6c8553d03464d4646b63321b97d25e2"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
@@ -82,7 +82,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ErrorStatus <a class="el" href="group__UTILS__EF__SYSTEM.html#gaf6c8553d03464d4646b63321b97d25e2">LL_PLL_ConfigSystemClock_HSE</a> </td>
+          <td class="memname">ErrorStatus <a class="el" href="group/group__UTILS__EF__SYSTEM.html#gaf6c8553d03464d4646b63321b97d25e2">LL_PLL_ConfigSystemClock_HSE</a> </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>HSEFrequency</em>, </td>
@@ -120,7 +120,7 @@ Functions</h2></td></tr>
 Function is based on the following formula:<ul>
 <li>PLL output frequency = ((HSI frequency / PREDIV) * PLLMUL)</li>
 <li>PREDIV: Set to 2 for few devices</li>
-<li>PLLMUL: The application software must set correctly the PLL multiplication factor to not exceed <a class="el" href="group__UTILS__LL__Private__Constants.html#ga3edafc754826e07341fecc87bf2c9a39">UTILS_PLL_OUTPUT_MAX</a> </li>
+<li>PLLMUL: The application software must set correctly the PLL multiplication factor to not exceed <a class="el" href="group/group__UTILS__LL__Private__Constants.html#ga3edafc754826e07341fecc87bf2c9a39">UTILS_PLL_OUTPUT_MAX</a> </li>
 </ul>
 </dd>
 <dd>
@@ -129,8 +129,8 @@ FLASH latency can be modified through this function. </dd></dl>
   <table class="params">
     <tr><td class="paramname">HSEFrequency</td><td>Value between Min_Data = RCC_HSE_MIN and Max_Data = RCC_HSE_MAX </td></tr>
     <tr><td class="paramname">HSEBypass</td><td>This parameter can be one of the following values: <ul>
-<li><a class="el" href="group__UTILS__EC__HSE__BYPASS.html#ga2053b398a3829ad616af6f1a732dbdd4">LL_UTILS_HSEBYPASS_ON</a> </li>
-<li><a class="el" href="group__UTILS__EC__HSE__BYPASS.html#ga4aab0968739934c6560805bcf222e1fe">LL_UTILS_HSEBYPASS_OFF</a> </li>
+<li><a class="el" href="group/group__UTILS__EC__HSE__BYPASS.html#ga2053b398a3829ad616af6f1a732dbdd4">LL_UTILS_HSEBYPASS_ON</a> </li>
+<li><a class="el" href="group/group__UTILS__EC__HSE__BYPASS.html#ga4aab0968739934c6560805bcf222e1fe">LL_UTILS_HSEBYPASS_OFF</a> </li>
 </ul>
 </td></tr>
     <tr><td class="paramname">UTILS_PLLInitStruct</td><td>pointer to a <a class="el" href="structLL__UTILS__PLLInitTypeDef.html">LL_UTILS_PLLInitTypeDef</a> structure that contains the configuration information for the PLL. </td></tr>
@@ -160,7 +160,7 @@ FLASH latency can be modified through this function. </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ErrorStatus <a class="el" href="group__UTILS__EF__SYSTEM.html#ga7ada5e4210f6ef80ef9f55bf9dd048c6">LL_PLL_ConfigSystemClock_HSI</a> </td>
+          <td class="memname">ErrorStatus <a class="el" href="group/group__UTILS__EF__SYSTEM.html#ga7ada5e4210f6ef80ef9f55bf9dd048c6">LL_PLL_ConfigSystemClock_HSI</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structLL__UTILS__PLLInitTypeDef.html">LL_UTILS_PLLInitTypeDef</a> *&#160;</td>
           <td class="paramname"><em>UTILS_PLLInitStruct</em>, </td>
@@ -220,7 +220,7 @@ FLASH latency can be modified through this function. </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="group__UTILS__EF__SYSTEM.html#ga5af902d59c4c2d9dc5e189df0bc71ecd">LL_SetSystemCoreClock</a> </td>
+          <td class="memname">void <a class="el" href="group/group__UTILS__EF__SYSTEM.html#ga5af902d59c4c2d9dc5e189df0bc71ecd">LL_SetSystemCoreClock</a> </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>HCLKFrequency</em></td><td>)</td>

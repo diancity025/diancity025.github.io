@@ -114,7 +114,7 @@
 <a name="l00047"></a>00047 <span class="comment">  * @{</span>
 <a name="l00048"></a>00048 <span class="comment">  */</span>
 <a name="l00049"></a>00049 <span class="comment">/* SPI registers Masks */</span>
-<a name="l00050"></a><a class="code" href="group__SPI__LL__Private__Constants.html#ga8ee60b189110ce9760888381e5456ab5">00050</a> <span class="preprocessor">#define SPI_CR1_CLEAR_MASK                 (SPI_CR1_CPHA    | SPI_CR1_CPOL     | SPI_CR1_MSTR   | \</span>
+<a name="l00050"></a><a class="code" href="group/group__SPI__LL__Private__Constants.html#ga8ee60b189110ce9760888381e5456ab5">00050</a> <span class="preprocessor">#define SPI_CR1_CLEAR_MASK                 (SPI_CR1_CPHA    | SPI_CR1_CPOL     | SPI_CR1_MSTR   | \</span>
 <a name="l00051"></a>00051 <span class="preprocessor">                                            SPI_CR1_BR      | SPI_CR1_LSBFIRST | SPI_CR1_SSI    | \</span>
 <a name="l00052"></a>00052 <span class="preprocessor">                                            SPI_CR1_SSM     | SPI_CR1_RXONLY   | SPI_CR1_DFF    | \</span>
 <a name="l00053"></a>00053 <span class="preprocessor">                                            SPI_CR1_CRCNEXT | SPI_CR1_CRCEN    | SPI_CR1_BIDIOE | \</span>
@@ -127,28 +127,28 @@
 <a name="l00060"></a>00060 <span class="comment">/** @defgroup SPI_LL_Private_Macros SPI Private Macros</span>
 <a name="l00061"></a>00061 <span class="comment">  * @{</span>
 <a name="l00062"></a>00062 <span class="comment">  */</span>
-<a name="l00063"></a><a class="code" href="group__SPI__LL__Private__Macros.html#ga698a8c66142a9628b69e57334c4373dc">00063</a> <span class="preprocessor">#define IS_LL_SPI_TRANSFER_DIRECTION(__VALUE__) (((__VALUE__) == LL_SPI_FULL_DUPLEX)       \</span>
+<a name="l00063"></a><a class="code" href="group/group__SPI__LL__Private__Macros.html#ga698a8c66142a9628b69e57334c4373dc">00063</a> <span class="preprocessor">#define IS_LL_SPI_TRANSFER_DIRECTION(__VALUE__) (((__VALUE__) == LL_SPI_FULL_DUPLEX)       \</span>
 <a name="l00064"></a>00064 <span class="preprocessor">                                                 || ((__VALUE__) == LL_SPI_SIMPLEX_RX)     \</span>
 <a name="l00065"></a>00065 <span class="preprocessor">                                                 || ((__VALUE__) == LL_SPI_HALF_DUPLEX_RX) \</span>
 <a name="l00066"></a>00066 <span class="preprocessor">                                                 || ((__VALUE__) == LL_SPI_HALF_DUPLEX_TX))</span>
 <a name="l00067"></a>00067 <span class="preprocessor"></span>
-<a name="l00068"></a><a class="code" href="group__SPI__LL__Private__Macros.html#ga6fba150e3c33c38c5ac37ecdd0c3f424">00068</a> <span class="preprocessor">#define IS_LL_SPI_MODE(__VALUE__) (((__VALUE__) == LL_SPI_MODE_MASTER) \</span>
+<a name="l00068"></a><a class="code" href="group/group__SPI__LL__Private__Macros.html#ga6fba150e3c33c38c5ac37ecdd0c3f424">00068</a> <span class="preprocessor">#define IS_LL_SPI_MODE(__VALUE__) (((__VALUE__) == LL_SPI_MODE_MASTER) \</span>
 <a name="l00069"></a>00069 <span class="preprocessor">                                   || ((__VALUE__) == LL_SPI_MODE_SLAVE))</span>
 <a name="l00070"></a>00070 <span class="preprocessor"></span>
-<a name="l00071"></a><a class="code" href="group__SPI__LL__Private__Macros.html#gaf218ee75ab7a1bb345a2ebd5bbe2b404">00071</a> <span class="preprocessor">#define IS_LL_SPI_DATAWIDTH(__VALUE__) (((__VALUE__) == LL_SPI_DATAWIDTH_8BIT)  \</span>
+<a name="l00071"></a><a class="code" href="group/group__SPI__LL__Private__Macros.html#gaf218ee75ab7a1bb345a2ebd5bbe2b404">00071</a> <span class="preprocessor">#define IS_LL_SPI_DATAWIDTH(__VALUE__) (((__VALUE__) == LL_SPI_DATAWIDTH_8BIT)  \</span>
 <a name="l00072"></a>00072 <span class="preprocessor">                                        || ((__VALUE__) == LL_SPI_DATAWIDTH_16BIT))</span>
 <a name="l00073"></a>00073 <span class="preprocessor"></span>
-<a name="l00074"></a><a class="code" href="group__SPI__LL__Private__Macros.html#ga5a16fca162eb2fcaedb81202425df525">00074</a> <span class="preprocessor">#define IS_LL_SPI_POLARITY(__VALUE__) (((__VALUE__) == LL_SPI_POLARITY_LOW) \</span>
+<a name="l00074"></a><a class="code" href="group/group__SPI__LL__Private__Macros.html#ga5a16fca162eb2fcaedb81202425df525">00074</a> <span class="preprocessor">#define IS_LL_SPI_POLARITY(__VALUE__) (((__VALUE__) == LL_SPI_POLARITY_LOW) \</span>
 <a name="l00075"></a>00075 <span class="preprocessor">                                       || ((__VALUE__) == LL_SPI_POLARITY_HIGH))</span>
 <a name="l00076"></a>00076 <span class="preprocessor"></span>
-<a name="l00077"></a><a class="code" href="group__SPI__LL__Private__Macros.html#gaedbf18e019b87f2912fbf3a70b4e8e6d">00077</a> <span class="preprocessor">#define IS_LL_SPI_PHASE(__VALUE__) (((__VALUE__) == LL_SPI_PHASE_1EDGE) \</span>
+<a name="l00077"></a><a class="code" href="group/group__SPI__LL__Private__Macros.html#gaedbf18e019b87f2912fbf3a70b4e8e6d">00077</a> <span class="preprocessor">#define IS_LL_SPI_PHASE(__VALUE__) (((__VALUE__) == LL_SPI_PHASE_1EDGE) \</span>
 <a name="l00078"></a>00078 <span class="preprocessor">                                    || ((__VALUE__) == LL_SPI_PHASE_2EDGE))</span>
 <a name="l00079"></a>00079 <span class="preprocessor"></span>
-<a name="l00080"></a><a class="code" href="group__SPI__LL__Private__Macros.html#gaaa8e890001ad88580e5d8d0480512815">00080</a> <span class="preprocessor">#define IS_LL_SPI_NSS(__VALUE__) (((__VALUE__) == LL_SPI_NSS_SOFT)          \</span>
+<a name="l00080"></a><a class="code" href="group/group__SPI__LL__Private__Macros.html#gaaa8e890001ad88580e5d8d0480512815">00080</a> <span class="preprocessor">#define IS_LL_SPI_NSS(__VALUE__) (((__VALUE__) == LL_SPI_NSS_SOFT)          \</span>
 <a name="l00081"></a>00081 <span class="preprocessor">                                  || ((__VALUE__) == LL_SPI_NSS_HARD_INPUT) \</span>
 <a name="l00082"></a>00082 <span class="preprocessor">                                  || ((__VALUE__) == LL_SPI_NSS_HARD_OUTPUT))</span>
 <a name="l00083"></a>00083 <span class="preprocessor"></span>
-<a name="l00084"></a><a class="code" href="group__SPI__LL__Private__Macros.html#ga70d0375d73b178a7c5b3c6bc71f4e589">00084</a> <span class="preprocessor">#define IS_LL_SPI_BAUDRATE(__VALUE__) (((__VALUE__) == LL_SPI_BAUDRATEPRESCALER_DIV2)      \</span>
+<a name="l00084"></a><a class="code" href="group/group__SPI__LL__Private__Macros.html#ga70d0375d73b178a7c5b3c6bc71f4e589">00084</a> <span class="preprocessor">#define IS_LL_SPI_BAUDRATE(__VALUE__) (((__VALUE__) == LL_SPI_BAUDRATEPRESCALER_DIV2)      \</span>
 <a name="l00085"></a>00085 <span class="preprocessor">                                       || ((__VALUE__) == LL_SPI_BAUDRATEPRESCALER_DIV4)   \</span>
 <a name="l00086"></a>00086 <span class="preprocessor">                                       || ((__VALUE__) == LL_SPI_BAUDRATEPRESCALER_DIV8)   \</span>
 <a name="l00087"></a>00087 <span class="preprocessor">                                       || ((__VALUE__) == LL_SPI_BAUDRATEPRESCALER_DIV16)  \</span>
@@ -157,13 +157,13 @@
 <a name="l00090"></a>00090 <span class="preprocessor">                                       || ((__VALUE__) == LL_SPI_BAUDRATEPRESCALER_DIV128) \</span>
 <a name="l00091"></a>00091 <span class="preprocessor">                                       || ((__VALUE__) == LL_SPI_BAUDRATEPRESCALER_DIV256))</span>
 <a name="l00092"></a>00092 <span class="preprocessor"></span>
-<a name="l00093"></a><a class="code" href="group__SPI__LL__Private__Macros.html#gabc4d691301aaa3199cc37d036eac3b84">00093</a> <span class="preprocessor">#define IS_LL_SPI_BITORDER(__VALUE__) (((__VALUE__) == LL_SPI_LSB_FIRST) \</span>
+<a name="l00093"></a><a class="code" href="group/group__SPI__LL__Private__Macros.html#gabc4d691301aaa3199cc37d036eac3b84">00093</a> <span class="preprocessor">#define IS_LL_SPI_BITORDER(__VALUE__) (((__VALUE__) == LL_SPI_LSB_FIRST) \</span>
 <a name="l00094"></a>00094 <span class="preprocessor">                                       || ((__VALUE__) == LL_SPI_MSB_FIRST))</span>
 <a name="l00095"></a>00095 <span class="preprocessor"></span>
-<a name="l00096"></a><a class="code" href="group__SPI__LL__Private__Macros.html#gabea00029fc44e1228af312804dd216b3">00096</a> <span class="preprocessor">#define IS_LL_SPI_CRCCALCULATION(__VALUE__) (((__VALUE__) == LL_SPI_CRCCALCULATION_ENABLE) \</span>
+<a name="l00096"></a><a class="code" href="group/group__SPI__LL__Private__Macros.html#gabea00029fc44e1228af312804dd216b3">00096</a> <span class="preprocessor">#define IS_LL_SPI_CRCCALCULATION(__VALUE__) (((__VALUE__) == LL_SPI_CRCCALCULATION_ENABLE) \</span>
 <a name="l00097"></a>00097 <span class="preprocessor">                                             || ((__VALUE__) == LL_SPI_CRCCALCULATION_DISABLE))</span>
 <a name="l00098"></a>00098 <span class="preprocessor"></span>
-<a name="l00099"></a><a class="code" href="group__SPI__LL__Private__Macros.html#gab704364ab939d9322077ffecaec320f4">00099</a> <span class="preprocessor">#define IS_LL_SPI_CRC_POLYNOMIAL(__VALUE__) ((__VALUE__) &gt;= 0x1U)</span>
+<a name="l00099"></a><a class="code" href="group/group__SPI__LL__Private__Macros.html#gab704364ab939d9322077ffecaec320f4">00099</a> <span class="preprocessor">#define IS_LL_SPI_CRC_POLYNOMIAL(__VALUE__) ((__VALUE__) &gt;= 0x1U)</span>
 <a name="l00100"></a>00100 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00101"></a>00101 <span class="comment">/**</span>
 <a name="l00102"></a>00102 <span class="comment">  * @}</span>
@@ -187,7 +187,7 @@
 <a name="l00120"></a>00120 <span class="comment">  *          - SUCCESS: SPI registers are de-initialized</span>
 <a name="l00121"></a>00121 <span class="comment">  *          - ERROR: SPI registers are not de-initialized</span>
 <a name="l00122"></a>00122 <span class="comment">  */</span>
-<a name="l00123"></a><a class="code" href="group__SPI__LL__EF__Init.html#ga3b8b212d2fe0239d6bd10e9e1863c0ad">00123</a> ErrorStatus <a class="code" href="group__SPI__LL__EF__Init.html#ga3b8b212d2fe0239d6bd10e9e1863c0ad" title="De-initialize the SPI registers to their default reset values.">LL_SPI_DeInit</a>(SPI_TypeDef *SPIx)
+<a name="l00123"></a><a class="code" href="group/group__SPI__LL__EF__Init.html#ga3b8b212d2fe0239d6bd10e9e1863c0ad">00123</a> ErrorStatus <a class="code" href="group/group__SPI__LL__EF__Init.html#ga3b8b212d2fe0239d6bd10e9e1863c0ad" title="De-initialize the SPI registers to their default reset values.">LL_SPI_DeInit</a>(SPI_TypeDef *SPIx)
 <a name="l00124"></a>00124 {
 <a name="l00125"></a>00125   ErrorStatus status = ERROR;
 <a name="l00126"></a>00126 
@@ -198,10 +198,10 @@
 <a name="l00131"></a>00131 <span class="preprocessor"></span>  <span class="keywordflow">if</span> (SPIx == SPI1)
 <a name="l00132"></a>00132   {
 <a name="l00133"></a>00133     <span class="comment">/* Force reset of SPI clock */</span>
-<a name="l00134"></a>00134     <a class="code" href="group__BUS__LL__EF__APB2.html#gad3399e30aa27c801c1ae1f2222f3b5ad" title="Force APB2 peripherals reset.">LL_APB2_GRP1_ForceReset</a>(<a class="code" href="group__BUS__LL__EC__APB2__GRP1__PERIPH.html#ga66f1e5f039f03cb1a4004f8a302c5d07">LL_APB2_GRP1_PERIPH_SPI1</a>);
+<a name="l00134"></a>00134     <a class="code" href="group/group__BUS__LL__EF__APB2.html#gad3399e30aa27c801c1ae1f2222f3b5ad" title="Force APB2 peripherals reset.">LL_APB2_GRP1_ForceReset</a>(<a class="code" href="group/group__BUS__LL__EC__APB2__GRP1__PERIPH.html#ga66f1e5f039f03cb1a4004f8a302c5d07">LL_APB2_GRP1_PERIPH_SPI1</a>);
 <a name="l00135"></a>00135 
 <a name="l00136"></a>00136     <span class="comment">/* Release reset of SPI clock */</span>
-<a name="l00137"></a>00137     <a class="code" href="group__BUS__LL__EF__APB2.html#ga1ce12f91580365c8228485e2bfcfe0fd" title="Release APB2 peripherals reset.">LL_APB2_GRP1_ReleaseReset</a>(<a class="code" href="group__BUS__LL__EC__APB2__GRP1__PERIPH.html#ga66f1e5f039f03cb1a4004f8a302c5d07">LL_APB2_GRP1_PERIPH_SPI1</a>);
+<a name="l00137"></a>00137     <a class="code" href="group/group__BUS__LL__EF__APB2.html#ga1ce12f91580365c8228485e2bfcfe0fd" title="Release APB2 peripherals reset.">LL_APB2_GRP1_ReleaseReset</a>(<a class="code" href="group/group__BUS__LL__EC__APB2__GRP1__PERIPH.html#ga66f1e5f039f03cb1a4004f8a302c5d07">LL_APB2_GRP1_PERIPH_SPI1</a>);
 <a name="l00138"></a>00138 
 <a name="l00139"></a>00139     status = SUCCESS;
 <a name="l00140"></a>00140   }
@@ -210,10 +210,10 @@
 <a name="l00143"></a>00143 <span class="preprocessor"></span>  <span class="keywordflow">if</span> (SPIx == SPI2)
 <a name="l00144"></a>00144   {
 <a name="l00145"></a>00145     <span class="comment">/* Force reset of SPI clock */</span>
-<a name="l00146"></a>00146     <a class="code" href="group__BUS__LL__EF__APB1.html#ga45bf26f8c9e292710b66614c96a28096" title="Force APB1 peripherals reset.">LL_APB1_GRP1_ForceReset</a>(<a class="code" href="group__BUS__LL__EC__APB1__GRP1__PERIPH.html#gae8f22517608c4f76236b4e863ebce1fe">LL_APB1_GRP1_PERIPH_SPI2</a>);
+<a name="l00146"></a>00146     <a class="code" href="group/group__BUS__LL__EF__APB1.html#ga45bf26f8c9e292710b66614c96a28096" title="Force APB1 peripherals reset.">LL_APB1_GRP1_ForceReset</a>(<a class="code" href="group/group__BUS__LL__EC__APB1__GRP1__PERIPH.html#gae8f22517608c4f76236b4e863ebce1fe">LL_APB1_GRP1_PERIPH_SPI2</a>);
 <a name="l00147"></a>00147 
 <a name="l00148"></a>00148     <span class="comment">/* Release reset of SPI clock */</span>
-<a name="l00149"></a>00149     <a class="code" href="group__BUS__LL__EF__APB1.html#ga8a4d59b573dcc16845ff1c6de5def5c2" title="Release APB1 peripherals reset.">LL_APB1_GRP1_ReleaseReset</a>(<a class="code" href="group__BUS__LL__EC__APB1__GRP1__PERIPH.html#gae8f22517608c4f76236b4e863ebce1fe">LL_APB1_GRP1_PERIPH_SPI2</a>);
+<a name="l00149"></a>00149     <a class="code" href="group/group__BUS__LL__EF__APB1.html#ga8a4d59b573dcc16845ff1c6de5def5c2" title="Release APB1 peripherals reset.">LL_APB1_GRP1_ReleaseReset</a>(<a class="code" href="group/group__BUS__LL__EC__APB1__GRP1__PERIPH.html#gae8f22517608c4f76236b4e863ebce1fe">LL_APB1_GRP1_PERIPH_SPI2</a>);
 <a name="l00150"></a>00150 
 <a name="l00151"></a>00151     status = SUCCESS;
 <a name="l00152"></a>00152   }
@@ -222,10 +222,10 @@
 <a name="l00155"></a>00155 <span class="preprocessor"></span>  <span class="keywordflow">if</span> (SPIx == SPI3)
 <a name="l00156"></a>00156   {
 <a name="l00157"></a>00157     <span class="comment">/* Force reset of SPI clock */</span>
-<a name="l00158"></a>00158     <a class="code" href="group__BUS__LL__EF__APB1.html#ga45bf26f8c9e292710b66614c96a28096" title="Force APB1 peripherals reset.">LL_APB1_GRP1_ForceReset</a>(<a class="code" href="group__BUS__LL__EC__APB1__GRP1__PERIPH.html#ga1424f56bdbbbc86cc04f1b187e443751">LL_APB1_GRP1_PERIPH_SPI3</a>);
+<a name="l00158"></a>00158     <a class="code" href="group/group__BUS__LL__EF__APB1.html#ga45bf26f8c9e292710b66614c96a28096" title="Force APB1 peripherals reset.">LL_APB1_GRP1_ForceReset</a>(<a class="code" href="group/group__BUS__LL__EC__APB1__GRP1__PERIPH.html#ga1424f56bdbbbc86cc04f1b187e443751">LL_APB1_GRP1_PERIPH_SPI3</a>);
 <a name="l00159"></a>00159 
 <a name="l00160"></a>00160     <span class="comment">/* Release reset of SPI clock */</span>
-<a name="l00161"></a>00161     <a class="code" href="group__BUS__LL__EF__APB1.html#ga8a4d59b573dcc16845ff1c6de5def5c2" title="Release APB1 peripherals reset.">LL_APB1_GRP1_ReleaseReset</a>(<a class="code" href="group__BUS__LL__EC__APB1__GRP1__PERIPH.html#ga1424f56bdbbbc86cc04f1b187e443751">LL_APB1_GRP1_PERIPH_SPI3</a>);
+<a name="l00161"></a>00161     <a class="code" href="group/group__BUS__LL__EF__APB1.html#ga8a4d59b573dcc16845ff1c6de5def5c2" title="Release APB1 peripherals reset.">LL_APB1_GRP1_ReleaseReset</a>(<a class="code" href="group/group__BUS__LL__EC__APB1__GRP1__PERIPH.html#ga1424f56bdbbbc86cc04f1b187e443751">LL_APB1_GRP1_PERIPH_SPI3</a>);
 <a name="l00162"></a>00162 
 <a name="l00163"></a>00163     status = SUCCESS;
 <a name="l00164"></a>00164   }
@@ -242,7 +242,7 @@
 <a name="l00175"></a>00175 <span class="comment">  * @param  SPI_InitStruct pointer to a @ref LL_SPI_InitTypeDef structure</span>
 <a name="l00176"></a>00176 <span class="comment">  * @retval An ErrorStatus enumeration value. (Return always SUCCESS)</span>
 <a name="l00177"></a>00177 <span class="comment">  */</span>
-<a name="l00178"></a><a class="code" href="group__SPI__LL__EF__Init.html#gaaf289370fb5fe2b82250c6bb4a72e333">00178</a> ErrorStatus <a class="code" href="group__SPI__LL__EF__Init.html#gaaf289370fb5fe2b82250c6bb4a72e333" title="Initialize the SPI registers according to the specified parameters in SPI_InitStruct.">LL_SPI_Init</a>(SPI_TypeDef *SPIx, <a class="code" href="structLL__SPI__InitTypeDef.html" title="SPI Init structures definition.">LL_SPI_InitTypeDef</a> *SPI_InitStruct)
+<a name="l00178"></a><a class="code" href="group/group__SPI__LL__EF__Init.html#gaaf289370fb5fe2b82250c6bb4a72e333">00178</a> ErrorStatus <a class="code" href="group/group__SPI__LL__EF__Init.html#gaaf289370fb5fe2b82250c6bb4a72e333" title="Initialize the SPI registers according to the specified parameters in SPI_InitStruct.">LL_SPI_Init</a>(SPI_TypeDef *SPIx, <a class="code" href="structLL__SPI__InitTypeDef.html" title="SPI Init structures definition.">LL_SPI_InitTypeDef</a> *SPI_InitStruct)
 <a name="l00179"></a>00179 {
 <a name="l00180"></a>00180   ErrorStatus status = ERROR;
 <a name="l00181"></a>00181 
@@ -250,17 +250,17 @@
 <a name="l00183"></a>00183   <a class="code" href="stm32f1xx__ll__spi_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(IS_SPI_ALL_INSTANCE(SPIx));
 <a name="l00184"></a>00184 
 <a name="l00185"></a>00185   <span class="comment">/* Check the SPI parameters from SPI_InitStruct*/</span>
-<a name="l00186"></a>00186   <a class="code" href="stm32f1xx__ll__spi_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group__SPI__LL__Private__Macros.html#ga698a8c66142a9628b69e57334c4373dc">IS_LL_SPI_TRANSFER_DIRECTION</a>(SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#aa562c2ea82031b590b698d32a358f567">TransferDirection</a>));
-<a name="l00187"></a>00187   <a class="code" href="stm32f1xx__ll__spi_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group__SPI__LL__Private__Macros.html#ga6fba150e3c33c38c5ac37ecdd0c3f424">IS_LL_SPI_MODE</a>(SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a574f7c576e1c33d713028c1e7061fd7f">Mode</a>));
-<a name="l00188"></a>00188   <a class="code" href="stm32f1xx__ll__spi_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group__SPI__LL__Private__Macros.html#gaf218ee75ab7a1bb345a2ebd5bbe2b404">IS_LL_SPI_DATAWIDTH</a>(SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a23406affc4dcdea77253e9460ba1c2c8">DataWidth</a>));
-<a name="l00189"></a>00189   <a class="code" href="stm32f1xx__ll__spi_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group__SPI__LL__Private__Macros.html#ga5a16fca162eb2fcaedb81202425df525">IS_LL_SPI_POLARITY</a>(SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#aa9700432b36e6e425cc0964da05e9eb7">ClockPolarity</a>));
-<a name="l00190"></a>00190   <a class="code" href="stm32f1xx__ll__spi_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group__SPI__LL__Private__Macros.html#gaedbf18e019b87f2912fbf3a70b4e8e6d">IS_LL_SPI_PHASE</a>(SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a17fcb3bb8bfd840cd781febb52a70e6f">ClockPhase</a>));
-<a name="l00191"></a>00191   <a class="code" href="stm32f1xx__ll__spi_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group__SPI__LL__Private__Macros.html#gaaa8e890001ad88580e5d8d0480512815">IS_LL_SPI_NSS</a>(SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#ac4f5c4c89fbd079f6e3a66967fe5efd5">NSS</a>));
-<a name="l00192"></a>00192   <a class="code" href="stm32f1xx__ll__spi_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group__SPI__LL__Private__Macros.html#ga70d0375d73b178a7c5b3c6bc71f4e589">IS_LL_SPI_BAUDRATE</a>(SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a35563f1cc87c3593801aff1b966f876c">BaudRate</a>));
-<a name="l00193"></a>00193   <a class="code" href="stm32f1xx__ll__spi_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group__SPI__LL__Private__Macros.html#gabc4d691301aaa3199cc37d036eac3b84">IS_LL_SPI_BITORDER</a>(SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#aae61f6935b3584c0a7c9a0e2086ae42b">BitOrder</a>));
-<a name="l00194"></a>00194   <a class="code" href="stm32f1xx__ll__spi_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group__SPI__LL__Private__Macros.html#gabea00029fc44e1228af312804dd216b3">IS_LL_SPI_CRCCALCULATION</a>(SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a482165660ba65d0310d6cba16a5e19fa">CRCCalculation</a>));
+<a name="l00186"></a>00186   <a class="code" href="stm32f1xx__ll__spi_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group/group__SPI__LL__Private__Macros.html#ga698a8c66142a9628b69e57334c4373dc">IS_LL_SPI_TRANSFER_DIRECTION</a>(SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#aa562c2ea82031b590b698d32a358f567">TransferDirection</a>));
+<a name="l00187"></a>00187   <a class="code" href="stm32f1xx__ll__spi_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group/group__SPI__LL__Private__Macros.html#ga6fba150e3c33c38c5ac37ecdd0c3f424">IS_LL_SPI_MODE</a>(SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a574f7c576e1c33d713028c1e7061fd7f">Mode</a>));
+<a name="l00188"></a>00188   <a class="code" href="stm32f1xx__ll__spi_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group/group__SPI__LL__Private__Macros.html#gaf218ee75ab7a1bb345a2ebd5bbe2b404">IS_LL_SPI_DATAWIDTH</a>(SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a23406affc4dcdea77253e9460ba1c2c8">DataWidth</a>));
+<a name="l00189"></a>00189   <a class="code" href="stm32f1xx__ll__spi_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group/group__SPI__LL__Private__Macros.html#ga5a16fca162eb2fcaedb81202425df525">IS_LL_SPI_POLARITY</a>(SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#aa9700432b36e6e425cc0964da05e9eb7">ClockPolarity</a>));
+<a name="l00190"></a>00190   <a class="code" href="stm32f1xx__ll__spi_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group/group__SPI__LL__Private__Macros.html#gaedbf18e019b87f2912fbf3a70b4e8e6d">IS_LL_SPI_PHASE</a>(SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a17fcb3bb8bfd840cd781febb52a70e6f">ClockPhase</a>));
+<a name="l00191"></a>00191   <a class="code" href="stm32f1xx__ll__spi_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group/group__SPI__LL__Private__Macros.html#gaaa8e890001ad88580e5d8d0480512815">IS_LL_SPI_NSS</a>(SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#ac4f5c4c89fbd079f6e3a66967fe5efd5">NSS</a>));
+<a name="l00192"></a>00192   <a class="code" href="stm32f1xx__ll__spi_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group/group__SPI__LL__Private__Macros.html#ga70d0375d73b178a7c5b3c6bc71f4e589">IS_LL_SPI_BAUDRATE</a>(SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a35563f1cc87c3593801aff1b966f876c">BaudRate</a>));
+<a name="l00193"></a>00193   <a class="code" href="stm32f1xx__ll__spi_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group/group__SPI__LL__Private__Macros.html#gabc4d691301aaa3199cc37d036eac3b84">IS_LL_SPI_BITORDER</a>(SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#aae61f6935b3584c0a7c9a0e2086ae42b">BitOrder</a>));
+<a name="l00194"></a>00194   <a class="code" href="stm32f1xx__ll__spi_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group/group__SPI__LL__Private__Macros.html#gabea00029fc44e1228af312804dd216b3">IS_LL_SPI_CRCCALCULATION</a>(SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a482165660ba65d0310d6cba16a5e19fa">CRCCalculation</a>));
 <a name="l00195"></a>00195 
-<a name="l00196"></a>00196   <span class="keywordflow">if</span> (<a class="code" href="group__SPI__LL__EF__Configuration.html#gabb4da6ed8329153144c93089b3a42358" title="Check if SPI peripheral is enabled.">LL_SPI_IsEnabled</a>(SPIx) == 0x00000000U)
+<a name="l00196"></a>00196   <span class="keywordflow">if</span> (<a class="code" href="group/group__SPI__LL__EF__Configuration.html#gabb4da6ed8329153144c93089b3a42358" title="Check if SPI peripheral is enabled.">LL_SPI_IsEnabled</a>(SPIx) == 0x00000000U)
 <a name="l00197"></a>00197   {
 <a name="l00198"></a>00198     <span class="comment">/*---------------------------- SPIx CR1 Configuration ------------------------</span>
 <a name="l00199"></a>00199 <span class="comment">     * Configure SPIx CR1 with parameters:</span>
@@ -275,7 +275,7 @@
 <a name="l00208"></a>00208 <span class="comment">     * - CRCCalculation:     SPI_CR1_CRCEN bit</span>
 <a name="l00209"></a>00209 <span class="comment">     */</span>
 <a name="l00210"></a>00210     MODIFY_REG(SPIx-&gt;CR1,
-<a name="l00211"></a>00211                <a class="code" href="group__SPI__LL__Private__Constants.html#ga8ee60b189110ce9760888381e5456ab5">SPI_CR1_CLEAR_MASK</a>,
+<a name="l00211"></a>00211                <a class="code" href="group/group__SPI__LL__Private__Constants.html#ga8ee60b189110ce9760888381e5456ab5">SPI_CR1_CLEAR_MASK</a>,
 <a name="l00212"></a>00212                SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#aa562c2ea82031b590b698d32a358f567">TransferDirection</a> | SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a574f7c576e1c33d713028c1e7061fd7f">Mode</a> | SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a23406affc4dcdea77253e9460ba1c2c8">DataWidth</a> |
 <a name="l00213"></a>00213                SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#aa9700432b36e6e425cc0964da05e9eb7">ClockPolarity</a> | SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a17fcb3bb8bfd840cd781febb52a70e6f">ClockPhase</a> |
 <a name="l00214"></a>00214                SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#ac4f5c4c89fbd079f6e3a66967fe5efd5">NSS</a> | SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a35563f1cc87c3593801aff1b966f876c">BaudRate</a> |
@@ -291,10 +291,10 @@
 <a name="l00224"></a>00224 <span class="comment">     * Configure SPIx CRCPR with parameters:</span>
 <a name="l00225"></a>00225 <span class="comment">     * - CRCPoly:            CRCPOLY[15:0] bits</span>
 <a name="l00226"></a>00226 <span class="comment">     */</span>
-<a name="l00227"></a>00227     <span class="keywordflow">if</span> (SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a482165660ba65d0310d6cba16a5e19fa">CRCCalculation</a> == <a class="code" href="group__SPI__LL__EC__CRC__CALCULATION.html#gade3104d9d2bdcc0f34b632785c407a19">LL_SPI_CRCCALCULATION_ENABLE</a>)
+<a name="l00227"></a>00227     <span class="keywordflow">if</span> (SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a482165660ba65d0310d6cba16a5e19fa">CRCCalculation</a> == <a class="code" href="group/group__SPI__LL__EC__CRC__CALCULATION.html#gade3104d9d2bdcc0f34b632785c407a19">LL_SPI_CRCCALCULATION_ENABLE</a>)
 <a name="l00228"></a>00228     {
-<a name="l00229"></a>00229       <a class="code" href="stm32f1xx__ll__spi_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group__SPI__LL__Private__Macros.html#gab704364ab939d9322077ffecaec320f4">IS_LL_SPI_CRC_POLYNOMIAL</a>(SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#aadfea5a82f6c2b0872720463822c075b">CRCPoly</a>));
-<a name="l00230"></a>00230       <a class="code" href="group__SPI__LL__EF__CRC__Management.html#ga31c6c17c8c73eb6a0a6e3bf00f44028a" title="Set polynomial for CRC calculation.">LL_SPI_SetCRCPolynomial</a>(SPIx, SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#aadfea5a82f6c2b0872720463822c075b">CRCPoly</a>);
+<a name="l00229"></a>00229       <a class="code" href="stm32f1xx__ll__spi_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group/group__SPI__LL__Private__Macros.html#gab704364ab939d9322077ffecaec320f4">IS_LL_SPI_CRC_POLYNOMIAL</a>(SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#aadfea5a82f6c2b0872720463822c075b">CRCPoly</a>));
+<a name="l00230"></a>00230       <a class="code" href="group/group__SPI__LL__EF__CRC__Management.html#ga31c6c17c8c73eb6a0a6e3bf00f44028a" title="Set polynomial for CRC calculation.">LL_SPI_SetCRCPolynomial</a>(SPIx, SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#aadfea5a82f6c2b0872720463822c075b">CRCPoly</a>);
 <a name="l00231"></a>00231     }
 <a name="l00232"></a>00232     status = SUCCESS;
 <a name="l00233"></a>00233   }
@@ -312,18 +312,18 @@
 <a name="l00245"></a>00245 <span class="comment">  * whose fields will be set to default values.</span>
 <a name="l00246"></a>00246 <span class="comment">  * @retval None</span>
 <a name="l00247"></a>00247 <span class="comment">  */</span>
-<a name="l00248"></a><a class="code" href="group__SPI__LL__EF__Init.html#ga470f61d4cec2ae94f3cdf6a2a23ba0a4">00248</a> <span class="keywordtype">void</span> <a class="code" href="group__SPI__LL__EF__Init.html#ga470f61d4cec2ae94f3cdf6a2a23ba0a4" title="Set each LL_SPI_InitTypeDef field to default value.">LL_SPI_StructInit</a>(<a class="code" href="structLL__SPI__InitTypeDef.html" title="SPI Init structures definition.">LL_SPI_InitTypeDef</a> *SPI_InitStruct)
+<a name="l00248"></a><a class="code" href="group/group__SPI__LL__EF__Init.html#ga470f61d4cec2ae94f3cdf6a2a23ba0a4">00248</a> <span class="keywordtype">void</span> <a class="code" href="group/group__SPI__LL__EF__Init.html#ga470f61d4cec2ae94f3cdf6a2a23ba0a4" title="Set each LL_SPI_InitTypeDef field to default value.">LL_SPI_StructInit</a>(<a class="code" href="structLL__SPI__InitTypeDef.html" title="SPI Init structures definition.">LL_SPI_InitTypeDef</a> *SPI_InitStruct)
 <a name="l00249"></a>00249 {
 <a name="l00250"></a>00250   <span class="comment">/* Set SPI_InitStruct fields to default values */</span>
-<a name="l00251"></a>00251   SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#aa562c2ea82031b590b698d32a358f567">TransferDirection</a> = <a class="code" href="group__SPI__LL__EC__TRANSFER__MODE.html#ga42c3125666248ac6228bf8376f221d98">LL_SPI_FULL_DUPLEX</a>;
-<a name="l00252"></a>00252   SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a574f7c576e1c33d713028c1e7061fd7f">Mode</a>              = <a class="code" href="group__SPI__LL__EC__MODE.html#gaf90928e0a3915633dc3b6ffbd680f615">LL_SPI_MODE_SLAVE</a>;
-<a name="l00253"></a>00253   SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a23406affc4dcdea77253e9460ba1c2c8">DataWidth</a>         = <a class="code" href="group__SPI__LL__EC__DATAWIDTH.html#ga72e4825798cf3164c74613e0da5a5070">LL_SPI_DATAWIDTH_8BIT</a>;
-<a name="l00254"></a>00254   SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#aa9700432b36e6e425cc0964da05e9eb7">ClockPolarity</a>     = <a class="code" href="group__SPI__LL__EC__POLARITY.html#gad11b2359beccba79d4b0ddd097ad4ce4">LL_SPI_POLARITY_LOW</a>;
-<a name="l00255"></a>00255   SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a17fcb3bb8bfd840cd781febb52a70e6f">ClockPhase</a>        = <a class="code" href="group__SPI__LL__EC__PHASE.html#ga265a820d832f8cba91cb1546df35e28f">LL_SPI_PHASE_1EDGE</a>;
-<a name="l00256"></a>00256   SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#ac4f5c4c89fbd079f6e3a66967fe5efd5">NSS</a>               = <a class="code" href="group__SPI__LL__EC__NSS__MODE.html#ga998262e86e5dd135f2100b4f0fe4b772">LL_SPI_NSS_HARD_INPUT</a>;
-<a name="l00257"></a>00257   SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a35563f1cc87c3593801aff1b966f876c">BaudRate</a>          = <a class="code" href="group__SPI__LL__EC__BAUDRATEPRESCALER.html#ga9f057b13964a3a7554c707f17084405e">LL_SPI_BAUDRATEPRESCALER_DIV2</a>;
-<a name="l00258"></a>00258   SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#aae61f6935b3584c0a7c9a0e2086ae42b">BitOrder</a>          = <a class="code" href="group__SPI__LL__EC__BIT__ORDER.html#ga51d647bdfa7afeda7d9d85fe14898d4f">LL_SPI_MSB_FIRST</a>;
-<a name="l00259"></a>00259   SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a482165660ba65d0310d6cba16a5e19fa">CRCCalculation</a>    = <a class="code" href="group__SPI__LL__EC__CRC__CALCULATION.html#gadde402af482c8259b5ac4c3edfe0edbc">LL_SPI_CRCCALCULATION_DISABLE</a>;
+<a name="l00251"></a>00251   SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#aa562c2ea82031b590b698d32a358f567">TransferDirection</a> = <a class="code" href="group/group__SPI__LL__EC__TRANSFER__MODE.html#ga42c3125666248ac6228bf8376f221d98">LL_SPI_FULL_DUPLEX</a>;
+<a name="l00252"></a>00252   SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a574f7c576e1c33d713028c1e7061fd7f">Mode</a>              = <a class="code" href="group/group__SPI__LL__EC__MODE.html#gaf90928e0a3915633dc3b6ffbd680f615">LL_SPI_MODE_SLAVE</a>;
+<a name="l00253"></a>00253   SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a23406affc4dcdea77253e9460ba1c2c8">DataWidth</a>         = <a class="code" href="group/group__SPI__LL__EC__DATAWIDTH.html#ga72e4825798cf3164c74613e0da5a5070">LL_SPI_DATAWIDTH_8BIT</a>;
+<a name="l00254"></a>00254   SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#aa9700432b36e6e425cc0964da05e9eb7">ClockPolarity</a>     = <a class="code" href="group/group__SPI__LL__EC__POLARITY.html#gad11b2359beccba79d4b0ddd097ad4ce4">LL_SPI_POLARITY_LOW</a>;
+<a name="l00255"></a>00255   SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a17fcb3bb8bfd840cd781febb52a70e6f">ClockPhase</a>        = <a class="code" href="group/group__SPI__LL__EC__PHASE.html#ga265a820d832f8cba91cb1546df35e28f">LL_SPI_PHASE_1EDGE</a>;
+<a name="l00256"></a>00256   SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#ac4f5c4c89fbd079f6e3a66967fe5efd5">NSS</a>               = <a class="code" href="group/group__SPI__LL__EC__NSS__MODE.html#ga998262e86e5dd135f2100b4f0fe4b772">LL_SPI_NSS_HARD_INPUT</a>;
+<a name="l00257"></a>00257   SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a35563f1cc87c3593801aff1b966f876c">BaudRate</a>          = <a class="code" href="group/group__SPI__LL__EC__BAUDRATEPRESCALER.html#ga9f057b13964a3a7554c707f17084405e">LL_SPI_BAUDRATEPRESCALER_DIV2</a>;
+<a name="l00258"></a>00258   SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#aae61f6935b3584c0a7c9a0e2086ae42b">BitOrder</a>          = <a class="code" href="group/group__SPI__LL__EC__BIT__ORDER.html#ga51d647bdfa7afeda7d9d85fe14898d4f">LL_SPI_MSB_FIRST</a>;
+<a name="l00259"></a>00259   SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#a482165660ba65d0310d6cba16a5e19fa">CRCCalculation</a>    = <a class="code" href="group/group__SPI__LL__EC__CRC__CALCULATION.html#gadde402af482c8259b5ac4c3edfe0edbc">LL_SPI_CRCCALCULATION_DISABLE</a>;
 <a name="l00260"></a>00260   SPI_InitStruct-&gt;<a class="code" href="structLL__SPI__InitTypeDef.html#aadfea5a82f6c2b0872720463822c075b">CRCPoly</a>           = 7U;
 <a name="l00261"></a>00261 }
 <a name="l00262"></a>00262 <span class="comment"></span>
@@ -418,7 +418,7 @@
 <a name="l00351"></a>00351 <span class="comment">  */</span>
 <a name="l00352"></a>00352 ErrorStatus LL_I2S_DeInit(SPI_TypeDef *SPIx)
 <a name="l00353"></a>00353 {
-<a name="l00354"></a>00354   <span class="keywordflow">return</span> <a class="code" href="group__SPI__LL__EF__Init.html#ga3b8b212d2fe0239d6bd10e9e1863c0ad" title="De-initialize the SPI registers to their default reset values.">LL_SPI_DeInit</a>(SPIx);
+<a name="l00354"></a>00354   <span class="keywordflow">return</span> <a class="code" href="group/group__SPI__LL__EF__Init.html#ga3b8b212d2fe0239d6bd10e9e1863c0ad" title="De-initialize the SPI registers to their default reset values.">LL_SPI_DeInit</a>(SPIx);
 <a name="l00355"></a>00355 }
 <a name="l00356"></a>00356 <span class="comment"></span>
 <a name="l00357"></a>00357 <span class="comment">/**</span>
@@ -488,7 +488,7 @@
 <a name="l00421"></a>00421       }
 <a name="l00422"></a>00422 
 <a name="l00423"></a>00423       <span class="comment">/* I2S Clock source is System clock: Get System Clock frequency */</span>
-<a name="l00424"></a>00424       <a class="code" href="group__RCC__LL__EF__Get__Freq.html#ga9ec9efa058971510891175bb0fb80758" title="Return the frequencies of different on chip clocks; System, AHB, APB1 and APB2 buses clocks...">LL_RCC_GetSystemClocksFreq</a>(&amp;rcc_clocks);
+<a name="l00424"></a>00424       <a class="code" href="group/group__RCC__LL__EF__Get__Freq.html#ga9ec9efa058971510891175bb0fb80758" title="Return the frequencies of different on chip clocks; System, AHB, APB1 and APB2 buses clocks...">LL_RCC_GetSystemClocksFreq</a>(&amp;rcc_clocks);
 <a name="l00425"></a>00425 
 <a name="l00426"></a>00426       <span class="comment">/* Get the source clock value: based on System Clock value */</span>
 <a name="l00427"></a>00427       sourceclock = rcc_clocks.<a class="code" href="structLL__RCC__ClocksTypeDef.html#a1bd35ea768901f1dcfd3e3df5a368922">SYSCLK_Frequency</a>;

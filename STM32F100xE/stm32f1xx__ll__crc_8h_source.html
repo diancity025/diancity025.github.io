@@ -136,7 +136,7 @@
 <a name="l00069"></a>00069 <span class="comment">  * @param  __VALUE__ Value to be written in the register</span>
 <a name="l00070"></a>00070 <span class="comment">  * @retval None</span>
 <a name="l00071"></a>00071 <span class="comment">  */</span>
-<a name="l00072"></a><a class="code" href="group__CRC__LL__EM__WRITE__READ.html#gabb450db72aa4645e896a2ca20f5d77ec">00072</a> <span class="preprocessor">#define LL_CRC_WriteReg(__INSTANCE__, __REG__, __VALUE__) WRITE_REG(__INSTANCE__-&gt;__REG__, __VALUE__)</span>
+<a name="l00072"></a><a class="code" href="group/group__CRC__LL__EM__WRITE__READ.html#gabb450db72aa4645e896a2ca20f5d77ec">00072</a> <span class="preprocessor">#define LL_CRC_WriteReg(__INSTANCE__, __REG__, __VALUE__) WRITE_REG(__INSTANCE__-&gt;__REG__, __VALUE__)</span>
 <a name="l00073"></a>00073 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00074"></a>00074 <span class="comment">/**</span>
 <a name="l00075"></a>00075 <span class="comment">  * @brief  Read a value in CRC register</span>
@@ -144,7 +144,7 @@
 <a name="l00077"></a>00077 <span class="comment">  * @param  __REG__ Register to be read</span>
 <a name="l00078"></a>00078 <span class="comment">  * @retval Register value</span>
 <a name="l00079"></a>00079 <span class="comment">  */</span>
-<a name="l00080"></a><a class="code" href="group__CRC__LL__EM__WRITE__READ.html#ga76fa75d7a603aedd533fbaa306622479">00080</a> <span class="preprocessor">#define LL_CRC_ReadReg(__INSTANCE__, __REG__) READ_REG(__INSTANCE__-&gt;__REG__)</span>
+<a name="l00080"></a><a class="code" href="group/group__CRC__LL__EM__WRITE__READ.html#ga76fa75d7a603aedd533fbaa306622479">00080</a> <span class="preprocessor">#define LL_CRC_ReadReg(__INSTANCE__, __REG__) READ_REG(__INSTANCE__-&gt;__REG__)</span>
 <a name="l00081"></a>00081 <span class="preprocessor"></span><span class="comment">/**</span>
 <a name="l00082"></a>00082 <span class="comment">  * @}</span>
 <a name="l00083"></a>00083 <span class="comment">  */</span>
@@ -172,7 +172,7 @@
 <a name="l00105"></a>00105 <span class="comment">  * @param  CRCx CRC Instance</span>
 <a name="l00106"></a>00106 <span class="comment">  * @retval None</span>
 <a name="l00107"></a>00107 <span class="comment">  */</span>
-<a name="l00108"></a><a class="code" href="group__CRC__LL__EF__Configuration.html#ga90a0c59d0a80758bde6f86eb8d3e3f03">00108</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__CRC__LL__EF__Configuration.html#ga90a0c59d0a80758bde6f86eb8d3e3f03" title="Reset the CRC calculation unit.">LL_CRC_ResetCRCCalculationUnit</a>(CRC_TypeDef *CRCx)
+<a name="l00108"></a><a class="code" href="group/group__CRC__LL__EF__Configuration.html#ga90a0c59d0a80758bde6f86eb8d3e3f03">00108</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__CRC__LL__EF__Configuration.html#ga90a0c59d0a80758bde6f86eb8d3e3f03" title="Reset the CRC calculation unit.">LL_CRC_ResetCRCCalculationUnit</a>(CRC_TypeDef *CRCx)
 <a name="l00109"></a>00109 {
 <a name="l00110"></a>00110   SET_BIT(CRCx-&gt;CR, CRC_CR_RESET);
 <a name="l00111"></a>00111 }
@@ -192,7 +192,7 @@
 <a name="l00125"></a>00125 <span class="comment">  * @param  InData value to be provided to CRC calculator between between Min_Data=0 and Max_Data=0xFFFFFFFF</span>
 <a name="l00126"></a>00126 <span class="comment">  * @retval None</span>
 <a name="l00127"></a>00127 <span class="comment">  */</span>
-<a name="l00128"></a><a class="code" href="group__CRC__LL__EF__Data__Management.html#ga5f18e634484a4fb29d07da3bf0885be4">00128</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__CRC__LL__EF__Data__Management.html#ga5f18e634484a4fb29d07da3bf0885be4" title="Write given 32-bit data to the CRC calculator.">LL_CRC_FeedData32</a>(CRC_TypeDef *CRCx, uint32_t InData)
+<a name="l00128"></a><a class="code" href="group/group__CRC__LL__EF__Data__Management.html#ga5f18e634484a4fb29d07da3bf0885be4">00128</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__CRC__LL__EF__Data__Management.html#ga5f18e634484a4fb29d07da3bf0885be4" title="Write given 32-bit data to the CRC calculator.">LL_CRC_FeedData32</a>(CRC_TypeDef *CRCx, uint32_t InData)
 <a name="l00129"></a>00129 {
 <a name="l00130"></a>00130   WRITE_REG(CRCx-&gt;DR, InData);
 <a name="l00131"></a>00131 }
@@ -203,7 +203,7 @@
 <a name="l00136"></a>00136 <span class="comment">  * @param  CRCx CRC Instance</span>
 <a name="l00137"></a>00137 <span class="comment">  * @retval Current CRC calculation result as stored in CRC_DR register (32 bits).</span>
 <a name="l00138"></a>00138 <span class="comment">  */</span>
-<a name="l00139"></a><a class="code" href="group__CRC__LL__EF__Data__Management.html#ga94541a1a0d2b142017db9db21ac59250">00139</a> __STATIC_INLINE uint32_t <a class="code" href="group__CRC__LL__EF__Data__Management.html#ga94541a1a0d2b142017db9db21ac59250" title="Return current CRC calculation result.">LL_CRC_ReadData32</a>(CRC_TypeDef *CRCx)
+<a name="l00139"></a><a class="code" href="group/group__CRC__LL__EF__Data__Management.html#ga94541a1a0d2b142017db9db21ac59250">00139</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__CRC__LL__EF__Data__Management.html#ga94541a1a0d2b142017db9db21ac59250" title="Return current CRC calculation result.">LL_CRC_ReadData32</a>(CRC_TypeDef *CRCx)
 <a name="l00140"></a>00140 {
 <a name="l00141"></a>00141   <span class="keywordflow">return</span> (uint32_t)(READ_REG(CRCx-&gt;DR));
 <a name="l00142"></a>00142 }
@@ -215,7 +215,7 @@
 <a name="l00148"></a>00148 <span class="comment">  * @param  CRCx CRC Instance</span>
 <a name="l00149"></a>00149 <span class="comment">  * @retval Value stored in CRC_IDR register (General-purpose 8-bit data register).</span>
 <a name="l00150"></a>00150 <span class="comment">  */</span>
-<a name="l00151"></a><a class="code" href="group__CRC__LL__EF__Data__Management.html#ga8043218bb8d81789943c6fed783d2026">00151</a> __STATIC_INLINE uint32_t <a class="code" href="group__CRC__LL__EF__Data__Management.html#ga8043218bb8d81789943c6fed783d2026" title="Return data stored in the Independent Data(IDR) register.">LL_CRC_Read_IDR</a>(CRC_TypeDef *CRCx)
+<a name="l00151"></a><a class="code" href="group/group__CRC__LL__EF__Data__Management.html#ga8043218bb8d81789943c6fed783d2026">00151</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__CRC__LL__EF__Data__Management.html#ga8043218bb8d81789943c6fed783d2026" title="Return data stored in the Independent Data(IDR) register.">LL_CRC_Read_IDR</a>(CRC_TypeDef *CRCx)
 <a name="l00152"></a>00152 {
 <a name="l00153"></a>00153   <span class="keywordflow">return</span> (uint32_t)(READ_REG(CRCx-&gt;IDR));
 <a name="l00154"></a>00154 }
@@ -228,7 +228,7 @@
 <a name="l00161"></a>00161 <span class="comment">  * @param  InData value to be stored in CRC_IDR register (8-bit) between Min_Data=0 and Max_Data=0xFF</span>
 <a name="l00162"></a>00162 <span class="comment">  * @retval None</span>
 <a name="l00163"></a>00163 <span class="comment">  */</span>
-<a name="l00164"></a><a class="code" href="group__CRC__LL__EF__Data__Management.html#gaeb1b3f47eaa3a52bb2f5de78b87edbe5">00164</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__CRC__LL__EF__Data__Management.html#gaeb1b3f47eaa3a52bb2f5de78b87edbe5" title="Store data in the Independent Data(IDR) register.">LL_CRC_Write_IDR</a>(CRC_TypeDef *CRCx, uint32_t InData)
+<a name="l00164"></a><a class="code" href="group/group__CRC__LL__EF__Data__Management.html#gaeb1b3f47eaa3a52bb2f5de78b87edbe5">00164</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__CRC__LL__EF__Data__Management.html#gaeb1b3f47eaa3a52bb2f5de78b87edbe5" title="Store data in the Independent Data(IDR) register.">LL_CRC_Write_IDR</a>(CRC_TypeDef *CRCx, uint32_t InData)
 <a name="l00165"></a>00165 {
 <a name="l00166"></a>00166   *((uint8_t __IO *)(&amp;CRCx-&gt;IDR)) = (uint8_t) InData;
 <a name="l00167"></a>00167 }<span class="comment"></span>
@@ -241,7 +241,7 @@
 <a name="l00174"></a>00174 <span class="comment">  * @{</span>
 <a name="l00175"></a>00175 <span class="comment">  */</span>
 <a name="l00176"></a>00176 
-<a name="l00177"></a>00177 ErrorStatus <a class="code" href="group__CRC__LL__EF__Init.html#gadeddc1ff35afd491645a3bd70c6d8ac3" title="De-initialize CRC registers (Registers restored to their default values).">LL_CRC_DeInit</a>(CRC_TypeDef *CRCx);
+<a name="l00177"></a>00177 ErrorStatus <a class="code" href="group/group__CRC__LL__EF__Init.html#gadeddc1ff35afd491645a3bd70c6d8ac3" title="De-initialize CRC registers (Registers restored to their default values).">LL_CRC_DeInit</a>(CRC_TypeDef *CRCx);
 <a name="l00178"></a>00178 <span class="comment"></span>
 <a name="l00179"></a>00179 <span class="comment">/**</span>
 <a name="l00180"></a>00180 <span class="comment">  * @}</span>

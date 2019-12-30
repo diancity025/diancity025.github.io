@@ -162,22 +162,22 @@
 <a name="l00095"></a>00095 <span class="comment">  *          b0     (not used)</span>
 <a name="l00096"></a>00096 <span class="comment">  *             x  : Should be set to 0.  </span>
 <a name="l00097"></a>00097 <span class="comment">  */</span> 
-<a name="l00098"></a><a class="code" href="group__CEC__Exported__Types.html#gae503c082bb404380a44bd6bcd173747d">00098</a> <span class="keyword">typedef</span> <span class="keyword">enum</span>
+<a name="l00098"></a><a class="code" href="group/group__CEC__Exported__Types.html#gae503c082bb404380a44bd6bcd173747d">00098</a> <span class="keyword">typedef</span> <span class="keyword">enum</span>
 <a name="l00099"></a>00099 {
-<a name="l00100"></a><a class="code" href="group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747dafbf614b708139a6b3769a50ae1388d88">00100</a>   <a class="code" href="group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747dafbf614b708139a6b3769a50ae1388d88">HAL_CEC_STATE_RESET</a>             = 0x00U,    <span class="comment">/*!&lt; Peripheral is not yet Initialized </span>
+<a name="l00100"></a><a class="code" href="group/group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747dafbf614b708139a6b3769a50ae1388d88">00100</a>   <a class="code" href="group/group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747dafbf614b708139a6b3769a50ae1388d88">HAL_CEC_STATE_RESET</a>             = 0x00U,    <span class="comment">/*!&lt; Peripheral is not yet Initialized </span>
 <a name="l00101"></a>00101 <span class="comment">                                                   Value is allowed for gState and RxState             */</span>
-<a name="l00102"></a><a class="code" href="group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747da7d809edd6caa0aba04fe482b6512d044">00102</a>   <a class="code" href="group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747da7d809edd6caa0aba04fe482b6512d044">HAL_CEC_STATE_READY</a>             = 0x20U,    <span class="comment">/*!&lt; Peripheral Initialized and ready for use</span>
+<a name="l00102"></a><a class="code" href="group/group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747da7d809edd6caa0aba04fe482b6512d044">00102</a>   <a class="code" href="group/group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747da7d809edd6caa0aba04fe482b6512d044">HAL_CEC_STATE_READY</a>             = 0x20U,    <span class="comment">/*!&lt; Peripheral Initialized and ready for use</span>
 <a name="l00103"></a>00103 <span class="comment">                                                   Value is allowed for gState and RxState             */</span>
-<a name="l00104"></a><a class="code" href="group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747da400e58d05fa60f654417333c05f712d9">00104</a>   <a class="code" href="group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747da400e58d05fa60f654417333c05f712d9">HAL_CEC_STATE_BUSY</a>              = 0x24U,    <span class="comment">/*!&lt; an internal process is ongoing</span>
+<a name="l00104"></a><a class="code" href="group/group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747da400e58d05fa60f654417333c05f712d9">00104</a>   <a class="code" href="group/group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747da400e58d05fa60f654417333c05f712d9">HAL_CEC_STATE_BUSY</a>              = 0x24U,    <span class="comment">/*!&lt; an internal process is ongoing</span>
 <a name="l00105"></a>00105 <span class="comment">                                                   Value is allowed for gState only                    */</span>
-<a name="l00106"></a><a class="code" href="group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747dafdef6a83e34818302b5def4c585b13c2">00106</a>   <a class="code" href="group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747dafdef6a83e34818302b5def4c585b13c2">HAL_CEC_STATE_BUSY_RX</a>           = 0x22U,    <span class="comment">/*!&lt; Data Reception process is ongoing</span>
+<a name="l00106"></a><a class="code" href="group/group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747dafdef6a83e34818302b5def4c585b13c2">00106</a>   <a class="code" href="group/group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747dafdef6a83e34818302b5def4c585b13c2">HAL_CEC_STATE_BUSY_RX</a>           = 0x22U,    <span class="comment">/*!&lt; Data Reception process is ongoing</span>
 <a name="l00107"></a>00107 <span class="comment">                                                   Value is allowed for RxState only                   */</span>
-<a name="l00108"></a><a class="code" href="group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747dafe2305b97e10bc9cff45858920377b69">00108</a>   <a class="code" href="group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747dafe2305b97e10bc9cff45858920377b69">HAL_CEC_STATE_BUSY_TX</a>           = 0x21U,    <span class="comment">/*!&lt; Data Transmission process is ongoing </span>
+<a name="l00108"></a><a class="code" href="group/group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747dafe2305b97e10bc9cff45858920377b69">00108</a>   <a class="code" href="group/group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747dafe2305b97e10bc9cff45858920377b69">HAL_CEC_STATE_BUSY_TX</a>           = 0x21U,    <span class="comment">/*!&lt; Data Transmission process is ongoing </span>
 <a name="l00109"></a>00109 <span class="comment">                                                   Value is allowed for gState only                    */</span>
-<a name="l00110"></a><a class="code" href="group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747da0172cc7655f704c0ad1a111140d624d0">00110</a>   <a class="code" href="group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747da0172cc7655f704c0ad1a111140d624d0">HAL_CEC_STATE_BUSY_RX_TX</a>        = 0x23U,    <span class="comment">/*!&lt; an internal process is ongoing</span>
+<a name="l00110"></a><a class="code" href="group/group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747da0172cc7655f704c0ad1a111140d624d0">00110</a>   <a class="code" href="group/group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747da0172cc7655f704c0ad1a111140d624d0">HAL_CEC_STATE_BUSY_RX_TX</a>        = 0x23U,    <span class="comment">/*!&lt; an internal process is ongoing</span>
 <a name="l00111"></a>00111 <span class="comment">                                                   Value is allowed for gState only                    */</span>
-<a name="l00112"></a><a class="code" href="group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747da642d1e2a1f890548ab35a8c3c19ec5a0">00112</a>   <a class="code" href="group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747da642d1e2a1f890548ab35a8c3c19ec5a0">HAL_CEC_STATE_ERROR</a>             = 0x60U     <span class="comment">/*!&lt; Error Value is allowed for gState only              */</span>
-<a name="l00113"></a>00113 }<a class="code" href="group__CEC__Exported__Types.html#gae503c082bb404380a44bd6bcd173747d" title="HAL CEC State structures definition.">HAL_CEC_StateTypeDef</a>;
+<a name="l00112"></a><a class="code" href="group/group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747da642d1e2a1f890548ab35a8c3c19ec5a0">00112</a>   <a class="code" href="group/group__CEC__Exported__Types.html#ggae503c082bb404380a44bd6bcd173747da642d1e2a1f890548ab35a8c3c19ec5a0">HAL_CEC_STATE_ERROR</a>             = 0x60U     <span class="comment">/*!&lt; Error Value is allowed for gState only              */</span>
+<a name="l00113"></a>00113 }<a class="code" href="group/group__CEC__Exported__Types.html#gae503c082bb404380a44bd6bcd173747d" title="HAL CEC State structures definition.">HAL_CEC_StateTypeDef</a>;
 <a name="l00114"></a>00114 <span class="comment"></span>
 <a name="l00115"></a>00115 <span class="comment">/** </span>
 <a name="l00116"></a>00116 <span class="comment">  * @brief  CEC handle Structure definition  </span>
@@ -196,11 +196,11 @@
 <a name="l00129"></a>00129   
 <a name="l00130"></a><a class="code" href="struct____CEC__HandleTypeDef.html#ab2b81959310405975483ba1ad52d8f16">00130</a>   HAL_LockTypeDef         <a class="code" href="struct____CEC__HandleTypeDef.html#ab2b81959310405975483ba1ad52d8f16">Lock</a>;           <span class="comment">/*!&lt; Locking object */</span>
 <a name="l00131"></a>00131 
-<a name="l00132"></a><a class="code" href="struct____CEC__HandleTypeDef.html#ab90ac6e3ff77721347229f3eae78d2eb">00132</a>   <a class="code" href="group__CEC__Exported__Types.html#gae503c082bb404380a44bd6bcd173747d" title="HAL CEC State structures definition.">HAL_CEC_StateTypeDef</a>    <a class="code" href="struct____CEC__HandleTypeDef.html#ab90ac6e3ff77721347229f3eae78d2eb">gState</a>;         <span class="comment">/*!&lt; CEC state information related to global Handle management </span>
+<a name="l00132"></a><a class="code" href="struct____CEC__HandleTypeDef.html#ab90ac6e3ff77721347229f3eae78d2eb">00132</a>   <a class="code" href="group/group__CEC__Exported__Types.html#gae503c082bb404380a44bd6bcd173747d" title="HAL CEC State structures definition.">HAL_CEC_StateTypeDef</a>    <a class="code" href="struct____CEC__HandleTypeDef.html#ab90ac6e3ff77721347229f3eae78d2eb">gState</a>;         <span class="comment">/*!&lt; CEC state information related to global Handle management </span>
 <a name="l00133"></a>00133 <span class="comment">                                               and also related to Tx operations.</span>
 <a name="l00134"></a>00134 <span class="comment">                                               This parameter can be a value of @ref HAL_CEC_StateTypeDef */</span>
 <a name="l00135"></a>00135   
-<a name="l00136"></a><a class="code" href="struct____CEC__HandleTypeDef.html#a1de49f0eb431cdd3ed24466a7e527f89">00136</a>   <a class="code" href="group__CEC__Exported__Types.html#gae503c082bb404380a44bd6bcd173747d" title="HAL CEC State structures definition.">HAL_CEC_StateTypeDef</a>    <a class="code" href="struct____CEC__HandleTypeDef.html#a1de49f0eb431cdd3ed24466a7e527f89">RxState</a>;        <span class="comment">/*!&lt; CEC state information related to Rx operations.</span>
+<a name="l00136"></a><a class="code" href="struct____CEC__HandleTypeDef.html#a1de49f0eb431cdd3ed24466a7e527f89">00136</a>   <a class="code" href="group/group__CEC__Exported__Types.html#gae503c082bb404380a44bd6bcd173747d" title="HAL CEC State structures definition.">HAL_CEC_StateTypeDef</a>    <a class="code" href="struct____CEC__HandleTypeDef.html#a1de49f0eb431cdd3ed24466a7e527f89">RxState</a>;        <span class="comment">/*!&lt; CEC state information related to Rx operations.</span>
 <a name="l00137"></a>00137 <span class="comment">                                               This parameter can be a value of @ref HAL_CEC_StateTypeDef */</span>
 <a name="l00138"></a>00138   
 <a name="l00139"></a><a class="code" href="struct____CEC__HandleTypeDef.html#a82b34f99c6be9effd518cbeade5b12d6">00139</a>   uint32_t                <a class="code" href="struct____CEC__HandleTypeDef.html#a82b34f99c6be9effd518cbeade5b12d6">ErrorCode</a>;      <span class="comment">/*!&lt; For errors handling purposes, copy of ISR register </span>
@@ -215,7 +215,7 @@
 <a name="l00148"></a>00148   void  (* MspDeInitCallback)      ( <span class="keyword">struct </span><a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">__CEC_HandleTypeDef</a> * hcec);    <span class="comment">/*!&lt; CEC Msp DeInit callback            */</span>
 <a name="l00149"></a>00149 
 <a name="l00150"></a>00150 <span class="preprocessor">#endif </span><span class="comment">/* (USE_HAL_CEC_REGISTER_CALLBACKS) */</span>                                                                                      
-<a name="l00151"></a>00151 }<a class="code" href="group__CEC__Exported__Types.html#ga5dadf495b1cb1c4c38615405c4b6cc42" title="CEC handle Structure definition.">CEC_HandleTypeDef</a>;
+<a name="l00151"></a>00151 }<a class="code" href="group/group__CEC__Exported__Types.html#ga5dadf495b1cb1c4c38615405c4b6cc42" title="CEC handle Structure definition.">CEC_HandleTypeDef</a>;
 <a name="l00152"></a>00152 
 <a name="l00153"></a>00153 <span class="preprocessor">#if (USE_HAL_CEC_REGISTER_CALLBACKS == 1)</span>
 <a name="l00154"></a>00154 <span class="preprocessor"></span><span class="comment">/**</span>
@@ -248,14 +248,14 @@
 <a name="l00181"></a>00181 <span class="comment">/** @defgroup CEC_Error_Code CEC Error Code</span>
 <a name="l00182"></a>00182 <span class="comment">  * @{</span>
 <a name="l00183"></a>00183 <span class="comment">  */</span>
-<a name="l00184"></a><a class="code" href="group__CEC__Error__Code.html#gadce9ae40a56b9fc277c2fff9a299a7f1">00184</a> <span class="preprocessor">#define HAL_CEC_ERROR_NONE   0x00000000U    </span><span class="comment">/*!&lt; no error */</span>
-<a name="l00185"></a><a class="code" href="group__CEC__Error__Code.html#ga9d8143d853b0b268f8ef34e897f25f41">00185</a> <span class="preprocessor">#define HAL_CEC_ERROR_BTE    CEC_ESR_BTE    </span><span class="comment">/*!&lt; Bit Timing Error */</span>
-<a name="l00186"></a><a class="code" href="group__CEC__Error__Code.html#ga22d4144bee150303f5d8a61930d4aa92">00186</a> <span class="preprocessor">#define HAL_CEC_ERROR_BPE    CEC_ESR_BPE    </span><span class="comment">/*!&lt; Bit Period Error */</span>
-<a name="l00187"></a><a class="code" href="group__CEC__Error__Code.html#ga1998bd9313051ad3f271ad1c75c6433b">00187</a> <span class="preprocessor">#define HAL_CEC_ERROR_RBTFE  CEC_ESR_RBTFE  </span><span class="comment">/*!&lt; Rx Block Transfer Finished Error */</span>
-<a name="l00188"></a><a class="code" href="group__CEC__Error__Code.html#ga0454bc6bf82e93ff733e864772e597ca">00188</a> <span class="preprocessor">#define HAL_CEC_ERROR_SBE    CEC_ESR_SBE    </span><span class="comment">/*!&lt; Start Bit Error */</span>
-<a name="l00189"></a><a class="code" href="group__CEC__Error__Code.html#ga53b4f8fffe6e075598992a491575dd0e">00189</a> <span class="preprocessor">#define HAL_CEC_ERROR_ACKE   CEC_ESR_ACKE   </span><span class="comment">/*!&lt; Block Acknowledge Error */</span>
-<a name="l00190"></a><a class="code" href="group__CEC__Error__Code.html#ga65ea1fdb0fc7929d2934acdee26ee322">00190</a> <span class="preprocessor">#define HAL_CEC_ERROR_LINE   CEC_ESR_LINE   </span><span class="comment">/*!&lt; Line Error */</span>
-<a name="l00191"></a><a class="code" href="group__CEC__Error__Code.html#gae61060196a367ca44bc6afe9c48e3907">00191</a> <span class="preprocessor">#define HAL_CEC_ERROR_TBTFE  CEC_ESR_TBTFE  </span><span class="comment">/*!&lt; Tx Block Transfer Finished Error */</span>
+<a name="l00184"></a><a class="code" href="group/group__CEC__Error__Code.html#gadce9ae40a56b9fc277c2fff9a299a7f1">00184</a> <span class="preprocessor">#define HAL_CEC_ERROR_NONE   0x00000000U    </span><span class="comment">/*!&lt; no error */</span>
+<a name="l00185"></a><a class="code" href="group/group__CEC__Error__Code.html#ga9d8143d853b0b268f8ef34e897f25f41">00185</a> <span class="preprocessor">#define HAL_CEC_ERROR_BTE    CEC_ESR_BTE    </span><span class="comment">/*!&lt; Bit Timing Error */</span>
+<a name="l00186"></a><a class="code" href="group/group__CEC__Error__Code.html#ga22d4144bee150303f5d8a61930d4aa92">00186</a> <span class="preprocessor">#define HAL_CEC_ERROR_BPE    CEC_ESR_BPE    </span><span class="comment">/*!&lt; Bit Period Error */</span>
+<a name="l00187"></a><a class="code" href="group/group__CEC__Error__Code.html#ga1998bd9313051ad3f271ad1c75c6433b">00187</a> <span class="preprocessor">#define HAL_CEC_ERROR_RBTFE  CEC_ESR_RBTFE  </span><span class="comment">/*!&lt; Rx Block Transfer Finished Error */</span>
+<a name="l00188"></a><a class="code" href="group/group__CEC__Error__Code.html#ga0454bc6bf82e93ff733e864772e597ca">00188</a> <span class="preprocessor">#define HAL_CEC_ERROR_SBE    CEC_ESR_SBE    </span><span class="comment">/*!&lt; Start Bit Error */</span>
+<a name="l00189"></a><a class="code" href="group/group__CEC__Error__Code.html#ga53b4f8fffe6e075598992a491575dd0e">00189</a> <span class="preprocessor">#define HAL_CEC_ERROR_ACKE   CEC_ESR_ACKE   </span><span class="comment">/*!&lt; Block Acknowledge Error */</span>
+<a name="l00190"></a><a class="code" href="group/group__CEC__Error__Code.html#ga65ea1fdb0fc7929d2934acdee26ee322">00190</a> <span class="preprocessor">#define HAL_CEC_ERROR_LINE   CEC_ESR_LINE   </span><span class="comment">/*!&lt; Line Error */</span>
+<a name="l00191"></a><a class="code" href="group/group__CEC__Error__Code.html#gae61060196a367ca44bc6afe9c48e3907">00191</a> <span class="preprocessor">#define HAL_CEC_ERROR_TBTFE  CEC_ESR_TBTFE  </span><span class="comment">/*!&lt; Tx Block Transfer Finished Error */</span>
 <a name="l00192"></a>00192 <span class="preprocessor">#if (USE_HAL_CEC_REGISTER_CALLBACKS == 1)</span>
 <a name="l00193"></a>00193 <span class="preprocessor"></span><span class="preprocessor">#define  HAL_CEC_ERROR_INVALID_CALLBACK ((uint32_t)0x00000080U) </span><span class="comment">/*!&lt; Invalid Callback Error  */</span>
 <a name="l00194"></a>00194 <span class="preprocessor">#endif </span><span class="comment">/* USE_HAL_CEC_REGISTER_CALLBACKS */</span>
@@ -266,8 +266,8 @@
 <a name="l00199"></a>00199 <span class="comment">/** @defgroup CEC_BitTimingErrorMode Bit Timing Error Mode</span>
 <a name="l00200"></a>00200 <span class="comment">  * @{</span>
 <a name="l00201"></a>00201 <span class="comment">  */</span> 
-<a name="l00202"></a><a class="code" href="group__CEC__BitTimingErrorMode.html#gad22d6801695d03484624e4bc52232272">00202</a> <span class="preprocessor">#define CEC_BIT_TIMING_ERROR_MODE_STANDARD  0x00000000U      </span><span class="comment">/*!&lt; Bit timing error Standard Mode */</span>
-<a name="l00203"></a><a class="code" href="group__CEC__BitTimingErrorMode.html#ga4c6c77cf3f4c219dc89928103e3b15ec">00203</a> <span class="preprocessor">#define CEC_BIT_TIMING_ERROR_MODE_ERRORFREE CEC_CFGR_BTEM    </span><span class="comment">/*!&lt; Bit timing error Free Mode */</span>
+<a name="l00202"></a><a class="code" href="group/group__CEC__BitTimingErrorMode.html#gad22d6801695d03484624e4bc52232272">00202</a> <span class="preprocessor">#define CEC_BIT_TIMING_ERROR_MODE_STANDARD  0x00000000U      </span><span class="comment">/*!&lt; Bit timing error Standard Mode */</span>
+<a name="l00203"></a><a class="code" href="group/group__CEC__BitTimingErrorMode.html#ga4c6c77cf3f4c219dc89928103e3b15ec">00203</a> <span class="preprocessor">#define CEC_BIT_TIMING_ERROR_MODE_ERRORFREE CEC_CFGR_BTEM    </span><span class="comment">/*!&lt; Bit timing error Free Mode */</span>
 <a name="l00204"></a>00204 <span class="comment">/**</span>
 <a name="l00205"></a>00205 <span class="comment">  * @}</span>
 <a name="l00206"></a>00206 <span class="comment">  */</span>
@@ -275,8 +275,8 @@
 <a name="l00208"></a>00208 <span class="comment">/** @defgroup CEC_BitPeriodErrorMode Bit Period Error Mode</span>
 <a name="l00209"></a>00209 <span class="comment">  * @{</span>
 <a name="l00210"></a>00210 <span class="comment">  */</span> 
-<a name="l00211"></a><a class="code" href="group__CEC__BitPeriodErrorMode.html#ga4a3c9674ca926480ed81c1c28630f816">00211</a> <span class="preprocessor">#define CEC_BIT_PERIOD_ERROR_MODE_STANDARD 0x00000000U      </span><span class="comment">/*!&lt; Bit period error Standard Mode */</span>
-<a name="l00212"></a><a class="code" href="group__CEC__BitPeriodErrorMode.html#gaccd510c081d0ba0c470e68d745f32123">00212</a> <span class="preprocessor">#define CEC_BIT_PERIOD_ERROR_MODE_FLEXIBLE CEC_CFGR_BPEM    </span><span class="comment">/*!&lt; Bit period error Flexible Mode */</span>
+<a name="l00211"></a><a class="code" href="group/group__CEC__BitPeriodErrorMode.html#ga4a3c9674ca926480ed81c1c28630f816">00211</a> <span class="preprocessor">#define CEC_BIT_PERIOD_ERROR_MODE_STANDARD 0x00000000U      </span><span class="comment">/*!&lt; Bit period error Standard Mode */</span>
+<a name="l00212"></a><a class="code" href="group/group__CEC__BitPeriodErrorMode.html#gaccd510c081d0ba0c470e68d745f32123">00212</a> <span class="preprocessor">#define CEC_BIT_PERIOD_ERROR_MODE_FLEXIBLE CEC_CFGR_BPEM    </span><span class="comment">/*!&lt; Bit period error Flexible Mode */</span>
 <a name="l00213"></a>00213 <span class="comment">/**</span>
 <a name="l00214"></a>00214 <span class="comment">  * @}</span>
 <a name="l00215"></a>00215 <span class="comment">  */</span> 
@@ -284,7 +284,7 @@
 <a name="l00217"></a>00217 <span class="comment">/** @defgroup CEC_Initiator_Position   CEC Initiator logical address position in message header     </span>
 <a name="l00218"></a>00218 <span class="comment">  * @{</span>
 <a name="l00219"></a>00219 <span class="comment">  */</span>
-<a name="l00220"></a><a class="code" href="group__CEC__Initiator__Position.html#gafaefbc6e1b21eac5c2cd0aed3a420cdf">00220</a> <span class="preprocessor">#define CEC_INITIATOR_LSB_POS                  4U</span>
+<a name="l00220"></a><a class="code" href="group/group__CEC__Initiator__Position.html#gafaefbc6e1b21eac5c2cd0aed3a420cdf">00220</a> <span class="preprocessor">#define CEC_INITIATOR_LSB_POS                  4U</span>
 <a name="l00221"></a>00221 <span class="preprocessor"></span><span class="comment">/**</span>
 <a name="l00222"></a>00222 <span class="comment">  * @}</span>
 <a name="l00223"></a>00223 <span class="comment">  */</span>
@@ -292,23 +292,23 @@
 <a name="l00225"></a>00225 <span class="comment">/** @defgroup CEC_OWN_ADDRESS   CEC Own Address    </span>
 <a name="l00226"></a>00226 <span class="comment">  * @{</span>
 <a name="l00227"></a>00227 <span class="comment">  */</span>
-<a name="l00228"></a><a class="code" href="group__CEC__OWN__ADDRESS.html#ga042e718940f7b5b6f940d77b1eb7f9db">00228</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_NONE            CEC_OWN_ADDRESS_0    </span><span class="comment">/* Reset value */</span>
-<a name="l00229"></a><a class="code" href="group__CEC__OWN__ADDRESS.html#gad58544f599334dd0c17ab1169b4b8876">00229</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_0              ((uint16_t)0x0000U)   </span><span class="comment">/* Logical Address 0 */</span>
-<a name="l00230"></a><a class="code" href="group__CEC__OWN__ADDRESS.html#ga0e8444d669b5eb18133e011a7e10d5fd">00230</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_1              ((uint16_t)0x0001U)   </span><span class="comment">/* Logical Address 1 */</span>
-<a name="l00231"></a><a class="code" href="group__CEC__OWN__ADDRESS.html#gabaaa0614e349be61ac7cb0ab97100fc7">00231</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_2              ((uint16_t)0x0002U)   </span><span class="comment">/* Logical Address 2 */</span>
-<a name="l00232"></a><a class="code" href="group__CEC__OWN__ADDRESS.html#ga9802adab6ef155085dec02f135eedb85">00232</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_3              ((uint16_t)0x0003U)   </span><span class="comment">/* Logical Address 3 */</span>
-<a name="l00233"></a><a class="code" href="group__CEC__OWN__ADDRESS.html#gaf0a34ca231ce0fbde49a7d37009aba1c">00233</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_4              ((uint16_t)0x0004U)   </span><span class="comment">/* Logical Address 4 */</span>
-<a name="l00234"></a><a class="code" href="group__CEC__OWN__ADDRESS.html#ga22a74d26d545d60c7bce6b3a8d0551e0">00234</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_5              ((uint16_t)0x0005U)   </span><span class="comment">/* Logical Address 5 */</span>
-<a name="l00235"></a><a class="code" href="group__CEC__OWN__ADDRESS.html#ga91a366b141f8d114fe617ed2b3ddd91a">00235</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_6              ((uint16_t)0x0006U)   </span><span class="comment">/* Logical Address 6 */</span>
-<a name="l00236"></a><a class="code" href="group__CEC__OWN__ADDRESS.html#ga50715517368cbdf04ce105444a84ec57">00236</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_7              ((uint16_t)0x0007U)   </span><span class="comment">/* Logical Address 7 */</span>
-<a name="l00237"></a><a class="code" href="group__CEC__OWN__ADDRESS.html#ga3e3889c6630d978d6d79c31fd31ff870">00237</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_8              ((uint16_t)0x0008U)   </span><span class="comment">/* Logical Address 8 */</span>
-<a name="l00238"></a><a class="code" href="group__CEC__OWN__ADDRESS.html#gaee986833d3e008d5c270fc16eaf42b10">00238</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_9              ((uint16_t)0x0009U)   </span><span class="comment">/* Logical Address 9 */</span>
-<a name="l00239"></a><a class="code" href="group__CEC__OWN__ADDRESS.html#ga4824509a6b26a847fc53344697e7adcc">00239</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_10             ((uint16_t)0x000AU)   </span><span class="comment">/* Logical Address 10 */</span>
-<a name="l00240"></a><a class="code" href="group__CEC__OWN__ADDRESS.html#ga386513574b25f449b63046db771d2d11">00240</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_11             ((uint16_t)0x000BU)   </span><span class="comment">/* Logical Address 11 */</span>
-<a name="l00241"></a><a class="code" href="group__CEC__OWN__ADDRESS.html#gae5c68eb032ac4671c8e97d4d42aad70f">00241</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_12             ((uint16_t)0x000CU)   </span><span class="comment">/* Logical Address 12 */</span>
-<a name="l00242"></a><a class="code" href="group__CEC__OWN__ADDRESS.html#gab177a3cdb9f39ebec41d596c71b4610f">00242</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_13             ((uint16_t)0x000DU)   </span><span class="comment">/* Logical Address 13 */</span>
-<a name="l00243"></a><a class="code" href="group__CEC__OWN__ADDRESS.html#ga521fc18de65f94f9c521c0dc21bf37f9">00243</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_14             ((uint16_t)0x000EU)   </span><span class="comment">/* Logical Address 14 */</span>
-<a name="l00244"></a><a class="code" href="group__CEC__OWN__ADDRESS.html#ga6f2a835fdd24536859d25cee32f399d8">00244</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_15             ((uint16_t)0x000FU)   </span><span class="comment">/* Logical Address 15 */</span>
+<a name="l00228"></a><a class="code" href="group/group__CEC__OWN__ADDRESS.html#ga042e718940f7b5b6f940d77b1eb7f9db">00228</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_NONE            CEC_OWN_ADDRESS_0    </span><span class="comment">/* Reset value */</span>
+<a name="l00229"></a><a class="code" href="group/group__CEC__OWN__ADDRESS.html#gad58544f599334dd0c17ab1169b4b8876">00229</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_0              ((uint16_t)0x0000U)   </span><span class="comment">/* Logical Address 0 */</span>
+<a name="l00230"></a><a class="code" href="group/group__CEC__OWN__ADDRESS.html#ga0e8444d669b5eb18133e011a7e10d5fd">00230</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_1              ((uint16_t)0x0001U)   </span><span class="comment">/* Logical Address 1 */</span>
+<a name="l00231"></a><a class="code" href="group/group__CEC__OWN__ADDRESS.html#gabaaa0614e349be61ac7cb0ab97100fc7">00231</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_2              ((uint16_t)0x0002U)   </span><span class="comment">/* Logical Address 2 */</span>
+<a name="l00232"></a><a class="code" href="group/group__CEC__OWN__ADDRESS.html#ga9802adab6ef155085dec02f135eedb85">00232</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_3              ((uint16_t)0x0003U)   </span><span class="comment">/* Logical Address 3 */</span>
+<a name="l00233"></a><a class="code" href="group/group__CEC__OWN__ADDRESS.html#gaf0a34ca231ce0fbde49a7d37009aba1c">00233</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_4              ((uint16_t)0x0004U)   </span><span class="comment">/* Logical Address 4 */</span>
+<a name="l00234"></a><a class="code" href="group/group__CEC__OWN__ADDRESS.html#ga22a74d26d545d60c7bce6b3a8d0551e0">00234</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_5              ((uint16_t)0x0005U)   </span><span class="comment">/* Logical Address 5 */</span>
+<a name="l00235"></a><a class="code" href="group/group__CEC__OWN__ADDRESS.html#ga91a366b141f8d114fe617ed2b3ddd91a">00235</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_6              ((uint16_t)0x0006U)   </span><span class="comment">/* Logical Address 6 */</span>
+<a name="l00236"></a><a class="code" href="group/group__CEC__OWN__ADDRESS.html#ga50715517368cbdf04ce105444a84ec57">00236</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_7              ((uint16_t)0x0007U)   </span><span class="comment">/* Logical Address 7 */</span>
+<a name="l00237"></a><a class="code" href="group/group__CEC__OWN__ADDRESS.html#ga3e3889c6630d978d6d79c31fd31ff870">00237</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_8              ((uint16_t)0x0008U)   </span><span class="comment">/* Logical Address 8 */</span>
+<a name="l00238"></a><a class="code" href="group/group__CEC__OWN__ADDRESS.html#gaee986833d3e008d5c270fc16eaf42b10">00238</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_9              ((uint16_t)0x0009U)   </span><span class="comment">/* Logical Address 9 */</span>
+<a name="l00239"></a><a class="code" href="group/group__CEC__OWN__ADDRESS.html#ga4824509a6b26a847fc53344697e7adcc">00239</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_10             ((uint16_t)0x000AU)   </span><span class="comment">/* Logical Address 10 */</span>
+<a name="l00240"></a><a class="code" href="group/group__CEC__OWN__ADDRESS.html#ga386513574b25f449b63046db771d2d11">00240</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_11             ((uint16_t)0x000BU)   </span><span class="comment">/* Logical Address 11 */</span>
+<a name="l00241"></a><a class="code" href="group/group__CEC__OWN__ADDRESS.html#gae5c68eb032ac4671c8e97d4d42aad70f">00241</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_12             ((uint16_t)0x000CU)   </span><span class="comment">/* Logical Address 12 */</span>
+<a name="l00242"></a><a class="code" href="group/group__CEC__OWN__ADDRESS.html#gab177a3cdb9f39ebec41d596c71b4610f">00242</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_13             ((uint16_t)0x000DU)   </span><span class="comment">/* Logical Address 13 */</span>
+<a name="l00243"></a><a class="code" href="group/group__CEC__OWN__ADDRESS.html#ga521fc18de65f94f9c521c0dc21bf37f9">00243</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_14             ((uint16_t)0x000EU)   </span><span class="comment">/* Logical Address 14 */</span>
+<a name="l00244"></a><a class="code" href="group/group__CEC__OWN__ADDRESS.html#ga6f2a835fdd24536859d25cee32f399d8">00244</a> <span class="preprocessor">#define CEC_OWN_ADDRESS_15             ((uint16_t)0x000FU)   </span><span class="comment">/* Logical Address 15 */</span>
 <a name="l00245"></a>00245 <span class="comment">/**</span>
 <a name="l00246"></a>00246 <span class="comment">  * @}</span>
 <a name="l00247"></a>00247 <span class="comment">  */</span>
@@ -316,7 +316,7 @@
 <a name="l00249"></a>00249 <span class="comment">/** @defgroup CEC_Interrupts_Definitions  Interrupts definition</span>
 <a name="l00250"></a>00250 <span class="comment">  * @{</span>
 <a name="l00251"></a>00251 <span class="comment">  */</span>
-<a name="l00252"></a><a class="code" href="group__CEC__Interrupts__Definitions.html#ga86bfbbef3e96323ffdce33bf7bbb7810">00252</a> <span class="preprocessor">#define CEC_IT_IE CEC_CFGR_IE</span>
+<a name="l00252"></a><a class="code" href="group/group__CEC__Interrupts__Definitions.html#ga86bfbbef3e96323ffdce33bf7bbb7810">00252</a> <span class="preprocessor">#define CEC_IT_IE CEC_CFGR_IE</span>
 <a name="l00253"></a>00253 <span class="preprocessor"></span><span class="comment">/**</span>
 <a name="l00254"></a>00254 <span class="comment">  * @}</span>
 <a name="l00255"></a>00255 <span class="comment">  */</span>
@@ -324,14 +324,14 @@
 <a name="l00257"></a>00257 <span class="comment">/** @defgroup CEC_Flags_Definitions  Flags definition</span>
 <a name="l00258"></a>00258 <span class="comment">  * @{</span>
 <a name="l00259"></a>00259 <span class="comment">  */</span>
-<a name="l00260"></a><a class="code" href="group__CEC__Flags__Definitions.html#gaf27358370e8a2ce93e1883bb73352085">00260</a> <span class="preprocessor">#define CEC_FLAG_TSOM  CEC_CSR_TSOM</span>
-<a name="l00261"></a><a class="code" href="group__CEC__Flags__Definitions.html#gad0adfb11294f562f2c8dc555f69e25e0">00261</a> <span class="preprocessor"></span><span class="preprocessor">#define CEC_FLAG_TEOM  CEC_CSR_TEOM</span>
-<a name="l00262"></a><a class="code" href="group__CEC__Flags__Definitions.html#ga7edc608ca7b4ea74dd4d795fa3214c11">00262</a> <span class="preprocessor"></span><span class="preprocessor">#define CEC_FLAG_TERR  CEC_CSR_TERR</span>
-<a name="l00263"></a><a class="code" href="group__CEC__Flags__Definitions.html#gaeb02634fdd06f4ea0990e2cf23cf200e">00263</a> <span class="preprocessor"></span><span class="preprocessor">#define CEC_FLAG_TBTRF CEC_CSR_TBTRF</span>
-<a name="l00264"></a><a class="code" href="group__CEC__Flags__Definitions.html#ga4e352d4f48e3b197edf150860703d2bf">00264</a> <span class="preprocessor"></span><span class="preprocessor">#define CEC_FLAG_RSOM  CEC_CSR_RSOM</span>
-<a name="l00265"></a><a class="code" href="group__CEC__Flags__Definitions.html#gaffeaec4eafbf1efbd88139b9bb0654a7">00265</a> <span class="preprocessor"></span><span class="preprocessor">#define CEC_FLAG_REOM  CEC_CSR_REOM</span>
-<a name="l00266"></a><a class="code" href="group__CEC__Flags__Definitions.html#gac2376c2b958536ab414574f60cb5d75a">00266</a> <span class="preprocessor"></span><span class="preprocessor">#define CEC_FLAG_RERR  CEC_CSR_RERR</span>
-<a name="l00267"></a><a class="code" href="group__CEC__Flags__Definitions.html#gae73c6ec73ab8ad57b18d3bd416baf2d3">00267</a> <span class="preprocessor"></span><span class="preprocessor">#define CEC_FLAG_RBTF  CEC_CSR_RBTF</span>
+<a name="l00260"></a><a class="code" href="group/group__CEC__Flags__Definitions.html#gaf27358370e8a2ce93e1883bb73352085">00260</a> <span class="preprocessor">#define CEC_FLAG_TSOM  CEC_CSR_TSOM</span>
+<a name="l00261"></a><a class="code" href="group/group__CEC__Flags__Definitions.html#gad0adfb11294f562f2c8dc555f69e25e0">00261</a> <span class="preprocessor"></span><span class="preprocessor">#define CEC_FLAG_TEOM  CEC_CSR_TEOM</span>
+<a name="l00262"></a><a class="code" href="group/group__CEC__Flags__Definitions.html#ga7edc608ca7b4ea74dd4d795fa3214c11">00262</a> <span class="preprocessor"></span><span class="preprocessor">#define CEC_FLAG_TERR  CEC_CSR_TERR</span>
+<a name="l00263"></a><a class="code" href="group/group__CEC__Flags__Definitions.html#gaeb02634fdd06f4ea0990e2cf23cf200e">00263</a> <span class="preprocessor"></span><span class="preprocessor">#define CEC_FLAG_TBTRF CEC_CSR_TBTRF</span>
+<a name="l00264"></a><a class="code" href="group/group__CEC__Flags__Definitions.html#ga4e352d4f48e3b197edf150860703d2bf">00264</a> <span class="preprocessor"></span><span class="preprocessor">#define CEC_FLAG_RSOM  CEC_CSR_RSOM</span>
+<a name="l00265"></a><a class="code" href="group/group__CEC__Flags__Definitions.html#gaffeaec4eafbf1efbd88139b9bb0654a7">00265</a> <span class="preprocessor"></span><span class="preprocessor">#define CEC_FLAG_REOM  CEC_CSR_REOM</span>
+<a name="l00266"></a><a class="code" href="group/group__CEC__Flags__Definitions.html#gac2376c2b958536ab414574f60cb5d75a">00266</a> <span class="preprocessor"></span><span class="preprocessor">#define CEC_FLAG_RERR  CEC_CSR_RERR</span>
+<a name="l00267"></a><a class="code" href="group/group__CEC__Flags__Definitions.html#gae73c6ec73ab8ad57b18d3bd416baf2d3">00267</a> <span class="preprocessor"></span><span class="preprocessor">#define CEC_FLAG_RBTF  CEC_CSR_RBTF</span>
 <a name="l00268"></a>00268 <span class="preprocessor"></span><span class="comment">/**</span>
 <a name="l00269"></a>00269 <span class="comment">  * @}</span>
 <a name="l00270"></a>00270 <span class="comment">  */</span>
@@ -357,7 +357,7 @@
 <a name="l00290"></a>00290 <span class="preprocessor">                                                       (__HANDLE__)-&gt;MspDeInitCallback = NULL;         \</span>
 <a name="l00291"></a>00291 <span class="preprocessor">                                                     } while(0)</span>
 <a name="l00292"></a>00292 <span class="preprocessor"></span><span class="preprocessor">#else  </span>
-<a name="l00293"></a><a class="code" href="group__CEC__Exported__Macros.html#ga6ad04c519242043b49c3d55bf4856df0">00293</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_CEC_RESET_HANDLE_STATE(__HANDLE__) do{                                                   \</span>
+<a name="l00293"></a><a class="code" href="group/group__CEC__Exported__Macros.html#ga6ad04c519242043b49c3d55bf4856df0">00293</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_CEC_RESET_HANDLE_STATE(__HANDLE__) do{                                                   \</span>
 <a name="l00294"></a>00294 <span class="preprocessor">                                                       (__HANDLE__)-&gt;gState = HAL_CEC_STATE_RESET;     \</span>
 <a name="l00295"></a>00295 <span class="preprocessor">                                                       (__HANDLE__)-&gt;RxState = HAL_CEC_STATE_RESET;    \</span>
 <a name="l00296"></a>00296 <span class="preprocessor">                                                     } while(0)</span>
@@ -372,7 +372,7 @@
 <a name="l00305"></a>00305 <span class="comment">  *     @arg CEC_FLAG_RBTF: Rx Block Transfer Finished</span>
 <a name="l00306"></a>00306 <span class="comment">  * @retval ITStatus</span>
 <a name="l00307"></a>00307 <span class="comment">  */</span>
-<a name="l00308"></a><a class="code" href="group__CEC__Exported__Macros.html#ga58e002d1e5ab0db2532c520e9f3e789f">00308</a> <span class="preprocessor">#define __HAL_CEC_GET_FLAG(__HANDLE__, __FLAG__) READ_BIT((__HANDLE__)-&gt;Instance-&gt;CSR,(__FLAG__)) </span>
+<a name="l00308"></a><a class="code" href="group/group__CEC__Exported__Macros.html#ga58e002d1e5ab0db2532c520e9f3e789f">00308</a> <span class="preprocessor">#define __HAL_CEC_GET_FLAG(__HANDLE__, __FLAG__) READ_BIT((__HANDLE__)-&gt;Instance-&gt;CSR,(__FLAG__)) </span>
 <a name="l00309"></a>00309 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00310"></a>00310 <span class="comment">/** @brief  Clears the CEC&#39;s pending flags.</span>
 <a name="l00311"></a>00311 <span class="comment">  * @param  __HANDLE__: specifies the CEC Handle.</span>
@@ -384,7 +384,7 @@
 <a name="l00317"></a>00317 <span class="comment">  *     @arg CEC_CSR_RBTF: Rx Block Transfer Finished</span>
 <a name="l00318"></a>00318 <span class="comment">  * @retval none  </span>
 <a name="l00319"></a>00319 <span class="comment">  */</span>
-<a name="l00320"></a><a class="code" href="group__CEC__Exported__Macros.html#ga01aef9670da895555c046633718dbdd5">00320</a> <span class="preprocessor">#define __HAL_CEC_CLEAR_FLAG(__HANDLE__, __FLAG__)                                                                   \</span>
+<a name="l00320"></a><a class="code" href="group/group__CEC__Exported__Macros.html#ga01aef9670da895555c046633718dbdd5">00320</a> <span class="preprocessor">#define __HAL_CEC_CLEAR_FLAG(__HANDLE__, __FLAG__)                                                                   \</span>
 <a name="l00321"></a>00321 <span class="preprocessor">                          do {                                                                                       \</span>
 <a name="l00322"></a>00322 <span class="preprocessor">                            uint32_t tmp = 0x0U;                                                                     \</span>
 <a name="l00323"></a>00323 <span class="preprocessor">                            tmp = (__HANDLE__)-&gt;Instance-&gt;CSR &amp; 0x00000002U;                                         \</span>
@@ -398,7 +398,7 @@
 <a name="l00331"></a>00331 <span class="comment">  *            @arg CEC_IT_IE         : Interrupt Enable.</span>
 <a name="l00332"></a>00332 <span class="comment">  * @retval none</span>
 <a name="l00333"></a>00333 <span class="comment">  */</span>
-<a name="l00334"></a><a class="code" href="group__CEC__Exported__Macros.html#gaa452d865f53ccd933bdc41d2a0c8fa5a">00334</a> <span class="preprocessor">#define __HAL_CEC_ENABLE_IT(__HANDLE__, __INTERRUPT__) SET_BIT((__HANDLE__)-&gt;Instance-&gt;CFGR, (__INTERRUPT__))</span>
+<a name="l00334"></a><a class="code" href="group/group__CEC__Exported__Macros.html#gaa452d865f53ccd933bdc41d2a0c8fa5a">00334</a> <span class="preprocessor">#define __HAL_CEC_ENABLE_IT(__HANDLE__, __INTERRUPT__) SET_BIT((__HANDLE__)-&gt;Instance-&gt;CFGR, (__INTERRUPT__))</span>
 <a name="l00335"></a>00335 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00336"></a>00336 <span class="comment">/** @brief  Disables the specified CEC interrupt.</span>
 <a name="l00337"></a>00337 <span class="comment">  * @param  __HANDLE__: specifies the CEC Handle.</span>
@@ -407,7 +407,7 @@
 <a name="l00340"></a>00340 <span class="comment">  *            @arg CEC_IT_IE         : Interrupt Enable</span>
 <a name="l00341"></a>00341 <span class="comment">  * @retval none</span>
 <a name="l00342"></a>00342 <span class="comment">  */</span>   
-<a name="l00343"></a><a class="code" href="group__CEC__Exported__Macros.html#gafe3d9882fdf3cd0a137ddb0dcf4bc871">00343</a> <span class="preprocessor">#define __HAL_CEC_DISABLE_IT(__HANDLE__, __INTERRUPT__) CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CFGR, (__INTERRUPT__))</span>
+<a name="l00343"></a><a class="code" href="group/group__CEC__Exported__Macros.html#gafe3d9882fdf3cd0a137ddb0dcf4bc871">00343</a> <span class="preprocessor">#define __HAL_CEC_DISABLE_IT(__HANDLE__, __INTERRUPT__) CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CFGR, (__INTERRUPT__))</span>
 <a name="l00344"></a>00344 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00345"></a>00345 <span class="comment">/** @brief  Checks whether or not the specified CEC interrupt is enabled.</span>
 <a name="l00346"></a>00346 <span class="comment">  * @param  __HANDLE__: specifies the CEC Handle.</span>
@@ -416,56 +416,56 @@
 <a name="l00349"></a>00349 <span class="comment">  *            @arg CEC_IT_IE         : Interrupt Enable</span>
 <a name="l00350"></a>00350 <span class="comment">  * @retval FlagStatus  </span>
 <a name="l00351"></a>00351 <span class="comment">  */</span>
-<a name="l00352"></a><a class="code" href="group__CEC__Exported__Macros.html#ga9b6400e064a23e0c041dddcd6e5765c3">00352</a> <span class="preprocessor">#define __HAL_CEC_GET_IT_SOURCE(__HANDLE__, __INTERRUPT__) READ_BIT((__HANDLE__)-&gt;Instance-&gt;CFGR, (__INTERRUPT__))</span>
+<a name="l00352"></a><a class="code" href="group/group__CEC__Exported__Macros.html#ga9b6400e064a23e0c041dddcd6e5765c3">00352</a> <span class="preprocessor">#define __HAL_CEC_GET_IT_SOURCE(__HANDLE__, __INTERRUPT__) READ_BIT((__HANDLE__)-&gt;Instance-&gt;CFGR, (__INTERRUPT__))</span>
 <a name="l00353"></a>00353 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00354"></a>00354 <span class="comment">/** @brief  Enables the CEC device</span>
 <a name="l00355"></a>00355 <span class="comment">  * @param  __HANDLE__: specifies the CEC Handle.               </span>
 <a name="l00356"></a>00356 <span class="comment">  * @retval none </span>
 <a name="l00357"></a>00357 <span class="comment">  */</span>
-<a name="l00358"></a><a class="code" href="group__CEC__Exported__Macros.html#gade4f4d8dbc80511b41054394f8b36733">00358</a> <span class="preprocessor">#define __HAL_CEC_ENABLE(__HANDLE__) SET_BIT((__HANDLE__)-&gt;Instance-&gt;CFGR, CEC_CFGR_PE)</span>
+<a name="l00358"></a><a class="code" href="group/group__CEC__Exported__Macros.html#gade4f4d8dbc80511b41054394f8b36733">00358</a> <span class="preprocessor">#define __HAL_CEC_ENABLE(__HANDLE__) SET_BIT((__HANDLE__)-&gt;Instance-&gt;CFGR, CEC_CFGR_PE)</span>
 <a name="l00359"></a>00359 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00360"></a>00360 <span class="comment">/** @brief  Disables the CEC device</span>
 <a name="l00361"></a>00361 <span class="comment">  * @param  __HANDLE__: specifies the CEC Handle.               </span>
 <a name="l00362"></a>00362 <span class="comment">  * @retval none </span>
 <a name="l00363"></a>00363 <span class="comment">  */</span>
-<a name="l00364"></a><a class="code" href="group__CEC__Exported__Macros.html#gadb6ca78c723dd3dbc6ecbed40f4b8f65">00364</a> <span class="preprocessor">#define __HAL_CEC_DISABLE(__HANDLE__) CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CFGR, CEC_CFGR_PE)</span>
+<a name="l00364"></a><a class="code" href="group/group__CEC__Exported__Macros.html#gadb6ca78c723dd3dbc6ecbed40f4b8f65">00364</a> <span class="preprocessor">#define __HAL_CEC_DISABLE(__HANDLE__) CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;CFGR, CEC_CFGR_PE)</span>
 <a name="l00365"></a>00365 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00366"></a>00366 <span class="comment">/** @brief  Set Transmission Start flag</span>
 <a name="l00367"></a>00367 <span class="comment">  * @param  __HANDLE__: specifies the CEC Handle.               </span>
 <a name="l00368"></a>00368 <span class="comment">  * @retval none </span>
 <a name="l00369"></a>00369 <span class="comment">  */</span>
-<a name="l00370"></a><a class="code" href="group__CEC__Exported__Macros.html#ga30d02b230047637507a6ab4ee8308b28">00370</a> <span class="preprocessor">#define __HAL_CEC_FIRST_BYTE_TX_SET(__HANDLE__) SET_BIT((__HANDLE__)-&gt;Instance-&gt;CSR, CEC_CSR_TSOM)</span>
+<a name="l00370"></a><a class="code" href="group/group__CEC__Exported__Macros.html#ga30d02b230047637507a6ab4ee8308b28">00370</a> <span class="preprocessor">#define __HAL_CEC_FIRST_BYTE_TX_SET(__HANDLE__) SET_BIT((__HANDLE__)-&gt;Instance-&gt;CSR, CEC_CSR_TSOM)</span>
 <a name="l00371"></a>00371 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00372"></a>00372 <span class="comment">/** @brief  Set Transmission End flag</span>
 <a name="l00373"></a>00373 <span class="comment">  * @param  __HANDLE__: specifies the CEC Handle.               </span>
 <a name="l00374"></a>00374 <span class="comment">  * @retval none</span>
 <a name="l00375"></a>00375 <span class="comment">  */</span>
-<a name="l00376"></a><a class="code" href="group__CEC__Exported__Macros.html#ga17a70a12c1d6710997646ac13eadaa43">00376</a> <span class="preprocessor">#define __HAL_CEC_LAST_BYTE_TX_SET(__HANDLE__) SET_BIT((__HANDLE__)-&gt;Instance-&gt;CSR, CEC_CSR_TEOM)</span>
+<a name="l00376"></a><a class="code" href="group/group__CEC__Exported__Macros.html#ga17a70a12c1d6710997646ac13eadaa43">00376</a> <span class="preprocessor">#define __HAL_CEC_LAST_BYTE_TX_SET(__HANDLE__) SET_BIT((__HANDLE__)-&gt;Instance-&gt;CSR, CEC_CSR_TEOM)</span>
 <a name="l00377"></a>00377 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00378"></a>00378 <span class="comment">/** @brief  Get Transmission Start flag</span>
 <a name="l00379"></a>00379 <span class="comment">  * @param  __HANDLE__: specifies the CEC Handle.               </span>
 <a name="l00380"></a>00380 <span class="comment">  * @retval FlagStatus </span>
 <a name="l00381"></a>00381 <span class="comment">  */</span>
-<a name="l00382"></a><a class="code" href="group__CEC__Exported__Macros.html#gaa7735123aa6ff78907578c558a1db910">00382</a> <span class="preprocessor">#define __HAL_CEC_GET_TRANSMISSION_START_FLAG(__HANDLE__) READ_BIT((__HANDLE__)-&gt;Instance-&gt;CSR, CEC_CSR_TSOM)</span>
+<a name="l00382"></a><a class="code" href="group/group__CEC__Exported__Macros.html#gaa7735123aa6ff78907578c558a1db910">00382</a> <span class="preprocessor">#define __HAL_CEC_GET_TRANSMISSION_START_FLAG(__HANDLE__) READ_BIT((__HANDLE__)-&gt;Instance-&gt;CSR, CEC_CSR_TSOM)</span>
 <a name="l00383"></a>00383 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00384"></a>00384 <span class="comment">/** @brief  Get Transmission End flag</span>
 <a name="l00385"></a>00385 <span class="comment">  * @param  __HANDLE__: specifies the CEC Handle.               </span>
 <a name="l00386"></a>00386 <span class="comment">  * @retval FlagStatus </span>
 <a name="l00387"></a>00387 <span class="comment">  */</span>
-<a name="l00388"></a><a class="code" href="group__CEC__Exported__Macros.html#gaaaad9b59b027a0bf585ce68214f65329">00388</a> <span class="preprocessor">#define __HAL_CEC_GET_TRANSMISSION_END_FLAG(__HANDLE__) READ_BIT((__HANDLE__)-&gt;Instance-&gt;CSR, CEC_CSR_TEOM)</span>
+<a name="l00388"></a><a class="code" href="group/group__CEC__Exported__Macros.html#gaaaad9b59b027a0bf585ce68214f65329">00388</a> <span class="preprocessor">#define __HAL_CEC_GET_TRANSMISSION_END_FLAG(__HANDLE__) READ_BIT((__HANDLE__)-&gt;Instance-&gt;CSR, CEC_CSR_TEOM)</span>
 <a name="l00389"></a>00389 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00390"></a>00390 <span class="comment">/** @brief  Clear OAR register</span>
 <a name="l00391"></a>00391 <span class="comment">  * @param  __HANDLE__: specifies the CEC Handle.               </span>
 <a name="l00392"></a>00392 <span class="comment">  * @retval none </span>
 <a name="l00393"></a>00393 <span class="comment">  */</span>
-<a name="l00394"></a><a class="code" href="group__CEC__Exported__Macros.html#gaf03a7f71311519bb321a974c39d09575">00394</a> <span class="preprocessor">#define __HAL_CEC_CLEAR_OAR(__HANDLE__)   CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;OAR, CEC_OAR_OA)</span>
+<a name="l00394"></a><a class="code" href="group/group__CEC__Exported__Macros.html#gaf03a7f71311519bb321a974c39d09575">00394</a> <span class="preprocessor">#define __HAL_CEC_CLEAR_OAR(__HANDLE__)   CLEAR_BIT((__HANDLE__)-&gt;Instance-&gt;OAR, CEC_OAR_OA)</span>
 <a name="l00395"></a>00395 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00396"></a>00396 <span class="comment">/** @brief  Set OAR register</span>
 <a name="l00397"></a>00397 <span class="comment">  * @param  __HANDLE__: specifies the CEC Handle. </span>
 <a name="l00398"></a>00398 <span class="comment">  * @param  __ADDRESS__: Own Address value.</span>
 <a name="l00399"></a>00399 <span class="comment">  * @retval none </span>
 <a name="l00400"></a>00400 <span class="comment">  */</span>
-<a name="l00401"></a><a class="code" href="group__CEC__Exported__Macros.html#ga99ca7f81c37c6ea8c6603a32bc7e1f71">00401</a> <span class="preprocessor">#define __HAL_CEC_SET_OAR(__HANDLE__,__ADDRESS__) MODIFY_REG((__HANDLE__)-&gt;Instance-&gt;OAR, CEC_OAR_OA, (__ADDRESS__));</span>
+<a name="l00401"></a><a class="code" href="group/group__CEC__Exported__Macros.html#ga99ca7f81c37c6ea8c6603a32bc7e1f71">00401</a> <span class="preprocessor">#define __HAL_CEC_SET_OAR(__HANDLE__,__ADDRESS__) MODIFY_REG((__HANDLE__)-&gt;Instance-&gt;OAR, CEC_OAR_OA, (__ADDRESS__));</span>
 <a name="l00402"></a>00402 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00403"></a>00403 <span class="comment">/**</span>
 <a name="l00404"></a>00404 <span class="comment">  * @}</span>
@@ -481,11 +481,11 @@
 <a name="l00414"></a>00414 <span class="comment">  * @{</span>
 <a name="l00415"></a>00415 <span class="comment">  */</span>
 <a name="l00416"></a>00416 <span class="comment">/* Initialization and de-initialization functions  ****************************/</span>
-<a name="l00417"></a>00417 HAL_StatusTypeDef <a class="code" href="group__CEC__Exported__Functions__Group1.html#ga553bbe62470104298db3dc0afd0a1a4d" title="Initializes the CEC mode according to the specified parameters in the CEC_InitTypeDef and creates the...">HAL_CEC_Init</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec);
-<a name="l00418"></a>00418 HAL_StatusTypeDef <a class="code" href="group__CEC__Exported__Functions__Group1.html#ga4601cdb51e76b58531fece8e316827f2" title="DeInitializes the CEC peripheral.">HAL_CEC_DeInit</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec);
-<a name="l00419"></a>00419 HAL_StatusTypeDef <a class="code" href="group__CEC__Exported__Functions__Group1.html#gab2c8e15f62ea5749efa0748a093889c7" title="Initializes the Own Address of the CEC device.">HAL_CEC_SetDeviceAddress</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec, uint16_t CEC_OwnAddress);
-<a name="l00420"></a>00420 <span class="keywordtype">void</span> <a class="code" href="group__CEC__Exported__Functions__Group1.html#ga3a0a33b5cb43b1357b8537cdde091800" title="CEC MSP Init.">HAL_CEC_MspInit</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec);
-<a name="l00421"></a>00421 <span class="keywordtype">void</span> <a class="code" href="group__CEC__Exported__Functions__Group1.html#gad68f168b971d74c5a81f6043e28ab54a" title="CEC MSP DeInit.">HAL_CEC_MspDeInit</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec);
+<a name="l00417"></a>00417 HAL_StatusTypeDef <a class="code" href="group/group__CEC__Exported__Functions__Group1.html#ga553bbe62470104298db3dc0afd0a1a4d" title="Initializes the CEC mode according to the specified parameters in the CEC_InitTypeDef and creates the...">HAL_CEC_Init</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec);
+<a name="l00418"></a>00418 HAL_StatusTypeDef <a class="code" href="group/group__CEC__Exported__Functions__Group1.html#ga4601cdb51e76b58531fece8e316827f2" title="DeInitializes the CEC peripheral.">HAL_CEC_DeInit</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec);
+<a name="l00419"></a>00419 HAL_StatusTypeDef <a class="code" href="group/group__CEC__Exported__Functions__Group1.html#gab2c8e15f62ea5749efa0748a093889c7" title="Initializes the Own Address of the CEC device.">HAL_CEC_SetDeviceAddress</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec, uint16_t CEC_OwnAddress);
+<a name="l00420"></a>00420 <span class="keywordtype">void</span> <a class="code" href="group/group__CEC__Exported__Functions__Group1.html#ga3a0a33b5cb43b1357b8537cdde091800" title="CEC MSP Init.">HAL_CEC_MspInit</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec);
+<a name="l00421"></a>00421 <span class="keywordtype">void</span> <a class="code" href="group/group__CEC__Exported__Functions__Group1.html#gad68f168b971d74c5a81f6043e28ab54a" title="CEC MSP DeInit.">HAL_CEC_MspDeInit</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec);
 <a name="l00422"></a>00422 <span class="preprocessor">#if (USE_HAL_CEC_REGISTER_CALLBACKS == 1)</span>
 <a name="l00423"></a>00423 <span class="preprocessor"></span>HAL_StatusTypeDef HAL_CEC_RegisterCallback(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec, HAL_CEC_CallbackIDTypeDef CallbackID, pCEC_CallbackTypeDef pCallback);
 <a name="l00424"></a>00424 HAL_StatusTypeDef HAL_CEC_UnRegisterCallback(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec, HAL_CEC_CallbackIDTypeDef CallbackID);
@@ -502,13 +502,13 @@
 <a name="l00435"></a>00435 <span class="comment">  * @{</span>
 <a name="l00436"></a>00436 <span class="comment">  */</span>
 <a name="l00437"></a>00437 <span class="comment">/* I/O operation functions  ***************************************************/</span>
-<a name="l00438"></a>00438 HAL_StatusTypeDef <a class="code" href="group__CEC__Exported__Functions__Group2.html#gaf009a635de0b9f6e97016c5da1a85561" title="Send data in interrupt mode.">HAL_CEC_Transmit_IT</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec, uint8_t InitiatorAddress,uint8_t DestinationAddress, uint8_t *pData, uint32_t Size);
-<a name="l00439"></a>00439 uint32_t <a class="code" href="group__CEC__Exported__Functions__Group2.html#ga15b9deaca227bd63159c774e50fd3dce" title="Get size of the received frame.">HAL_CEC_GetLastReceivedFrameSize</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec);
-<a name="l00440"></a>00440 <span class="keywordtype">void</span> <a class="code" href="group__CEC__Exported__Functions__Group2.html#gaa2aa3c799a3afda25459a9ee61af616b" title="Change Rx Buffer.">HAL_CEC_ChangeRxBuffer</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec, uint8_t* Rxbuffer);
-<a name="l00441"></a>00441 <span class="keywordtype">void</span> <a class="code" href="group__CEC__Exported__Functions__Group2.html#ga2f062a2a05e24f36f9a41f2b04893148" title="This function handles CEC interrupt requests.">HAL_CEC_IRQHandler</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec);
-<a name="l00442"></a>00442 <span class="keywordtype">void</span> <a class="code" href="group__CEC__Exported__Functions__Group2.html#ga4f0b92916e6326665bd69546f0cc9252" title="Tx Transfer completed callback.">HAL_CEC_TxCpltCallback</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec);
-<a name="l00443"></a>00443 <span class="keywordtype">void</span> <a class="code" href="group__CEC__Exported__Functions__Group2.html#ga5ae37120ddb041859ac15b9a90e42335" title="Rx Transfer completed callback.">HAL_CEC_RxCpltCallback</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec, uint32_t RxFrameSize);
-<a name="l00444"></a>00444 <span class="keywordtype">void</span> <a class="code" href="group__CEC__Exported__Functions__Group2.html#gabc33fef2115006cefd5a9d4f5d066de8" title="CEC error callbacks.">HAL_CEC_ErrorCallback</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec);<span class="comment"></span>
+<a name="l00438"></a>00438 HAL_StatusTypeDef <a class="code" href="group/group__CEC__Exported__Functions__Group2.html#gaf009a635de0b9f6e97016c5da1a85561" title="Send data in interrupt mode.">HAL_CEC_Transmit_IT</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec, uint8_t InitiatorAddress,uint8_t DestinationAddress, uint8_t *pData, uint32_t Size);
+<a name="l00439"></a>00439 uint32_t <a class="code" href="group/group__CEC__Exported__Functions__Group2.html#ga15b9deaca227bd63159c774e50fd3dce" title="Get size of the received frame.">HAL_CEC_GetLastReceivedFrameSize</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec);
+<a name="l00440"></a>00440 <span class="keywordtype">void</span> <a class="code" href="group/group__CEC__Exported__Functions__Group2.html#gaa2aa3c799a3afda25459a9ee61af616b" title="Change Rx Buffer.">HAL_CEC_ChangeRxBuffer</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec, uint8_t* Rxbuffer);
+<a name="l00441"></a>00441 <span class="keywordtype">void</span> <a class="code" href="group/group__CEC__Exported__Functions__Group2.html#ga2f062a2a05e24f36f9a41f2b04893148" title="This function handles CEC interrupt requests.">HAL_CEC_IRQHandler</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec);
+<a name="l00442"></a>00442 <span class="keywordtype">void</span> <a class="code" href="group/group__CEC__Exported__Functions__Group2.html#ga4f0b92916e6326665bd69546f0cc9252" title="Tx Transfer completed callback.">HAL_CEC_TxCpltCallback</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec);
+<a name="l00443"></a>00443 <span class="keywordtype">void</span> <a class="code" href="group/group__CEC__Exported__Functions__Group2.html#ga5ae37120ddb041859ac15b9a90e42335" title="Rx Transfer completed callback.">HAL_CEC_RxCpltCallback</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec, uint32_t RxFrameSize);
+<a name="l00444"></a>00444 <span class="keywordtype">void</span> <a class="code" href="group/group__CEC__Exported__Functions__Group2.html#gabc33fef2115006cefd5a9d4f5d066de8" title="CEC error callbacks.">HAL_CEC_ErrorCallback</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec);<span class="comment"></span>
 <a name="l00445"></a>00445 <span class="comment">/**</span>
 <a name="l00446"></a>00446 <span class="comment">  * @}</span>
 <a name="l00447"></a>00447 <span class="comment">  */</span>
@@ -518,8 +518,8 @@
 <a name="l00451"></a>00451 <span class="comment">  * @{</span>
 <a name="l00452"></a>00452 <span class="comment">  */</span>
 <a name="l00453"></a>00453 <span class="comment">/* Peripheral State and Error functions ***************************************/</span>
-<a name="l00454"></a>00454 <a class="code" href="group__CEC__Exported__Types.html#gae503c082bb404380a44bd6bcd173747d" title="HAL CEC State structures definition.">HAL_CEC_StateTypeDef</a> <a class="code" href="group__CEC__Exported__Functions__Group3.html#ga431190f68ad03976e65400dfff3fd566" title="return the CEC state">HAL_CEC_GetState</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec);
-<a name="l00455"></a>00455 uint32_t <a class="code" href="group__CEC__Exported__Functions__Group3.html#ga76c7fcd1b5154d736eb2ed1b7b0d1af2" title="Return the CEC error code.">HAL_CEC_GetError</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec);<span class="comment"></span>
+<a name="l00454"></a>00454 <a class="code" href="group/group__CEC__Exported__Types.html#gae503c082bb404380a44bd6bcd173747d" title="HAL CEC State structures definition.">HAL_CEC_StateTypeDef</a> <a class="code" href="group/group__CEC__Exported__Functions__Group3.html#ga431190f68ad03976e65400dfff3fd566" title="return the CEC state">HAL_CEC_GetState</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec);
+<a name="l00455"></a>00455 uint32_t <a class="code" href="group/group__CEC__Exported__Functions__Group3.html#ga76c7fcd1b5154d736eb2ed1b7b0d1af2" title="Return the CEC error code.">HAL_CEC_GetError</a>(<a class="code" href="struct____CEC__HandleTypeDef.html" title="CEC handle Structure definition.">CEC_HandleTypeDef</a> *hcec);<span class="comment"></span>
 <a name="l00456"></a>00456 <span class="comment">/**</span>
 <a name="l00457"></a>00457 <span class="comment">  * @}</span>
 <a name="l00458"></a>00458 <span class="comment">  */</span>
@@ -559,10 +559,10 @@
 <a name="l00492"></a>00492 <span class="comment">/** @defgroup CEC_Private_Macros CEC Private Macros</span>
 <a name="l00493"></a>00493 <span class="comment">  * @{</span>
 <a name="l00494"></a>00494 <span class="comment">  */</span>
-<a name="l00495"></a><a class="code" href="group__CEC__Private__Macros.html#ga55494269b2c9c55c11130a429f418a8d">00495</a> <span class="preprocessor">#define IS_CEC_BIT_TIMING_ERROR_MODE(MODE) (((MODE) == CEC_BIT_TIMING_ERROR_MODE_STANDARD) || \</span>
+<a name="l00495"></a><a class="code" href="group/group__CEC__Private__Macros.html#ga55494269b2c9c55c11130a429f418a8d">00495</a> <span class="preprocessor">#define IS_CEC_BIT_TIMING_ERROR_MODE(MODE) (((MODE) == CEC_BIT_TIMING_ERROR_MODE_STANDARD) || \</span>
 <a name="l00496"></a>00496 <span class="preprocessor">                                            ((MODE) == CEC_BIT_TIMING_ERROR_MODE_ERRORFREE))</span>
 <a name="l00497"></a>00497 <span class="preprocessor"></span>
-<a name="l00498"></a><a class="code" href="group__CEC__Private__Macros.html#ga3414347854a83bf70748624ec5b8dd49">00498</a> <span class="preprocessor">#define IS_CEC_BIT_PERIOD_ERROR_MODE(MODE) (((MODE) == CEC_BIT_PERIOD_ERROR_MODE_STANDARD) || \</span>
+<a name="l00498"></a><a class="code" href="group/group__CEC__Private__Macros.html#ga3414347854a83bf70748624ec5b8dd49">00498</a> <span class="preprocessor">#define IS_CEC_BIT_PERIOD_ERROR_MODE(MODE) (((MODE) == CEC_BIT_PERIOD_ERROR_MODE_STANDARD) || \</span>
 <a name="l00499"></a>00499 <span class="preprocessor">                                            ((MODE) == CEC_BIT_PERIOD_ERROR_MODE_FLEXIBLE))</span>
 <a name="l00500"></a>00500 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00501"></a>00501 <span class="comment">/** @brief Check CEC message size.</span>
@@ -572,19 +572,19 @@
 <a name="l00505"></a>00505 <span class="comment">  * @param  __SIZE__: CEC message size.               </span>
 <a name="l00506"></a>00506 <span class="comment">  * @retval Test result (TRUE or FALSE).</span>
 <a name="l00507"></a>00507 <span class="comment">  */</span>
-<a name="l00508"></a><a class="code" href="group__CEC__Private__Macros.html#gaef00c61b1554653dcb6f5b6e5063acd9">00508</a> <span class="preprocessor">#define IS_CEC_MSGSIZE(__SIZE__) ((__SIZE__) &lt;= 0x10U)</span>
+<a name="l00508"></a><a class="code" href="group/group__CEC__Private__Macros.html#gaef00c61b1554653dcb6f5b6e5063acd9">00508</a> <span class="preprocessor">#define IS_CEC_MSGSIZE(__SIZE__) ((__SIZE__) &lt;= 0x10U)</span>
 <a name="l00509"></a>00509 <span class="preprocessor"></span><span class="comment">/** @brief Check CEC device Own Address Register (OAR) setting.</span>
 <a name="l00510"></a>00510 <span class="comment">  * @param  __ADDRESS__: CEC own address.               </span>
 <a name="l00511"></a>00511 <span class="comment">  * @retval Test result (TRUE or FALSE).</span>
 <a name="l00512"></a>00512 <span class="comment">  */</span>
-<a name="l00513"></a><a class="code" href="group__CEC__Private__Macros.html#gaf33bcbd76f122fd3da1fe84862e24eff">00513</a> <span class="preprocessor">#define IS_CEC_OWN_ADDRESS(__ADDRESS__) ((__ADDRESS__) &lt;= 0x0000000FU)</span>
+<a name="l00513"></a><a class="code" href="group/group__CEC__Private__Macros.html#gaf33bcbd76f122fd3da1fe84862e24eff">00513</a> <span class="preprocessor">#define IS_CEC_OWN_ADDRESS(__ADDRESS__) ((__ADDRESS__) &lt;= 0x0000000FU)</span>
 <a name="l00514"></a>00514 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00515"></a>00515 <span class="comment">/** @brief Check CEC initiator or destination logical address setting.</span>
 <a name="l00516"></a>00516 <span class="comment">  *        Initiator and destination addresses are coded over 4 bits. </span>
 <a name="l00517"></a>00517 <span class="comment">  * @param  __ADDRESS__: CEC initiator or logical address.               </span>
 <a name="l00518"></a>00518 <span class="comment">  * @retval Test result (TRUE or FALSE).</span>
 <a name="l00519"></a>00519 <span class="comment">  */</span>
-<a name="l00520"></a><a class="code" href="group__CEC__Private__Macros.html#ga8c9760905004c641e02fcaf31d149e5b">00520</a> <span class="preprocessor">#define IS_CEC_ADDRESS(__ADDRESS__) ((__ADDRESS__) &lt;= 0x0000000FU)</span>
+<a name="l00520"></a><a class="code" href="group/group__CEC__Private__Macros.html#ga8c9760905004c641e02fcaf31d149e5b">00520</a> <span class="preprocessor">#define IS_CEC_ADDRESS(__ADDRESS__) ((__ADDRESS__) &lt;= 0x0000000FU)</span>
 <a name="l00521"></a>00521 <span class="preprocessor"></span>
 <a name="l00522"></a>00522 
 <a name="l00523"></a>00523 <span class="comment"></span>

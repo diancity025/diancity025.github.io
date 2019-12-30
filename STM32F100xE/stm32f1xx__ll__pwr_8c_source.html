@@ -121,13 +121,13 @@
 <a name="l00054"></a>00054 <span class="comment">  *          - SUCCESS: PWR registers are de-initialized</span>
 <a name="l00055"></a>00055 <span class="comment">  *          - ERROR: not applicable</span>
 <a name="l00056"></a>00056 <span class="comment">  */</span>
-<a name="l00057"></a><a class="code" href="group__PWR__LL__EF__Init.html#ga1e68e5ed30fd4178f6bdf16c5bf61953">00057</a> ErrorStatus <a class="code" href="group__PWR__LL__EF__Init.html#ga1e68e5ed30fd4178f6bdf16c5bf61953" title="De-initialize the PWR registers to their default reset values.">LL_PWR_DeInit</a>(<span class="keywordtype">void</span>)
+<a name="l00057"></a><a class="code" href="group/group__PWR__LL__EF__Init.html#ga1e68e5ed30fd4178f6bdf16c5bf61953">00057</a> ErrorStatus <a class="code" href="group/group__PWR__LL__EF__Init.html#ga1e68e5ed30fd4178f6bdf16c5bf61953" title="De-initialize the PWR registers to their default reset values.">LL_PWR_DeInit</a>(<span class="keywordtype">void</span>)
 <a name="l00058"></a>00058 {
 <a name="l00059"></a>00059   <span class="comment">/* Force reset of PWR clock */</span>
-<a name="l00060"></a>00060   <a class="code" href="group__BUS__LL__EF__APB1.html#ga45bf26f8c9e292710b66614c96a28096" title="Force APB1 peripherals reset.">LL_APB1_GRP1_ForceReset</a>(<a class="code" href="group__BUS__LL__EC__APB1__GRP1__PERIPH.html#gac87bb464909175247b02e309fcb513c4">LL_APB1_GRP1_PERIPH_PWR</a>);
+<a name="l00060"></a>00060   <a class="code" href="group/group__BUS__LL__EF__APB1.html#ga45bf26f8c9e292710b66614c96a28096" title="Force APB1 peripherals reset.">LL_APB1_GRP1_ForceReset</a>(<a class="code" href="group/group__BUS__LL__EC__APB1__GRP1__PERIPH.html#gac87bb464909175247b02e309fcb513c4">LL_APB1_GRP1_PERIPH_PWR</a>);
 <a name="l00061"></a>00061 
 <a name="l00062"></a>00062   <span class="comment">/* Release reset of PWR clock */</span>
-<a name="l00063"></a>00063   <a class="code" href="group__BUS__LL__EF__APB1.html#ga8a4d59b573dcc16845ff1c6de5def5c2" title="Release APB1 peripherals reset.">LL_APB1_GRP1_ReleaseReset</a>(<a class="code" href="group__BUS__LL__EC__APB1__GRP1__PERIPH.html#gac87bb464909175247b02e309fcb513c4">LL_APB1_GRP1_PERIPH_PWR</a>);
+<a name="l00063"></a>00063   <a class="code" href="group/group__BUS__LL__EF__APB1.html#ga8a4d59b573dcc16845ff1c6de5def5c2" title="Release APB1 peripherals reset.">LL_APB1_GRP1_ReleaseReset</a>(<a class="code" href="group/group__BUS__LL__EC__APB1__GRP1__PERIPH.html#gac87bb464909175247b02e309fcb513c4">LL_APB1_GRP1_PERIPH_PWR</a>);
 <a name="l00064"></a>00064 
 <a name="l00065"></a>00065   <span class="keywordflow">return</span> SUCCESS;
 <a name="l00066"></a>00066 }

@@ -207,10 +207,10 @@
 <a name="l00140"></a>00140 <span class="comment">  *         The pending IRQ priority will be managed only by the subpriority. </span>
 <a name="l00141"></a>00141 <span class="comment">  * @retval None</span>
 <a name="l00142"></a>00142 <span class="comment">  */</span>
-<a name="l00143"></a><a class="code" href="group__CORTEX__Exported__Functions__Group1.html#gad9be53e08b1498adea006e5e037f238f">00143</a> <span class="keywordtype">void</span> <a class="code" href="group__CORTEX__Exported__Functions__Group1.html#gad9be53e08b1498adea006e5e037f238f" title="Sets the priority grouping field (preemption priority and subpriority) using the required unlock sequ...">HAL_NVIC_SetPriorityGrouping</a>(uint32_t PriorityGroup)
+<a name="l00143"></a><a class="code" href="group/group__CORTEX__Exported__Functions__Group1.html#gad9be53e08b1498adea006e5e037f238f">00143</a> <span class="keywordtype">void</span> <a class="code" href="group/group__CORTEX__Exported__Functions__Group1.html#gad9be53e08b1498adea006e5e037f238f" title="Sets the priority grouping field (preemption priority and subpriority) using the required unlock sequ...">HAL_NVIC_SetPriorityGrouping</a>(uint32_t PriorityGroup)
 <a name="l00144"></a>00144 {
 <a name="l00145"></a>00145   <span class="comment">/* Check the parameters */</span>
-<a name="l00146"></a>00146   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__CORTEX__Private__Macros.html#ga6569304a39fe4f91bd59b6a586c8ede9">IS_NVIC_PRIORITY_GROUP</a>(PriorityGroup));
+<a name="l00146"></a>00146   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__CORTEX__Private__Macros.html#ga6569304a39fe4f91bd59b6a586c8ede9">IS_NVIC_PRIORITY_GROUP</a>(PriorityGroup));
 <a name="l00147"></a>00147   
 <a name="l00148"></a>00148   <span class="comment">/* Set the PRIGROUP[10:8] bits according to the PriorityGroup parameter value */</span>
 <a name="l00149"></a>00149   NVIC_SetPriorityGrouping(PriorityGroup);
@@ -229,13 +229,13 @@
 <a name="l00162"></a>00162 <span class="comment">  *         A lower priority value indicates a higher priority.          </span>
 <a name="l00163"></a>00163 <span class="comment">  * @retval None</span>
 <a name="l00164"></a>00164 <span class="comment">  */</span>
-<a name="l00165"></a><a class="code" href="group__CORTEX__Exported__Functions__Group1.html#ga8581a82025a4780efd00876a66e3e91b">00165</a> <span class="keywordtype">void</span> <a class="code" href="group__CORTEX__Exported__Functions__Group1.html#ga8581a82025a4780efd00876a66e3e91b" title="Sets the priority of an interrupt.">HAL_NVIC_SetPriority</a>(IRQn_Type IRQn, uint32_t PreemptPriority, uint32_t SubPriority)
+<a name="l00165"></a><a class="code" href="group/group__CORTEX__Exported__Functions__Group1.html#ga8581a82025a4780efd00876a66e3e91b">00165</a> <span class="keywordtype">void</span> <a class="code" href="group/group__CORTEX__Exported__Functions__Group1.html#ga8581a82025a4780efd00876a66e3e91b" title="Sets the priority of an interrupt.">HAL_NVIC_SetPriority</a>(IRQn_Type IRQn, uint32_t PreemptPriority, uint32_t SubPriority)
 <a name="l00166"></a>00166 { 
 <a name="l00167"></a>00167   uint32_t prioritygroup = 0x00U;
 <a name="l00168"></a>00168   
 <a name="l00169"></a>00169   <span class="comment">/* Check the parameters */</span>
-<a name="l00170"></a>00170   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__CORTEX__Private__Macros.html#ga010705bc997dcff935b965b372cba61d">IS_NVIC_SUB_PRIORITY</a>(SubPriority));
-<a name="l00171"></a>00171   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__CORTEX__Private__Macros.html#gaf30fd8f5960c2e28a772d8f16bb156dd">IS_NVIC_PREEMPTION_PRIORITY</a>(PreemptPriority));
+<a name="l00170"></a>00170   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__CORTEX__Private__Macros.html#ga010705bc997dcff935b965b372cba61d">IS_NVIC_SUB_PRIORITY</a>(SubPriority));
+<a name="l00171"></a>00171   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__CORTEX__Private__Macros.html#gaf30fd8f5960c2e28a772d8f16bb156dd">IS_NVIC_PREEMPTION_PRIORITY</a>(PreemptPriority));
 <a name="l00172"></a>00172   
 <a name="l00173"></a>00173   prioritygroup = NVIC_GetPriorityGrouping();
 <a name="l00174"></a>00174   
@@ -251,10 +251,10 @@
 <a name="l00184"></a>00184 <span class="comment">  *         (For the complete STM32 Devices IRQ Channels list, please refer to the appropriate CMSIS device file (stm32f10xxx.h))</span>
 <a name="l00185"></a>00185 <span class="comment">  * @retval None</span>
 <a name="l00186"></a>00186 <span class="comment">  */</span>
-<a name="l00187"></a><a class="code" href="group__CORTEX__Exported__Functions__Group1.html#gaaad4492c1b25e006d69948a15790352a">00187</a> <span class="keywordtype">void</span> <a class="code" href="group__CORTEX__Exported__Functions__Group1.html#gaaad4492c1b25e006d69948a15790352a" title="Enables a device specific interrupt in the NVIC interrupt controller.">HAL_NVIC_EnableIRQ</a>(IRQn_Type IRQn)
+<a name="l00187"></a><a class="code" href="group/group__CORTEX__Exported__Functions__Group1.html#gaaad4492c1b25e006d69948a15790352a">00187</a> <span class="keywordtype">void</span> <a class="code" href="group/group__CORTEX__Exported__Functions__Group1.html#gaaad4492c1b25e006d69948a15790352a" title="Enables a device specific interrupt in the NVIC interrupt controller.">HAL_NVIC_EnableIRQ</a>(IRQn_Type IRQn)
 <a name="l00188"></a>00188 {
 <a name="l00189"></a>00189   <span class="comment">/* Check the parameters */</span>
-<a name="l00190"></a>00190   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__CORTEX__Private__Macros.html#ga9b8dcac4ed8e88c14d9bb04e369dad6a">IS_NVIC_DEVICE_IRQ</a>(IRQn));
+<a name="l00190"></a>00190   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__CORTEX__Private__Macros.html#ga9b8dcac4ed8e88c14d9bb04e369dad6a">IS_NVIC_DEVICE_IRQ</a>(IRQn));
 <a name="l00191"></a>00191 
 <a name="l00192"></a>00192   <span class="comment">/* Enable interrupt */</span>
 <a name="l00193"></a>00193   NVIC_EnableIRQ(IRQn);
@@ -267,10 +267,10 @@
 <a name="l00200"></a>00200 <span class="comment">  *         (For the complete STM32 Devices IRQ Channels list, please refer to the appropriate CMSIS device file (stm32f10xxx.h))  </span>
 <a name="l00201"></a>00201 <span class="comment">  * @retval None</span>
 <a name="l00202"></a>00202 <span class="comment">  */</span>
-<a name="l00203"></a><a class="code" href="group__CORTEX__Exported__Functions__Group1.html#ga50ca6290e068821cb84aa168f3e13967">00203</a> <span class="keywordtype">void</span> <a class="code" href="group__CORTEX__Exported__Functions__Group1.html#ga50ca6290e068821cb84aa168f3e13967" title="Disables a device specific interrupt in the NVIC interrupt controller.">HAL_NVIC_DisableIRQ</a>(IRQn_Type IRQn)
+<a name="l00203"></a><a class="code" href="group/group__CORTEX__Exported__Functions__Group1.html#ga50ca6290e068821cb84aa168f3e13967">00203</a> <span class="keywordtype">void</span> <a class="code" href="group/group__CORTEX__Exported__Functions__Group1.html#ga50ca6290e068821cb84aa168f3e13967" title="Disables a device specific interrupt in the NVIC interrupt controller.">HAL_NVIC_DisableIRQ</a>(IRQn_Type IRQn)
 <a name="l00204"></a>00204 {
 <a name="l00205"></a>00205   <span class="comment">/* Check the parameters */</span>
-<a name="l00206"></a>00206   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__CORTEX__Private__Macros.html#ga9b8dcac4ed8e88c14d9bb04e369dad6a">IS_NVIC_DEVICE_IRQ</a>(IRQn));
+<a name="l00206"></a>00206   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__CORTEX__Private__Macros.html#ga9b8dcac4ed8e88c14d9bb04e369dad6a">IS_NVIC_DEVICE_IRQ</a>(IRQn));
 <a name="l00207"></a>00207 
 <a name="l00208"></a>00208   <span class="comment">/* Disable interrupt */</span>
 <a name="l00209"></a>00209   NVIC_DisableIRQ(IRQn);
@@ -280,7 +280,7 @@
 <a name="l00213"></a>00213 <span class="comment">  * @brief  Initiates a system reset request to reset the MCU.</span>
 <a name="l00214"></a>00214 <span class="comment">  * @retval None</span>
 <a name="l00215"></a>00215 <span class="comment">  */</span>
-<a name="l00216"></a><a class="code" href="group__CORTEX__Exported__Functions__Group1.html#gac83d89028fabdf5d4c38ecf4fbfbefdc">00216</a> <span class="keywordtype">void</span> <a class="code" href="group__CORTEX__Exported__Functions__Group1.html#gac83d89028fabdf5d4c38ecf4fbfbefdc" title="Initiates a system reset request to reset the MCU.">HAL_NVIC_SystemReset</a>(<span class="keywordtype">void</span>)
+<a name="l00216"></a><a class="code" href="group/group__CORTEX__Exported__Functions__Group1.html#gac83d89028fabdf5d4c38ecf4fbfbefdc">00216</a> <span class="keywordtype">void</span> <a class="code" href="group/group__CORTEX__Exported__Functions__Group1.html#gac83d89028fabdf5d4c38ecf4fbfbefdc" title="Initiates a system reset request to reset the MCU.">HAL_NVIC_SystemReset</a>(<span class="keywordtype">void</span>)
 <a name="l00217"></a>00217 {
 <a name="l00218"></a>00218   <span class="comment">/* System Reset */</span>
 <a name="l00219"></a>00219   NVIC_SystemReset();
@@ -293,7 +293,7 @@
 <a name="l00226"></a>00226 <span class="comment">  * @retval status:  - 0  Function succeeded.</span>
 <a name="l00227"></a>00227 <span class="comment">  *                  - 1  Function failed.</span>
 <a name="l00228"></a>00228 <span class="comment">  */</span>
-<a name="l00229"></a><a class="code" href="group__CORTEX__Exported__Functions__Group1.html#gac3a3f0d53c315523a8e6e7bcac1940cf">00229</a> uint32_t <a class="code" href="group__CORTEX__Exported__Functions__Group1.html#gac3a3f0d53c315523a8e6e7bcac1940cf" title="Initializes the System Timer and its interrupt, and starts the System Tick Timer.">HAL_SYSTICK_Config</a>(uint32_t TicksNumb)
+<a name="l00229"></a><a class="code" href="group/group__CORTEX__Exported__Functions__Group1.html#gac3a3f0d53c315523a8e6e7bcac1940cf">00229</a> uint32_t <a class="code" href="group/group__CORTEX__Exported__Functions__Group1.html#gac3a3f0d53c315523a8e6e7bcac1940cf" title="Initializes the System Timer and its interrupt, and starts the System Tick Timer.">HAL_SYSTICK_Config</a>(uint32_t TicksNumb)
 <a name="l00230"></a>00230 {
 <a name="l00231"></a>00231    <span class="keywordflow">return</span> SysTick_Config(TicksNumb);
 <a name="l00232"></a>00232 }<span class="comment"></span>
@@ -408,7 +408,7 @@
 <a name="l00341"></a>00341 <span class="comment">  * @brief  Gets the priority grouping field from the NVIC Interrupt Controller.</span>
 <a name="l00342"></a>00342 <span class="comment">  * @retval Priority grouping field (SCB-&gt;AIRCR [10:8] PRIGROUP field)</span>
 <a name="l00343"></a>00343 <span class="comment">  */</span>
-<a name="l00344"></a><a class="code" href="group__CORTEX__Exported__Functions__Group2.html#gaa02bc953fd4fce22248c491a93c4ce40">00344</a> uint32_t <a class="code" href="group__CORTEX__Exported__Functions__Group2.html#gaa02bc953fd4fce22248c491a93c4ce40" title="Gets the priority grouping field from the NVIC Interrupt Controller.">HAL_NVIC_GetPriorityGrouping</a>(<span class="keywordtype">void</span>)
+<a name="l00344"></a><a class="code" href="group/group__CORTEX__Exported__Functions__Group2.html#gaa02bc953fd4fce22248c491a93c4ce40">00344</a> uint32_t <a class="code" href="group/group__CORTEX__Exported__Functions__Group2.html#gaa02bc953fd4fce22248c491a93c4ce40" title="Gets the priority grouping field from the NVIC Interrupt Controller.">HAL_NVIC_GetPriorityGrouping</a>(<span class="keywordtype">void</span>)
 <a name="l00345"></a>00345 {
 <a name="l00346"></a>00346   <span class="comment">/* Get the PRIGROUP[10:8] field value */</span>
 <a name="l00347"></a>00347   <span class="keywordflow">return</span> NVIC_GetPriorityGrouping();
@@ -435,10 +435,10 @@
 <a name="l00368"></a>00368 <span class="comment">  * @param  pSubPriority: Pointer on the Subpriority value (starting from 0).</span>
 <a name="l00369"></a>00369 <span class="comment">  * @retval None</span>
 <a name="l00370"></a>00370 <span class="comment">  */</span>
-<a name="l00371"></a><a class="code" href="group__CORTEX__Exported__Functions__Group2.html#ga6a21c9d904b0bcf4cb060f7c5c39b6f5">00371</a> <span class="keywordtype">void</span> <a class="code" href="group__CORTEX__Exported__Functions__Group2.html#ga6a21c9d904b0bcf4cb060f7c5c39b6f5" title="Gets the priority of an interrupt.">HAL_NVIC_GetPriority</a>(IRQn_Type IRQn, uint32_t PriorityGroup, uint32_t *pPreemptPriority, uint32_t *pSubPriority)
+<a name="l00371"></a><a class="code" href="group/group__CORTEX__Exported__Functions__Group2.html#ga6a21c9d904b0bcf4cb060f7c5c39b6f5">00371</a> <span class="keywordtype">void</span> <a class="code" href="group/group__CORTEX__Exported__Functions__Group2.html#ga6a21c9d904b0bcf4cb060f7c5c39b6f5" title="Gets the priority of an interrupt.">HAL_NVIC_GetPriority</a>(IRQn_Type IRQn, uint32_t PriorityGroup, uint32_t *pPreemptPriority, uint32_t *pSubPriority)
 <a name="l00372"></a>00372 {
 <a name="l00373"></a>00373   <span class="comment">/* Check the parameters */</span>
-<a name="l00374"></a>00374   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__CORTEX__Private__Macros.html#ga6569304a39fe4f91bd59b6a586c8ede9">IS_NVIC_PRIORITY_GROUP</a>(PriorityGroup));
+<a name="l00374"></a>00374   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__CORTEX__Private__Macros.html#ga6569304a39fe4f91bd59b6a586c8ede9">IS_NVIC_PRIORITY_GROUP</a>(PriorityGroup));
 <a name="l00375"></a>00375  <span class="comment">/* Get priority for Cortex-M system or device specific interrupts */</span>
 <a name="l00376"></a>00376   NVIC_DecodePriority(NVIC_GetPriority(IRQn), PriorityGroup, pPreemptPriority, pSubPriority);
 <a name="l00377"></a>00377 }
@@ -450,10 +450,10 @@
 <a name="l00383"></a>00383 <span class="comment">  *         (For the complete STM32 Devices IRQ Channels list, please refer to the appropriate CMSIS device file (stm32f10xxx.h))  </span>
 <a name="l00384"></a>00384 <span class="comment">  * @retval None</span>
 <a name="l00385"></a>00385 <span class="comment">  */</span>
-<a name="l00386"></a><a class="code" href="group__CORTEX__Exported__Functions__Group2.html#gaecf50f6c6d0e1fa5f8bd8c1b45309f18">00386</a> <span class="keywordtype">void</span> <a class="code" href="group__CORTEX__Exported__Functions__Group2.html#gaecf50f6c6d0e1fa5f8bd8c1b45309f18" title="Sets Pending bit of an external interrupt.">HAL_NVIC_SetPendingIRQ</a>(IRQn_Type IRQn)
+<a name="l00386"></a><a class="code" href="group/group__CORTEX__Exported__Functions__Group2.html#gaecf50f6c6d0e1fa5f8bd8c1b45309f18">00386</a> <span class="keywordtype">void</span> <a class="code" href="group/group__CORTEX__Exported__Functions__Group2.html#gaecf50f6c6d0e1fa5f8bd8c1b45309f18" title="Sets Pending bit of an external interrupt.">HAL_NVIC_SetPendingIRQ</a>(IRQn_Type IRQn)
 <a name="l00387"></a>00387 {
 <a name="l00388"></a>00388   <span class="comment">/* Check the parameters */</span>
-<a name="l00389"></a>00389   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__CORTEX__Private__Macros.html#ga9b8dcac4ed8e88c14d9bb04e369dad6a">IS_NVIC_DEVICE_IRQ</a>(IRQn));
+<a name="l00389"></a>00389   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__CORTEX__Private__Macros.html#ga9b8dcac4ed8e88c14d9bb04e369dad6a">IS_NVIC_DEVICE_IRQ</a>(IRQn));
 <a name="l00390"></a>00390   
 <a name="l00391"></a>00391   <span class="comment">/* Set interrupt pending */</span>
 <a name="l00392"></a>00392   NVIC_SetPendingIRQ(IRQn);
@@ -468,10 +468,10 @@
 <a name="l00401"></a>00401 <span class="comment">  * @retval status: - 0  Interrupt status is not pending.</span>
 <a name="l00402"></a>00402 <span class="comment">  *                 - 1  Interrupt status is pending.</span>
 <a name="l00403"></a>00403 <span class="comment">  */</span>
-<a name="l00404"></a><a class="code" href="group__CORTEX__Exported__Functions__Group2.html#ga3bd5802a96f0dcbc00ac3b89b134da3b">00404</a> uint32_t <a class="code" href="group__CORTEX__Exported__Functions__Group2.html#ga3bd5802a96f0dcbc00ac3b89b134da3b" title="Gets Pending Interrupt (reads the pending register in the NVIC and returns the pending bit for the sp...">HAL_NVIC_GetPendingIRQ</a>(IRQn_Type IRQn)
+<a name="l00404"></a><a class="code" href="group/group__CORTEX__Exported__Functions__Group2.html#ga3bd5802a96f0dcbc00ac3b89b134da3b">00404</a> uint32_t <a class="code" href="group/group__CORTEX__Exported__Functions__Group2.html#ga3bd5802a96f0dcbc00ac3b89b134da3b" title="Gets Pending Interrupt (reads the pending register in the NVIC and returns the pending bit for the sp...">HAL_NVIC_GetPendingIRQ</a>(IRQn_Type IRQn)
 <a name="l00405"></a>00405 {
 <a name="l00406"></a>00406   <span class="comment">/* Check the parameters */</span>
-<a name="l00407"></a>00407   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__CORTEX__Private__Macros.html#ga9b8dcac4ed8e88c14d9bb04e369dad6a">IS_NVIC_DEVICE_IRQ</a>(IRQn));
+<a name="l00407"></a>00407   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__CORTEX__Private__Macros.html#ga9b8dcac4ed8e88c14d9bb04e369dad6a">IS_NVIC_DEVICE_IRQ</a>(IRQn));
 <a name="l00408"></a>00408 
 <a name="l00409"></a>00409   <span class="comment">/* Return 1 if pending else 0 */</span>
 <a name="l00410"></a>00410   <span class="keywordflow">return</span> NVIC_GetPendingIRQ(IRQn);
@@ -484,10 +484,10 @@
 <a name="l00417"></a>00417 <span class="comment">  *         (For the complete STM32 Devices IRQ Channels list, please refer to the appropriate CMSIS device file (stm32f10xxx.h))  </span>
 <a name="l00418"></a>00418 <span class="comment">  * @retval None</span>
 <a name="l00419"></a>00419 <span class="comment">  */</span>
-<a name="l00420"></a><a class="code" href="group__CORTEX__Exported__Functions__Group2.html#ga0c7d007acf1339ca1bb46f3c6e018ff5">00420</a> <span class="keywordtype">void</span> <a class="code" href="group__CORTEX__Exported__Functions__Group2.html#ga0c7d007acf1339ca1bb46f3c6e018ff5" title="Clears the pending bit of an external interrupt.">HAL_NVIC_ClearPendingIRQ</a>(IRQn_Type IRQn)
+<a name="l00420"></a><a class="code" href="group/group__CORTEX__Exported__Functions__Group2.html#ga0c7d007acf1339ca1bb46f3c6e018ff5">00420</a> <span class="keywordtype">void</span> <a class="code" href="group/group__CORTEX__Exported__Functions__Group2.html#ga0c7d007acf1339ca1bb46f3c6e018ff5" title="Clears the pending bit of an external interrupt.">HAL_NVIC_ClearPendingIRQ</a>(IRQn_Type IRQn)
 <a name="l00421"></a>00421 {
 <a name="l00422"></a>00422   <span class="comment">/* Check the parameters */</span>
-<a name="l00423"></a>00423   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__CORTEX__Private__Macros.html#ga9b8dcac4ed8e88c14d9bb04e369dad6a">IS_NVIC_DEVICE_IRQ</a>(IRQn));
+<a name="l00423"></a>00423   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__CORTEX__Private__Macros.html#ga9b8dcac4ed8e88c14d9bb04e369dad6a">IS_NVIC_DEVICE_IRQ</a>(IRQn));
 <a name="l00424"></a>00424 
 <a name="l00425"></a>00425   <span class="comment">/* Clear pending interrupt */</span>
 <a name="l00426"></a>00426   NVIC_ClearPendingIRQ(IRQn);
@@ -501,10 +501,10 @@
 <a name="l00434"></a>00434 <span class="comment">  * @retval status: - 0  Interrupt status is not pending.</span>
 <a name="l00435"></a>00435 <span class="comment">  *                 - 1  Interrupt status is pending.</span>
 <a name="l00436"></a>00436 <span class="comment">  */</span>
-<a name="l00437"></a><a class="code" href="group__CORTEX__Exported__Functions__Group2.html#gad3f7598e54fb3d74eaf9abedef704c57">00437</a> uint32_t <a class="code" href="group__CORTEX__Exported__Functions__Group2.html#gad3f7598e54fb3d74eaf9abedef704c57" title="Gets active interrupt ( reads the active register in NVIC and returns the active bit).">HAL_NVIC_GetActive</a>(IRQn_Type IRQn)
+<a name="l00437"></a><a class="code" href="group/group__CORTEX__Exported__Functions__Group2.html#gad3f7598e54fb3d74eaf9abedef704c57">00437</a> uint32_t <a class="code" href="group/group__CORTEX__Exported__Functions__Group2.html#gad3f7598e54fb3d74eaf9abedef704c57" title="Gets active interrupt ( reads the active register in NVIC and returns the active bit).">HAL_NVIC_GetActive</a>(IRQn_Type IRQn)
 <a name="l00438"></a>00438 {
 <a name="l00439"></a>00439   <span class="comment">/* Check the parameters */</span>
-<a name="l00440"></a>00440   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__CORTEX__Private__Macros.html#ga9b8dcac4ed8e88c14d9bb04e369dad6a">IS_NVIC_DEVICE_IRQ</a>(IRQn));
+<a name="l00440"></a>00440   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__CORTEX__Private__Macros.html#ga9b8dcac4ed8e88c14d9bb04e369dad6a">IS_NVIC_DEVICE_IRQ</a>(IRQn));
 <a name="l00441"></a>00441 
 <a name="l00442"></a>00442   <span class="comment">/* Return 1 if active else 0 */</span>
 <a name="l00443"></a>00443   <span class="keywordflow">return</span> NVIC_GetActive(IRQn);
@@ -518,17 +518,17 @@
 <a name="l00451"></a>00451 <span class="comment">  *             @arg SYSTICK_CLKSOURCE_HCLK: AHB clock selected as SysTick clock source.</span>
 <a name="l00452"></a>00452 <span class="comment">  * @retval None</span>
 <a name="l00453"></a>00453 <span class="comment">  */</span>
-<a name="l00454"></a><a class="code" href="group__CORTEX__Exported__Functions__Group2.html#ga3284dc8428996f5b6aa6b3b99e643788">00454</a> <span class="keywordtype">void</span> <a class="code" href="group__CORTEX__Exported__Functions__Group2.html#ga3284dc8428996f5b6aa6b3b99e643788" title="Configures the SysTick clock source.">HAL_SYSTICK_CLKSourceConfig</a>(uint32_t CLKSource)
+<a name="l00454"></a><a class="code" href="group/group__CORTEX__Exported__Functions__Group2.html#ga3284dc8428996f5b6aa6b3b99e643788">00454</a> <span class="keywordtype">void</span> <a class="code" href="group/group__CORTEX__Exported__Functions__Group2.html#ga3284dc8428996f5b6aa6b3b99e643788" title="Configures the SysTick clock source.">HAL_SYSTICK_CLKSourceConfig</a>(uint32_t CLKSource)
 <a name="l00455"></a>00455 {
 <a name="l00456"></a>00456   <span class="comment">/* Check the parameters */</span>
-<a name="l00457"></a>00457   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__CORTEX__Private__Macros.html#ga22d6291f6aed29442cf4cd9098fa0784">IS_SYSTICK_CLK_SOURCE</a>(CLKSource));
-<a name="l00458"></a>00458   <span class="keywordflow">if</span> (CLKSource == <a class="code" href="group__CORTEX__SysTick__clock__source.html#ga6f6582df23b6fbc578325e453b9893b7">SYSTICK_CLKSOURCE_HCLK</a>)
+<a name="l00457"></a>00457   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__CORTEX__Private__Macros.html#ga22d6291f6aed29442cf4cd9098fa0784">IS_SYSTICK_CLK_SOURCE</a>(CLKSource));
+<a name="l00458"></a>00458   <span class="keywordflow">if</span> (CLKSource == <a class="code" href="group/group__CORTEX__SysTick__clock__source.html#ga6f6582df23b6fbc578325e453b9893b7">SYSTICK_CLKSOURCE_HCLK</a>)
 <a name="l00459"></a>00459   {
-<a name="l00460"></a>00460     SysTick-&gt;CTRL |= <a class="code" href="group__CORTEX__SysTick__clock__source.html#ga6f6582df23b6fbc578325e453b9893b7">SYSTICK_CLKSOURCE_HCLK</a>;
+<a name="l00460"></a>00460     SysTick-&gt;CTRL |= <a class="code" href="group/group__CORTEX__SysTick__clock__source.html#ga6f6582df23b6fbc578325e453b9893b7">SYSTICK_CLKSOURCE_HCLK</a>;
 <a name="l00461"></a>00461   }
 <a name="l00462"></a>00462   <span class="keywordflow">else</span>
 <a name="l00463"></a>00463   {
-<a name="l00464"></a>00464     SysTick-&gt;CTRL &amp;= ~<a class="code" href="group__CORTEX__SysTick__clock__source.html#ga6f6582df23b6fbc578325e453b9893b7">SYSTICK_CLKSOURCE_HCLK</a>;
+<a name="l00464"></a>00464     SysTick-&gt;CTRL &amp;= ~<a class="code" href="group/group__CORTEX__SysTick__clock__source.html#ga6f6582df23b6fbc578325e453b9893b7">SYSTICK_CLKSOURCE_HCLK</a>;
 <a name="l00465"></a>00465   }
 <a name="l00466"></a>00466 }
 <a name="l00467"></a>00467 <span class="comment"></span>
@@ -536,16 +536,16 @@
 <a name="l00469"></a>00469 <span class="comment">  * @brief  This function handles SYSTICK interrupt request.</span>
 <a name="l00470"></a>00470 <span class="comment">  * @retval None</span>
 <a name="l00471"></a>00471 <span class="comment">  */</span>
-<a name="l00472"></a><a class="code" href="group__CORTEX__Exported__Functions__Group2.html#ga5b66b62383261c1e0acef98d344aa4c1">00472</a> <span class="keywordtype">void</span> <a class="code" href="group__CORTEX__Exported__Functions__Group2.html#ga5b66b62383261c1e0acef98d344aa4c1" title="This function handles SYSTICK interrupt request.">HAL_SYSTICK_IRQHandler</a>(<span class="keywordtype">void</span>)
+<a name="l00472"></a><a class="code" href="group/group__CORTEX__Exported__Functions__Group2.html#ga5b66b62383261c1e0acef98d344aa4c1">00472</a> <span class="keywordtype">void</span> <a class="code" href="group/group__CORTEX__Exported__Functions__Group2.html#ga5b66b62383261c1e0acef98d344aa4c1" title="This function handles SYSTICK interrupt request.">HAL_SYSTICK_IRQHandler</a>(<span class="keywordtype">void</span>)
 <a name="l00473"></a>00473 {
-<a name="l00474"></a>00474   <a class="code" href="group__CORTEX__Exported__Functions__Group2.html#ga5033855e81ba2071231b60599a3ce9a1" title="SYSTICK callback.">HAL_SYSTICK_Callback</a>();
+<a name="l00474"></a>00474   <a class="code" href="group/group__CORTEX__Exported__Functions__Group2.html#ga5033855e81ba2071231b60599a3ce9a1" title="SYSTICK callback.">HAL_SYSTICK_Callback</a>();
 <a name="l00475"></a>00475 }
 <a name="l00476"></a>00476 <span class="comment"></span>
 <a name="l00477"></a>00477 <span class="comment">/**</span>
 <a name="l00478"></a>00478 <span class="comment">  * @brief  SYSTICK callback.</span>
 <a name="l00479"></a>00479 <span class="comment">  * @retval None</span>
 <a name="l00480"></a>00480 <span class="comment">  */</span>
-<a name="l00481"></a><a class="code" href="group__CORTEX__Exported__Functions__Group2.html#ga5033855e81ba2071231b60599a3ce9a1">00481</a> __weak <span class="keywordtype">void</span> <a class="code" href="group__CORTEX__Exported__Functions__Group2.html#ga5033855e81ba2071231b60599a3ce9a1" title="SYSTICK callback.">HAL_SYSTICK_Callback</a>(<span class="keywordtype">void</span>)
+<a name="l00481"></a><a class="code" href="group/group__CORTEX__Exported__Functions__Group2.html#ga5033855e81ba2071231b60599a3ce9a1">00481</a> __weak <span class="keywordtype">void</span> <a class="code" href="group/group__CORTEX__Exported__Functions__Group2.html#ga5033855e81ba2071231b60599a3ce9a1" title="SYSTICK callback.">HAL_SYSTICK_Callback</a>(<span class="keywordtype">void</span>)
 <a name="l00482"></a>00482 {
 <a name="l00483"></a>00483   <span class="comment">/* NOTE : This function Should not be modified, when the callback is needed,</span>
 <a name="l00484"></a>00484 <span class="comment">            the HAL_SYSTICK_Callback could be implemented in the user file</span>

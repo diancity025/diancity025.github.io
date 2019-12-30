@@ -127,7 +127,7 @@
 <a name="l00060"></a>00060 <span class="comment">  *          - SUCCESS: CRC registers are de-initialized</span>
 <a name="l00061"></a>00061 <span class="comment">  *          - ERROR: CRC registers are not de-initialized</span>
 <a name="l00062"></a>00062 <span class="comment">  */</span>
-<a name="l00063"></a><a class="code" href="group__CRC__LL__EF__Init.html#gadeddc1ff35afd491645a3bd70c6d8ac3">00063</a> ErrorStatus <a class="code" href="group__CRC__LL__EF__Init.html#gadeddc1ff35afd491645a3bd70c6d8ac3" title="De-initialize CRC registers (Registers restored to their default values).">LL_CRC_DeInit</a>(CRC_TypeDef *CRCx)
+<a name="l00063"></a><a class="code" href="group/group__CRC__LL__EF__Init.html#gadeddc1ff35afd491645a3bd70c6d8ac3">00063</a> ErrorStatus <a class="code" href="group/group__CRC__LL__EF__Init.html#gadeddc1ff35afd491645a3bd70c6d8ac3" title="De-initialize CRC registers (Registers restored to their default values).">LL_CRC_DeInit</a>(CRC_TypeDef *CRCx)
 <a name="l00064"></a>00064 {
 <a name="l00065"></a>00065   ErrorStatus status = SUCCESS;
 <a name="l00066"></a>00066 
@@ -138,10 +138,10 @@
 <a name="l00071"></a>00071   {
 <a name="l00072"></a>00072 
 <a name="l00073"></a>00073     <span class="comment">/* Reset the CRC calculation unit */</span>
-<a name="l00074"></a>00074     <a class="code" href="group__CRC__LL__EF__Configuration.html#ga90a0c59d0a80758bde6f86eb8d3e3f03" title="Reset the CRC calculation unit.">LL_CRC_ResetCRCCalculationUnit</a>(CRCx);
+<a name="l00074"></a>00074     <a class="code" href="group/group__CRC__LL__EF__Configuration.html#ga90a0c59d0a80758bde6f86eb8d3e3f03" title="Reset the CRC calculation unit.">LL_CRC_ResetCRCCalculationUnit</a>(CRCx);
 <a name="l00075"></a>00075 
 <a name="l00076"></a>00076     <span class="comment">/* Reset IDR register */</span>
-<a name="l00077"></a>00077     <a class="code" href="group__CRC__LL__EF__Data__Management.html#gaeb1b3f47eaa3a52bb2f5de78b87edbe5" title="Store data in the Independent Data(IDR) register.">LL_CRC_Write_IDR</a>(CRCx, 0x00U);
+<a name="l00077"></a>00077     <a class="code" href="group/group__CRC__LL__EF__Data__Management.html#gaeb1b3f47eaa3a52bb2f5de78b87edbe5" title="Store data in the Independent Data(IDR) register.">LL_CRC_Write_IDR</a>(CRCx, 0x00U);
 <a name="l00078"></a>00078   }
 <a name="l00079"></a>00079   <span class="keywordflow">else</span>
 <a name="l00080"></a>00080   {

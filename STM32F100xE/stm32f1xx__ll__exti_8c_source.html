@@ -112,14 +112,14 @@
 <a name="l00045"></a>00045 <span class="comment">  * @{</span>
 <a name="l00046"></a>00046 <span class="comment">  */</span>
 <a name="l00047"></a>00047 
-<a name="l00048"></a><a class="code" href="group__EXTI__LL__Private__Macros.html#ga078262a4b2ed0e02a71f804ddb4a5b07">00048</a> <span class="preprocessor">#define IS_LL_EXTI_LINE_0_31(__VALUE__)              (((__VALUE__) &amp; ~LL_EXTI_LINE_ALL_0_31) == 0x00000000U)</span>
+<a name="l00048"></a><a class="code" href="group/group__EXTI__LL__Private__Macros.html#ga078262a4b2ed0e02a71f804ddb4a5b07">00048</a> <span class="preprocessor">#define IS_LL_EXTI_LINE_0_31(__VALUE__)              (((__VALUE__) &amp; ~LL_EXTI_LINE_ALL_0_31) == 0x00000000U)</span>
 <a name="l00049"></a>00049 <span class="preprocessor"></span>
-<a name="l00050"></a><a class="code" href="group__EXTI__LL__Private__Macros.html#gaa15eb35d09ab3cf73c19554b3d99005e">00050</a> <span class="preprocessor">#define IS_LL_EXTI_MODE(__VALUE__)                   (((__VALUE__) == LL_EXTI_MODE_IT)            \</span>
+<a name="l00050"></a><a class="code" href="group/group__EXTI__LL__Private__Macros.html#gaa15eb35d09ab3cf73c19554b3d99005e">00050</a> <span class="preprocessor">#define IS_LL_EXTI_MODE(__VALUE__)                   (((__VALUE__) == LL_EXTI_MODE_IT)            \</span>
 <a name="l00051"></a>00051 <span class="preprocessor">                                                   || ((__VALUE__) == LL_EXTI_MODE_EVENT)         \</span>
 <a name="l00052"></a>00052 <span class="preprocessor">                                                   || ((__VALUE__) == LL_EXTI_MODE_IT_EVENT))</span>
 <a name="l00053"></a>00053 <span class="preprocessor"></span>
 <a name="l00054"></a>00054 
-<a name="l00055"></a><a class="code" href="group__EXTI__LL__Private__Macros.html#ga284d0639f43281b76752acbc29c6902e">00055</a> <span class="preprocessor">#define IS_LL_EXTI_TRIGGER(__VALUE__)                (((__VALUE__) == LL_EXTI_TRIGGER_NONE)       \</span>
+<a name="l00055"></a><a class="code" href="group/group__EXTI__LL__Private__Macros.html#ga284d0639f43281b76752acbc29c6902e">00055</a> <span class="preprocessor">#define IS_LL_EXTI_TRIGGER(__VALUE__)                (((__VALUE__) == LL_EXTI_TRIGGER_NONE)       \</span>
 <a name="l00056"></a>00056 <span class="preprocessor">                                                   || ((__VALUE__) == LL_EXTI_TRIGGER_RISING)     \</span>
 <a name="l00057"></a>00057 <span class="preprocessor">                                                   || ((__VALUE__) == LL_EXTI_TRIGGER_FALLING)    \</span>
 <a name="l00058"></a>00058 <span class="preprocessor">                                                   || ((__VALUE__) == LL_EXTI_TRIGGER_RISING_FALLING))</span>
@@ -145,20 +145,20 @@
 <a name="l00078"></a>00078 <span class="comment">  *          - SUCCESS: EXTI registers are de-initialized</span>
 <a name="l00079"></a>00079 <span class="comment">  *          - ERROR: not applicable</span>
 <a name="l00080"></a>00080 <span class="comment">  */</span>
-<a name="l00081"></a><a class="code" href="group__EXTI__LL__EF__Init.html#ga6a6491a9f2eb5eb3cd6508abc5dda801">00081</a> uint32_t <a class="code" href="group__EXTI__LL__EF__Init.html#ga6a6491a9f2eb5eb3cd6508abc5dda801" title="De-initialize the EXTI registers to their default reset values.">LL_EXTI_DeInit</a>(<span class="keywordtype">void</span>)
+<a name="l00081"></a><a class="code" href="group/group__EXTI__LL__EF__Init.html#ga6a6491a9f2eb5eb3cd6508abc5dda801">00081</a> uint32_t <a class="code" href="group/group__EXTI__LL__EF__Init.html#ga6a6491a9f2eb5eb3cd6508abc5dda801" title="De-initialize the EXTI registers to their default reset values.">LL_EXTI_DeInit</a>(<span class="keywordtype">void</span>)
 <a name="l00082"></a>00082 {
 <a name="l00083"></a>00083   <span class="comment">/* Interrupt mask register set to default reset values */</span>
-<a name="l00084"></a>00084   <a class="code" href="group__EXTI__LL__EM__WRITE__READ.html#ga961ea6332cd4ced4efaf1753e0fff189" title="Write a value in EXTI register.">LL_EXTI_WriteReg</a>(IMR,   0x00000000U);
+<a name="l00084"></a>00084   <a class="code" href="group/group__EXTI__LL__EM__WRITE__READ.html#ga961ea6332cd4ced4efaf1753e0fff189" title="Write a value in EXTI register.">LL_EXTI_WriteReg</a>(IMR,   0x00000000U);
 <a name="l00085"></a>00085   <span class="comment">/* Event mask register set to default reset values */</span>
-<a name="l00086"></a>00086   <a class="code" href="group__EXTI__LL__EM__WRITE__READ.html#ga961ea6332cd4ced4efaf1753e0fff189" title="Write a value in EXTI register.">LL_EXTI_WriteReg</a>(EMR,   0x00000000U);
+<a name="l00086"></a>00086   <a class="code" href="group/group__EXTI__LL__EM__WRITE__READ.html#ga961ea6332cd4ced4efaf1753e0fff189" title="Write a value in EXTI register.">LL_EXTI_WriteReg</a>(EMR,   0x00000000U);
 <a name="l00087"></a>00087   <span class="comment">/* Rising Trigger selection register set to default reset values */</span>
-<a name="l00088"></a>00088   <a class="code" href="group__EXTI__LL__EM__WRITE__READ.html#ga961ea6332cd4ced4efaf1753e0fff189" title="Write a value in EXTI register.">LL_EXTI_WriteReg</a>(RTSR,  0x00000000U);
+<a name="l00088"></a>00088   <a class="code" href="group/group__EXTI__LL__EM__WRITE__READ.html#ga961ea6332cd4ced4efaf1753e0fff189" title="Write a value in EXTI register.">LL_EXTI_WriteReg</a>(RTSR,  0x00000000U);
 <a name="l00089"></a>00089   <span class="comment">/* Falling Trigger selection register set to default reset values */</span>
-<a name="l00090"></a>00090   <a class="code" href="group__EXTI__LL__EM__WRITE__READ.html#ga961ea6332cd4ced4efaf1753e0fff189" title="Write a value in EXTI register.">LL_EXTI_WriteReg</a>(FTSR,  0x00000000U);
+<a name="l00090"></a>00090   <a class="code" href="group/group__EXTI__LL__EM__WRITE__READ.html#ga961ea6332cd4ced4efaf1753e0fff189" title="Write a value in EXTI register.">LL_EXTI_WriteReg</a>(FTSR,  0x00000000U);
 <a name="l00091"></a>00091   <span class="comment">/* Software interrupt event register set to default reset values */</span>
-<a name="l00092"></a>00092   <a class="code" href="group__EXTI__LL__EM__WRITE__READ.html#ga961ea6332cd4ced4efaf1753e0fff189" title="Write a value in EXTI register.">LL_EXTI_WriteReg</a>(SWIER, 0x00000000U);
+<a name="l00092"></a>00092   <a class="code" href="group/group__EXTI__LL__EM__WRITE__READ.html#ga961ea6332cd4ced4efaf1753e0fff189" title="Write a value in EXTI register.">LL_EXTI_WriteReg</a>(SWIER, 0x00000000U);
 <a name="l00093"></a>00093   <span class="comment">/* Pending register clear */</span>
-<a name="l00094"></a>00094   <a class="code" href="group__EXTI__LL__EM__WRITE__READ.html#ga961ea6332cd4ced4efaf1753e0fff189" title="Write a value in EXTI register.">LL_EXTI_WriteReg</a>(PR,    0x000FFFFFU);
+<a name="l00094"></a>00094   <a class="code" href="group/group__EXTI__LL__EM__WRITE__READ.html#ga961ea6332cd4ced4efaf1753e0fff189" title="Write a value in EXTI register.">LL_EXTI_WriteReg</a>(PR,    0x000FFFFFU);
 <a name="l00095"></a>00095 
 <a name="l00096"></a>00096   <span class="keywordflow">return</span> SUCCESS;
 <a name="l00097"></a>00097 }
@@ -170,64 +170,64 @@
 <a name="l00103"></a>00103 <span class="comment">  *          - SUCCESS: EXTI registers are initialized</span>
 <a name="l00104"></a>00104 <span class="comment">  *          - ERROR: not applicable</span>
 <a name="l00105"></a>00105 <span class="comment">  */</span>
-<a name="l00106"></a><a class="code" href="group__EXTI__LL__EF__Init.html#ga5429ff88ef6538edd78977a7941ef670">00106</a> uint32_t <a class="code" href="group__EXTI__LL__EF__Init.html#ga5429ff88ef6538edd78977a7941ef670" title="Initialize the EXTI registers according to the specified parameters in EXTI_InitStruct.">LL_EXTI_Init</a>(<a class="code" href="structLL__EXTI__InitTypeDef.html">LL_EXTI_InitTypeDef</a> *EXTI_InitStruct)
+<a name="l00106"></a><a class="code" href="group/group__EXTI__LL__EF__Init.html#ga5429ff88ef6538edd78977a7941ef670">00106</a> uint32_t <a class="code" href="group/group__EXTI__LL__EF__Init.html#ga5429ff88ef6538edd78977a7941ef670" title="Initialize the EXTI registers according to the specified parameters in EXTI_InitStruct.">LL_EXTI_Init</a>(<a class="code" href="structLL__EXTI__InitTypeDef.html">LL_EXTI_InitTypeDef</a> *EXTI_InitStruct)
 <a name="l00107"></a>00107 {
 <a name="l00108"></a>00108   ErrorStatus status = SUCCESS;
 <a name="l00109"></a>00109   <span class="comment">/* Check the parameters */</span>
-<a name="l00110"></a>00110   <a class="code" href="stm32f1xx__ll__exti_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group__EXTI__LL__Private__Macros.html#ga078262a4b2ed0e02a71f804ddb4a5b07">IS_LL_EXTI_LINE_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>));
+<a name="l00110"></a>00110   <a class="code" href="stm32f1xx__ll__exti_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group/group__EXTI__LL__Private__Macros.html#ga078262a4b2ed0e02a71f804ddb4a5b07">IS_LL_EXTI_LINE_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>));
 <a name="l00111"></a>00111   <a class="code" href="stm32f1xx__ll__exti_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(IS_FUNCTIONAL_STATE(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a74928e85adc4ad98ac5feb5c8365f69f">LineCommand</a>));
-<a name="l00112"></a>00112   <a class="code" href="stm32f1xx__ll__exti_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group__EXTI__LL__Private__Macros.html#gaa15eb35d09ab3cf73c19554b3d99005e">IS_LL_EXTI_MODE</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a705ee4da0e5b9e8251524df109065e3e">Mode</a>));
+<a name="l00112"></a>00112   <a class="code" href="stm32f1xx__ll__exti_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group/group__EXTI__LL__Private__Macros.html#gaa15eb35d09ab3cf73c19554b3d99005e">IS_LL_EXTI_MODE</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a705ee4da0e5b9e8251524df109065e3e">Mode</a>));
 <a name="l00113"></a>00113 
 <a name="l00114"></a>00114   <span class="comment">/* ENABLE LineCommand */</span>
 <a name="l00115"></a>00115   <span class="keywordflow">if</span> (EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a74928e85adc4ad98ac5feb5c8365f69f">LineCommand</a> != DISABLE)
 <a name="l00116"></a>00116   {
-<a name="l00117"></a>00117     <a class="code" href="stm32f1xx__ll__exti_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group__EXTI__LL__Private__Macros.html#ga284d0639f43281b76752acbc29c6902e">IS_LL_EXTI_TRIGGER</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a969f64fa8ecb6744cc604e94bbf979ac">Trigger</a>));
+<a name="l00117"></a>00117     <a class="code" href="stm32f1xx__ll__exti_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group/group__EXTI__LL__Private__Macros.html#ga284d0639f43281b76752acbc29c6902e">IS_LL_EXTI_TRIGGER</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a969f64fa8ecb6744cc604e94bbf979ac">Trigger</a>));
 <a name="l00118"></a>00118 
 <a name="l00119"></a>00119     <span class="comment">/* Configure EXTI Lines in range from 0 to 31 */</span>
-<a name="l00120"></a>00120     <span class="keywordflow">if</span> (EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a> != <a class="code" href="group__EXTI__LL__EC__LINE.html#ga898897a830fb35beb704a083859a836e">LL_EXTI_LINE_NONE</a>)
+<a name="l00120"></a>00120     <span class="keywordflow">if</span> (EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a> != <a class="code" href="group/group__EXTI__LL__EC__LINE.html#ga898897a830fb35beb704a083859a836e">LL_EXTI_LINE_NONE</a>)
 <a name="l00121"></a>00121     {
 <a name="l00122"></a>00122       <span class="keywordflow">switch</span> (EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a705ee4da0e5b9e8251524df109065e3e">Mode</a>)
 <a name="l00123"></a>00123       {
-<a name="l00124"></a>00124         <span class="keywordflow">case</span> <a class="code" href="group__EXTI__LL__EC__MODE.html#gac32c375b1e23ebcd6d8e7043eede0d00">LL_EXTI_MODE_IT</a>:
+<a name="l00124"></a>00124         <span class="keywordflow">case</span> <a class="code" href="group/group__EXTI__LL__EC__MODE.html#gac32c375b1e23ebcd6d8e7043eede0d00">LL_EXTI_MODE_IT</a>:
 <a name="l00125"></a>00125           <span class="comment">/* First Disable Event on provided Lines */</span>
-<a name="l00126"></a>00126           <a class="code" href="group__EXTI__LL__EF__Event__Management.html#gadd94231370bc837ec96c7af9306da055" title="Disable ExtiLine Event request for Lines in range 0 to 31.">LL_EXTI_DisableEvent_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
+<a name="l00126"></a>00126           <a class="code" href="group/group__EXTI__LL__EF__Event__Management.html#gadd94231370bc837ec96c7af9306da055" title="Disable ExtiLine Event request for Lines in range 0 to 31.">LL_EXTI_DisableEvent_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
 <a name="l00127"></a>00127           <span class="comment">/* Then Enable IT on provided Lines */</span>
-<a name="l00128"></a>00128           <a class="code" href="group__EXTI__LL__EF__IT__Management.html#ga08bd4b73a95d1816624bf8c68ffce257" title="Enable ExtiLine Interrupt request for Lines in range 0 to 31.">LL_EXTI_EnableIT_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
+<a name="l00128"></a>00128           <a class="code" href="group/group__EXTI__LL__EF__IT__Management.html#ga08bd4b73a95d1816624bf8c68ffce257" title="Enable ExtiLine Interrupt request for Lines in range 0 to 31.">LL_EXTI_EnableIT_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
 <a name="l00129"></a>00129           <span class="keywordflow">break</span>;
-<a name="l00130"></a>00130         <span class="keywordflow">case</span> <a class="code" href="group__EXTI__LL__EC__MODE.html#gadc37c7012d847e777965772a0de0e8b5">LL_EXTI_MODE_EVENT</a>:
+<a name="l00130"></a>00130         <span class="keywordflow">case</span> <a class="code" href="group/group__EXTI__LL__EC__MODE.html#gadc37c7012d847e777965772a0de0e8b5">LL_EXTI_MODE_EVENT</a>:
 <a name="l00131"></a>00131           <span class="comment">/* First Disable IT on provided Lines */</span>
-<a name="l00132"></a>00132           <a class="code" href="group__EXTI__LL__EF__IT__Management.html#ga455619f98cdc3f330ffae6d57a7281e2" title="Disable ExtiLine Interrupt request for Lines in range 0 to 31.">LL_EXTI_DisableIT_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
+<a name="l00132"></a>00132           <a class="code" href="group/group__EXTI__LL__EF__IT__Management.html#ga455619f98cdc3f330ffae6d57a7281e2" title="Disable ExtiLine Interrupt request for Lines in range 0 to 31.">LL_EXTI_DisableIT_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
 <a name="l00133"></a>00133           <span class="comment">/* Then Enable Event on provided Lines */</span>
-<a name="l00134"></a>00134           <a class="code" href="group__EXTI__LL__EF__Event__Management.html#ga079b4d3e631dc44ef49213d4681402ba" title="Enable ExtiLine Event request for Lines in range 0 to 31.">LL_EXTI_EnableEvent_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
+<a name="l00134"></a>00134           <a class="code" href="group/group__EXTI__LL__EF__Event__Management.html#ga079b4d3e631dc44ef49213d4681402ba" title="Enable ExtiLine Event request for Lines in range 0 to 31.">LL_EXTI_EnableEvent_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
 <a name="l00135"></a>00135           <span class="keywordflow">break</span>;
-<a name="l00136"></a>00136         <span class="keywordflow">case</span> <a class="code" href="group__EXTI__LL__EC__MODE.html#ga61088cf66db2c7cdddad5ffa8d3e8e07">LL_EXTI_MODE_IT_EVENT</a>:
+<a name="l00136"></a>00136         <span class="keywordflow">case</span> <a class="code" href="group/group__EXTI__LL__EC__MODE.html#ga61088cf66db2c7cdddad5ffa8d3e8e07">LL_EXTI_MODE_IT_EVENT</a>:
 <a name="l00137"></a>00137           <span class="comment">/* Directly Enable IT &amp; Event on provided Lines */</span>
-<a name="l00138"></a>00138           <a class="code" href="group__EXTI__LL__EF__IT__Management.html#ga08bd4b73a95d1816624bf8c68ffce257" title="Enable ExtiLine Interrupt request for Lines in range 0 to 31.">LL_EXTI_EnableIT_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
-<a name="l00139"></a>00139           <a class="code" href="group__EXTI__LL__EF__Event__Management.html#ga079b4d3e631dc44ef49213d4681402ba" title="Enable ExtiLine Event request for Lines in range 0 to 31.">LL_EXTI_EnableEvent_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
+<a name="l00138"></a>00138           <a class="code" href="group/group__EXTI__LL__EF__IT__Management.html#ga08bd4b73a95d1816624bf8c68ffce257" title="Enable ExtiLine Interrupt request for Lines in range 0 to 31.">LL_EXTI_EnableIT_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
+<a name="l00139"></a>00139           <a class="code" href="group/group__EXTI__LL__EF__Event__Management.html#ga079b4d3e631dc44ef49213d4681402ba" title="Enable ExtiLine Event request for Lines in range 0 to 31.">LL_EXTI_EnableEvent_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
 <a name="l00140"></a>00140           <span class="keywordflow">break</span>;
 <a name="l00141"></a>00141         <span class="keywordflow">default</span>:
 <a name="l00142"></a>00142           status = ERROR;
 <a name="l00143"></a>00143           <span class="keywordflow">break</span>;
 <a name="l00144"></a>00144       }
-<a name="l00145"></a>00145       <span class="keywordflow">if</span> (EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a969f64fa8ecb6744cc604e94bbf979ac">Trigger</a> != <a class="code" href="group__EXTI__LL__EC__TRIGGER.html#gabf488aa27c4f8fd33cd0f758d954a5f0">LL_EXTI_TRIGGER_NONE</a>)
+<a name="l00145"></a>00145       <span class="keywordflow">if</span> (EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a969f64fa8ecb6744cc604e94bbf979ac">Trigger</a> != <a class="code" href="group/group__EXTI__LL__EC__TRIGGER.html#gabf488aa27c4f8fd33cd0f758d954a5f0">LL_EXTI_TRIGGER_NONE</a>)
 <a name="l00146"></a>00146       {
 <a name="l00147"></a>00147         <span class="keywordflow">switch</span> (EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a969f64fa8ecb6744cc604e94bbf979ac">Trigger</a>)
 <a name="l00148"></a>00148         {
-<a name="l00149"></a>00149           <span class="keywordflow">case</span> <a class="code" href="group__EXTI__LL__EC__TRIGGER.html#gafb5656bafada541b527474ba839b6987">LL_EXTI_TRIGGER_RISING</a>:
+<a name="l00149"></a>00149           <span class="keywordflow">case</span> <a class="code" href="group/group__EXTI__LL__EC__TRIGGER.html#gafb5656bafada541b527474ba839b6987">LL_EXTI_TRIGGER_RISING</a>:
 <a name="l00150"></a>00150             <span class="comment">/* First Disable Falling Trigger on provided Lines */</span>
-<a name="l00151"></a>00151             <a class="code" href="group__EXTI__LL__EF__Falling__Trigger__Management.html#ga93d25196ea62aae92b5086073484d371" title="Disable ExtiLine Falling Edge Trigger for Lines in range 0 to 31.">LL_EXTI_DisableFallingTrig_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
+<a name="l00151"></a>00151             <a class="code" href="group/group__EXTI__LL__EF__Falling__Trigger__Management.html#ga93d25196ea62aae92b5086073484d371" title="Disable ExtiLine Falling Edge Trigger for Lines in range 0 to 31.">LL_EXTI_DisableFallingTrig_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
 <a name="l00152"></a>00152             <span class="comment">/* Then Enable Rising Trigger on provided Lines */</span>
-<a name="l00153"></a>00153             <a class="code" href="group__EXTI__LL__EF__Rising__Trigger__Management.html#gafc68204b4604c05c983e25b9c815e7cd" title="Enable ExtiLine Rising Edge Trigger for Lines in range 0 to 31.">LL_EXTI_EnableRisingTrig_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
+<a name="l00153"></a>00153             <a class="code" href="group/group__EXTI__LL__EF__Rising__Trigger__Management.html#gafc68204b4604c05c983e25b9c815e7cd" title="Enable ExtiLine Rising Edge Trigger for Lines in range 0 to 31.">LL_EXTI_EnableRisingTrig_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
 <a name="l00154"></a>00154             <span class="keywordflow">break</span>;
-<a name="l00155"></a>00155           <span class="keywordflow">case</span> <a class="code" href="group__EXTI__LL__EC__TRIGGER.html#gaafad08664841456cbd03815c6ab02696">LL_EXTI_TRIGGER_FALLING</a>:
+<a name="l00155"></a>00155           <span class="keywordflow">case</span> <a class="code" href="group/group__EXTI__LL__EC__TRIGGER.html#gaafad08664841456cbd03815c6ab02696">LL_EXTI_TRIGGER_FALLING</a>:
 <a name="l00156"></a>00156             <span class="comment">/* First Disable Rising Trigger on provided Lines */</span>
-<a name="l00157"></a>00157             <a class="code" href="group__EXTI__LL__EF__Rising__Trigger__Management.html#gae27ebb593e5aa9b674f266e23e806094" title="Disable ExtiLine Rising Edge Trigger for Lines in range 0 to 31.">LL_EXTI_DisableRisingTrig_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
+<a name="l00157"></a>00157             <a class="code" href="group/group__EXTI__LL__EF__Rising__Trigger__Management.html#gae27ebb593e5aa9b674f266e23e806094" title="Disable ExtiLine Rising Edge Trigger for Lines in range 0 to 31.">LL_EXTI_DisableRisingTrig_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
 <a name="l00158"></a>00158             <span class="comment">/* Then Enable Falling Trigger on provided Lines */</span>
-<a name="l00159"></a>00159             <a class="code" href="group__EXTI__LL__EF__Falling__Trigger__Management.html#gaf03f53e14ba24b0de4af69dd05ed5fd1" title="Enable ExtiLine Falling Edge Trigger for Lines in range 0 to 31.">LL_EXTI_EnableFallingTrig_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
+<a name="l00159"></a>00159             <a class="code" href="group/group__EXTI__LL__EF__Falling__Trigger__Management.html#gaf03f53e14ba24b0de4af69dd05ed5fd1" title="Enable ExtiLine Falling Edge Trigger for Lines in range 0 to 31.">LL_EXTI_EnableFallingTrig_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
 <a name="l00160"></a>00160             <span class="keywordflow">break</span>;
-<a name="l00161"></a>00161           <span class="keywordflow">case</span> <a class="code" href="group__EXTI__LL__EC__TRIGGER.html#ga4d529b9c1516adcf5bebf7430ca4c218">LL_EXTI_TRIGGER_RISING_FALLING</a>:
-<a name="l00162"></a>00162             <a class="code" href="group__EXTI__LL__EF__Rising__Trigger__Management.html#gafc68204b4604c05c983e25b9c815e7cd" title="Enable ExtiLine Rising Edge Trigger for Lines in range 0 to 31.">LL_EXTI_EnableRisingTrig_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
-<a name="l00163"></a>00163             <a class="code" href="group__EXTI__LL__EF__Falling__Trigger__Management.html#gaf03f53e14ba24b0de4af69dd05ed5fd1" title="Enable ExtiLine Falling Edge Trigger for Lines in range 0 to 31.">LL_EXTI_EnableFallingTrig_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
+<a name="l00161"></a>00161           <span class="keywordflow">case</span> <a class="code" href="group/group__EXTI__LL__EC__TRIGGER.html#ga4d529b9c1516adcf5bebf7430ca4c218">LL_EXTI_TRIGGER_RISING_FALLING</a>:
+<a name="l00162"></a>00162             <a class="code" href="group/group__EXTI__LL__EF__Rising__Trigger__Management.html#gafc68204b4604c05c983e25b9c815e7cd" title="Enable ExtiLine Rising Edge Trigger for Lines in range 0 to 31.">LL_EXTI_EnableRisingTrig_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
+<a name="l00163"></a>00163             <a class="code" href="group/group__EXTI__LL__EF__Falling__Trigger__Management.html#gaf03f53e14ba24b0de4af69dd05ed5fd1" title="Enable ExtiLine Falling Edge Trigger for Lines in range 0 to 31.">LL_EXTI_EnableFallingTrig_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
 <a name="l00164"></a>00164             <span class="keywordflow">break</span>;
 <a name="l00165"></a>00165           <span class="keywordflow">default</span>:
 <a name="l00166"></a>00166             status = ERROR;
@@ -240,8 +240,8 @@
 <a name="l00173"></a>00173   <span class="keywordflow">else</span>
 <a name="l00174"></a>00174   {
 <a name="l00175"></a>00175     <span class="comment">/* De-configure EXTI Lines in range from 0 to 31 */</span>
-<a name="l00176"></a>00176     <a class="code" href="group__EXTI__LL__EF__IT__Management.html#ga455619f98cdc3f330ffae6d57a7281e2" title="Disable ExtiLine Interrupt request for Lines in range 0 to 31.">LL_EXTI_DisableIT_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
-<a name="l00177"></a>00177     <a class="code" href="group__EXTI__LL__EF__Event__Management.html#gadd94231370bc837ec96c7af9306da055" title="Disable ExtiLine Event request for Lines in range 0 to 31.">LL_EXTI_DisableEvent_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
+<a name="l00176"></a>00176     <a class="code" href="group/group__EXTI__LL__EF__IT__Management.html#ga455619f98cdc3f330ffae6d57a7281e2" title="Disable ExtiLine Interrupt request for Lines in range 0 to 31.">LL_EXTI_DisableIT_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
+<a name="l00177"></a>00177     <a class="code" href="group/group__EXTI__LL__EF__Event__Management.html#gadd94231370bc837ec96c7af9306da055" title="Disable ExtiLine Event request for Lines in range 0 to 31.">LL_EXTI_DisableEvent_0_31</a>(EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>);
 <a name="l00178"></a>00178   }
 <a name="l00179"></a>00179   <span class="keywordflow">return</span> status;
 <a name="l00180"></a>00180 }
@@ -251,12 +251,12 @@
 <a name="l00184"></a>00184 <span class="comment">  * @param  EXTI_InitStruct Pointer to a @ref LL_EXTI_InitTypeDef structure.</span>
 <a name="l00185"></a>00185 <span class="comment">  * @retval None</span>
 <a name="l00186"></a>00186 <span class="comment">  */</span>
-<a name="l00187"></a><a class="code" href="group__EXTI__LL__EF__Init.html#ga87780edc163b29e36a3adb61ddf75aa9">00187</a> <span class="keywordtype">void</span> <a class="code" href="group__EXTI__LL__EF__Init.html#ga87780edc163b29e36a3adb61ddf75aa9" title="Set each LL_EXTI_InitTypeDef field to default value.">LL_EXTI_StructInit</a>(<a class="code" href="structLL__EXTI__InitTypeDef.html">LL_EXTI_InitTypeDef</a> *EXTI_InitStruct)
+<a name="l00187"></a><a class="code" href="group/group__EXTI__LL__EF__Init.html#ga87780edc163b29e36a3adb61ddf75aa9">00187</a> <span class="keywordtype">void</span> <a class="code" href="group/group__EXTI__LL__EF__Init.html#ga87780edc163b29e36a3adb61ddf75aa9" title="Set each LL_EXTI_InitTypeDef field to default value.">LL_EXTI_StructInit</a>(<a class="code" href="structLL__EXTI__InitTypeDef.html">LL_EXTI_InitTypeDef</a> *EXTI_InitStruct)
 <a name="l00188"></a>00188 {
-<a name="l00189"></a>00189   EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>      = <a class="code" href="group__EXTI__LL__EC__LINE.html#ga898897a830fb35beb704a083859a836e">LL_EXTI_LINE_NONE</a>;
+<a name="l00189"></a>00189   EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a2238ef8f9deeca350a7ebaa857f54c0f">Line_0_31</a>      = <a class="code" href="group/group__EXTI__LL__EC__LINE.html#ga898897a830fb35beb704a083859a836e">LL_EXTI_LINE_NONE</a>;
 <a name="l00190"></a>00190   EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a74928e85adc4ad98ac5feb5c8365f69f">LineCommand</a>    = DISABLE;
-<a name="l00191"></a>00191   EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a705ee4da0e5b9e8251524df109065e3e">Mode</a>           = <a class="code" href="group__EXTI__LL__EC__MODE.html#gac32c375b1e23ebcd6d8e7043eede0d00">LL_EXTI_MODE_IT</a>;
-<a name="l00192"></a>00192   EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a969f64fa8ecb6744cc604e94bbf979ac">Trigger</a>        = <a class="code" href="group__EXTI__LL__EC__TRIGGER.html#gaafad08664841456cbd03815c6ab02696">LL_EXTI_TRIGGER_FALLING</a>;
+<a name="l00191"></a>00191   EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a705ee4da0e5b9e8251524df109065e3e">Mode</a>           = <a class="code" href="group/group__EXTI__LL__EC__MODE.html#gac32c375b1e23ebcd6d8e7043eede0d00">LL_EXTI_MODE_IT</a>;
+<a name="l00192"></a>00192   EXTI_InitStruct-&gt;<a class="code" href="structLL__EXTI__InitTypeDef.html#a969f64fa8ecb6744cc604e94bbf979ac">Trigger</a>        = <a class="code" href="group/group__EXTI__LL__EC__TRIGGER.html#gaafad08664841456cbd03815c6ab02696">LL_EXTI_TRIGGER_FALLING</a>;
 <a name="l00193"></a>00193 }
 <a name="l00194"></a>00194 <span class="comment"></span>
 <a name="l00195"></a>00195 <span class="comment">/**</span>

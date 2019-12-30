@@ -413,17 +413,17 @@
 <a name="l00346"></a>00346     <span class="keywordflow">if</span> (hi2s-&gt;Instance == SPI2)
 <a name="l00347"></a>00347     {
 <a name="l00348"></a>00348       <span class="comment">/* Get the source clock value: based on SPI2 Instance */</span>
-<a name="l00349"></a>00349       i2sclk = <a class="code" href="group__RCCEx__Exported__Functions__Group1.html#ga14acaeb88163a6bb0839470b753ba1bd" title="Returns the peripheral clock frequency.">HAL_RCCEx_GetPeriphCLKFreq</a>(RCC_PERIPHCLK_I2S2);
+<a name="l00349"></a>00349       i2sclk = <a class="code" href="group/group__RCCEx__Exported__Functions__Group1.html#ga14acaeb88163a6bb0839470b753ba1bd" title="Returns the peripheral clock frequency.">HAL_RCCEx_GetPeriphCLKFreq</a>(RCC_PERIPHCLK_I2S2);
 <a name="l00350"></a>00350     }
 <a name="l00351"></a>00351     <span class="keywordflow">else</span> <span class="keywordflow">if</span> (hi2s-&gt;Instance == SPI3)
 <a name="l00352"></a>00352     {
 <a name="l00353"></a>00353       <span class="comment">/* Get the source clock value: based on SPI3 Instance */</span>
-<a name="l00354"></a>00354       i2sclk = <a class="code" href="group__RCCEx__Exported__Functions__Group1.html#ga14acaeb88163a6bb0839470b753ba1bd" title="Returns the peripheral clock frequency.">HAL_RCCEx_GetPeriphCLKFreq</a>(RCC_PERIPHCLK_I2S3);
+<a name="l00354"></a>00354       i2sclk = <a class="code" href="group/group__RCCEx__Exported__Functions__Group1.html#ga14acaeb88163a6bb0839470b753ba1bd" title="Returns the peripheral clock frequency.">HAL_RCCEx_GetPeriphCLKFreq</a>(RCC_PERIPHCLK_I2S3);
 <a name="l00355"></a>00355     }
 <a name="l00356"></a>00356     <span class="keywordflow">else</span>
 <a name="l00357"></a>00357     {
 <a name="l00358"></a>00358       <span class="comment">/* Get the source clock value: based on System Clock value */</span>
-<a name="l00359"></a>00359       i2sclk = <a class="code" href="group__RCC__Exported__Functions__Group2.html#ga887cafe88b21a059061b077a1e3fa7d8" title="Returns the SYSCLK frequency.">HAL_RCC_GetSysClockFreq</a>();
+<a name="l00359"></a>00359       i2sclk = <a class="code" href="group/group__RCC__Exported__Functions__Group2.html#ga887cafe88b21a059061b077a1e3fa7d8" title="Returns the SYSCLK frequency.">HAL_RCC_GetSysClockFreq</a>();
 <a name="l00360"></a>00360     }
 <a name="l00361"></a>00361     <span class="comment">/* Compute the Real divider depending on the MCLK output state, with a floating point */</span>
 <a name="l00362"></a>00362     <span class="keywordflow">if</span> (hi2s-&gt;Init.MCLKOutput == I2S_MCLKOUTPUT_ENABLE)
@@ -1222,7 +1222,7 @@
 <a name="l01155"></a>01155   hi2s-&gt;hdmatx-&gt;XferErrorCallback = I2S_DMAError;
 <a name="l01156"></a>01156 
 <a name="l01157"></a>01157   <span class="comment">/* Enable the Tx DMA Stream/Channel */</span>
-<a name="l01158"></a>01158   <span class="keywordflow">if</span> (HAL_OK != <a class="code" href="group__DMA__Exported__Functions__Group2.html#ga7eddc0931ac8a3d77b23d6d5e68407c7" title="Start the DMA Transfer with interrupt enabled.">HAL_DMA_Start_IT</a>(hi2s-&gt;hdmatx,
+<a name="l01158"></a>01158   <span class="keywordflow">if</span> (HAL_OK != <a class="code" href="group/group__DMA__Exported__Functions__Group2.html#ga7eddc0931ac8a3d77b23d6d5e68407c7" title="Start the DMA Transfer with interrupt enabled.">HAL_DMA_Start_IT</a>(hi2s-&gt;hdmatx,
 <a name="l01159"></a>01159                                  (uint32_t)hi2s-&gt;pTxBuffPtr,
 <a name="l01160"></a>01160                                  (uint32_t)&amp;hi2s-&gt;Instance-&gt;DR,
 <a name="l01161"></a>01161                                  hi2s-&gt;TxXferSize))
@@ -1321,7 +1321,7 @@
 <a name="l01254"></a>01254   }
 <a name="l01255"></a>01255 
 <a name="l01256"></a>01256   <span class="comment">/* Enable the Rx DMA Stream/Channel */</span>
-<a name="l01257"></a>01257   <span class="keywordflow">if</span> (HAL_OK != <a class="code" href="group__DMA__Exported__Functions__Group2.html#ga7eddc0931ac8a3d77b23d6d5e68407c7" title="Start the DMA Transfer with interrupt enabled.">HAL_DMA_Start_IT</a>(hi2s-&gt;hdmarx, (uint32_t)&amp;hi2s-&gt;Instance-&gt;DR, (uint32_t)hi2s-&gt;pRxBuffPtr,
+<a name="l01257"></a>01257   <span class="keywordflow">if</span> (HAL_OK != <a class="code" href="group/group__DMA__Exported__Functions__Group2.html#ga7eddc0931ac8a3d77b23d6d5e68407c7" title="Start the DMA Transfer with interrupt enabled.">HAL_DMA_Start_IT</a>(hi2s-&gt;hdmarx, (uint32_t)&amp;hi2s-&gt;Instance-&gt;DR, (uint32_t)hi2s-&gt;pRxBuffPtr,
 <a name="l01258"></a>01258                                  hi2s-&gt;RxXferSize))
 <a name="l01259"></a>01259   {
 <a name="l01260"></a>01260     <span class="comment">/* Update SPI error code */</span>
@@ -1444,7 +1444,7 @@
 <a name="l01377"></a>01377   <span class="keywordflow">if</span> (hi2s-&gt;hdmatx != NULL)
 <a name="l01378"></a>01378   {
 <a name="l01379"></a>01379     <span class="comment">/* Disable the I2S DMA tx Stream/Channel */</span>
-<a name="l01380"></a>01380     <span class="keywordflow">if</span> (HAL_OK != <a class="code" href="group__DMA__Exported__Functions__Group2.html#ga001f9fb04328a7460f9ff16908ff987c" title="Abort the DMA Transfer.">HAL_DMA_Abort</a>(hi2s-&gt;hdmatx))
+<a name="l01380"></a>01380     <span class="keywordflow">if</span> (HAL_OK != <a class="code" href="group/group__DMA__Exported__Functions__Group2.html#ga001f9fb04328a7460f9ff16908ff987c" title="Abort the DMA Transfer.">HAL_DMA_Abort</a>(hi2s-&gt;hdmatx))
 <a name="l01381"></a>01381     {
 <a name="l01382"></a>01382       SET_BIT(hi2s-&gt;ErrorCode, HAL_I2S_ERROR_DMA);
 <a name="l01383"></a>01383       errorcode = HAL_ERROR;
@@ -1455,7 +1455,7 @@
 <a name="l01388"></a>01388   <span class="keywordflow">if</span> (hi2s-&gt;hdmarx != NULL)
 <a name="l01389"></a>01389   {
 <a name="l01390"></a>01390     <span class="comment">/* Disable the I2S DMA rx Stream/Channel */</span>
-<a name="l01391"></a>01391     <span class="keywordflow">if</span> (HAL_OK != <a class="code" href="group__DMA__Exported__Functions__Group2.html#ga001f9fb04328a7460f9ff16908ff987c" title="Abort the DMA Transfer.">HAL_DMA_Abort</a>(hi2s-&gt;hdmarx))
+<a name="l01391"></a>01391     <span class="keywordflow">if</span> (HAL_OK != <a class="code" href="group/group__DMA__Exported__Functions__Group2.html#ga001f9fb04328a7460f9ff16908ff987c" title="Abort the DMA Transfer.">HAL_DMA_Abort</a>(hi2s-&gt;hdmarx))
 <a name="l01392"></a>01392     {
 <a name="l01393"></a>01393       SET_BIT(hi2s-&gt;ErrorCode, HAL_I2S_ERROR_DMA);
 <a name="l01394"></a>01394       errorcode = HAL_ERROR;
@@ -1673,7 +1673,7 @@
 <a name="l01606"></a>01606   I2S_HandleTypeDef *hi2s = (I2S_HandleTypeDef *)((<a class="code" href="struct____DMA__HandleTypeDef.html" title="DMA handle Structure definition.">DMA_HandleTypeDef</a> *)hdma)-&gt;Parent; <span class="comment">/* Derogation MISRAC2012-Rule-11.5 */</span>
 <a name="l01607"></a>01607 
 <a name="l01608"></a>01608   <span class="comment">/* if DMA is configured in DMA_NORMAL Mode */</span>
-<a name="l01609"></a>01609   <span class="keywordflow">if</span> (hdma-&gt;<a class="code" href="struct____DMA__HandleTypeDef.html#a3792cb34cedb0e2ab204e41b53ef75ad">Init</a>.<a class="code" href="structDMA__InitTypeDef.html#adbbca090b53d32ac93cc7359b7994db2">Mode</a> == <a class="code" href="group__DMA__mode.html#ga04941acfbbdefc53e1e08133cffa3b8a">DMA_NORMAL</a>)
+<a name="l01609"></a>01609   <span class="keywordflow">if</span> (hdma-&gt;<a class="code" href="struct____DMA__HandleTypeDef.html#a3792cb34cedb0e2ab204e41b53ef75ad">Init</a>.<a class="code" href="structDMA__InitTypeDef.html#adbbca090b53d32ac93cc7359b7994db2">Mode</a> == <a class="code" href="group/group__DMA__mode.html#ga04941acfbbdefc53e1e08133cffa3b8a">DMA_NORMAL</a>)
 <a name="l01610"></a>01610   {
 <a name="l01611"></a>01611     <span class="comment">/* Disable Tx DMA Request */</span>
 <a name="l01612"></a>01612     CLEAR_BIT(hi2s-&gt;Instance-&gt;CR2, SPI_CR2_TXDMAEN);
@@ -1718,7 +1718,7 @@
 <a name="l01651"></a>01651   I2S_HandleTypeDef *hi2s = (I2S_HandleTypeDef *)((<a class="code" href="struct____DMA__HandleTypeDef.html" title="DMA handle Structure definition.">DMA_HandleTypeDef</a> *)hdma)-&gt;Parent; <span class="comment">/* Derogation MISRAC2012-Rule-11.5 */</span>
 <a name="l01652"></a>01652 
 <a name="l01653"></a>01653   <span class="comment">/* if DMA is configured in DMA_NORMAL Mode */</span>
-<a name="l01654"></a>01654   <span class="keywordflow">if</span> (hdma-&gt;<a class="code" href="struct____DMA__HandleTypeDef.html#a3792cb34cedb0e2ab204e41b53ef75ad">Init</a>.<a class="code" href="structDMA__InitTypeDef.html#adbbca090b53d32ac93cc7359b7994db2">Mode</a> == <a class="code" href="group__DMA__mode.html#ga04941acfbbdefc53e1e08133cffa3b8a">DMA_NORMAL</a>)
+<a name="l01654"></a>01654   <span class="keywordflow">if</span> (hdma-&gt;<a class="code" href="struct____DMA__HandleTypeDef.html#a3792cb34cedb0e2ab204e41b53ef75ad">Init</a>.<a class="code" href="structDMA__InitTypeDef.html#adbbca090b53d32ac93cc7359b7994db2">Mode</a> == <a class="code" href="group/group__DMA__mode.html#ga04941acfbbdefc53e1e08133cffa3b8a">DMA_NORMAL</a>)
 <a name="l01655"></a>01655   {
 <a name="l01656"></a>01656     <span class="comment">/* Disable Rx DMA Request */</span>
 <a name="l01657"></a>01657     CLEAR_BIT(hi2s-&gt;Instance-&gt;CR2, SPI_CR2_RXDMAEN);
@@ -1849,14 +1849,14 @@
 <a name="l01782"></a>01782   uint32_t tickstart;
 <a name="l01783"></a>01783 
 <a name="l01784"></a>01784   <span class="comment">/* Get tick */</span>
-<a name="l01785"></a>01785   tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l01785"></a>01785   tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l01786"></a>01786 
 <a name="l01787"></a>01787   <span class="comment">/* Wait until flag is set to status*/</span>
 <a name="l01788"></a>01788   <span class="keywordflow">while</span> (((__HAL_I2S_GET_FLAG(hi2s, Flag)) ? SET : RESET) != State)
 <a name="l01789"></a>01789   {
 <a name="l01790"></a>01790     <span class="keywordflow">if</span> (Timeout != HAL_MAX_DELAY)
 <a name="l01791"></a>01791     {
-<a name="l01792"></a>01792       <span class="keywordflow">if</span> (((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt;= Timeout) || (Timeout == 0U))
+<a name="l01792"></a>01792       <span class="keywordflow">if</span> (((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt;= Timeout) || (Timeout == 0U))
 <a name="l01793"></a>01793       {
 <a name="l01794"></a>01794         <span class="comment">/* Set the I2S State ready */</span>
 <a name="l01795"></a>01795         hi2s-&gt;State = HAL_I2S_STATE_READY;

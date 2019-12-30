@@ -107,9 +107,9 @@
 <a name="l00040"></a>00040 <span class="comment">  * @{</span>
 <a name="l00041"></a>00041 <span class="comment">  */</span>
 <a name="l00042"></a>00042 
-<a name="l00043"></a><a class="code" href="group__FLASHEx__Private__Constants.html#ga2329f89a17061e62bf5d160cc0962e5c">00043</a> <span class="preprocessor">#define FLASH_SIZE_DATA_REGISTER     0x1FFFF7E0U</span>
-<a name="l00044"></a><a class="code" href="group__FLASHEx__Private__Constants.html#ga8683863609a82753ffb7499d219a1de8">00044</a> <span class="preprocessor"></span><span class="preprocessor">#define OBR_REG_INDEX                1U</span>
-<a name="l00045"></a><a class="code" href="group__FLASHEx__Private__Constants.html#gae39dae7013f649bda7af96a79663b3f1">00045</a> <span class="preprocessor"></span><span class="preprocessor">#define SR_FLAG_MASK                 ((uint32_t)(FLASH_SR_BSY | FLASH_SR_PGERR | FLASH_SR_WRPRTERR | FLASH_SR_EOP))</span>
+<a name="l00043"></a><a class="code" href="group/group__FLASHEx__Private__Constants.html#ga2329f89a17061e62bf5d160cc0962e5c">00043</a> <span class="preprocessor">#define FLASH_SIZE_DATA_REGISTER     0x1FFFF7E0U</span>
+<a name="l00044"></a><a class="code" href="group/group__FLASHEx__Private__Constants.html#ga8683863609a82753ffb7499d219a1de8">00044</a> <span class="preprocessor"></span><span class="preprocessor">#define OBR_REG_INDEX                1U</span>
+<a name="l00045"></a><a class="code" href="group/group__FLASHEx__Private__Constants.html#gae39dae7013f649bda7af96a79663b3f1">00045</a> <span class="preprocessor"></span><span class="preprocessor">#define SR_FLAG_MASK                 ((uint32_t)(FLASH_SR_BSY | FLASH_SR_PGERR | FLASH_SR_WRPRTERR | FLASH_SR_EOP))</span>
 <a name="l00046"></a>00046 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00047"></a>00047 <span class="comment">/**</span>
 <a name="l00048"></a>00048 <span class="comment">  * @}</span>
@@ -119,21 +119,21 @@
 <a name="l00052"></a>00052 <span class="comment">  * @{</span>
 <a name="l00053"></a>00053 <span class="comment">  */</span>
 <a name="l00054"></a>00054 
-<a name="l00055"></a><a class="code" href="group__FLASHEx__Private__Macros.html#gaf15a6822d2421a33b6857059348ab476">00055</a> <span class="preprocessor">#define IS_FLASH_TYPEERASE(VALUE)   (((VALUE) == FLASH_TYPEERASE_PAGES) || ((VALUE) == FLASH_TYPEERASE_MASSERASE))</span>
+<a name="l00055"></a><a class="code" href="group/group__FLASHEx__Private__Macros.html#gaf15a6822d2421a33b6857059348ab476">00055</a> <span class="preprocessor">#define IS_FLASH_TYPEERASE(VALUE)   (((VALUE) == FLASH_TYPEERASE_PAGES) || ((VALUE) == FLASH_TYPEERASE_MASSERASE))</span>
 <a name="l00056"></a>00056 <span class="preprocessor"></span>
-<a name="l00057"></a><a class="code" href="group__FLASHEx__Private__Macros.html#ga87cd48c2373f47668470a38892ed07e3">00057</a> <span class="preprocessor">#define IS_OPTIONBYTE(VALUE)        (((VALUE) &lt;= (OPTIONBYTE_WRP | OPTIONBYTE_RDP | OPTIONBYTE_USER | OPTIONBYTE_DATA)))</span>
+<a name="l00057"></a><a class="code" href="group/group__FLASHEx__Private__Macros.html#ga87cd48c2373f47668470a38892ed07e3">00057</a> <span class="preprocessor">#define IS_OPTIONBYTE(VALUE)        (((VALUE) &lt;= (OPTIONBYTE_WRP | OPTIONBYTE_RDP | OPTIONBYTE_USER | OPTIONBYTE_DATA)))</span>
 <a name="l00058"></a>00058 <span class="preprocessor"></span>
-<a name="l00059"></a><a class="code" href="group__FLASHEx__Private__Macros.html#ga8164622401a6cacf006679166de93c21">00059</a> <span class="preprocessor">#define IS_WRPSTATE(VALUE)          (((VALUE) == OB_WRPSTATE_DISABLE) || ((VALUE) == OB_WRPSTATE_ENABLE))</span>
+<a name="l00059"></a><a class="code" href="group/group__FLASHEx__Private__Macros.html#ga8164622401a6cacf006679166de93c21">00059</a> <span class="preprocessor">#define IS_WRPSTATE(VALUE)          (((VALUE) == OB_WRPSTATE_DISABLE) || ((VALUE) == OB_WRPSTATE_ENABLE))</span>
 <a name="l00060"></a>00060 <span class="preprocessor"></span>
-<a name="l00061"></a><a class="code" href="group__FLASHEx__Private__Macros.html#ga8d602a97cd688390b3d1956d9970e712">00061</a> <span class="preprocessor">#define IS_OB_RDP_LEVEL(LEVEL)      (((LEVEL) == OB_RDP_LEVEL_0) || ((LEVEL) == OB_RDP_LEVEL_1))</span>
+<a name="l00061"></a><a class="code" href="group/group__FLASHEx__Private__Macros.html#ga8d602a97cd688390b3d1956d9970e712">00061</a> <span class="preprocessor">#define IS_OB_RDP_LEVEL(LEVEL)      (((LEVEL) == OB_RDP_LEVEL_0) || ((LEVEL) == OB_RDP_LEVEL_1))</span>
 <a name="l00062"></a>00062 <span class="preprocessor"></span>
-<a name="l00063"></a><a class="code" href="group__FLASHEx__Private__Macros.html#ga73fcac8d5f301a5c98518374ae926633">00063</a> <span class="preprocessor">#define IS_OB_DATA_ADDRESS(ADDRESS) (((ADDRESS) == OB_DATA_ADDRESS_DATA0) || ((ADDRESS) == OB_DATA_ADDRESS_DATA1)) </span>
+<a name="l00063"></a><a class="code" href="group/group__FLASHEx__Private__Macros.html#ga73fcac8d5f301a5c98518374ae926633">00063</a> <span class="preprocessor">#define IS_OB_DATA_ADDRESS(ADDRESS) (((ADDRESS) == OB_DATA_ADDRESS_DATA0) || ((ADDRESS) == OB_DATA_ADDRESS_DATA1)) </span>
 <a name="l00064"></a>00064 <span class="preprocessor"></span>
-<a name="l00065"></a><a class="code" href="group__FLASHEx__Private__Macros.html#gaf2871652c08e76499d9449be6556f12c">00065</a> <span class="preprocessor">#define IS_OB_IWDG_SOURCE(SOURCE)   (((SOURCE) == OB_IWDG_SW) || ((SOURCE) == OB_IWDG_HW))</span>
+<a name="l00065"></a><a class="code" href="group/group__FLASHEx__Private__Macros.html#gaf2871652c08e76499d9449be6556f12c">00065</a> <span class="preprocessor">#define IS_OB_IWDG_SOURCE(SOURCE)   (((SOURCE) == OB_IWDG_SW) || ((SOURCE) == OB_IWDG_HW))</span>
 <a name="l00066"></a>00066 <span class="preprocessor"></span>
-<a name="l00067"></a><a class="code" href="group__FLASHEx__Private__Macros.html#ga131ae3434f300c8317dd6b3b349c7cab">00067</a> <span class="preprocessor">#define IS_OB_STOP_SOURCE(SOURCE)   (((SOURCE) == OB_STOP_NO_RST) || ((SOURCE) == OB_STOP_RST))</span>
+<a name="l00067"></a><a class="code" href="group/group__FLASHEx__Private__Macros.html#ga131ae3434f300c8317dd6b3b349c7cab">00067</a> <span class="preprocessor">#define IS_OB_STOP_SOURCE(SOURCE)   (((SOURCE) == OB_STOP_NO_RST) || ((SOURCE) == OB_STOP_RST))</span>
 <a name="l00068"></a>00068 <span class="preprocessor"></span>
-<a name="l00069"></a><a class="code" href="group__FLASHEx__Private__Macros.html#ga8a05393df3a5e89551b4e2e1e8c5b884">00069</a> <span class="preprocessor">#define IS_OB_STDBY_SOURCE(SOURCE)  (((SOURCE) == OB_STDBY_NO_RST) || ((SOURCE) == OB_STDBY_RST))</span>
+<a name="l00069"></a><a class="code" href="group/group__FLASHEx__Private__Macros.html#ga8a05393df3a5e89551b4e2e1e8c5b884">00069</a> <span class="preprocessor">#define IS_OB_STDBY_SOURCE(SOURCE)  (((SOURCE) == OB_STDBY_NO_RST) || ((SOURCE) == OB_STDBY_RST))</span>
 <a name="l00070"></a>00070 <span class="preprocessor"></span>
 <a name="l00071"></a>00071 <span class="preprocessor">#if defined(FLASH_BANK2_END)</span>
 <a name="l00072"></a>00072 <span class="preprocessor"></span><span class="preprocessor">#define IS_OB_BOOT1(BOOT1)         (((BOOT1) == OB_BOOT1_RESET) || ((BOOT1) == OB_BOOT1_SET))</span>
@@ -155,7 +155,7 @@
 <a name="l00088"></a>00088 
 <a name="l00089"></a>00089 <span class="comment">/* High Density */</span>
 <a name="l00090"></a>00090 <span class="preprocessor">#if (defined(STM32F100xE) || defined(STM32F101xE) || defined(STM32F103xE))</span>
-<a name="l00091"></a><a class="code" href="group__FLASHEx__Private__Macros.html#gaba549bf655e360311b0cd69878ba5bc1">00091</a> <span class="preprocessor"></span><span class="preprocessor">#define IS_FLASH_NB_PAGES(ADDRESS,NBPAGES) (((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0x200U) ? ((ADDRESS)+((NBPAGES)*FLASH_PAGE_SIZE)-1 &lt;= 0x0807FFFFU) : \</span>
+<a name="l00091"></a><a class="code" href="group/group__FLASHEx__Private__Macros.html#gaba549bf655e360311b0cd69878ba5bc1">00091</a> <span class="preprocessor"></span><span class="preprocessor">#define IS_FLASH_NB_PAGES(ADDRESS,NBPAGES) (((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0x200U) ? ((ADDRESS)+((NBPAGES)*FLASH_PAGE_SIZE)-1 &lt;= 0x0807FFFFU) : \</span>
 <a name="l00092"></a>00092 <span class="preprocessor">                                           (((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0x180U) ? ((ADDRESS)+((NBPAGES)*FLASH_PAGE_SIZE)-1 &lt;= 0x0805FFFFU) : \</span>
 <a name="l00093"></a>00093 <span class="preprocessor">                                           ((ADDRESS)+((NBPAGES)*FLASH_PAGE_SIZE)-1 &lt;= 0x0803FFFFU)))</span>
 <a name="l00094"></a>00094 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F100xE || STM32F101xE || STM32F103xE */</span>
@@ -173,14 +173,14 @@
 <a name="l00106"></a>00106 <span class="preprocessor">                                           ((ADDRESS)+((NBPAGES)*FLASH_PAGE_SIZE)-1 &lt;= 0x0800FFFFU)))</span>
 <a name="l00107"></a>00107 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F105xC || STM32F107xC */</span>
 <a name="l00108"></a>00108 
-<a name="l00109"></a><a class="code" href="group__FLASHEx__Private__Macros.html#ga0833946dba77c6e2537b4afe94c2bfe1">00109</a> <span class="preprocessor">#define IS_OB_WRP(PAGE) (((PAGE) != 0x0000000U))</span>
+<a name="l00109"></a><a class="code" href="group/group__FLASHEx__Private__Macros.html#ga0833946dba77c6e2537b4afe94c2bfe1">00109</a> <span class="preprocessor">#define IS_OB_WRP(PAGE) (((PAGE) != 0x0000000U))</span>
 <a name="l00110"></a>00110 <span class="preprocessor"></span>
 <a name="l00111"></a>00111 <span class="preprocessor">#if defined(FLASH_BANK2_END)</span>
 <a name="l00112"></a>00112 <span class="preprocessor"></span><span class="preprocessor">#define IS_FLASH_BANK(BANK) (((BANK) == FLASH_BANK_1)  || \</span>
 <a name="l00113"></a>00113 <span class="preprocessor">                             ((BANK) == FLASH_BANK_2)  || \</span>
 <a name="l00114"></a>00114 <span class="preprocessor">                             ((BANK) == FLASH_BANK_BOTH))</span>
 <a name="l00115"></a>00115 <span class="preprocessor"></span><span class="preprocessor">#else</span>
-<a name="l00116"></a><a class="code" href="group__FLASHEx__Private__Macros.html#ga13845f67e09ef81901c6fa683f13f086">00116</a> <span class="preprocessor"></span><span class="preprocessor">#define IS_FLASH_BANK(BANK) (((BANK) == FLASH_BANK_1))</span>
+<a name="l00116"></a><a class="code" href="group/group__FLASHEx__Private__Macros.html#ga13845f67e09ef81901c6fa683f13f086">00116</a> <span class="preprocessor"></span><span class="preprocessor">#define IS_FLASH_BANK(BANK) (((BANK) == FLASH_BANK_1))</span>
 <a name="l00117"></a>00117 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* FLASH_BANK2_END */</span>
 <a name="l00118"></a>00118 
 <a name="l00119"></a>00119 <span class="comment">/* Low Density */</span>
@@ -201,7 +201,7 @@
 <a name="l00134"></a>00134 
 <a name="l00135"></a>00135 <span class="comment">/* High Density */</span>
 <a name="l00136"></a>00136 <span class="preprocessor">#if (defined(STM32F100xE) || defined(STM32F101xE) || defined(STM32F103xE))</span>
-<a name="l00137"></a><a class="code" href="group__FLASHEx__Private__Macros.html#ga90c8441d56b937cea616856695a8a20a">00137</a> <span class="preprocessor"></span><span class="preprocessor">#define IS_FLASH_PROGRAM_ADDRESS(ADDRESS) (((ADDRESS) &gt;= FLASH_BASE) &amp;&amp; (((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0x200U) ? \</span>
+<a name="l00137"></a><a class="code" href="group/group__FLASHEx__Private__Macros.html#ga90c8441d56b937cea616856695a8a20a">00137</a> <span class="preprocessor"></span><span class="preprocessor">#define IS_FLASH_PROGRAM_ADDRESS(ADDRESS) (((ADDRESS) &gt;= FLASH_BASE) &amp;&amp; (((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0x200U) ? \</span>
 <a name="l00138"></a>00138 <span class="preprocessor">                                           ((ADDRESS) &lt;= FLASH_BANK1_END) :  (((*((uint16_t *)FLASH_SIZE_DATA_REGISTER)) == 0x180U) ? \</span>
 <a name="l00139"></a>00139 <span class="preprocessor">                                           ((ADDRESS) &lt;= 0x0805FFFFU) :  ((ADDRESS) &lt;= 0x0803FFFFU))))</span>
 <a name="l00140"></a>00140 <span class="preprocessor"></span>
@@ -312,7 +312,7 @@
 <a name="l00245"></a>00245        <span class="comment">/* STM32F100xB || STM32F101xB || STM32F102xB || STM32F103xB */</span>
 <a name="l00246"></a>00246 
 <a name="l00247"></a>00247 <span class="preprocessor">#if (defined(STM32F100xE) || defined(STM32F101xE) || defined(STM32F103xE) || defined(STM32F101xG) || defined(STM32F103xG) || defined(STM32F105xC) || defined(STM32F107xC))</span>
-<a name="l00248"></a><a class="code" href="group__FLASHEx__Page__Size.html#ga4cc14e2c99ae7f8e5a8e371d03c8532c">00248</a> <span class="preprocessor"></span><span class="preprocessor">#define FLASH_PAGE_SIZE          0x800U</span>
+<a name="l00248"></a><a class="code" href="group/group__FLASHEx__Page__Size.html#ga4cc14e2c99ae7f8e5a8e371d03c8532c">00248</a> <span class="preprocessor"></span><span class="preprocessor">#define FLASH_PAGE_SIZE          0x800U</span>
 <a name="l00249"></a>00249 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F100xB || STM32F101xB || STM32F102xB || STM32F103xB */</span>
 <a name="l00250"></a>00250        <span class="comment">/* STM32F101xG || STM32F103xG */</span> 
 <a name="l00251"></a>00251        <span class="comment">/* STM32F105xC || STM32F107xC */</span>
@@ -324,8 +324,8 @@
 <a name="l00257"></a>00257 <span class="comment">/** @defgroup FLASHEx_Type_Erase Type Erase</span>
 <a name="l00258"></a>00258 <span class="comment">  * @{</span>
 <a name="l00259"></a>00259 <span class="comment">  */</span> 
-<a name="l00260"></a><a class="code" href="group__FLASHEx__Type__Erase.html#ga3664ce55155ec4990873c51737d787ce">00260</a> <span class="preprocessor">#define FLASH_TYPEERASE_PAGES     0x00U  </span><span class="comment">/*!&lt;Pages erase only*/</span>
-<a name="l00261"></a><a class="code" href="group__FLASHEx__Type__Erase.html#ga9bc03534e69c625e1b4f0f05c3852243">00261</a> <span class="preprocessor">#define FLASH_TYPEERASE_MASSERASE 0x02U  </span><span class="comment">/*!&lt;Flash mass erase activation*/</span>
+<a name="l00260"></a><a class="code" href="group/group__FLASHEx__Type__Erase.html#ga3664ce55155ec4990873c51737d787ce">00260</a> <span class="preprocessor">#define FLASH_TYPEERASE_PAGES     0x00U  </span><span class="comment">/*!&lt;Pages erase only*/</span>
+<a name="l00261"></a><a class="code" href="group/group__FLASHEx__Type__Erase.html#ga9bc03534e69c625e1b4f0f05c3852243">00261</a> <span class="preprocessor">#define FLASH_TYPEERASE_MASSERASE 0x02U  </span><span class="comment">/*!&lt;Flash mass erase activation*/</span>
 <a name="l00262"></a>00262 <span class="comment"></span>
 <a name="l00263"></a>00263 <span class="comment">/**</span>
 <a name="l00264"></a>00264 <span class="comment">  * @}</span>
@@ -340,7 +340,7 @@
 <a name="l00273"></a>00273 <span class="preprocessor">#define FLASH_BANK_BOTH  ((uint32_t)FLASH_BANK_1 | FLASH_BANK_2) </span><span class="comment">/*!&lt; Bank1 and Bank2  */</span>
 <a name="l00274"></a>00274 
 <a name="l00275"></a>00275 <span class="preprocessor">#else</span>
-<a name="l00276"></a><a class="code" href="group__FLASHEx__Banks.html#ga8ac3f24496e5de6a2f6bd3ff77f0ca53">00276</a> <span class="preprocessor"></span><span class="preprocessor">#define FLASH_BANK_1     1U </span><span class="comment">/*!&lt; Bank 1   */</span>
+<a name="l00276"></a><a class="code" href="group/group__FLASHEx__Banks.html#ga8ac3f24496e5de6a2f6bd3ff77f0ca53">00276</a> <span class="preprocessor"></span><span class="preprocessor">#define FLASH_BANK_1     1U </span><span class="comment">/*!&lt; Bank 1   */</span>
 <a name="l00277"></a>00277 <span class="preprocessor">#endif</span>
 <a name="l00278"></a>00278 <span class="preprocessor"></span><span class="comment">/**</span>
 <a name="l00279"></a>00279 <span class="comment">  * @}</span>
@@ -357,10 +357,10 @@
 <a name="l00290"></a>00290 <span class="comment">/** @defgroup FLASHEx_OB_Type Option Bytes Type</span>
 <a name="l00291"></a>00291 <span class="comment">  * @{</span>
 <a name="l00292"></a>00292 <span class="comment">  */</span>
-<a name="l00293"></a><a class="code" href="group__FLASHEx__OB__Type.html#ga48712a166ea192ddcda0f2653679f9ec">00293</a> <span class="preprocessor">#define OPTIONBYTE_WRP            0x01U  </span><span class="comment">/*!&lt;WRP option byte configuration*/</span>
-<a name="l00294"></a><a class="code" href="group__FLASHEx__OB__Type.html#ga8f0bdb21ef13bae39d5d8b6619e2df06">00294</a> <span class="preprocessor">#define OPTIONBYTE_RDP            0x02U  </span><span class="comment">/*!&lt;RDP option byte configuration*/</span>
-<a name="l00295"></a><a class="code" href="group__FLASHEx__OB__Type.html#gac7d843e666e15c79688a1914e8ffe7a5">00295</a> <span class="preprocessor">#define OPTIONBYTE_USER           0x04U  </span><span class="comment">/*!&lt;USER option byte configuration*/</span>
-<a name="l00296"></a><a class="code" href="group__FLASHEx__OB__Type.html#gad0c29c84acfb46de1708a670529175a5">00296</a> <span class="preprocessor">#define OPTIONBYTE_DATA           0x08U  </span><span class="comment">/*!&lt;DATA option byte configuration*/</span>
+<a name="l00293"></a><a class="code" href="group/group__FLASHEx__OB__Type.html#ga48712a166ea192ddcda0f2653679f9ec">00293</a> <span class="preprocessor">#define OPTIONBYTE_WRP            0x01U  </span><span class="comment">/*!&lt;WRP option byte configuration*/</span>
+<a name="l00294"></a><a class="code" href="group/group__FLASHEx__OB__Type.html#ga8f0bdb21ef13bae39d5d8b6619e2df06">00294</a> <span class="preprocessor">#define OPTIONBYTE_RDP            0x02U  </span><span class="comment">/*!&lt;RDP option byte configuration*/</span>
+<a name="l00295"></a><a class="code" href="group/group__FLASHEx__OB__Type.html#gac7d843e666e15c79688a1914e8ffe7a5">00295</a> <span class="preprocessor">#define OPTIONBYTE_USER           0x04U  </span><span class="comment">/*!&lt;USER option byte configuration*/</span>
+<a name="l00296"></a><a class="code" href="group/group__FLASHEx__OB__Type.html#gad0c29c84acfb46de1708a670529175a5">00296</a> <span class="preprocessor">#define OPTIONBYTE_DATA           0x08U  </span><span class="comment">/*!&lt;DATA option byte configuration*/</span>
 <a name="l00297"></a>00297 <span class="comment"></span>
 <a name="l00298"></a>00298 <span class="comment">/**</span>
 <a name="l00299"></a>00299 <span class="comment">  * @}</span>
@@ -369,8 +369,8 @@
 <a name="l00302"></a>00302 <span class="comment">/** @defgroup FLASHEx_OB_WRP_State Option Byte WRP State</span>
 <a name="l00303"></a>00303 <span class="comment">  * @{</span>
 <a name="l00304"></a>00304 <span class="comment">  */</span> 
-<a name="l00305"></a><a class="code" href="group__FLASHEx__OB__WRP__State.html#gaa34eb6205fe554f65a311ee974d5a4ab">00305</a> <span class="preprocessor">#define OB_WRPSTATE_DISABLE       0x00U  </span><span class="comment">/*!&lt;Disable the write protection of the desired pages*/</span>
-<a name="l00306"></a><a class="code" href="group__FLASHEx__OB__WRP__State.html#ga9fc463145ab57616baa36d95523186a1">00306</a> <span class="preprocessor">#define OB_WRPSTATE_ENABLE        0x01U  </span><span class="comment">/*!&lt;Enable the write protection of the desired pagess*/</span>
+<a name="l00305"></a><a class="code" href="group/group__FLASHEx__OB__WRP__State.html#gaa34eb6205fe554f65a311ee974d5a4ab">00305</a> <span class="preprocessor">#define OB_WRPSTATE_DISABLE       0x00U  </span><span class="comment">/*!&lt;Disable the write protection of the desired pages*/</span>
+<a name="l00306"></a><a class="code" href="group/group__FLASHEx__OB__WRP__State.html#ga9fc463145ab57616baa36d95523186a1">00306</a> <span class="preprocessor">#define OB_WRPSTATE_ENABLE        0x01U  </span><span class="comment">/*!&lt;Enable the write protection of the desired pagess*/</span>
 <a name="l00307"></a>00307 <span class="comment"></span>
 <a name="l00308"></a>00308 <span class="comment">/**</span>
 <a name="l00309"></a>00309 <span class="comment">  * @}</span>
@@ -427,45 +427,45 @@
 <a name="l00360"></a>00360 <span class="preprocessor">#if  defined(STM32F100xE) || defined(STM32F101xE) || defined(STM32F103xE) \</span>
 <a name="l00361"></a>00361 <span class="preprocessor">  || defined(STM32F101xG) || defined(STM32F103xG) \</span>
 <a name="l00362"></a>00362 <span class="preprocessor">  || defined(STM32F105xC) || defined(STM32F107xC)</span>
-<a name="l00363"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga33cb918e21f0d0998a8f7b91c9214a01">00363</a> <span class="preprocessor"></span><span class="preprocessor">#define OB_WRP_PAGES0TO1               0x00000001U  </span><span class="comment">/*!&lt; Write protection of page 0 TO 1 */</span>
-<a name="l00364"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga817f4ffd64450f759e42351e641e44de">00364</a> <span class="preprocessor">#define OB_WRP_PAGES2TO3               0x00000002U  </span><span class="comment">/*!&lt; Write protection of page 2 TO 3 */</span>
-<a name="l00365"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga757c75a3b12441f897e1dc3c1d373847">00365</a> <span class="preprocessor">#define OB_WRP_PAGES4TO5               0x00000004U  </span><span class="comment">/*!&lt; Write protection of page 4 TO 5 */</span>
-<a name="l00366"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga92879ca2a469053bbe2be1918e2aea7d">00366</a> <span class="preprocessor">#define OB_WRP_PAGES6TO7               0x00000008U  </span><span class="comment">/*!&lt; Write protection of page 6 TO 7 */</span>
-<a name="l00367"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#gab2b4781b90eb9104a56608175d9bfea9">00367</a> <span class="preprocessor">#define OB_WRP_PAGES8TO9               0x00000010U  </span><span class="comment">/*!&lt; Write protection of page 8 TO 9 */</span>
-<a name="l00368"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga22f46506512cfeb4e7b813b29680f483">00368</a> <span class="preprocessor">#define OB_WRP_PAGES10TO11             0x00000020U  </span><span class="comment">/*!&lt; Write protection of page 10 TO 11 */</span>
-<a name="l00369"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#gaf47d34e5cdee4ea613132cff4dc52e27">00369</a> <span class="preprocessor">#define OB_WRP_PAGES12TO13             0x00000040U  </span><span class="comment">/*!&lt; Write protection of page 12 TO 13 */</span>
-<a name="l00370"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#gae56335ebc64e562d8f05e8edf53e9da3">00370</a> <span class="preprocessor">#define OB_WRP_PAGES14TO15             0x00000080U  </span><span class="comment">/*!&lt; Write protection of page 14 TO 15 */</span>
-<a name="l00371"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga2b72991d01ed5822e8000200368259e2">00371</a> <span class="preprocessor">#define OB_WRP_PAGES16TO17             0x00000100U  </span><span class="comment">/*!&lt; Write protection of page 16 TO 17 */</span>
-<a name="l00372"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#gaf805063179733ccd013b9d84a6f1a727">00372</a> <span class="preprocessor">#define OB_WRP_PAGES18TO19             0x00000200U  </span><span class="comment">/*!&lt; Write protection of page 18 TO 19 */</span>
-<a name="l00373"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga72fa41d6a30710d32d03de6a811afba6">00373</a> <span class="preprocessor">#define OB_WRP_PAGES20TO21             0x00000400U  </span><span class="comment">/*!&lt; Write protection of page 20 TO 21 */</span>
-<a name="l00374"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga73713589a21d055c33283179f7ddb2a5">00374</a> <span class="preprocessor">#define OB_WRP_PAGES22TO23             0x00000800U  </span><span class="comment">/*!&lt; Write protection of page 22 TO 23 */</span>
-<a name="l00375"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#gab56bb5eb76ad307431797a4ed2a3f3f5">00375</a> <span class="preprocessor">#define OB_WRP_PAGES24TO25             0x00001000U  </span><span class="comment">/*!&lt; Write protection of page 24 TO 25 */</span>
-<a name="l00376"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#gafc30c922cb1f19f359b0b58738ad47e1">00376</a> <span class="preprocessor">#define OB_WRP_PAGES26TO27             0x00002000U  </span><span class="comment">/*!&lt; Write protection of page 26 TO 27 */</span>
-<a name="l00377"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga43b17f02956adef4f649b753897801f6">00377</a> <span class="preprocessor">#define OB_WRP_PAGES28TO29             0x00004000U  </span><span class="comment">/*!&lt; Write protection of page 28 TO 29 */</span>
-<a name="l00378"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga3076d9cd3ff22e97f2f039c0faeb1a07">00378</a> <span class="preprocessor">#define OB_WRP_PAGES30TO31             0x00008000U  </span><span class="comment">/*!&lt; Write protection of page 30 TO 31 */</span>
-<a name="l00379"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga459478a539e61254a686b4db9afbcdc8">00379</a> <span class="preprocessor">#define OB_WRP_PAGES32TO33             0x00010000U  </span><span class="comment">/*!&lt; Write protection of page 32 TO 33 */</span>
-<a name="l00380"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga1960bd8236948a9a3175e9ec6fb7f0b5">00380</a> <span class="preprocessor">#define OB_WRP_PAGES34TO35             0x00020000U  </span><span class="comment">/*!&lt; Write protection of page 34 TO 35 */</span>
-<a name="l00381"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#gac856afb69c3052b554a8717dd8469928">00381</a> <span class="preprocessor">#define OB_WRP_PAGES36TO37             0x00040000U  </span><span class="comment">/*!&lt; Write protection of page 36 TO 37 */</span>
-<a name="l00382"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga25c1b1e752f6552481046eda666ec513">00382</a> <span class="preprocessor">#define OB_WRP_PAGES38TO39             0x00080000U  </span><span class="comment">/*!&lt; Write protection of page 38 TO 39 */</span>
-<a name="l00383"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga2cd4c8b0fd905fa24a9aa9a322791e88">00383</a> <span class="preprocessor">#define OB_WRP_PAGES40TO41             0x00100000U  </span><span class="comment">/*!&lt; Write protection of page 40 TO 41 */</span>
-<a name="l00384"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga8f1f5c17305d27886f09edbb5f274552">00384</a> <span class="preprocessor">#define OB_WRP_PAGES42TO43             0x00200000U  </span><span class="comment">/*!&lt; Write protection of page 42 TO 43 */</span>
-<a name="l00385"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#gacd63d1c7dc8ac2621698b05be78f0aa5">00385</a> <span class="preprocessor">#define OB_WRP_PAGES44TO45             0x00400000U  </span><span class="comment">/*!&lt; Write protection of page 44 TO 45 */</span>
-<a name="l00386"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga9b00d36a75e9eabf054663e24fe14815">00386</a> <span class="preprocessor">#define OB_WRP_PAGES46TO47             0x00800000U  </span><span class="comment">/*!&lt; Write protection of page 46 TO 47 */</span>
-<a name="l00387"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga10fd687575f872340854ed70797ecf79">00387</a> <span class="preprocessor">#define OB_WRP_PAGES48TO49             0x01000000U  </span><span class="comment">/*!&lt; Write protection of page 48 TO 49 */</span>
-<a name="l00388"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga99fe15d010eb9a356d4bd884ea6f013a">00388</a> <span class="preprocessor">#define OB_WRP_PAGES50TO51             0x02000000U  </span><span class="comment">/*!&lt; Write protection of page 50 TO 51 */</span>
-<a name="l00389"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#gaf492385a4b20cd8d78c3b18b9afcc78f">00389</a> <span class="preprocessor">#define OB_WRP_PAGES52TO53             0x04000000U  </span><span class="comment">/*!&lt; Write protection of page 52 TO 53 */</span>
-<a name="l00390"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga57279632d90a6a47fc9af0f577a5c5af">00390</a> <span class="preprocessor">#define OB_WRP_PAGES54TO55             0x08000000U  </span><span class="comment">/*!&lt; Write protection of page 54 TO 55 */</span>
-<a name="l00391"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#gac5b50cf7d229f987975b37717d3d5bab">00391</a> <span class="preprocessor">#define OB_WRP_PAGES56TO57             0x10000000U  </span><span class="comment">/*!&lt; Write protection of page 56 TO 57 */</span>
-<a name="l00392"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga1fd07e4fa89c320dc3cd36448fe60300">00392</a> <span class="preprocessor">#define OB_WRP_PAGES58TO59             0x20000000U  </span><span class="comment">/*!&lt; Write protection of page 58 TO 59 */</span>
-<a name="l00393"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga18eed06f6a84cf63e1e02818982c6d7f">00393</a> <span class="preprocessor">#define OB_WRP_PAGES60TO61             0x40000000U  </span><span class="comment">/*!&lt; Write protection of page 60 TO 61 */</span>
-<a name="l00394"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga29aded0af31825c385bfb306e7c12284">00394</a> <span class="preprocessor">#define OB_WRP_PAGES62TO127            0x80000000U   </span><span class="comment">/*!&lt; Write protection of page 62 TO 127 */</span>
-<a name="l00395"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#gac66118b2594a273b5c526c9fe97dcad5">00395</a> <span class="preprocessor">#define OB_WRP_PAGES62TO255            0x80000000U   </span><span class="comment">/*!&lt; Write protection of page 62 TO 255 */</span>
-<a name="l00396"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#gac3fd7c0b6237be936518e0d28886b1f0">00396</a> <span class="preprocessor">#define OB_WRP_PAGES62TO511            0x80000000U   </span><span class="comment">/*!&lt; Write protection of page 62 TO 511 */</span>
+<a name="l00363"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga33cb918e21f0d0998a8f7b91c9214a01">00363</a> <span class="preprocessor"></span><span class="preprocessor">#define OB_WRP_PAGES0TO1               0x00000001U  </span><span class="comment">/*!&lt; Write protection of page 0 TO 1 */</span>
+<a name="l00364"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga817f4ffd64450f759e42351e641e44de">00364</a> <span class="preprocessor">#define OB_WRP_PAGES2TO3               0x00000002U  </span><span class="comment">/*!&lt; Write protection of page 2 TO 3 */</span>
+<a name="l00365"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga757c75a3b12441f897e1dc3c1d373847">00365</a> <span class="preprocessor">#define OB_WRP_PAGES4TO5               0x00000004U  </span><span class="comment">/*!&lt; Write protection of page 4 TO 5 */</span>
+<a name="l00366"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga92879ca2a469053bbe2be1918e2aea7d">00366</a> <span class="preprocessor">#define OB_WRP_PAGES6TO7               0x00000008U  </span><span class="comment">/*!&lt; Write protection of page 6 TO 7 */</span>
+<a name="l00367"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#gab2b4781b90eb9104a56608175d9bfea9">00367</a> <span class="preprocessor">#define OB_WRP_PAGES8TO9               0x00000010U  </span><span class="comment">/*!&lt; Write protection of page 8 TO 9 */</span>
+<a name="l00368"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga22f46506512cfeb4e7b813b29680f483">00368</a> <span class="preprocessor">#define OB_WRP_PAGES10TO11             0x00000020U  </span><span class="comment">/*!&lt; Write protection of page 10 TO 11 */</span>
+<a name="l00369"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#gaf47d34e5cdee4ea613132cff4dc52e27">00369</a> <span class="preprocessor">#define OB_WRP_PAGES12TO13             0x00000040U  </span><span class="comment">/*!&lt; Write protection of page 12 TO 13 */</span>
+<a name="l00370"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#gae56335ebc64e562d8f05e8edf53e9da3">00370</a> <span class="preprocessor">#define OB_WRP_PAGES14TO15             0x00000080U  </span><span class="comment">/*!&lt; Write protection of page 14 TO 15 */</span>
+<a name="l00371"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga2b72991d01ed5822e8000200368259e2">00371</a> <span class="preprocessor">#define OB_WRP_PAGES16TO17             0x00000100U  </span><span class="comment">/*!&lt; Write protection of page 16 TO 17 */</span>
+<a name="l00372"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#gaf805063179733ccd013b9d84a6f1a727">00372</a> <span class="preprocessor">#define OB_WRP_PAGES18TO19             0x00000200U  </span><span class="comment">/*!&lt; Write protection of page 18 TO 19 */</span>
+<a name="l00373"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga72fa41d6a30710d32d03de6a811afba6">00373</a> <span class="preprocessor">#define OB_WRP_PAGES20TO21             0x00000400U  </span><span class="comment">/*!&lt; Write protection of page 20 TO 21 */</span>
+<a name="l00374"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga73713589a21d055c33283179f7ddb2a5">00374</a> <span class="preprocessor">#define OB_WRP_PAGES22TO23             0x00000800U  </span><span class="comment">/*!&lt; Write protection of page 22 TO 23 */</span>
+<a name="l00375"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#gab56bb5eb76ad307431797a4ed2a3f3f5">00375</a> <span class="preprocessor">#define OB_WRP_PAGES24TO25             0x00001000U  </span><span class="comment">/*!&lt; Write protection of page 24 TO 25 */</span>
+<a name="l00376"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#gafc30c922cb1f19f359b0b58738ad47e1">00376</a> <span class="preprocessor">#define OB_WRP_PAGES26TO27             0x00002000U  </span><span class="comment">/*!&lt; Write protection of page 26 TO 27 */</span>
+<a name="l00377"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga43b17f02956adef4f649b753897801f6">00377</a> <span class="preprocessor">#define OB_WRP_PAGES28TO29             0x00004000U  </span><span class="comment">/*!&lt; Write protection of page 28 TO 29 */</span>
+<a name="l00378"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga3076d9cd3ff22e97f2f039c0faeb1a07">00378</a> <span class="preprocessor">#define OB_WRP_PAGES30TO31             0x00008000U  </span><span class="comment">/*!&lt; Write protection of page 30 TO 31 */</span>
+<a name="l00379"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga459478a539e61254a686b4db9afbcdc8">00379</a> <span class="preprocessor">#define OB_WRP_PAGES32TO33             0x00010000U  </span><span class="comment">/*!&lt; Write protection of page 32 TO 33 */</span>
+<a name="l00380"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga1960bd8236948a9a3175e9ec6fb7f0b5">00380</a> <span class="preprocessor">#define OB_WRP_PAGES34TO35             0x00020000U  </span><span class="comment">/*!&lt; Write protection of page 34 TO 35 */</span>
+<a name="l00381"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#gac856afb69c3052b554a8717dd8469928">00381</a> <span class="preprocessor">#define OB_WRP_PAGES36TO37             0x00040000U  </span><span class="comment">/*!&lt; Write protection of page 36 TO 37 */</span>
+<a name="l00382"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga25c1b1e752f6552481046eda666ec513">00382</a> <span class="preprocessor">#define OB_WRP_PAGES38TO39             0x00080000U  </span><span class="comment">/*!&lt; Write protection of page 38 TO 39 */</span>
+<a name="l00383"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga2cd4c8b0fd905fa24a9aa9a322791e88">00383</a> <span class="preprocessor">#define OB_WRP_PAGES40TO41             0x00100000U  </span><span class="comment">/*!&lt; Write protection of page 40 TO 41 */</span>
+<a name="l00384"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga8f1f5c17305d27886f09edbb5f274552">00384</a> <span class="preprocessor">#define OB_WRP_PAGES42TO43             0x00200000U  </span><span class="comment">/*!&lt; Write protection of page 42 TO 43 */</span>
+<a name="l00385"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#gacd63d1c7dc8ac2621698b05be78f0aa5">00385</a> <span class="preprocessor">#define OB_WRP_PAGES44TO45             0x00400000U  </span><span class="comment">/*!&lt; Write protection of page 44 TO 45 */</span>
+<a name="l00386"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga9b00d36a75e9eabf054663e24fe14815">00386</a> <span class="preprocessor">#define OB_WRP_PAGES46TO47             0x00800000U  </span><span class="comment">/*!&lt; Write protection of page 46 TO 47 */</span>
+<a name="l00387"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga10fd687575f872340854ed70797ecf79">00387</a> <span class="preprocessor">#define OB_WRP_PAGES48TO49             0x01000000U  </span><span class="comment">/*!&lt; Write protection of page 48 TO 49 */</span>
+<a name="l00388"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga99fe15d010eb9a356d4bd884ea6f013a">00388</a> <span class="preprocessor">#define OB_WRP_PAGES50TO51             0x02000000U  </span><span class="comment">/*!&lt; Write protection of page 50 TO 51 */</span>
+<a name="l00389"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#gaf492385a4b20cd8d78c3b18b9afcc78f">00389</a> <span class="preprocessor">#define OB_WRP_PAGES52TO53             0x04000000U  </span><span class="comment">/*!&lt; Write protection of page 52 TO 53 */</span>
+<a name="l00390"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga57279632d90a6a47fc9af0f577a5c5af">00390</a> <span class="preprocessor">#define OB_WRP_PAGES54TO55             0x08000000U  </span><span class="comment">/*!&lt; Write protection of page 54 TO 55 */</span>
+<a name="l00391"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#gac5b50cf7d229f987975b37717d3d5bab">00391</a> <span class="preprocessor">#define OB_WRP_PAGES56TO57             0x10000000U  </span><span class="comment">/*!&lt; Write protection of page 56 TO 57 */</span>
+<a name="l00392"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga1fd07e4fa89c320dc3cd36448fe60300">00392</a> <span class="preprocessor">#define OB_WRP_PAGES58TO59             0x20000000U  </span><span class="comment">/*!&lt; Write protection of page 58 TO 59 */</span>
+<a name="l00393"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga18eed06f6a84cf63e1e02818982c6d7f">00393</a> <span class="preprocessor">#define OB_WRP_PAGES60TO61             0x40000000U  </span><span class="comment">/*!&lt; Write protection of page 60 TO 61 */</span>
+<a name="l00394"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga29aded0af31825c385bfb306e7c12284">00394</a> <span class="preprocessor">#define OB_WRP_PAGES62TO127            0x80000000U   </span><span class="comment">/*!&lt; Write protection of page 62 TO 127 */</span>
+<a name="l00395"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#gac66118b2594a273b5c526c9fe97dcad5">00395</a> <span class="preprocessor">#define OB_WRP_PAGES62TO255            0x80000000U   </span><span class="comment">/*!&lt; Write protection of page 62 TO 255 */</span>
+<a name="l00396"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#gac3fd7c0b6237be936518e0d28886b1f0">00396</a> <span class="preprocessor">#define OB_WRP_PAGES62TO511            0x80000000U   </span><span class="comment">/*!&lt; Write protection of page 62 TO 511 */</span>
 <a name="l00397"></a>00397 <span class="preprocessor">#endif </span><span class="comment">/* STM32F100xB || STM32F101xB || STM32F102xB || STM32F103xB */</span>
 <a name="l00398"></a>00398        <span class="comment">/* STM32F101xG || STM32F103xG */</span> 
 <a name="l00399"></a>00399        <span class="comment">/* STM32F105xC || STM32F107xC */</span>
 <a name="l00400"></a>00400 
-<a name="l00401"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga0cc7fc37c49d200418353f977e35139c">00401</a> <span class="preprocessor">#define OB_WRP_ALLPAGES                0xFFFFFFFFU  </span><span class="comment">/*!&lt; Write protection of all Pages */</span>
+<a name="l00401"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga0cc7fc37c49d200418353f977e35139c">00401</a> <span class="preprocessor">#define OB_WRP_ALLPAGES                0xFFFFFFFFU  </span><span class="comment">/*!&lt; Write protection of all Pages */</span>
 <a name="l00402"></a>00402  
 <a name="l00403"></a>00403 <span class="comment">/* Low Density */</span>
 <a name="l00404"></a>00404 <span class="preprocessor">#if  defined(STM32F101x6) || defined(STM32F102x6) || defined(STM32F103x6)</span>
@@ -482,10 +482,10 @@
 <a name="l00415"></a>00415        
 <a name="l00416"></a>00416 <span class="comment">/* High Density */</span>
 <a name="l00417"></a>00417 <span class="preprocessor">#if  defined(STM32F100xE) || defined(STM32F101xE) || defined(STM32F103xE)  </span>
-<a name="l00418"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#gac84924a123f527782a7ca9e8b51312ad">00418</a> <span class="preprocessor"></span><span class="preprocessor">#define OB_WRP_PAGES0TO15MASK          0x000000FFU</span>
-<a name="l00419"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga6760b7b90f8c1811abbceafb0a8014fc">00419</a> <span class="preprocessor"></span><span class="preprocessor">#define OB_WRP_PAGES16TO31MASK         0x0000FF00U</span>
-<a name="l00420"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#gaf1a2c691affe78881f460a85904b9502">00420</a> <span class="preprocessor"></span><span class="preprocessor">#define OB_WRP_PAGES32TO47MASK         0x00FF0000U</span>
-<a name="l00421"></a><a class="code" href="group__FLASHEx__OB__Write__Protection.html#ga4fa60f8378ba2eac533e32d9e20b077f">00421</a> <span class="preprocessor"></span><span class="preprocessor">#define OB_WRP_PAGES48TO255MASK        0xFF000000U</span>
+<a name="l00418"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#gac84924a123f527782a7ca9e8b51312ad">00418</a> <span class="preprocessor"></span><span class="preprocessor">#define OB_WRP_PAGES0TO15MASK          0x000000FFU</span>
+<a name="l00419"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga6760b7b90f8c1811abbceafb0a8014fc">00419</a> <span class="preprocessor"></span><span class="preprocessor">#define OB_WRP_PAGES16TO31MASK         0x0000FF00U</span>
+<a name="l00420"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#gaf1a2c691affe78881f460a85904b9502">00420</a> <span class="preprocessor"></span><span class="preprocessor">#define OB_WRP_PAGES32TO47MASK         0x00FF0000U</span>
+<a name="l00421"></a><a class="code" href="group/group__FLASHEx__OB__Write__Protection.html#ga4fa60f8378ba2eac533e32d9e20b077f">00421</a> <span class="preprocessor"></span><span class="preprocessor">#define OB_WRP_PAGES48TO255MASK        0xFF000000U</span>
 <a name="l00422"></a>00422 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F100xE || STM32F101xE || STM32F103xE */</span>
 <a name="l00423"></a>00423 
 <a name="l00424"></a>00424 <span class="comment">/* XL Density */</span>
@@ -511,8 +511,8 @@
 <a name="l00444"></a>00444 <span class="comment">/** @defgroup FLASHEx_OB_Read_Protection Option Byte Read Protection</span>
 <a name="l00445"></a>00445 <span class="comment">  * @{</span>
 <a name="l00446"></a>00446 <span class="comment">  */</span>
-<a name="l00447"></a><a class="code" href="group__FLASHEx__OB__Read__Protection.html#ga22c7871bda267a2844ab9ca9f7bd38e4">00447</a> <span class="preprocessor">#define OB_RDP_LEVEL_0            ((uint8_t)0xA5)</span>
-<a name="l00448"></a><a class="code" href="group__FLASHEx__OB__Read__Protection.html#ga778207f0d12d87bbff9d55e985aba5bc">00448</a> <span class="preprocessor"></span><span class="preprocessor">#define OB_RDP_LEVEL_1            ((uint8_t)0x00)</span>
+<a name="l00447"></a><a class="code" href="group/group__FLASHEx__OB__Read__Protection.html#ga22c7871bda267a2844ab9ca9f7bd38e4">00447</a> <span class="preprocessor">#define OB_RDP_LEVEL_0            ((uint8_t)0xA5)</span>
+<a name="l00448"></a><a class="code" href="group/group__FLASHEx__OB__Read__Protection.html#ga778207f0d12d87bbff9d55e985aba5bc">00448</a> <span class="preprocessor"></span><span class="preprocessor">#define OB_RDP_LEVEL_1            ((uint8_t)0x00)</span>
 <a name="l00449"></a>00449 <span class="preprocessor"></span><span class="comment">/**</span>
 <a name="l00450"></a>00450 <span class="comment">  * @}</span>
 <a name="l00451"></a>00451 <span class="comment">  */</span>
@@ -520,8 +520,8 @@
 <a name="l00453"></a>00453 <span class="comment">/** @defgroup FLASHEx_OB_IWatchdog Option Byte IWatchdog</span>
 <a name="l00454"></a>00454 <span class="comment">  * @{</span>
 <a name="l00455"></a>00455 <span class="comment">  */</span> 
-<a name="l00456"></a><a class="code" href="group__FLASHEx__OB__IWatchdog.html#ga5a357e232c955444c3f2ccb9a937ffce">00456</a> <span class="preprocessor">#define OB_IWDG_SW                ((uint16_t)0x0001)  </span><span class="comment">/*!&lt; Software IWDG selected */</span>
-<a name="l00457"></a><a class="code" href="group__FLASHEx__OB__IWatchdog.html#gadfcbfa963d79c339ec8e2d5a7734e47a">00457</a> <span class="preprocessor">#define OB_IWDG_HW                ((uint16_t)0x0000)  </span><span class="comment">/*!&lt; Hardware IWDG selected */</span>
+<a name="l00456"></a><a class="code" href="group/group__FLASHEx__OB__IWatchdog.html#ga5a357e232c955444c3f2ccb9a937ffce">00456</a> <span class="preprocessor">#define OB_IWDG_SW                ((uint16_t)0x0001)  </span><span class="comment">/*!&lt; Software IWDG selected */</span>
+<a name="l00457"></a><a class="code" href="group/group__FLASHEx__OB__IWatchdog.html#gadfcbfa963d79c339ec8e2d5a7734e47a">00457</a> <span class="preprocessor">#define OB_IWDG_HW                ((uint16_t)0x0000)  </span><span class="comment">/*!&lt; Hardware IWDG selected */</span>
 <a name="l00458"></a>00458 <span class="comment">/**</span>
 <a name="l00459"></a>00459 <span class="comment">  * @}</span>
 <a name="l00460"></a>00460 <span class="comment">  */</span>
@@ -529,8 +529,8 @@
 <a name="l00462"></a>00462 <span class="comment">/** @defgroup FLASHEx_OB_nRST_STOP Option Byte nRST STOP</span>
 <a name="l00463"></a>00463 <span class="comment">  * @{</span>
 <a name="l00464"></a>00464 <span class="comment">  */</span> 
-<a name="l00465"></a><a class="code" href="group__FLASHEx__OB__nRST__STOP.html#ga7344fe0ec25c5eb2d11db7c855325436">00465</a> <span class="preprocessor">#define OB_STOP_NO_RST            ((uint16_t)0x0002) </span><span class="comment">/*!&lt; No reset generated when entering in STOP */</span>
-<a name="l00466"></a><a class="code" href="group__FLASHEx__OB__nRST__STOP.html#gaef92c03b1f279c532bfa13d3bb074b57">00466</a> <span class="preprocessor">#define OB_STOP_RST               ((uint16_t)0x0000) </span><span class="comment">/*!&lt; Reset generated when entering in STOP */</span>
+<a name="l00465"></a><a class="code" href="group/group__FLASHEx__OB__nRST__STOP.html#ga7344fe0ec25c5eb2d11db7c855325436">00465</a> <span class="preprocessor">#define OB_STOP_NO_RST            ((uint16_t)0x0002) </span><span class="comment">/*!&lt; No reset generated when entering in STOP */</span>
+<a name="l00466"></a><a class="code" href="group/group__FLASHEx__OB__nRST__STOP.html#gaef92c03b1f279c532bfa13d3bb074b57">00466</a> <span class="preprocessor">#define OB_STOP_RST               ((uint16_t)0x0000) </span><span class="comment">/*!&lt; Reset generated when entering in STOP */</span>
 <a name="l00467"></a>00467 <span class="comment">/**</span>
 <a name="l00468"></a>00468 <span class="comment">  * @}</span>
 <a name="l00469"></a>00469 <span class="comment">  */</span> 
@@ -538,8 +538,8 @@
 <a name="l00471"></a>00471 <span class="comment">/** @defgroup FLASHEx_OB_nRST_STDBY Option Byte nRST STDBY</span>
 <a name="l00472"></a>00472 <span class="comment">  * @{</span>
 <a name="l00473"></a>00473 <span class="comment">  */</span> 
-<a name="l00474"></a><a class="code" href="group__FLASHEx__OB__nRST__STDBY.html#gad776ed7b3b9a98013aac9976eedb7e94">00474</a> <span class="preprocessor">#define OB_STDBY_NO_RST           ((uint16_t)0x0004) </span><span class="comment">/*!&lt; No reset generated when entering in STANDBY */</span>
-<a name="l00475"></a><a class="code" href="group__FLASHEx__OB__nRST__STDBY.html#ga69451a6f69247528f58735c9c83499ce">00475</a> <span class="preprocessor">#define OB_STDBY_RST              ((uint16_t)0x0000) </span><span class="comment">/*!&lt; Reset generated when entering in STANDBY */</span>
+<a name="l00474"></a><a class="code" href="group/group__FLASHEx__OB__nRST__STDBY.html#gad776ed7b3b9a98013aac9976eedb7e94">00474</a> <span class="preprocessor">#define OB_STDBY_NO_RST           ((uint16_t)0x0004) </span><span class="comment">/*!&lt; No reset generated when entering in STANDBY */</span>
+<a name="l00475"></a><a class="code" href="group/group__FLASHEx__OB__nRST__STDBY.html#ga69451a6f69247528f58735c9c83499ce">00475</a> <span class="preprocessor">#define OB_STDBY_RST              ((uint16_t)0x0000) </span><span class="comment">/*!&lt; Reset generated when entering in STANDBY */</span>
 <a name="l00476"></a>00476 <span class="comment">/**</span>
 <a name="l00477"></a>00477 <span class="comment">  * @}</span>
 <a name="l00478"></a>00478 <span class="comment">  */</span>
@@ -558,8 +558,8 @@
 <a name="l00491"></a>00491 <span class="comment">/** @defgroup FLASHEx_OB_Data_Address  Option Byte Data Address</span>
 <a name="l00492"></a>00492 <span class="comment">  * @{</span>
 <a name="l00493"></a>00493 <span class="comment">  */</span>
-<a name="l00494"></a><a class="code" href="group__FLASHEx__OB__Data__Address.html#gab29881e9575bfff3504b84afa20cafbe">00494</a> <span class="preprocessor">#define OB_DATA_ADDRESS_DATA0     0x1FFFF804U</span>
-<a name="l00495"></a><a class="code" href="group__FLASHEx__OB__Data__Address.html#ga33cb1b378fd742c722f5bdce21c65b0e">00495</a> <span class="preprocessor"></span><span class="preprocessor">#define OB_DATA_ADDRESS_DATA1     0x1FFFF806U</span>
+<a name="l00494"></a><a class="code" href="group/group__FLASHEx__OB__Data__Address.html#gab29881e9575bfff3504b84afa20cafbe">00494</a> <span class="preprocessor">#define OB_DATA_ADDRESS_DATA0     0x1FFFF804U</span>
+<a name="l00495"></a><a class="code" href="group/group__FLASHEx__OB__Data__Address.html#ga33cb1b378fd742c722f5bdce21c65b0e">00495</a> <span class="preprocessor"></span><span class="preprocessor">#define OB_DATA_ADDRESS_DATA1     0x1FFFF806U</span>
 <a name="l00496"></a>00496 <span class="preprocessor"></span><span class="comment">/**</span>
 <a name="l00497"></a>00497 <span class="comment">  * @}</span>
 <a name="l00498"></a>00498 <span class="comment">  */</span>
@@ -594,13 +594,13 @@
 <a name="l00527"></a>00527 
 <a name="l00528"></a>00528 <span class="preprocessor">#else  </span>
 <a name="l00529"></a>00529 <span class="preprocessor"></span>
-<a name="l00530"></a><a class="code" href="group__FLASH__Flag__definition.html#gad3bc368f954ad7744deda3315da2fff7">00530</a> <span class="preprocessor"> #define FLASH_FLAG_BSY             FLASH_SR_BSY              </span><span class="comment">/*!&lt; FLASH Busy flag                          */</span> 
-<a name="l00531"></a><a class="code" href="group__FLASH__Flag__definition.html#gae2ef62dee0a5ca01e6226746039b6f20">00531</a> <span class="preprocessor"> #define FLASH_FLAG_PGERR           FLASH_SR_PGERR            </span><span class="comment">/*!&lt; FLASH Programming error flag             */</span>
-<a name="l00532"></a><a class="code" href="group__FLASH__Flag__definition.html#ga6abf64f916992585899369166db3f266">00532</a> <span class="preprocessor"> #define FLASH_FLAG_WRPERR          FLASH_SR_WRPRTERR         </span><span class="comment">/*!&lt; FLASH Write protected error flag         */</span>
-<a name="l00533"></a><a class="code" href="group__FLASH__Flag__definition.html#gaf043ba4d8f837350bfc7754a99fae5a9">00533</a> <span class="preprocessor"> #define FLASH_FLAG_EOP             FLASH_SR_EOP              </span><span class="comment">/*!&lt; FLASH End of Operation flag              */</span>
+<a name="l00530"></a><a class="code" href="group/group__FLASH__Flag__definition.html#gad3bc368f954ad7744deda3315da2fff7">00530</a> <span class="preprocessor"> #define FLASH_FLAG_BSY             FLASH_SR_BSY              </span><span class="comment">/*!&lt; FLASH Busy flag                          */</span> 
+<a name="l00531"></a><a class="code" href="group/group__FLASH__Flag__definition.html#gae2ef62dee0a5ca01e6226746039b6f20">00531</a> <span class="preprocessor"> #define FLASH_FLAG_PGERR           FLASH_SR_PGERR            </span><span class="comment">/*!&lt; FLASH Programming error flag             */</span>
+<a name="l00532"></a><a class="code" href="group/group__FLASH__Flag__definition.html#ga6abf64f916992585899369166db3f266">00532</a> <span class="preprocessor"> #define FLASH_FLAG_WRPERR          FLASH_SR_WRPRTERR         </span><span class="comment">/*!&lt; FLASH Write protected error flag         */</span>
+<a name="l00533"></a><a class="code" href="group/group__FLASH__Flag__definition.html#gaf043ba4d8f837350bfc7754a99fae5a9">00533</a> <span class="preprocessor"> #define FLASH_FLAG_EOP             FLASH_SR_EOP              </span><span class="comment">/*!&lt; FLASH End of Operation flag              */</span>
 <a name="l00534"></a>00534 
 <a name="l00535"></a>00535 <span class="preprocessor">#endif</span>
-<a name="l00536"></a><a class="code" href="group__FLASH__Flag__definition.html#gacb2c4c991a260c3f110cd8c72f302864">00536</a> <span class="preprocessor"></span><span class="preprocessor"> #define FLASH_FLAG_OPTVERR         ((OBR_REG_INDEX &lt;&lt; 8U | FLASH_OBR_OPTERR)) </span><span class="comment">/*!&lt; Option Byte Error        */</span>
+<a name="l00536"></a><a class="code" href="group/group__FLASH__Flag__definition.html#gacb2c4c991a260c3f110cd8c72f302864">00536</a> <span class="preprocessor"></span><span class="preprocessor"> #define FLASH_FLAG_OPTVERR         ((OBR_REG_INDEX &lt;&lt; 8U | FLASH_OBR_OPTERR)) </span><span class="comment">/*!&lt; Option Byte Error        */</span>
 <a name="l00537"></a>00537 <span class="comment">/**</span>
 <a name="l00538"></a>00538 <span class="comment">  * @}</span>
 <a name="l00539"></a>00539 <span class="comment">  */</span>
@@ -621,8 +621,8 @@
 <a name="l00554"></a>00554 
 <a name="l00555"></a>00555 <span class="preprocessor">#else</span>
 <a name="l00556"></a>00556 <span class="preprocessor"></span>
-<a name="l00557"></a><a class="code" href="group__FLASH__Interrupt__definition.html#gaea20e80e1806d58a7544cfe8659e7f11">00557</a> <span class="preprocessor"> #define FLASH_IT_EOP               FLASH_CR_EOPIE          </span><span class="comment">/*!&lt; End of FLASH Operation Interrupt source */</span>
-<a name="l00558"></a><a class="code" href="group__FLASH__Interrupt__definition.html#ga4e2c23ab8c1b9a5ee49bf6d695d9ae8c">00558</a> <span class="preprocessor"> #define FLASH_IT_ERR               FLASH_CR_ERRIE          </span><span class="comment">/*!&lt; Error Interrupt source                  */</span>
+<a name="l00557"></a><a class="code" href="group/group__FLASH__Interrupt__definition.html#gaea20e80e1806d58a7544cfe8659e7f11">00557</a> <span class="preprocessor"> #define FLASH_IT_EOP               FLASH_CR_EOPIE          </span><span class="comment">/*!&lt; End of FLASH Operation Interrupt source */</span>
+<a name="l00558"></a><a class="code" href="group/group__FLASH__Interrupt__definition.html#ga4e2c23ab8c1b9a5ee49bf6d695d9ae8c">00558</a> <span class="preprocessor"> #define FLASH_IT_ERR               FLASH_CR_ERRIE          </span><span class="comment">/*!&lt; Error Interrupt source                  */</span>
 <a name="l00559"></a>00559 
 <a name="l00560"></a>00560 <span class="preprocessor">#endif</span>
 <a name="l00561"></a>00561 <span class="preprocessor"></span><span class="comment">/**</span>
@@ -747,7 +747,7 @@
 <a name="l00680"></a>00680 <span class="comment">  *     @arg @ref FLASH_IT_ERR Error Interrupt    </span>
 <a name="l00681"></a>00681 <span class="comment">  * @retval none</span>
 <a name="l00682"></a>00682 <span class="comment">  */</span> 
-<a name="l00683"></a><a class="code" href="group__FLASH__Interrupt.html#ga13fa137a911f02a2f94fb9fb0762a340">00683</a> <span class="preprocessor">#define __HAL_FLASH_ENABLE_IT(__INTERRUPT__)  (FLASH-&gt;CR |= (__INTERRUPT__))</span>
+<a name="l00683"></a><a class="code" href="group/group__FLASH__Interrupt.html#ga13fa137a911f02a2f94fb9fb0762a340">00683</a> <span class="preprocessor">#define __HAL_FLASH_ENABLE_IT(__INTERRUPT__)  (FLASH-&gt;CR |= (__INTERRUPT__))</span>
 <a name="l00684"></a>00684 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00685"></a>00685 <span class="comment">/**</span>
 <a name="l00686"></a>00686 <span class="comment">  * @brief  Disable the specified FLASH interrupt.</span>
@@ -757,7 +757,7 @@
 <a name="l00690"></a>00690 <span class="comment">  *     @arg @ref FLASH_IT_ERR Error Interrupt    </span>
 <a name="l00691"></a>00691 <span class="comment">  * @retval none</span>
 <a name="l00692"></a>00692 <span class="comment">  */</span> 
-<a name="l00693"></a><a class="code" href="group__FLASH__Interrupt.html#ga1f40f507b5d4b3a4da68e4244a1097ee">00693</a> <span class="preprocessor">#define __HAL_FLASH_DISABLE_IT(__INTERRUPT__)   (FLASH-&gt;CR &amp;= ~(__INTERRUPT__))</span>
+<a name="l00693"></a><a class="code" href="group/group__FLASH__Interrupt.html#ga1f40f507b5d4b3a4da68e4244a1097ee">00693</a> <span class="preprocessor">#define __HAL_FLASH_DISABLE_IT(__INTERRUPT__)   (FLASH-&gt;CR &amp;= ~(__INTERRUPT__))</span>
 <a name="l00694"></a>00694 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00695"></a>00695 <span class="comment">/**</span>
 <a name="l00696"></a>00696 <span class="comment">  * @brief  Get the specified FLASH flag status. </span>
@@ -770,7 +770,7 @@
 <a name="l00703"></a>00703 <span class="comment">  *            @arg @ref FLASH_FLAG_OPTVERR  Loaded OB and its complement do not match</span>
 <a name="l00704"></a>00704 <span class="comment">  * @retval The new state of __FLAG__ (SET or RESET).</span>
 <a name="l00705"></a>00705 <span class="comment">  */</span>
-<a name="l00706"></a><a class="code" href="group__FLASH__Interrupt.html#ga0d3dd161fecc0e47c9e109c7c28672c1">00706</a> <span class="preprocessor">#define __HAL_FLASH_GET_FLAG(__FLAG__)  (((__FLAG__) == FLASH_FLAG_OPTVERR) ? \</span>
+<a name="l00706"></a><a class="code" href="group/group__FLASH__Interrupt.html#ga0d3dd161fecc0e47c9e109c7c28672c1">00706</a> <span class="preprocessor">#define __HAL_FLASH_GET_FLAG(__FLAG__)  (((__FLAG__) == FLASH_FLAG_OPTVERR) ? \</span>
 <a name="l00707"></a>00707 <span class="preprocessor">                                            (FLASH-&gt;OBR &amp; FLASH_OBR_OPTERR) : \</span>
 <a name="l00708"></a>00708 <span class="preprocessor">                                            (FLASH-&gt;SR &amp; (__FLAG__)))</span>
 <a name="l00709"></a>00709 <span class="preprocessor"></span><span class="comment">/**</span>
@@ -783,7 +783,7 @@
 <a name="l00716"></a>00716 <span class="comment">  *            @arg @ref FLASH_FLAG_OPTVERR  Loaded OB and its complement do not match</span>
 <a name="l00717"></a>00717 <span class="comment">  * @retval none</span>
 <a name="l00718"></a>00718 <span class="comment">  */</span>
-<a name="l00719"></a><a class="code" href="group__FLASH__Interrupt.html#ga68e49c4675761e2ec35153e747de7622">00719</a> <span class="preprocessor">#define __HAL_FLASH_CLEAR_FLAG(__FLAG__)   do { \</span>
+<a name="l00719"></a><a class="code" href="group/group__FLASH__Interrupt.html#ga68e49c4675761e2ec35153e747de7622">00719</a> <span class="preprocessor">#define __HAL_FLASH_CLEAR_FLAG(__FLAG__)   do { \</span>
 <a name="l00720"></a>00720 <span class="preprocessor">                          </span><span class="comment">/* Clear FLASH_FLAG_OPTVERR flag */</span> \
 <a name="l00721"></a>00721                           if ((__FLAG__) == FLASH_FLAG_OPTVERR) \
 <a name="l00722"></a>00722                           { \
@@ -814,8 +814,8 @@
 <a name="l00747"></a>00747 <span class="comment">  * @{</span>
 <a name="l00748"></a>00748 <span class="comment">  */</span>
 <a name="l00749"></a>00749 <span class="comment">/* IO operation functions *****************************************************/</span>
-<a name="l00750"></a>00750 HAL_StatusTypeDef  <a class="code" href="group__FLASHEx__Exported__Functions__Group1.html#ga9c4e0c7b4f528b7cccae6ad610eb5953" title="Perform a mass erase or erase the specified FLASH memory pages.">HAL_FLASHEx_Erase</a>(<a class="code" href="structFLASH__EraseInitTypeDef.html" title="FLASH Erase structure definition.">FLASH_EraseInitTypeDef</a> *pEraseInit, uint32_t *PageError);
-<a name="l00751"></a>00751 HAL_StatusTypeDef  <a class="code" href="group__FLASHEx__Exported__Functions__Group1.html#gaf58c6764859e4febc21abe462dfb2615" title="Perform a mass erase or erase the specified FLASH memory pages with interrupt enabled.">HAL_FLASHEx_Erase_IT</a>(<a class="code" href="structFLASH__EraseInitTypeDef.html" title="FLASH Erase structure definition.">FLASH_EraseInitTypeDef</a> *pEraseInit);
+<a name="l00750"></a>00750 HAL_StatusTypeDef  <a class="code" href="group/group__FLASHEx__Exported__Functions__Group1.html#ga9c4e0c7b4f528b7cccae6ad610eb5953" title="Perform a mass erase or erase the specified FLASH memory pages.">HAL_FLASHEx_Erase</a>(<a class="code" href="structFLASH__EraseInitTypeDef.html" title="FLASH Erase structure definition.">FLASH_EraseInitTypeDef</a> *pEraseInit, uint32_t *PageError);
+<a name="l00751"></a>00751 HAL_StatusTypeDef  <a class="code" href="group/group__FLASHEx__Exported__Functions__Group1.html#gaf58c6764859e4febc21abe462dfb2615" title="Perform a mass erase or erase the specified FLASH memory pages with interrupt enabled.">HAL_FLASHEx_Erase_IT</a>(<a class="code" href="structFLASH__EraseInitTypeDef.html" title="FLASH Erase structure definition.">FLASH_EraseInitTypeDef</a> *pEraseInit);
 <a name="l00752"></a>00752 <span class="comment"></span>
 <a name="l00753"></a>00753 <span class="comment">/**</span>
 <a name="l00754"></a>00754 <span class="comment">  * @}</span>
@@ -825,10 +825,10 @@
 <a name="l00758"></a>00758 <span class="comment">  * @{</span>
 <a name="l00759"></a>00759 <span class="comment">  */</span>
 <a name="l00760"></a>00760 <span class="comment">/* Peripheral Control functions ***********************************************/</span>
-<a name="l00761"></a>00761 HAL_StatusTypeDef  <a class="code" href="group__FLASHEx__Exported__Functions__Group2.html#ga74d4265b88afed50efe9fda0f025979a" title="Erases the FLASH option bytes.">HAL_FLASHEx_OBErase</a>(<span class="keywordtype">void</span>);
-<a name="l00762"></a>00762 HAL_StatusTypeDef  <a class="code" href="group__FLASHEx__Exported__Functions__Group2.html#ga001dd4a8defa9eb24a17c4df5953a41d" title="Program option bytes.">HAL_FLASHEx_OBProgram</a>(<a class="code" href="structFLASH__OBProgramInitTypeDef.html" title="FLASH Options bytes program structure definition.">FLASH_OBProgramInitTypeDef</a> *pOBInit);
-<a name="l00763"></a>00763 <span class="keywordtype">void</span>               <a class="code" href="group__FLASHEx__Exported__Functions__Group2.html#ga6d45d5442b8147533b1100ec40fe75d7" title="Get the Option byte configuration.">HAL_FLASHEx_OBGetConfig</a>(<a class="code" href="structFLASH__OBProgramInitTypeDef.html" title="FLASH Options bytes program structure definition.">FLASH_OBProgramInitTypeDef</a> *pOBInit);
-<a name="l00764"></a>00764 uint32_t           <a class="code" href="group__FLASHEx__Exported__Functions__Group2.html#ga683593291451ae3e0dd1a6426ba72b3a" title="Get the Option byte user data.">HAL_FLASHEx_OBGetUserData</a>(uint32_t DATAAdress);<span class="comment"></span>
+<a name="l00761"></a>00761 HAL_StatusTypeDef  <a class="code" href="group/group__FLASHEx__Exported__Functions__Group2.html#ga74d4265b88afed50efe9fda0f025979a" title="Erases the FLASH option bytes.">HAL_FLASHEx_OBErase</a>(<span class="keywordtype">void</span>);
+<a name="l00762"></a>00762 HAL_StatusTypeDef  <a class="code" href="group/group__FLASHEx__Exported__Functions__Group2.html#ga001dd4a8defa9eb24a17c4df5953a41d" title="Program option bytes.">HAL_FLASHEx_OBProgram</a>(<a class="code" href="structFLASH__OBProgramInitTypeDef.html" title="FLASH Options bytes program structure definition.">FLASH_OBProgramInitTypeDef</a> *pOBInit);
+<a name="l00763"></a>00763 <span class="keywordtype">void</span>               <a class="code" href="group/group__FLASHEx__Exported__Functions__Group2.html#ga6d45d5442b8147533b1100ec40fe75d7" title="Get the Option byte configuration.">HAL_FLASHEx_OBGetConfig</a>(<a class="code" href="structFLASH__OBProgramInitTypeDef.html" title="FLASH Options bytes program structure definition.">FLASH_OBProgramInitTypeDef</a> *pOBInit);
+<a name="l00764"></a>00764 uint32_t           <a class="code" href="group/group__FLASHEx__Exported__Functions__Group2.html#ga683593291451ae3e0dd1a6426ba72b3a" title="Get the Option byte user data.">HAL_FLASHEx_OBGetUserData</a>(uint32_t DATAAdress);<span class="comment"></span>
 <a name="l00765"></a>00765 <span class="comment">/**</span>
 <a name="l00766"></a>00766 <span class="comment">  * @}</span>
 <a name="l00767"></a>00767 <span class="comment">  */</span>

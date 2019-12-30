@@ -145,11 +145,11 @@
 <a name="l00078"></a>00078 <span class="comment">  *   This parameter can be a value of @ref GPIOEx_EVENTOUT_PIN.</span>
 <a name="l00079"></a>00079 <span class="comment">  * @retval None</span>
 <a name="l00080"></a>00080 <span class="comment">  */</span>
-<a name="l00081"></a><a class="code" href="group__GPIOEx__Exported__Functions__Group1.html#ga9fbe96e2961dc0e5014e47d97de15cc5">00081</a> <span class="keywordtype">void</span> <a class="code" href="group__GPIOEx__Exported__Functions__Group1.html#ga9fbe96e2961dc0e5014e47d97de15cc5" title="Configures the port and pin on which the EVENTOUT Cortex signal will be connected.">HAL_GPIOEx_ConfigEventout</a>(uint32_t GPIO_PortSource, uint32_t GPIO_PinSource)
+<a name="l00081"></a><a class="code" href="group/group__GPIOEx__Exported__Functions__Group1.html#ga9fbe96e2961dc0e5014e47d97de15cc5">00081</a> <span class="keywordtype">void</span> <a class="code" href="group/group__GPIOEx__Exported__Functions__Group1.html#ga9fbe96e2961dc0e5014e47d97de15cc5" title="Configures the port and pin on which the EVENTOUT Cortex signal will be connected.">HAL_GPIOEx_ConfigEventout</a>(uint32_t GPIO_PortSource, uint32_t GPIO_PinSource)
 <a name="l00082"></a>00082 {
 <a name="l00083"></a>00083   <span class="comment">/* Verify the parameters */</span>
-<a name="l00084"></a>00084   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__GPIOEx__EVENTOUT__PORT.html#ga9e6c9f1f73af1b6f579f050bd00cc43b">IS_AFIO_EVENTOUT_PORT</a>(GPIO_PortSource));
-<a name="l00085"></a>00085   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__GPIOEx__EVENTOUT__PIN.html#gaeb2811674e9647b67a4abd1fe4a117fe">IS_AFIO_EVENTOUT_PIN</a>(GPIO_PinSource));
+<a name="l00084"></a>00084   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__GPIOEx__EVENTOUT__PORT.html#ga9e6c9f1f73af1b6f579f050bd00cc43b">IS_AFIO_EVENTOUT_PORT</a>(GPIO_PortSource));
+<a name="l00085"></a>00085   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__GPIOEx__EVENTOUT__PIN.html#gaeb2811674e9647b67a4abd1fe4a117fe">IS_AFIO_EVENTOUT_PIN</a>(GPIO_PinSource));
 <a name="l00086"></a>00086 
 <a name="l00087"></a>00087   <span class="comment">/* Apply the new configuration */</span>
 <a name="l00088"></a>00088   MODIFY_REG(AFIO-&gt;EVCR, (AFIO_EVCR_PORT) | (AFIO_EVCR_PIN), (GPIO_PortSource) | (GPIO_PinSource));
@@ -159,7 +159,7 @@
 <a name="l00092"></a>00092 <span class="comment">  * @brief  Enables the Event Output.</span>
 <a name="l00093"></a>00093 <span class="comment">  * @retval None</span>
 <a name="l00094"></a>00094 <span class="comment">  */</span>
-<a name="l00095"></a><a class="code" href="group__GPIOEx__Exported__Functions__Group1.html#ga599b3984a9334d6b55bfb6a26aa8cf51">00095</a> <span class="keywordtype">void</span> <a class="code" href="group__GPIOEx__Exported__Functions__Group1.html#ga599b3984a9334d6b55bfb6a26aa8cf51" title="Enables the Event Output.">HAL_GPIOEx_EnableEventout</a>(<span class="keywordtype">void</span>)
+<a name="l00095"></a><a class="code" href="group/group__GPIOEx__Exported__Functions__Group1.html#ga599b3984a9334d6b55bfb6a26aa8cf51">00095</a> <span class="keywordtype">void</span> <a class="code" href="group/group__GPIOEx__Exported__Functions__Group1.html#ga599b3984a9334d6b55bfb6a26aa8cf51" title="Enables the Event Output.">HAL_GPIOEx_EnableEventout</a>(<span class="keywordtype">void</span>)
 <a name="l00096"></a>00096 {
 <a name="l00097"></a>00097   SET_BIT(AFIO-&gt;EVCR, AFIO_EVCR_EVOE);
 <a name="l00098"></a>00098 }
@@ -168,7 +168,7 @@
 <a name="l00101"></a>00101 <span class="comment">  * @brief  Disables the Event Output.</span>
 <a name="l00102"></a>00102 <span class="comment">  * @retval None</span>
 <a name="l00103"></a>00103 <span class="comment">  */</span>
-<a name="l00104"></a><a class="code" href="group__GPIOEx__Exported__Functions__Group1.html#gab794bd6eb13e63f1c59f222e5c39d8ef">00104</a> <span class="keywordtype">void</span> <a class="code" href="group__GPIOEx__Exported__Functions__Group1.html#gab794bd6eb13e63f1c59f222e5c39d8ef" title="Disables the Event Output.">HAL_GPIOEx_DisableEventout</a>(<span class="keywordtype">void</span>)
+<a name="l00104"></a><a class="code" href="group/group__GPIOEx__Exported__Functions__Group1.html#gab794bd6eb13e63f1c59f222e5c39d8ef">00104</a> <span class="keywordtype">void</span> <a class="code" href="group/group__GPIOEx__Exported__Functions__Group1.html#gab794bd6eb13e63f1c59f222e5c39d8ef" title="Disables the Event Output.">HAL_GPIOEx_DisableEventout</a>(<span class="keywordtype">void</span>)
 <a name="l00105"></a>00105 {
 <a name="l00106"></a>00106   CLEAR_BIT(AFIO-&gt;EVCR, AFIO_EVCR_EVOE);
 <a name="l00107"></a>00107 }

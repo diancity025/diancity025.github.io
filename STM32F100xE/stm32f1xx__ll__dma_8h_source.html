@@ -111,7 +111,7 @@
 <a name="l00044"></a>00044 <span class="comment">  * @{</span>
 <a name="l00045"></a>00045 <span class="comment">  */</span>
 <a name="l00046"></a>00046 <span class="comment">/* Array used to get the DMA channel register offset versus channel index LL_DMA_CHANNEL_x */</span>
-<a name="l00047"></a><a class="code" href="group__DMA__LL__Private__Variables.html#ga8270185dc4b8a17909991042165a6a2d">00047</a> <span class="keyword">static</span> <span class="keyword">const</span> uint8_t <a class="code" href="group__DMA__LL__Private__Variables.html#ga8270185dc4b8a17909991042165a6a2d">CHANNEL_OFFSET_TAB</a>[] =
+<a name="l00047"></a><a class="code" href="group/group__DMA__LL__Private__Variables.html#ga8270185dc4b8a17909991042165a6a2d">00047</a> <span class="keyword">static</span> <span class="keyword">const</span> uint8_t <a class="code" href="group/group__DMA__LL__Private__Variables.html#ga8270185dc4b8a17909991042165a6a2d">CHANNEL_OFFSET_TAB</a>[] =
 <a name="l00048"></a>00048 {
 <a name="l00049"></a>00049   (uint8_t)(DMA1_Channel1_BASE - DMA1_BASE),
 <a name="l00050"></a>00050   (uint8_t)(DMA1_Channel2_BASE - DMA1_BASE),
@@ -215,34 +215,34 @@
 <a name="l00148"></a>00148 <span class="comment">  * @brief    Flags defines which can be used with LL_DMA_WriteReg function</span>
 <a name="l00149"></a>00149 <span class="comment">  * @{</span>
 <a name="l00150"></a>00150 <span class="comment">  */</span>
-<a name="l00151"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#ga6f8c4fd469a1c7358554bd811834a323">00151</a> <span class="preprocessor">#define LL_DMA_IFCR_CGIF1                 DMA_IFCR_CGIF1        </span><span class="comment">/*!&lt; Channel 1 global flag            */</span>
-<a name="l00152"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#gaee921fa72064741c849198bcb9c8a726">00152</a> <span class="preprocessor">#define LL_DMA_IFCR_CTCIF1                DMA_IFCR_CTCIF1       </span><span class="comment">/*!&lt; Channel 1 transfer complete flag */</span>
-<a name="l00153"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#ga7455a8c663ef8a90fc4bfeac691c4b4b">00153</a> <span class="preprocessor">#define LL_DMA_IFCR_CHTIF1                DMA_IFCR_CHTIF1       </span><span class="comment">/*!&lt; Channel 1 half transfer flag     */</span>
-<a name="l00154"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#ga49721e1d674ae0365b163c151ca828d9">00154</a> <span class="preprocessor">#define LL_DMA_IFCR_CTEIF1                DMA_IFCR_CTEIF1       </span><span class="comment">/*!&lt; Channel 1 transfer error flag    */</span>
-<a name="l00155"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#ga3a65652b323adde77c2a47b50cce5b30">00155</a> <span class="preprocessor">#define LL_DMA_IFCR_CGIF2                 DMA_IFCR_CGIF2        </span><span class="comment">/*!&lt; Channel 2 global flag            */</span>
-<a name="l00156"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#ga9c474b47cccae3d84b8ca48296106799">00156</a> <span class="preprocessor">#define LL_DMA_IFCR_CTCIF2                DMA_IFCR_CTCIF2       </span><span class="comment">/*!&lt; Channel 2 transfer complete flag */</span>
-<a name="l00157"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#ga42f7f2e5c724dc5bba364b5e07c28cef">00157</a> <span class="preprocessor">#define LL_DMA_IFCR_CHTIF2                DMA_IFCR_CHTIF2       </span><span class="comment">/*!&lt; Channel 2 half transfer flag     */</span>
-<a name="l00158"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#ga7697c3465d409ac283a22a10677aefeb">00158</a> <span class="preprocessor">#define LL_DMA_IFCR_CTEIF2                DMA_IFCR_CTEIF2       </span><span class="comment">/*!&lt; Channel 2 transfer error flag    */</span>
-<a name="l00159"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#ga11c909369fc0ad0f293d8fd55e1f9802">00159</a> <span class="preprocessor">#define LL_DMA_IFCR_CGIF3                 DMA_IFCR_CGIF3        </span><span class="comment">/*!&lt; Channel 3 global flag            */</span>
-<a name="l00160"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#gac7fa263604a248b27bff5d4f3762b128">00160</a> <span class="preprocessor">#define LL_DMA_IFCR_CTCIF3                DMA_IFCR_CTCIF3       </span><span class="comment">/*!&lt; Channel 3 transfer complete flag */</span>
-<a name="l00161"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#ga4b5e344b470bfbb9888390c33aba7dc8">00161</a> <span class="preprocessor">#define LL_DMA_IFCR_CHTIF3                DMA_IFCR_CHTIF3       </span><span class="comment">/*!&lt; Channel 3 half transfer flag     */</span>
-<a name="l00162"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#ga293eb151a26f875a2bcdbb8960a119e8">00162</a> <span class="preprocessor">#define LL_DMA_IFCR_CTEIF3                DMA_IFCR_CTEIF3       </span><span class="comment">/*!&lt; Channel 3 transfer error flag    */</span>
-<a name="l00163"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#ga168481f9dc6622dadcdb390ece9cf643">00163</a> <span class="preprocessor">#define LL_DMA_IFCR_CGIF4                 DMA_IFCR_CGIF4        </span><span class="comment">/*!&lt; Channel 4 global flag            */</span>
-<a name="l00164"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#ga011c4281fec448ac2f5e4a247f1bf82f">00164</a> <span class="preprocessor">#define LL_DMA_IFCR_CTCIF4                DMA_IFCR_CTCIF4       </span><span class="comment">/*!&lt; Channel 4 transfer complete flag */</span>
-<a name="l00165"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#gaef8f62df9372980a36d4087f694c7e79">00165</a> <span class="preprocessor">#define LL_DMA_IFCR_CHTIF4                DMA_IFCR_CHTIF4       </span><span class="comment">/*!&lt; Channel 4 half transfer flag     */</span>
-<a name="l00166"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#ga0f02420d077513e65d70d45ba3cdd4ac">00166</a> <span class="preprocessor">#define LL_DMA_IFCR_CTEIF4                DMA_IFCR_CTEIF4       </span><span class="comment">/*!&lt; Channel 4 transfer error flag    */</span>
-<a name="l00167"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#ga05363bac1d08a905d9a350410e21ae28">00167</a> <span class="preprocessor">#define LL_DMA_IFCR_CGIF5                 DMA_IFCR_CGIF5        </span><span class="comment">/*!&lt; Channel 5 global flag            */</span>
-<a name="l00168"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#gaf96aa873380a8f7724cc4f684268ab87">00168</a> <span class="preprocessor">#define LL_DMA_IFCR_CTCIF5                DMA_IFCR_CTCIF5       </span><span class="comment">/*!&lt; Channel 5 transfer complete flag */</span>
-<a name="l00169"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#ga0ace884b8e2e5daec7f417a19e6caf41">00169</a> <span class="preprocessor">#define LL_DMA_IFCR_CHTIF5                DMA_IFCR_CHTIF5       </span><span class="comment">/*!&lt; Channel 5 half transfer flag     */</span>
-<a name="l00170"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#gab58782a4389c6d58cff2226d5ca6d8c1">00170</a> <span class="preprocessor">#define LL_DMA_IFCR_CTEIF5                DMA_IFCR_CTEIF5       </span><span class="comment">/*!&lt; Channel 5 transfer error flag    */</span>
-<a name="l00171"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#ga2c93aba0e00c48b1aab3e1a18f76bf3a">00171</a> <span class="preprocessor">#define LL_DMA_IFCR_CGIF6                 DMA_IFCR_CGIF6        </span><span class="comment">/*!&lt; Channel 6 global flag            */</span>
-<a name="l00172"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#ga3b7902d43f33451fa32493808bbafd44">00172</a> <span class="preprocessor">#define LL_DMA_IFCR_CTCIF6                DMA_IFCR_CTCIF6       </span><span class="comment">/*!&lt; Channel 6 transfer complete flag */</span>
-<a name="l00173"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#ga4960866bb23d5a3a6c73adca13683c69">00173</a> <span class="preprocessor">#define LL_DMA_IFCR_CHTIF6                DMA_IFCR_CHTIF6       </span><span class="comment">/*!&lt; Channel 6 half transfer flag     */</span>
-<a name="l00174"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#gaf2d97b6eff82201685e67ef82ae69dda">00174</a> <span class="preprocessor">#define LL_DMA_IFCR_CTEIF6                DMA_IFCR_CTEIF6       </span><span class="comment">/*!&lt; Channel 6 transfer error flag    */</span>
-<a name="l00175"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#gadaab29f693334a73e71e723a46a5ece1">00175</a> <span class="preprocessor">#define LL_DMA_IFCR_CGIF7                 DMA_IFCR_CGIF7        </span><span class="comment">/*!&lt; Channel 7 global flag            */</span>
-<a name="l00176"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#ga224e839d0799258b1bd8db9b07929c48">00176</a> <span class="preprocessor">#define LL_DMA_IFCR_CTCIF7                DMA_IFCR_CTCIF7       </span><span class="comment">/*!&lt; Channel 7 transfer complete flag */</span>
-<a name="l00177"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#gae9fdd75397655286d0ece7b6ce5156bc">00177</a> <span class="preprocessor">#define LL_DMA_IFCR_CHTIF7                DMA_IFCR_CHTIF7       </span><span class="comment">/*!&lt; Channel 7 half transfer flag     */</span>
-<a name="l00178"></a><a class="code" href="group__DMA__LL__EC__CLEAR__FLAG.html#gae632b99295091e25eef09e90a7900ef8">00178</a> <span class="preprocessor">#define LL_DMA_IFCR_CTEIF7                DMA_IFCR_CTEIF7       </span><span class="comment">/*!&lt; Channel 7 transfer error flag    */</span>
+<a name="l00151"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#ga6f8c4fd469a1c7358554bd811834a323">00151</a> <span class="preprocessor">#define LL_DMA_IFCR_CGIF1                 DMA_IFCR_CGIF1        </span><span class="comment">/*!&lt; Channel 1 global flag            */</span>
+<a name="l00152"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#gaee921fa72064741c849198bcb9c8a726">00152</a> <span class="preprocessor">#define LL_DMA_IFCR_CTCIF1                DMA_IFCR_CTCIF1       </span><span class="comment">/*!&lt; Channel 1 transfer complete flag */</span>
+<a name="l00153"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#ga7455a8c663ef8a90fc4bfeac691c4b4b">00153</a> <span class="preprocessor">#define LL_DMA_IFCR_CHTIF1                DMA_IFCR_CHTIF1       </span><span class="comment">/*!&lt; Channel 1 half transfer flag     */</span>
+<a name="l00154"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#ga49721e1d674ae0365b163c151ca828d9">00154</a> <span class="preprocessor">#define LL_DMA_IFCR_CTEIF1                DMA_IFCR_CTEIF1       </span><span class="comment">/*!&lt; Channel 1 transfer error flag    */</span>
+<a name="l00155"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#ga3a65652b323adde77c2a47b50cce5b30">00155</a> <span class="preprocessor">#define LL_DMA_IFCR_CGIF2                 DMA_IFCR_CGIF2        </span><span class="comment">/*!&lt; Channel 2 global flag            */</span>
+<a name="l00156"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#ga9c474b47cccae3d84b8ca48296106799">00156</a> <span class="preprocessor">#define LL_DMA_IFCR_CTCIF2                DMA_IFCR_CTCIF2       </span><span class="comment">/*!&lt; Channel 2 transfer complete flag */</span>
+<a name="l00157"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#ga42f7f2e5c724dc5bba364b5e07c28cef">00157</a> <span class="preprocessor">#define LL_DMA_IFCR_CHTIF2                DMA_IFCR_CHTIF2       </span><span class="comment">/*!&lt; Channel 2 half transfer flag     */</span>
+<a name="l00158"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#ga7697c3465d409ac283a22a10677aefeb">00158</a> <span class="preprocessor">#define LL_DMA_IFCR_CTEIF2                DMA_IFCR_CTEIF2       </span><span class="comment">/*!&lt; Channel 2 transfer error flag    */</span>
+<a name="l00159"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#ga11c909369fc0ad0f293d8fd55e1f9802">00159</a> <span class="preprocessor">#define LL_DMA_IFCR_CGIF3                 DMA_IFCR_CGIF3        </span><span class="comment">/*!&lt; Channel 3 global flag            */</span>
+<a name="l00160"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#gac7fa263604a248b27bff5d4f3762b128">00160</a> <span class="preprocessor">#define LL_DMA_IFCR_CTCIF3                DMA_IFCR_CTCIF3       </span><span class="comment">/*!&lt; Channel 3 transfer complete flag */</span>
+<a name="l00161"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#ga4b5e344b470bfbb9888390c33aba7dc8">00161</a> <span class="preprocessor">#define LL_DMA_IFCR_CHTIF3                DMA_IFCR_CHTIF3       </span><span class="comment">/*!&lt; Channel 3 half transfer flag     */</span>
+<a name="l00162"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#ga293eb151a26f875a2bcdbb8960a119e8">00162</a> <span class="preprocessor">#define LL_DMA_IFCR_CTEIF3                DMA_IFCR_CTEIF3       </span><span class="comment">/*!&lt; Channel 3 transfer error flag    */</span>
+<a name="l00163"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#ga168481f9dc6622dadcdb390ece9cf643">00163</a> <span class="preprocessor">#define LL_DMA_IFCR_CGIF4                 DMA_IFCR_CGIF4        </span><span class="comment">/*!&lt; Channel 4 global flag            */</span>
+<a name="l00164"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#ga011c4281fec448ac2f5e4a247f1bf82f">00164</a> <span class="preprocessor">#define LL_DMA_IFCR_CTCIF4                DMA_IFCR_CTCIF4       </span><span class="comment">/*!&lt; Channel 4 transfer complete flag */</span>
+<a name="l00165"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#gaef8f62df9372980a36d4087f694c7e79">00165</a> <span class="preprocessor">#define LL_DMA_IFCR_CHTIF4                DMA_IFCR_CHTIF4       </span><span class="comment">/*!&lt; Channel 4 half transfer flag     */</span>
+<a name="l00166"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#ga0f02420d077513e65d70d45ba3cdd4ac">00166</a> <span class="preprocessor">#define LL_DMA_IFCR_CTEIF4                DMA_IFCR_CTEIF4       </span><span class="comment">/*!&lt; Channel 4 transfer error flag    */</span>
+<a name="l00167"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#ga05363bac1d08a905d9a350410e21ae28">00167</a> <span class="preprocessor">#define LL_DMA_IFCR_CGIF5                 DMA_IFCR_CGIF5        </span><span class="comment">/*!&lt; Channel 5 global flag            */</span>
+<a name="l00168"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#gaf96aa873380a8f7724cc4f684268ab87">00168</a> <span class="preprocessor">#define LL_DMA_IFCR_CTCIF5                DMA_IFCR_CTCIF5       </span><span class="comment">/*!&lt; Channel 5 transfer complete flag */</span>
+<a name="l00169"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#ga0ace884b8e2e5daec7f417a19e6caf41">00169</a> <span class="preprocessor">#define LL_DMA_IFCR_CHTIF5                DMA_IFCR_CHTIF5       </span><span class="comment">/*!&lt; Channel 5 half transfer flag     */</span>
+<a name="l00170"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#gab58782a4389c6d58cff2226d5ca6d8c1">00170</a> <span class="preprocessor">#define LL_DMA_IFCR_CTEIF5                DMA_IFCR_CTEIF5       </span><span class="comment">/*!&lt; Channel 5 transfer error flag    */</span>
+<a name="l00171"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#ga2c93aba0e00c48b1aab3e1a18f76bf3a">00171</a> <span class="preprocessor">#define LL_DMA_IFCR_CGIF6                 DMA_IFCR_CGIF6        </span><span class="comment">/*!&lt; Channel 6 global flag            */</span>
+<a name="l00172"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#ga3b7902d43f33451fa32493808bbafd44">00172</a> <span class="preprocessor">#define LL_DMA_IFCR_CTCIF6                DMA_IFCR_CTCIF6       </span><span class="comment">/*!&lt; Channel 6 transfer complete flag */</span>
+<a name="l00173"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#ga4960866bb23d5a3a6c73adca13683c69">00173</a> <span class="preprocessor">#define LL_DMA_IFCR_CHTIF6                DMA_IFCR_CHTIF6       </span><span class="comment">/*!&lt; Channel 6 half transfer flag     */</span>
+<a name="l00174"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#gaf2d97b6eff82201685e67ef82ae69dda">00174</a> <span class="preprocessor">#define LL_DMA_IFCR_CTEIF6                DMA_IFCR_CTEIF6       </span><span class="comment">/*!&lt; Channel 6 transfer error flag    */</span>
+<a name="l00175"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#gadaab29f693334a73e71e723a46a5ece1">00175</a> <span class="preprocessor">#define LL_DMA_IFCR_CGIF7                 DMA_IFCR_CGIF7        </span><span class="comment">/*!&lt; Channel 7 global flag            */</span>
+<a name="l00176"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#ga224e839d0799258b1bd8db9b07929c48">00176</a> <span class="preprocessor">#define LL_DMA_IFCR_CTCIF7                DMA_IFCR_CTCIF7       </span><span class="comment">/*!&lt; Channel 7 transfer complete flag */</span>
+<a name="l00177"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#gae9fdd75397655286d0ece7b6ce5156bc">00177</a> <span class="preprocessor">#define LL_DMA_IFCR_CHTIF7                DMA_IFCR_CHTIF7       </span><span class="comment">/*!&lt; Channel 7 half transfer flag     */</span>
+<a name="l00178"></a><a class="code" href="group/group__DMA__LL__EC__CLEAR__FLAG.html#gae632b99295091e25eef09e90a7900ef8">00178</a> <span class="preprocessor">#define LL_DMA_IFCR_CTEIF7                DMA_IFCR_CTEIF7       </span><span class="comment">/*!&lt; Channel 7 transfer error flag    */</span>
 <a name="l00179"></a>00179 <span class="comment">/**</span>
 <a name="l00180"></a>00180 <span class="comment">  * @}</span>
 <a name="l00181"></a>00181 <span class="comment">  */</span>
@@ -251,34 +251,34 @@
 <a name="l00184"></a>00184 <span class="comment">  * @brief    Flags defines which can be used with LL_DMA_ReadReg function</span>
 <a name="l00185"></a>00185 <span class="comment">  * @{</span>
 <a name="l00186"></a>00186 <span class="comment">  */</span>
-<a name="l00187"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#gabd51561704e2fefc571a78df5943fc21">00187</a> <span class="preprocessor">#define LL_DMA_ISR_GIF1                   DMA_ISR_GIF1          </span><span class="comment">/*!&lt; Channel 1 global flag            */</span>
-<a name="l00188"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#ga99ae17d8963ce0ef39441ab196d9f5ea">00188</a> <span class="preprocessor">#define LL_DMA_ISR_TCIF1                  DMA_ISR_TCIF1         </span><span class="comment">/*!&lt; Channel 1 transfer complete flag */</span>
-<a name="l00189"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#ga082dc2cefd7aa7717bc08d0b469b7ebb">00189</a> <span class="preprocessor">#define LL_DMA_ISR_HTIF1                  DMA_ISR_HTIF1         </span><span class="comment">/*!&lt; Channel 1 half transfer flag     */</span>
-<a name="l00190"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#ga9047c6f6da5044d1f26d4eba3da4416c">00190</a> <span class="preprocessor">#define LL_DMA_ISR_TEIF1                  DMA_ISR_TEIF1         </span><span class="comment">/*!&lt; Channel 1 transfer error flag    */</span>
-<a name="l00191"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#ga15df0abf81d6a514893e04e248547360">00191</a> <span class="preprocessor">#define LL_DMA_ISR_GIF2                   DMA_ISR_GIF2          </span><span class="comment">/*!&lt; Channel 2 global flag            */</span>
-<a name="l00192"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#ga4d69c64ae422515fb54afab6cdf26e72">00192</a> <span class="preprocessor">#define LL_DMA_ISR_TCIF2                  DMA_ISR_TCIF2         </span><span class="comment">/*!&lt; Channel 2 transfer complete flag */</span>
-<a name="l00193"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#ga55d638428b607b4bb97d5a7a22a47a68">00193</a> <span class="preprocessor">#define LL_DMA_ISR_HTIF2                  DMA_ISR_HTIF2         </span><span class="comment">/*!&lt; Channel 2 half transfer flag     */</span>
-<a name="l00194"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#gad919f2f98b11648c89edb1b81c388bb8">00194</a> <span class="preprocessor">#define LL_DMA_ISR_TEIF2                  DMA_ISR_TEIF2         </span><span class="comment">/*!&lt; Channel 2 transfer error flag    */</span>
-<a name="l00195"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#gaa77a586ec12381462326846e3f6ea443">00195</a> <span class="preprocessor">#define LL_DMA_ISR_GIF3                   DMA_ISR_GIF3          </span><span class="comment">/*!&lt; Channel 3 global flag            */</span>
-<a name="l00196"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#gaccaeaa0b7db5417f06d9e1fe8e2d3a4f">00196</a> <span class="preprocessor">#define LL_DMA_ISR_TCIF3                  DMA_ISR_TCIF3         </span><span class="comment">/*!&lt; Channel 3 transfer complete flag */</span>
-<a name="l00197"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#gac7e7887c75a980765e597ecbba7da853">00197</a> <span class="preprocessor">#define LL_DMA_ISR_HTIF3                  DMA_ISR_HTIF3         </span><span class="comment">/*!&lt; Channel 3 half transfer flag     */</span>
-<a name="l00198"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#gab1d607632d8fe1d409c5b5d9f899e937">00198</a> <span class="preprocessor">#define LL_DMA_ISR_TEIF3                  DMA_ISR_TEIF3         </span><span class="comment">/*!&lt; Channel 3 transfer error flag    */</span>
-<a name="l00199"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#ga459d76044caa81bf366cdd9d66b51a13">00199</a> <span class="preprocessor">#define LL_DMA_ISR_GIF4                   DMA_ISR_GIF4          </span><span class="comment">/*!&lt; Channel 4 global flag            */</span>
-<a name="l00200"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#gadd8d722dc73d1d3db2394456794af5cd">00200</a> <span class="preprocessor">#define LL_DMA_ISR_TCIF4                  DMA_ISR_TCIF4         </span><span class="comment">/*!&lt; Channel 4 transfer complete flag */</span>
-<a name="l00201"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#ga86d65d16a81b4b3fc28c00770409a505">00201</a> <span class="preprocessor">#define LL_DMA_ISR_HTIF4                  DMA_ISR_HTIF4         </span><span class="comment">/*!&lt; Channel 4 half transfer flag     */</span>
-<a name="l00202"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#ga6a9a2c624ca8a2751510968d24ff7a30">00202</a> <span class="preprocessor">#define LL_DMA_ISR_TEIF4                  DMA_ISR_TEIF4         </span><span class="comment">/*!&lt; Channel 4 transfer error flag    */</span>
-<a name="l00203"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#gaf02d49820e64e38e321b1627656f95da">00203</a> <span class="preprocessor">#define LL_DMA_ISR_GIF5                   DMA_ISR_GIF5          </span><span class="comment">/*!&lt; Channel 5 global flag            */</span>
-<a name="l00204"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#gaf3e5640e6bdf009bbe29e2a363424081">00204</a> <span class="preprocessor">#define LL_DMA_ISR_TCIF5                  DMA_ISR_TCIF5         </span><span class="comment">/*!&lt; Channel 5 transfer complete flag */</span>
-<a name="l00205"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#ga2369e79c615fdc3896fdb31ebc86f78d">00205</a> <span class="preprocessor">#define LL_DMA_ISR_HTIF5                  DMA_ISR_HTIF5         </span><span class="comment">/*!&lt; Channel 5 half transfer flag     */</span>
-<a name="l00206"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#ga5ce654e75ec912dff1e0bf7d45f89ee9">00206</a> <span class="preprocessor">#define LL_DMA_ISR_TEIF5                  DMA_ISR_TEIF5         </span><span class="comment">/*!&lt; Channel 5 transfer error flag    */</span>
-<a name="l00207"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#ga978d547648b295091db2609a6e1fea69">00207</a> <span class="preprocessor">#define LL_DMA_ISR_GIF6                   DMA_ISR_GIF6          </span><span class="comment">/*!&lt; Channel 6 global flag            */</span>
-<a name="l00208"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#ga0039ae4d6894ddb9d71a60915c9c75bf">00208</a> <span class="preprocessor">#define LL_DMA_ISR_TCIF6                  DMA_ISR_TCIF6         </span><span class="comment">/*!&lt; Channel 6 transfer complete flag */</span>
-<a name="l00209"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#ga12ffb81596c26c98939b810d571680f0">00209</a> <span class="preprocessor">#define LL_DMA_ISR_HTIF6                  DMA_ISR_HTIF6         </span><span class="comment">/*!&lt; Channel 6 half transfer flag     */</span>
-<a name="l00210"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#ga27773365556eecf1a362582d30440b51">00210</a> <span class="preprocessor">#define LL_DMA_ISR_TEIF6                  DMA_ISR_TEIF6         </span><span class="comment">/*!&lt; Channel 6 transfer error flag    */</span>
-<a name="l00211"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#ga258f73e8077f4cbc3edf2ba420670441">00211</a> <span class="preprocessor">#define LL_DMA_ISR_GIF7                   DMA_ISR_GIF7          </span><span class="comment">/*!&lt; Channel 7 global flag            */</span>
-<a name="l00212"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#ga6f76d5aa33e0936e840cfa481ae77aef">00212</a> <span class="preprocessor">#define LL_DMA_ISR_TCIF7                  DMA_ISR_TCIF7         </span><span class="comment">/*!&lt; Channel 7 transfer complete flag */</span>
-<a name="l00213"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#ga3813dba7ac644e5ef39c969c1e0760af">00213</a> <span class="preprocessor">#define LL_DMA_ISR_HTIF7                  DMA_ISR_HTIF7         </span><span class="comment">/*!&lt; Channel 7 half transfer flag     */</span>
-<a name="l00214"></a><a class="code" href="group__DMA__LL__EC__GET__FLAG.html#ga21b096b39c75ee25fcce9c6e5c91e099">00214</a> <span class="preprocessor">#define LL_DMA_ISR_TEIF7                  DMA_ISR_TEIF7         </span><span class="comment">/*!&lt; Channel 7 transfer error flag    */</span>
+<a name="l00187"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#gabd51561704e2fefc571a78df5943fc21">00187</a> <span class="preprocessor">#define LL_DMA_ISR_GIF1                   DMA_ISR_GIF1          </span><span class="comment">/*!&lt; Channel 1 global flag            */</span>
+<a name="l00188"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#ga99ae17d8963ce0ef39441ab196d9f5ea">00188</a> <span class="preprocessor">#define LL_DMA_ISR_TCIF1                  DMA_ISR_TCIF1         </span><span class="comment">/*!&lt; Channel 1 transfer complete flag */</span>
+<a name="l00189"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#ga082dc2cefd7aa7717bc08d0b469b7ebb">00189</a> <span class="preprocessor">#define LL_DMA_ISR_HTIF1                  DMA_ISR_HTIF1         </span><span class="comment">/*!&lt; Channel 1 half transfer flag     */</span>
+<a name="l00190"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#ga9047c6f6da5044d1f26d4eba3da4416c">00190</a> <span class="preprocessor">#define LL_DMA_ISR_TEIF1                  DMA_ISR_TEIF1         </span><span class="comment">/*!&lt; Channel 1 transfer error flag    */</span>
+<a name="l00191"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#ga15df0abf81d6a514893e04e248547360">00191</a> <span class="preprocessor">#define LL_DMA_ISR_GIF2                   DMA_ISR_GIF2          </span><span class="comment">/*!&lt; Channel 2 global flag            */</span>
+<a name="l00192"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#ga4d69c64ae422515fb54afab6cdf26e72">00192</a> <span class="preprocessor">#define LL_DMA_ISR_TCIF2                  DMA_ISR_TCIF2         </span><span class="comment">/*!&lt; Channel 2 transfer complete flag */</span>
+<a name="l00193"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#ga55d638428b607b4bb97d5a7a22a47a68">00193</a> <span class="preprocessor">#define LL_DMA_ISR_HTIF2                  DMA_ISR_HTIF2         </span><span class="comment">/*!&lt; Channel 2 half transfer flag     */</span>
+<a name="l00194"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#gad919f2f98b11648c89edb1b81c388bb8">00194</a> <span class="preprocessor">#define LL_DMA_ISR_TEIF2                  DMA_ISR_TEIF2         </span><span class="comment">/*!&lt; Channel 2 transfer error flag    */</span>
+<a name="l00195"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#gaa77a586ec12381462326846e3f6ea443">00195</a> <span class="preprocessor">#define LL_DMA_ISR_GIF3                   DMA_ISR_GIF3          </span><span class="comment">/*!&lt; Channel 3 global flag            */</span>
+<a name="l00196"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#gaccaeaa0b7db5417f06d9e1fe8e2d3a4f">00196</a> <span class="preprocessor">#define LL_DMA_ISR_TCIF3                  DMA_ISR_TCIF3         </span><span class="comment">/*!&lt; Channel 3 transfer complete flag */</span>
+<a name="l00197"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#gac7e7887c75a980765e597ecbba7da853">00197</a> <span class="preprocessor">#define LL_DMA_ISR_HTIF3                  DMA_ISR_HTIF3         </span><span class="comment">/*!&lt; Channel 3 half transfer flag     */</span>
+<a name="l00198"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#gab1d607632d8fe1d409c5b5d9f899e937">00198</a> <span class="preprocessor">#define LL_DMA_ISR_TEIF3                  DMA_ISR_TEIF3         </span><span class="comment">/*!&lt; Channel 3 transfer error flag    */</span>
+<a name="l00199"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#ga459d76044caa81bf366cdd9d66b51a13">00199</a> <span class="preprocessor">#define LL_DMA_ISR_GIF4                   DMA_ISR_GIF4          </span><span class="comment">/*!&lt; Channel 4 global flag            */</span>
+<a name="l00200"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#gadd8d722dc73d1d3db2394456794af5cd">00200</a> <span class="preprocessor">#define LL_DMA_ISR_TCIF4                  DMA_ISR_TCIF4         </span><span class="comment">/*!&lt; Channel 4 transfer complete flag */</span>
+<a name="l00201"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#ga86d65d16a81b4b3fc28c00770409a505">00201</a> <span class="preprocessor">#define LL_DMA_ISR_HTIF4                  DMA_ISR_HTIF4         </span><span class="comment">/*!&lt; Channel 4 half transfer flag     */</span>
+<a name="l00202"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#ga6a9a2c624ca8a2751510968d24ff7a30">00202</a> <span class="preprocessor">#define LL_DMA_ISR_TEIF4                  DMA_ISR_TEIF4         </span><span class="comment">/*!&lt; Channel 4 transfer error flag    */</span>
+<a name="l00203"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#gaf02d49820e64e38e321b1627656f95da">00203</a> <span class="preprocessor">#define LL_DMA_ISR_GIF5                   DMA_ISR_GIF5          </span><span class="comment">/*!&lt; Channel 5 global flag            */</span>
+<a name="l00204"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#gaf3e5640e6bdf009bbe29e2a363424081">00204</a> <span class="preprocessor">#define LL_DMA_ISR_TCIF5                  DMA_ISR_TCIF5         </span><span class="comment">/*!&lt; Channel 5 transfer complete flag */</span>
+<a name="l00205"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#ga2369e79c615fdc3896fdb31ebc86f78d">00205</a> <span class="preprocessor">#define LL_DMA_ISR_HTIF5                  DMA_ISR_HTIF5         </span><span class="comment">/*!&lt; Channel 5 half transfer flag     */</span>
+<a name="l00206"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#ga5ce654e75ec912dff1e0bf7d45f89ee9">00206</a> <span class="preprocessor">#define LL_DMA_ISR_TEIF5                  DMA_ISR_TEIF5         </span><span class="comment">/*!&lt; Channel 5 transfer error flag    */</span>
+<a name="l00207"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#ga978d547648b295091db2609a6e1fea69">00207</a> <span class="preprocessor">#define LL_DMA_ISR_GIF6                   DMA_ISR_GIF6          </span><span class="comment">/*!&lt; Channel 6 global flag            */</span>
+<a name="l00208"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#ga0039ae4d6894ddb9d71a60915c9c75bf">00208</a> <span class="preprocessor">#define LL_DMA_ISR_TCIF6                  DMA_ISR_TCIF6         </span><span class="comment">/*!&lt; Channel 6 transfer complete flag */</span>
+<a name="l00209"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#ga12ffb81596c26c98939b810d571680f0">00209</a> <span class="preprocessor">#define LL_DMA_ISR_HTIF6                  DMA_ISR_HTIF6         </span><span class="comment">/*!&lt; Channel 6 half transfer flag     */</span>
+<a name="l00210"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#ga27773365556eecf1a362582d30440b51">00210</a> <span class="preprocessor">#define LL_DMA_ISR_TEIF6                  DMA_ISR_TEIF6         </span><span class="comment">/*!&lt; Channel 6 transfer error flag    */</span>
+<a name="l00211"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#ga258f73e8077f4cbc3edf2ba420670441">00211</a> <span class="preprocessor">#define LL_DMA_ISR_GIF7                   DMA_ISR_GIF7          </span><span class="comment">/*!&lt; Channel 7 global flag            */</span>
+<a name="l00212"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#ga6f76d5aa33e0936e840cfa481ae77aef">00212</a> <span class="preprocessor">#define LL_DMA_ISR_TCIF7                  DMA_ISR_TCIF7         </span><span class="comment">/*!&lt; Channel 7 transfer complete flag */</span>
+<a name="l00213"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#ga3813dba7ac644e5ef39c969c1e0760af">00213</a> <span class="preprocessor">#define LL_DMA_ISR_HTIF7                  DMA_ISR_HTIF7         </span><span class="comment">/*!&lt; Channel 7 half transfer flag     */</span>
+<a name="l00214"></a><a class="code" href="group/group__DMA__LL__EC__GET__FLAG.html#ga21b096b39c75ee25fcce9c6e5c91e099">00214</a> <span class="preprocessor">#define LL_DMA_ISR_TEIF7                  DMA_ISR_TEIF7         </span><span class="comment">/*!&lt; Channel 7 transfer error flag    */</span>
 <a name="l00215"></a>00215 <span class="comment">/**</span>
 <a name="l00216"></a>00216 <span class="comment">  * @}</span>
 <a name="l00217"></a>00217 <span class="comment">  */</span>
@@ -287,9 +287,9 @@
 <a name="l00220"></a>00220 <span class="comment">  * @brief    IT defines which can be used with LL_DMA_ReadReg and  LL_DMA_WriteReg functions</span>
 <a name="l00221"></a>00221 <span class="comment">  * @{</span>
 <a name="l00222"></a>00222 <span class="comment">  */</span>
-<a name="l00223"></a><a class="code" href="group__DMA__LL__EC__IT.html#ga15c3c75deb511678183a6eb6b9cc3a99">00223</a> <span class="preprocessor">#define LL_DMA_CCR_TCIE                   DMA_CCR_TCIE          </span><span class="comment">/*!&lt; Transfer complete interrupt */</span>
-<a name="l00224"></a><a class="code" href="group__DMA__LL__EC__IT.html#gaa9d9bd8a9304bfe6811e81c5d686a70e">00224</a> <span class="preprocessor">#define LL_DMA_CCR_HTIE                   DMA_CCR_HTIE          </span><span class="comment">/*!&lt; Half Transfer interrupt     */</span>
-<a name="l00225"></a><a class="code" href="group__DMA__LL__EC__IT.html#ga18ee2780c19a14ad1576b5c8483c6e0e">00225</a> <span class="preprocessor">#define LL_DMA_CCR_TEIE                   DMA_CCR_TEIE          </span><span class="comment">/*!&lt; Transfer error interrupt    */</span>
+<a name="l00223"></a><a class="code" href="group/group__DMA__LL__EC__IT.html#ga15c3c75deb511678183a6eb6b9cc3a99">00223</a> <span class="preprocessor">#define LL_DMA_CCR_TCIE                   DMA_CCR_TCIE          </span><span class="comment">/*!&lt; Transfer complete interrupt */</span>
+<a name="l00224"></a><a class="code" href="group/group__DMA__LL__EC__IT.html#gaa9d9bd8a9304bfe6811e81c5d686a70e">00224</a> <span class="preprocessor">#define LL_DMA_CCR_HTIE                   DMA_CCR_HTIE          </span><span class="comment">/*!&lt; Half Transfer interrupt     */</span>
+<a name="l00225"></a><a class="code" href="group/group__DMA__LL__EC__IT.html#ga18ee2780c19a14ad1576b5c8483c6e0e">00225</a> <span class="preprocessor">#define LL_DMA_CCR_TEIE                   DMA_CCR_TEIE          </span><span class="comment">/*!&lt; Transfer error interrupt    */</span>
 <a name="l00226"></a>00226 <span class="comment">/**</span>
 <a name="l00227"></a>00227 <span class="comment">  * @}</span>
 <a name="l00228"></a>00228 <span class="comment">  */</span>
@@ -297,15 +297,15 @@
 <a name="l00230"></a>00230 <span class="comment">/** @defgroup DMA_LL_EC_CHANNEL CHANNEL</span>
 <a name="l00231"></a>00231 <span class="comment">  * @{</span>
 <a name="l00232"></a>00232 <span class="comment">  */</span>
-<a name="l00233"></a><a class="code" href="group__DMA__LL__EC__CHANNEL.html#ga3b663261ca351fcad84df9fed17f1d44">00233</a> <span class="preprocessor">#define LL_DMA_CHANNEL_1                  0x00000001U </span><span class="comment">/*!&lt; DMA Channel 1 */</span>
-<a name="l00234"></a><a class="code" href="group__DMA__LL__EC__CHANNEL.html#ga04666e2cba3a2cbc164f9482d5f0bc5c">00234</a> <span class="preprocessor">#define LL_DMA_CHANNEL_2                  0x00000002U </span><span class="comment">/*!&lt; DMA Channel 2 */</span>
-<a name="l00235"></a><a class="code" href="group__DMA__LL__EC__CHANNEL.html#gacb803bfa50f9413e15e1c141d78c4c13">00235</a> <span class="preprocessor">#define LL_DMA_CHANNEL_3                  0x00000003U </span><span class="comment">/*!&lt; DMA Channel 3 */</span>
-<a name="l00236"></a><a class="code" href="group__DMA__LL__EC__CHANNEL.html#gacfa79c7e9cf545ea236c7d615545c573">00236</a> <span class="preprocessor">#define LL_DMA_CHANNEL_4                  0x00000004U </span><span class="comment">/*!&lt; DMA Channel 4 */</span>
-<a name="l00237"></a><a class="code" href="group__DMA__LL__EC__CHANNEL.html#ga029ed049accb0c851617101d14f18e4d">00237</a> <span class="preprocessor">#define LL_DMA_CHANNEL_5                  0x00000005U </span><span class="comment">/*!&lt; DMA Channel 5 */</span>
-<a name="l00238"></a><a class="code" href="group__DMA__LL__EC__CHANNEL.html#gaaeb217bdb966acfbf4f189816d77a8c7">00238</a> <span class="preprocessor">#define LL_DMA_CHANNEL_6                  0x00000006U </span><span class="comment">/*!&lt; DMA Channel 6 */</span>
-<a name="l00239"></a><a class="code" href="group__DMA__LL__EC__CHANNEL.html#ga4d42ca4b9a67f9e597a132e9020cb16f">00239</a> <span class="preprocessor">#define LL_DMA_CHANNEL_7                  0x00000007U </span><span class="comment">/*!&lt; DMA Channel 7 */</span>
+<a name="l00233"></a><a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#ga3b663261ca351fcad84df9fed17f1d44">00233</a> <span class="preprocessor">#define LL_DMA_CHANNEL_1                  0x00000001U </span><span class="comment">/*!&lt; DMA Channel 1 */</span>
+<a name="l00234"></a><a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#ga04666e2cba3a2cbc164f9482d5f0bc5c">00234</a> <span class="preprocessor">#define LL_DMA_CHANNEL_2                  0x00000002U </span><span class="comment">/*!&lt; DMA Channel 2 */</span>
+<a name="l00235"></a><a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#gacb803bfa50f9413e15e1c141d78c4c13">00235</a> <span class="preprocessor">#define LL_DMA_CHANNEL_3                  0x00000003U </span><span class="comment">/*!&lt; DMA Channel 3 */</span>
+<a name="l00236"></a><a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#gacfa79c7e9cf545ea236c7d615545c573">00236</a> <span class="preprocessor">#define LL_DMA_CHANNEL_4                  0x00000004U </span><span class="comment">/*!&lt; DMA Channel 4 */</span>
+<a name="l00237"></a><a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#ga029ed049accb0c851617101d14f18e4d">00237</a> <span class="preprocessor">#define LL_DMA_CHANNEL_5                  0x00000005U </span><span class="comment">/*!&lt; DMA Channel 5 */</span>
+<a name="l00238"></a><a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#gaaeb217bdb966acfbf4f189816d77a8c7">00238</a> <span class="preprocessor">#define LL_DMA_CHANNEL_6                  0x00000006U </span><span class="comment">/*!&lt; DMA Channel 6 */</span>
+<a name="l00239"></a><a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#ga4d42ca4b9a67f9e597a132e9020cb16f">00239</a> <span class="preprocessor">#define LL_DMA_CHANNEL_7                  0x00000007U </span><span class="comment">/*!&lt; DMA Channel 7 */</span>
 <a name="l00240"></a>00240 <span class="preprocessor">#if defined(USE_FULL_LL_DRIVER)</span>
-<a name="l00241"></a><a class="code" href="group__DMA__LL__EC__CHANNEL.html#gaa8a789491915dcd344730ecfec34ea31">00241</a> <span class="preprocessor"></span><span class="preprocessor">#define LL_DMA_CHANNEL_ALL                0xFFFF0000U </span><span class="comment">/*!&lt; DMA Channel all (used only for function @ref LL_DMA_DeInit(). */</span>
+<a name="l00241"></a><a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#gaa8a789491915dcd344730ecfec34ea31">00241</a> <span class="preprocessor"></span><span class="preprocessor">#define LL_DMA_CHANNEL_ALL                0xFFFF0000U </span><span class="comment">/*!&lt; DMA Channel all (used only for function @ref LL_DMA_DeInit(). */</span>
 <a name="l00242"></a>00242 <span class="preprocessor">#endif </span><span class="comment">/*USE_FULL_LL_DRIVER*/</span>
 <a name="l00243"></a>00243 <span class="comment">/**</span>
 <a name="l00244"></a>00244 <span class="comment">  * @}</span>
@@ -314,9 +314,9 @@
 <a name="l00247"></a>00247 <span class="comment">/** @defgroup DMA_LL_EC_DIRECTION Transfer Direction</span>
 <a name="l00248"></a>00248 <span class="comment">  * @{</span>
 <a name="l00249"></a>00249 <span class="comment">  */</span>
-<a name="l00250"></a><a class="code" href="group__DMA__LL__EC__DIRECTION.html#ga69308b82563ebaa885f3669d2759a3f6">00250</a> <span class="preprocessor">#define LL_DMA_DIRECTION_PERIPH_TO_MEMORY 0x00000000U             </span><span class="comment">/*!&lt; Peripheral to memory direction */</span>
-<a name="l00251"></a><a class="code" href="group__DMA__LL__EC__DIRECTION.html#ga97043179ce33099cc7690f5ec8359afc">00251</a> <span class="preprocessor">#define LL_DMA_DIRECTION_MEMORY_TO_PERIPH DMA_CCR_DIR             </span><span class="comment">/*!&lt; Memory to peripheral direction */</span>
-<a name="l00252"></a><a class="code" href="group__DMA__LL__EC__DIRECTION.html#ga4adf33adadc96b339738f826341e4f08">00252</a> <span class="preprocessor">#define LL_DMA_DIRECTION_MEMORY_TO_MEMORY DMA_CCR_MEM2MEM         </span><span class="comment">/*!&lt; Memory to memory direction     */</span>
+<a name="l00250"></a><a class="code" href="group/group__DMA__LL__EC__DIRECTION.html#ga69308b82563ebaa885f3669d2759a3f6">00250</a> <span class="preprocessor">#define LL_DMA_DIRECTION_PERIPH_TO_MEMORY 0x00000000U             </span><span class="comment">/*!&lt; Peripheral to memory direction */</span>
+<a name="l00251"></a><a class="code" href="group/group__DMA__LL__EC__DIRECTION.html#ga97043179ce33099cc7690f5ec8359afc">00251</a> <span class="preprocessor">#define LL_DMA_DIRECTION_MEMORY_TO_PERIPH DMA_CCR_DIR             </span><span class="comment">/*!&lt; Memory to peripheral direction */</span>
+<a name="l00252"></a><a class="code" href="group/group__DMA__LL__EC__DIRECTION.html#ga4adf33adadc96b339738f826341e4f08">00252</a> <span class="preprocessor">#define LL_DMA_DIRECTION_MEMORY_TO_MEMORY DMA_CCR_MEM2MEM         </span><span class="comment">/*!&lt; Memory to memory direction     */</span>
 <a name="l00253"></a>00253 <span class="comment">/**</span>
 <a name="l00254"></a>00254 <span class="comment">  * @}</span>
 <a name="l00255"></a>00255 <span class="comment">  */</span>
@@ -324,8 +324,8 @@
 <a name="l00257"></a>00257 <span class="comment">/** @defgroup DMA_LL_EC_MODE Transfer mode</span>
 <a name="l00258"></a>00258 <span class="comment">  * @{</span>
 <a name="l00259"></a>00259 <span class="comment">  */</span>
-<a name="l00260"></a><a class="code" href="group__DMA__LL__EC__MODE.html#ga52b0f9cd614b9c8ec76ddfdcdcb5e621">00260</a> <span class="preprocessor">#define LL_DMA_MODE_NORMAL                0x00000000U             </span><span class="comment">/*!&lt; Normal Mode                  */</span>
-<a name="l00261"></a><a class="code" href="group__DMA__LL__EC__MODE.html#ga5aee81344f1b90dace54e097bc528a8c">00261</a> <span class="preprocessor">#define LL_DMA_MODE_CIRCULAR              DMA_CCR_CIRC            </span><span class="comment">/*!&lt; Circular Mode                */</span>
+<a name="l00260"></a><a class="code" href="group/group__DMA__LL__EC__MODE.html#ga52b0f9cd614b9c8ec76ddfdcdcb5e621">00260</a> <span class="preprocessor">#define LL_DMA_MODE_NORMAL                0x00000000U             </span><span class="comment">/*!&lt; Normal Mode                  */</span>
+<a name="l00261"></a><a class="code" href="group/group__DMA__LL__EC__MODE.html#ga5aee81344f1b90dace54e097bc528a8c">00261</a> <span class="preprocessor">#define LL_DMA_MODE_CIRCULAR              DMA_CCR_CIRC            </span><span class="comment">/*!&lt; Circular Mode                */</span>
 <a name="l00262"></a>00262 <span class="comment">/**</span>
 <a name="l00263"></a>00263 <span class="comment">  * @}</span>
 <a name="l00264"></a>00264 <span class="comment">  */</span>
@@ -333,8 +333,8 @@
 <a name="l00266"></a>00266 <span class="comment">/** @defgroup DMA_LL_EC_PERIPH Peripheral increment mode</span>
 <a name="l00267"></a>00267 <span class="comment">  * @{</span>
 <a name="l00268"></a>00268 <span class="comment">  */</span>
-<a name="l00269"></a><a class="code" href="group__DMA__LL__EC__PERIPH.html#gae99340d3154d64ef90d5b5db03a428c8">00269</a> <span class="preprocessor">#define LL_DMA_PERIPH_INCREMENT           DMA_CCR_PINC            </span><span class="comment">/*!&lt; Peripheral increment mode Enable */</span>
-<a name="l00270"></a><a class="code" href="group__DMA__LL__EC__PERIPH.html#ga74d378ba2717be1aaa701b17522ee3ec">00270</a> <span class="preprocessor">#define LL_DMA_PERIPH_NOINCREMENT         0x00000000U             </span><span class="comment">/*!&lt; Peripheral increment mode Disable */</span>
+<a name="l00269"></a><a class="code" href="group/group__DMA__LL__EC__PERIPH.html#gae99340d3154d64ef90d5b5db03a428c8">00269</a> <span class="preprocessor">#define LL_DMA_PERIPH_INCREMENT           DMA_CCR_PINC            </span><span class="comment">/*!&lt; Peripheral increment mode Enable */</span>
+<a name="l00270"></a><a class="code" href="group/group__DMA__LL__EC__PERIPH.html#ga74d378ba2717be1aaa701b17522ee3ec">00270</a> <span class="preprocessor">#define LL_DMA_PERIPH_NOINCREMENT         0x00000000U             </span><span class="comment">/*!&lt; Peripheral increment mode Disable */</span>
 <a name="l00271"></a>00271 <span class="comment">/**</span>
 <a name="l00272"></a>00272 <span class="comment">  * @}</span>
 <a name="l00273"></a>00273 <span class="comment">  */</span>
@@ -342,8 +342,8 @@
 <a name="l00275"></a>00275 <span class="comment">/** @defgroup DMA_LL_EC_MEMORY Memory increment mode</span>
 <a name="l00276"></a>00276 <span class="comment">  * @{</span>
 <a name="l00277"></a>00277 <span class="comment">  */</span>
-<a name="l00278"></a><a class="code" href="group__DMA__LL__EC__MEMORY.html#ga21877612e94fe7bc11768162e2f6fc6d">00278</a> <span class="preprocessor">#define LL_DMA_MEMORY_INCREMENT           DMA_CCR_MINC            </span><span class="comment">/*!&lt; Memory increment mode Enable  */</span>
-<a name="l00279"></a><a class="code" href="group__DMA__LL__EC__MEMORY.html#ga30cd3328b641df857327673adc051d51">00279</a> <span class="preprocessor">#define LL_DMA_MEMORY_NOINCREMENT         0x00000000U             </span><span class="comment">/*!&lt; Memory increment mode Disable */</span>
+<a name="l00278"></a><a class="code" href="group/group__DMA__LL__EC__MEMORY.html#ga21877612e94fe7bc11768162e2f6fc6d">00278</a> <span class="preprocessor">#define LL_DMA_MEMORY_INCREMENT           DMA_CCR_MINC            </span><span class="comment">/*!&lt; Memory increment mode Enable  */</span>
+<a name="l00279"></a><a class="code" href="group/group__DMA__LL__EC__MEMORY.html#ga30cd3328b641df857327673adc051d51">00279</a> <span class="preprocessor">#define LL_DMA_MEMORY_NOINCREMENT         0x00000000U             </span><span class="comment">/*!&lt; Memory increment mode Disable */</span>
 <a name="l00280"></a>00280 <span class="comment">/**</span>
 <a name="l00281"></a>00281 <span class="comment">  * @}</span>
 <a name="l00282"></a>00282 <span class="comment">  */</span>
@@ -351,9 +351,9 @@
 <a name="l00284"></a>00284 <span class="comment">/** @defgroup DMA_LL_EC_PDATAALIGN Peripheral data alignment</span>
 <a name="l00285"></a>00285 <span class="comment">  * @{</span>
 <a name="l00286"></a>00286 <span class="comment">  */</span>
-<a name="l00287"></a><a class="code" href="group__DMA__LL__EC__PDATAALIGN.html#ga76eb242b1b21389847cef36f33518580">00287</a> <span class="preprocessor">#define LL_DMA_PDATAALIGN_BYTE            0x00000000U             </span><span class="comment">/*!&lt; Peripheral data alignment : Byte     */</span>
-<a name="l00288"></a><a class="code" href="group__DMA__LL__EC__PDATAALIGN.html#ga249ec0e64dbdd424569c0ad125ca84f3">00288</a> <span class="preprocessor">#define LL_DMA_PDATAALIGN_HALFWORD        DMA_CCR_PSIZE_0         </span><span class="comment">/*!&lt; Peripheral data alignment : HalfWord */</span>
-<a name="l00289"></a><a class="code" href="group__DMA__LL__EC__PDATAALIGN.html#ga9e0bffc65ae022fe45e8d25e80920bf1">00289</a> <span class="preprocessor">#define LL_DMA_PDATAALIGN_WORD            DMA_CCR_PSIZE_1         </span><span class="comment">/*!&lt; Peripheral data alignment : Word     */</span>
+<a name="l00287"></a><a class="code" href="group/group__DMA__LL__EC__PDATAALIGN.html#ga76eb242b1b21389847cef36f33518580">00287</a> <span class="preprocessor">#define LL_DMA_PDATAALIGN_BYTE            0x00000000U             </span><span class="comment">/*!&lt; Peripheral data alignment : Byte     */</span>
+<a name="l00288"></a><a class="code" href="group/group__DMA__LL__EC__PDATAALIGN.html#ga249ec0e64dbdd424569c0ad125ca84f3">00288</a> <span class="preprocessor">#define LL_DMA_PDATAALIGN_HALFWORD        DMA_CCR_PSIZE_0         </span><span class="comment">/*!&lt; Peripheral data alignment : HalfWord */</span>
+<a name="l00289"></a><a class="code" href="group/group__DMA__LL__EC__PDATAALIGN.html#ga9e0bffc65ae022fe45e8d25e80920bf1">00289</a> <span class="preprocessor">#define LL_DMA_PDATAALIGN_WORD            DMA_CCR_PSIZE_1         </span><span class="comment">/*!&lt; Peripheral data alignment : Word     */</span>
 <a name="l00290"></a>00290 <span class="comment">/**</span>
 <a name="l00291"></a>00291 <span class="comment">  * @}</span>
 <a name="l00292"></a>00292 <span class="comment">  */</span>
@@ -361,9 +361,9 @@
 <a name="l00294"></a>00294 <span class="comment">/** @defgroup DMA_LL_EC_MDATAALIGN Memory data alignment</span>
 <a name="l00295"></a>00295 <span class="comment">  * @{</span>
 <a name="l00296"></a>00296 <span class="comment">  */</span>
-<a name="l00297"></a><a class="code" href="group__DMA__LL__EC__MDATAALIGN.html#gacbd6bf165c1036ca9affba9083dfb45f">00297</a> <span class="preprocessor">#define LL_DMA_MDATAALIGN_BYTE            0x00000000U             </span><span class="comment">/*!&lt; Memory data alignment : Byte     */</span>
-<a name="l00298"></a><a class="code" href="group__DMA__LL__EC__MDATAALIGN.html#ga765ac33247b6f7ddfcd75c1be67ad0fe">00298</a> <span class="preprocessor">#define LL_DMA_MDATAALIGN_HALFWORD        DMA_CCR_MSIZE_0         </span><span class="comment">/*!&lt; Memory data alignment : HalfWord */</span>
-<a name="l00299"></a><a class="code" href="group__DMA__LL__EC__MDATAALIGN.html#gaf9ce5af49e321448de9dbc8d833f49ea">00299</a> <span class="preprocessor">#define LL_DMA_MDATAALIGN_WORD            DMA_CCR_MSIZE_1         </span><span class="comment">/*!&lt; Memory data alignment : Word     */</span>
+<a name="l00297"></a><a class="code" href="group/group__DMA__LL__EC__MDATAALIGN.html#gacbd6bf165c1036ca9affba9083dfb45f">00297</a> <span class="preprocessor">#define LL_DMA_MDATAALIGN_BYTE            0x00000000U             </span><span class="comment">/*!&lt; Memory data alignment : Byte     */</span>
+<a name="l00298"></a><a class="code" href="group/group__DMA__LL__EC__MDATAALIGN.html#ga765ac33247b6f7ddfcd75c1be67ad0fe">00298</a> <span class="preprocessor">#define LL_DMA_MDATAALIGN_HALFWORD        DMA_CCR_MSIZE_0         </span><span class="comment">/*!&lt; Memory data alignment : HalfWord */</span>
+<a name="l00299"></a><a class="code" href="group/group__DMA__LL__EC__MDATAALIGN.html#gaf9ce5af49e321448de9dbc8d833f49ea">00299</a> <span class="preprocessor">#define LL_DMA_MDATAALIGN_WORD            DMA_CCR_MSIZE_1         </span><span class="comment">/*!&lt; Memory data alignment : Word     */</span>
 <a name="l00300"></a>00300 <span class="comment">/**</span>
 <a name="l00301"></a>00301 <span class="comment">  * @}</span>
 <a name="l00302"></a>00302 <span class="comment">  */</span>
@@ -371,10 +371,10 @@
 <a name="l00304"></a>00304 <span class="comment">/** @defgroup DMA_LL_EC_PRIORITY Transfer Priority level</span>
 <a name="l00305"></a>00305 <span class="comment">  * @{</span>
 <a name="l00306"></a>00306 <span class="comment">  */</span>
-<a name="l00307"></a><a class="code" href="group__DMA__LL__EC__PRIORITY.html#ga0417f2f0e960eb39bbae3bd1af584bef">00307</a> <span class="preprocessor">#define LL_DMA_PRIORITY_LOW               0x00000000U             </span><span class="comment">/*!&lt; Priority level : Low       */</span>
-<a name="l00308"></a><a class="code" href="group__DMA__LL__EC__PRIORITY.html#ga36720c0137ef0428453c769d9248522a">00308</a> <span class="preprocessor">#define LL_DMA_PRIORITY_MEDIUM            DMA_CCR_PL_0            </span><span class="comment">/*!&lt; Priority level : Medium    */</span>
-<a name="l00309"></a><a class="code" href="group__DMA__LL__EC__PRIORITY.html#ga4b39559704c5c1ed7981ef41cd94818f">00309</a> <span class="preprocessor">#define LL_DMA_PRIORITY_HIGH              DMA_CCR_PL_1            </span><span class="comment">/*!&lt; Priority level : High      */</span>
-<a name="l00310"></a><a class="code" href="group__DMA__LL__EC__PRIORITY.html#ga242709b513fc38673668ee65e5009173">00310</a> <span class="preprocessor">#define LL_DMA_PRIORITY_VERYHIGH          DMA_CCR_PL              </span><span class="comment">/*!&lt; Priority level : Very_High */</span>
+<a name="l00307"></a><a class="code" href="group/group__DMA__LL__EC__PRIORITY.html#ga0417f2f0e960eb39bbae3bd1af584bef">00307</a> <span class="preprocessor">#define LL_DMA_PRIORITY_LOW               0x00000000U             </span><span class="comment">/*!&lt; Priority level : Low       */</span>
+<a name="l00308"></a><a class="code" href="group/group__DMA__LL__EC__PRIORITY.html#ga36720c0137ef0428453c769d9248522a">00308</a> <span class="preprocessor">#define LL_DMA_PRIORITY_MEDIUM            DMA_CCR_PL_0            </span><span class="comment">/*!&lt; Priority level : Medium    */</span>
+<a name="l00309"></a><a class="code" href="group/group__DMA__LL__EC__PRIORITY.html#ga4b39559704c5c1ed7981ef41cd94818f">00309</a> <span class="preprocessor">#define LL_DMA_PRIORITY_HIGH              DMA_CCR_PL_1            </span><span class="comment">/*!&lt; Priority level : High      */</span>
+<a name="l00310"></a><a class="code" href="group/group__DMA__LL__EC__PRIORITY.html#ga242709b513fc38673668ee65e5009173">00310</a> <span class="preprocessor">#define LL_DMA_PRIORITY_VERYHIGH          DMA_CCR_PL              </span><span class="comment">/*!&lt; Priority level : Very_High */</span>
 <a name="l00311"></a>00311 <span class="comment">/**</span>
 <a name="l00312"></a>00312 <span class="comment">  * @}</span>
 <a name="l00313"></a>00313 <span class="comment">  */</span>
@@ -398,7 +398,7 @@
 <a name="l00331"></a>00331 <span class="comment">  * @param  __VALUE__ Value to be written in the register</span>
 <a name="l00332"></a>00332 <span class="comment">  * @retval None</span>
 <a name="l00333"></a>00333 <span class="comment">  */</span>
-<a name="l00334"></a><a class="code" href="group__DMA__LL__EM__WRITE__READ.html#ga3b28ce081e0dffde0fb8b799b2a3b7c3">00334</a> <span class="preprocessor">#define LL_DMA_WriteReg(__INSTANCE__, __REG__, __VALUE__) WRITE_REG(__INSTANCE__-&gt;__REG__, (__VALUE__))</span>
+<a name="l00334"></a><a class="code" href="group/group__DMA__LL__EM__WRITE__READ.html#ga3b28ce081e0dffde0fb8b799b2a3b7c3">00334</a> <span class="preprocessor">#define LL_DMA_WriteReg(__INSTANCE__, __REG__, __VALUE__) WRITE_REG(__INSTANCE__-&gt;__REG__, (__VALUE__))</span>
 <a name="l00335"></a>00335 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00336"></a>00336 <span class="comment">/**</span>
 <a name="l00337"></a>00337 <span class="comment">  * @brief  Read a value in DMA register</span>
@@ -406,7 +406,7 @@
 <a name="l00339"></a>00339 <span class="comment">  * @param  __REG__ Register to be read</span>
 <a name="l00340"></a>00340 <span class="comment">  * @retval Register value</span>
 <a name="l00341"></a>00341 <span class="comment">  */</span>
-<a name="l00342"></a><a class="code" href="group__DMA__LL__EM__WRITE__READ.html#ga445f3f438dbcc42abf09cd729692e5f2">00342</a> <span class="preprocessor">#define LL_DMA_ReadReg(__INSTANCE__, __REG__) READ_REG(__INSTANCE__-&gt;__REG__)</span>
+<a name="l00342"></a><a class="code" href="group/group__DMA__LL__EM__WRITE__READ.html#ga445f3f438dbcc42abf09cd729692e5f2">00342</a> <span class="preprocessor">#define LL_DMA_ReadReg(__INSTANCE__, __REG__) READ_REG(__INSTANCE__-&gt;__REG__)</span>
 <a name="l00343"></a>00343 <span class="preprocessor"></span><span class="comment">/**</span>
 <a name="l00344"></a>00344 <span class="comment">  * @}</span>
 <a name="l00345"></a>00345 <span class="comment">  */</span>
@@ -421,7 +421,7 @@
 <a name="l00354"></a>00354 <span class="comment">  * @retval DMAx</span>
 <a name="l00355"></a>00355 <span class="comment">  */</span>
 <a name="l00356"></a>00356 <span class="preprocessor">#if defined(DMA2)</span>
-<a name="l00357"></a><a class="code" href="group__DMA__LL__EM__CONVERT__DMAxCHANNELy.html#gaecc67c5db4d1d81d679cf1996db9be51">00357</a> <span class="preprocessor"></span><span class="preprocessor">#define __LL_DMA_GET_INSTANCE(__CHANNEL_INSTANCE__)   \</span>
+<a name="l00357"></a><a class="code" href="group/group__DMA__LL__EM__CONVERT__DMAxCHANNELy.html#gaecc67c5db4d1d81d679cf1996db9be51">00357</a> <span class="preprocessor"></span><span class="preprocessor">#define __LL_DMA_GET_INSTANCE(__CHANNEL_INSTANCE__)   \</span>
 <a name="l00358"></a>00358 <span class="preprocessor">(((uint32_t)(__CHANNEL_INSTANCE__) &gt; ((uint32_t)DMA1_Channel7)) ?  DMA2 : DMA1)</span>
 <a name="l00359"></a>00359 <span class="preprocessor"></span><span class="preprocessor">#else</span>
 <a name="l00360"></a>00360 <span class="preprocessor"></span><span class="preprocessor">#define __LL_DMA_GET_INSTANCE(__CHANNEL_INSTANCE__)  (DMA1)</span>
@@ -433,7 +433,7 @@
 <a name="l00366"></a>00366 <span class="comment">  * @retval LL_DMA_CHANNEL_y</span>
 <a name="l00367"></a>00367 <span class="comment">  */</span>
 <a name="l00368"></a>00368 <span class="preprocessor">#if defined (DMA2)</span>
-<a name="l00369"></a><a class="code" href="group__DMA__LL__EM__CONVERT__DMAxCHANNELy.html#ga6740277e137ba04d70c154427bd09dd0">00369</a> <span class="preprocessor"></span><span class="preprocessor">#define __LL_DMA_GET_CHANNEL(__CHANNEL_INSTANCE__)   \</span>
+<a name="l00369"></a><a class="code" href="group/group__DMA__LL__EM__CONVERT__DMAxCHANNELy.html#ga6740277e137ba04d70c154427bd09dd0">00369</a> <span class="preprocessor"></span><span class="preprocessor">#define __LL_DMA_GET_CHANNEL(__CHANNEL_INSTANCE__)   \</span>
 <a name="l00370"></a>00370 <span class="preprocessor">(((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA1_Channel1)) ? LL_DMA_CHANNEL_1 : \</span>
 <a name="l00371"></a>00371 <span class="preprocessor"> ((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA2_Channel1)) ? LL_DMA_CHANNEL_1 : \</span>
 <a name="l00372"></a>00372 <span class="preprocessor"> ((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA1_Channel2)) ? LL_DMA_CHANNEL_2 : \</span>
@@ -464,7 +464,7 @@
 <a name="l00397"></a>00397 <span class="comment">  * @retval DMAx_Channely</span>
 <a name="l00398"></a>00398 <span class="comment">  */</span>
 <a name="l00399"></a>00399 <span class="preprocessor">#if defined (DMA2)</span>
-<a name="l00400"></a><a class="code" href="group__DMA__LL__EM__CONVERT__DMAxCHANNELy.html#ga35320615e1aeadd607644318af107a4f">00400</a> <span class="preprocessor"></span><span class="preprocessor">#define __LL_DMA_GET_CHANNEL_INSTANCE(__DMA_INSTANCE__, __CHANNEL__)   \</span>
+<a name="l00400"></a><a class="code" href="group/group__DMA__LL__EM__CONVERT__DMAxCHANNELy.html#ga35320615e1aeadd607644318af107a4f">00400</a> <span class="preprocessor"></span><span class="preprocessor">#define __LL_DMA_GET_CHANNEL_INSTANCE(__DMA_INSTANCE__, __CHANNEL__)   \</span>
 <a name="l00401"></a>00401 <span class="preprocessor">((((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA1)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)LL_DMA_CHANNEL_1))) ? DMA1_Channel1 : \</span>
 <a name="l00402"></a>00402 <span class="preprocessor"> (((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA2)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)LL_DMA_CHANNEL_1))) ? DMA2_Channel1 : \</span>
 <a name="l00403"></a>00403 <span class="preprocessor"> (((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA1)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)LL_DMA_CHANNEL_2))) ? DMA1_Channel2 : \</span>
@@ -518,7 +518,7 @@
 <a name="l00451"></a>00451 <span class="comment">  *         @arg @ref LL_DMA_CHANNEL_7</span>
 <a name="l00452"></a>00452 <span class="comment">  * @retval None</span>
 <a name="l00453"></a>00453 <span class="comment">  */</span>
-<a name="l00454"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#gaa2fec337fbbb376faca224ff77695fd2">00454</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__Configuration.html#gaa2fec337fbbb376faca224ff77695fd2" title="Enable DMA channel.">LL_DMA_EnableChannel</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l00454"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#gaa2fec337fbbb376faca224ff77695fd2">00454</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__Configuration.html#gaa2fec337fbbb376faca224ff77695fd2" title="Enable DMA channel.">LL_DMA_EnableChannel</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l00455"></a>00455 {
 <a name="l00456"></a>00456   SET_BIT(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR, DMA_CCR_EN);
 <a name="l00457"></a>00457 }
@@ -537,7 +537,7 @@
 <a name="l00470"></a>00470 <span class="comment">  *         @arg @ref LL_DMA_CHANNEL_7</span>
 <a name="l00471"></a>00471 <span class="comment">  * @retval None</span>
 <a name="l00472"></a>00472 <span class="comment">  */</span>
-<a name="l00473"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#gae14b17aca28dca3f3e6a654f77533756">00473</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__Configuration.html#gae14b17aca28dca3f3e6a654f77533756" title="Disable DMA channel.">LL_DMA_DisableChannel</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l00473"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#gae14b17aca28dca3f3e6a654f77533756">00473</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__Configuration.html#gae14b17aca28dca3f3e6a654f77533756" title="Disable DMA channel.">LL_DMA_DisableChannel</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l00474"></a>00474 {
 <a name="l00475"></a>00475   CLEAR_BIT(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR, DMA_CCR_EN);
 <a name="l00476"></a>00476 }
@@ -556,7 +556,7 @@
 <a name="l00489"></a>00489 <span class="comment">  *         @arg @ref LL_DMA_CHANNEL_7</span>
 <a name="l00490"></a>00490 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l00491"></a>00491 <span class="comment">  */</span>
-<a name="l00492"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#ga885f76aed110ef1d7d9facb28ba42358">00492</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__Configuration.html#ga885f76aed110ef1d7d9facb28ba42358" title="Check if DMA channel is enabled or disabled.">LL_DMA_IsEnabledChannel</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l00492"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga885f76aed110ef1d7d9facb28ba42358">00492</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga885f76aed110ef1d7d9facb28ba42358" title="Check if DMA channel is enabled or disabled.">LL_DMA_IsEnabledChannel</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l00493"></a>00493 {
 <a name="l00494"></a>00494   <span class="keywordflow">return</span> (READ_BIT(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR,
 <a name="l00495"></a>00495                    DMA_CCR_EN) == (DMA_CCR_EN));
@@ -591,7 +591,7 @@
 <a name="l00524"></a>00524 <span class="comment">  *         @arg @ref LL_DMA_PRIORITY_LOW or @ref LL_DMA_PRIORITY_MEDIUM or @ref LL_DMA_PRIORITY_HIGH or @ref LL_DMA_PRIORITY_VERYHIGH</span>
 <a name="l00525"></a>00525 <span class="comment">  * @retval None</span>
 <a name="l00526"></a>00526 <span class="comment">  */</span>
-<a name="l00527"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#gaddcb21cbcba83b21a6436c9bffa789f3">00527</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__Configuration.html#gaddcb21cbcba83b21a6436c9bffa789f3" title="Configure all parameters link to DMA transfer.">LL_DMA_ConfigTransfer</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t Configuration)
+<a name="l00527"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#gaddcb21cbcba83b21a6436c9bffa789f3">00527</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__Configuration.html#gaddcb21cbcba83b21a6436c9bffa789f3" title="Configure all parameters link to DMA transfer.">LL_DMA_ConfigTransfer</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t Configuration)
 <a name="l00528"></a>00528 {
 <a name="l00529"></a>00529   MODIFY_REG(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR,
 <a name="l00530"></a>00530              DMA_CCR_DIR | DMA_CCR_MEM2MEM | DMA_CCR_CIRC | DMA_CCR_PINC | DMA_CCR_MINC | DMA_CCR_PSIZE | DMA_CCR_MSIZE | DMA_CCR_PL,
@@ -617,7 +617,7 @@
 <a name="l00550"></a>00550 <span class="comment">  *         @arg @ref LL_DMA_DIRECTION_MEMORY_TO_MEMORY</span>
 <a name="l00551"></a>00551 <span class="comment">  * @retval None</span>
 <a name="l00552"></a>00552 <span class="comment">  */</span>
-<a name="l00553"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#ga4bba4e21869b4a9b2a7f3037a395ec9a">00553</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__Configuration.html#ga4bba4e21869b4a9b2a7f3037a395ec9a" title="Set Data transfer direction (read from peripheral or from memory).">LL_DMA_SetDataTransferDirection</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t Direction)
+<a name="l00553"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga4bba4e21869b4a9b2a7f3037a395ec9a">00553</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga4bba4e21869b4a9b2a7f3037a395ec9a" title="Set Data transfer direction (read from peripheral or from memory).">LL_DMA_SetDataTransferDirection</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t Direction)
 <a name="l00554"></a>00554 {
 <a name="l00555"></a>00555   MODIFY_REG(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR,
 <a name="l00556"></a>00556              DMA_CCR_DIR | DMA_CCR_MEM2MEM, Direction);
@@ -641,7 +641,7 @@
 <a name="l00574"></a>00574 <span class="comment">  *         @arg @ref LL_DMA_DIRECTION_MEMORY_TO_PERIPH</span>
 <a name="l00575"></a>00575 <span class="comment">  *         @arg @ref LL_DMA_DIRECTION_MEMORY_TO_MEMORY</span>
 <a name="l00576"></a>00576 <span class="comment">  */</span>
-<a name="l00577"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#ga52729b0b0f4b2059076bec5942c6488b">00577</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__Configuration.html#ga52729b0b0f4b2059076bec5942c6488b" title="Get Data transfer direction (read from peripheral or from memory).">LL_DMA_GetDataTransferDirection</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l00577"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga52729b0b0f4b2059076bec5942c6488b">00577</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga52729b0b0f4b2059076bec5942c6488b" title="Get Data transfer direction (read from peripheral or from memory).">LL_DMA_GetDataTransferDirection</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l00578"></a>00578 {
 <a name="l00579"></a>00579   <span class="keywordflow">return</span> (READ_BIT(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR,
 <a name="l00580"></a>00580                    DMA_CCR_DIR | DMA_CCR_MEM2MEM));
@@ -666,7 +666,7 @@
 <a name="l00599"></a>00599 <span class="comment">  *         @arg @ref LL_DMA_MODE_CIRCULAR</span>
 <a name="l00600"></a>00600 <span class="comment">  * @retval None</span>
 <a name="l00601"></a>00601 <span class="comment">  */</span>
-<a name="l00602"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#ga429e169ec04dcad521165499caf236cf">00602</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__Configuration.html#ga429e169ec04dcad521165499caf236cf" title="Set DMA mode circular or normal.">LL_DMA_SetMode</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t Mode)
+<a name="l00602"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga429e169ec04dcad521165499caf236cf">00602</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga429e169ec04dcad521165499caf236cf" title="Set DMA mode circular or normal.">LL_DMA_SetMode</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t Mode)
 <a name="l00603"></a>00603 {
 <a name="l00604"></a>00604   MODIFY_REG(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR, DMA_CCR_CIRC,
 <a name="l00605"></a>00605              Mode);
@@ -688,7 +688,7 @@
 <a name="l00621"></a>00621 <span class="comment">  *         @arg @ref LL_DMA_MODE_NORMAL</span>
 <a name="l00622"></a>00622 <span class="comment">  *         @arg @ref LL_DMA_MODE_CIRCULAR</span>
 <a name="l00623"></a>00623 <span class="comment">  */</span>
-<a name="l00624"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#ga677a348893969f1c24d4ec597f88c449">00624</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__Configuration.html#ga677a348893969f1c24d4ec597f88c449" title="Get DMA mode circular or normal.">LL_DMA_GetMode</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l00624"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga677a348893969f1c24d4ec597f88c449">00624</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga677a348893969f1c24d4ec597f88c449" title="Get DMA mode circular or normal.">LL_DMA_GetMode</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l00625"></a>00625 {
 <a name="l00626"></a>00626   <span class="keywordflow">return</span> (READ_BIT(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR,
 <a name="l00627"></a>00627                    DMA_CCR_CIRC));
@@ -711,7 +711,7 @@
 <a name="l00644"></a>00644 <span class="comment">  *         @arg @ref LL_DMA_PERIPH_NOINCREMENT</span>
 <a name="l00645"></a>00645 <span class="comment">  * @retval None</span>
 <a name="l00646"></a>00646 <span class="comment">  */</span>
-<a name="l00647"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#ga25c1cbfbdbc83a847f42fc1d98f572e1">00647</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__Configuration.html#ga25c1cbfbdbc83a847f42fc1d98f572e1" title="Set Peripheral increment mode.">LL_DMA_SetPeriphIncMode</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t PeriphOrM2MSrcIncMode)
+<a name="l00647"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga25c1cbfbdbc83a847f42fc1d98f572e1">00647</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga25c1cbfbdbc83a847f42fc1d98f572e1" title="Set Peripheral increment mode.">LL_DMA_SetPeriphIncMode</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t PeriphOrM2MSrcIncMode)
 <a name="l00648"></a>00648 {
 <a name="l00649"></a>00649   MODIFY_REG(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR, DMA_CCR_PINC,
 <a name="l00650"></a>00650              PeriphOrM2MSrcIncMode);
@@ -733,7 +733,7 @@
 <a name="l00666"></a>00666 <span class="comment">  *         @arg @ref LL_DMA_PERIPH_INCREMENT</span>
 <a name="l00667"></a>00667 <span class="comment">  *         @arg @ref LL_DMA_PERIPH_NOINCREMENT</span>
 <a name="l00668"></a>00668 <span class="comment">  */</span>
-<a name="l00669"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#gac4d9041ccfeb58b064786ff0398ea133">00669</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__Configuration.html#gac4d9041ccfeb58b064786ff0398ea133" title="Get Peripheral increment mode.">LL_DMA_GetPeriphIncMode</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l00669"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#gac4d9041ccfeb58b064786ff0398ea133">00669</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__Configuration.html#gac4d9041ccfeb58b064786ff0398ea133" title="Get Peripheral increment mode.">LL_DMA_GetPeriphIncMode</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l00670"></a>00670 {
 <a name="l00671"></a>00671   <span class="keywordflow">return</span> (READ_BIT(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR,
 <a name="l00672"></a>00672                    DMA_CCR_PINC));
@@ -756,7 +756,7 @@
 <a name="l00689"></a>00689 <span class="comment">  *         @arg @ref LL_DMA_MEMORY_NOINCREMENT</span>
 <a name="l00690"></a>00690 <span class="comment">  * @retval None</span>
 <a name="l00691"></a>00691 <span class="comment">  */</span>
-<a name="l00692"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#gaec13ab78b429dba909a65a8caae82a57">00692</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__Configuration.html#gaec13ab78b429dba909a65a8caae82a57" title="Set Memory increment mode.">LL_DMA_SetMemoryIncMode</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t MemoryOrM2MDstIncMode)
+<a name="l00692"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#gaec13ab78b429dba909a65a8caae82a57">00692</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__Configuration.html#gaec13ab78b429dba909a65a8caae82a57" title="Set Memory increment mode.">LL_DMA_SetMemoryIncMode</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t MemoryOrM2MDstIncMode)
 <a name="l00693"></a>00693 {
 <a name="l00694"></a>00694   MODIFY_REG(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR, DMA_CCR_MINC,
 <a name="l00695"></a>00695              MemoryOrM2MDstIncMode);
@@ -778,7 +778,7 @@
 <a name="l00711"></a>00711 <span class="comment">  *         @arg @ref LL_DMA_MEMORY_INCREMENT</span>
 <a name="l00712"></a>00712 <span class="comment">  *         @arg @ref LL_DMA_MEMORY_NOINCREMENT</span>
 <a name="l00713"></a>00713 <span class="comment">  */</span>
-<a name="l00714"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#gab221e7f7adefac14d46eb0092fce22f2">00714</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__Configuration.html#gab221e7f7adefac14d46eb0092fce22f2" title="Get Memory increment mode.">LL_DMA_GetMemoryIncMode</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l00714"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#gab221e7f7adefac14d46eb0092fce22f2">00714</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__Configuration.html#gab221e7f7adefac14d46eb0092fce22f2" title="Get Memory increment mode.">LL_DMA_GetMemoryIncMode</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l00715"></a>00715 {
 <a name="l00716"></a>00716   <span class="keywordflow">return</span> (READ_BIT(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR,
 <a name="l00717"></a>00717                    DMA_CCR_MINC));
@@ -802,7 +802,7 @@
 <a name="l00735"></a>00735 <span class="comment">  *         @arg @ref LL_DMA_PDATAALIGN_WORD</span>
 <a name="l00736"></a>00736 <span class="comment">  * @retval None</span>
 <a name="l00737"></a>00737 <span class="comment">  */</span>
-<a name="l00738"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#ga8e9b7f3ebdb9ee07a029f2ba433cb001">00738</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__Configuration.html#ga8e9b7f3ebdb9ee07a029f2ba433cb001" title="Set Peripheral size.">LL_DMA_SetPeriphSize</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t PeriphOrM2MSrcDataSize)
+<a name="l00738"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga8e9b7f3ebdb9ee07a029f2ba433cb001">00738</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga8e9b7f3ebdb9ee07a029f2ba433cb001" title="Set Peripheral size.">LL_DMA_SetPeriphSize</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t PeriphOrM2MSrcDataSize)
 <a name="l00739"></a>00739 {
 <a name="l00740"></a>00740   MODIFY_REG(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR, DMA_CCR_PSIZE,
 <a name="l00741"></a>00741              PeriphOrM2MSrcDataSize);
@@ -825,7 +825,7 @@
 <a name="l00758"></a>00758 <span class="comment">  *         @arg @ref LL_DMA_PDATAALIGN_HALFWORD</span>
 <a name="l00759"></a>00759 <span class="comment">  *         @arg @ref LL_DMA_PDATAALIGN_WORD</span>
 <a name="l00760"></a>00760 <span class="comment">  */</span>
-<a name="l00761"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#gabba94111c0724b80172a298684f1681a">00761</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__Configuration.html#gabba94111c0724b80172a298684f1681a" title="Get Peripheral size.">LL_DMA_GetPeriphSize</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l00761"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#gabba94111c0724b80172a298684f1681a">00761</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__Configuration.html#gabba94111c0724b80172a298684f1681a" title="Get Peripheral size.">LL_DMA_GetPeriphSize</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l00762"></a>00762 {
 <a name="l00763"></a>00763   <span class="keywordflow">return</span> (READ_BIT(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR,
 <a name="l00764"></a>00764                    DMA_CCR_PSIZE));
@@ -849,7 +849,7 @@
 <a name="l00782"></a>00782 <span class="comment">  *         @arg @ref LL_DMA_MDATAALIGN_WORD</span>
 <a name="l00783"></a>00783 <span class="comment">  * @retval None</span>
 <a name="l00784"></a>00784 <span class="comment">  */</span>
-<a name="l00785"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#ga2f99b1dc67e489591c69aa1dedf7d5d2">00785</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__Configuration.html#ga2f99b1dc67e489591c69aa1dedf7d5d2" title="Set Memory size.">LL_DMA_SetMemorySize</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t MemoryOrM2MDstDataSize)
+<a name="l00785"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga2f99b1dc67e489591c69aa1dedf7d5d2">00785</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga2f99b1dc67e489591c69aa1dedf7d5d2" title="Set Memory size.">LL_DMA_SetMemorySize</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t MemoryOrM2MDstDataSize)
 <a name="l00786"></a>00786 {
 <a name="l00787"></a>00787   MODIFY_REG(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR, DMA_CCR_MSIZE,
 <a name="l00788"></a>00788              MemoryOrM2MDstDataSize);
@@ -872,7 +872,7 @@
 <a name="l00805"></a>00805 <span class="comment">  *         @arg @ref LL_DMA_MDATAALIGN_HALFWORD</span>
 <a name="l00806"></a>00806 <span class="comment">  *         @arg @ref LL_DMA_MDATAALIGN_WORD</span>
 <a name="l00807"></a>00807 <span class="comment">  */</span>
-<a name="l00808"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#gaaa936b8c7b8826be6f69724430655b5c">00808</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__Configuration.html#gaaa936b8c7b8826be6f69724430655b5c" title="Get Memory size.">LL_DMA_GetMemorySize</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l00808"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#gaaa936b8c7b8826be6f69724430655b5c">00808</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__Configuration.html#gaaa936b8c7b8826be6f69724430655b5c" title="Get Memory size.">LL_DMA_GetMemorySize</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l00809"></a>00809 {
 <a name="l00810"></a>00810   <span class="keywordflow">return</span> (READ_BIT(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR,
 <a name="l00811"></a>00811                    DMA_CCR_MSIZE));
@@ -897,7 +897,7 @@
 <a name="l00830"></a>00830 <span class="comment">  *         @arg @ref LL_DMA_PRIORITY_VERYHIGH</span>
 <a name="l00831"></a>00831 <span class="comment">  * @retval None</span>
 <a name="l00832"></a>00832 <span class="comment">  */</span>
-<a name="l00833"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#ga26bf4efa94c7a28e0acd72e9627454b3">00833</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__Configuration.html#ga26bf4efa94c7a28e0acd72e9627454b3" title="Set Channel priority level.">LL_DMA_SetChannelPriorityLevel</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t Priority)
+<a name="l00833"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga26bf4efa94c7a28e0acd72e9627454b3">00833</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga26bf4efa94c7a28e0acd72e9627454b3" title="Set Channel priority level.">LL_DMA_SetChannelPriorityLevel</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t Priority)
 <a name="l00834"></a>00834 {
 <a name="l00835"></a>00835   MODIFY_REG(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR, DMA_CCR_PL,
 <a name="l00836"></a>00836              Priority);
@@ -921,7 +921,7 @@
 <a name="l00854"></a>00854 <span class="comment">  *         @arg @ref LL_DMA_PRIORITY_HIGH</span>
 <a name="l00855"></a>00855 <span class="comment">  *         @arg @ref LL_DMA_PRIORITY_VERYHIGH</span>
 <a name="l00856"></a>00856 <span class="comment">  */</span>
-<a name="l00857"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#ga7e453638386faab127d194dc2aa98261">00857</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__Configuration.html#ga7e453638386faab127d194dc2aa98261" title="Get Channel priority level.">LL_DMA_GetChannelPriorityLevel</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l00857"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga7e453638386faab127d194dc2aa98261">00857</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga7e453638386faab127d194dc2aa98261" title="Get Channel priority level.">LL_DMA_GetChannelPriorityLevel</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l00858"></a>00858 {
 <a name="l00859"></a>00859   <span class="keywordflow">return</span> (READ_BIT(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR,
 <a name="l00860"></a>00860                    DMA_CCR_PL));
@@ -944,7 +944,7 @@
 <a name="l00877"></a>00877 <span class="comment">  * @param  NbData Between Min_Data = 0 and Max_Data = 0x0000FFFF</span>
 <a name="l00878"></a>00878 <span class="comment">  * @retval None</span>
 <a name="l00879"></a>00879 <span class="comment">  */</span>
-<a name="l00880"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#ga655f289deac644bd5726946267b020e0">00880</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__Configuration.html#ga655f289deac644bd5726946267b020e0" title="Set Number of data to transfer.">LL_DMA_SetDataLength</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t NbData)
+<a name="l00880"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga655f289deac644bd5726946267b020e0">00880</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga655f289deac644bd5726946267b020e0" title="Set Number of data to transfer.">LL_DMA_SetDataLength</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t NbData)
 <a name="l00881"></a>00881 {
 <a name="l00882"></a>00882   MODIFY_REG(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CNDTR,
 <a name="l00883"></a>00883              DMA_CNDTR_NDT, NbData);
@@ -966,7 +966,7 @@
 <a name="l00899"></a>00899 <span class="comment">  *         @arg @ref LL_DMA_CHANNEL_7</span>
 <a name="l00900"></a>00900 <span class="comment">  * @retval Between Min_Data = 0 and Max_Data = 0xFFFFFFFF</span>
 <a name="l00901"></a>00901 <span class="comment">  */</span>
-<a name="l00902"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#ga662f7fb5847f260a0faf841b906d4c7c">00902</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__Configuration.html#ga662f7fb5847f260a0faf841b906d4c7c" title="Get Number of data to transfer.">LL_DMA_GetDataLength</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l00902"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga662f7fb5847f260a0faf841b906d4c7c">00902</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga662f7fb5847f260a0faf841b906d4c7c" title="Get Number of data to transfer.">LL_DMA_GetDataLength</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l00903"></a>00903 {
 <a name="l00904"></a>00904   <span class="keywordflow">return</span> (READ_BIT(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CNDTR,
 <a name="l00905"></a>00905                    DMA_CNDTR_NDT));
@@ -995,11 +995,11 @@
 <a name="l00928"></a>00928 <span class="comment">  *         @arg @ref LL_DMA_DIRECTION_MEMORY_TO_MEMORY</span>
 <a name="l00929"></a>00929 <span class="comment">  * @retval None</span>
 <a name="l00930"></a>00930 <span class="comment">  */</span>
-<a name="l00931"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#ga5fcbb82b7aad98dda234559fce06d8e8">00931</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__Configuration.html#ga5fcbb82b7aad98dda234559fce06d8e8" title="Configure the Source and Destination addresses.">LL_DMA_ConfigAddresses</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t SrcAddress,
+<a name="l00931"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga5fcbb82b7aad98dda234559fce06d8e8">00931</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga5fcbb82b7aad98dda234559fce06d8e8" title="Configure the Source and Destination addresses.">LL_DMA_ConfigAddresses</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t SrcAddress,
 <a name="l00932"></a>00932                                             uint32_t DstAddress, uint32_t Direction)
 <a name="l00933"></a>00933 {
 <a name="l00934"></a>00934   <span class="comment">/* Direction Memory to Periph */</span>
-<a name="l00935"></a>00935   <span class="keywordflow">if</span> (Direction == <a class="code" href="group__DMA__LL__EC__DIRECTION.html#ga97043179ce33099cc7690f5ec8359afc">LL_DMA_DIRECTION_MEMORY_TO_PERIPH</a>)
+<a name="l00935"></a>00935   <span class="keywordflow">if</span> (Direction == <a class="code" href="group/group__DMA__LL__EC__DIRECTION.html#ga97043179ce33099cc7690f5ec8359afc">LL_DMA_DIRECTION_MEMORY_TO_PERIPH</a>)
 <a name="l00936"></a>00936   {
 <a name="l00937"></a>00937     WRITE_REG(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CMAR, SrcAddress);
 <a name="l00938"></a>00938     WRITE_REG(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CPAR, DstAddress);
@@ -1029,7 +1029,7 @@
 <a name="l00962"></a>00962 <span class="comment">  * @param  MemoryAddress Between Min_Data = 0 and Max_Data = 0xFFFFFFFF</span>
 <a name="l00963"></a>00963 <span class="comment">  * @retval None</span>
 <a name="l00964"></a>00964 <span class="comment">  */</span>
-<a name="l00965"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#ga0fc21978aa24bfdd74e6bfe1434b6e14">00965</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__Configuration.html#ga0fc21978aa24bfdd74e6bfe1434b6e14" title="Set the Memory address.">LL_DMA_SetMemoryAddress</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t MemoryAddress)
+<a name="l00965"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga0fc21978aa24bfdd74e6bfe1434b6e14">00965</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga0fc21978aa24bfdd74e6bfe1434b6e14" title="Set the Memory address.">LL_DMA_SetMemoryAddress</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t MemoryAddress)
 <a name="l00966"></a>00966 {
 <a name="l00967"></a>00967   WRITE_REG(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CMAR, MemoryAddress);
 <a name="l00968"></a>00968 }
@@ -1051,7 +1051,7 @@
 <a name="l00984"></a>00984 <span class="comment">  * @param  PeriphAddress Between Min_Data = 0 and Max_Data = 0xFFFFFFFF</span>
 <a name="l00985"></a>00985 <span class="comment">  * @retval None</span>
 <a name="l00986"></a>00986 <span class="comment">  */</span>
-<a name="l00987"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#ga5517371e36dbefaea3403ab206107f6a">00987</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__Configuration.html#ga5517371e36dbefaea3403ab206107f6a" title="Set the Peripheral address.">LL_DMA_SetPeriphAddress</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t PeriphAddress)
+<a name="l00987"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga5517371e36dbefaea3403ab206107f6a">00987</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga5517371e36dbefaea3403ab206107f6a" title="Set the Peripheral address.">LL_DMA_SetPeriphAddress</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t PeriphAddress)
 <a name="l00988"></a>00988 {
 <a name="l00989"></a>00989   WRITE_REG(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CPAR, PeriphAddress);
 <a name="l00990"></a>00990 }
@@ -1071,7 +1071,7 @@
 <a name="l01004"></a>01004 <span class="comment">  *         @arg @ref LL_DMA_CHANNEL_7</span>
 <a name="l01005"></a>01005 <span class="comment">  * @retval Between Min_Data = 0 and Max_Data = 0xFFFFFFFF</span>
 <a name="l01006"></a>01006 <span class="comment">  */</span>
-<a name="l01007"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#gaa57bdd9b3ec1da561e1af71aeaff547c">01007</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__Configuration.html#gaa57bdd9b3ec1da561e1af71aeaff547c" title="Get Memory address.">LL_DMA_GetMemoryAddress</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l01007"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#gaa57bdd9b3ec1da561e1af71aeaff547c">01007</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__Configuration.html#gaa57bdd9b3ec1da561e1af71aeaff547c" title="Get Memory address.">LL_DMA_GetMemoryAddress</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l01008"></a>01008 {
 <a name="l01009"></a>01009   <span class="keywordflow">return</span> (READ_REG(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CMAR));
 <a name="l01010"></a>01010 }
@@ -1091,7 +1091,7 @@
 <a name="l01024"></a>01024 <span class="comment">  *         @arg @ref LL_DMA_CHANNEL_7</span>
 <a name="l01025"></a>01025 <span class="comment">  * @retval Between Min_Data = 0 and Max_Data = 0xFFFFFFFF</span>
 <a name="l01026"></a>01026 <span class="comment">  */</span>
-<a name="l01027"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#gafd4a415f8ce219a477be9cec29f76de6">01027</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__Configuration.html#gafd4a415f8ce219a477be9cec29f76de6" title="Get Peripheral address.">LL_DMA_GetPeriphAddress</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l01027"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#gafd4a415f8ce219a477be9cec29f76de6">01027</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__Configuration.html#gafd4a415f8ce219a477be9cec29f76de6" title="Get Peripheral address.">LL_DMA_GetPeriphAddress</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l01028"></a>01028 {
 <a name="l01029"></a>01029   <span class="keywordflow">return</span> (READ_REG(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CPAR));
 <a name="l01030"></a>01030 }
@@ -1113,7 +1113,7 @@
 <a name="l01046"></a>01046 <span class="comment">  * @param  MemoryAddress Between Min_Data = 0 and Max_Data = 0xFFFFFFFF</span>
 <a name="l01047"></a>01047 <span class="comment">  * @retval None</span>
 <a name="l01048"></a>01048 <span class="comment">  */</span>
-<a name="l01049"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#ga60201823de6a476bf29da62f138a7b65">01049</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__Configuration.html#ga60201823de6a476bf29da62f138a7b65" title="Set the Memory to Memory Source address.">LL_DMA_SetM2MSrcAddress</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t MemoryAddress)
+<a name="l01049"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga60201823de6a476bf29da62f138a7b65">01049</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga60201823de6a476bf29da62f138a7b65" title="Set the Memory to Memory Source address.">LL_DMA_SetM2MSrcAddress</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t MemoryAddress)
 <a name="l01050"></a>01050 {
 <a name="l01051"></a>01051   WRITE_REG(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CPAR, MemoryAddress);
 <a name="l01052"></a>01052 }
@@ -1135,7 +1135,7 @@
 <a name="l01068"></a>01068 <span class="comment">  * @param  MemoryAddress Between Min_Data = 0 and Max_Data = 0xFFFFFFFF</span>
 <a name="l01069"></a>01069 <span class="comment">  * @retval None</span>
 <a name="l01070"></a>01070 <span class="comment">  */</span>
-<a name="l01071"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#ga1ab16c2234eac7722c365fed8dbe75a9">01071</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__Configuration.html#ga1ab16c2234eac7722c365fed8dbe75a9" title="Set the Memory to Memory Destination address.">LL_DMA_SetM2MDstAddress</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t MemoryAddress)
+<a name="l01071"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga1ab16c2234eac7722c365fed8dbe75a9">01071</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__Configuration.html#ga1ab16c2234eac7722c365fed8dbe75a9" title="Set the Memory to Memory Destination address.">LL_DMA_SetM2MDstAddress</a>(DMA_TypeDef *DMAx, uint32_t Channel, uint32_t MemoryAddress)
 <a name="l01072"></a>01072 {
 <a name="l01073"></a>01073   WRITE_REG(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CMAR, MemoryAddress);
 <a name="l01074"></a>01074 }
@@ -1155,7 +1155,7 @@
 <a name="l01088"></a>01088 <span class="comment">  *         @arg @ref LL_DMA_CHANNEL_7</span>
 <a name="l01089"></a>01089 <span class="comment">  * @retval Between Min_Data = 0 and Max_Data = 0xFFFFFFFF</span>
 <a name="l01090"></a>01090 <span class="comment">  */</span>
-<a name="l01091"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#gaab27b45dc1f4f2dfc4ec229391ec1239">01091</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__Configuration.html#gaab27b45dc1f4f2dfc4ec229391ec1239" title="Get the Memory to Memory Source address.">LL_DMA_GetM2MSrcAddress</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l01091"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#gaab27b45dc1f4f2dfc4ec229391ec1239">01091</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__Configuration.html#gaab27b45dc1f4f2dfc4ec229391ec1239" title="Get the Memory to Memory Source address.">LL_DMA_GetM2MSrcAddress</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l01092"></a>01092 {
 <a name="l01093"></a>01093   <span class="keywordflow">return</span> (READ_REG(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CPAR));
 <a name="l01094"></a>01094 }
@@ -1175,7 +1175,7 @@
 <a name="l01108"></a>01108 <span class="comment">  *         @arg @ref LL_DMA_CHANNEL_7</span>
 <a name="l01109"></a>01109 <span class="comment">  * @retval Between Min_Data = 0 and Max_Data = 0xFFFFFFFF</span>
 <a name="l01110"></a>01110 <span class="comment">  */</span>
-<a name="l01111"></a><a class="code" href="group__DMA__LL__EF__Configuration.html#gad730e2c081cd2717afe3a91aa59e7b6e">01111</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__Configuration.html#gad730e2c081cd2717afe3a91aa59e7b6e" title="Get the Memory to Memory Destination address.">LL_DMA_GetM2MDstAddress</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l01111"></a><a class="code" href="group/group__DMA__LL__EF__Configuration.html#gad730e2c081cd2717afe3a91aa59e7b6e">01111</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__Configuration.html#gad730e2c081cd2717afe3a91aa59e7b6e" title="Get the Memory to Memory Destination address.">LL_DMA_GetM2MDstAddress</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l01112"></a>01112 {
 <a name="l01113"></a>01113   <span class="keywordflow">return</span> (READ_REG(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CMAR));
 <a name="l01114"></a>01114 }
@@ -1194,7 +1194,7 @@
 <a name="l01127"></a>01127 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01128"></a>01128 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01129"></a>01129 <span class="comment">  */</span>
-<a name="l01130"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gaa316bac25f83ccd141643cf2848f0f8b">01130</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gaa316bac25f83ccd141643cf2848f0f8b" title="Get Channel 1 global interrupt flag.">LL_DMA_IsActiveFlag_GI1</a>(DMA_TypeDef *DMAx)
+<a name="l01130"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gaa316bac25f83ccd141643cf2848f0f8b">01130</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gaa316bac25f83ccd141643cf2848f0f8b" title="Get Channel 1 global interrupt flag.">LL_DMA_IsActiveFlag_GI1</a>(DMA_TypeDef *DMAx)
 <a name="l01131"></a>01131 {
 <a name="l01132"></a>01132   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_GIF1) == (DMA_ISR_GIF1));
 <a name="l01133"></a>01133 }
@@ -1205,7 +1205,7 @@
 <a name="l01138"></a>01138 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01139"></a>01139 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01140"></a>01140 <span class="comment">  */</span>
-<a name="l01141"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga6fa43877e3ad0bd19ce9111e9c74752f">01141</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga6fa43877e3ad0bd19ce9111e9c74752f" title="Get Channel 2 global interrupt flag.">LL_DMA_IsActiveFlag_GI2</a>(DMA_TypeDef *DMAx)
+<a name="l01141"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga6fa43877e3ad0bd19ce9111e9c74752f">01141</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga6fa43877e3ad0bd19ce9111e9c74752f" title="Get Channel 2 global interrupt flag.">LL_DMA_IsActiveFlag_GI2</a>(DMA_TypeDef *DMAx)
 <a name="l01142"></a>01142 {
 <a name="l01143"></a>01143   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_GIF2) == (DMA_ISR_GIF2));
 <a name="l01144"></a>01144 }
@@ -1216,7 +1216,7 @@
 <a name="l01149"></a>01149 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01150"></a>01150 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01151"></a>01151 <span class="comment">  */</span>
-<a name="l01152"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gac6c2a2763ce3079528499c02a8721e9d">01152</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gac6c2a2763ce3079528499c02a8721e9d" title="Get Channel 3 global interrupt flag.">LL_DMA_IsActiveFlag_GI3</a>(DMA_TypeDef *DMAx)
+<a name="l01152"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gac6c2a2763ce3079528499c02a8721e9d">01152</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gac6c2a2763ce3079528499c02a8721e9d" title="Get Channel 3 global interrupt flag.">LL_DMA_IsActiveFlag_GI3</a>(DMA_TypeDef *DMAx)
 <a name="l01153"></a>01153 {
 <a name="l01154"></a>01154   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_GIF3) == (DMA_ISR_GIF3));
 <a name="l01155"></a>01155 }
@@ -1227,7 +1227,7 @@
 <a name="l01160"></a>01160 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01161"></a>01161 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01162"></a>01162 <span class="comment">  */</span>
-<a name="l01163"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gab066c0016fa1af8aeba5977adf8366cd">01163</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gab066c0016fa1af8aeba5977adf8366cd" title="Get Channel 4 global interrupt flag.">LL_DMA_IsActiveFlag_GI4</a>(DMA_TypeDef *DMAx)
+<a name="l01163"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gab066c0016fa1af8aeba5977adf8366cd">01163</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gab066c0016fa1af8aeba5977adf8366cd" title="Get Channel 4 global interrupt flag.">LL_DMA_IsActiveFlag_GI4</a>(DMA_TypeDef *DMAx)
 <a name="l01164"></a>01164 {
 <a name="l01165"></a>01165   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_GIF4) == (DMA_ISR_GIF4));
 <a name="l01166"></a>01166 }
@@ -1238,7 +1238,7 @@
 <a name="l01171"></a>01171 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01172"></a>01172 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01173"></a>01173 <span class="comment">  */</span>
-<a name="l01174"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga0f98451a5f4b7fad3e0281c363d4ef6a">01174</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga0f98451a5f4b7fad3e0281c363d4ef6a" title="Get Channel 5 global interrupt flag.">LL_DMA_IsActiveFlag_GI5</a>(DMA_TypeDef *DMAx)
+<a name="l01174"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga0f98451a5f4b7fad3e0281c363d4ef6a">01174</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga0f98451a5f4b7fad3e0281c363d4ef6a" title="Get Channel 5 global interrupt flag.">LL_DMA_IsActiveFlag_GI5</a>(DMA_TypeDef *DMAx)
 <a name="l01175"></a>01175 {
 <a name="l01176"></a>01176   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_GIF5) == (DMA_ISR_GIF5));
 <a name="l01177"></a>01177 }
@@ -1249,7 +1249,7 @@
 <a name="l01182"></a>01182 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01183"></a>01183 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01184"></a>01184 <span class="comment">  */</span>
-<a name="l01185"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gac49a6b70362b583c1dadebf67c94a9dd">01185</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gac49a6b70362b583c1dadebf67c94a9dd" title="Get Channel 6 global interrupt flag.">LL_DMA_IsActiveFlag_GI6</a>(DMA_TypeDef *DMAx)
+<a name="l01185"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gac49a6b70362b583c1dadebf67c94a9dd">01185</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gac49a6b70362b583c1dadebf67c94a9dd" title="Get Channel 6 global interrupt flag.">LL_DMA_IsActiveFlag_GI6</a>(DMA_TypeDef *DMAx)
 <a name="l01186"></a>01186 {
 <a name="l01187"></a>01187   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_GIF6) == (DMA_ISR_GIF6));
 <a name="l01188"></a>01188 }
@@ -1260,7 +1260,7 @@
 <a name="l01193"></a>01193 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01194"></a>01194 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01195"></a>01195 <span class="comment">  */</span>
-<a name="l01196"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gafa5e45b72d0a87225dbfc38facbd92b6">01196</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gafa5e45b72d0a87225dbfc38facbd92b6" title="Get Channel 7 global interrupt flag.">LL_DMA_IsActiveFlag_GI7</a>(DMA_TypeDef *DMAx)
+<a name="l01196"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gafa5e45b72d0a87225dbfc38facbd92b6">01196</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gafa5e45b72d0a87225dbfc38facbd92b6" title="Get Channel 7 global interrupt flag.">LL_DMA_IsActiveFlag_GI7</a>(DMA_TypeDef *DMAx)
 <a name="l01197"></a>01197 {
 <a name="l01198"></a>01198   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_GIF7) == (DMA_ISR_GIF7));
 <a name="l01199"></a>01199 }
@@ -1271,7 +1271,7 @@
 <a name="l01204"></a>01204 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01205"></a>01205 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01206"></a>01206 <span class="comment">  */</span>
-<a name="l01207"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga9f1df8baadb1444c316b3e2ad3757607">01207</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga9f1df8baadb1444c316b3e2ad3757607" title="Get Channel 1 transfer complete flag.">LL_DMA_IsActiveFlag_TC1</a>(DMA_TypeDef *DMAx)
+<a name="l01207"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga9f1df8baadb1444c316b3e2ad3757607">01207</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga9f1df8baadb1444c316b3e2ad3757607" title="Get Channel 1 transfer complete flag.">LL_DMA_IsActiveFlag_TC1</a>(DMA_TypeDef *DMAx)
 <a name="l01208"></a>01208 {
 <a name="l01209"></a>01209   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_TCIF1) == (DMA_ISR_TCIF1));
 <a name="l01210"></a>01210 }
@@ -1282,7 +1282,7 @@
 <a name="l01215"></a>01215 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01216"></a>01216 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01217"></a>01217 <span class="comment">  */</span>
-<a name="l01218"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga6d918d7ee43a03dfe76e92fd7cb3cd0d">01218</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga6d918d7ee43a03dfe76e92fd7cb3cd0d" title="Get Channel 2 transfer complete flag.">LL_DMA_IsActiveFlag_TC2</a>(DMA_TypeDef *DMAx)
+<a name="l01218"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga6d918d7ee43a03dfe76e92fd7cb3cd0d">01218</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga6d918d7ee43a03dfe76e92fd7cb3cd0d" title="Get Channel 2 transfer complete flag.">LL_DMA_IsActiveFlag_TC2</a>(DMA_TypeDef *DMAx)
 <a name="l01219"></a>01219 {
 <a name="l01220"></a>01220   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_TCIF2) == (DMA_ISR_TCIF2));
 <a name="l01221"></a>01221 }
@@ -1293,7 +1293,7 @@
 <a name="l01226"></a>01226 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01227"></a>01227 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01228"></a>01228 <span class="comment">  */</span>
-<a name="l01229"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga84386b5251306cdcff214c8d1e6884c6">01229</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga84386b5251306cdcff214c8d1e6884c6" title="Get Channel 3 transfer complete flag.">LL_DMA_IsActiveFlag_TC3</a>(DMA_TypeDef *DMAx)
+<a name="l01229"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga84386b5251306cdcff214c8d1e6884c6">01229</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga84386b5251306cdcff214c8d1e6884c6" title="Get Channel 3 transfer complete flag.">LL_DMA_IsActiveFlag_TC3</a>(DMA_TypeDef *DMAx)
 <a name="l01230"></a>01230 {
 <a name="l01231"></a>01231   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_TCIF3) == (DMA_ISR_TCIF3));
 <a name="l01232"></a>01232 }
@@ -1304,7 +1304,7 @@
 <a name="l01237"></a>01237 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01238"></a>01238 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01239"></a>01239 <span class="comment">  */</span>
-<a name="l01240"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga3fb16e832559d5c3b4216b410c1e2305">01240</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga3fb16e832559d5c3b4216b410c1e2305" title="Get Channel 4 transfer complete flag.">LL_DMA_IsActiveFlag_TC4</a>(DMA_TypeDef *DMAx)
+<a name="l01240"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga3fb16e832559d5c3b4216b410c1e2305">01240</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga3fb16e832559d5c3b4216b410c1e2305" title="Get Channel 4 transfer complete flag.">LL_DMA_IsActiveFlag_TC4</a>(DMA_TypeDef *DMAx)
 <a name="l01241"></a>01241 {
 <a name="l01242"></a>01242   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_TCIF4) == (DMA_ISR_TCIF4));
 <a name="l01243"></a>01243 }
@@ -1315,7 +1315,7 @@
 <a name="l01248"></a>01248 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01249"></a>01249 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01250"></a>01250 <span class="comment">  */</span>
-<a name="l01251"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga99975d19dc979f0feb3a0f85d1a9aab9">01251</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga99975d19dc979f0feb3a0f85d1a9aab9" title="Get Channel 5 transfer complete flag.">LL_DMA_IsActiveFlag_TC5</a>(DMA_TypeDef *DMAx)
+<a name="l01251"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga99975d19dc979f0feb3a0f85d1a9aab9">01251</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga99975d19dc979f0feb3a0f85d1a9aab9" title="Get Channel 5 transfer complete flag.">LL_DMA_IsActiveFlag_TC5</a>(DMA_TypeDef *DMAx)
 <a name="l01252"></a>01252 {
 <a name="l01253"></a>01253   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_TCIF5) == (DMA_ISR_TCIF5));
 <a name="l01254"></a>01254 }
@@ -1326,7 +1326,7 @@
 <a name="l01259"></a>01259 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01260"></a>01260 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01261"></a>01261 <span class="comment">  */</span>
-<a name="l01262"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga9f22ec9cfdfea669910ab40ea5129b35">01262</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga9f22ec9cfdfea669910ab40ea5129b35" title="Get Channel 6 transfer complete flag.">LL_DMA_IsActiveFlag_TC6</a>(DMA_TypeDef *DMAx)
+<a name="l01262"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga9f22ec9cfdfea669910ab40ea5129b35">01262</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga9f22ec9cfdfea669910ab40ea5129b35" title="Get Channel 6 transfer complete flag.">LL_DMA_IsActiveFlag_TC6</a>(DMA_TypeDef *DMAx)
 <a name="l01263"></a>01263 {
 <a name="l01264"></a>01264   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_TCIF6) == (DMA_ISR_TCIF6));
 <a name="l01265"></a>01265 }
@@ -1337,7 +1337,7 @@
 <a name="l01270"></a>01270 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01271"></a>01271 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01272"></a>01272 <span class="comment">  */</span>
-<a name="l01273"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gab7c971a3043088ae6d84a4db8693615b">01273</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gab7c971a3043088ae6d84a4db8693615b" title="Get Channel 7 transfer complete flag.">LL_DMA_IsActiveFlag_TC7</a>(DMA_TypeDef *DMAx)
+<a name="l01273"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gab7c971a3043088ae6d84a4db8693615b">01273</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gab7c971a3043088ae6d84a4db8693615b" title="Get Channel 7 transfer complete flag.">LL_DMA_IsActiveFlag_TC7</a>(DMA_TypeDef *DMAx)
 <a name="l01274"></a>01274 {
 <a name="l01275"></a>01275   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_TCIF7) == (DMA_ISR_TCIF7));
 <a name="l01276"></a>01276 }
@@ -1348,7 +1348,7 @@
 <a name="l01281"></a>01281 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01282"></a>01282 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01283"></a>01283 <span class="comment">  */</span>
-<a name="l01284"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gaf0772fe1dd8f348727183cc73546ba02">01284</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gaf0772fe1dd8f348727183cc73546ba02" title="Get Channel 1 half transfer flag.">LL_DMA_IsActiveFlag_HT1</a>(DMA_TypeDef *DMAx)
+<a name="l01284"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gaf0772fe1dd8f348727183cc73546ba02">01284</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gaf0772fe1dd8f348727183cc73546ba02" title="Get Channel 1 half transfer flag.">LL_DMA_IsActiveFlag_HT1</a>(DMA_TypeDef *DMAx)
 <a name="l01285"></a>01285 {
 <a name="l01286"></a>01286   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_HTIF1) == (DMA_ISR_HTIF1));
 <a name="l01287"></a>01287 }
@@ -1359,7 +1359,7 @@
 <a name="l01292"></a>01292 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01293"></a>01293 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01294"></a>01294 <span class="comment">  */</span>
-<a name="l01295"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga82a9f3ae177f1130f6822ce7ccfda6b2">01295</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga82a9f3ae177f1130f6822ce7ccfda6b2" title="Get Channel 2 half transfer flag.">LL_DMA_IsActiveFlag_HT2</a>(DMA_TypeDef *DMAx)
+<a name="l01295"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga82a9f3ae177f1130f6822ce7ccfda6b2">01295</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga82a9f3ae177f1130f6822ce7ccfda6b2" title="Get Channel 2 half transfer flag.">LL_DMA_IsActiveFlag_HT2</a>(DMA_TypeDef *DMAx)
 <a name="l01296"></a>01296 {
 <a name="l01297"></a>01297   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_HTIF2) == (DMA_ISR_HTIF2));
 <a name="l01298"></a>01298 }
@@ -1370,7 +1370,7 @@
 <a name="l01303"></a>01303 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01304"></a>01304 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01305"></a>01305 <span class="comment">  */</span>
-<a name="l01306"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga0e73a912871070c3dd17cad9cc0a8381">01306</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga0e73a912871070c3dd17cad9cc0a8381" title="Get Channel 3 half transfer flag.">LL_DMA_IsActiveFlag_HT3</a>(DMA_TypeDef *DMAx)
+<a name="l01306"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga0e73a912871070c3dd17cad9cc0a8381">01306</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga0e73a912871070c3dd17cad9cc0a8381" title="Get Channel 3 half transfer flag.">LL_DMA_IsActiveFlag_HT3</a>(DMA_TypeDef *DMAx)
 <a name="l01307"></a>01307 {
 <a name="l01308"></a>01308   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_HTIF3) == (DMA_ISR_HTIF3));
 <a name="l01309"></a>01309 }
@@ -1381,7 +1381,7 @@
 <a name="l01314"></a>01314 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01315"></a>01315 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01316"></a>01316 <span class="comment">  */</span>
-<a name="l01317"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga0c0b15c62a1e9920bb1824bb897abf6f">01317</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga0c0b15c62a1e9920bb1824bb897abf6f" title="Get Channel 4 half transfer flag.">LL_DMA_IsActiveFlag_HT4</a>(DMA_TypeDef *DMAx)
+<a name="l01317"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga0c0b15c62a1e9920bb1824bb897abf6f">01317</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga0c0b15c62a1e9920bb1824bb897abf6f" title="Get Channel 4 half transfer flag.">LL_DMA_IsActiveFlag_HT4</a>(DMA_TypeDef *DMAx)
 <a name="l01318"></a>01318 {
 <a name="l01319"></a>01319   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_HTIF4) == (DMA_ISR_HTIF4));
 <a name="l01320"></a>01320 }
@@ -1392,7 +1392,7 @@
 <a name="l01325"></a>01325 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01326"></a>01326 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01327"></a>01327 <span class="comment">  */</span>
-<a name="l01328"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga8c27eb9e08e17a65c2bbc7905095679e">01328</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga8c27eb9e08e17a65c2bbc7905095679e" title="Get Channel 5 half transfer flag.">LL_DMA_IsActiveFlag_HT5</a>(DMA_TypeDef *DMAx)
+<a name="l01328"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga8c27eb9e08e17a65c2bbc7905095679e">01328</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga8c27eb9e08e17a65c2bbc7905095679e" title="Get Channel 5 half transfer flag.">LL_DMA_IsActiveFlag_HT5</a>(DMA_TypeDef *DMAx)
 <a name="l01329"></a>01329 {
 <a name="l01330"></a>01330   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_HTIF5) == (DMA_ISR_HTIF5));
 <a name="l01331"></a>01331 }
@@ -1403,7 +1403,7 @@
 <a name="l01336"></a>01336 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01337"></a>01337 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01338"></a>01338 <span class="comment">  */</span>
-<a name="l01339"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gab86e74972d93953a926f16f00fbdea11">01339</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gab86e74972d93953a926f16f00fbdea11" title="Get Channel 6 half transfer flag.">LL_DMA_IsActiveFlag_HT6</a>(DMA_TypeDef *DMAx)
+<a name="l01339"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gab86e74972d93953a926f16f00fbdea11">01339</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gab86e74972d93953a926f16f00fbdea11" title="Get Channel 6 half transfer flag.">LL_DMA_IsActiveFlag_HT6</a>(DMA_TypeDef *DMAx)
 <a name="l01340"></a>01340 {
 <a name="l01341"></a>01341   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_HTIF6) == (DMA_ISR_HTIF6));
 <a name="l01342"></a>01342 }
@@ -1414,7 +1414,7 @@
 <a name="l01347"></a>01347 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01348"></a>01348 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01349"></a>01349 <span class="comment">  */</span>
-<a name="l01350"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga9226c11a1ad46cd79bd5ebb3770f7611">01350</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga9226c11a1ad46cd79bd5ebb3770f7611" title="Get Channel 7 half transfer flag.">LL_DMA_IsActiveFlag_HT7</a>(DMA_TypeDef *DMAx)
+<a name="l01350"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga9226c11a1ad46cd79bd5ebb3770f7611">01350</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga9226c11a1ad46cd79bd5ebb3770f7611" title="Get Channel 7 half transfer flag.">LL_DMA_IsActiveFlag_HT7</a>(DMA_TypeDef *DMAx)
 <a name="l01351"></a>01351 {
 <a name="l01352"></a>01352   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_HTIF7) == (DMA_ISR_HTIF7));
 <a name="l01353"></a>01353 }
@@ -1425,7 +1425,7 @@
 <a name="l01358"></a>01358 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01359"></a>01359 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01360"></a>01360 <span class="comment">  */</span>
-<a name="l01361"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga5ded677164982bf81ef1268207d87793">01361</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga5ded677164982bf81ef1268207d87793" title="Get Channel 1 transfer error flag.">LL_DMA_IsActiveFlag_TE1</a>(DMA_TypeDef *DMAx)
+<a name="l01361"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga5ded677164982bf81ef1268207d87793">01361</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga5ded677164982bf81ef1268207d87793" title="Get Channel 1 transfer error flag.">LL_DMA_IsActiveFlag_TE1</a>(DMA_TypeDef *DMAx)
 <a name="l01362"></a>01362 {
 <a name="l01363"></a>01363   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_TEIF1) == (DMA_ISR_TEIF1));
 <a name="l01364"></a>01364 }
@@ -1436,7 +1436,7 @@
 <a name="l01369"></a>01369 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01370"></a>01370 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01371"></a>01371 <span class="comment">  */</span>
-<a name="l01372"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gae4c8501fcaf2c662e6bb06d930c020cc">01372</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gae4c8501fcaf2c662e6bb06d930c020cc" title="Get Channel 2 transfer error flag.">LL_DMA_IsActiveFlag_TE2</a>(DMA_TypeDef *DMAx)
+<a name="l01372"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gae4c8501fcaf2c662e6bb06d930c020cc">01372</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gae4c8501fcaf2c662e6bb06d930c020cc" title="Get Channel 2 transfer error flag.">LL_DMA_IsActiveFlag_TE2</a>(DMA_TypeDef *DMAx)
 <a name="l01373"></a>01373 {
 <a name="l01374"></a>01374   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_TEIF2) == (DMA_ISR_TEIF2));
 <a name="l01375"></a>01375 }
@@ -1447,7 +1447,7 @@
 <a name="l01380"></a>01380 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01381"></a>01381 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01382"></a>01382 <span class="comment">  */</span>
-<a name="l01383"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gaa59359d0aa3ca6046980329f6f94a959">01383</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gaa59359d0aa3ca6046980329f6f94a959" title="Get Channel 3 transfer error flag.">LL_DMA_IsActiveFlag_TE3</a>(DMA_TypeDef *DMAx)
+<a name="l01383"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gaa59359d0aa3ca6046980329f6f94a959">01383</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gaa59359d0aa3ca6046980329f6f94a959" title="Get Channel 3 transfer error flag.">LL_DMA_IsActiveFlag_TE3</a>(DMA_TypeDef *DMAx)
 <a name="l01384"></a>01384 {
 <a name="l01385"></a>01385   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_TEIF3) == (DMA_ISR_TEIF3));
 <a name="l01386"></a>01386 }
@@ -1458,7 +1458,7 @@
 <a name="l01391"></a>01391 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01392"></a>01392 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01393"></a>01393 <span class="comment">  */</span>
-<a name="l01394"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gac3432b38de4496ea4477c2d9e65ddbf0">01394</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gac3432b38de4496ea4477c2d9e65ddbf0" title="Get Channel 4 transfer error flag.">LL_DMA_IsActiveFlag_TE4</a>(DMA_TypeDef *DMAx)
+<a name="l01394"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gac3432b38de4496ea4477c2d9e65ddbf0">01394</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gac3432b38de4496ea4477c2d9e65ddbf0" title="Get Channel 4 transfer error flag.">LL_DMA_IsActiveFlag_TE4</a>(DMA_TypeDef *DMAx)
 <a name="l01395"></a>01395 {
 <a name="l01396"></a>01396   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_TEIF4) == (DMA_ISR_TEIF4));
 <a name="l01397"></a>01397 }
@@ -1469,7 +1469,7 @@
 <a name="l01402"></a>01402 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01403"></a>01403 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01404"></a>01404 <span class="comment">  */</span>
-<a name="l01405"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga3cfe0438febe85149886c7ffa2f8d93e">01405</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga3cfe0438febe85149886c7ffa2f8d93e" title="Get Channel 5 transfer error flag.">LL_DMA_IsActiveFlag_TE5</a>(DMA_TypeDef *DMAx)
+<a name="l01405"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga3cfe0438febe85149886c7ffa2f8d93e">01405</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga3cfe0438febe85149886c7ffa2f8d93e" title="Get Channel 5 transfer error flag.">LL_DMA_IsActiveFlag_TE5</a>(DMA_TypeDef *DMAx)
 <a name="l01406"></a>01406 {
 <a name="l01407"></a>01407   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_TEIF5) == (DMA_ISR_TEIF5));
 <a name="l01408"></a>01408 }
@@ -1480,7 +1480,7 @@
 <a name="l01413"></a>01413 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01414"></a>01414 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01415"></a>01415 <span class="comment">  */</span>
-<a name="l01416"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gaa4c0f9d3f618642acf138876452f9945">01416</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gaa4c0f9d3f618642acf138876452f9945" title="Get Channel 6 transfer error flag.">LL_DMA_IsActiveFlag_TE6</a>(DMA_TypeDef *DMAx)
+<a name="l01416"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gaa4c0f9d3f618642acf138876452f9945">01416</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gaa4c0f9d3f618642acf138876452f9945" title="Get Channel 6 transfer error flag.">LL_DMA_IsActiveFlag_TE6</a>(DMA_TypeDef *DMAx)
 <a name="l01417"></a>01417 {
 <a name="l01418"></a>01418   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_TEIF6) == (DMA_ISR_TEIF6));
 <a name="l01419"></a>01419 }
@@ -1491,7 +1491,7 @@
 <a name="l01424"></a>01424 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01425"></a>01425 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01426"></a>01426 <span class="comment">  */</span>
-<a name="l01427"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga82414c57433b322e99121dec7e3b804e">01427</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga82414c57433b322e99121dec7e3b804e" title="Get Channel 7 transfer error flag.">LL_DMA_IsActiveFlag_TE7</a>(DMA_TypeDef *DMAx)
+<a name="l01427"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga82414c57433b322e99121dec7e3b804e">01427</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga82414c57433b322e99121dec7e3b804e" title="Get Channel 7 transfer error flag.">LL_DMA_IsActiveFlag_TE7</a>(DMA_TypeDef *DMAx)
 <a name="l01428"></a>01428 {
 <a name="l01429"></a>01429   <span class="keywordflow">return</span> (READ_BIT(DMAx-&gt;ISR, DMA_ISR_TEIF7) == (DMA_ISR_TEIF7));
 <a name="l01430"></a>01430 }
@@ -1502,7 +1502,7 @@
 <a name="l01435"></a>01435 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01436"></a>01436 <span class="comment">  * @retval None</span>
 <a name="l01437"></a>01437 <span class="comment">  */</span>
-<a name="l01438"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga2c6c465b93c043c71f9bb822b25265ba">01438</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga2c6c465b93c043c71f9bb822b25265ba" title="Clear Channel 1 global interrupt flag.">LL_DMA_ClearFlag_GI1</a>(DMA_TypeDef *DMAx)
+<a name="l01438"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga2c6c465b93c043c71f9bb822b25265ba">01438</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga2c6c465b93c043c71f9bb822b25265ba" title="Clear Channel 1 global interrupt flag.">LL_DMA_ClearFlag_GI1</a>(DMA_TypeDef *DMAx)
 <a name="l01439"></a>01439 {
 <a name="l01440"></a>01440   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CGIF1);
 <a name="l01441"></a>01441 }
@@ -1513,7 +1513,7 @@
 <a name="l01446"></a>01446 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01447"></a>01447 <span class="comment">  * @retval None</span>
 <a name="l01448"></a>01448 <span class="comment">  */</span>
-<a name="l01449"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gacb9d3a0c460b6c5afd0dfe1d8af2485b">01449</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gacb9d3a0c460b6c5afd0dfe1d8af2485b" title="Clear Channel 2 global interrupt flag.">LL_DMA_ClearFlag_GI2</a>(DMA_TypeDef *DMAx)
+<a name="l01449"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gacb9d3a0c460b6c5afd0dfe1d8af2485b">01449</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gacb9d3a0c460b6c5afd0dfe1d8af2485b" title="Clear Channel 2 global interrupt flag.">LL_DMA_ClearFlag_GI2</a>(DMA_TypeDef *DMAx)
 <a name="l01450"></a>01450 {
 <a name="l01451"></a>01451   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CGIF2);
 <a name="l01452"></a>01452 }
@@ -1524,7 +1524,7 @@
 <a name="l01457"></a>01457 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01458"></a>01458 <span class="comment">  * @retval None</span>
 <a name="l01459"></a>01459 <span class="comment">  */</span>
-<a name="l01460"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga915a43cebac8930b6f4a11584c276c6f">01460</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga915a43cebac8930b6f4a11584c276c6f" title="Clear Channel 3 global interrupt flag.">LL_DMA_ClearFlag_GI3</a>(DMA_TypeDef *DMAx)
+<a name="l01460"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga915a43cebac8930b6f4a11584c276c6f">01460</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga915a43cebac8930b6f4a11584c276c6f" title="Clear Channel 3 global interrupt flag.">LL_DMA_ClearFlag_GI3</a>(DMA_TypeDef *DMAx)
 <a name="l01461"></a>01461 {
 <a name="l01462"></a>01462   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CGIF3);
 <a name="l01463"></a>01463 }
@@ -1535,7 +1535,7 @@
 <a name="l01468"></a>01468 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01469"></a>01469 <span class="comment">  * @retval None</span>
 <a name="l01470"></a>01470 <span class="comment">  */</span>
-<a name="l01471"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga497363730ab0ed8abf19bc39e1d8eab3">01471</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga497363730ab0ed8abf19bc39e1d8eab3" title="Clear Channel 4 global interrupt flag.">LL_DMA_ClearFlag_GI4</a>(DMA_TypeDef *DMAx)
+<a name="l01471"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga497363730ab0ed8abf19bc39e1d8eab3">01471</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga497363730ab0ed8abf19bc39e1d8eab3" title="Clear Channel 4 global interrupt flag.">LL_DMA_ClearFlag_GI4</a>(DMA_TypeDef *DMAx)
 <a name="l01472"></a>01472 {
 <a name="l01473"></a>01473   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CGIF4);
 <a name="l01474"></a>01474 }
@@ -1546,7 +1546,7 @@
 <a name="l01479"></a>01479 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01480"></a>01480 <span class="comment">  * @retval None</span>
 <a name="l01481"></a>01481 <span class="comment">  */</span>
-<a name="l01482"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga57132f8f894dce33198419ebba0d544d">01482</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga57132f8f894dce33198419ebba0d544d" title="Clear Channel 5 global interrupt flag.">LL_DMA_ClearFlag_GI5</a>(DMA_TypeDef *DMAx)
+<a name="l01482"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga57132f8f894dce33198419ebba0d544d">01482</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga57132f8f894dce33198419ebba0d544d" title="Clear Channel 5 global interrupt flag.">LL_DMA_ClearFlag_GI5</a>(DMA_TypeDef *DMAx)
 <a name="l01483"></a>01483 {
 <a name="l01484"></a>01484   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CGIF5);
 <a name="l01485"></a>01485 }
@@ -1557,7 +1557,7 @@
 <a name="l01490"></a>01490 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01491"></a>01491 <span class="comment">  * @retval None</span>
 <a name="l01492"></a>01492 <span class="comment">  */</span>
-<a name="l01493"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gad7d51e7ecc70ba5a9ec6b09f9d6ae619">01493</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gad7d51e7ecc70ba5a9ec6b09f9d6ae619" title="Clear Channel 6 global interrupt flag.">LL_DMA_ClearFlag_GI6</a>(DMA_TypeDef *DMAx)
+<a name="l01493"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gad7d51e7ecc70ba5a9ec6b09f9d6ae619">01493</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gad7d51e7ecc70ba5a9ec6b09f9d6ae619" title="Clear Channel 6 global interrupt flag.">LL_DMA_ClearFlag_GI6</a>(DMA_TypeDef *DMAx)
 <a name="l01494"></a>01494 {
 <a name="l01495"></a>01495   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CGIF6);
 <a name="l01496"></a>01496 }
@@ -1568,7 +1568,7 @@
 <a name="l01501"></a>01501 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01502"></a>01502 <span class="comment">  * @retval None</span>
 <a name="l01503"></a>01503 <span class="comment">  */</span>
-<a name="l01504"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga0b3de84d741ed244bdeb7ef8fc86914f">01504</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga0b3de84d741ed244bdeb7ef8fc86914f" title="Clear Channel 7 global interrupt flag.">LL_DMA_ClearFlag_GI7</a>(DMA_TypeDef *DMAx)
+<a name="l01504"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga0b3de84d741ed244bdeb7ef8fc86914f">01504</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga0b3de84d741ed244bdeb7ef8fc86914f" title="Clear Channel 7 global interrupt flag.">LL_DMA_ClearFlag_GI7</a>(DMA_TypeDef *DMAx)
 <a name="l01505"></a>01505 {
 <a name="l01506"></a>01506   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CGIF7);
 <a name="l01507"></a>01507 }
@@ -1579,7 +1579,7 @@
 <a name="l01512"></a>01512 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01513"></a>01513 <span class="comment">  * @retval None</span>
 <a name="l01514"></a>01514 <span class="comment">  */</span>
-<a name="l01515"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gaddb562a34ee54d5f98588e13b3f32ce2">01515</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gaddb562a34ee54d5f98588e13b3f32ce2" title="Clear Channel 1 transfer complete flag.">LL_DMA_ClearFlag_TC1</a>(DMA_TypeDef *DMAx)
+<a name="l01515"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gaddb562a34ee54d5f98588e13b3f32ce2">01515</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gaddb562a34ee54d5f98588e13b3f32ce2" title="Clear Channel 1 transfer complete flag.">LL_DMA_ClearFlag_TC1</a>(DMA_TypeDef *DMAx)
 <a name="l01516"></a>01516 {
 <a name="l01517"></a>01517   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CTCIF1);
 <a name="l01518"></a>01518 }
@@ -1590,7 +1590,7 @@
 <a name="l01523"></a>01523 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01524"></a>01524 <span class="comment">  * @retval None</span>
 <a name="l01525"></a>01525 <span class="comment">  */</span>
-<a name="l01526"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gaeb47d2a8df5150a03e199a2f7bbd9306">01526</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gaeb47d2a8df5150a03e199a2f7bbd9306" title="Clear Channel 2 transfer complete flag.">LL_DMA_ClearFlag_TC2</a>(DMA_TypeDef *DMAx)
+<a name="l01526"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gaeb47d2a8df5150a03e199a2f7bbd9306">01526</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gaeb47d2a8df5150a03e199a2f7bbd9306" title="Clear Channel 2 transfer complete flag.">LL_DMA_ClearFlag_TC2</a>(DMA_TypeDef *DMAx)
 <a name="l01527"></a>01527 {
 <a name="l01528"></a>01528   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CTCIF2);
 <a name="l01529"></a>01529 }
@@ -1601,7 +1601,7 @@
 <a name="l01534"></a>01534 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01535"></a>01535 <span class="comment">  * @retval None</span>
 <a name="l01536"></a>01536 <span class="comment">  */</span>
-<a name="l01537"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga9c3d615fc32a2d9445d1c2a8c9e134f7">01537</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga9c3d615fc32a2d9445d1c2a8c9e134f7" title="Clear Channel 3 transfer complete flag.">LL_DMA_ClearFlag_TC3</a>(DMA_TypeDef *DMAx)
+<a name="l01537"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga9c3d615fc32a2d9445d1c2a8c9e134f7">01537</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga9c3d615fc32a2d9445d1c2a8c9e134f7" title="Clear Channel 3 transfer complete flag.">LL_DMA_ClearFlag_TC3</a>(DMA_TypeDef *DMAx)
 <a name="l01538"></a>01538 {
 <a name="l01539"></a>01539   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CTCIF3);
 <a name="l01540"></a>01540 }
@@ -1612,7 +1612,7 @@
 <a name="l01545"></a>01545 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01546"></a>01546 <span class="comment">  * @retval None</span>
 <a name="l01547"></a>01547 <span class="comment">  */</span>
-<a name="l01548"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gad53093771a97671bb20de72f77d52d56">01548</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gad53093771a97671bb20de72f77d52d56" title="Clear Channel 4 transfer complete flag.">LL_DMA_ClearFlag_TC4</a>(DMA_TypeDef *DMAx)
+<a name="l01548"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gad53093771a97671bb20de72f77d52d56">01548</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gad53093771a97671bb20de72f77d52d56" title="Clear Channel 4 transfer complete flag.">LL_DMA_ClearFlag_TC4</a>(DMA_TypeDef *DMAx)
 <a name="l01549"></a>01549 {
 <a name="l01550"></a>01550   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CTCIF4);
 <a name="l01551"></a>01551 }
@@ -1623,7 +1623,7 @@
 <a name="l01556"></a>01556 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01557"></a>01557 <span class="comment">  * @retval None</span>
 <a name="l01558"></a>01558 <span class="comment">  */</span>
-<a name="l01559"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga96312133ee32d0e51500a12baf111213">01559</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga96312133ee32d0e51500a12baf111213" title="Clear Channel 5 transfer complete flag.">LL_DMA_ClearFlag_TC5</a>(DMA_TypeDef *DMAx)
+<a name="l01559"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga96312133ee32d0e51500a12baf111213">01559</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga96312133ee32d0e51500a12baf111213" title="Clear Channel 5 transfer complete flag.">LL_DMA_ClearFlag_TC5</a>(DMA_TypeDef *DMAx)
 <a name="l01560"></a>01560 {
 <a name="l01561"></a>01561   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CTCIF5);
 <a name="l01562"></a>01562 }
@@ -1634,7 +1634,7 @@
 <a name="l01567"></a>01567 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01568"></a>01568 <span class="comment">  * @retval None</span>
 <a name="l01569"></a>01569 <span class="comment">  */</span>
-<a name="l01570"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga2121035f08a8085389e87b808112fd5d">01570</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga2121035f08a8085389e87b808112fd5d" title="Clear Channel 6 transfer complete flag.">LL_DMA_ClearFlag_TC6</a>(DMA_TypeDef *DMAx)
+<a name="l01570"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga2121035f08a8085389e87b808112fd5d">01570</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga2121035f08a8085389e87b808112fd5d" title="Clear Channel 6 transfer complete flag.">LL_DMA_ClearFlag_TC6</a>(DMA_TypeDef *DMAx)
 <a name="l01571"></a>01571 {
 <a name="l01572"></a>01572   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CTCIF6);
 <a name="l01573"></a>01573 }
@@ -1645,7 +1645,7 @@
 <a name="l01578"></a>01578 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01579"></a>01579 <span class="comment">  * @retval None</span>
 <a name="l01580"></a>01580 <span class="comment">  */</span>
-<a name="l01581"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga3954968d9b75c0cef0cbf17ee79d5e5a">01581</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga3954968d9b75c0cef0cbf17ee79d5e5a" title="Clear Channel 7 transfer complete flag.">LL_DMA_ClearFlag_TC7</a>(DMA_TypeDef *DMAx)
+<a name="l01581"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga3954968d9b75c0cef0cbf17ee79d5e5a">01581</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga3954968d9b75c0cef0cbf17ee79d5e5a" title="Clear Channel 7 transfer complete flag.">LL_DMA_ClearFlag_TC7</a>(DMA_TypeDef *DMAx)
 <a name="l01582"></a>01582 {
 <a name="l01583"></a>01583   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CTCIF7);
 <a name="l01584"></a>01584 }
@@ -1656,7 +1656,7 @@
 <a name="l01589"></a>01589 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01590"></a>01590 <span class="comment">  * @retval None</span>
 <a name="l01591"></a>01591 <span class="comment">  */</span>
-<a name="l01592"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gac54385c6d0b9896c1eaf943cfe58fa8a">01592</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gac54385c6d0b9896c1eaf943cfe58fa8a" title="Clear Channel 1 half transfer flag.">LL_DMA_ClearFlag_HT1</a>(DMA_TypeDef *DMAx)
+<a name="l01592"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gac54385c6d0b9896c1eaf943cfe58fa8a">01592</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gac54385c6d0b9896c1eaf943cfe58fa8a" title="Clear Channel 1 half transfer flag.">LL_DMA_ClearFlag_HT1</a>(DMA_TypeDef *DMAx)
 <a name="l01593"></a>01593 {
 <a name="l01594"></a>01594   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CHTIF1);
 <a name="l01595"></a>01595 }
@@ -1667,7 +1667,7 @@
 <a name="l01600"></a>01600 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01601"></a>01601 <span class="comment">  * @retval None</span>
 <a name="l01602"></a>01602 <span class="comment">  */</span>
-<a name="l01603"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga1ca422e7d12a7f9e0e37be7a9f7bd425">01603</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga1ca422e7d12a7f9e0e37be7a9f7bd425" title="Clear Channel 2 half transfer flag.">LL_DMA_ClearFlag_HT2</a>(DMA_TypeDef *DMAx)
+<a name="l01603"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga1ca422e7d12a7f9e0e37be7a9f7bd425">01603</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga1ca422e7d12a7f9e0e37be7a9f7bd425" title="Clear Channel 2 half transfer flag.">LL_DMA_ClearFlag_HT2</a>(DMA_TypeDef *DMAx)
 <a name="l01604"></a>01604 {
 <a name="l01605"></a>01605   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CHTIF2);
 <a name="l01606"></a>01606 }
@@ -1678,7 +1678,7 @@
 <a name="l01611"></a>01611 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01612"></a>01612 <span class="comment">  * @retval None</span>
 <a name="l01613"></a>01613 <span class="comment">  */</span>
-<a name="l01614"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga15be2f406a11fc6cf74e888be17b19ac">01614</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga15be2f406a11fc6cf74e888be17b19ac" title="Clear Channel 3 half transfer flag.">LL_DMA_ClearFlag_HT3</a>(DMA_TypeDef *DMAx)
+<a name="l01614"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga15be2f406a11fc6cf74e888be17b19ac">01614</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga15be2f406a11fc6cf74e888be17b19ac" title="Clear Channel 3 half transfer flag.">LL_DMA_ClearFlag_HT3</a>(DMA_TypeDef *DMAx)
 <a name="l01615"></a>01615 {
 <a name="l01616"></a>01616   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CHTIF3);
 <a name="l01617"></a>01617 }
@@ -1689,7 +1689,7 @@
 <a name="l01622"></a>01622 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01623"></a>01623 <span class="comment">  * @retval None</span>
 <a name="l01624"></a>01624 <span class="comment">  */</span>
-<a name="l01625"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gac807e20c4d40a4b4e4201649aa39a577">01625</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gac807e20c4d40a4b4e4201649aa39a577" title="Clear Channel 4 half transfer flag.">LL_DMA_ClearFlag_HT4</a>(DMA_TypeDef *DMAx)
+<a name="l01625"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gac807e20c4d40a4b4e4201649aa39a577">01625</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gac807e20c4d40a4b4e4201649aa39a577" title="Clear Channel 4 half transfer flag.">LL_DMA_ClearFlag_HT4</a>(DMA_TypeDef *DMAx)
 <a name="l01626"></a>01626 {
 <a name="l01627"></a>01627   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CHTIF4);
 <a name="l01628"></a>01628 }
@@ -1700,7 +1700,7 @@
 <a name="l01633"></a>01633 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01634"></a>01634 <span class="comment">  * @retval None</span>
 <a name="l01635"></a>01635 <span class="comment">  */</span>
-<a name="l01636"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gadd824ba47ac765c65ef7f82ce79bcb43">01636</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gadd824ba47ac765c65ef7f82ce79bcb43" title="Clear Channel 5 half transfer flag.">LL_DMA_ClearFlag_HT5</a>(DMA_TypeDef *DMAx)
+<a name="l01636"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gadd824ba47ac765c65ef7f82ce79bcb43">01636</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gadd824ba47ac765c65ef7f82ce79bcb43" title="Clear Channel 5 half transfer flag.">LL_DMA_ClearFlag_HT5</a>(DMA_TypeDef *DMAx)
 <a name="l01637"></a>01637 {
 <a name="l01638"></a>01638   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CHTIF5);
 <a name="l01639"></a>01639 }
@@ -1711,7 +1711,7 @@
 <a name="l01644"></a>01644 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01645"></a>01645 <span class="comment">  * @retval None</span>
 <a name="l01646"></a>01646 <span class="comment">  */</span>
-<a name="l01647"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gab4d372f40dbea186613aa4c433d51433">01647</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gab4d372f40dbea186613aa4c433d51433" title="Clear Channel 6 half transfer flag.">LL_DMA_ClearFlag_HT6</a>(DMA_TypeDef *DMAx)
+<a name="l01647"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gab4d372f40dbea186613aa4c433d51433">01647</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gab4d372f40dbea186613aa4c433d51433" title="Clear Channel 6 half transfer flag.">LL_DMA_ClearFlag_HT6</a>(DMA_TypeDef *DMAx)
 <a name="l01648"></a>01648 {
 <a name="l01649"></a>01649   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CHTIF6);
 <a name="l01650"></a>01650 }
@@ -1722,7 +1722,7 @@
 <a name="l01655"></a>01655 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01656"></a>01656 <span class="comment">  * @retval None</span>
 <a name="l01657"></a>01657 <span class="comment">  */</span>
-<a name="l01658"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga1e4f13001813d8d66cbc85b46e83ae52">01658</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga1e4f13001813d8d66cbc85b46e83ae52" title="Clear Channel 7 half transfer flag.">LL_DMA_ClearFlag_HT7</a>(DMA_TypeDef *DMAx)
+<a name="l01658"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga1e4f13001813d8d66cbc85b46e83ae52">01658</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga1e4f13001813d8d66cbc85b46e83ae52" title="Clear Channel 7 half transfer flag.">LL_DMA_ClearFlag_HT7</a>(DMA_TypeDef *DMAx)
 <a name="l01659"></a>01659 {
 <a name="l01660"></a>01660   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CHTIF7);
 <a name="l01661"></a>01661 }
@@ -1733,7 +1733,7 @@
 <a name="l01666"></a>01666 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01667"></a>01667 <span class="comment">  * @retval None</span>
 <a name="l01668"></a>01668 <span class="comment">  */</span>
-<a name="l01669"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gaa2925a3b38decf6b915191097251cc2f">01669</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gaa2925a3b38decf6b915191097251cc2f" title="Clear Channel 1 transfer error flag.">LL_DMA_ClearFlag_TE1</a>(DMA_TypeDef *DMAx)
+<a name="l01669"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gaa2925a3b38decf6b915191097251cc2f">01669</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gaa2925a3b38decf6b915191097251cc2f" title="Clear Channel 1 transfer error flag.">LL_DMA_ClearFlag_TE1</a>(DMA_TypeDef *DMAx)
 <a name="l01670"></a>01670 {
 <a name="l01671"></a>01671   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CTEIF1);
 <a name="l01672"></a>01672 }
@@ -1744,7 +1744,7 @@
 <a name="l01677"></a>01677 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01678"></a>01678 <span class="comment">  * @retval None</span>
 <a name="l01679"></a>01679 <span class="comment">  */</span>
-<a name="l01680"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga11136f3aa1116d9d524642ade3bc4e66">01680</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga11136f3aa1116d9d524642ade3bc4e66" title="Clear Channel 2 transfer error flag.">LL_DMA_ClearFlag_TE2</a>(DMA_TypeDef *DMAx)
+<a name="l01680"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga11136f3aa1116d9d524642ade3bc4e66">01680</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga11136f3aa1116d9d524642ade3bc4e66" title="Clear Channel 2 transfer error flag.">LL_DMA_ClearFlag_TE2</a>(DMA_TypeDef *DMAx)
 <a name="l01681"></a>01681 {
 <a name="l01682"></a>01682   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CTEIF2);
 <a name="l01683"></a>01683 }
@@ -1755,7 +1755,7 @@
 <a name="l01688"></a>01688 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01689"></a>01689 <span class="comment">  * @retval None</span>
 <a name="l01690"></a>01690 <span class="comment">  */</span>
-<a name="l01691"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gaa3a38dd8e40ee442d64dd38a13254dfb">01691</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gaa3a38dd8e40ee442d64dd38a13254dfb" title="Clear Channel 3 transfer error flag.">LL_DMA_ClearFlag_TE3</a>(DMA_TypeDef *DMAx)
+<a name="l01691"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gaa3a38dd8e40ee442d64dd38a13254dfb">01691</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gaa3a38dd8e40ee442d64dd38a13254dfb" title="Clear Channel 3 transfer error flag.">LL_DMA_ClearFlag_TE3</a>(DMA_TypeDef *DMAx)
 <a name="l01692"></a>01692 {
 <a name="l01693"></a>01693   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CTEIF3);
 <a name="l01694"></a>01694 }
@@ -1766,7 +1766,7 @@
 <a name="l01699"></a>01699 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01700"></a>01700 <span class="comment">  * @retval None</span>
 <a name="l01701"></a>01701 <span class="comment">  */</span>
-<a name="l01702"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga350a2484f7fb6af1d84609e1b5ec5f24">01702</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga350a2484f7fb6af1d84609e1b5ec5f24" title="Clear Channel 4 transfer error flag.">LL_DMA_ClearFlag_TE4</a>(DMA_TypeDef *DMAx)
+<a name="l01702"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga350a2484f7fb6af1d84609e1b5ec5f24">01702</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga350a2484f7fb6af1d84609e1b5ec5f24" title="Clear Channel 4 transfer error flag.">LL_DMA_ClearFlag_TE4</a>(DMA_TypeDef *DMAx)
 <a name="l01703"></a>01703 {
 <a name="l01704"></a>01704   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CTEIF4);
 <a name="l01705"></a>01705 }
@@ -1777,7 +1777,7 @@
 <a name="l01710"></a>01710 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01711"></a>01711 <span class="comment">  * @retval None</span>
 <a name="l01712"></a>01712 <span class="comment">  */</span>
-<a name="l01713"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga4a399deba27a6425f8c0bef8f0d87514">01713</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga4a399deba27a6425f8c0bef8f0d87514" title="Clear Channel 5 transfer error flag.">LL_DMA_ClearFlag_TE5</a>(DMA_TypeDef *DMAx)
+<a name="l01713"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga4a399deba27a6425f8c0bef8f0d87514">01713</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga4a399deba27a6425f8c0bef8f0d87514" title="Clear Channel 5 transfer error flag.">LL_DMA_ClearFlag_TE5</a>(DMA_TypeDef *DMAx)
 <a name="l01714"></a>01714 {
 <a name="l01715"></a>01715   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CTEIF5);
 <a name="l01716"></a>01716 }
@@ -1788,7 +1788,7 @@
 <a name="l01721"></a>01721 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01722"></a>01722 <span class="comment">  * @retval None</span>
 <a name="l01723"></a>01723 <span class="comment">  */</span>
-<a name="l01724"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gaa69fdcad68bc09e5e19cf6be141eff02">01724</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#gaa69fdcad68bc09e5e19cf6be141eff02" title="Clear Channel 6 transfer error flag.">LL_DMA_ClearFlag_TE6</a>(DMA_TypeDef *DMAx)
+<a name="l01724"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gaa69fdcad68bc09e5e19cf6be141eff02">01724</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#gaa69fdcad68bc09e5e19cf6be141eff02" title="Clear Channel 6 transfer error flag.">LL_DMA_ClearFlag_TE6</a>(DMA_TypeDef *DMAx)
 <a name="l01725"></a>01725 {
 <a name="l01726"></a>01726   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CTEIF6);
 <a name="l01727"></a>01727 }
@@ -1799,7 +1799,7 @@
 <a name="l01732"></a>01732 <span class="comment">  * @param  DMAx DMAx Instance</span>
 <a name="l01733"></a>01733 <span class="comment">  * @retval None</span>
 <a name="l01734"></a>01734 <span class="comment">  */</span>
-<a name="l01735"></a><a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga6f7f41560dd5a5c47ec2a7cc7b968624">01735</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__FLAG__Management.html#ga6f7f41560dd5a5c47ec2a7cc7b968624" title="Clear Channel 7 transfer error flag.">LL_DMA_ClearFlag_TE7</a>(DMA_TypeDef *DMAx)
+<a name="l01735"></a><a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga6f7f41560dd5a5c47ec2a7cc7b968624">01735</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__FLAG__Management.html#ga6f7f41560dd5a5c47ec2a7cc7b968624" title="Clear Channel 7 transfer error flag.">LL_DMA_ClearFlag_TE7</a>(DMA_TypeDef *DMAx)
 <a name="l01736"></a>01736 {
 <a name="l01737"></a>01737   WRITE_REG(DMAx-&gt;IFCR, DMA_IFCR_CTEIF7);
 <a name="l01738"></a>01738 }
@@ -1826,7 +1826,7 @@
 <a name="l01759"></a>01759 <span class="comment">  *         @arg @ref LL_DMA_CHANNEL_7</span>
 <a name="l01760"></a>01760 <span class="comment">  * @retval None</span>
 <a name="l01761"></a>01761 <span class="comment">  */</span>
-<a name="l01762"></a><a class="code" href="group__DMA__LL__EF__IT__Management.html#gabb28fa71ac9d69bbcf98d8e13986bb42">01762</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__IT__Management.html#gabb28fa71ac9d69bbcf98d8e13986bb42" title="Enable Transfer complete interrupt.">LL_DMA_EnableIT_TC</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l01762"></a><a class="code" href="group/group__DMA__LL__EF__IT__Management.html#gabb28fa71ac9d69bbcf98d8e13986bb42">01762</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__IT__Management.html#gabb28fa71ac9d69bbcf98d8e13986bb42" title="Enable Transfer complete interrupt.">LL_DMA_EnableIT_TC</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l01763"></a>01763 {
 <a name="l01764"></a>01764   SET_BIT(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR, DMA_CCR_TCIE);
 <a name="l01765"></a>01765 }
@@ -1845,7 +1845,7 @@
 <a name="l01778"></a>01778 <span class="comment">  *         @arg @ref LL_DMA_CHANNEL_7</span>
 <a name="l01779"></a>01779 <span class="comment">  * @retval None</span>
 <a name="l01780"></a>01780 <span class="comment">  */</span>
-<a name="l01781"></a><a class="code" href="group__DMA__LL__EF__IT__Management.html#ga71c181f79efcc225a109c64524f65f4f">01781</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__IT__Management.html#ga71c181f79efcc225a109c64524f65f4f" title="Enable Half transfer interrupt.">LL_DMA_EnableIT_HT</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l01781"></a><a class="code" href="group/group__DMA__LL__EF__IT__Management.html#ga71c181f79efcc225a109c64524f65f4f">01781</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__IT__Management.html#ga71c181f79efcc225a109c64524f65f4f" title="Enable Half transfer interrupt.">LL_DMA_EnableIT_HT</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l01782"></a>01782 {
 <a name="l01783"></a>01783   SET_BIT(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR, DMA_CCR_HTIE);
 <a name="l01784"></a>01784 }
@@ -1864,7 +1864,7 @@
 <a name="l01797"></a>01797 <span class="comment">  *         @arg @ref LL_DMA_CHANNEL_7</span>
 <a name="l01798"></a>01798 <span class="comment">  * @retval None</span>
 <a name="l01799"></a>01799 <span class="comment">  */</span>
-<a name="l01800"></a><a class="code" href="group__DMA__LL__EF__IT__Management.html#ga71b66fc154643f73d81ed7018a4b4b94">01800</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__IT__Management.html#ga71b66fc154643f73d81ed7018a4b4b94" title="Enable Transfer error interrupt.">LL_DMA_EnableIT_TE</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l01800"></a><a class="code" href="group/group__DMA__LL__EF__IT__Management.html#ga71b66fc154643f73d81ed7018a4b4b94">01800</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__IT__Management.html#ga71b66fc154643f73d81ed7018a4b4b94" title="Enable Transfer error interrupt.">LL_DMA_EnableIT_TE</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l01801"></a>01801 {
 <a name="l01802"></a>01802   SET_BIT(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR, DMA_CCR_TEIE);
 <a name="l01803"></a>01803 }
@@ -1883,7 +1883,7 @@
 <a name="l01816"></a>01816 <span class="comment">  *         @arg @ref LL_DMA_CHANNEL_7</span>
 <a name="l01817"></a>01817 <span class="comment">  * @retval None</span>
 <a name="l01818"></a>01818 <span class="comment">  */</span>
-<a name="l01819"></a><a class="code" href="group__DMA__LL__EF__IT__Management.html#gaef6c77385e8683f2e661b7bbe7551bc6">01819</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__IT__Management.html#gaef6c77385e8683f2e661b7bbe7551bc6" title="Disable Transfer complete interrupt.">LL_DMA_DisableIT_TC</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l01819"></a><a class="code" href="group/group__DMA__LL__EF__IT__Management.html#gaef6c77385e8683f2e661b7bbe7551bc6">01819</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__IT__Management.html#gaef6c77385e8683f2e661b7bbe7551bc6" title="Disable Transfer complete interrupt.">LL_DMA_DisableIT_TC</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l01820"></a>01820 {
 <a name="l01821"></a>01821   CLEAR_BIT(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR, DMA_CCR_TCIE);
 <a name="l01822"></a>01822 }
@@ -1902,7 +1902,7 @@
 <a name="l01835"></a>01835 <span class="comment">  *         @arg @ref LL_DMA_CHANNEL_7</span>
 <a name="l01836"></a>01836 <span class="comment">  * @retval None</span>
 <a name="l01837"></a>01837 <span class="comment">  */</span>
-<a name="l01838"></a><a class="code" href="group__DMA__LL__EF__IT__Management.html#ga0a0ca9802e155492dba9220c47b517ce">01838</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__IT__Management.html#ga0a0ca9802e155492dba9220c47b517ce" title="Disable Half transfer interrupt.">LL_DMA_DisableIT_HT</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l01838"></a><a class="code" href="group/group__DMA__LL__EF__IT__Management.html#ga0a0ca9802e155492dba9220c47b517ce">01838</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__IT__Management.html#ga0a0ca9802e155492dba9220c47b517ce" title="Disable Half transfer interrupt.">LL_DMA_DisableIT_HT</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l01839"></a>01839 {
 <a name="l01840"></a>01840   CLEAR_BIT(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR, DMA_CCR_HTIE);
 <a name="l01841"></a>01841 }
@@ -1921,7 +1921,7 @@
 <a name="l01854"></a>01854 <span class="comment">  *         @arg @ref LL_DMA_CHANNEL_7</span>
 <a name="l01855"></a>01855 <span class="comment">  * @retval None</span>
 <a name="l01856"></a>01856 <span class="comment">  */</span>
-<a name="l01857"></a><a class="code" href="group__DMA__LL__EF__IT__Management.html#ga6cdf0207cc5f2f437c647df81a1455d5">01857</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__IT__Management.html#ga6cdf0207cc5f2f437c647df81a1455d5" title="Disable Transfer error interrupt.">LL_DMA_DisableIT_TE</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l01857"></a><a class="code" href="group/group__DMA__LL__EF__IT__Management.html#ga6cdf0207cc5f2f437c647df81a1455d5">01857</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__IT__Management.html#ga6cdf0207cc5f2f437c647df81a1455d5" title="Disable Transfer error interrupt.">LL_DMA_DisableIT_TE</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l01858"></a>01858 {
 <a name="l01859"></a>01859   CLEAR_BIT(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR, DMA_CCR_TEIE);
 <a name="l01860"></a>01860 }
@@ -1940,7 +1940,7 @@
 <a name="l01873"></a>01873 <span class="comment">  *         @arg @ref LL_DMA_CHANNEL_7</span>
 <a name="l01874"></a>01874 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01875"></a>01875 <span class="comment">  */</span>
-<a name="l01876"></a><a class="code" href="group__DMA__LL__EF__IT__Management.html#ga3f4a32b6bccb5ad1d93c308ae1c20eb6">01876</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__IT__Management.html#ga3f4a32b6bccb5ad1d93c308ae1c20eb6" title="Check if Transfer complete Interrupt is enabled.">LL_DMA_IsEnabledIT_TC</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l01876"></a><a class="code" href="group/group__DMA__LL__EF__IT__Management.html#ga3f4a32b6bccb5ad1d93c308ae1c20eb6">01876</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__IT__Management.html#ga3f4a32b6bccb5ad1d93c308ae1c20eb6" title="Check if Transfer complete Interrupt is enabled.">LL_DMA_IsEnabledIT_TC</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l01877"></a>01877 {
 <a name="l01878"></a>01878   <span class="keywordflow">return</span> (READ_BIT(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR,
 <a name="l01879"></a>01879                    DMA_CCR_TCIE) == (DMA_CCR_TCIE));
@@ -1960,7 +1960,7 @@
 <a name="l01893"></a>01893 <span class="comment">  *         @arg @ref LL_DMA_CHANNEL_7</span>
 <a name="l01894"></a>01894 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01895"></a>01895 <span class="comment">  */</span>
-<a name="l01896"></a><a class="code" href="group__DMA__LL__EF__IT__Management.html#ga5bf40d6ff093379a8890aed282538551">01896</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__IT__Management.html#ga5bf40d6ff093379a8890aed282538551" title="Check if Half transfer Interrupt is enabled.">LL_DMA_IsEnabledIT_HT</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l01896"></a><a class="code" href="group/group__DMA__LL__EF__IT__Management.html#ga5bf40d6ff093379a8890aed282538551">01896</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__IT__Management.html#ga5bf40d6ff093379a8890aed282538551" title="Check if Half transfer Interrupt is enabled.">LL_DMA_IsEnabledIT_HT</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l01897"></a>01897 {
 <a name="l01898"></a>01898   <span class="keywordflow">return</span> (READ_BIT(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR,
 <a name="l01899"></a>01899                    DMA_CCR_HTIE) == (DMA_CCR_HTIE));
@@ -1980,7 +1980,7 @@
 <a name="l01913"></a>01913 <span class="comment">  *         @arg @ref LL_DMA_CHANNEL_7</span>
 <a name="l01914"></a>01914 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01915"></a>01915 <span class="comment">  */</span>
-<a name="l01916"></a><a class="code" href="group__DMA__LL__EF__IT__Management.html#gad475da99881260cb17abe245765855ae">01916</a> __STATIC_INLINE uint32_t <a class="code" href="group__DMA__LL__EF__IT__Management.html#gad475da99881260cb17abe245765855ae" title="Check if Transfer error Interrupt is enabled.">LL_DMA_IsEnabledIT_TE</a>(DMA_TypeDef *DMAx, uint32_t Channel)
+<a name="l01916"></a><a class="code" href="group/group__DMA__LL__EF__IT__Management.html#gad475da99881260cb17abe245765855ae">01916</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DMA__LL__EF__IT__Management.html#gad475da99881260cb17abe245765855ae" title="Check if Transfer error Interrupt is enabled.">LL_DMA_IsEnabledIT_TE</a>(DMA_TypeDef *DMAx, uint32_t Channel)
 <a name="l01917"></a>01917 {
 <a name="l01918"></a>01918   <span class="keywordflow">return</span> (READ_BIT(((DMA_Channel_TypeDef *)((uint32_t)((uint32_t)DMAx + CHANNEL_OFFSET_TAB[Channel - 1U])))-&gt;CCR,
 <a name="l01919"></a>01919                    DMA_CCR_TEIE) == (DMA_CCR_TEIE));
@@ -1995,9 +1995,9 @@
 <a name="l01928"></a>01928 <span class="comment">  * @{</span>
 <a name="l01929"></a>01929 <span class="comment">  */</span>
 <a name="l01930"></a>01930 
-<a name="l01931"></a>01931 uint32_t <a class="code" href="group__DMA__LL__EF__Init.html#gad4f1e3538a42e3c61b359de15e7e11a6" title="Initialize the DMA registers according to the specified parameters in DMA_InitStruct.">LL_DMA_Init</a>(DMA_TypeDef *DMAx, uint32_t Channel, <a class="code" href="structLL__DMA__InitTypeDef.html">LL_DMA_InitTypeDef</a> *DMA_InitStruct);
-<a name="l01932"></a>01932 uint32_t <a class="code" href="group__DMA__LL__EF__Init.html#ga54198808a784936dd078e43481ca8cc9" title="De-initialize the DMA registers to their default reset values.">LL_DMA_DeInit</a>(DMA_TypeDef *DMAx, uint32_t Channel);
-<a name="l01933"></a>01933 <span class="keywordtype">void</span> <a class="code" href="group__DMA__LL__EF__Init.html#gad828fb5e4097e52a8bfeb562fde05512" title="Set each LL_DMA_InitTypeDef field to default value.">LL_DMA_StructInit</a>(<a class="code" href="structLL__DMA__InitTypeDef.html">LL_DMA_InitTypeDef</a> *DMA_InitStruct);
+<a name="l01931"></a>01931 uint32_t <a class="code" href="group/group__DMA__LL__EF__Init.html#gad4f1e3538a42e3c61b359de15e7e11a6" title="Initialize the DMA registers according to the specified parameters in DMA_InitStruct.">LL_DMA_Init</a>(DMA_TypeDef *DMAx, uint32_t Channel, <a class="code" href="structLL__DMA__InitTypeDef.html">LL_DMA_InitTypeDef</a> *DMA_InitStruct);
+<a name="l01932"></a>01932 uint32_t <a class="code" href="group/group__DMA__LL__EF__Init.html#ga54198808a784936dd078e43481ca8cc9" title="De-initialize the DMA registers to their default reset values.">LL_DMA_DeInit</a>(DMA_TypeDef *DMAx, uint32_t Channel);
+<a name="l01933"></a>01933 <span class="keywordtype">void</span> <a class="code" href="group/group__DMA__LL__EF__Init.html#gad828fb5e4097e52a8bfeb562fde05512" title="Set each LL_DMA_InitTypeDef field to default value.">LL_DMA_StructInit</a>(<a class="code" href="structLL__DMA__InitTypeDef.html">LL_DMA_InitTypeDef</a> *DMA_InitStruct);
 <a name="l01934"></a>01934 <span class="comment"></span>
 <a name="l01935"></a>01935 <span class="comment">/**</span>
 <a name="l01936"></a>01936 <span class="comment">  * @}</span>

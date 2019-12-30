@@ -51,24 +51,24 @@
 <a href="#define-members">Defines</a>  </div>
   <div class="headertitle">
 <div class="title">SMARTCARD Private Macros</div>  </div>
-<div class="ingroups"><a class="el" href="group__SMARTCARD.html">SMARTCARD</a></div></div><!--header-->
+<div class="ingroups"><a class="el" href="group/group__SMARTCARD.html">SMARTCARD</a></div></div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SMARTCARD__Private__Macros.html#ga963c514e557b58c5c11bb60ab2660259">IS_SMARTCARD_WORD_LENGTH</a>(LENGTH)&#160;&#160;&#160;((LENGTH) == <a class="el" href="group__SMARTCARD__Word__Length.html#ga22f73d114cf13ee0041537303faef14b">SMARTCARD_WORDLENGTH_9B</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SMARTCARD__Private__Macros.html#ga55a0c0a41cc21f1c11d34457bf45b97b">IS_SMARTCARD_STOPBITS</a>(STOPBITS)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SMARTCARD__Private__Macros.html#ga958995a8f043b3057cee33a8098ca095">IS_SMARTCARD_PARITY</a>(PARITY)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SMARTCARD__Private__Macros.html#ga2dc06686d0651b6a8504ccffd028d2c4">IS_SMARTCARD_MODE</a>(MODE)&#160;&#160;&#160;((((MODE) &amp; 0x0000FFF3U) == 0x00U) &amp;&amp; ((MODE) != 0x000000U))</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SMARTCARD__Private__Macros.html#gab728caa9af7ecfe085a67603df18e567">IS_SMARTCARD_POLARITY</a>(CPOL)&#160;&#160;&#160;(((CPOL) == <a class="el" href="group__SMARTCARD__Clock__Polarity.html#ga07e246426d125fbc19f8e363f09b21e5">SMARTCARD_POLARITY_LOW</a>) || ((CPOL) == <a class="el" href="group__SMARTCARD__Clock__Polarity.html#ga69e81ca7759a40f9e13c4051fe44a95f">SMARTCARD_POLARITY_HIGH</a>))</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SMARTCARD__Private__Macros.html#gad4f2566348232722026dc4861ed76125">IS_SMARTCARD_PHASE</a>(CPHA)&#160;&#160;&#160;(((CPHA) == <a class="el" href="group__SMARTCARD__Clock__Phase.html#ga6b5dfd540b22b8a6cbd956688d17cfce">SMARTCARD_PHASE_1EDGE</a>) || ((CPHA) == <a class="el" href="group__SMARTCARD__Clock__Phase.html#ga744e424283994e4c92a4db8b247582d6">SMARTCARD_PHASE_2EDGE</a>))</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SMARTCARD__Private__Macros.html#ga77540ed09a99dfb4b1283b4d4560733f">IS_SMARTCARD_LASTBIT</a>(LASTBIT)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SMARTCARD__Private__Macros.html#ga2ee3e5dd705563b63d6551497b514fe1">IS_SMARTCARD_NACK_STATE</a>(NACK)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SMARTCARD__Private__Macros.html#ga8af8fc5fa79cca4a3bf1bce5d051e371">IS_SMARTCARD_BAUDRATE</a>(BAUDRATE)&#160;&#160;&#160;((BAUDRATE) &lt; 4500001U)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SMARTCARD__Private__Macros.html#gadea425deccba9d8819982c266d338bc0">SMARTCARD_DIV</a>(__PCLK__, __BAUD__)&#160;&#160;&#160;(((__PCLK__)*25U)/(4U*(__BAUD__)))</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SMARTCARD__Private__Macros.html#gad3627e9e446fadeb1a8f458ba59cc72c">SMARTCARD_DIVMANT</a>(__PCLK__, __BAUD__)&#160;&#160;&#160;(<a class="el" href="group__SMARTCARD__Private__Macros.html#gadea425deccba9d8819982c266d338bc0">SMARTCARD_DIV</a>((__PCLK__), (__BAUD__))/100U)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SMARTCARD__Private__Macros.html#ga1580a16ad16bae69a78538d0337378fc">SMARTCARD_DIVFRAQ</a>(__PCLK__, __BAUD__)&#160;&#160;&#160;(((<a class="el" href="group__SMARTCARD__Private__Macros.html#gadea425deccba9d8819982c266d338bc0">SMARTCARD_DIV</a>((__PCLK__), (__BAUD__)) - (<a class="el" href="group__SMARTCARD__Private__Macros.html#gad3627e9e446fadeb1a8f458ba59cc72c">SMARTCARD_DIVMANT</a>((__PCLK__), (__BAUD__)) * 100U)) * 16U + 50U) / 100U)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SMARTCARD__Private__Macros.html#ga71112b34a63af4e1a8a55f18a203a468">SMARTCARD_BRR</a>(__PCLK__, __BAUD__)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__SMARTCARD__Private__Macros.html#ga963c514e557b58c5c11bb60ab2660259">IS_SMARTCARD_WORD_LENGTH</a>(LENGTH)&#160;&#160;&#160;((LENGTH) == <a class="el" href="group/group__SMARTCARD__Word__Length.html#ga22f73d114cf13ee0041537303faef14b">SMARTCARD_WORDLENGTH_9B</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__SMARTCARD__Private__Macros.html#ga55a0c0a41cc21f1c11d34457bf45b97b">IS_SMARTCARD_STOPBITS</a>(STOPBITS)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__SMARTCARD__Private__Macros.html#ga958995a8f043b3057cee33a8098ca095">IS_SMARTCARD_PARITY</a>(PARITY)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__SMARTCARD__Private__Macros.html#ga2dc06686d0651b6a8504ccffd028d2c4">IS_SMARTCARD_MODE</a>(MODE)&#160;&#160;&#160;((((MODE) &amp; 0x0000FFF3U) == 0x00U) &amp;&amp; ((MODE) != 0x000000U))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__SMARTCARD__Private__Macros.html#gab728caa9af7ecfe085a67603df18e567">IS_SMARTCARD_POLARITY</a>(CPOL)&#160;&#160;&#160;(((CPOL) == <a class="el" href="group/group__SMARTCARD__Clock__Polarity.html#ga07e246426d125fbc19f8e363f09b21e5">SMARTCARD_POLARITY_LOW</a>) || ((CPOL) == <a class="el" href="group/group__SMARTCARD__Clock__Polarity.html#ga69e81ca7759a40f9e13c4051fe44a95f">SMARTCARD_POLARITY_HIGH</a>))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__SMARTCARD__Private__Macros.html#gad4f2566348232722026dc4861ed76125">IS_SMARTCARD_PHASE</a>(CPHA)&#160;&#160;&#160;(((CPHA) == <a class="el" href="group/group__SMARTCARD__Clock__Phase.html#ga6b5dfd540b22b8a6cbd956688d17cfce">SMARTCARD_PHASE_1EDGE</a>) || ((CPHA) == <a class="el" href="group/group__SMARTCARD__Clock__Phase.html#ga744e424283994e4c92a4db8b247582d6">SMARTCARD_PHASE_2EDGE</a>))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__SMARTCARD__Private__Macros.html#ga77540ed09a99dfb4b1283b4d4560733f">IS_SMARTCARD_LASTBIT</a>(LASTBIT)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__SMARTCARD__Private__Macros.html#ga2ee3e5dd705563b63d6551497b514fe1">IS_SMARTCARD_NACK_STATE</a>(NACK)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__SMARTCARD__Private__Macros.html#ga8af8fc5fa79cca4a3bf1bce5d051e371">IS_SMARTCARD_BAUDRATE</a>(BAUDRATE)&#160;&#160;&#160;((BAUDRATE) &lt; 4500001U)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__SMARTCARD__Private__Macros.html#gadea425deccba9d8819982c266d338bc0">SMARTCARD_DIV</a>(__PCLK__, __BAUD__)&#160;&#160;&#160;(((__PCLK__)*25U)/(4U*(__BAUD__)))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__SMARTCARD__Private__Macros.html#gad3627e9e446fadeb1a8f458ba59cc72c">SMARTCARD_DIVMANT</a>(__PCLK__, __BAUD__)&#160;&#160;&#160;(<a class="el" href="group/group__SMARTCARD__Private__Macros.html#gadea425deccba9d8819982c266d338bc0">SMARTCARD_DIV</a>((__PCLK__), (__BAUD__))/100U)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__SMARTCARD__Private__Macros.html#ga1580a16ad16bae69a78538d0337378fc">SMARTCARD_DIVFRAQ</a>(__PCLK__, __BAUD__)&#160;&#160;&#160;(((<a class="el" href="group/group__SMARTCARD__Private__Macros.html#gadea425deccba9d8819982c266d338bc0">SMARTCARD_DIV</a>((__PCLK__), (__BAUD__)) - (<a class="el" href="group/group__SMARTCARD__Private__Macros.html#gad3627e9e446fadeb1a8f458ba59cc72c">SMARTCARD_DIVMANT</a>((__PCLK__), (__BAUD__)) * 100U)) * 16U + 50U) / 100U)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__SMARTCARD__Private__Macros.html#ga71112b34a63af4e1a8a55f18a203a468">SMARTCARD_BRR</a>(__PCLK__, __BAUD__)</td></tr>
 </table>
 <hr/><h2>Define Documentation</h2>
 <a class="anchor" id="ga8af8fc5fa79cca4a3bf1bce5d051e371"></a><!-- doxytag: member="stm32f1xx_hal_smartcard.h::IS_SMARTCARD_BAUDRATE" ref="ga8af8fc5fa79cca4a3bf1bce5d051e371" args="(BAUDRATE)" -->
@@ -76,7 +76,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__SMARTCARD__Private__Macros.html#ga8af8fc5fa79cca4a3bf1bce5d051e371">IS_SMARTCARD_BAUDRATE</a></td>
+          <td class="memname">#define <a class="el" href="group/group__SMARTCARD__Private__Macros.html#ga8af8fc5fa79cca4a3bf1bce5d051e371">IS_SMARTCARD_BAUDRATE</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">BAUDRATE</td><td>)</td>
@@ -97,7 +97,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__SMARTCARD__Private__Macros.html#ga77540ed09a99dfb4b1283b4d4560733f">IS_SMARTCARD_LASTBIT</a></td>
+          <td class="memname">#define <a class="el" href="group/group__SMARTCARD__Private__Macros.html#ga77540ed09a99dfb4b1283b4d4560733f">IS_SMARTCARD_LASTBIT</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">LASTBIT</td><td>)</td>
@@ -106,8 +106,8 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((LASTBIT) == <a class="code" href="group__SMARTCARD__Last__Bit.html#ga8ce0dd5ed70e0ce9799c9b056363e884">SMARTCARD_LASTBIT_DISABLE</a>) || \
-                                             ((LASTBIT) == <a class="code" href="group__SMARTCARD__Last__Bit.html#ga11edb8d6ed3ba95eade9a1a6d35a2468">SMARTCARD_LASTBIT_ENABLE</a>))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((LASTBIT) == <a class="code" href="group/group__SMARTCARD__Last__Bit.html#ga8ce0dd5ed70e0ce9799c9b056363e884">SMARTCARD_LASTBIT_DISABLE</a>) || \
+                                             ((LASTBIT) == <a class="code" href="group/group__SMARTCARD__Last__Bit.html#ga11edb8d6ed3ba95eade9a1a6d35a2468">SMARTCARD_LASTBIT_ENABLE</a>))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__smartcard_8h_source.html#l00703">703</a> of file <a class="el" href="stm32f1xx__hal__smartcard_8h_source.html">stm32f1xx_hal_smartcard.h</a>.</p>
 
@@ -120,7 +120,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__SMARTCARD__Private__Macros.html#ga2dc06686d0651b6a8504ccffd028d2c4">IS_SMARTCARD_MODE</a></td>
+          <td class="memname">#define <a class="el" href="group/group__SMARTCARD__Private__Macros.html#ga2dc06686d0651b6a8504ccffd028d2c4">IS_SMARTCARD_MODE</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">MODE</td><td>)</td>
@@ -141,7 +141,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__SMARTCARD__Private__Macros.html#ga2ee3e5dd705563b63d6551497b514fe1">IS_SMARTCARD_NACK_STATE</a></td>
+          <td class="memname">#define <a class="el" href="group/group__SMARTCARD__Private__Macros.html#ga2ee3e5dd705563b63d6551497b514fe1">IS_SMARTCARD_NACK_STATE</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">NACK</td><td>)</td>
@@ -150,8 +150,8 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((NACK) == <a class="code" href="group__SMARTCARD__NACK__State.html#ga83d350ff558fc372bc2efc5b5a477147">SMARTCARD_NACK_ENABLE</a>) || \
-                                             ((NACK) == <a class="code" href="group__SMARTCARD__NACK__State.html#ga746a79736cf7c2f8478b6c00f7908eda">SMARTCARD_NACK_DISABLE</a>))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((NACK) == <a class="code" href="group/group__SMARTCARD__NACK__State.html#ga83d350ff558fc372bc2efc5b5a477147">SMARTCARD_NACK_ENABLE</a>) || \
+                                             ((NACK) == <a class="code" href="group/group__SMARTCARD__NACK__State.html#ga746a79736cf7c2f8478b6c00f7908eda">SMARTCARD_NACK_DISABLE</a>))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__smartcard_8h_source.html#l00705">705</a> of file <a class="el" href="stm32f1xx__hal__smartcard_8h_source.html">stm32f1xx_hal_smartcard.h</a>.</p>
 
@@ -164,7 +164,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__SMARTCARD__Private__Macros.html#ga958995a8f043b3057cee33a8098ca095">IS_SMARTCARD_PARITY</a></td>
+          <td class="memname">#define <a class="el" href="group/group__SMARTCARD__Private__Macros.html#ga958995a8f043b3057cee33a8098ca095">IS_SMARTCARD_PARITY</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">PARITY</td><td>)</td>
@@ -173,8 +173,8 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((PARITY) == <a class="code" href="group__SMARTCARD__Parity.html#ga94ae871b29c18b59dab9a045443d11c8">SMARTCARD_PARITY_EVEN</a>) || \
-                                             ((PARITY) == <a class="code" href="group__SMARTCARD__Parity.html#gaef2239030beeb07577e43965b013f65d">SMARTCARD_PARITY_ODD</a>))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((PARITY) == <a class="code" href="group/group__SMARTCARD__Parity.html#ga94ae871b29c18b59dab9a045443d11c8">SMARTCARD_PARITY_EVEN</a>) || \
+                                             ((PARITY) == <a class="code" href="group/group__SMARTCARD__Parity.html#gaef2239030beeb07577e43965b013f65d">SMARTCARD_PARITY_ODD</a>))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__smartcard_8h_source.html#l00698">698</a> of file <a class="el" href="stm32f1xx__hal__smartcard_8h_source.html">stm32f1xx_hal_smartcard.h</a>.</p>
 
@@ -187,11 +187,11 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__SMARTCARD__Private__Macros.html#gad4f2566348232722026dc4861ed76125">IS_SMARTCARD_PHASE</a></td>
+          <td class="memname">#define <a class="el" href="group/group__SMARTCARD__Private__Macros.html#gad4f2566348232722026dc4861ed76125">IS_SMARTCARD_PHASE</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">CPHA</td><td>)</td>
-          <td>&#160;&#160;&#160;(((CPHA) == <a class="el" href="group__SMARTCARD__Clock__Phase.html#ga6b5dfd540b22b8a6cbd956688d17cfce">SMARTCARD_PHASE_1EDGE</a>) || ((CPHA) == <a class="el" href="group__SMARTCARD__Clock__Phase.html#ga744e424283994e4c92a4db8b247582d6">SMARTCARD_PHASE_2EDGE</a>))</td>
+          <td>&#160;&#160;&#160;(((CPHA) == <a class="el" href="group/group__SMARTCARD__Clock__Phase.html#ga6b5dfd540b22b8a6cbd956688d17cfce">SMARTCARD_PHASE_1EDGE</a>) || ((CPHA) == <a class="el" href="group/group__SMARTCARD__Clock__Phase.html#ga744e424283994e4c92a4db8b247582d6">SMARTCARD_PHASE_2EDGE</a>))</td>
         </tr>
       </table>
 </div>
@@ -208,11 +208,11 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__SMARTCARD__Private__Macros.html#gab728caa9af7ecfe085a67603df18e567">IS_SMARTCARD_POLARITY</a></td>
+          <td class="memname">#define <a class="el" href="group/group__SMARTCARD__Private__Macros.html#gab728caa9af7ecfe085a67603df18e567">IS_SMARTCARD_POLARITY</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">CPOL</td><td>)</td>
-          <td>&#160;&#160;&#160;(((CPOL) == <a class="el" href="group__SMARTCARD__Clock__Polarity.html#ga07e246426d125fbc19f8e363f09b21e5">SMARTCARD_POLARITY_LOW</a>) || ((CPOL) == <a class="el" href="group__SMARTCARD__Clock__Polarity.html#ga69e81ca7759a40f9e13c4051fe44a95f">SMARTCARD_POLARITY_HIGH</a>))</td>
+          <td>&#160;&#160;&#160;(((CPOL) == <a class="el" href="group/group__SMARTCARD__Clock__Polarity.html#ga07e246426d125fbc19f8e363f09b21e5">SMARTCARD_POLARITY_LOW</a>) || ((CPOL) == <a class="el" href="group/group__SMARTCARD__Clock__Polarity.html#ga69e81ca7759a40f9e13c4051fe44a95f">SMARTCARD_POLARITY_HIGH</a>))</td>
         </tr>
       </table>
 </div>
@@ -229,7 +229,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__SMARTCARD__Private__Macros.html#ga55a0c0a41cc21f1c11d34457bf45b97b">IS_SMARTCARD_STOPBITS</a></td>
+          <td class="memname">#define <a class="el" href="group/group__SMARTCARD__Private__Macros.html#ga55a0c0a41cc21f1c11d34457bf45b97b">IS_SMARTCARD_STOPBITS</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">STOPBITS</td><td>)</td>
@@ -238,8 +238,8 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((STOPBITS) == <a class="code" href="group__SMARTCARD__Stop__Bits.html#gacb1f23b1dd63c60d9823d1ec65475ae0">SMARTCARD_STOPBITS_0_5</a>) || \
-                                             ((STOPBITS) == <a class="code" href="group__SMARTCARD__Stop__Bits.html#ga60cf2b59a8e70d1039e8ce1dcdb7c97b">SMARTCARD_STOPBITS_1_5</a>))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((STOPBITS) == <a class="code" href="group/group__SMARTCARD__Stop__Bits.html#gacb1f23b1dd63c60d9823d1ec65475ae0">SMARTCARD_STOPBITS_0_5</a>) || \
+                                             ((STOPBITS) == <a class="code" href="group/group__SMARTCARD__Stop__Bits.html#ga60cf2b59a8e70d1039e8ce1dcdb7c97b">SMARTCARD_STOPBITS_1_5</a>))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__smartcard_8h_source.html#l00696">696</a> of file <a class="el" href="stm32f1xx__hal__smartcard_8h_source.html">stm32f1xx_hal_smartcard.h</a>.</p>
 
@@ -252,11 +252,11 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__SMARTCARD__Private__Macros.html#ga963c514e557b58c5c11bb60ab2660259">IS_SMARTCARD_WORD_LENGTH</a></td>
+          <td class="memname">#define <a class="el" href="group/group__SMARTCARD__Private__Macros.html#ga963c514e557b58c5c11bb60ab2660259">IS_SMARTCARD_WORD_LENGTH</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">LENGTH</td><td>)</td>
-          <td>&#160;&#160;&#160;((LENGTH) == <a class="el" href="group__SMARTCARD__Word__Length.html#ga22f73d114cf13ee0041537303faef14b">SMARTCARD_WORDLENGTH_9B</a>)</td>
+          <td>&#160;&#160;&#160;((LENGTH) == <a class="el" href="group/group__SMARTCARD__Word__Length.html#ga22f73d114cf13ee0041537303faef14b">SMARTCARD_WORDLENGTH_9B</a>)</td>
         </tr>
       </table>
 </div>
@@ -273,7 +273,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__SMARTCARD__Private__Macros.html#ga71112b34a63af4e1a8a55f18a203a468">SMARTCARD_BRR</a></td>
+          <td class="memname">#define <a class="el" href="group/group__SMARTCARD__Private__Macros.html#ga71112b34a63af4e1a8a55f18a203a468">SMARTCARD_BRR</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__PCLK__, </td>
@@ -292,9 +292,9 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((<a class="code" href="group__SMARTCARD__Private__Macros.html#gad3627e9e446fadeb1a8f458ba59cc72c">SMARTCARD_DIVMANT</a>((__PCLK__), (__BAUD__)) &lt;&lt; 4U) + \
-                                                 (<a class="code" href="group__SMARTCARD__Private__Macros.html#ga1580a16ad16bae69a78538d0337378fc">SMARTCARD_DIVFRAQ</a>((__PCLK__), (__BAUD__)) &amp; 0xF0U)) + \
-                                                 (<a class="code" href="group__SMARTCARD__Private__Macros.html#ga1580a16ad16bae69a78538d0337378fc">SMARTCARD_DIVFRAQ</a>((__PCLK__), (__BAUD__)) &amp; 0x0FU))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((<a class="code" href="group/group__SMARTCARD__Private__Macros.html#gad3627e9e446fadeb1a8f458ba59cc72c">SMARTCARD_DIVMANT</a>((__PCLK__), (__BAUD__)) &lt;&lt; 4U) + \
+                                                 (<a class="code" href="group/group__SMARTCARD__Private__Macros.html#ga1580a16ad16bae69a78538d0337378fc">SMARTCARD_DIVFRAQ</a>((__PCLK__), (__BAUD__)) &amp; 0xF0U)) + \
+                                                 (<a class="code" href="group/group__SMARTCARD__Private__Macros.html#ga1580a16ad16bae69a78538d0337378fc">SMARTCARD_DIVFRAQ</a>((__PCLK__), (__BAUD__)) &amp; 0x0FU))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__smartcard_8h_source.html#l00714">714</a> of file <a class="el" href="stm32f1xx__hal__smartcard_8h_source.html">stm32f1xx_hal_smartcard.h</a>.</p>
 
@@ -307,7 +307,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__SMARTCARD__Private__Macros.html#gadea425deccba9d8819982c266d338bc0">SMARTCARD_DIV</a></td>
+          <td class="memname">#define <a class="el" href="group/group__SMARTCARD__Private__Macros.html#gadea425deccba9d8819982c266d338bc0">SMARTCARD_DIV</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__PCLK__, </td>
@@ -336,7 +336,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__SMARTCARD__Private__Macros.html#ga1580a16ad16bae69a78538d0337378fc">SMARTCARD_DIVFRAQ</a></td>
+          <td class="memname">#define <a class="el" href="group/group__SMARTCARD__Private__Macros.html#ga1580a16ad16bae69a78538d0337378fc">SMARTCARD_DIVFRAQ</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__PCLK__, </td>
@@ -350,7 +350,7 @@ Defines</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(((<a class="el" href="group__SMARTCARD__Private__Macros.html#gadea425deccba9d8819982c266d338bc0">SMARTCARD_DIV</a>((__PCLK__), (__BAUD__)) - (<a class="el" href="group__SMARTCARD__Private__Macros.html#gad3627e9e446fadeb1a8f458ba59cc72c">SMARTCARD_DIVMANT</a>((__PCLK__), (__BAUD__)) * 100U)) * 16U + 50U) / 100U)</td>
+          <td></td><td>&#160;&#160;&#160;(((<a class="el" href="group/group__SMARTCARD__Private__Macros.html#gadea425deccba9d8819982c266d338bc0">SMARTCARD_DIV</a>((__PCLK__), (__BAUD__)) - (<a class="el" href="group/group__SMARTCARD__Private__Macros.html#gad3627e9e446fadeb1a8f458ba59cc72c">SMARTCARD_DIVMANT</a>((__PCLK__), (__BAUD__)) * 100U)) * 16U + 50U) / 100U)</td>
         </tr>
       </table>
 </div>
@@ -365,7 +365,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__SMARTCARD__Private__Macros.html#gad3627e9e446fadeb1a8f458ba59cc72c">SMARTCARD_DIVMANT</a></td>
+          <td class="memname">#define <a class="el" href="group/group__SMARTCARD__Private__Macros.html#gad3627e9e446fadeb1a8f458ba59cc72c">SMARTCARD_DIVMANT</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__PCLK__, </td>
@@ -379,7 +379,7 @@ Defines</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(<a class="el" href="group__SMARTCARD__Private__Macros.html#gadea425deccba9d8819982c266d338bc0">SMARTCARD_DIV</a>((__PCLK__), (__BAUD__))/100U)</td>
+          <td></td><td>&#160;&#160;&#160;(<a class="el" href="group/group__SMARTCARD__Private__Macros.html#gadea425deccba9d8819982c266d338bc0">SMARTCARD_DIV</a>((__PCLK__), (__BAUD__))/100U)</td>
         </tr>
       </table>
 </div>

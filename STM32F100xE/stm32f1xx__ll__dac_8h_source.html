@@ -119,46 +119,46 @@
 <a name="l00052"></a>00052 <span class="comment">/* - channel bits position into register SWTRIG                               */</span>
 <a name="l00053"></a>00053 <span class="comment">/* - channel register offset of data holding register DHRx                    */</span>
 <a name="l00054"></a>00054 <span class="comment">/* - channel register offset of data output register DORx                     */</span>
-<a name="l00055"></a><a class="code" href="group__DAC__LL__Private__Constants.html#ga060af962dabc6a4a7cda41965cc4179e">00055</a> <span class="preprocessor">#define DAC_CR_CH1_BITOFFSET           0U    </span><span class="comment">/* Position of channel bits into registers CR, MCR, CCR, SHHR, SHRR of channel 1 */</span>
-<a name="l00056"></a><a class="code" href="group__DAC__LL__Private__Constants.html#gad72b8f16312ee8650480969ada1a8a4d">00056</a> <span class="preprocessor">#define DAC_CR_CH2_BITOFFSET           16U   </span><span class="comment">/* Position of channel bits into registers CR, MCR, CCR, SHHR, SHRR of channel 2 */</span>
-<a name="l00057"></a><a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">00057</a> <span class="preprocessor">#define DAC_CR_CHX_BITOFFSET_MASK      (DAC_CR_CH1_BITOFFSET | DAC_CR_CH2_BITOFFSET)</span>
+<a name="l00055"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#ga060af962dabc6a4a7cda41965cc4179e">00055</a> <span class="preprocessor">#define DAC_CR_CH1_BITOFFSET           0U    </span><span class="comment">/* Position of channel bits into registers CR, MCR, CCR, SHHR, SHRR of channel 1 */</span>
+<a name="l00056"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#gad72b8f16312ee8650480969ada1a8a4d">00056</a> <span class="preprocessor">#define DAC_CR_CH2_BITOFFSET           16U   </span><span class="comment">/* Position of channel bits into registers CR, MCR, CCR, SHHR, SHRR of channel 2 */</span>
+<a name="l00057"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">00057</a> <span class="preprocessor">#define DAC_CR_CHX_BITOFFSET_MASK      (DAC_CR_CH1_BITOFFSET | DAC_CR_CH2_BITOFFSET)</span>
 <a name="l00058"></a>00058 <span class="preprocessor"></span>
-<a name="l00059"></a><a class="code" href="group__DAC__LL__Private__Constants.html#ga4f0c7100defa6c8dfac6eee17a6b50d3">00059</a> <span class="preprocessor">#define DAC_SWTR_CH1                   (DAC_SWTRIGR_SWTRIG1) </span><span class="comment">/* Channel bit into register SWTRIGR of channel 1. */</span>
-<a name="l00060"></a><a class="code" href="group__DAC__LL__Private__Constants.html#gaed863fab4bad03292ce84eb7081512a7">00060</a> <span class="preprocessor">#define DAC_SWTR_CH2                   (DAC_SWTRIGR_SWTRIG2) </span><span class="comment">/* Channel bit into register SWTRIGR of channel 2. */</span>
-<a name="l00061"></a><a class="code" href="group__DAC__LL__Private__Constants.html#ga666f7d7467af9805b1ad5e13186d9153">00061</a> <span class="preprocessor">#define DAC_SWTR_CHX_MASK              (DAC_SWTR_CH1 | DAC_SWTR_CH2)</span>
+<a name="l00059"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#ga4f0c7100defa6c8dfac6eee17a6b50d3">00059</a> <span class="preprocessor">#define DAC_SWTR_CH1                   (DAC_SWTRIGR_SWTRIG1) </span><span class="comment">/* Channel bit into register SWTRIGR of channel 1. */</span>
+<a name="l00060"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#gaed863fab4bad03292ce84eb7081512a7">00060</a> <span class="preprocessor">#define DAC_SWTR_CH2                   (DAC_SWTRIGR_SWTRIG2) </span><span class="comment">/* Channel bit into register SWTRIGR of channel 2. */</span>
+<a name="l00061"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#ga666f7d7467af9805b1ad5e13186d9153">00061</a> <span class="preprocessor">#define DAC_SWTR_CHX_MASK              (DAC_SWTR_CH1 | DAC_SWTR_CH2)</span>
 <a name="l00062"></a>00062 <span class="preprocessor"></span>
-<a name="l00063"></a><a class="code" href="group__DAC__LL__Private__Constants.html#gaf4ba2115649b59543b5194246f33177a">00063</a> <span class="preprocessor">#define DAC_REG_DHR12R1_REGOFFSET      0x00000000U             </span><span class="comment">/* Register DHR12Rx channel 1 taken as reference */</span>
-<a name="l00064"></a><a class="code" href="group__DAC__LL__Private__Constants.html#gaded9947b692da5a18e772494abd18a44">00064</a> <span class="preprocessor">#define DAC_REG_DHR12L1_REGOFFSET      0x00100000U             </span><span class="comment">/* Register offset of DHR12Lx channel 1 versus DHR12Rx channel 1 (shifted left of 20 bits) */</span>
-<a name="l00065"></a><a class="code" href="group__DAC__LL__Private__Constants.html#gaad2104b021d695f736b9883d97d87402">00065</a> <span class="preprocessor">#define DAC_REG_DHR8R1_REGOFFSET       0x02000000U             </span><span class="comment">/* Register offset of DHR8Rx  channel 1 versus DHR12Rx channel 1 (shifted left of 24 bits) */</span>
-<a name="l00066"></a><a class="code" href="group__DAC__LL__Private__Constants.html#gabd41dde3610a2af1f2c5fde8c588113b">00066</a> <span class="preprocessor">#define DAC_REG_DHR12R2_REGOFFSET      0x00030000U             </span><span class="comment">/* Register offset of DHR12Rx channel 2 versus DHR12Rx channel 1 (shifted left of 16 bits) */</span>
-<a name="l00067"></a><a class="code" href="group__DAC__LL__Private__Constants.html#ga36df4801a72a943de62af8054fae88a2">00067</a> <span class="preprocessor">#define DAC_REG_DHR12L2_REGOFFSET      0x00400000U             </span><span class="comment">/* Register offset of DHR12Lx channel 2 versus DHR12Rx channel 1 (shifted left of 20 bits) */</span>
-<a name="l00068"></a><a class="code" href="group__DAC__LL__Private__Constants.html#gadb2e7acb81d99fa951af87f96c13b29b">00068</a> <span class="preprocessor">#define DAC_REG_DHR8R2_REGOFFSET       0x05000000U             </span><span class="comment">/* Register offset of DHR8Rx  channel 2 versus DHR12Rx channel 1 (shifted left of 24 bits) */</span>
-<a name="l00069"></a><a class="code" href="group__DAC__LL__Private__Constants.html#ga8fd03b0a1191b5a0544be8840804fb09">00069</a> <span class="preprocessor">#define DAC_REG_DHR12RX_REGOFFSET_MASK 0x000F0000U</span>
-<a name="l00070"></a><a class="code" href="group__DAC__LL__Private__Constants.html#gacb17c03daea982fdf3bdcf6c1486fd81">00070</a> <span class="preprocessor"></span><span class="preprocessor">#define DAC_REG_DHR12LX_REGOFFSET_MASK 0x00F00000U</span>
-<a name="l00071"></a><a class="code" href="group__DAC__LL__Private__Constants.html#ga7adb6a07e501c2f8bf191cf923c1b8b1">00071</a> <span class="preprocessor"></span><span class="preprocessor">#define DAC_REG_DHR8RX_REGOFFSET_MASK  0x0F000000U</span>
-<a name="l00072"></a><a class="code" href="group__DAC__LL__Private__Constants.html#gaca66e2486dd5461afc05973845cef5e8">00072</a> <span class="preprocessor"></span><span class="preprocessor">#define DAC_REG_DHRX_REGOFFSET_MASK    (DAC_REG_DHR12RX_REGOFFSET_MASK | DAC_REG_DHR12LX_REGOFFSET_MASK | DAC_REG_DHR8RX_REGOFFSET_MASK)</span>
+<a name="l00063"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#gaf4ba2115649b59543b5194246f33177a">00063</a> <span class="preprocessor">#define DAC_REG_DHR12R1_REGOFFSET      0x00000000U             </span><span class="comment">/* Register DHR12Rx channel 1 taken as reference */</span>
+<a name="l00064"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#gaded9947b692da5a18e772494abd18a44">00064</a> <span class="preprocessor">#define DAC_REG_DHR12L1_REGOFFSET      0x00100000U             </span><span class="comment">/* Register offset of DHR12Lx channel 1 versus DHR12Rx channel 1 (shifted left of 20 bits) */</span>
+<a name="l00065"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#gaad2104b021d695f736b9883d97d87402">00065</a> <span class="preprocessor">#define DAC_REG_DHR8R1_REGOFFSET       0x02000000U             </span><span class="comment">/* Register offset of DHR8Rx  channel 1 versus DHR12Rx channel 1 (shifted left of 24 bits) */</span>
+<a name="l00066"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#gabd41dde3610a2af1f2c5fde8c588113b">00066</a> <span class="preprocessor">#define DAC_REG_DHR12R2_REGOFFSET      0x00030000U             </span><span class="comment">/* Register offset of DHR12Rx channel 2 versus DHR12Rx channel 1 (shifted left of 16 bits) */</span>
+<a name="l00067"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#ga36df4801a72a943de62af8054fae88a2">00067</a> <span class="preprocessor">#define DAC_REG_DHR12L2_REGOFFSET      0x00400000U             </span><span class="comment">/* Register offset of DHR12Lx channel 2 versus DHR12Rx channel 1 (shifted left of 20 bits) */</span>
+<a name="l00068"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#gadb2e7acb81d99fa951af87f96c13b29b">00068</a> <span class="preprocessor">#define DAC_REG_DHR8R2_REGOFFSET       0x05000000U             </span><span class="comment">/* Register offset of DHR8Rx  channel 2 versus DHR12Rx channel 1 (shifted left of 24 bits) */</span>
+<a name="l00069"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#ga8fd03b0a1191b5a0544be8840804fb09">00069</a> <span class="preprocessor">#define DAC_REG_DHR12RX_REGOFFSET_MASK 0x000F0000U</span>
+<a name="l00070"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#gacb17c03daea982fdf3bdcf6c1486fd81">00070</a> <span class="preprocessor"></span><span class="preprocessor">#define DAC_REG_DHR12LX_REGOFFSET_MASK 0x00F00000U</span>
+<a name="l00071"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#ga7adb6a07e501c2f8bf191cf923c1b8b1">00071</a> <span class="preprocessor"></span><span class="preprocessor">#define DAC_REG_DHR8RX_REGOFFSET_MASK  0x0F000000U</span>
+<a name="l00072"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#gaca66e2486dd5461afc05973845cef5e8">00072</a> <span class="preprocessor"></span><span class="preprocessor">#define DAC_REG_DHRX_REGOFFSET_MASK    (DAC_REG_DHR12RX_REGOFFSET_MASK | DAC_REG_DHR12LX_REGOFFSET_MASK | DAC_REG_DHR8RX_REGOFFSET_MASK)</span>
 <a name="l00073"></a>00073 <span class="preprocessor"></span>
-<a name="l00074"></a><a class="code" href="group__DAC__LL__Private__Constants.html#ga3d68613be13b394a4c159d4077a0d90d">00074</a> <span class="preprocessor">#define DAC_REG_DOR1_REGOFFSET         0x00000000U             </span><span class="comment">/* Register DORx channel 1 taken as reference */</span>
-<a name="l00075"></a><a class="code" href="group__DAC__LL__Private__Constants.html#ga9c25debc1ce9c53195c53fa01ed8a7cd">00075</a> <span class="preprocessor">#define DAC_REG_DOR2_REGOFFSET         0x10000000U             </span><span class="comment">/* Register offset of DORx channel 1 versus DORx channel 2 (shifted left of 28 bits) */</span>
-<a name="l00076"></a><a class="code" href="group__DAC__LL__Private__Constants.html#ga0a222465f9b9d1286a7646c5642888cf">00076</a> <span class="preprocessor">#define DAC_REG_DORX_REGOFFSET_MASK    (DAC_REG_DOR1_REGOFFSET | DAC_REG_DOR2_REGOFFSET)</span>
+<a name="l00074"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3d68613be13b394a4c159d4077a0d90d">00074</a> <span class="preprocessor">#define DAC_REG_DOR1_REGOFFSET         0x00000000U             </span><span class="comment">/* Register DORx channel 1 taken as reference */</span>
+<a name="l00075"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#ga9c25debc1ce9c53195c53fa01ed8a7cd">00075</a> <span class="preprocessor">#define DAC_REG_DOR2_REGOFFSET         0x10000000U             </span><span class="comment">/* Register offset of DORx channel 1 versus DORx channel 2 (shifted left of 28 bits) */</span>
+<a name="l00076"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#ga0a222465f9b9d1286a7646c5642888cf">00076</a> <span class="preprocessor">#define DAC_REG_DORX_REGOFFSET_MASK    (DAC_REG_DOR1_REGOFFSET | DAC_REG_DOR2_REGOFFSET)</span>
 <a name="l00077"></a>00077 <span class="preprocessor"></span>
 <a name="l00078"></a>00078 
-<a name="l00079"></a><a class="code" href="group__DAC__LL__Private__Constants.html#gab96ab38ca50ae215614d6e4c6b25032d">00079</a> <span class="preprocessor">#define DAC_REG_DHR_REGOFFSET_MASK_POSBIT0         0x0000000FU  </span><span class="comment">/* Mask of data hold registers offset (DHR12Rx, DHR12Lx, DHR8Rx, ...) when shifted to position 0 */</span>
-<a name="l00080"></a><a class="code" href="group__DAC__LL__Private__Constants.html#ga6c8127fb04aebb2b28b1bd70c5ecb357">00080</a> <span class="preprocessor">#define DAC_REG_DORX_REGOFFSET_MASK_POSBIT0        0x00000001U  </span><span class="comment">/* Mask of DORx registers offset when shifted to position 0 */</span>
-<a name="l00081"></a><a class="code" href="group__DAC__LL__Private__Constants.html#ga4db7e6f9c2f58676790e266aa41385cf">00081</a> <span class="preprocessor">#define DAC_REG_SHSRX_REGOFFSET_MASK_POSBIT0       0x00000001U  </span><span class="comment">/* Mask of SHSRx registers offset when shifted to position 0 */</span>
+<a name="l00079"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#gab96ab38ca50ae215614d6e4c6b25032d">00079</a> <span class="preprocessor">#define DAC_REG_DHR_REGOFFSET_MASK_POSBIT0         0x0000000FU  </span><span class="comment">/* Mask of data hold registers offset (DHR12Rx, DHR12Lx, DHR8Rx, ...) when shifted to position 0 */</span>
+<a name="l00080"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#ga6c8127fb04aebb2b28b1bd70c5ecb357">00080</a> <span class="preprocessor">#define DAC_REG_DORX_REGOFFSET_MASK_POSBIT0        0x00000001U  </span><span class="comment">/* Mask of DORx registers offset when shifted to position 0 */</span>
+<a name="l00081"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#ga4db7e6f9c2f58676790e266aa41385cf">00081</a> <span class="preprocessor">#define DAC_REG_SHSRX_REGOFFSET_MASK_POSBIT0       0x00000001U  </span><span class="comment">/* Mask of SHSRx registers offset when shifted to position 0 */</span>
 <a name="l00082"></a>00082 
-<a name="l00083"></a><a class="code" href="group__DAC__LL__Private__Constants.html#gacbe8f44af3817320f0a6191b5eb35493">00083</a> <span class="preprocessor">#define DAC_REG_DHR12RX_REGOFFSET_BITOFFSET_POS           16U   </span><span class="comment">/* Position of bits register offset of DHR12Rx channel 1 or 2 versus DHR12Rx channel 1 (shifted left of 16 bits) */</span>
-<a name="l00084"></a><a class="code" href="group__DAC__LL__Private__Constants.html#gaa711a502ec9181ae4f3c7eca66fc0ee8">00084</a> <span class="preprocessor">#define DAC_REG_DHR12LX_REGOFFSET_BITOFFSET_POS           20U   </span><span class="comment">/* Position of bits register offset of DHR12Lx channel 1 or 2 versus DHR12Rx channel 1 (shifted left of 20 bits) */</span>
-<a name="l00085"></a><a class="code" href="group__DAC__LL__Private__Constants.html#ga469864d620bbd71489ef718d83d7c254">00085</a> <span class="preprocessor">#define DAC_REG_DHR8RX_REGOFFSET_BITOFFSET_POS            24U   </span><span class="comment">/* Position of bits register offset of DHR8Rx  channel 1 or 2 versus DHR12Rx channel 1 (shifted left of 24 bits) */</span>
-<a name="l00086"></a><a class="code" href="group__DAC__LL__Private__Constants.html#gac974b4e2609bb6a6cdfc93642b0dc56f">00086</a> <span class="preprocessor">#define DAC_REG_DORX_REGOFFSET_BITOFFSET_POS              28U   </span><span class="comment">/* Position of bits register offset of DORx channel 1 or 2 versus DORx channel 1 (shifted left of 28 bits) */</span>
+<a name="l00083"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#gacbe8f44af3817320f0a6191b5eb35493">00083</a> <span class="preprocessor">#define DAC_REG_DHR12RX_REGOFFSET_BITOFFSET_POS           16U   </span><span class="comment">/* Position of bits register offset of DHR12Rx channel 1 or 2 versus DHR12Rx channel 1 (shifted left of 16 bits) */</span>
+<a name="l00084"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#gaa711a502ec9181ae4f3c7eca66fc0ee8">00084</a> <span class="preprocessor">#define DAC_REG_DHR12LX_REGOFFSET_BITOFFSET_POS           20U   </span><span class="comment">/* Position of bits register offset of DHR12Lx channel 1 or 2 versus DHR12Rx channel 1 (shifted left of 20 bits) */</span>
+<a name="l00085"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#ga469864d620bbd71489ef718d83d7c254">00085</a> <span class="preprocessor">#define DAC_REG_DHR8RX_REGOFFSET_BITOFFSET_POS            24U   </span><span class="comment">/* Position of bits register offset of DHR8Rx  channel 1 or 2 versus DHR12Rx channel 1 (shifted left of 24 bits) */</span>
+<a name="l00086"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#gac974b4e2609bb6a6cdfc93642b0dc56f">00086</a> <span class="preprocessor">#define DAC_REG_DORX_REGOFFSET_BITOFFSET_POS              28U   </span><span class="comment">/* Position of bits register offset of DORx channel 1 or 2 versus DORx channel 1 (shifted left of 28 bits) */</span>
 <a name="l00087"></a>00087 
 <a name="l00088"></a>00088 <span class="comment">/* DAC registers bits positions */</span>
-<a name="l00089"></a><a class="code" href="group__DAC__LL__Private__Constants.html#ga104aa16a251abf2fd98a87f9f2ac7d56">00089</a> <span class="preprocessor">#define DAC_DHR12RD_DACC2DHR_BITOFFSET_POS                DAC_DHR12RD_DACC2DHR_Pos</span>
-<a name="l00090"></a><a class="code" href="group__DAC__LL__Private__Constants.html#ga0b36973f0101b247c8d875e26dd41928">00090</a> <span class="preprocessor"></span><span class="preprocessor">#define DAC_DHR12LD_DACC2DHR_BITOFFSET_POS                DAC_DHR12LD_DACC2DHR_Pos</span>
-<a name="l00091"></a><a class="code" href="group__DAC__LL__Private__Constants.html#gae2bc35eb3d6c6d23412f5583d1c1613e">00091</a> <span class="preprocessor"></span><span class="preprocessor">#define DAC_DHR8RD_DACC2DHR_BITOFFSET_POS                 DAC_DHR8RD_DACC2DHR_Pos</span>
+<a name="l00089"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#ga104aa16a251abf2fd98a87f9f2ac7d56">00089</a> <span class="preprocessor">#define DAC_DHR12RD_DACC2DHR_BITOFFSET_POS                DAC_DHR12RD_DACC2DHR_Pos</span>
+<a name="l00090"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#ga0b36973f0101b247c8d875e26dd41928">00090</a> <span class="preprocessor"></span><span class="preprocessor">#define DAC_DHR12LD_DACC2DHR_BITOFFSET_POS                DAC_DHR12LD_DACC2DHR_Pos</span>
+<a name="l00091"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#gae2bc35eb3d6c6d23412f5583d1c1613e">00091</a> <span class="preprocessor"></span><span class="preprocessor">#define DAC_DHR8RD_DACC2DHR_BITOFFSET_POS                 DAC_DHR8RD_DACC2DHR_Pos</span>
 <a name="l00092"></a>00092 <span class="preprocessor"></span>
 <a name="l00093"></a>00093 <span class="comment">/* Miscellaneous data */</span>
-<a name="l00094"></a><a class="code" href="group__DAC__LL__Private__Constants.html#ga4f417d5c014b2af6c34c936482e12357">00094</a> <span class="preprocessor">#define DAC_DIGITAL_SCALE_12BITS                        4095U  </span><span class="comment">/* Full-scale digital value with a resolution of 12 bits (voltage range determined by analog voltage references Vref+ and Vref-, refer to reference manual) */</span>
+<a name="l00094"></a><a class="code" href="group/group__DAC__LL__Private__Constants.html#ga4f417d5c014b2af6c34c936482e12357">00094</a> <span class="preprocessor">#define DAC_DIGITAL_SCALE_12BITS                        4095U  </span><span class="comment">/* Full-scale digital value with a resolution of 12 bits (voltage range determined by analog voltage references Vref+ and Vref-, refer to reference manual) */</span>
 <a name="l00095"></a>00095 <span class="comment"></span>
 <a name="l00096"></a>00096 <span class="comment">/**</span>
 <a name="l00097"></a>00097 <span class="comment">  * @}</span>
@@ -178,7 +178,7 @@
 <a name="l00111"></a>00111 <span class="comment">  * @param  __REG_OFFFSET__ Offset to be applied (unit: number of registers).</span>
 <a name="l00112"></a>00112 <span class="comment">  * @retval Pointer to register address</span>
 <a name="l00113"></a>00113 <span class="comment">*/</span>
-<a name="l00114"></a><a class="code" href="group__DAC__LL__Private__Macros.html#ga1810dbf97e083f59aa7d55ba777a57f6">00114</a> <span class="preprocessor">#define __DAC_PTR_REG_OFFSET(__REG__, __REG_OFFFSET__)                         \</span>
+<a name="l00114"></a><a class="code" href="group/group__DAC__LL__Private__Macros.html#ga1810dbf97e083f59aa7d55ba777a57f6">00114</a> <span class="preprocessor">#define __DAC_PTR_REG_OFFSET(__REG__, __REG_OFFFSET__)                         \</span>
 <a name="l00115"></a>00115 <span class="preprocessor">  ((uint32_t *)((uint32_t) ((uint32_t)(&amp;(__REG__)) + ((__REG_OFFFSET__) &lt;&lt; 2U))))</span>
 <a name="l00116"></a>00116 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00117"></a>00117 <span class="comment">/**</span>
@@ -237,10 +237,10 @@
 <a name="l00170"></a>00170 <span class="comment">  * @{</span>
 <a name="l00171"></a>00171 <span class="comment">  */</span>
 <a name="l00172"></a>00172 <span class="comment">/* DAC channel 1 flags */</span>
-<a name="l00173"></a><a class="code" href="group__DAC__LL__EC__GET__FLAG.html#gab019795aeddf0833d1d1f55a406c05da">00173</a> <span class="preprocessor">#define LL_DAC_FLAG_DMAUDR1                (DAC_SR_DMAUDR1)   </span><span class="comment">/*!&lt; DAC channel 1 flag DMA underrun */</span>
+<a name="l00173"></a><a class="code" href="group/group__DAC__LL__EC__GET__FLAG.html#gab019795aeddf0833d1d1f55a406c05da">00173</a> <span class="preprocessor">#define LL_DAC_FLAG_DMAUDR1                (DAC_SR_DMAUDR1)   </span><span class="comment">/*!&lt; DAC channel 1 flag DMA underrun */</span>
 <a name="l00174"></a>00174 
 <a name="l00175"></a>00175 <span class="comment">/* DAC channel 2 flags */</span>
-<a name="l00176"></a><a class="code" href="group__DAC__LL__EC__GET__FLAG.html#ga24d95614aca2fe33c0befa3921eb166c">00176</a> <span class="preprocessor">#define LL_DAC_FLAG_DMAUDR2                (DAC_SR_DMAUDR2)   </span><span class="comment">/*!&lt; DAC channel 2 flag DMA underrun */</span>
+<a name="l00176"></a><a class="code" href="group/group__DAC__LL__EC__GET__FLAG.html#ga24d95614aca2fe33c0befa3921eb166c">00176</a> <span class="preprocessor">#define LL_DAC_FLAG_DMAUDR2                (DAC_SR_DMAUDR2)   </span><span class="comment">/*!&lt; DAC channel 2 flag DMA underrun */</span>
 <a name="l00177"></a>00177 <span class="comment">/**</span>
 <a name="l00178"></a>00178 <span class="comment">  * @}</span>
 <a name="l00179"></a>00179 <span class="comment">  */</span>
@@ -249,8 +249,8 @@
 <a name="l00182"></a>00182 <span class="comment">  * @brief    IT defines which can be used with LL_DAC_ReadReg and  LL_DAC_WriteReg functions</span>
 <a name="l00183"></a>00183 <span class="comment">  * @{</span>
 <a name="l00184"></a>00184 <span class="comment">  */</span>
-<a name="l00185"></a><a class="code" href="group__DAC__LL__EC__IT.html#gacd9f01524463bb4bc60652d5315acd08">00185</a> <span class="preprocessor">#define LL_DAC_IT_DMAUDRIE1                (DAC_CR_DMAUDRIE1) </span><span class="comment">/*!&lt; DAC channel 1 interruption DMA underrun */</span>
-<a name="l00186"></a><a class="code" href="group__DAC__LL__EC__IT.html#ga0cb5b2877e943cec3e07048530f1ecbe">00186</a> <span class="preprocessor">#define LL_DAC_IT_DMAUDRIE2                (DAC_CR_DMAUDRIE2) </span><span class="comment">/*!&lt; DAC channel 2 interruption DMA underrun */</span>
+<a name="l00185"></a><a class="code" href="group/group__DAC__LL__EC__IT.html#gacd9f01524463bb4bc60652d5315acd08">00185</a> <span class="preprocessor">#define LL_DAC_IT_DMAUDRIE1                (DAC_CR_DMAUDRIE1) </span><span class="comment">/*!&lt; DAC channel 1 interruption DMA underrun */</span>
+<a name="l00186"></a><a class="code" href="group/group__DAC__LL__EC__IT.html#ga0cb5b2877e943cec3e07048530f1ecbe">00186</a> <span class="preprocessor">#define LL_DAC_IT_DMAUDRIE2                (DAC_CR_DMAUDRIE2) </span><span class="comment">/*!&lt; DAC channel 2 interruption DMA underrun */</span>
 <a name="l00187"></a>00187 <span class="comment">/**</span>
 <a name="l00188"></a>00188 <span class="comment">  * @}</span>
 <a name="l00189"></a>00189 <span class="comment">  */</span>
@@ -258,8 +258,8 @@
 <a name="l00191"></a>00191 <span class="comment">/** @defgroup DAC_LL_EC_CHANNEL DAC channels</span>
 <a name="l00192"></a>00192 <span class="comment">  * @{</span>
 <a name="l00193"></a>00193 <span class="comment">  */</span>
-<a name="l00194"></a><a class="code" href="group__DAC__LL__EC__CHANNEL.html#ga2003bc68ee3e3efbda1cd8f4ee686467">00194</a> <span class="preprocessor">#define LL_DAC_CHANNEL_1                   (DAC_REG_DOR1_REGOFFSET | DAC_REG_DHR12R1_REGOFFSET | DAC_REG_DHR12L1_REGOFFSET | DAC_REG_DHR8R1_REGOFFSET | DAC_CR_CH1_BITOFFSET | DAC_SWTR_CH1) </span><span class="comment">/*!&lt; DAC channel 1 */</span>
-<a name="l00195"></a><a class="code" href="group__DAC__LL__EC__CHANNEL.html#gada6de74e6f4917525bee4ef1878bab44">00195</a> <span class="preprocessor">#define LL_DAC_CHANNEL_2                   (DAC_REG_DOR2_REGOFFSET | DAC_REG_DHR12R2_REGOFFSET | DAC_REG_DHR12L2_REGOFFSET | DAC_REG_DHR8R2_REGOFFSET | DAC_CR_CH2_BITOFFSET | DAC_SWTR_CH2) </span><span class="comment">/*!&lt; DAC channel 2 */</span>
+<a name="l00194"></a><a class="code" href="group/group__DAC__LL__EC__CHANNEL.html#ga2003bc68ee3e3efbda1cd8f4ee686467">00194</a> <span class="preprocessor">#define LL_DAC_CHANNEL_1                   (DAC_REG_DOR1_REGOFFSET | DAC_REG_DHR12R1_REGOFFSET | DAC_REG_DHR12L1_REGOFFSET | DAC_REG_DHR8R1_REGOFFSET | DAC_CR_CH1_BITOFFSET | DAC_SWTR_CH1) </span><span class="comment">/*!&lt; DAC channel 1 */</span>
+<a name="l00195"></a><a class="code" href="group/group__DAC__LL__EC__CHANNEL.html#gada6de74e6f4917525bee4ef1878bab44">00195</a> <span class="preprocessor">#define LL_DAC_CHANNEL_2                   (DAC_REG_DOR2_REGOFFSET | DAC_REG_DHR12R2_REGOFFSET | DAC_REG_DHR12L2_REGOFFSET | DAC_REG_DHR8R2_REGOFFSET | DAC_CR_CH2_BITOFFSET | DAC_SWTR_CH2) </span><span class="comment">/*!&lt; DAC channel 2 */</span>
 <a name="l00196"></a>00196 <span class="comment">/**</span>
 <a name="l00197"></a>00197 <span class="comment">  * @}</span>
 <a name="l00198"></a>00198 <span class="comment">  */</span>
@@ -267,16 +267,16 @@
 <a name="l00200"></a>00200 <span class="comment">/** @defgroup DAC_LL_EC_TRIGGER_SOURCE DAC trigger source</span>
 <a name="l00201"></a>00201 <span class="comment">  * @{</span>
 <a name="l00202"></a>00202 <span class="comment">  */</span>
-<a name="l00203"></a><a class="code" href="group__DAC__LL__EC__TRIGGER__SOURCE.html#ga47f55d045f22fdccd677af14f8efdcd1">00203</a> <span class="preprocessor">#define LL_DAC_TRIG_SOFTWARE               (DAC_CR_TSEL1_2 | DAC_CR_TSEL1_1 | DAC_CR_TSEL1_0) </span><span class="comment">/*!&lt; DAC channel conversion trigger internal (SW start) */</span>
-<a name="l00204"></a><a class="code" href="group__DAC__LL__EC__TRIGGER__SOURCE.html#ga5aaaf3937f9ae662b7a0d2a3a5460c6c">00204</a> <span class="preprocessor">#define LL_DAC_TRIG_EXT_TIM3_TRGO          (                                  DAC_CR_TSEL1_0) </span><span class="comment">/*!&lt; DAC channel conversion trigger from external peripheral: TIM3 TRGO. */</span>
-<a name="l00205"></a><a class="code" href="group__DAC__LL__EC__TRIGGER__SOURCE.html#gab54f0b597abe0361f206287e2538dd2a">00205</a> <span class="preprocessor">#define LL_DAC_TRIG_EXT_TIM15_TRGO         (                 DAC_CR_TSEL1_1 | DAC_CR_TSEL1_0) </span><span class="comment">/*!&lt; DAC channel conversion trigger from external peripheral: TIM15 TRGO. */</span>
-<a name="l00206"></a><a class="code" href="group__DAC__LL__EC__TRIGGER__SOURCE.html#gaac0f1cae46c176ef9ebc4022f1fdbfc0">00206</a> <span class="preprocessor">#define LL_DAC_TRIG_EXT_TIM2_TRGO          (DAC_CR_TSEL1_2                                  ) </span><span class="comment">/*!&lt; DAC channel conversion trigger from external peripheral: TIM2 TRGO. */</span>
-<a name="l00207"></a><a class="code" href="group__DAC__LL__EC__TRIGGER__SOURCE.html#gaf6a4fb12eb0353cd9c53424310ef499f">00207</a> <span class="preprocessor">#define LL_DAC_TRIG_EXT_TIM8_TRGO          (                                  DAC_CR_TSEL1_0) </span><span class="comment">/*!&lt; DAC channel conversion trigger from external peripheral: TIM8 TRGO. */</span>
-<a name="l00208"></a><a class="code" href="group__DAC__LL__EC__TRIGGER__SOURCE.html#gafa06b2d2ae678a7e27b790795a343751">00208</a> <span class="preprocessor">#define LL_DAC_TRIG_EXT_TIM4_TRGO          (DAC_CR_TSEL1_2                  | DAC_CR_TSEL1_0) </span><span class="comment">/*!&lt; DAC channel conversion trigger from external peripheral: TIM4 TRGO. */</span>
-<a name="l00209"></a><a class="code" href="group__DAC__LL__EC__TRIGGER__SOURCE.html#gaefe37d2701b1ffd6a4f17074f3b7b57e">00209</a> <span class="preprocessor">#define LL_DAC_TRIG_EXT_TIM6_TRGO          0x00000000U                                        </span><span class="comment">/*!&lt; DAC channel conversion trigger from external peripheral: TIM6 TRGO. */</span>
-<a name="l00210"></a><a class="code" href="group__DAC__LL__EC__TRIGGER__SOURCE.html#ga0b04187f2dfced69a0370a5e859a969a">00210</a> <span class="preprocessor">#define LL_DAC_TRIG_EXT_TIM7_TRGO          (                 DAC_CR_TSEL1_1                 ) </span><span class="comment">/*!&lt; DAC channel conversion trigger from external peripheral: TIM7 TRGO. */</span>
-<a name="l00211"></a><a class="code" href="group__DAC__LL__EC__TRIGGER__SOURCE.html#ga08b517b8d2dbc233d0e5f9d871acdc7f">00211</a> <span class="preprocessor">#define LL_DAC_TRIG_EXT_TIM5_TRGO          (                 DAC_CR_TSEL1_1 | DAC_CR_TSEL1_0) </span><span class="comment">/*!&lt; DAC channel conversion trigger from external peripheral: TIM5 TRGO. */</span>
-<a name="l00212"></a><a class="code" href="group__DAC__LL__EC__TRIGGER__SOURCE.html#ga2f06ea86416df3b2d733498eaf2af67a">00212</a> <span class="preprocessor">#define LL_DAC_TRIG_EXT_EXTI_LINE9         (DAC_CR_TSEL1_2 | DAC_CR_TSEL1_1                 ) </span><span class="comment">/*!&lt; DAC channel conversion trigger from external peripheral: external interrupt line 9. */</span>
+<a name="l00203"></a><a class="code" href="group/group__DAC__LL__EC__TRIGGER__SOURCE.html#ga47f55d045f22fdccd677af14f8efdcd1">00203</a> <span class="preprocessor">#define LL_DAC_TRIG_SOFTWARE               (DAC_CR_TSEL1_2 | DAC_CR_TSEL1_1 | DAC_CR_TSEL1_0) </span><span class="comment">/*!&lt; DAC channel conversion trigger internal (SW start) */</span>
+<a name="l00204"></a><a class="code" href="group/group__DAC__LL__EC__TRIGGER__SOURCE.html#ga5aaaf3937f9ae662b7a0d2a3a5460c6c">00204</a> <span class="preprocessor">#define LL_DAC_TRIG_EXT_TIM3_TRGO          (                                  DAC_CR_TSEL1_0) </span><span class="comment">/*!&lt; DAC channel conversion trigger from external peripheral: TIM3 TRGO. */</span>
+<a name="l00205"></a><a class="code" href="group/group__DAC__LL__EC__TRIGGER__SOURCE.html#gab54f0b597abe0361f206287e2538dd2a">00205</a> <span class="preprocessor">#define LL_DAC_TRIG_EXT_TIM15_TRGO         (                 DAC_CR_TSEL1_1 | DAC_CR_TSEL1_0) </span><span class="comment">/*!&lt; DAC channel conversion trigger from external peripheral: TIM15 TRGO. */</span>
+<a name="l00206"></a><a class="code" href="group/group__DAC__LL__EC__TRIGGER__SOURCE.html#gaac0f1cae46c176ef9ebc4022f1fdbfc0">00206</a> <span class="preprocessor">#define LL_DAC_TRIG_EXT_TIM2_TRGO          (DAC_CR_TSEL1_2                                  ) </span><span class="comment">/*!&lt; DAC channel conversion trigger from external peripheral: TIM2 TRGO. */</span>
+<a name="l00207"></a><a class="code" href="group/group__DAC__LL__EC__TRIGGER__SOURCE.html#gaf6a4fb12eb0353cd9c53424310ef499f">00207</a> <span class="preprocessor">#define LL_DAC_TRIG_EXT_TIM8_TRGO          (                                  DAC_CR_TSEL1_0) </span><span class="comment">/*!&lt; DAC channel conversion trigger from external peripheral: TIM8 TRGO. */</span>
+<a name="l00208"></a><a class="code" href="group/group__DAC__LL__EC__TRIGGER__SOURCE.html#gafa06b2d2ae678a7e27b790795a343751">00208</a> <span class="preprocessor">#define LL_DAC_TRIG_EXT_TIM4_TRGO          (DAC_CR_TSEL1_2                  | DAC_CR_TSEL1_0) </span><span class="comment">/*!&lt; DAC channel conversion trigger from external peripheral: TIM4 TRGO. */</span>
+<a name="l00209"></a><a class="code" href="group/group__DAC__LL__EC__TRIGGER__SOURCE.html#gaefe37d2701b1ffd6a4f17074f3b7b57e">00209</a> <span class="preprocessor">#define LL_DAC_TRIG_EXT_TIM6_TRGO          0x00000000U                                        </span><span class="comment">/*!&lt; DAC channel conversion trigger from external peripheral: TIM6 TRGO. */</span>
+<a name="l00210"></a><a class="code" href="group/group__DAC__LL__EC__TRIGGER__SOURCE.html#ga0b04187f2dfced69a0370a5e859a969a">00210</a> <span class="preprocessor">#define LL_DAC_TRIG_EXT_TIM7_TRGO          (                 DAC_CR_TSEL1_1                 ) </span><span class="comment">/*!&lt; DAC channel conversion trigger from external peripheral: TIM7 TRGO. */</span>
+<a name="l00211"></a><a class="code" href="group/group__DAC__LL__EC__TRIGGER__SOURCE.html#ga08b517b8d2dbc233d0e5f9d871acdc7f">00211</a> <span class="preprocessor">#define LL_DAC_TRIG_EXT_TIM5_TRGO          (                 DAC_CR_TSEL1_1 | DAC_CR_TSEL1_0) </span><span class="comment">/*!&lt; DAC channel conversion trigger from external peripheral: TIM5 TRGO. */</span>
+<a name="l00212"></a><a class="code" href="group/group__DAC__LL__EC__TRIGGER__SOURCE.html#ga2f06ea86416df3b2d733498eaf2af67a">00212</a> <span class="preprocessor">#define LL_DAC_TRIG_EXT_EXTI_LINE9         (DAC_CR_TSEL1_2 | DAC_CR_TSEL1_1                 ) </span><span class="comment">/*!&lt; DAC channel conversion trigger from external peripheral: external interrupt line 9. */</span>
 <a name="l00213"></a>00213 <span class="comment">/**</span>
 <a name="l00214"></a>00214 <span class="comment">  * @}</span>
 <a name="l00215"></a>00215 <span class="comment">  */</span>
@@ -284,9 +284,9 @@
 <a name="l00217"></a>00217 <span class="comment">/** @defgroup DAC_LL_EC_WAVE_AUTO_GENERATION_MODE DAC waveform automatic generation mode</span>
 <a name="l00218"></a>00218 <span class="comment">  * @{</span>
 <a name="l00219"></a>00219 <span class="comment">  */</span>
-<a name="l00220"></a><a class="code" href="group__DAC__LL__EC__WAVE__AUTO__GENERATION__MODE.html#gaa68c1d042063dc709d4e56a81a20acd8">00220</a> <span class="preprocessor">#define LL_DAC_WAVE_AUTO_GENERATION_NONE     0x00000000U                     </span><span class="comment">/*!&lt; DAC channel wave auto generation mode disabled. */</span>
-<a name="l00221"></a><a class="code" href="group__DAC__LL__EC__WAVE__AUTO__GENERATION__MODE.html#gae93436dade8442a0d9586e58f18fd9c2">00221</a> <span class="preprocessor">#define LL_DAC_WAVE_AUTO_GENERATION_NOISE    (               DAC_CR_WAVE1_0) </span><span class="comment">/*!&lt; DAC channel wave auto generation mode enabled, set generated noise waveform. */</span>
-<a name="l00222"></a><a class="code" href="group__DAC__LL__EC__WAVE__AUTO__GENERATION__MODE.html#gac521e90ad04bf723a2c7849ab914633a">00222</a> <span class="preprocessor">#define LL_DAC_WAVE_AUTO_GENERATION_TRIANGLE (DAC_CR_WAVE1_1               ) </span><span class="comment">/*!&lt; DAC channel wave auto generation mode enabled, set generated triangle waveform. */</span>
+<a name="l00220"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__AUTO__GENERATION__MODE.html#gaa68c1d042063dc709d4e56a81a20acd8">00220</a> <span class="preprocessor">#define LL_DAC_WAVE_AUTO_GENERATION_NONE     0x00000000U                     </span><span class="comment">/*!&lt; DAC channel wave auto generation mode disabled. */</span>
+<a name="l00221"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__AUTO__GENERATION__MODE.html#gae93436dade8442a0d9586e58f18fd9c2">00221</a> <span class="preprocessor">#define LL_DAC_WAVE_AUTO_GENERATION_NOISE    (               DAC_CR_WAVE1_0) </span><span class="comment">/*!&lt; DAC channel wave auto generation mode enabled, set generated noise waveform. */</span>
+<a name="l00222"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__AUTO__GENERATION__MODE.html#gac521e90ad04bf723a2c7849ab914633a">00222</a> <span class="preprocessor">#define LL_DAC_WAVE_AUTO_GENERATION_TRIANGLE (DAC_CR_WAVE1_1               ) </span><span class="comment">/*!&lt; DAC channel wave auto generation mode enabled, set generated triangle waveform. */</span>
 <a name="l00223"></a>00223 <span class="comment">/**</span>
 <a name="l00224"></a>00224 <span class="comment">  * @}</span>
 <a name="l00225"></a>00225 <span class="comment">  */</span>
@@ -294,18 +294,18 @@
 <a name="l00227"></a>00227 <span class="comment">/** @defgroup DAC_LL_EC_WAVE_NOISE_LFSR_UNMASK_BITS DAC wave generation - Noise LFSR unmask bits</span>
 <a name="l00228"></a>00228 <span class="comment">  * @{</span>
 <a name="l00229"></a>00229 <span class="comment">  */</span>
-<a name="l00230"></a><a class="code" href="group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#ga58f9d27f4f60e62dfb69d89d0891c88a">00230</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BIT0      0x00000000U                                                         </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bit0, for the selected DAC channel */</span>
-<a name="l00231"></a><a class="code" href="group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#ga390cb472e760170d306053027a7a2dab">00231</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BITS1_0   (                                                   DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bits[1:0], for the selected DAC channel */</span>
-<a name="l00232"></a><a class="code" href="group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#gabd9a84533617cdab20336854ae49801f">00232</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BITS2_0   (                                  DAC_CR_MAMP1_1                 ) </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bits[2:0], for the selected DAC channel */</span>
-<a name="l00233"></a><a class="code" href="group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#ga58f90bd3a29516babf990fc6991489fb">00233</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BITS3_0   (                                  DAC_CR_MAMP1_1 | DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bits[3:0], for the selected DAC channel */</span>
-<a name="l00234"></a><a class="code" href="group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#gae2b05d28c782b51a311f791506d43c01">00234</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BITS4_0   (                 DAC_CR_MAMP1_2                                  ) </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bits[4:0], for the selected DAC channel */</span>
-<a name="l00235"></a><a class="code" href="group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#ga35db04f436188bb907d45206f49d8aca">00235</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BITS5_0   (                 DAC_CR_MAMP1_2                  | DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bits[5:0], for the selected DAC channel */</span>
-<a name="l00236"></a><a class="code" href="group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#ga576e0e49a77ebd1f369c73445ecce273">00236</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BITS6_0   (                 DAC_CR_MAMP1_2 | DAC_CR_MAMP1_1                 ) </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bits[6:0], for the selected DAC channel */</span>
-<a name="l00237"></a><a class="code" href="group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#gad9e2d17e3d5682489cf3b7d04fe1adb2">00237</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BITS7_0   (                 DAC_CR_MAMP1_2 | DAC_CR_MAMP1_1 | DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bits[7:0], for the selected DAC channel */</span>
-<a name="l00238"></a><a class="code" href="group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#gabd4c48f51472438b0b666bd505c5b4b9">00238</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BITS8_0   (DAC_CR_MAMP1_3                                                   ) </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bits[8:0], for the selected DAC channel */</span>
-<a name="l00239"></a><a class="code" href="group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#gab43cb5026ba524689ae01b51efa1092c">00239</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BITS9_0   (DAC_CR_MAMP1_3                                   | DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bits[9:0], for the selected DAC channel */</span>
-<a name="l00240"></a><a class="code" href="group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#gac8178688c9ba904db078dbbe86a6503e">00240</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BITS10_0  (DAC_CR_MAMP1_3                  | DAC_CR_MAMP1_1                 ) </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bits[10:0], for the selected DAC channel */</span>
-<a name="l00241"></a><a class="code" href="group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#gae002dc150eb9b96bf5a4bb0979b7fff3">00241</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BITS11_0  (DAC_CR_MAMP1_3                  | DAC_CR_MAMP1_1 | DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bits[11:0], for the selected DAC channel */</span>
+<a name="l00230"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#ga58f9d27f4f60e62dfb69d89d0891c88a">00230</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BIT0      0x00000000U                                                         </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bit0, for the selected DAC channel */</span>
+<a name="l00231"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#ga390cb472e760170d306053027a7a2dab">00231</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BITS1_0   (                                                   DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bits[1:0], for the selected DAC channel */</span>
+<a name="l00232"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#gabd9a84533617cdab20336854ae49801f">00232</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BITS2_0   (                                  DAC_CR_MAMP1_1                 ) </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bits[2:0], for the selected DAC channel */</span>
+<a name="l00233"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#ga58f90bd3a29516babf990fc6991489fb">00233</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BITS3_0   (                                  DAC_CR_MAMP1_1 | DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bits[3:0], for the selected DAC channel */</span>
+<a name="l00234"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#gae2b05d28c782b51a311f791506d43c01">00234</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BITS4_0   (                 DAC_CR_MAMP1_2                                  ) </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bits[4:0], for the selected DAC channel */</span>
+<a name="l00235"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#ga35db04f436188bb907d45206f49d8aca">00235</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BITS5_0   (                 DAC_CR_MAMP1_2                  | DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bits[5:0], for the selected DAC channel */</span>
+<a name="l00236"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#ga576e0e49a77ebd1f369c73445ecce273">00236</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BITS6_0   (                 DAC_CR_MAMP1_2 | DAC_CR_MAMP1_1                 ) </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bits[6:0], for the selected DAC channel */</span>
+<a name="l00237"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#gad9e2d17e3d5682489cf3b7d04fe1adb2">00237</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BITS7_0   (                 DAC_CR_MAMP1_2 | DAC_CR_MAMP1_1 | DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bits[7:0], for the selected DAC channel */</span>
+<a name="l00238"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#gabd4c48f51472438b0b666bd505c5b4b9">00238</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BITS8_0   (DAC_CR_MAMP1_3                                                   ) </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bits[8:0], for the selected DAC channel */</span>
+<a name="l00239"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#gab43cb5026ba524689ae01b51efa1092c">00239</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BITS9_0   (DAC_CR_MAMP1_3                                   | DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bits[9:0], for the selected DAC channel */</span>
+<a name="l00240"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#gac8178688c9ba904db078dbbe86a6503e">00240</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BITS10_0  (DAC_CR_MAMP1_3                  | DAC_CR_MAMP1_1                 ) </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bits[10:0], for the selected DAC channel */</span>
+<a name="l00241"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#gae002dc150eb9b96bf5a4bb0979b7fff3">00241</a> <span class="preprocessor">#define LL_DAC_NOISE_LFSR_UNMASK_BITS11_0  (DAC_CR_MAMP1_3                  | DAC_CR_MAMP1_1 | DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Noise wave generation, unmask LFSR bits[11:0], for the selected DAC channel */</span>
 <a name="l00242"></a>00242 <span class="comment">/**</span>
 <a name="l00243"></a>00243 <span class="comment">  * @}</span>
 <a name="l00244"></a>00244 <span class="comment">  */</span>
@@ -313,18 +313,18 @@
 <a name="l00246"></a>00246 <span class="comment">/** @defgroup DAC_LL_EC_WAVE_TRIANGLE_AMPLITUDE DAC wave generation - Triangle amplitude</span>
 <a name="l00247"></a>00247 <span class="comment">  * @{</span>
 <a name="l00248"></a>00248 <span class="comment">  */</span>
-<a name="l00249"></a><a class="code" href="group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#ga7e6d1f594ce004844dedc879d62915df">00249</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_1        0x00000000U                                                         </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 1 LSB of DAC output range, for the selected DAC channel */</span>
-<a name="l00250"></a><a class="code" href="group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#ga51824bc2d55a325f7e1a7d4b006f992e">00250</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_3        (                                                   DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 3 LSB of DAC output range, for the selected DAC channel */</span>
-<a name="l00251"></a><a class="code" href="group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#ga3f45248330dbd6d1102565f70c46c04b">00251</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_7        (                                  DAC_CR_MAMP1_1                 ) </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 7 LSB of DAC output range, for the selected DAC channel */</span>
-<a name="l00252"></a><a class="code" href="group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#gac219f614baa6cde62f4b00eec2873b81">00252</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_15       (                                  DAC_CR_MAMP1_1 | DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 15 LSB of DAC output range, for the selected DAC channel */</span>
-<a name="l00253"></a><a class="code" href="group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#gade9b64802873c0aed3f41fd5e437cb92">00253</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_31       (                 DAC_CR_MAMP1_2                                  ) </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 31 LSB of DAC output range, for the selected DAC channel */</span>
-<a name="l00254"></a><a class="code" href="group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#ga31b0cae3da472fad181f883ba48cb1e8">00254</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_63       (                 DAC_CR_MAMP1_2                  | DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 63 LSB of DAC output range, for the selected DAC channel */</span>
-<a name="l00255"></a><a class="code" href="group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#ga082f3002bf044e52f63a971466ca2da3">00255</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_127      (                 DAC_CR_MAMP1_2 | DAC_CR_MAMP1_1                 ) </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 127 LSB of DAC output range, for the selected DAC channel */</span>
-<a name="l00256"></a><a class="code" href="group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#gad8b147f504ecec9c70773acefb1e356a">00256</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_255      (                 DAC_CR_MAMP1_2 | DAC_CR_MAMP1_1 | DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 255 LSB of DAC output range, for the selected DAC channel */</span>
-<a name="l00257"></a><a class="code" href="group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#gada666d7ab98986b41660cef3bc1106f1">00257</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_511      (DAC_CR_MAMP1_3                                                   ) </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 512 LSB of DAC output range, for the selected DAC channel */</span>
-<a name="l00258"></a><a class="code" href="group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#gab8b32aa220f9fbf67ddc716e53fc6e2c">00258</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_1023     (DAC_CR_MAMP1_3                                   | DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 1023 LSB of DAC output range, for the selected DAC channel */</span>
-<a name="l00259"></a><a class="code" href="group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#gac1616b23e9a0da62022ae8727d87193f">00259</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_2047     (DAC_CR_MAMP1_3                  | DAC_CR_MAMP1_1                 ) </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 2047 LSB of DAC output range, for the selected DAC channel */</span>
-<a name="l00260"></a><a class="code" href="group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#ga5e3acc9af1a2c2a92d4f4c574c3a2a9f">00260</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_4095     (DAC_CR_MAMP1_3                  | DAC_CR_MAMP1_1 | DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 4095 LSB of DAC output range, for the selected DAC channel */</span>
+<a name="l00249"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#ga7e6d1f594ce004844dedc879d62915df">00249</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_1        0x00000000U                                                         </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 1 LSB of DAC output range, for the selected DAC channel */</span>
+<a name="l00250"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#ga51824bc2d55a325f7e1a7d4b006f992e">00250</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_3        (                                                   DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 3 LSB of DAC output range, for the selected DAC channel */</span>
+<a name="l00251"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#ga3f45248330dbd6d1102565f70c46c04b">00251</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_7        (                                  DAC_CR_MAMP1_1                 ) </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 7 LSB of DAC output range, for the selected DAC channel */</span>
+<a name="l00252"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#gac219f614baa6cde62f4b00eec2873b81">00252</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_15       (                                  DAC_CR_MAMP1_1 | DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 15 LSB of DAC output range, for the selected DAC channel */</span>
+<a name="l00253"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#gade9b64802873c0aed3f41fd5e437cb92">00253</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_31       (                 DAC_CR_MAMP1_2                                  ) </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 31 LSB of DAC output range, for the selected DAC channel */</span>
+<a name="l00254"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#ga31b0cae3da472fad181f883ba48cb1e8">00254</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_63       (                 DAC_CR_MAMP1_2                  | DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 63 LSB of DAC output range, for the selected DAC channel */</span>
+<a name="l00255"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#ga082f3002bf044e52f63a971466ca2da3">00255</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_127      (                 DAC_CR_MAMP1_2 | DAC_CR_MAMP1_1                 ) </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 127 LSB of DAC output range, for the selected DAC channel */</span>
+<a name="l00256"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#gad8b147f504ecec9c70773acefb1e356a">00256</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_255      (                 DAC_CR_MAMP1_2 | DAC_CR_MAMP1_1 | DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 255 LSB of DAC output range, for the selected DAC channel */</span>
+<a name="l00257"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#gada666d7ab98986b41660cef3bc1106f1">00257</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_511      (DAC_CR_MAMP1_3                                                   ) </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 512 LSB of DAC output range, for the selected DAC channel */</span>
+<a name="l00258"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#gab8b32aa220f9fbf67ddc716e53fc6e2c">00258</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_1023     (DAC_CR_MAMP1_3                                   | DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 1023 LSB of DAC output range, for the selected DAC channel */</span>
+<a name="l00259"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#gac1616b23e9a0da62022ae8727d87193f">00259</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_2047     (DAC_CR_MAMP1_3                  | DAC_CR_MAMP1_1                 ) </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 2047 LSB of DAC output range, for the selected DAC channel */</span>
+<a name="l00260"></a><a class="code" href="group/group__DAC__LL__EC__WAVE__TRIANGLE__AMPLITUDE.html#ga5e3acc9af1a2c2a92d4f4c574c3a2a9f">00260</a> <span class="preprocessor">#define LL_DAC_TRIANGLE_AMPLITUDE_4095     (DAC_CR_MAMP1_3                  | DAC_CR_MAMP1_1 | DAC_CR_MAMP1_0) </span><span class="comment">/*!&lt; Triangle wave generation, amplitude of 4095 LSB of DAC output range, for the selected DAC channel */</span>
 <a name="l00261"></a>00261 <span class="comment">/**</span>
 <a name="l00262"></a>00262 <span class="comment">  * @}</span>
 <a name="l00263"></a>00263 <span class="comment">  */</span>
@@ -332,8 +332,8 @@
 <a name="l00265"></a>00265 <span class="comment">/** @defgroup DAC_LL_EC_OUTPUT_BUFFER DAC channel output buffer</span>
 <a name="l00266"></a>00266 <span class="comment">  * @{</span>
 <a name="l00267"></a>00267 <span class="comment">  */</span>
-<a name="l00268"></a><a class="code" href="group__DAC__LL__EC__OUTPUT__BUFFER.html#ga5a4c7d681424875b7a8439454d8e9ca7">00268</a> <span class="preprocessor">#define LL_DAC_OUTPUT_BUFFER_ENABLE        0x00000000U             </span><span class="comment">/*!&lt; The selected DAC channel output is buffered: higher drive current capability, but also higher current consumption */</span>
-<a name="l00269"></a><a class="code" href="group__DAC__LL__EC__OUTPUT__BUFFER.html#ga531a6e64cb60a8f6feabf8073a43607b">00269</a> <span class="preprocessor">#define LL_DAC_OUTPUT_BUFFER_DISABLE       (DAC_CR_BOFF1)          </span><span class="comment">/*!&lt; The selected DAC channel output is not buffered: lower drive current capability, but also lower current consumption */</span>
+<a name="l00268"></a><a class="code" href="group/group__DAC__LL__EC__OUTPUT__BUFFER.html#ga5a4c7d681424875b7a8439454d8e9ca7">00268</a> <span class="preprocessor">#define LL_DAC_OUTPUT_BUFFER_ENABLE        0x00000000U             </span><span class="comment">/*!&lt; The selected DAC channel output is buffered: higher drive current capability, but also higher current consumption */</span>
+<a name="l00269"></a><a class="code" href="group/group__DAC__LL__EC__OUTPUT__BUFFER.html#ga531a6e64cb60a8f6feabf8073a43607b">00269</a> <span class="preprocessor">#define LL_DAC_OUTPUT_BUFFER_DISABLE       (DAC_CR_BOFF1)          </span><span class="comment">/*!&lt; The selected DAC channel output is not buffered: lower drive current capability, but also lower current consumption */</span>
 <a name="l00270"></a>00270 <span class="comment">/**</span>
 <a name="l00271"></a>00271 <span class="comment">  * @}</span>
 <a name="l00272"></a>00272 <span class="comment">  */</span>
@@ -341,8 +341,8 @@
 <a name="l00274"></a>00274 <span class="comment">/** @defgroup DAC_LL_EC_RESOLUTION  DAC channel output resolution</span>
 <a name="l00275"></a>00275 <span class="comment">  * @{</span>
 <a name="l00276"></a>00276 <span class="comment">  */</span>
-<a name="l00277"></a><a class="code" href="group__DAC__LL__EC__RESOLUTION.html#gae8e20afbfd6e6773b5979b9f79ce5948">00277</a> <span class="preprocessor">#define LL_DAC_RESOLUTION_12B              0x00000000U             </span><span class="comment">/*!&lt; DAC channel resolution 12 bits */</span>
-<a name="l00278"></a><a class="code" href="group__DAC__LL__EC__RESOLUTION.html#ga4c5c2e0205a34878de1a17b141e36510">00278</a> <span class="preprocessor">#define LL_DAC_RESOLUTION_8B               0x00000002U             </span><span class="comment">/*!&lt; DAC channel resolution 8 bits */</span>
+<a name="l00277"></a><a class="code" href="group/group__DAC__LL__EC__RESOLUTION.html#gae8e20afbfd6e6773b5979b9f79ce5948">00277</a> <span class="preprocessor">#define LL_DAC_RESOLUTION_12B              0x00000000U             </span><span class="comment">/*!&lt; DAC channel resolution 12 bits */</span>
+<a name="l00278"></a><a class="code" href="group/group__DAC__LL__EC__RESOLUTION.html#ga4c5c2e0205a34878de1a17b141e36510">00278</a> <span class="preprocessor">#define LL_DAC_RESOLUTION_8B               0x00000002U             </span><span class="comment">/*!&lt; DAC channel resolution 8 bits */</span>
 <a name="l00279"></a>00279 <span class="comment">/**</span>
 <a name="l00280"></a>00280 <span class="comment">  * @}</span>
 <a name="l00281"></a>00281 <span class="comment">  */</span>
@@ -353,9 +353,9 @@
 <a name="l00286"></a>00286 <span class="comment">/* List of DAC registers intended to be used (most commonly) with             */</span>
 <a name="l00287"></a>00287 <span class="comment">/* DMA transfer.                                                              */</span>
 <a name="l00288"></a>00288 <span class="comment">/* Refer to function @ref LL_DAC_DMA_GetRegAddr().                            */</span>
-<a name="l00289"></a><a class="code" href="group__DAC__LL__EC__REGISTERS.html#gac651ed8d32b66be46a00a1bf94a3fd27">00289</a> <span class="preprocessor">#define LL_DAC_DMA_REG_DATA_12BITS_RIGHT_ALIGNED  DAC_REG_DHR12RX_REGOFFSET_BITOFFSET_POS </span><span class="comment">/*!&lt; DAC channel data holding register 12 bits right aligned */</span>
-<a name="l00290"></a><a class="code" href="group__DAC__LL__EC__REGISTERS.html#gac1272494013e0d2ef031125db9d8abf8">00290</a> <span class="preprocessor">#define LL_DAC_DMA_REG_DATA_12BITS_LEFT_ALIGNED   DAC_REG_DHR12LX_REGOFFSET_BITOFFSET_POS </span><span class="comment">/*!&lt; DAC channel data holding register 12 bits left aligned */</span>
-<a name="l00291"></a><a class="code" href="group__DAC__LL__EC__REGISTERS.html#ga5a7c3214ad6dd6a7c84cd6c29977c927">00291</a> <span class="preprocessor">#define LL_DAC_DMA_REG_DATA_8BITS_RIGHT_ALIGNED   DAC_REG_DHR8RX_REGOFFSET_BITOFFSET_POS  </span><span class="comment">/*!&lt; DAC channel data holding register 8 bits right aligned */</span>
+<a name="l00289"></a><a class="code" href="group/group__DAC__LL__EC__REGISTERS.html#gac651ed8d32b66be46a00a1bf94a3fd27">00289</a> <span class="preprocessor">#define LL_DAC_DMA_REG_DATA_12BITS_RIGHT_ALIGNED  DAC_REG_DHR12RX_REGOFFSET_BITOFFSET_POS </span><span class="comment">/*!&lt; DAC channel data holding register 12 bits right aligned */</span>
+<a name="l00290"></a><a class="code" href="group/group__DAC__LL__EC__REGISTERS.html#gac1272494013e0d2ef031125db9d8abf8">00290</a> <span class="preprocessor">#define LL_DAC_DMA_REG_DATA_12BITS_LEFT_ALIGNED   DAC_REG_DHR12LX_REGOFFSET_BITOFFSET_POS </span><span class="comment">/*!&lt; DAC channel data holding register 12 bits left aligned */</span>
+<a name="l00291"></a><a class="code" href="group/group__DAC__LL__EC__REGISTERS.html#ga5a7c3214ad6dd6a7c84cd6c29977c927">00291</a> <span class="preprocessor">#define LL_DAC_DMA_REG_DATA_8BITS_RIGHT_ALIGNED   DAC_REG_DHR8RX_REGOFFSET_BITOFFSET_POS  </span><span class="comment">/*!&lt; DAC channel data holding register 8 bits right aligned */</span>
 <a name="l00292"></a>00292 <span class="comment">/**</span>
 <a name="l00293"></a>00293 <span class="comment">  * @}</span>
 <a name="l00294"></a>00294 <span class="comment">  */</span>
@@ -380,7 +380,7 @@
 <a name="l00313"></a>00313 <span class="comment">/* Literal set to maximum value (refer to device datasheet,                   */</span>
 <a name="l00314"></a>00314 <span class="comment">/* parameter &quot;tWAKEUP&quot;).                                                      */</span>
 <a name="l00315"></a>00315 <span class="comment">/* Unit: us                                                                   */</span>
-<a name="l00316"></a><a class="code" href="group__DAC__LL__EC__HW__DELAYS.html#ga2e906475ea52ae80c731cdd4e01ccb6f">00316</a> <span class="preprocessor">#define LL_DAC_DELAY_STARTUP_VOLTAGE_SETTLING_US             15U  </span><span class="comment">/*!&lt; Delay for DAC channel voltage settling time from DAC channel startup (transition from disable to enable) */</span>
+<a name="l00316"></a><a class="code" href="group/group__DAC__LL__EC__HW__DELAYS.html#ga2e906475ea52ae80c731cdd4e01ccb6f">00316</a> <span class="preprocessor">#define LL_DAC_DELAY_STARTUP_VOLTAGE_SETTLING_US             15U  </span><span class="comment">/*!&lt; Delay for DAC channel voltage settling time from DAC channel startup (transition from disable to enable) */</span>
 <a name="l00317"></a>00317 
 <a name="l00318"></a>00318 <span class="comment">/* Delay for DAC channel voltage settling time.                               */</span>
 <a name="l00319"></a>00319 <span class="comment">/* Note: DAC channel startup time depends on board application environment:   */</span>
@@ -393,7 +393,7 @@
 <a name="l00326"></a>00326 <span class="comment">/* Literal set to maximum value (refer to device datasheet,                   */</span>
 <a name="l00327"></a>00327 <span class="comment">/* parameter &quot;tSETTLING&quot;).                                                    */</span>
 <a name="l00328"></a>00328 <span class="comment">/* Unit: us                                                                   */</span>
-<a name="l00329"></a><a class="code" href="group__DAC__LL__EC__HW__DELAYS.html#gaa32152c483784242dee2d17a4a23f653">00329</a> <span class="preprocessor">#define LL_DAC_DELAY_VOLTAGE_SETTLING_US                    12U  </span><span class="comment">/*!&lt; Delay for DAC channel voltage settling time */</span>
+<a name="l00329"></a><a class="code" href="group/group__DAC__LL__EC__HW__DELAYS.html#gaa32152c483784242dee2d17a4a23f653">00329</a> <span class="preprocessor">#define LL_DAC_DELAY_VOLTAGE_SETTLING_US                    12U  </span><span class="comment">/*!&lt; Delay for DAC channel voltage settling time */</span>
 <a name="l00330"></a>00330 <span class="comment"></span>
 <a name="l00331"></a>00331 <span class="comment">/**</span>
 <a name="l00332"></a>00332 <span class="comment">  * @}</span>
@@ -419,7 +419,7 @@
 <a name="l00352"></a>00352 <span class="comment">  * @param  __VALUE__ Value to be written in the register</span>
 <a name="l00353"></a>00353 <span class="comment">  * @retval None</span>
 <a name="l00354"></a>00354 <span class="comment">  */</span>
-<a name="l00355"></a><a class="code" href="group__DAC__LL__EM__WRITE__READ.html#gad5a3fb6a20383770d3735439d045bd53">00355</a> <span class="preprocessor">#define LL_DAC_WriteReg(__INSTANCE__, __REG__, __VALUE__) WRITE_REG(__INSTANCE__-&gt;__REG__, (__VALUE__))</span>
+<a name="l00355"></a><a class="code" href="group/group__DAC__LL__EM__WRITE__READ.html#gad5a3fb6a20383770d3735439d045bd53">00355</a> <span class="preprocessor">#define LL_DAC_WriteReg(__INSTANCE__, __REG__, __VALUE__) WRITE_REG(__INSTANCE__-&gt;__REG__, (__VALUE__))</span>
 <a name="l00356"></a>00356 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00357"></a>00357 <span class="comment">/**</span>
 <a name="l00358"></a>00358 <span class="comment">  * @brief  Read a value in DAC register</span>
@@ -427,7 +427,7 @@
 <a name="l00360"></a>00360 <span class="comment">  * @param  __REG__ Register to be read</span>
 <a name="l00361"></a>00361 <span class="comment">  * @retval Register value</span>
 <a name="l00362"></a>00362 <span class="comment">  */</span>
-<a name="l00363"></a><a class="code" href="group__DAC__LL__EM__WRITE__READ.html#gaed92932982d075937b17c22ec2ffbba0">00363</a> <span class="preprocessor">#define LL_DAC_ReadReg(__INSTANCE__, __REG__) READ_REG(__INSTANCE__-&gt;__REG__)</span>
+<a name="l00363"></a><a class="code" href="group/group__DAC__LL__EM__WRITE__READ.html#gaed92932982d075937b17c22ec2ffbba0">00363</a> <span class="preprocessor">#define LL_DAC_ReadReg(__INSTANCE__, __REG__) READ_REG(__INSTANCE__-&gt;__REG__)</span>
 <a name="l00364"></a>00364 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00365"></a>00365 <span class="comment">/**</span>
 <a name="l00366"></a>00366 <span class="comment">  * @}</span>
@@ -450,7 +450,7 @@
 <a name="l00383"></a>00383 <span class="comment">  *         @arg @ref LL_DAC_CHANNEL_2</span>
 <a name="l00384"></a>00384 <span class="comment">  * @retval 1...2</span>
 <a name="l00385"></a>00385 <span class="comment">  */</span>
-<a name="l00386"></a><a class="code" href="group__DAC__LL__EM__HELPER__MACRO.html#ga40d4f6a31ccc6c48f8f4bb703716eb61">00386</a> <span class="preprocessor">#define __LL_DAC_CHANNEL_TO_DECIMAL_NB(__CHANNEL__)                            \</span>
+<a name="l00386"></a><a class="code" href="group/group__DAC__LL__EM__HELPER__MACRO.html#ga40d4f6a31ccc6c48f8f4bb703716eb61">00386</a> <span class="preprocessor">#define __LL_DAC_CHANNEL_TO_DECIMAL_NB(__CHANNEL__)                            \</span>
 <a name="l00387"></a>00387 <span class="preprocessor">  ((__CHANNEL__) &amp; DAC_SWTR_CHX_MASK)</span>
 <a name="l00388"></a>00388 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00389"></a>00389 <span class="comment">/**</span>
@@ -466,7 +466,7 @@
 <a name="l00399"></a>00399 <span class="comment">  *         @arg @ref LL_DAC_CHANNEL_1</span>
 <a name="l00400"></a>00400 <span class="comment">  *         @arg @ref LL_DAC_CHANNEL_2</span>
 <a name="l00401"></a>00401 <span class="comment">  */</span>
-<a name="l00402"></a><a class="code" href="group__DAC__LL__EM__HELPER__MACRO.html#gaee610e5db3078875920bf0a8d2a1fe4a">00402</a> <span class="preprocessor">#define __LL_DAC_DECIMAL_NB_TO_CHANNEL(__DECIMAL_NB__)                         \</span>
+<a name="l00402"></a><a class="code" href="group/group__DAC__LL__EM__HELPER__MACRO.html#gaee610e5db3078875920bf0a8d2a1fe4a">00402</a> <span class="preprocessor">#define __LL_DAC_DECIMAL_NB_TO_CHANNEL(__DECIMAL_NB__)                         \</span>
 <a name="l00403"></a>00403 <span class="preprocessor">  (((__DECIMAL_NB__) == 1U)                                                    \</span>
 <a name="l00404"></a>00404 <span class="preprocessor">    ? (                                                                        \</span>
 <a name="l00405"></a>00405 <span class="preprocessor">       LL_DAC_CHANNEL_1                                                        \</span>
@@ -494,7 +494,7 @@
 <a name="l00427"></a>00427 <span class="comment">  *         @arg @ref LL_DAC_RESOLUTION_8B</span>
 <a name="l00428"></a>00428 <span class="comment">  * @retval ADC conversion data equivalent voltage value (unit: mVolt)</span>
 <a name="l00429"></a>00429 <span class="comment">  */</span>
-<a name="l00430"></a><a class="code" href="group__DAC__LL__EM__HELPER__MACRO.html#ga1ee18e32d0ac865527dc3e16a41b7d82">00430</a> <span class="preprocessor">#define __LL_DAC_DIGITAL_SCALE(__DAC_RESOLUTION__)                             \</span>
+<a name="l00430"></a><a class="code" href="group/group__DAC__LL__EM__HELPER__MACRO.html#ga1ee18e32d0ac865527dc3e16a41b7d82">00430</a> <span class="preprocessor">#define __LL_DAC_DIGITAL_SCALE(__DAC_RESOLUTION__)                             \</span>
 <a name="l00431"></a>00431 <span class="preprocessor">  ((0x00000FFFU) &gt;&gt; ((__DAC_RESOLUTION__) &lt;&lt; 1U))</span>
 <a name="l00432"></a>00432 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00433"></a>00433 <span class="comment">/**</span>
@@ -515,7 +515,7 @@
 <a name="l00448"></a>00448 <span class="comment">  *         @arg @ref LL_DAC_RESOLUTION_8B</span>
 <a name="l00449"></a>00449 <span class="comment">  * @retval DAC conversion data (unit: digital value)</span>
 <a name="l00450"></a>00450 <span class="comment">  */</span>
-<a name="l00451"></a><a class="code" href="group__DAC__LL__EM__HELPER__MACRO.html#ga09181005eb669648ed6c4c632d2edaa4">00451</a> <span class="preprocessor">#define __LL_DAC_CALC_VOLTAGE_TO_DATA(__VREFANALOG_VOLTAGE__,\</span>
+<a name="l00451"></a><a class="code" href="group/group__DAC__LL__EM__HELPER__MACRO.html#ga09181005eb669648ed6c4c632d2edaa4">00451</a> <span class="preprocessor">#define __LL_DAC_CALC_VOLTAGE_TO_DATA(__VREFANALOG_VOLTAGE__,\</span>
 <a name="l00452"></a>00452 <span class="preprocessor">                                      __DAC_VOLTAGE__,\</span>
 <a name="l00453"></a>00453 <span class="preprocessor">                                      __DAC_RESOLUTION__)                      \</span>
 <a name="l00454"></a>00454 <span class="preprocessor">  ((__DAC_VOLTAGE__) * __LL_DAC_DIGITAL_SCALE(__DAC_RESOLUTION__)              \</span>
@@ -561,10 +561,10 @@
 <a name="l00494"></a>00494 <span class="comment">  *         @arg @ref LL_DAC_TRIG_EXT_EXTI_LINE9</span>
 <a name="l00495"></a>00495 <span class="comment">  * @retval None</span>
 <a name="l00496"></a>00496 <span class="comment">  */</span>
-<a name="l00497"></a><a class="code" href="group__DAC__LL__Exported__Functions.html#ga254566b750bee0ba3115f70f7a1c8d78">00497</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__Exported__Functions.html#ga254566b750bee0ba3115f70f7a1c8d78" title="Set the conversion trigger source for the selected DAC channel.">LL_DAC_SetTriggerSource</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel, uint32_t TriggerSource)
+<a name="l00497"></a><a class="code" href="group/group__DAC__LL__Exported__Functions.html#ga254566b750bee0ba3115f70f7a1c8d78">00497</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__Exported__Functions.html#ga254566b750bee0ba3115f70f7a1c8d78" title="Set the conversion trigger source for the selected DAC channel.">LL_DAC_SetTriggerSource</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel, uint32_t TriggerSource)
 <a name="l00498"></a>00498 {
 <a name="l00499"></a>00499   MODIFY_REG(DACx-&gt;CR,
-<a name="l00500"></a>00500              DAC_CR_TSEL1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>),
+<a name="l00500"></a>00500              DAC_CR_TSEL1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>),
 <a name="l00501"></a>00501              TriggerSource &lt;&lt; (DAC_Channel &amp; DAC_CR_CHX_BITOFFSET_MASK));
 <a name="l00502"></a>00502 }
 <a name="l00503"></a>00503 <span class="comment"></span>
@@ -591,10 +591,10 @@
 <a name="l00524"></a>00524 <span class="comment">  *         @arg @ref LL_DAC_TRIG_EXT_TIM15_TRGO</span>
 <a name="l00525"></a>00525 <span class="comment">  *         @arg @ref LL_DAC_TRIG_EXT_EXTI_LINE9</span>
 <a name="l00526"></a>00526 <span class="comment">  */</span>
-<a name="l00527"></a><a class="code" href="group__DAC__LL__Exported__Functions.html#ga243b8a99d3b2bd61c937f388323ccb37">00527</a> __STATIC_INLINE uint32_t <a class="code" href="group__DAC__LL__Exported__Functions.html#ga243b8a99d3b2bd61c937f388323ccb37" title="Get the conversion trigger source for the selected DAC channel.">LL_DAC_GetTriggerSource</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
+<a name="l00527"></a><a class="code" href="group/group__DAC__LL__Exported__Functions.html#ga243b8a99d3b2bd61c937f388323ccb37">00527</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DAC__LL__Exported__Functions.html#ga243b8a99d3b2bd61c937f388323ccb37" title="Get the conversion trigger source for the selected DAC channel.">LL_DAC_GetTriggerSource</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
 <a name="l00528"></a>00528 {
-<a name="l00529"></a>00529   <span class="keywordflow">return</span> (uint32_t)(READ_BIT(DACx-&gt;CR, DAC_CR_TSEL1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>))
-<a name="l00530"></a>00530                     &gt;&gt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>)
+<a name="l00529"></a>00529   <span class="keywordflow">return</span> (uint32_t)(READ_BIT(DACx-&gt;CR, DAC_CR_TSEL1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>))
+<a name="l00530"></a>00530                     &gt;&gt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>)
 <a name="l00531"></a>00531                    );
 <a name="l00532"></a>00532 }
 <a name="l00533"></a>00533 <span class="comment"></span>
@@ -613,10 +613,10 @@
 <a name="l00546"></a>00546 <span class="comment">  *         @arg @ref LL_DAC_WAVE_AUTO_GENERATION_TRIANGLE</span>
 <a name="l00547"></a>00547 <span class="comment">  * @retval None</span>
 <a name="l00548"></a>00548 <span class="comment">  */</span>
-<a name="l00549"></a><a class="code" href="group__DAC__LL__Exported__Functions.html#ga92a145c65a27be32d5c6c586903f3660">00549</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__Exported__Functions.html#ga92a145c65a27be32d5c6c586903f3660" title="Set the waveform automatic generation mode for the selected DAC channel.">LL_DAC_SetWaveAutoGeneration</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel, uint32_t WaveAutoGeneration)
+<a name="l00549"></a><a class="code" href="group/group__DAC__LL__Exported__Functions.html#ga92a145c65a27be32d5c6c586903f3660">00549</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__Exported__Functions.html#ga92a145c65a27be32d5c6c586903f3660" title="Set the waveform automatic generation mode for the selected DAC channel.">LL_DAC_SetWaveAutoGeneration</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel, uint32_t WaveAutoGeneration)
 <a name="l00550"></a>00550 {
 <a name="l00551"></a>00551   MODIFY_REG(DACx-&gt;CR,
-<a name="l00552"></a>00552              DAC_CR_WAVE1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>),
+<a name="l00552"></a>00552              DAC_CR_WAVE1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>),
 <a name="l00553"></a>00553              WaveAutoGeneration &lt;&lt; (DAC_Channel &amp; DAC_CR_CHX_BITOFFSET_MASK));
 <a name="l00554"></a>00554 }
 <a name="l00555"></a>00555 <span class="comment"></span>
@@ -634,10 +634,10 @@
 <a name="l00567"></a>00567 <span class="comment">  *         @arg @ref LL_DAC_WAVE_AUTO_GENERATION_NOISE</span>
 <a name="l00568"></a>00568 <span class="comment">  *         @arg @ref LL_DAC_WAVE_AUTO_GENERATION_TRIANGLE</span>
 <a name="l00569"></a>00569 <span class="comment">  */</span>
-<a name="l00570"></a><a class="code" href="group__DAC__LL__Exported__Functions.html#gac28387435df9c400162ed8975e979380">00570</a> __STATIC_INLINE uint32_t <a class="code" href="group__DAC__LL__Exported__Functions.html#gac28387435df9c400162ed8975e979380" title="Get the waveform automatic generation mode for the selected DAC channel.">LL_DAC_GetWaveAutoGeneration</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
+<a name="l00570"></a><a class="code" href="group/group__DAC__LL__Exported__Functions.html#gac28387435df9c400162ed8975e979380">00570</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DAC__LL__Exported__Functions.html#gac28387435df9c400162ed8975e979380" title="Get the waveform automatic generation mode for the selected DAC channel.">LL_DAC_GetWaveAutoGeneration</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
 <a name="l00571"></a>00571 {
-<a name="l00572"></a>00572   <span class="keywordflow">return</span> (uint32_t)(READ_BIT(DACx-&gt;CR, DAC_CR_WAVE1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>))
-<a name="l00573"></a>00573                     &gt;&gt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>)
+<a name="l00572"></a>00572   <span class="keywordflow">return</span> (uint32_t)(READ_BIT(DACx-&gt;CR, DAC_CR_WAVE1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>))
+<a name="l00573"></a>00573                     &gt;&gt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>)
 <a name="l00574"></a>00574                    );
 <a name="l00575"></a>00575 }
 <a name="l00576"></a>00576 <span class="comment"></span>
@@ -670,10 +670,10 @@
 <a name="l00603"></a>00603 <span class="comment">  *         @arg @ref LL_DAC_NOISE_LFSR_UNMASK_BITS11_0</span>
 <a name="l00604"></a>00604 <span class="comment">  * @retval None</span>
 <a name="l00605"></a>00605 <span class="comment">  */</span>
-<a name="l00606"></a><a class="code" href="group__DAC__LL__Exported__Functions.html#gac091cee9c067f0c73a5a8364f4b9e2c9">00606</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__Exported__Functions.html#gac091cee9c067f0c73a5a8364f4b9e2c9" title="Set the noise waveform generation for the selected DAC channel: Noise mode and parameters LFSR (linea...">LL_DAC_SetWaveNoiseLFSR</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel, uint32_t NoiseLFSRMask)
+<a name="l00606"></a><a class="code" href="group/group__DAC__LL__Exported__Functions.html#gac091cee9c067f0c73a5a8364f4b9e2c9">00606</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__Exported__Functions.html#gac091cee9c067f0c73a5a8364f4b9e2c9" title="Set the noise waveform generation for the selected DAC channel: Noise mode and parameters LFSR (linea...">LL_DAC_SetWaveNoiseLFSR</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel, uint32_t NoiseLFSRMask)
 <a name="l00607"></a>00607 {
 <a name="l00608"></a>00608   MODIFY_REG(DACx-&gt;CR,
-<a name="l00609"></a>00609              DAC_CR_MAMP1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>),
+<a name="l00609"></a>00609              DAC_CR_MAMP1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>),
 <a name="l00610"></a>00610              NoiseLFSRMask &lt;&lt; (DAC_Channel &amp; DAC_CR_CHX_BITOFFSET_MASK));
 <a name="l00611"></a>00611 }
 <a name="l00612"></a>00612 <span class="comment"></span>
@@ -700,10 +700,10 @@
 <a name="l00633"></a>00633 <span class="comment">  *         @arg @ref LL_DAC_NOISE_LFSR_UNMASK_BITS10_0</span>
 <a name="l00634"></a>00634 <span class="comment">  *         @arg @ref LL_DAC_NOISE_LFSR_UNMASK_BITS11_0</span>
 <a name="l00635"></a>00635 <span class="comment">  */</span>
-<a name="l00636"></a><a class="code" href="group__DAC__LL__Exported__Functions.html#gac7ac34a2b25f9d8f3f7d0496e676f595">00636</a> __STATIC_INLINE uint32_t <a class="code" href="group__DAC__LL__Exported__Functions.html#gac7ac34a2b25f9d8f3f7d0496e676f595" title="Get the noise waveform generation for the selected DAC channel: Noise mode and parameters LFSR (linea...">LL_DAC_GetWaveNoiseLFSR</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
+<a name="l00636"></a><a class="code" href="group/group__DAC__LL__Exported__Functions.html#gac7ac34a2b25f9d8f3f7d0496e676f595">00636</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DAC__LL__Exported__Functions.html#gac7ac34a2b25f9d8f3f7d0496e676f595" title="Get the noise waveform generation for the selected DAC channel: Noise mode and parameters LFSR (linea...">LL_DAC_GetWaveNoiseLFSR</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
 <a name="l00637"></a>00637 {
-<a name="l00638"></a>00638   <span class="keywordflow">return</span> (uint32_t)(READ_BIT(DACx-&gt;CR, DAC_CR_MAMP1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>))
-<a name="l00639"></a>00639                     &gt;&gt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>)
+<a name="l00638"></a>00638   <span class="keywordflow">return</span> (uint32_t)(READ_BIT(DACx-&gt;CR, DAC_CR_MAMP1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>))
+<a name="l00639"></a>00639                     &gt;&gt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>)
 <a name="l00640"></a>00640                    );
 <a name="l00641"></a>00641 }
 <a name="l00642"></a>00642 <span class="comment"></span>
@@ -736,11 +736,11 @@
 <a name="l00669"></a>00669 <span class="comment">  *         @arg @ref LL_DAC_TRIANGLE_AMPLITUDE_4095</span>
 <a name="l00670"></a>00670 <span class="comment">  * @retval None</span>
 <a name="l00671"></a>00671 <span class="comment">  */</span>
-<a name="l00672"></a><a class="code" href="group__DAC__LL__Exported__Functions.html#gafdd2adf12bc4bba65c70b810ddff9c06">00672</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__Exported__Functions.html#gafdd2adf12bc4bba65c70b810ddff9c06" title="Set the triangle waveform generation for the selected DAC channel: triangle mode and amplitude...">LL_DAC_SetWaveTriangleAmplitude</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel,
+<a name="l00672"></a><a class="code" href="group/group__DAC__LL__Exported__Functions.html#gafdd2adf12bc4bba65c70b810ddff9c06">00672</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__Exported__Functions.html#gafdd2adf12bc4bba65c70b810ddff9c06" title="Set the triangle waveform generation for the selected DAC channel: triangle mode and amplitude...">LL_DAC_SetWaveTriangleAmplitude</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel,
 <a name="l00673"></a>00673                                                      uint32_t TriangleAmplitude)
 <a name="l00674"></a>00674 {
 <a name="l00675"></a>00675   MODIFY_REG(DACx-&gt;CR,
-<a name="l00676"></a>00676              DAC_CR_MAMP1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>),
+<a name="l00676"></a>00676              DAC_CR_MAMP1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>),
 <a name="l00677"></a>00677              TriangleAmplitude &lt;&lt; (DAC_Channel &amp; DAC_CR_CHX_BITOFFSET_MASK));
 <a name="l00678"></a>00678 }
 <a name="l00679"></a>00679 <span class="comment"></span>
@@ -767,10 +767,10 @@
 <a name="l00700"></a>00700 <span class="comment">  *         @arg @ref LL_DAC_TRIANGLE_AMPLITUDE_2047</span>
 <a name="l00701"></a>00701 <span class="comment">  *         @arg @ref LL_DAC_TRIANGLE_AMPLITUDE_4095</span>
 <a name="l00702"></a>00702 <span class="comment">  */</span>
-<a name="l00703"></a><a class="code" href="group__DAC__LL__Exported__Functions.html#gaacb42e2e2979ca771aae855e049b258b">00703</a> __STATIC_INLINE uint32_t <a class="code" href="group__DAC__LL__Exported__Functions.html#gaacb42e2e2979ca771aae855e049b258b" title="Get the triangle waveform generation for the selected DAC channel: triangle mode and amplitude...">LL_DAC_GetWaveTriangleAmplitude</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
+<a name="l00703"></a><a class="code" href="group/group__DAC__LL__Exported__Functions.html#gaacb42e2e2979ca771aae855e049b258b">00703</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DAC__LL__Exported__Functions.html#gaacb42e2e2979ca771aae855e049b258b" title="Get the triangle waveform generation for the selected DAC channel: triangle mode and amplitude...">LL_DAC_GetWaveTriangleAmplitude</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
 <a name="l00704"></a>00704 {
-<a name="l00705"></a>00705   <span class="keywordflow">return</span> (uint32_t)(READ_BIT(DACx-&gt;CR, DAC_CR_MAMP1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>))
-<a name="l00706"></a>00706                     &gt;&gt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>)
+<a name="l00705"></a>00705   <span class="keywordflow">return</span> (uint32_t)(READ_BIT(DACx-&gt;CR, DAC_CR_MAMP1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>))
+<a name="l00706"></a>00706                     &gt;&gt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>)
 <a name="l00707"></a>00707                    );
 <a name="l00708"></a>00708 }
 <a name="l00709"></a>00709 <span class="comment"></span>
@@ -787,10 +787,10 @@
 <a name="l00720"></a>00720 <span class="comment">  *         @arg @ref LL_DAC_OUTPUT_BUFFER_DISABLE</span>
 <a name="l00721"></a>00721 <span class="comment">  * @retval None</span>
 <a name="l00722"></a>00722 <span class="comment">  */</span>
-<a name="l00723"></a><a class="code" href="group__DAC__LL__Exported__Functions.html#ga219b21d8c6899954897345c41e366c4a">00723</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__Exported__Functions.html#ga219b21d8c6899954897345c41e366c4a" title="Set the output buffer for the selected DAC channel.">LL_DAC_SetOutputBuffer</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel, uint32_t OutputBuffer)
+<a name="l00723"></a><a class="code" href="group/group__DAC__LL__Exported__Functions.html#ga219b21d8c6899954897345c41e366c4a">00723</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__Exported__Functions.html#ga219b21d8c6899954897345c41e366c4a" title="Set the output buffer for the selected DAC channel.">LL_DAC_SetOutputBuffer</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel, uint32_t OutputBuffer)
 <a name="l00724"></a>00724 {
 <a name="l00725"></a>00725   MODIFY_REG(DACx-&gt;CR,
-<a name="l00726"></a>00726              DAC_CR_BOFF1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>),
+<a name="l00726"></a>00726              DAC_CR_BOFF1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>),
 <a name="l00727"></a>00727              OutputBuffer &lt;&lt; (DAC_Channel &amp; DAC_CR_CHX_BITOFFSET_MASK));
 <a name="l00728"></a>00728 }
 <a name="l00729"></a>00729 <span class="comment"></span>
@@ -806,10 +806,10 @@
 <a name="l00739"></a>00739 <span class="comment">  *         @arg @ref LL_DAC_OUTPUT_BUFFER_ENABLE</span>
 <a name="l00740"></a>00740 <span class="comment">  *         @arg @ref LL_DAC_OUTPUT_BUFFER_DISABLE</span>
 <a name="l00741"></a>00741 <span class="comment">  */</span>
-<a name="l00742"></a><a class="code" href="group__DAC__LL__Exported__Functions.html#ga0157c7ad86b6a272f53cc124967f2136">00742</a> __STATIC_INLINE uint32_t <a class="code" href="group__DAC__LL__Exported__Functions.html#ga0157c7ad86b6a272f53cc124967f2136" title="Get the output buffer state for the selected DAC channel.">LL_DAC_GetOutputBuffer</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
+<a name="l00742"></a><a class="code" href="group/group__DAC__LL__Exported__Functions.html#ga0157c7ad86b6a272f53cc124967f2136">00742</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DAC__LL__Exported__Functions.html#ga0157c7ad86b6a272f53cc124967f2136" title="Get the output buffer state for the selected DAC channel.">LL_DAC_GetOutputBuffer</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
 <a name="l00743"></a>00743 {
-<a name="l00744"></a>00744   <span class="keywordflow">return</span> (uint32_t)(READ_BIT(DACx-&gt;CR, DAC_CR_BOFF1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>))
-<a name="l00745"></a>00745                     &gt;&gt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>)
+<a name="l00744"></a>00744   <span class="keywordflow">return</span> (uint32_t)(READ_BIT(DACx-&gt;CR, DAC_CR_BOFF1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>))
+<a name="l00745"></a>00745                     &gt;&gt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>)
 <a name="l00746"></a>00746                    );
 <a name="l00747"></a>00747 }
 <a name="l00748"></a>00748 <span class="comment"></span>
@@ -833,10 +833,10 @@
 <a name="l00766"></a>00766 <span class="comment">  *         @arg @ref LL_DAC_CHANNEL_2</span>
 <a name="l00767"></a>00767 <span class="comment">  * @retval None</span>
 <a name="l00768"></a>00768 <span class="comment">  */</span>
-<a name="l00769"></a><a class="code" href="group__DAC__LL__EF__DMA__Management.html#ga2f51ae9a09e98e93c5846a47da19fc28">00769</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__EF__DMA__Management.html#ga2f51ae9a09e98e93c5846a47da19fc28" title="Enable DAC DMA transfer request of the selected channel.">LL_DAC_EnableDMAReq</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
+<a name="l00769"></a><a class="code" href="group/group__DAC__LL__EF__DMA__Management.html#ga2f51ae9a09e98e93c5846a47da19fc28">00769</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__EF__DMA__Management.html#ga2f51ae9a09e98e93c5846a47da19fc28" title="Enable DAC DMA transfer request of the selected channel.">LL_DAC_EnableDMAReq</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
 <a name="l00770"></a>00770 {
 <a name="l00771"></a>00771   SET_BIT(DACx-&gt;CR,
-<a name="l00772"></a>00772           DAC_CR_DMAEN1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>));
+<a name="l00772"></a>00772           DAC_CR_DMAEN1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>));
 <a name="l00773"></a>00773 }
 <a name="l00774"></a>00774 <span class="comment"></span>
 <a name="l00775"></a>00775 <span class="comment">/**</span>
@@ -851,10 +851,10 @@
 <a name="l00784"></a>00784 <span class="comment">  *         @arg @ref LL_DAC_CHANNEL_2</span>
 <a name="l00785"></a>00785 <span class="comment">  * @retval None</span>
 <a name="l00786"></a>00786 <span class="comment">  */</span>
-<a name="l00787"></a><a class="code" href="group__DAC__LL__EF__DMA__Management.html#ga14d549fda973a73884d18722fc28a796">00787</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__EF__DMA__Management.html#ga14d549fda973a73884d18722fc28a796" title="Disable DAC DMA transfer request of the selected channel.">LL_DAC_DisableDMAReq</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
+<a name="l00787"></a><a class="code" href="group/group__DAC__LL__EF__DMA__Management.html#ga14d549fda973a73884d18722fc28a796">00787</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__EF__DMA__Management.html#ga14d549fda973a73884d18722fc28a796" title="Disable DAC DMA transfer request of the selected channel.">LL_DAC_DisableDMAReq</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
 <a name="l00788"></a>00788 {
 <a name="l00789"></a>00789   CLEAR_BIT(DACx-&gt;CR,
-<a name="l00790"></a>00790             DAC_CR_DMAEN1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>));
+<a name="l00790"></a>00790             DAC_CR_DMAEN1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>));
 <a name="l00791"></a>00791 }
 <a name="l00792"></a>00792 <span class="comment"></span>
 <a name="l00793"></a>00793 <span class="comment">/**</span>
@@ -868,10 +868,10 @@
 <a name="l00801"></a>00801 <span class="comment">  *         @arg @ref LL_DAC_CHANNEL_2</span>
 <a name="l00802"></a>00802 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l00803"></a>00803 <span class="comment">  */</span>
-<a name="l00804"></a><a class="code" href="group__DAC__LL__EF__DMA__Management.html#gaae80164b5a05d93d2faa40ff3b7d1c89">00804</a> __STATIC_INLINE uint32_t <a class="code" href="group__DAC__LL__EF__DMA__Management.html#gaae80164b5a05d93d2faa40ff3b7d1c89" title="Get DAC DMA transfer request state of the selected channel.">LL_DAC_IsDMAReqEnabled</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
+<a name="l00804"></a><a class="code" href="group/group__DAC__LL__EF__DMA__Management.html#gaae80164b5a05d93d2faa40ff3b7d1c89">00804</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DAC__LL__EF__DMA__Management.html#gaae80164b5a05d93d2faa40ff3b7d1c89" title="Get DAC DMA transfer request state of the selected channel.">LL_DAC_IsDMAReqEnabled</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
 <a name="l00805"></a>00805 {
 <a name="l00806"></a>00806   <span class="keywordflow">return</span> ((READ_BIT(DACx-&gt;CR,
-<a name="l00807"></a>00807                     DAC_CR_DMAEN1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>))
+<a name="l00807"></a>00807                     DAC_CR_DMAEN1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>))
 <a name="l00808"></a>00808            == (DAC_CR_DMAEN1 &lt;&lt; (DAC_Channel &amp; DAC_CR_CHX_BITOFFSET_MASK))) ? 1UL : 0UL);
 <a name="l00809"></a>00809 }
 <a name="l00810"></a>00810 <span class="comment"></span>
@@ -906,12 +906,12 @@
 <a name="l00839"></a>00839 <span class="comment">  *         @arg @ref LL_DAC_DMA_REG_DATA_8BITS_RIGHT_ALIGNED</span>
 <a name="l00840"></a>00840 <span class="comment">  * @retval DAC register address</span>
 <a name="l00841"></a>00841 <span class="comment">  */</span>
-<a name="l00842"></a><a class="code" href="group__DAC__LL__EF__DMA__Management.html#ga5e34d9b72dc548140520b292e5e80eb2">00842</a> __STATIC_INLINE uint32_t <a class="code" href="group__DAC__LL__EF__DMA__Management.html#ga5e34d9b72dc548140520b292e5e80eb2" title="Function to help to configure DMA transfer to DAC: retrieve the DAC register address from DAC instanc...">LL_DAC_DMA_GetRegAddr</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel, uint32_t Register)
+<a name="l00842"></a><a class="code" href="group/group__DAC__LL__EF__DMA__Management.html#ga5e34d9b72dc548140520b292e5e80eb2">00842</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DAC__LL__EF__DMA__Management.html#ga5e34d9b72dc548140520b292e5e80eb2" title="Function to help to configure DMA transfer to DAC: retrieve the DAC register address from DAC instanc...">LL_DAC_DMA_GetRegAddr</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel, uint32_t Register)
 <a name="l00843"></a>00843 {
 <a name="l00844"></a>00844   <span class="comment">/* Retrieve address of register DHR12Rx, DHR12Lx or DHR8Rx depending on     */</span>
 <a name="l00845"></a>00845   <span class="comment">/* DAC channel selected.                                                    */</span>
-<a name="l00846"></a>00846   <span class="keywordflow">return</span> ((uint32_t)(<a class="code" href="group__DAC__LL__Private__Macros.html#ga1810dbf97e083f59aa7d55ba777a57f6" title="Driver macro reserved for internal use: set a pointer to a register from a register basis from which ...">__DAC_PTR_REG_OFFSET</a>((DACx)-&gt;DHR12R1,
-<a name="l00847"></a>00847                                           ((DAC_Channel &gt;&gt; (Register &amp; 0x1FUL)) &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#gab96ab38ca50ae215614d6e4c6b25032d">DAC_REG_DHR_REGOFFSET_MASK_POSBIT0</a>))));
+<a name="l00846"></a>00846   <span class="keywordflow">return</span> ((uint32_t)(<a class="code" href="group/group__DAC__LL__Private__Macros.html#ga1810dbf97e083f59aa7d55ba777a57f6" title="Driver macro reserved for internal use: set a pointer to a register from a register basis from which ...">__DAC_PTR_REG_OFFSET</a>((DACx)-&gt;DHR12R1,
+<a name="l00847"></a>00847                                           ((DAC_Channel &gt;&gt; (Register &amp; 0x1FUL)) &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#gab96ab38ca50ae215614d6e4c6b25032d">DAC_REG_DHR_REGOFFSET_MASK_POSBIT0</a>))));
 <a name="l00848"></a>00848 }<span class="comment"></span>
 <a name="l00849"></a>00849 <span class="comment">/**</span>
 <a name="l00850"></a>00850 <span class="comment">  * @}</span>
@@ -934,10 +934,10 @@
 <a name="l00867"></a>00867 <span class="comment">  *         @arg @ref LL_DAC_CHANNEL_2</span>
 <a name="l00868"></a>00868 <span class="comment">  * @retval None</span>
 <a name="l00869"></a>00869 <span class="comment">  */</span>
-<a name="l00870"></a><a class="code" href="group__DAC__LL__EF__Operation.html#ga7b0593279bd462563d3d2f679bebe228">00870</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__EF__Operation.html#ga7b0593279bd462563d3d2f679bebe228" title="Enable DAC selected channel.">LL_DAC_Enable</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
+<a name="l00870"></a><a class="code" href="group/group__DAC__LL__EF__Operation.html#ga7b0593279bd462563d3d2f679bebe228">00870</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__EF__Operation.html#ga7b0593279bd462563d3d2f679bebe228" title="Enable DAC selected channel.">LL_DAC_Enable</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
 <a name="l00871"></a>00871 {
 <a name="l00872"></a>00872   SET_BIT(DACx-&gt;CR,
-<a name="l00873"></a>00873           DAC_CR_EN1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>));
+<a name="l00873"></a>00873           DAC_CR_EN1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>));
 <a name="l00874"></a>00874 }
 <a name="l00875"></a>00875 <span class="comment"></span>
 <a name="l00876"></a>00876 <span class="comment">/**</span>
@@ -950,10 +950,10 @@
 <a name="l00883"></a>00883 <span class="comment">  *         @arg @ref LL_DAC_CHANNEL_2</span>
 <a name="l00884"></a>00884 <span class="comment">  * @retval None</span>
 <a name="l00885"></a>00885 <span class="comment">  */</span>
-<a name="l00886"></a><a class="code" href="group__DAC__LL__EF__Operation.html#gaf1d90afd3f9830917009c72af8d56610">00886</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__EF__Operation.html#gaf1d90afd3f9830917009c72af8d56610" title="Disable DAC selected channel.">LL_DAC_Disable</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
+<a name="l00886"></a><a class="code" href="group/group__DAC__LL__EF__Operation.html#gaf1d90afd3f9830917009c72af8d56610">00886</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__EF__Operation.html#gaf1d90afd3f9830917009c72af8d56610" title="Disable DAC selected channel.">LL_DAC_Disable</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
 <a name="l00887"></a>00887 {
 <a name="l00888"></a>00888   CLEAR_BIT(DACx-&gt;CR,
-<a name="l00889"></a>00889             DAC_CR_EN1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>));
+<a name="l00889"></a>00889             DAC_CR_EN1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>));
 <a name="l00890"></a>00890 }
 <a name="l00891"></a>00891 <span class="comment"></span>
 <a name="l00892"></a>00892 <span class="comment">/**</span>
@@ -967,10 +967,10 @@
 <a name="l00900"></a>00900 <span class="comment">  *         @arg @ref LL_DAC_CHANNEL_2</span>
 <a name="l00901"></a>00901 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l00902"></a>00902 <span class="comment">  */</span>
-<a name="l00903"></a><a class="code" href="group__DAC__LL__EF__Operation.html#ga686deb35afb81f71aaab6d8f2db667e0">00903</a> __STATIC_INLINE uint32_t <a class="code" href="group__DAC__LL__EF__Operation.html#ga686deb35afb81f71aaab6d8f2db667e0" title="Get DAC enable state of the selected channel.">LL_DAC_IsEnabled</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
+<a name="l00903"></a><a class="code" href="group/group__DAC__LL__EF__Operation.html#ga686deb35afb81f71aaab6d8f2db667e0">00903</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DAC__LL__EF__Operation.html#ga686deb35afb81f71aaab6d8f2db667e0" title="Get DAC enable state of the selected channel.">LL_DAC_IsEnabled</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
 <a name="l00904"></a>00904 {
 <a name="l00905"></a>00905   <span class="keywordflow">return</span> ((READ_BIT(DACx-&gt;CR,
-<a name="l00906"></a>00906                     DAC_CR_EN1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>))
+<a name="l00906"></a>00906                     DAC_CR_EN1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>))
 <a name="l00907"></a>00907            == (DAC_CR_EN1 &lt;&lt; (DAC_Channel &amp; DAC_CR_CHX_BITOFFSET_MASK))) ? 1UL : 0UL);
 <a name="l00908"></a>00908 }
 <a name="l00909"></a>00909 <span class="comment"></span>
@@ -992,10 +992,10 @@
 <a name="l00925"></a>00925 <span class="comment">  *         @arg @ref LL_DAC_CHANNEL_2</span>
 <a name="l00926"></a>00926 <span class="comment">  * @retval None</span>
 <a name="l00927"></a>00927 <span class="comment">  */</span>
-<a name="l00928"></a><a class="code" href="group__DAC__LL__EF__Operation.html#ga2033f3019be6561b11d0a7f54ec9af48">00928</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__EF__Operation.html#ga2033f3019be6561b11d0a7f54ec9af48" title="Enable DAC trigger of the selected channel.">LL_DAC_EnableTrigger</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
+<a name="l00928"></a><a class="code" href="group/group__DAC__LL__EF__Operation.html#ga2033f3019be6561b11d0a7f54ec9af48">00928</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__EF__Operation.html#ga2033f3019be6561b11d0a7f54ec9af48" title="Enable DAC trigger of the selected channel.">LL_DAC_EnableTrigger</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
 <a name="l00929"></a>00929 {
 <a name="l00930"></a>00930   SET_BIT(DACx-&gt;CR,
-<a name="l00931"></a>00931           DAC_CR_TEN1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>));
+<a name="l00931"></a>00931           DAC_CR_TEN1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>));
 <a name="l00932"></a>00932 }
 <a name="l00933"></a>00933 <span class="comment"></span>
 <a name="l00934"></a>00934 <span class="comment">/**</span>
@@ -1008,10 +1008,10 @@
 <a name="l00941"></a>00941 <span class="comment">  *         @arg @ref LL_DAC_CHANNEL_2</span>
 <a name="l00942"></a>00942 <span class="comment">  * @retval None</span>
 <a name="l00943"></a>00943 <span class="comment">  */</span>
-<a name="l00944"></a><a class="code" href="group__DAC__LL__EF__Operation.html#gab8f642f3b122bf71ca6452b77a8a60c5">00944</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__EF__Operation.html#gab8f642f3b122bf71ca6452b77a8a60c5" title="Disable DAC trigger of the selected channel.">LL_DAC_DisableTrigger</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
+<a name="l00944"></a><a class="code" href="group/group__DAC__LL__EF__Operation.html#gab8f642f3b122bf71ca6452b77a8a60c5">00944</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__EF__Operation.html#gab8f642f3b122bf71ca6452b77a8a60c5" title="Disable DAC trigger of the selected channel.">LL_DAC_DisableTrigger</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
 <a name="l00945"></a>00945 {
 <a name="l00946"></a>00946   CLEAR_BIT(DACx-&gt;CR,
-<a name="l00947"></a>00947             DAC_CR_TEN1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>));
+<a name="l00947"></a>00947             DAC_CR_TEN1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>));
 <a name="l00948"></a>00948 }
 <a name="l00949"></a>00949 <span class="comment"></span>
 <a name="l00950"></a>00950 <span class="comment">/**</span>
@@ -1025,10 +1025,10 @@
 <a name="l00958"></a>00958 <span class="comment">  *         @arg @ref LL_DAC_CHANNEL_2</span>
 <a name="l00959"></a>00959 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l00960"></a>00960 <span class="comment">  */</span>
-<a name="l00961"></a><a class="code" href="group__DAC__LL__EF__Operation.html#gacc115e08844871d7f20d493e1e51f25c">00961</a> __STATIC_INLINE uint32_t <a class="code" href="group__DAC__LL__EF__Operation.html#gacc115e08844871d7f20d493e1e51f25c" title="Get DAC trigger state of the selected channel.">LL_DAC_IsTriggerEnabled</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
+<a name="l00961"></a><a class="code" href="group/group__DAC__LL__EF__Operation.html#gacc115e08844871d7f20d493e1e51f25c">00961</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DAC__LL__EF__Operation.html#gacc115e08844871d7f20d493e1e51f25c" title="Get DAC trigger state of the selected channel.">LL_DAC_IsTriggerEnabled</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
 <a name="l00962"></a>00962 {
 <a name="l00963"></a>00963   <span class="keywordflow">return</span> ((READ_BIT(DACx-&gt;CR,
-<a name="l00964"></a>00964                     DAC_CR_TEN1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>))
+<a name="l00964"></a>00964                     DAC_CR_TEN1 &lt;&lt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>))
 <a name="l00965"></a>00965            == (DAC_CR_TEN1 &lt;&lt; (DAC_Channel &amp; DAC_CR_CHX_BITOFFSET_MASK))) ? 1UL : 0UL);
 <a name="l00966"></a>00966 }
 <a name="l00967"></a>00967 <span class="comment"></span>
@@ -1053,10 +1053,10 @@
 <a name="l00986"></a>00986 <span class="comment">  *         @arg @ref LL_DAC_CHANNEL_2</span>
 <a name="l00987"></a>00987 <span class="comment">  * @retval None</span>
 <a name="l00988"></a>00988 <span class="comment">  */</span>
-<a name="l00989"></a><a class="code" href="group__DAC__LL__EF__Operation.html#ga6ca419b7770230ea2affab58f7223ebc">00989</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__EF__Operation.html#ga6ca419b7770230ea2affab58f7223ebc" title="Trig DAC conversion by software for the selected DAC channel.">LL_DAC_TrigSWConversion</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
+<a name="l00989"></a><a class="code" href="group/group__DAC__LL__EF__Operation.html#ga6ca419b7770230ea2affab58f7223ebc">00989</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__EF__Operation.html#ga6ca419b7770230ea2affab58f7223ebc" title="Trig DAC conversion by software for the selected DAC channel.">LL_DAC_TrigSWConversion</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
 <a name="l00990"></a>00990 {
 <a name="l00991"></a>00991   SET_BIT(DACx-&gt;SWTRIGR,
-<a name="l00992"></a>00992           (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga666f7d7467af9805b1ad5e13186d9153">DAC_SWTR_CHX_MASK</a>));
+<a name="l00992"></a>00992           (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga666f7d7467af9805b1ad5e13186d9153">DAC_SWTR_CHX_MASK</a>));
 <a name="l00993"></a>00993 }
 <a name="l00994"></a>00994 <span class="comment"></span>
 <a name="l00995"></a>00995 <span class="comment">/**</span>
@@ -1072,9 +1072,9 @@
 <a name="l01005"></a>01005 <span class="comment">  * @param  Data Value between Min_Data=0x000 and Max_Data=0xFFF</span>
 <a name="l01006"></a>01006 <span class="comment">  * @retval None</span>
 <a name="l01007"></a>01007 <span class="comment">  */</span>
-<a name="l01008"></a><a class="code" href="group__DAC__LL__EF__Operation.html#ga6b8357cb7d63fe1bcebf95576d1d2ead">01008</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__EF__Operation.html#ga6b8357cb7d63fe1bcebf95576d1d2ead" title="Set the data to be loaded in the data holding register in format 12 bits left alignment (LSB aligned ...">LL_DAC_ConvertData12RightAligned</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel, uint32_t Data)
+<a name="l01008"></a><a class="code" href="group/group__DAC__LL__EF__Operation.html#ga6b8357cb7d63fe1bcebf95576d1d2ead">01008</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__EF__Operation.html#ga6b8357cb7d63fe1bcebf95576d1d2ead" title="Set the data to be loaded in the data holding register in format 12 bits left alignment (LSB aligned ...">LL_DAC_ConvertData12RightAligned</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel, uint32_t Data)
 <a name="l01009"></a>01009 {
-<a name="l01010"></a>01010   __IO uint32_t *preg = <a class="code" href="group__DAC__LL__Private__Macros.html#ga1810dbf97e083f59aa7d55ba777a57f6" title="Driver macro reserved for internal use: set a pointer to a register from a register basis from which ...">__DAC_PTR_REG_OFFSET</a>(DACx-&gt;DHR12R1, (DAC_Channel &gt;&gt; <a class="code" href="group__DAC__LL__Private__Constants.html#gacbe8f44af3817320f0a6191b5eb35493">DAC_REG_DHR12RX_REGOFFSET_BITOFFSET_POS</a>) &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#gab96ab38ca50ae215614d6e4c6b25032d">DAC_REG_DHR_REGOFFSET_MASK_POSBIT0</a>);
+<a name="l01010"></a>01010   __IO uint32_t *preg = <a class="code" href="group/group__DAC__LL__Private__Macros.html#ga1810dbf97e083f59aa7d55ba777a57f6" title="Driver macro reserved for internal use: set a pointer to a register from a register basis from which ...">__DAC_PTR_REG_OFFSET</a>(DACx-&gt;DHR12R1, (DAC_Channel &gt;&gt; <a class="code" href="group/group__DAC__LL__Private__Constants.html#gacbe8f44af3817320f0a6191b5eb35493">DAC_REG_DHR12RX_REGOFFSET_BITOFFSET_POS</a>) &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#gab96ab38ca50ae215614d6e4c6b25032d">DAC_REG_DHR_REGOFFSET_MASK_POSBIT0</a>);
 <a name="l01011"></a>01011 
 <a name="l01012"></a>01012   MODIFY_REG(*preg,
 <a name="l01013"></a>01013              DAC_DHR12R1_DACC1DHR,
@@ -1094,9 +1094,9 @@
 <a name="l01027"></a>01027 <span class="comment">  * @param  Data Value between Min_Data=0x000 and Max_Data=0xFFF</span>
 <a name="l01028"></a>01028 <span class="comment">  * @retval None</span>
 <a name="l01029"></a>01029 <span class="comment">  */</span>
-<a name="l01030"></a><a class="code" href="group__DAC__LL__EF__Operation.html#ga22cae79d6ca7fd85944fbac09f4aef96">01030</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__EF__Operation.html#ga22cae79d6ca7fd85944fbac09f4aef96" title="Set the data to be loaded in the data holding register in format 12 bits left alignment (MSB aligned ...">LL_DAC_ConvertData12LeftAligned</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel, uint32_t Data)
+<a name="l01030"></a><a class="code" href="group/group__DAC__LL__EF__Operation.html#ga22cae79d6ca7fd85944fbac09f4aef96">01030</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__EF__Operation.html#ga22cae79d6ca7fd85944fbac09f4aef96" title="Set the data to be loaded in the data holding register in format 12 bits left alignment (MSB aligned ...">LL_DAC_ConvertData12LeftAligned</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel, uint32_t Data)
 <a name="l01031"></a>01031 {
-<a name="l01032"></a>01032   __IO uint32_t *preg = <a class="code" href="group__DAC__LL__Private__Macros.html#ga1810dbf97e083f59aa7d55ba777a57f6" title="Driver macro reserved for internal use: set a pointer to a register from a register basis from which ...">__DAC_PTR_REG_OFFSET</a>(DACx-&gt;DHR12R1, (DAC_Channel &gt;&gt; <a class="code" href="group__DAC__LL__Private__Constants.html#gaa711a502ec9181ae4f3c7eca66fc0ee8">DAC_REG_DHR12LX_REGOFFSET_BITOFFSET_POS</a>) &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#gab96ab38ca50ae215614d6e4c6b25032d">DAC_REG_DHR_REGOFFSET_MASK_POSBIT0</a>);
+<a name="l01032"></a>01032   __IO uint32_t *preg = <a class="code" href="group/group__DAC__LL__Private__Macros.html#ga1810dbf97e083f59aa7d55ba777a57f6" title="Driver macro reserved for internal use: set a pointer to a register from a register basis from which ...">__DAC_PTR_REG_OFFSET</a>(DACx-&gt;DHR12R1, (DAC_Channel &gt;&gt; <a class="code" href="group/group__DAC__LL__Private__Constants.html#gaa711a502ec9181ae4f3c7eca66fc0ee8">DAC_REG_DHR12LX_REGOFFSET_BITOFFSET_POS</a>) &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#gab96ab38ca50ae215614d6e4c6b25032d">DAC_REG_DHR_REGOFFSET_MASK_POSBIT0</a>);
 <a name="l01033"></a>01033 
 <a name="l01034"></a>01034   MODIFY_REG(*preg,
 <a name="l01035"></a>01035              DAC_DHR12L1_DACC1DHR,
@@ -1116,9 +1116,9 @@
 <a name="l01049"></a>01049 <span class="comment">  * @param  Data Value between Min_Data=0x00 and Max_Data=0xFF</span>
 <a name="l01050"></a>01050 <span class="comment">  * @retval None</span>
 <a name="l01051"></a>01051 <span class="comment">  */</span>
-<a name="l01052"></a><a class="code" href="group__DAC__LL__EF__Operation.html#gaf8d378dccfa13c51ea1a86d95fbb73ef">01052</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__EF__Operation.html#gaf8d378dccfa13c51ea1a86d95fbb73ef" title="Set the data to be loaded in the data holding register in format 8 bits left alignment (LSB aligned o...">LL_DAC_ConvertData8RightAligned</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel, uint32_t Data)
+<a name="l01052"></a><a class="code" href="group/group__DAC__LL__EF__Operation.html#gaf8d378dccfa13c51ea1a86d95fbb73ef">01052</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__EF__Operation.html#gaf8d378dccfa13c51ea1a86d95fbb73ef" title="Set the data to be loaded in the data holding register in format 8 bits left alignment (LSB aligned o...">LL_DAC_ConvertData8RightAligned</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel, uint32_t Data)
 <a name="l01053"></a>01053 {
-<a name="l01054"></a>01054   __IO uint32_t *preg = <a class="code" href="group__DAC__LL__Private__Macros.html#ga1810dbf97e083f59aa7d55ba777a57f6" title="Driver macro reserved for internal use: set a pointer to a register from a register basis from which ...">__DAC_PTR_REG_OFFSET</a>(DACx-&gt;DHR12R1, (DAC_Channel &gt;&gt; <a class="code" href="group__DAC__LL__Private__Constants.html#ga469864d620bbd71489ef718d83d7c254">DAC_REG_DHR8RX_REGOFFSET_BITOFFSET_POS</a>) &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#gab96ab38ca50ae215614d6e4c6b25032d">DAC_REG_DHR_REGOFFSET_MASK_POSBIT0</a>);
+<a name="l01054"></a>01054   __IO uint32_t *preg = <a class="code" href="group/group__DAC__LL__Private__Macros.html#ga1810dbf97e083f59aa7d55ba777a57f6" title="Driver macro reserved for internal use: set a pointer to a register from a register basis from which ...">__DAC_PTR_REG_OFFSET</a>(DACx-&gt;DHR12R1, (DAC_Channel &gt;&gt; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga469864d620bbd71489ef718d83d7c254">DAC_REG_DHR8RX_REGOFFSET_BITOFFSET_POS</a>) &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#gab96ab38ca50ae215614d6e4c6b25032d">DAC_REG_DHR_REGOFFSET_MASK_POSBIT0</a>);
 <a name="l01055"></a>01055 
 <a name="l01056"></a>01056   MODIFY_REG(*preg,
 <a name="l01057"></a>01057              DAC_DHR8R1_DACC1DHR,
@@ -1137,12 +1137,12 @@
 <a name="l01070"></a>01070 <span class="comment">  * @param  DataChannel2 Value between Min_Data=0x000 and Max_Data=0xFFF</span>
 <a name="l01071"></a>01071 <span class="comment">  * @retval None</span>
 <a name="l01072"></a>01072 <span class="comment">  */</span>
-<a name="l01073"></a><a class="code" href="group__DAC__LL__EF__Operation.html#ga4720412e221cc8edb626e7f3a31e3719">01073</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__EF__Operation.html#ga4720412e221cc8edb626e7f3a31e3719" title="Set the data to be loaded in the data holding register in format 12 bits left alignment (LSB aligned ...">LL_DAC_ConvertDualData12RightAligned</a>(DAC_TypeDef *DACx, uint32_t DataChannel1,
+<a name="l01073"></a><a class="code" href="group/group__DAC__LL__EF__Operation.html#ga4720412e221cc8edb626e7f3a31e3719">01073</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__EF__Operation.html#ga4720412e221cc8edb626e7f3a31e3719" title="Set the data to be loaded in the data holding register in format 12 bits left alignment (LSB aligned ...">LL_DAC_ConvertDualData12RightAligned</a>(DAC_TypeDef *DACx, uint32_t DataChannel1,
 <a name="l01074"></a>01074                                                           uint32_t DataChannel2)
 <a name="l01075"></a>01075 {
 <a name="l01076"></a>01076   MODIFY_REG(DACx-&gt;DHR12RD,
 <a name="l01077"></a>01077              (DAC_DHR12RD_DACC2DHR | DAC_DHR12RD_DACC1DHR),
-<a name="l01078"></a>01078              ((DataChannel2 &lt;&lt; <a class="code" href="group__DAC__LL__Private__Constants.html#ga104aa16a251abf2fd98a87f9f2ac7d56">DAC_DHR12RD_DACC2DHR_BITOFFSET_POS</a>) | DataChannel1));
+<a name="l01078"></a>01078              ((DataChannel2 &lt;&lt; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga104aa16a251abf2fd98a87f9f2ac7d56">DAC_DHR12RD_DACC2DHR_BITOFFSET_POS</a>) | DataChannel1));
 <a name="l01079"></a>01079 }
 <a name="l01080"></a>01080 <span class="comment"></span>
 <a name="l01081"></a>01081 <span class="comment">/**</span>
@@ -1156,7 +1156,7 @@
 <a name="l01089"></a>01089 <span class="comment">  * @param  DataChannel2 Value between Min_Data=0x000 and Max_Data=0xFFF</span>
 <a name="l01090"></a>01090 <span class="comment">  * @retval None</span>
 <a name="l01091"></a>01091 <span class="comment">  */</span>
-<a name="l01092"></a><a class="code" href="group__DAC__LL__EF__Operation.html#ga17f3fc6d9b489842cd01a279e143021f">01092</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__EF__Operation.html#ga17f3fc6d9b489842cd01a279e143021f" title="Set the data to be loaded in the data holding register in format 12 bits left alignment (MSB aligned ...">LL_DAC_ConvertDualData12LeftAligned</a>(DAC_TypeDef *DACx, uint32_t DataChannel1,
+<a name="l01092"></a><a class="code" href="group/group__DAC__LL__EF__Operation.html#ga17f3fc6d9b489842cd01a279e143021f">01092</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__EF__Operation.html#ga17f3fc6d9b489842cd01a279e143021f" title="Set the data to be loaded in the data holding register in format 12 bits left alignment (MSB aligned ...">LL_DAC_ConvertDualData12LeftAligned</a>(DAC_TypeDef *DACx, uint32_t DataChannel1,
 <a name="l01093"></a>01093                                                          uint32_t DataChannel2)
 <a name="l01094"></a>01094 {
 <a name="l01095"></a>01095   <span class="comment">/* Note: Data of DAC channel 2 shift value subtracted of 4 because          */</span>
@@ -1164,7 +1164,7 @@
 <a name="l01097"></a>01097   <span class="comment">/*       the 4 LSB must be taken into account for the shift value.          */</span>
 <a name="l01098"></a>01098   MODIFY_REG(DACx-&gt;DHR12LD,
 <a name="l01099"></a>01099              (DAC_DHR12LD_DACC2DHR | DAC_DHR12LD_DACC1DHR),
-<a name="l01100"></a>01100              ((DataChannel2 &lt;&lt; (<a class="code" href="group__DAC__LL__Private__Constants.html#ga0b36973f0101b247c8d875e26dd41928">DAC_DHR12LD_DACC2DHR_BITOFFSET_POS</a> - 4U)) | DataChannel1));
+<a name="l01100"></a>01100              ((DataChannel2 &lt;&lt; (<a class="code" href="group/group__DAC__LL__Private__Constants.html#ga0b36973f0101b247c8d875e26dd41928">DAC_DHR12LD_DACC2DHR_BITOFFSET_POS</a> - 4U)) | DataChannel1));
 <a name="l01101"></a>01101 }
 <a name="l01102"></a>01102 <span class="comment"></span>
 <a name="l01103"></a>01103 <span class="comment">/**</span>
@@ -1178,12 +1178,12 @@
 <a name="l01111"></a>01111 <span class="comment">  * @param  DataChannel2 Value between Min_Data=0x00 and Max_Data=0xFF</span>
 <a name="l01112"></a>01112 <span class="comment">  * @retval None</span>
 <a name="l01113"></a>01113 <span class="comment">  */</span>
-<a name="l01114"></a><a class="code" href="group__DAC__LL__EF__Operation.html#ga3252efad17134aea89e658af00234c3c">01114</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__EF__Operation.html#ga3252efad17134aea89e658af00234c3c" title="Set the data to be loaded in the data holding register in format 8 bits left alignment (LSB aligned o...">LL_DAC_ConvertDualData8RightAligned</a>(DAC_TypeDef *DACx, uint32_t DataChannel1,
+<a name="l01114"></a><a class="code" href="group/group__DAC__LL__EF__Operation.html#ga3252efad17134aea89e658af00234c3c">01114</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__EF__Operation.html#ga3252efad17134aea89e658af00234c3c" title="Set the data to be loaded in the data holding register in format 8 bits left alignment (LSB aligned o...">LL_DAC_ConvertDualData8RightAligned</a>(DAC_TypeDef *DACx, uint32_t DataChannel1,
 <a name="l01115"></a>01115                                                          uint32_t DataChannel2)
 <a name="l01116"></a>01116 {
 <a name="l01117"></a>01117   MODIFY_REG(DACx-&gt;DHR8RD,
 <a name="l01118"></a>01118              (DAC_DHR8RD_DACC2DHR | DAC_DHR8RD_DACC1DHR),
-<a name="l01119"></a>01119              ((DataChannel2 &lt;&lt; <a class="code" href="group__DAC__LL__Private__Constants.html#gae2bc35eb3d6c6d23412f5583d1c1613e">DAC_DHR8RD_DACC2DHR_BITOFFSET_POS</a>) | DataChannel1));
+<a name="l01119"></a>01119              ((DataChannel2 &lt;&lt; <a class="code" href="group/group__DAC__LL__Private__Constants.html#gae2bc35eb3d6c6d23412f5583d1c1613e">DAC_DHR8RD_DACC2DHR_BITOFFSET_POS</a>) | DataChannel1));
 <a name="l01120"></a>01120 }
 <a name="l01121"></a>01121 
 <a name="l01122"></a>01122 <span class="comment"></span>
@@ -1201,9 +1201,9 @@
 <a name="l01134"></a>01134 <span class="comment">  *         @arg @ref LL_DAC_CHANNEL_2</span>
 <a name="l01135"></a>01135 <span class="comment">  * @retval Value between Min_Data=0x000 and Max_Data=0xFFF</span>
 <a name="l01136"></a>01136 <span class="comment">  */</span>
-<a name="l01137"></a><a class="code" href="group__DAC__LL__EF__Operation.html#gaf40717715c9c0b93d44a3a1a189d9462">01137</a> __STATIC_INLINE uint32_t <a class="code" href="group__DAC__LL__EF__Operation.html#gaf40717715c9c0b93d44a3a1a189d9462" title="Retrieve output data currently generated for the selected DAC channel.">LL_DAC_RetrieveOutputData</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
+<a name="l01137"></a><a class="code" href="group/group__DAC__LL__EF__Operation.html#gaf40717715c9c0b93d44a3a1a189d9462">01137</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DAC__LL__EF__Operation.html#gaf40717715c9c0b93d44a3a1a189d9462" title="Retrieve output data currently generated for the selected DAC channel.">LL_DAC_RetrieveOutputData</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel)
 <a name="l01138"></a>01138 {
-<a name="l01139"></a>01139   __IO uint32_t <span class="keyword">const</span> *preg = <a class="code" href="group__DAC__LL__Private__Macros.html#ga1810dbf97e083f59aa7d55ba777a57f6" title="Driver macro reserved for internal use: set a pointer to a register from a register basis from which ...">__DAC_PTR_REG_OFFSET</a>(DACx-&gt;DOR1, (DAC_Channel &gt;&gt; <a class="code" href="group__DAC__LL__Private__Constants.html#gac974b4e2609bb6a6cdfc93642b0dc56f">DAC_REG_DORX_REGOFFSET_BITOFFSET_POS</a>) &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga6c8127fb04aebb2b28b1bd70c5ecb357">DAC_REG_DORX_REGOFFSET_MASK_POSBIT0</a>);
+<a name="l01139"></a>01139   __IO uint32_t <span class="keyword">const</span> *preg = <a class="code" href="group/group__DAC__LL__Private__Macros.html#ga1810dbf97e083f59aa7d55ba777a57f6" title="Driver macro reserved for internal use: set a pointer to a register from a register basis from which ...">__DAC_PTR_REG_OFFSET</a>(DACx-&gt;DOR1, (DAC_Channel &gt;&gt; <a class="code" href="group/group__DAC__LL__Private__Constants.html#gac974b4e2609bb6a6cdfc93642b0dc56f">DAC_REG_DORX_REGOFFSET_BITOFFSET_POS</a>) &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga6c8127fb04aebb2b28b1bd70c5ecb357">DAC_REG_DORX_REGOFFSET_MASK_POSBIT0</a>);
 <a name="l01140"></a>01140 
 <a name="l01141"></a>01141   <span class="keywordflow">return</span> (uint16_t) READ_BIT(*preg, DAC_DOR1_DACC1DOR);
 <a name="l01142"></a>01142 }
@@ -1222,9 +1222,9 @@
 <a name="l01155"></a>01155 <span class="comment">  * @param  DACx DAC instance</span>
 <a name="l01156"></a>01156 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01157"></a>01157 <span class="comment">  */</span>
-<a name="l01158"></a><a class="code" href="group__DAC__LL__EF__FLAG__Management.html#ga30f29e576457fedfbe416dc8e0e3bd05">01158</a> __STATIC_INLINE uint32_t <a class="code" href="group__DAC__LL__EF__FLAG__Management.html#ga30f29e576457fedfbe416dc8e0e3bd05" title="Get DAC underrun flag for DAC channel 1.">LL_DAC_IsActiveFlag_DMAUDR1</a>(DAC_TypeDef *DACx)
+<a name="l01158"></a><a class="code" href="group/group__DAC__LL__EF__FLAG__Management.html#ga30f29e576457fedfbe416dc8e0e3bd05">01158</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DAC__LL__EF__FLAG__Management.html#ga30f29e576457fedfbe416dc8e0e3bd05" title="Get DAC underrun flag for DAC channel 1.">LL_DAC_IsActiveFlag_DMAUDR1</a>(DAC_TypeDef *DACx)
 <a name="l01159"></a>01159 {
-<a name="l01160"></a>01160   <span class="keywordflow">return</span> ((READ_BIT(DACx-&gt;SR, <a class="code" href="group__DAC__LL__EC__GET__FLAG.html#gab019795aeddf0833d1d1f55a406c05da">LL_DAC_FLAG_DMAUDR1</a>) == (<a class="code" href="group__DAC__LL__EC__GET__FLAG.html#gab019795aeddf0833d1d1f55a406c05da">LL_DAC_FLAG_DMAUDR1</a>)) ? 1UL : 0UL);
+<a name="l01160"></a>01160   <span class="keywordflow">return</span> ((READ_BIT(DACx-&gt;SR, <a class="code" href="group/group__DAC__LL__EC__GET__FLAG.html#gab019795aeddf0833d1d1f55a406c05da">LL_DAC_FLAG_DMAUDR1</a>) == (<a class="code" href="group/group__DAC__LL__EC__GET__FLAG.html#gab019795aeddf0833d1d1f55a406c05da">LL_DAC_FLAG_DMAUDR1</a>)) ? 1UL : 0UL);
 <a name="l01161"></a>01161 }
 <a name="l01162"></a>01162 <span class="preprocessor">#endif </span><span class="comment">/* DAC_SR_DMAUDR1 */</span>
 <a name="l01163"></a>01163 
@@ -1235,9 +1235,9 @@
 <a name="l01168"></a>01168 <span class="comment">  * @param  DACx DAC instance</span>
 <a name="l01169"></a>01169 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01170"></a>01170 <span class="comment">  */</span>
-<a name="l01171"></a><a class="code" href="group__DAC__LL__EF__FLAG__Management.html#ga00db4000d093e35b1756c82918760341">01171</a> __STATIC_INLINE uint32_t <a class="code" href="group__DAC__LL__EF__FLAG__Management.html#ga00db4000d093e35b1756c82918760341" title="Get DAC underrun flag for DAC channel 2.">LL_DAC_IsActiveFlag_DMAUDR2</a>(DAC_TypeDef *DACx)
+<a name="l01171"></a><a class="code" href="group/group__DAC__LL__EF__FLAG__Management.html#ga00db4000d093e35b1756c82918760341">01171</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DAC__LL__EF__FLAG__Management.html#ga00db4000d093e35b1756c82918760341" title="Get DAC underrun flag for DAC channel 2.">LL_DAC_IsActiveFlag_DMAUDR2</a>(DAC_TypeDef *DACx)
 <a name="l01172"></a>01172 {
-<a name="l01173"></a>01173   <span class="keywordflow">return</span> ((READ_BIT(DACx-&gt;SR, <a class="code" href="group__DAC__LL__EC__GET__FLAG.html#ga24d95614aca2fe33c0befa3921eb166c">LL_DAC_FLAG_DMAUDR2</a>) == (<a class="code" href="group__DAC__LL__EC__GET__FLAG.html#ga24d95614aca2fe33c0befa3921eb166c">LL_DAC_FLAG_DMAUDR2</a>)) ? 1UL : 0UL);
+<a name="l01173"></a>01173   <span class="keywordflow">return</span> ((READ_BIT(DACx-&gt;SR, <a class="code" href="group/group__DAC__LL__EC__GET__FLAG.html#ga24d95614aca2fe33c0befa3921eb166c">LL_DAC_FLAG_DMAUDR2</a>) == (<a class="code" href="group/group__DAC__LL__EC__GET__FLAG.html#ga24d95614aca2fe33c0befa3921eb166c">LL_DAC_FLAG_DMAUDR2</a>)) ? 1UL : 0UL);
 <a name="l01174"></a>01174 }
 <a name="l01175"></a>01175 <span class="preprocessor">#endif </span><span class="comment">/* DAC_SR_DMAUDR2 */</span>
 <a name="l01176"></a>01176 
@@ -1248,9 +1248,9 @@
 <a name="l01181"></a>01181 <span class="comment">  * @param  DACx DAC instance</span>
 <a name="l01182"></a>01182 <span class="comment">  * @retval None</span>
 <a name="l01183"></a>01183 <span class="comment">  */</span>
-<a name="l01184"></a><a class="code" href="group__DAC__LL__EF__FLAG__Management.html#gaad811c6498a2481ca92a37d686c24548">01184</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__EF__FLAG__Management.html#gaad811c6498a2481ca92a37d686c24548" title="Clear DAC underrun flag for DAC channel 1.">LL_DAC_ClearFlag_DMAUDR1</a>(DAC_TypeDef *DACx)
+<a name="l01184"></a><a class="code" href="group/group__DAC__LL__EF__FLAG__Management.html#gaad811c6498a2481ca92a37d686c24548">01184</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__EF__FLAG__Management.html#gaad811c6498a2481ca92a37d686c24548" title="Clear DAC underrun flag for DAC channel 1.">LL_DAC_ClearFlag_DMAUDR1</a>(DAC_TypeDef *DACx)
 <a name="l01185"></a>01185 {
-<a name="l01186"></a>01186   WRITE_REG(DACx-&gt;SR, <a class="code" href="group__DAC__LL__EC__GET__FLAG.html#gab019795aeddf0833d1d1f55a406c05da">LL_DAC_FLAG_DMAUDR1</a>);
+<a name="l01186"></a>01186   WRITE_REG(DACx-&gt;SR, <a class="code" href="group/group__DAC__LL__EC__GET__FLAG.html#gab019795aeddf0833d1d1f55a406c05da">LL_DAC_FLAG_DMAUDR1</a>);
 <a name="l01187"></a>01187 }
 <a name="l01188"></a>01188 <span class="preprocessor">#endif </span><span class="comment">/* DAC_SR_DMAUDR1 */</span>
 <a name="l01189"></a>01189 
@@ -1261,9 +1261,9 @@
 <a name="l01194"></a>01194 <span class="comment">  * @param  DACx DAC instance</span>
 <a name="l01195"></a>01195 <span class="comment">  * @retval None</span>
 <a name="l01196"></a>01196 <span class="comment">  */</span>
-<a name="l01197"></a><a class="code" href="group__DAC__LL__EF__FLAG__Management.html#ga291f3638d162eab93acb38bee7fe0d74">01197</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__EF__FLAG__Management.html#ga291f3638d162eab93acb38bee7fe0d74" title="Clear DAC underrun flag for DAC channel 2.">LL_DAC_ClearFlag_DMAUDR2</a>(DAC_TypeDef *DACx)
+<a name="l01197"></a><a class="code" href="group/group__DAC__LL__EF__FLAG__Management.html#ga291f3638d162eab93acb38bee7fe0d74">01197</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__EF__FLAG__Management.html#ga291f3638d162eab93acb38bee7fe0d74" title="Clear DAC underrun flag for DAC channel 2.">LL_DAC_ClearFlag_DMAUDR2</a>(DAC_TypeDef *DACx)
 <a name="l01198"></a>01198 {
-<a name="l01199"></a>01199   WRITE_REG(DACx-&gt;SR, <a class="code" href="group__DAC__LL__EC__GET__FLAG.html#ga24d95614aca2fe33c0befa3921eb166c">LL_DAC_FLAG_DMAUDR2</a>);
+<a name="l01199"></a>01199   WRITE_REG(DACx-&gt;SR, <a class="code" href="group/group__DAC__LL__EC__GET__FLAG.html#ga24d95614aca2fe33c0befa3921eb166c">LL_DAC_FLAG_DMAUDR2</a>);
 <a name="l01200"></a>01200 }
 <a name="l01201"></a>01201 <span class="preprocessor">#endif </span><span class="comment">/* DAC_SR_DMAUDR2 */</span>
 <a name="l01202"></a>01202 <span class="comment"></span>
@@ -1281,9 +1281,9 @@
 <a name="l01214"></a>01214 <span class="comment">  * @param  DACx DAC instance</span>
 <a name="l01215"></a>01215 <span class="comment">  * @retval None</span>
 <a name="l01216"></a>01216 <span class="comment">  */</span>
-<a name="l01217"></a><a class="code" href="group__DAC__LL__EF__IT__Management.html#gaf5d3bf9797842d7f5d8178ea785a484f">01217</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__EF__IT__Management.html#gaf5d3bf9797842d7f5d8178ea785a484f" title="Enable DMA underrun interrupt for DAC channel 1.">LL_DAC_EnableIT_DMAUDR1</a>(DAC_TypeDef *DACx)
+<a name="l01217"></a><a class="code" href="group/group__DAC__LL__EF__IT__Management.html#gaf5d3bf9797842d7f5d8178ea785a484f">01217</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__EF__IT__Management.html#gaf5d3bf9797842d7f5d8178ea785a484f" title="Enable DMA underrun interrupt for DAC channel 1.">LL_DAC_EnableIT_DMAUDR1</a>(DAC_TypeDef *DACx)
 <a name="l01218"></a>01218 {
-<a name="l01219"></a>01219   SET_BIT(DACx-&gt;CR, <a class="code" href="group__DAC__LL__EC__IT.html#gacd9f01524463bb4bc60652d5315acd08">LL_DAC_IT_DMAUDRIE1</a>);
+<a name="l01219"></a>01219   SET_BIT(DACx-&gt;CR, <a class="code" href="group/group__DAC__LL__EC__IT.html#gacd9f01524463bb4bc60652d5315acd08">LL_DAC_IT_DMAUDRIE1</a>);
 <a name="l01220"></a>01220 }
 <a name="l01221"></a>01221 <span class="preprocessor">#endif </span><span class="comment">/* DAC_CR_DMAUDRIE1 */</span>
 <a name="l01222"></a>01222 
@@ -1294,9 +1294,9 @@
 <a name="l01227"></a>01227 <span class="comment">  * @param  DACx DAC instance</span>
 <a name="l01228"></a>01228 <span class="comment">  * @retval None</span>
 <a name="l01229"></a>01229 <span class="comment">  */</span>
-<a name="l01230"></a><a class="code" href="group__DAC__LL__EF__IT__Management.html#gaeb4b84fe2f60d0f3ecc2ba18ea3b9b23">01230</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__EF__IT__Management.html#gaeb4b84fe2f60d0f3ecc2ba18ea3b9b23" title="Enable DMA underrun interrupt for DAC channel 2.">LL_DAC_EnableIT_DMAUDR2</a>(DAC_TypeDef *DACx)
+<a name="l01230"></a><a class="code" href="group/group__DAC__LL__EF__IT__Management.html#gaeb4b84fe2f60d0f3ecc2ba18ea3b9b23">01230</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__EF__IT__Management.html#gaeb4b84fe2f60d0f3ecc2ba18ea3b9b23" title="Enable DMA underrun interrupt for DAC channel 2.">LL_DAC_EnableIT_DMAUDR2</a>(DAC_TypeDef *DACx)
 <a name="l01231"></a>01231 {
-<a name="l01232"></a>01232   SET_BIT(DACx-&gt;CR, <a class="code" href="group__DAC__LL__EC__IT.html#ga0cb5b2877e943cec3e07048530f1ecbe">LL_DAC_IT_DMAUDRIE2</a>);
+<a name="l01232"></a>01232   SET_BIT(DACx-&gt;CR, <a class="code" href="group/group__DAC__LL__EC__IT.html#ga0cb5b2877e943cec3e07048530f1ecbe">LL_DAC_IT_DMAUDRIE2</a>);
 <a name="l01233"></a>01233 }
 <a name="l01234"></a>01234 <span class="preprocessor">#endif </span><span class="comment">/* DAC_CR_DMAUDRIE2 */</span>
 <a name="l01235"></a>01235 
@@ -1307,9 +1307,9 @@
 <a name="l01240"></a>01240 <span class="comment">  * @param  DACx DAC instance</span>
 <a name="l01241"></a>01241 <span class="comment">  * @retval None</span>
 <a name="l01242"></a>01242 <span class="comment">  */</span>
-<a name="l01243"></a><a class="code" href="group__DAC__LL__EF__IT__Management.html#ga10649e8dcdd1e4c8bb5743082a548640">01243</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__EF__IT__Management.html#ga10649e8dcdd1e4c8bb5743082a548640" title="Disable DMA underrun interrupt for DAC channel 1.">LL_DAC_DisableIT_DMAUDR1</a>(DAC_TypeDef *DACx)
+<a name="l01243"></a><a class="code" href="group/group__DAC__LL__EF__IT__Management.html#ga10649e8dcdd1e4c8bb5743082a548640">01243</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__EF__IT__Management.html#ga10649e8dcdd1e4c8bb5743082a548640" title="Disable DMA underrun interrupt for DAC channel 1.">LL_DAC_DisableIT_DMAUDR1</a>(DAC_TypeDef *DACx)
 <a name="l01244"></a>01244 {
-<a name="l01245"></a>01245   CLEAR_BIT(DACx-&gt;CR, <a class="code" href="group__DAC__LL__EC__IT.html#gacd9f01524463bb4bc60652d5315acd08">LL_DAC_IT_DMAUDRIE1</a>);
+<a name="l01245"></a>01245   CLEAR_BIT(DACx-&gt;CR, <a class="code" href="group/group__DAC__LL__EC__IT.html#gacd9f01524463bb4bc60652d5315acd08">LL_DAC_IT_DMAUDRIE1</a>);
 <a name="l01246"></a>01246 }
 <a name="l01247"></a>01247 <span class="preprocessor">#endif </span><span class="comment">/* DAC_CR_DMAUDRIE1 */</span>
 <a name="l01248"></a>01248 
@@ -1320,9 +1320,9 @@
 <a name="l01253"></a>01253 <span class="comment">  * @param  DACx DAC instance</span>
 <a name="l01254"></a>01254 <span class="comment">  * @retval None</span>
 <a name="l01255"></a>01255 <span class="comment">  */</span>
-<a name="l01256"></a><a class="code" href="group__DAC__LL__EF__IT__Management.html#ga4130d5b37dbdb2e6d6a8e1647a7518a2">01256</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__EF__IT__Management.html#ga4130d5b37dbdb2e6d6a8e1647a7518a2" title="Disable DMA underrun interrupt for DAC channel 2.">LL_DAC_DisableIT_DMAUDR2</a>(DAC_TypeDef *DACx)
+<a name="l01256"></a><a class="code" href="group/group__DAC__LL__EF__IT__Management.html#ga4130d5b37dbdb2e6d6a8e1647a7518a2">01256</a> __STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__EF__IT__Management.html#ga4130d5b37dbdb2e6d6a8e1647a7518a2" title="Disable DMA underrun interrupt for DAC channel 2.">LL_DAC_DisableIT_DMAUDR2</a>(DAC_TypeDef *DACx)
 <a name="l01257"></a>01257 {
-<a name="l01258"></a>01258   CLEAR_BIT(DACx-&gt;CR, <a class="code" href="group__DAC__LL__EC__IT.html#ga0cb5b2877e943cec3e07048530f1ecbe">LL_DAC_IT_DMAUDRIE2</a>);
+<a name="l01258"></a>01258   CLEAR_BIT(DACx-&gt;CR, <a class="code" href="group/group__DAC__LL__EC__IT.html#ga0cb5b2877e943cec3e07048530f1ecbe">LL_DAC_IT_DMAUDRIE2</a>);
 <a name="l01259"></a>01259 }
 <a name="l01260"></a>01260 <span class="preprocessor">#endif </span><span class="comment">/* DAC_CR_DMAUDRIE2 */</span>
 <a name="l01261"></a>01261 
@@ -1333,9 +1333,9 @@
 <a name="l01266"></a>01266 <span class="comment">  * @param  DACx DAC instance</span>
 <a name="l01267"></a>01267 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01268"></a>01268 <span class="comment">  */</span>
-<a name="l01269"></a><a class="code" href="group__DAC__LL__EF__IT__Management.html#ga5fb2d8a5e8fc3872b8df20fb9d4ff1c5">01269</a> __STATIC_INLINE uint32_t <a class="code" href="group__DAC__LL__EF__IT__Management.html#ga5fb2d8a5e8fc3872b8df20fb9d4ff1c5" title="Get DMA underrun interrupt for DAC channel 1.">LL_DAC_IsEnabledIT_DMAUDR1</a>(DAC_TypeDef *DACx)
+<a name="l01269"></a><a class="code" href="group/group__DAC__LL__EF__IT__Management.html#ga5fb2d8a5e8fc3872b8df20fb9d4ff1c5">01269</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DAC__LL__EF__IT__Management.html#ga5fb2d8a5e8fc3872b8df20fb9d4ff1c5" title="Get DMA underrun interrupt for DAC channel 1.">LL_DAC_IsEnabledIT_DMAUDR1</a>(DAC_TypeDef *DACx)
 <a name="l01270"></a>01270 {
-<a name="l01271"></a>01271   <span class="keywordflow">return</span> ((READ_BIT(DACx-&gt;CR, <a class="code" href="group__DAC__LL__EC__IT.html#gacd9f01524463bb4bc60652d5315acd08">LL_DAC_IT_DMAUDRIE1</a>) == (<a class="code" href="group__DAC__LL__EC__IT.html#gacd9f01524463bb4bc60652d5315acd08">LL_DAC_IT_DMAUDRIE1</a>)) ? 1UL : 0UL);
+<a name="l01271"></a>01271   <span class="keywordflow">return</span> ((READ_BIT(DACx-&gt;CR, <a class="code" href="group/group__DAC__LL__EC__IT.html#gacd9f01524463bb4bc60652d5315acd08">LL_DAC_IT_DMAUDRIE1</a>) == (<a class="code" href="group/group__DAC__LL__EC__IT.html#gacd9f01524463bb4bc60652d5315acd08">LL_DAC_IT_DMAUDRIE1</a>)) ? 1UL : 0UL);
 <a name="l01272"></a>01272 }
 <a name="l01273"></a>01273 <span class="preprocessor">#endif </span><span class="comment">/* DAC_CR_DMAUDRIE1 */</span>
 <a name="l01274"></a>01274 
@@ -1346,9 +1346,9 @@
 <a name="l01279"></a>01279 <span class="comment">  * @param  DACx DAC instance</span>
 <a name="l01280"></a>01280 <span class="comment">  * @retval State of bit (1 or 0).</span>
 <a name="l01281"></a>01281 <span class="comment">  */</span>
-<a name="l01282"></a><a class="code" href="group__DAC__LL__EF__IT__Management.html#ga8a126728e602ebcf78296b0aa71b14af">01282</a> __STATIC_INLINE uint32_t <a class="code" href="group__DAC__LL__EF__IT__Management.html#ga8a126728e602ebcf78296b0aa71b14af" title="Get DMA underrun interrupt for DAC channel 2.">LL_DAC_IsEnabledIT_DMAUDR2</a>(DAC_TypeDef *DACx)
+<a name="l01282"></a><a class="code" href="group/group__DAC__LL__EF__IT__Management.html#ga8a126728e602ebcf78296b0aa71b14af">01282</a> __STATIC_INLINE uint32_t <a class="code" href="group/group__DAC__LL__EF__IT__Management.html#ga8a126728e602ebcf78296b0aa71b14af" title="Get DMA underrun interrupt for DAC channel 2.">LL_DAC_IsEnabledIT_DMAUDR2</a>(DAC_TypeDef *DACx)
 <a name="l01283"></a>01283 {
-<a name="l01284"></a>01284   <span class="keywordflow">return</span> ((READ_BIT(DACx-&gt;CR, <a class="code" href="group__DAC__LL__EC__IT.html#ga0cb5b2877e943cec3e07048530f1ecbe">LL_DAC_IT_DMAUDRIE2</a>) == (<a class="code" href="group__DAC__LL__EC__IT.html#ga0cb5b2877e943cec3e07048530f1ecbe">LL_DAC_IT_DMAUDRIE2</a>)) ? 1UL : 0UL);
+<a name="l01284"></a>01284   <span class="keywordflow">return</span> ((READ_BIT(DACx-&gt;CR, <a class="code" href="group/group__DAC__LL__EC__IT.html#ga0cb5b2877e943cec3e07048530f1ecbe">LL_DAC_IT_DMAUDRIE2</a>) == (<a class="code" href="group/group__DAC__LL__EC__IT.html#ga0cb5b2877e943cec3e07048530f1ecbe">LL_DAC_IT_DMAUDRIE2</a>)) ? 1UL : 0UL);
 <a name="l01285"></a>01285 }
 <a name="l01286"></a>01286 <span class="preprocessor">#endif </span><span class="comment">/* DAC_CR_DMAUDRIE2 */</span>
 <a name="l01287"></a>01287 <span class="comment"></span>
@@ -1361,9 +1361,9 @@
 <a name="l01294"></a>01294 <span class="comment">  * @{</span>
 <a name="l01295"></a>01295 <span class="comment">  */</span>
 <a name="l01296"></a>01296 
-<a name="l01297"></a>01297 ErrorStatus <a class="code" href="group__DAC__LL__EF__Init.html#gaa802862dd2751e68e856fd096ce45fb9" title="De-initialize registers of the selected DAC instance to their default reset values.">LL_DAC_DeInit</a>(DAC_TypeDef *DACx);
-<a name="l01298"></a>01298 ErrorStatus <a class="code" href="group__DAC__LL__EF__Init.html#ga18eb1419833750c135772e908d9f82fb" title="Initialize some features of DAC channel.">LL_DAC_Init</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel, <a class="code" href="structLL__DAC__InitTypeDef.html" title="Structure definition of some features of DAC instance.">LL_DAC_InitTypeDef</a> *DAC_InitStruct);
-<a name="l01299"></a>01299 <span class="keywordtype">void</span>        <a class="code" href="group__DAC__LL__EF__Init.html#ga0759d61db4bf11bc9418297edd8aea08" title="Set each LL_DAC_InitTypeDef field to default value.">LL_DAC_StructInit</a>(<a class="code" href="structLL__DAC__InitTypeDef.html" title="Structure definition of some features of DAC instance.">LL_DAC_InitTypeDef</a> *DAC_InitStruct);
+<a name="l01297"></a>01297 ErrorStatus <a class="code" href="group/group__DAC__LL__EF__Init.html#gaa802862dd2751e68e856fd096ce45fb9" title="De-initialize registers of the selected DAC instance to their default reset values.">LL_DAC_DeInit</a>(DAC_TypeDef *DACx);
+<a name="l01298"></a>01298 ErrorStatus <a class="code" href="group/group__DAC__LL__EF__Init.html#ga18eb1419833750c135772e908d9f82fb" title="Initialize some features of DAC channel.">LL_DAC_Init</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel, <a class="code" href="structLL__DAC__InitTypeDef.html" title="Structure definition of some features of DAC instance.">LL_DAC_InitTypeDef</a> *DAC_InitStruct);
+<a name="l01299"></a>01299 <span class="keywordtype">void</span>        <a class="code" href="group/group__DAC__LL__EF__Init.html#ga0759d61db4bf11bc9418297edd8aea08" title="Set each LL_DAC_InitTypeDef field to default value.">LL_DAC_StructInit</a>(<a class="code" href="structLL__DAC__InitTypeDef.html" title="Structure definition of some features of DAC instance.">LL_DAC_InitTypeDef</a> *DAC_InitStruct);
 <a name="l01300"></a>01300 <span class="comment"></span>
 <a name="l01301"></a>01301 <span class="comment">/**</span>
 <a name="l01302"></a>01302 <span class="comment">  * @}</span>

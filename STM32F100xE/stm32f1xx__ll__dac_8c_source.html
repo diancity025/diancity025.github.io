@@ -113,13 +113,13 @@
 <a name="l00046"></a>00046 <span class="comment">/** @addtogroup DAC_LL_Private_Macros</span>
 <a name="l00047"></a>00047 <span class="comment">  * @{</span>
 <a name="l00048"></a>00048 <span class="comment">  */</span>
-<a name="l00049"></a><a class="code" href="group__DAC__LL__Private__Macros.html#gaedde0e84647197401cf0ef2b617b914e">00049</a> <span class="preprocessor">#define IS_LL_DAC_CHANNEL(__DAC_CHANNEL__)                                     \</span>
+<a name="l00049"></a><a class="code" href="group/group__DAC__LL__Private__Macros.html#gaedde0e84647197401cf0ef2b617b914e">00049</a> <span class="preprocessor">#define IS_LL_DAC_CHANNEL(__DAC_CHANNEL__)                                     \</span>
 <a name="l00050"></a>00050 <span class="preprocessor">  (                                                                            \</span>
 <a name="l00051"></a>00051 <span class="preprocessor">      ((__DAC_CHANNEL__) == LL_DAC_CHANNEL_1)                                  \</span>
 <a name="l00052"></a>00052 <span class="preprocessor">   || ((__DAC_CHANNEL__) == LL_DAC_CHANNEL_2)                                  \</span>
 <a name="l00053"></a>00053 <span class="preprocessor">  )</span>
 <a name="l00054"></a>00054 <span class="preprocessor"></span>
-<a name="l00055"></a><a class="code" href="group__DAC__LL__Private__Macros.html#gae0588038685b1cf8ca32cd6e1b527d95">00055</a> <span class="preprocessor">#define IS_LL_DAC_TRIGGER_SOURCE(__TRIGGER_SOURCE__)                           \</span>
+<a name="l00055"></a><a class="code" href="group/group__DAC__LL__Private__Macros.html#gae0588038685b1cf8ca32cd6e1b527d95">00055</a> <span class="preprocessor">#define IS_LL_DAC_TRIGGER_SOURCE(__TRIGGER_SOURCE__)                           \</span>
 <a name="l00056"></a>00056 <span class="preprocessor">  (   ((__TRIGGER_SOURCE__) == LL_DAC_TRIG_SOFTWARE)                           \</span>
 <a name="l00057"></a>00057 <span class="preprocessor">   || ((__TRIGGER_SOURCE__) == LL_DAC_TRIG_EXT_TIM3_TRGO)                      \</span>
 <a name="l00058"></a>00058 <span class="preprocessor">   || ((__TRIGGER_SOURCE__) == LL_DAC_TRIG_EXT_TIM15_TRGO)                     \</span>
@@ -132,13 +132,13 @@
 <a name="l00065"></a>00065 <span class="preprocessor">   || ((__TRIGGER_SOURCE__) == LL_DAC_TRIG_EXT_EXTI_LINE9)                     \</span>
 <a name="l00066"></a>00066 <span class="preprocessor">  )</span>
 <a name="l00067"></a>00067 <span class="preprocessor"></span>
-<a name="l00068"></a><a class="code" href="group__DAC__LL__Private__Macros.html#ga399981523d3008a0efa68484ad06c5b6">00068</a> <span class="preprocessor">#define IS_LL_DAC_WAVE_AUTO_GENER_MODE(__WAVE_AUTO_GENERATION_MODE__)           \</span>
+<a name="l00068"></a><a class="code" href="group/group__DAC__LL__Private__Macros.html#ga399981523d3008a0efa68484ad06c5b6">00068</a> <span class="preprocessor">#define IS_LL_DAC_WAVE_AUTO_GENER_MODE(__WAVE_AUTO_GENERATION_MODE__)           \</span>
 <a name="l00069"></a>00069 <span class="preprocessor">  (   ((__WAVE_AUTO_GENERATION_MODE__) == LL_DAC_WAVE_AUTO_GENERATION_NONE)     \</span>
 <a name="l00070"></a>00070 <span class="preprocessor">   || ((__WAVE_AUTO_GENERATION_MODE__) == LL_DAC_WAVE_AUTO_GENERATION_NOISE)    \</span>
 <a name="l00071"></a>00071 <span class="preprocessor">   || ((__WAVE_AUTO_GENERATION_MODE__) == LL_DAC_WAVE_AUTO_GENERATION_TRIANGLE) \</span>
 <a name="l00072"></a>00072 <span class="preprocessor">  )</span>
 <a name="l00073"></a>00073 <span class="preprocessor"></span>
-<a name="l00074"></a><a class="code" href="group__DAC__LL__Private__Macros.html#gab828d87b7740a98a3be8981ebdeb940f">00074</a> <span class="preprocessor">#define IS_LL_DAC_WAVE_AUTO_GENER_CONFIG(__WAVE_AUTO_GENERATION_MODE__, __WAVE_AUTO_GENERATION_CONFIG__)  \</span>
+<a name="l00074"></a><a class="code" href="group/group__DAC__LL__Private__Macros.html#gab828d87b7740a98a3be8981ebdeb940f">00074</a> <span class="preprocessor">#define IS_LL_DAC_WAVE_AUTO_GENER_CONFIG(__WAVE_AUTO_GENERATION_MODE__, __WAVE_AUTO_GENERATION_CONFIG__)  \</span>
 <a name="l00075"></a>00075 <span class="preprocessor">  ( (((__WAVE_AUTO_GENERATION_MODE__) == LL_DAC_WAVE_AUTO_GENERATION_NOISE)                               \</span>
 <a name="l00076"></a>00076 <span class="preprocessor">    &amp;&amp; (  ((__WAVE_AUTO_GENERATION_CONFIG__) == LL_DAC_NOISE_LFSR_UNMASK_BIT0)                            \</span>
 <a name="l00077"></a>00077 <span class="preprocessor">       || ((__WAVE_AUTO_GENERATION_CONFIG__) == LL_DAC_NOISE_LFSR_UNMASK_BITS1_0)                         \</span>
@@ -169,7 +169,7 @@
 <a name="l00102"></a>00102 <span class="preprocessor">    )                                                                                                     \</span>
 <a name="l00103"></a>00103 <span class="preprocessor">  )</span>
 <a name="l00104"></a>00104 <span class="preprocessor"></span>
-<a name="l00105"></a><a class="code" href="group__DAC__LL__Private__Macros.html#ga4932691afacd864b230e2842854e41d9">00105</a> <span class="preprocessor">#define IS_LL_DAC_OUTPUT_BUFFER(__OUTPUT_BUFFER__)                             \</span>
+<a name="l00105"></a><a class="code" href="group/group__DAC__LL__Private__Macros.html#ga4932691afacd864b230e2842854e41d9">00105</a> <span class="preprocessor">#define IS_LL_DAC_OUTPUT_BUFFER(__OUTPUT_BUFFER__)                             \</span>
 <a name="l00106"></a>00106 <span class="preprocessor">  (   ((__OUTPUT_BUFFER__) == LL_DAC_OUTPUT_BUFFER_ENABLE)                     \</span>
 <a name="l00107"></a>00107 <span class="preprocessor">   || ((__OUTPUT_BUFFER__) == LL_DAC_OUTPUT_BUFFER_DISABLE)                    \</span>
 <a name="l00108"></a>00108 <span class="preprocessor">  )</span>
@@ -198,16 +198,16 @@
 <a name="l00131"></a>00131 <span class="comment">  *          - SUCCESS: DAC registers are de-initialized</span>
 <a name="l00132"></a>00132 <span class="comment">  *          - ERROR: not applicable</span>
 <a name="l00133"></a>00133 <span class="comment">  */</span>
-<a name="l00134"></a><a class="code" href="group__DAC__LL__EF__Init.html#gaa802862dd2751e68e856fd096ce45fb9">00134</a> ErrorStatus <a class="code" href="group__DAC__LL__EF__Init.html#gaa802862dd2751e68e856fd096ce45fb9" title="De-initialize registers of the selected DAC instance to their default reset values.">LL_DAC_DeInit</a>(DAC_TypeDef *DACx)
+<a name="l00134"></a><a class="code" href="group/group__DAC__LL__EF__Init.html#gaa802862dd2751e68e856fd096ce45fb9">00134</a> ErrorStatus <a class="code" href="group/group__DAC__LL__EF__Init.html#gaa802862dd2751e68e856fd096ce45fb9" title="De-initialize registers of the selected DAC instance to their default reset values.">LL_DAC_DeInit</a>(DAC_TypeDef *DACx)
 <a name="l00135"></a>00135 {
 <a name="l00136"></a>00136   <span class="comment">/* Check the parameters */</span>
 <a name="l00137"></a>00137   <a class="code" href="stm32f1xx__ll__dac_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(IS_DAC_ALL_INSTANCE(DACx));
 <a name="l00138"></a>00138 
 <a name="l00139"></a>00139   <span class="comment">/* Force reset of DAC clock */</span>
-<a name="l00140"></a>00140   <a class="code" href="group__BUS__LL__EF__APB1.html#ga45bf26f8c9e292710b66614c96a28096" title="Force APB1 peripherals reset.">LL_APB1_GRP1_ForceReset</a>(<a class="code" href="group__BUS__LL__EC__APB1__GRP1__PERIPH.html#gab33dbc51b880df861a688466e7afe1fe">LL_APB1_GRP1_PERIPH_DAC1</a>);
+<a name="l00140"></a>00140   <a class="code" href="group/group__BUS__LL__EF__APB1.html#ga45bf26f8c9e292710b66614c96a28096" title="Force APB1 peripherals reset.">LL_APB1_GRP1_ForceReset</a>(<a class="code" href="group/group__BUS__LL__EC__APB1__GRP1__PERIPH.html#gab33dbc51b880df861a688466e7afe1fe">LL_APB1_GRP1_PERIPH_DAC1</a>);
 <a name="l00141"></a>00141 
 <a name="l00142"></a>00142   <span class="comment">/* Release reset of DAC clock */</span>
-<a name="l00143"></a>00143   <a class="code" href="group__BUS__LL__EF__APB1.html#ga8a4d59b573dcc16845ff1c6de5def5c2" title="Release APB1 peripherals reset.">LL_APB1_GRP1_ReleaseReset</a>(<a class="code" href="group__BUS__LL__EC__APB1__GRP1__PERIPH.html#gab33dbc51b880df861a688466e7afe1fe">LL_APB1_GRP1_PERIPH_DAC1</a>);
+<a name="l00143"></a>00143   <a class="code" href="group/group__BUS__LL__EF__APB1.html#ga8a4d59b573dcc16845ff1c6de5def5c2" title="Release APB1 peripherals reset.">LL_APB1_GRP1_ReleaseReset</a>(<a class="code" href="group/group__BUS__LL__EC__APB1__GRP1__PERIPH.html#gab33dbc51b880df861a688466e7afe1fe">LL_APB1_GRP1_PERIPH_DAC1</a>);
 <a name="l00144"></a>00144 
 <a name="l00145"></a>00145   <span class="keywordflow">return</span> SUCCESS;
 <a name="l00146"></a>00146 }
@@ -237,39 +237,39 @@
 <a name="l00170"></a>00170 <span class="comment">  *          - SUCCESS: DAC registers are initialized</span>
 <a name="l00171"></a>00171 <span class="comment">  *          - ERROR: DAC registers are not initialized</span>
 <a name="l00172"></a>00172 <span class="comment">  */</span>
-<a name="l00173"></a><a class="code" href="group__DAC__LL__EF__Init.html#ga18eb1419833750c135772e908d9f82fb">00173</a> ErrorStatus <a class="code" href="group__DAC__LL__EF__Init.html#ga18eb1419833750c135772e908d9f82fb" title="Initialize some features of DAC channel.">LL_DAC_Init</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel, <a class="code" href="structLL__DAC__InitTypeDef.html" title="Structure definition of some features of DAC instance.">LL_DAC_InitTypeDef</a> *DAC_InitStruct)
+<a name="l00173"></a><a class="code" href="group/group__DAC__LL__EF__Init.html#ga18eb1419833750c135772e908d9f82fb">00173</a> ErrorStatus <a class="code" href="group/group__DAC__LL__EF__Init.html#ga18eb1419833750c135772e908d9f82fb" title="Initialize some features of DAC channel.">LL_DAC_Init</a>(DAC_TypeDef *DACx, uint32_t DAC_Channel, <a class="code" href="structLL__DAC__InitTypeDef.html" title="Structure definition of some features of DAC instance.">LL_DAC_InitTypeDef</a> *DAC_InitStruct)
 <a name="l00174"></a>00174 {
 <a name="l00175"></a>00175   ErrorStatus status = SUCCESS;
 <a name="l00176"></a>00176 
 <a name="l00177"></a>00177   <span class="comment">/* Check the parameters */</span>
 <a name="l00178"></a>00178   <a class="code" href="stm32f1xx__ll__dac_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(IS_DAC_ALL_INSTANCE(DACx));
-<a name="l00179"></a>00179   <a class="code" href="stm32f1xx__ll__dac_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group__DAC__LL__Private__Macros.html#gaedde0e84647197401cf0ef2b617b914e">IS_LL_DAC_CHANNEL</a>(DAC_Channel));
-<a name="l00180"></a>00180   <a class="code" href="stm32f1xx__ll__dac_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group__DAC__LL__Private__Macros.html#gae0588038685b1cf8ca32cd6e1b527d95">IS_LL_DAC_TRIGGER_SOURCE</a>(DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#aafb43670e0e8bd337b0a42f09b1c4739">TriggerSource</a>));
-<a name="l00181"></a>00181   <a class="code" href="stm32f1xx__ll__dac_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group__DAC__LL__Private__Macros.html#ga4932691afacd864b230e2842854e41d9">IS_LL_DAC_OUTPUT_BUFFER</a>(DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#a82bb119f96bc8a8d267dcfa00166e88d">OutputBuffer</a>));
-<a name="l00182"></a>00182   <a class="code" href="stm32f1xx__ll__dac_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group__DAC__LL__Private__Macros.html#ga399981523d3008a0efa68484ad06c5b6">IS_LL_DAC_WAVE_AUTO_GENER_MODE</a>(DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#abb3caddb9bd1ce6d22f98dd539253b4e">WaveAutoGeneration</a>));
-<a name="l00183"></a>00183   <span class="keywordflow">if</span> (DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#abb3caddb9bd1ce6d22f98dd539253b4e">WaveAutoGeneration</a> != <a class="code" href="group__DAC__LL__EC__WAVE__AUTO__GENERATION__MODE.html#gaa68c1d042063dc709d4e56a81a20acd8">LL_DAC_WAVE_AUTO_GENERATION_NONE</a>)
+<a name="l00179"></a>00179   <a class="code" href="stm32f1xx__ll__dac_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group/group__DAC__LL__Private__Macros.html#gaedde0e84647197401cf0ef2b617b914e">IS_LL_DAC_CHANNEL</a>(DAC_Channel));
+<a name="l00180"></a>00180   <a class="code" href="stm32f1xx__ll__dac_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group/group__DAC__LL__Private__Macros.html#gae0588038685b1cf8ca32cd6e1b527d95">IS_LL_DAC_TRIGGER_SOURCE</a>(DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#aafb43670e0e8bd337b0a42f09b1c4739">TriggerSource</a>));
+<a name="l00181"></a>00181   <a class="code" href="stm32f1xx__ll__dac_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group/group__DAC__LL__Private__Macros.html#ga4932691afacd864b230e2842854e41d9">IS_LL_DAC_OUTPUT_BUFFER</a>(DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#a82bb119f96bc8a8d267dcfa00166e88d">OutputBuffer</a>));
+<a name="l00182"></a>00182   <a class="code" href="stm32f1xx__ll__dac_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group/group__DAC__LL__Private__Macros.html#ga399981523d3008a0efa68484ad06c5b6">IS_LL_DAC_WAVE_AUTO_GENER_MODE</a>(DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#abb3caddb9bd1ce6d22f98dd539253b4e">WaveAutoGeneration</a>));
+<a name="l00183"></a>00183   <span class="keywordflow">if</span> (DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#abb3caddb9bd1ce6d22f98dd539253b4e">WaveAutoGeneration</a> != <a class="code" href="group/group__DAC__LL__EC__WAVE__AUTO__GENERATION__MODE.html#gaa68c1d042063dc709d4e56a81a20acd8">LL_DAC_WAVE_AUTO_GENERATION_NONE</a>)
 <a name="l00184"></a>00184   {
-<a name="l00185"></a>00185     <a class="code" href="stm32f1xx__ll__dac_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group__DAC__LL__Private__Macros.html#gab828d87b7740a98a3be8981ebdeb940f">IS_LL_DAC_WAVE_AUTO_GENER_CONFIG</a>(DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#abb3caddb9bd1ce6d22f98dd539253b4e">WaveAutoGeneration</a>,
+<a name="l00185"></a>00185     <a class="code" href="stm32f1xx__ll__dac_8c.html#a631dea7b230e600555f979c62af1de21">assert_param</a>(<a class="code" href="group/group__DAC__LL__Private__Macros.html#gab828d87b7740a98a3be8981ebdeb940f">IS_LL_DAC_WAVE_AUTO_GENER_CONFIG</a>(DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#abb3caddb9bd1ce6d22f98dd539253b4e">WaveAutoGeneration</a>,
 <a name="l00186"></a>00186                                                   DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#a250a4506a330b33d18fe20e17260b845">WaveAutoGenerationConfig</a>));
 <a name="l00187"></a>00187   }
 <a name="l00188"></a>00188 
 <a name="l00189"></a>00189   <span class="comment">/* Note: Hardware constraint (refer to description of this function)        */</span>
 <a name="l00190"></a>00190   <span class="comment">/*       DAC instance must be disabled.                                     */</span>
-<a name="l00191"></a>00191   <span class="keywordflow">if</span> (<a class="code" href="group__DAC__LL__EF__Operation.html#ga686deb35afb81f71aaab6d8f2db667e0" title="Get DAC enable state of the selected channel.">LL_DAC_IsEnabled</a>(DACx, DAC_Channel) == 0U)
+<a name="l00191"></a>00191   <span class="keywordflow">if</span> (<a class="code" href="group/group__DAC__LL__EF__Operation.html#ga686deb35afb81f71aaab6d8f2db667e0" title="Get DAC enable state of the selected channel.">LL_DAC_IsEnabled</a>(DACx, DAC_Channel) == 0U)
 <a name="l00192"></a>00192   {
 <a name="l00193"></a>00193     <span class="comment">/* Configuration of DAC channel:                                          */</span>
 <a name="l00194"></a>00194     <span class="comment">/*  - TriggerSource                                                       */</span>
 <a name="l00195"></a>00195     <span class="comment">/*  - WaveAutoGeneration                                                  */</span>
 <a name="l00196"></a>00196     <span class="comment">/*  - OutputBuffer                                                        */</span>
 <a name="l00197"></a>00197     <span class="comment">/*  - OutputMode                                                          */</span>
-<a name="l00198"></a>00198     <span class="keywordflow">if</span> (DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#abb3caddb9bd1ce6d22f98dd539253b4e">WaveAutoGeneration</a> != <a class="code" href="group__DAC__LL__EC__WAVE__AUTO__GENERATION__MODE.html#gaa68c1d042063dc709d4e56a81a20acd8">LL_DAC_WAVE_AUTO_GENERATION_NONE</a>)
+<a name="l00198"></a>00198     <span class="keywordflow">if</span> (DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#abb3caddb9bd1ce6d22f98dd539253b4e">WaveAutoGeneration</a> != <a class="code" href="group/group__DAC__LL__EC__WAVE__AUTO__GENERATION__MODE.html#gaa68c1d042063dc709d4e56a81a20acd8">LL_DAC_WAVE_AUTO_GENERATION_NONE</a>)
 <a name="l00199"></a>00199     {
 <a name="l00200"></a>00200       MODIFY_REG(DACx-&gt;CR,
 <a name="l00201"></a>00201                  (DAC_CR_TSEL1
 <a name="l00202"></a>00202                   | DAC_CR_WAVE1
 <a name="l00203"></a>00203                   | DAC_CR_MAMP1
 <a name="l00204"></a>00204                   | DAC_CR_BOFF1
-<a name="l00205"></a>00205                  ) &lt;&lt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>)
+<a name="l00205"></a>00205                  ) &lt;&lt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>)
 <a name="l00206"></a>00206                  ,
 <a name="l00207"></a>00207                  (DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#aafb43670e0e8bd337b0a42f09b1c4739">TriggerSource</a>
 <a name="l00208"></a>00208                   | DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#abb3caddb9bd1ce6d22f98dd539253b4e">WaveAutoGeneration</a>
@@ -284,10 +284,10 @@
 <a name="l00217"></a>00217                  (DAC_CR_TSEL1
 <a name="l00218"></a>00218                   | DAC_CR_WAVE1
 <a name="l00219"></a>00219                   | DAC_CR_BOFF1
-<a name="l00220"></a>00220                  ) &lt;&lt; (DAC_Channel &amp; <a class="code" href="group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>)
+<a name="l00220"></a>00220                  ) &lt;&lt; (DAC_Channel &amp; <a class="code" href="group/group__DAC__LL__Private__Constants.html#ga3445c237cc87a4e002f5259e81396fed">DAC_CR_CHX_BITOFFSET_MASK</a>)
 <a name="l00221"></a>00221                  ,
 <a name="l00222"></a>00222                  (DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#aafb43670e0e8bd337b0a42f09b1c4739">TriggerSource</a>
-<a name="l00223"></a>00223                   | <a class="code" href="group__DAC__LL__EC__WAVE__AUTO__GENERATION__MODE.html#gaa68c1d042063dc709d4e56a81a20acd8">LL_DAC_WAVE_AUTO_GENERATION_NONE</a>
+<a name="l00223"></a>00223                   | <a class="code" href="group/group__DAC__LL__EC__WAVE__AUTO__GENERATION__MODE.html#gaa68c1d042063dc709d4e56a81a20acd8">LL_DAC_WAVE_AUTO_GENERATION_NONE</a>
 <a name="l00224"></a>00224                   | DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#a82bb119f96bc8a8d267dcfa00166e88d">OutputBuffer</a>
 <a name="l00225"></a>00225                  ) &lt;&lt; (DAC_Channel &amp; DAC_CR_CHX_BITOFFSET_MASK)
 <a name="l00226"></a>00226                 );
@@ -307,15 +307,15 @@
 <a name="l00240"></a>00240 <span class="comment">  *                       whose fields will be set to default values.</span>
 <a name="l00241"></a>00241 <span class="comment">  * @retval None</span>
 <a name="l00242"></a>00242 <span class="comment">  */</span>
-<a name="l00243"></a><a class="code" href="group__DAC__LL__EF__Init.html#ga0759d61db4bf11bc9418297edd8aea08">00243</a> <span class="keywordtype">void</span> <a class="code" href="group__DAC__LL__EF__Init.html#ga0759d61db4bf11bc9418297edd8aea08" title="Set each LL_DAC_InitTypeDef field to default value.">LL_DAC_StructInit</a>(<a class="code" href="structLL__DAC__InitTypeDef.html" title="Structure definition of some features of DAC instance.">LL_DAC_InitTypeDef</a> *DAC_InitStruct)
+<a name="l00243"></a><a class="code" href="group/group__DAC__LL__EF__Init.html#ga0759d61db4bf11bc9418297edd8aea08">00243</a> <span class="keywordtype">void</span> <a class="code" href="group/group__DAC__LL__EF__Init.html#ga0759d61db4bf11bc9418297edd8aea08" title="Set each LL_DAC_InitTypeDef field to default value.">LL_DAC_StructInit</a>(<a class="code" href="structLL__DAC__InitTypeDef.html" title="Structure definition of some features of DAC instance.">LL_DAC_InitTypeDef</a> *DAC_InitStruct)
 <a name="l00244"></a>00244 {
 <a name="l00245"></a>00245   <span class="comment">/* Set DAC_InitStruct fields to default values */</span>
-<a name="l00246"></a>00246   DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#aafb43670e0e8bd337b0a42f09b1c4739">TriggerSource</a>            = <a class="code" href="group__DAC__LL__EC__TRIGGER__SOURCE.html#ga47f55d045f22fdccd677af14f8efdcd1">LL_DAC_TRIG_SOFTWARE</a>;
-<a name="l00247"></a>00247   DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#abb3caddb9bd1ce6d22f98dd539253b4e">WaveAutoGeneration</a>       = <a class="code" href="group__DAC__LL__EC__WAVE__AUTO__GENERATION__MODE.html#gaa68c1d042063dc709d4e56a81a20acd8">LL_DAC_WAVE_AUTO_GENERATION_NONE</a>;
+<a name="l00246"></a>00246   DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#aafb43670e0e8bd337b0a42f09b1c4739">TriggerSource</a>            = <a class="code" href="group/group__DAC__LL__EC__TRIGGER__SOURCE.html#ga47f55d045f22fdccd677af14f8efdcd1">LL_DAC_TRIG_SOFTWARE</a>;
+<a name="l00247"></a>00247   DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#abb3caddb9bd1ce6d22f98dd539253b4e">WaveAutoGeneration</a>       = <a class="code" href="group/group__DAC__LL__EC__WAVE__AUTO__GENERATION__MODE.html#gaa68c1d042063dc709d4e56a81a20acd8">LL_DAC_WAVE_AUTO_GENERATION_NONE</a>;
 <a name="l00248"></a>00248   <span class="comment">/* Note: Parameter discarded if wave auto generation is disabled,           */</span>
 <a name="l00249"></a>00249   <span class="comment">/*       set anyway to its default value.                                   */</span>
-<a name="l00250"></a>00250   DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#a250a4506a330b33d18fe20e17260b845">WaveAutoGenerationConfig</a> = <a class="code" href="group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#ga58f9d27f4f60e62dfb69d89d0891c88a">LL_DAC_NOISE_LFSR_UNMASK_BIT0</a>;
-<a name="l00251"></a>00251   DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#a82bb119f96bc8a8d267dcfa00166e88d">OutputBuffer</a>             = <a class="code" href="group__DAC__LL__EC__OUTPUT__BUFFER.html#ga5a4c7d681424875b7a8439454d8e9ca7">LL_DAC_OUTPUT_BUFFER_ENABLE</a>;
+<a name="l00250"></a>00250   DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#a250a4506a330b33d18fe20e17260b845">WaveAutoGenerationConfig</a> = <a class="code" href="group/group__DAC__LL__EC__WAVE__NOISE__LFSR__UNMASK__BITS.html#ga58f9d27f4f60e62dfb69d89d0891c88a">LL_DAC_NOISE_LFSR_UNMASK_BIT0</a>;
+<a name="l00251"></a>00251   DAC_InitStruct-&gt;<a class="code" href="structLL__DAC__InitTypeDef.html#a82bb119f96bc8a8d267dcfa00166e88d">OutputBuffer</a>             = <a class="code" href="group/group__DAC__LL__EC__OUTPUT__BUFFER.html#ga5a4c7d681424875b7a8439454d8e9ca7">LL_DAC_OUTPUT_BUFFER_ENABLE</a>;
 <a name="l00252"></a>00252 }
 <a name="l00253"></a>00253 <span class="comment"></span>
 <a name="l00254"></a>00254 <span class="comment">/**</span>

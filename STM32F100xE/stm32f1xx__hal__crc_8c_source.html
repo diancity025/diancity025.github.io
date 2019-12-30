@@ -159,7 +159,7 @@
 <a name="l00092"></a>00092 <span class="comment">  * @param  hcrc CRC handle</span>
 <a name="l00093"></a>00093 <span class="comment">  * @retval HAL status</span>
 <a name="l00094"></a>00094 <span class="comment">  */</span>
-<a name="l00095"></a><a class="code" href="group__CRC__Exported__Functions__Group1.html#ga23e7df2eaecf59615e13b2cad8b7185f">00095</a> HAL_StatusTypeDef <a class="code" href="group__CRC__Exported__Functions__Group1.html#ga23e7df2eaecf59615e13b2cad8b7185f" title="Initialize the CRC according to the specified parameters in the CRC_InitTypeDef and create the associ...">HAL_CRC_Init</a>(<a class="code" href="structCRC__HandleTypeDef.html" title="CRC Handle Structure definition.">CRC_HandleTypeDef</a> *hcrc)
+<a name="l00095"></a><a class="code" href="group/group__CRC__Exported__Functions__Group1.html#ga23e7df2eaecf59615e13b2cad8b7185f">00095</a> HAL_StatusTypeDef <a class="code" href="group/group__CRC__Exported__Functions__Group1.html#ga23e7df2eaecf59615e13b2cad8b7185f" title="Initialize the CRC according to the specified parameters in the CRC_InitTypeDef and create the associ...">HAL_CRC_Init</a>(<a class="code" href="structCRC__HandleTypeDef.html" title="CRC Handle Structure definition.">CRC_HandleTypeDef</a> *hcrc)
 <a name="l00096"></a>00096 {
 <a name="l00097"></a>00097   <span class="comment">/* Check the CRC handle allocation */</span>
 <a name="l00098"></a>00098   <span class="keywordflow">if</span> (hcrc == NULL)
@@ -170,16 +170,16 @@
 <a name="l00103"></a>00103   <span class="comment">/* Check the parameters */</span>
 <a name="l00104"></a>00104   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(IS_CRC_ALL_INSTANCE(hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a729fb3fc0f6d94bef9ec1b48a8a65221">Instance</a>));
 <a name="l00105"></a>00105 
-<a name="l00106"></a>00106   <span class="keywordflow">if</span> (hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a401f5c24d8e1fbe904234802d53c4f43">State</a> == <a class="code" href="group__CRC__Exported__Types.html#gga1021d6f27a072d45f6f3b233eefd8bbea313bbe8353f8a8b48fbd129261266a97">HAL_CRC_STATE_RESET</a>)
+<a name="l00106"></a>00106   <span class="keywordflow">if</span> (hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a401f5c24d8e1fbe904234802d53c4f43">State</a> == <a class="code" href="group/group__CRC__Exported__Types.html#gga1021d6f27a072d45f6f3b233eefd8bbea313bbe8353f8a8b48fbd129261266a97">HAL_CRC_STATE_RESET</a>)
 <a name="l00107"></a>00107   {
 <a name="l00108"></a>00108     <span class="comment">/* Allocate lock resource and initialize it */</span>
 <a name="l00109"></a>00109     hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a8424c2419e573117042e58d10ebe2e8f">Lock</a> = HAL_UNLOCKED;
 <a name="l00110"></a>00110     <span class="comment">/* Init the low level hardware */</span>
-<a name="l00111"></a>00111     <a class="code" href="group__CRC__Exported__Functions__Group1.html#ga5167ffd293de5d86f5873910416b36d0" title="Initializes the CRC MSP.">HAL_CRC_MspInit</a>(hcrc);
+<a name="l00111"></a>00111     <a class="code" href="group/group__CRC__Exported__Functions__Group1.html#ga5167ffd293de5d86f5873910416b36d0" title="Initializes the CRC MSP.">HAL_CRC_MspInit</a>(hcrc);
 <a name="l00112"></a>00112   }
 <a name="l00113"></a>00113 
 <a name="l00114"></a>00114   <span class="comment">/* Change CRC peripheral state */</span>
-<a name="l00115"></a>00115   hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a401f5c24d8e1fbe904234802d53c4f43">State</a> = <a class="code" href="group__CRC__Exported__Types.html#gga1021d6f27a072d45f6f3b233eefd8bbeaa47f50129543b87fac3a83df1a634474">HAL_CRC_STATE_READY</a>;
+<a name="l00115"></a>00115   hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a401f5c24d8e1fbe904234802d53c4f43">State</a> = <a class="code" href="group/group__CRC__Exported__Types.html#gga1021d6f27a072d45f6f3b233eefd8bbeaa47f50129543b87fac3a83df1a634474">HAL_CRC_STATE_READY</a>;
 <a name="l00116"></a>00116 
 <a name="l00117"></a>00117   <span class="comment">/* Return function status */</span>
 <a name="l00118"></a>00118   <span class="keywordflow">return</span> HAL_OK;
@@ -190,7 +190,7 @@
 <a name="l00123"></a>00123 <span class="comment">  * @param  hcrc CRC handle</span>
 <a name="l00124"></a>00124 <span class="comment">  * @retval HAL status</span>
 <a name="l00125"></a>00125 <span class="comment">  */</span>
-<a name="l00126"></a><a class="code" href="group__CRC__Exported__Functions__Group1.html#gac600b9a1785f2372ca40ed5449c23739">00126</a> HAL_StatusTypeDef <a class="code" href="group__CRC__Exported__Functions__Group1.html#gac600b9a1785f2372ca40ed5449c23739" title="DeInitialize the CRC peripheral.">HAL_CRC_DeInit</a>(<a class="code" href="structCRC__HandleTypeDef.html" title="CRC Handle Structure definition.">CRC_HandleTypeDef</a> *hcrc)
+<a name="l00126"></a><a class="code" href="group/group__CRC__Exported__Functions__Group1.html#gac600b9a1785f2372ca40ed5449c23739">00126</a> HAL_StatusTypeDef <a class="code" href="group/group__CRC__Exported__Functions__Group1.html#gac600b9a1785f2372ca40ed5449c23739" title="DeInitialize the CRC peripheral.">HAL_CRC_DeInit</a>(<a class="code" href="structCRC__HandleTypeDef.html" title="CRC Handle Structure definition.">CRC_HandleTypeDef</a> *hcrc)
 <a name="l00127"></a>00127 {
 <a name="l00128"></a>00128   <span class="comment">/* Check the CRC handle allocation */</span>
 <a name="l00129"></a>00129   <span class="keywordflow">if</span> (hcrc == NULL)
@@ -202,25 +202,25 @@
 <a name="l00135"></a>00135   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(IS_CRC_ALL_INSTANCE(hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a729fb3fc0f6d94bef9ec1b48a8a65221">Instance</a>));
 <a name="l00136"></a>00136 
 <a name="l00137"></a>00137   <span class="comment">/* Check the CRC peripheral state */</span>
-<a name="l00138"></a>00138   <span class="keywordflow">if</span> (hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a401f5c24d8e1fbe904234802d53c4f43">State</a> == <a class="code" href="group__CRC__Exported__Types.html#gga1021d6f27a072d45f6f3b233eefd8bbea9d03b0c1d233e87e35b9c5c8353a4b70">HAL_CRC_STATE_BUSY</a>)
+<a name="l00138"></a>00138   <span class="keywordflow">if</span> (hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a401f5c24d8e1fbe904234802d53c4f43">State</a> == <a class="code" href="group/group__CRC__Exported__Types.html#gga1021d6f27a072d45f6f3b233eefd8bbea9d03b0c1d233e87e35b9c5c8353a4b70">HAL_CRC_STATE_BUSY</a>)
 <a name="l00139"></a>00139   {
 <a name="l00140"></a>00140     <span class="keywordflow">return</span> HAL_BUSY;
 <a name="l00141"></a>00141   }
 <a name="l00142"></a>00142 
 <a name="l00143"></a>00143   <span class="comment">/* Change CRC peripheral state */</span>
-<a name="l00144"></a>00144   hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a401f5c24d8e1fbe904234802d53c4f43">State</a> = <a class="code" href="group__CRC__Exported__Types.html#gga1021d6f27a072d45f6f3b233eefd8bbea9d03b0c1d233e87e35b9c5c8353a4b70">HAL_CRC_STATE_BUSY</a>;
+<a name="l00144"></a>00144   hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a401f5c24d8e1fbe904234802d53c4f43">State</a> = <a class="code" href="group/group__CRC__Exported__Types.html#gga1021d6f27a072d45f6f3b233eefd8bbea9d03b0c1d233e87e35b9c5c8353a4b70">HAL_CRC_STATE_BUSY</a>;
 <a name="l00145"></a>00145 
 <a name="l00146"></a>00146   <span class="comment">/* Reset CRC calculation unit */</span>
-<a name="l00147"></a>00147   <a class="code" href="group__CRC__Exported__Macros.html#ga0007a05fb01806007181e12eedc14d28" title="Reset CRC Data Register.">__HAL_CRC_DR_RESET</a>(hcrc);
+<a name="l00147"></a>00147   <a class="code" href="group/group__CRC__Exported__Macros.html#ga0007a05fb01806007181e12eedc14d28" title="Reset CRC Data Register.">__HAL_CRC_DR_RESET</a>(hcrc);
 <a name="l00148"></a>00148 
 <a name="l00149"></a>00149   <span class="comment">/* Reset IDR register content */</span>
 <a name="l00150"></a>00150   CLEAR_BIT(hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a729fb3fc0f6d94bef9ec1b48a8a65221">Instance</a>-&gt;IDR, CRC_IDR_IDR);
 <a name="l00151"></a>00151 
 <a name="l00152"></a>00152   <span class="comment">/* DeInit the low level hardware */</span>
-<a name="l00153"></a>00153   <a class="code" href="group__CRC__Exported__Functions__Group1.html#gac19b8df939b3490e690bdf1e1e04ead3" title="DeInitialize the CRC MSP.">HAL_CRC_MspDeInit</a>(hcrc);
+<a name="l00153"></a>00153   <a class="code" href="group/group__CRC__Exported__Functions__Group1.html#gac19b8df939b3490e690bdf1e1e04ead3" title="DeInitialize the CRC MSP.">HAL_CRC_MspDeInit</a>(hcrc);
 <a name="l00154"></a>00154 
 <a name="l00155"></a>00155   <span class="comment">/* Change CRC peripheral state */</span>
-<a name="l00156"></a>00156   hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a401f5c24d8e1fbe904234802d53c4f43">State</a> = <a class="code" href="group__CRC__Exported__Types.html#gga1021d6f27a072d45f6f3b233eefd8bbea313bbe8353f8a8b48fbd129261266a97">HAL_CRC_STATE_RESET</a>;
+<a name="l00156"></a>00156   hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a401f5c24d8e1fbe904234802d53c4f43">State</a> = <a class="code" href="group/group__CRC__Exported__Types.html#gga1021d6f27a072d45f6f3b233eefd8bbea313bbe8353f8a8b48fbd129261266a97">HAL_CRC_STATE_RESET</a>;
 <a name="l00157"></a>00157 
 <a name="l00158"></a>00158   <span class="comment">/* Process unlocked */</span>
 <a name="l00159"></a>00159   __HAL_UNLOCK(hcrc);
@@ -234,7 +234,7 @@
 <a name="l00167"></a>00167 <span class="comment">  * @param  hcrc CRC handle</span>
 <a name="l00168"></a>00168 <span class="comment">  * @retval None</span>
 <a name="l00169"></a>00169 <span class="comment">  */</span>
-<a name="l00170"></a><a class="code" href="group__CRC__Exported__Functions__Group1.html#ga5167ffd293de5d86f5873910416b36d0">00170</a> __weak <span class="keywordtype">void</span> <a class="code" href="group__CRC__Exported__Functions__Group1.html#ga5167ffd293de5d86f5873910416b36d0" title="Initializes the CRC MSP.">HAL_CRC_MspInit</a>(<a class="code" href="structCRC__HandleTypeDef.html" title="CRC Handle Structure definition.">CRC_HandleTypeDef</a> *hcrc)
+<a name="l00170"></a><a class="code" href="group/group__CRC__Exported__Functions__Group1.html#ga5167ffd293de5d86f5873910416b36d0">00170</a> __weak <span class="keywordtype">void</span> <a class="code" href="group/group__CRC__Exported__Functions__Group1.html#ga5167ffd293de5d86f5873910416b36d0" title="Initializes the CRC MSP.">HAL_CRC_MspInit</a>(<a class="code" href="structCRC__HandleTypeDef.html" title="CRC Handle Structure definition.">CRC_HandleTypeDef</a> *hcrc)
 <a name="l00171"></a>00171 {
 <a name="l00172"></a>00172   <span class="comment">/* Prevent unused argument(s) compilation warning */</span>
 <a name="l00173"></a>00173   UNUSED(hcrc);
@@ -249,7 +249,7 @@
 <a name="l00182"></a>00182 <span class="comment">  * @param  hcrc CRC handle</span>
 <a name="l00183"></a>00183 <span class="comment">  * @retval None</span>
 <a name="l00184"></a>00184 <span class="comment">  */</span>
-<a name="l00185"></a><a class="code" href="group__CRC__Exported__Functions__Group1.html#gac19b8df939b3490e690bdf1e1e04ead3">00185</a> __weak <span class="keywordtype">void</span> <a class="code" href="group__CRC__Exported__Functions__Group1.html#gac19b8df939b3490e690bdf1e1e04ead3" title="DeInitialize the CRC MSP.">HAL_CRC_MspDeInit</a>(<a class="code" href="structCRC__HandleTypeDef.html" title="CRC Handle Structure definition.">CRC_HandleTypeDef</a> *hcrc)
+<a name="l00185"></a><a class="code" href="group/group__CRC__Exported__Functions__Group1.html#gac19b8df939b3490e690bdf1e1e04ead3">00185</a> __weak <span class="keywordtype">void</span> <a class="code" href="group/group__CRC__Exported__Functions__Group1.html#gac19b8df939b3490e690bdf1e1e04ead3" title="DeInitialize the CRC MSP.">HAL_CRC_MspDeInit</a>(<a class="code" href="structCRC__HandleTypeDef.html" title="CRC Handle Structure definition.">CRC_HandleTypeDef</a> *hcrc)
 <a name="l00186"></a>00186 {
 <a name="l00187"></a>00187   <span class="comment">/* Prevent unused argument(s) compilation warning */</span>
 <a name="l00188"></a>00188   UNUSED(hcrc);
@@ -291,13 +291,13 @@
 <a name="l00224"></a>00224 <span class="comment">  * @param  BufferLength input data buffer length (number of uint32_t words).</span>
 <a name="l00225"></a>00225 <span class="comment">  * @retval uint32_t CRC (returned value LSBs for CRC shorter than 32 bits)</span>
 <a name="l00226"></a>00226 <span class="comment">  */</span>
-<a name="l00227"></a><a class="code" href="group__CRC__Exported__Functions__Group2.html#ga124a77d595e4982ad6e9a64c22f28b7b">00227</a> uint32_t <a class="code" href="group__CRC__Exported__Functions__Group2.html#ga124a77d595e4982ad6e9a64c22f28b7b" title="Compute the 32-bit CRC value of a 32-bit data buffer starting with the previously computed CRC as ini...">HAL_CRC_Accumulate</a>(<a class="code" href="structCRC__HandleTypeDef.html" title="CRC Handle Structure definition.">CRC_HandleTypeDef</a> *hcrc, uint32_t pBuffer[], uint32_t BufferLength)
+<a name="l00227"></a><a class="code" href="group/group__CRC__Exported__Functions__Group2.html#ga124a77d595e4982ad6e9a64c22f28b7b">00227</a> uint32_t <a class="code" href="group/group__CRC__Exported__Functions__Group2.html#ga124a77d595e4982ad6e9a64c22f28b7b" title="Compute the 32-bit CRC value of a 32-bit data buffer starting with the previously computed CRC as ini...">HAL_CRC_Accumulate</a>(<a class="code" href="structCRC__HandleTypeDef.html" title="CRC Handle Structure definition.">CRC_HandleTypeDef</a> *hcrc, uint32_t pBuffer[], uint32_t BufferLength)
 <a name="l00228"></a>00228 {
 <a name="l00229"></a>00229   uint32_t index;      <span class="comment">/* CRC input data buffer index */</span>
 <a name="l00230"></a>00230   uint32_t temp = 0U;  <span class="comment">/* CRC output (read from hcrc-&gt;Instance-&gt;DR register) */</span>
 <a name="l00231"></a>00231 
 <a name="l00232"></a>00232   <span class="comment">/* Change CRC peripheral state */</span>
-<a name="l00233"></a>00233   hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a401f5c24d8e1fbe904234802d53c4f43">State</a> = <a class="code" href="group__CRC__Exported__Types.html#gga1021d6f27a072d45f6f3b233eefd8bbea9d03b0c1d233e87e35b9c5c8353a4b70">HAL_CRC_STATE_BUSY</a>;
+<a name="l00233"></a>00233   hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a401f5c24d8e1fbe904234802d53c4f43">State</a> = <a class="code" href="group/group__CRC__Exported__Types.html#gga1021d6f27a072d45f6f3b233eefd8bbea9d03b0c1d233e87e35b9c5c8353a4b70">HAL_CRC_STATE_BUSY</a>;
 <a name="l00234"></a>00234 
 <a name="l00235"></a>00235   <span class="comment">/* Enter Data to the CRC calculator */</span>
 <a name="l00236"></a>00236   <span class="keywordflow">for</span> (index = 0U; index &lt; BufferLength; index++)
@@ -307,7 +307,7 @@
 <a name="l00240"></a>00240   temp = hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a729fb3fc0f6d94bef9ec1b48a8a65221">Instance</a>-&gt;DR;
 <a name="l00241"></a>00241 
 <a name="l00242"></a>00242   <span class="comment">/* Change CRC peripheral state */</span>
-<a name="l00243"></a>00243   hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a401f5c24d8e1fbe904234802d53c4f43">State</a> = <a class="code" href="group__CRC__Exported__Types.html#gga1021d6f27a072d45f6f3b233eefd8bbeaa47f50129543b87fac3a83df1a634474">HAL_CRC_STATE_READY</a>;
+<a name="l00243"></a>00243   hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a401f5c24d8e1fbe904234802d53c4f43">State</a> = <a class="code" href="group/group__CRC__Exported__Types.html#gga1021d6f27a072d45f6f3b233eefd8bbeaa47f50129543b87fac3a83df1a634474">HAL_CRC_STATE_READY</a>;
 <a name="l00244"></a>00244 
 <a name="l00245"></a>00245   <span class="comment">/* Return the CRC computed value */</span>
 <a name="l00246"></a>00246   <span class="keywordflow">return</span> temp;
@@ -321,17 +321,17 @@
 <a name="l00254"></a>00254 <span class="comment">  * @param  BufferLength input data buffer length (number of uint32_t words).</span>
 <a name="l00255"></a>00255 <span class="comment">  * @retval uint32_t CRC (returned value LSBs for CRC shorter than 32 bits)</span>
 <a name="l00256"></a>00256 <span class="comment">  */</span>
-<a name="l00257"></a><a class="code" href="group__CRC__Exported__Functions__Group2.html#ga298593a6fb0bbd109cdbed3851806371">00257</a> uint32_t <a class="code" href="group__CRC__Exported__Functions__Group2.html#ga298593a6fb0bbd109cdbed3851806371" title="Compute the 32-bit CRC value of a 32-bit data buffer starting with hcrc-&gt;Instance-&gt;INIT as initializa...">HAL_CRC_Calculate</a>(<a class="code" href="structCRC__HandleTypeDef.html" title="CRC Handle Structure definition.">CRC_HandleTypeDef</a> *hcrc, uint32_t pBuffer[], uint32_t BufferLength)
+<a name="l00257"></a><a class="code" href="group/group__CRC__Exported__Functions__Group2.html#ga298593a6fb0bbd109cdbed3851806371">00257</a> uint32_t <a class="code" href="group/group__CRC__Exported__Functions__Group2.html#ga298593a6fb0bbd109cdbed3851806371" title="Compute the 32-bit CRC value of a 32-bit data buffer starting with hcrc-&gt;Instance-&gt;INIT as initializa...">HAL_CRC_Calculate</a>(<a class="code" href="structCRC__HandleTypeDef.html" title="CRC Handle Structure definition.">CRC_HandleTypeDef</a> *hcrc, uint32_t pBuffer[], uint32_t BufferLength)
 <a name="l00258"></a>00258 {
 <a name="l00259"></a>00259   uint32_t index;      <span class="comment">/* CRC input data buffer index */</span>
 <a name="l00260"></a>00260   uint32_t temp = 0U;  <span class="comment">/* CRC output (read from hcrc-&gt;Instance-&gt;DR register) */</span>
 <a name="l00261"></a>00261 
 <a name="l00262"></a>00262   <span class="comment">/* Change CRC peripheral state */</span>
-<a name="l00263"></a>00263   hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a401f5c24d8e1fbe904234802d53c4f43">State</a> = <a class="code" href="group__CRC__Exported__Types.html#gga1021d6f27a072d45f6f3b233eefd8bbea9d03b0c1d233e87e35b9c5c8353a4b70">HAL_CRC_STATE_BUSY</a>;
+<a name="l00263"></a>00263   hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a401f5c24d8e1fbe904234802d53c4f43">State</a> = <a class="code" href="group/group__CRC__Exported__Types.html#gga1021d6f27a072d45f6f3b233eefd8bbea9d03b0c1d233e87e35b9c5c8353a4b70">HAL_CRC_STATE_BUSY</a>;
 <a name="l00264"></a>00264 
 <a name="l00265"></a>00265   <span class="comment">/* Reset CRC Calculation Unit (hcrc-&gt;Instance-&gt;INIT is</span>
 <a name="l00266"></a>00266 <span class="comment">  *  written in hcrc-&gt;Instance-&gt;DR) */</span>
-<a name="l00267"></a>00267   <a class="code" href="group__CRC__Exported__Macros.html#ga0007a05fb01806007181e12eedc14d28" title="Reset CRC Data Register.">__HAL_CRC_DR_RESET</a>(hcrc);
+<a name="l00267"></a>00267   <a class="code" href="group/group__CRC__Exported__Macros.html#ga0007a05fb01806007181e12eedc14d28" title="Reset CRC Data Register.">__HAL_CRC_DR_RESET</a>(hcrc);
 <a name="l00268"></a>00268 
 <a name="l00269"></a>00269   <span class="comment">/* Enter 32-bit input data to the CRC calculator */</span>
 <a name="l00270"></a>00270   <span class="keywordflow">for</span> (index = 0U; index &lt; BufferLength; index++)
@@ -341,7 +341,7 @@
 <a name="l00274"></a>00274   temp = hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a729fb3fc0f6d94bef9ec1b48a8a65221">Instance</a>-&gt;DR;
 <a name="l00275"></a>00275 
 <a name="l00276"></a>00276   <span class="comment">/* Change CRC peripheral state */</span>
-<a name="l00277"></a>00277   hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a401f5c24d8e1fbe904234802d53c4f43">State</a> = <a class="code" href="group__CRC__Exported__Types.html#gga1021d6f27a072d45f6f3b233eefd8bbeaa47f50129543b87fac3a83df1a634474">HAL_CRC_STATE_READY</a>;
+<a name="l00277"></a>00277   hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a401f5c24d8e1fbe904234802d53c4f43">State</a> = <a class="code" href="group/group__CRC__Exported__Types.html#gga1021d6f27a072d45f6f3b233eefd8bbeaa47f50129543b87fac3a83df1a634474">HAL_CRC_STATE_READY</a>;
 <a name="l00278"></a>00278 
 <a name="l00279"></a>00279   <span class="comment">/* Return the CRC computed value */</span>
 <a name="l00280"></a>00280   <span class="keywordflow">return</span> temp;
@@ -370,7 +370,7 @@
 <a name="l00303"></a>00303 <span class="comment">  * @param  hcrc CRC handle</span>
 <a name="l00304"></a>00304 <span class="comment">  * @retval HAL state</span>
 <a name="l00305"></a>00305 <span class="comment">  */</span>
-<a name="l00306"></a><a class="code" href="group__CRC__Exported__Functions__Group3.html#ga4fb3d3460bd83853c28215bc5e14babe">00306</a> <a class="code" href="group__CRC__Exported__Types.html#ga1021d6f27a072d45f6f3b233eefd8bbe" title="CRC HAL State Structure definition.">HAL_CRC_StateTypeDef</a> <a class="code" href="group__CRC__Exported__Functions__Group3.html#ga4fb3d3460bd83853c28215bc5e14babe" title="Return the CRC handle state.">HAL_CRC_GetState</a>(<a class="code" href="structCRC__HandleTypeDef.html" title="CRC Handle Structure definition.">CRC_HandleTypeDef</a> *hcrc)
+<a name="l00306"></a><a class="code" href="group/group__CRC__Exported__Functions__Group3.html#ga4fb3d3460bd83853c28215bc5e14babe">00306</a> <a class="code" href="group/group__CRC__Exported__Types.html#ga1021d6f27a072d45f6f3b233eefd8bbe" title="CRC HAL State Structure definition.">HAL_CRC_StateTypeDef</a> <a class="code" href="group/group__CRC__Exported__Functions__Group3.html#ga4fb3d3460bd83853c28215bc5e14babe" title="Return the CRC handle state.">HAL_CRC_GetState</a>(<a class="code" href="structCRC__HandleTypeDef.html" title="CRC Handle Structure definition.">CRC_HandleTypeDef</a> *hcrc)
 <a name="l00307"></a>00307 {
 <a name="l00308"></a>00308   <span class="comment">/* Return CRC handle state */</span>
 <a name="l00309"></a>00309   <span class="keywordflow">return</span> hcrc-&gt;<a class="code" href="structCRC__HandleTypeDef.html#a401f5c24d8e1fbe904234802d53c4f43">State</a>;

@@ -214,7 +214,7 @@
 <a name="l00147"></a>00147 <span class="comment">  *                the configuration information for the specified WWDG module.</span>
 <a name="l00148"></a>00148 <span class="comment">  * @retval HAL status</span>
 <a name="l00149"></a>00149 <span class="comment">  */</span>
-<a name="l00150"></a><a class="code" href="group__WWDG__Exported__Functions__Group1.html#ga72706a378ad2f79cba4324c1b328715a">00150</a> HAL_StatusTypeDef <a class="code" href="group__WWDG__Exported__Functions__Group1.html#ga72706a378ad2f79cba4324c1b328715a" title="Initialize the WWDG according to the specified.">HAL_WWDG_Init</a>(<a class="code" href="structWWDG__HandleTypeDef.html" title="WWDG handle Structure definition.">WWDG_HandleTypeDef</a> *hwwdg)
+<a name="l00150"></a><a class="code" href="group/group__WWDG__Exported__Functions__Group1.html#ga72706a378ad2f79cba4324c1b328715a">00150</a> HAL_StatusTypeDef <a class="code" href="group/group__WWDG__Exported__Functions__Group1.html#ga72706a378ad2f79cba4324c1b328715a" title="Initialize the WWDG according to the specified.">HAL_WWDG_Init</a>(<a class="code" href="structWWDG__HandleTypeDef.html" title="WWDG handle Structure definition.">WWDG_HandleTypeDef</a> *hwwdg)
 <a name="l00151"></a>00151 {
 <a name="l00152"></a>00152   <span class="comment">/* Check the WWDG handle allocation */</span>
 <a name="l00153"></a>00153   <span class="keywordflow">if</span> (hwwdg == NULL)
@@ -224,28 +224,28 @@
 <a name="l00157"></a>00157 
 <a name="l00158"></a>00158   <span class="comment">/* Check the parameters */</span>
 <a name="l00159"></a>00159   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(IS_WWDG_ALL_INSTANCE(hwwdg-&gt;<a class="code" href="structWWDG__HandleTypeDef.html#af40eb4f45fcac91d6100bbd3c753813d">Instance</a>));
-<a name="l00160"></a>00160   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__WWDG__Private__Macros.html#ga3cfe8f6be7754dd9dfe20eeed6ca7d08">IS_WWDG_PRESCALER</a>(hwwdg-&gt;<a class="code" href="structWWDG__HandleTypeDef.html#ae8ce42374ba68e31fae2499fe05a3dc9">Init</a>.<a class="code" href="structWWDG__InitTypeDef.html#a13973d685b89ebd47e985f912d54b225">Prescaler</a>));
-<a name="l00161"></a>00161   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__WWDG__Private__Macros.html#ga2e7358bcfcc6df115466ebfd0ff55644">IS_WWDG_WINDOW</a>(hwwdg-&gt;<a class="code" href="structWWDG__HandleTypeDef.html#ae8ce42374ba68e31fae2499fe05a3dc9">Init</a>.<a class="code" href="structWWDG__InitTypeDef.html#aac1f83c04d7c2f284943add80347d44c">Window</a>));
-<a name="l00162"></a>00162   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__WWDG__Private__Macros.html#ga01304524b12741cc7c4fa1905f1945bd">IS_WWDG_COUNTER</a>(hwwdg-&gt;<a class="code" href="structWWDG__HandleTypeDef.html#ae8ce42374ba68e31fae2499fe05a3dc9">Init</a>.<a class="code" href="structWWDG__InitTypeDef.html#a556cd5d451a2a51a8d65fc7cffae9184">Counter</a>));
-<a name="l00163"></a>00163   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__WWDG__Private__Macros.html#gaf3c14bbd0c44269e181d729e545a5db7">IS_WWDG_EWI_MODE</a>(hwwdg-&gt;<a class="code" href="structWWDG__HandleTypeDef.html#ae8ce42374ba68e31fae2499fe05a3dc9">Init</a>.<a class="code" href="structWWDG__InitTypeDef.html#ad2a861c5ab7cadc2b7d03d5766c991dc">EWIMode</a>));
+<a name="l00160"></a>00160   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__WWDG__Private__Macros.html#ga3cfe8f6be7754dd9dfe20eeed6ca7d08">IS_WWDG_PRESCALER</a>(hwwdg-&gt;<a class="code" href="structWWDG__HandleTypeDef.html#ae8ce42374ba68e31fae2499fe05a3dc9">Init</a>.<a class="code" href="structWWDG__InitTypeDef.html#a13973d685b89ebd47e985f912d54b225">Prescaler</a>));
+<a name="l00161"></a>00161   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__WWDG__Private__Macros.html#ga2e7358bcfcc6df115466ebfd0ff55644">IS_WWDG_WINDOW</a>(hwwdg-&gt;<a class="code" href="structWWDG__HandleTypeDef.html#ae8ce42374ba68e31fae2499fe05a3dc9">Init</a>.<a class="code" href="structWWDG__InitTypeDef.html#aac1f83c04d7c2f284943add80347d44c">Window</a>));
+<a name="l00162"></a>00162   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__WWDG__Private__Macros.html#ga01304524b12741cc7c4fa1905f1945bd">IS_WWDG_COUNTER</a>(hwwdg-&gt;<a class="code" href="structWWDG__HandleTypeDef.html#ae8ce42374ba68e31fae2499fe05a3dc9">Init</a>.<a class="code" href="structWWDG__InitTypeDef.html#a556cd5d451a2a51a8d65fc7cffae9184">Counter</a>));
+<a name="l00163"></a>00163   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__WWDG__Private__Macros.html#gaf3c14bbd0c44269e181d729e545a5db7">IS_WWDG_EWI_MODE</a>(hwwdg-&gt;<a class="code" href="structWWDG__HandleTypeDef.html#ae8ce42374ba68e31fae2499fe05a3dc9">Init</a>.<a class="code" href="structWWDG__InitTypeDef.html#ad2a861c5ab7cadc2b7d03d5766c991dc">EWIMode</a>));
 <a name="l00164"></a>00164 
 <a name="l00165"></a>00165 <span class="preprocessor">#if (USE_HAL_WWDG_REGISTER_CALLBACKS == 1)</span>
 <a name="l00166"></a>00166 <span class="preprocessor"></span>  <span class="comment">/* Reset Callback pointers */</span>
 <a name="l00167"></a>00167   <span class="keywordflow">if</span>(hwwdg-&gt;EwiCallback == NULL)
 <a name="l00168"></a>00168   {
-<a name="l00169"></a>00169     hwwdg-&gt;EwiCallback = <a class="code" href="group__WWDG__Exported__Functions__Group2.html#gac939b6f7bd78682d222dacb8909b8788" title="WWDG Early Wakeup callback.">HAL_WWDG_EarlyWakeupCallback</a>;
+<a name="l00169"></a>00169     hwwdg-&gt;EwiCallback = <a class="code" href="group/group__WWDG__Exported__Functions__Group2.html#gac939b6f7bd78682d222dacb8909b8788" title="WWDG Early Wakeup callback.">HAL_WWDG_EarlyWakeupCallback</a>;
 <a name="l00170"></a>00170   }
 <a name="l00171"></a>00171 
 <a name="l00172"></a>00172   <span class="keywordflow">if</span>(hwwdg-&gt;MspInitCallback == NULL)
 <a name="l00173"></a>00173   {
-<a name="l00174"></a>00174     hwwdg-&gt;MspInitCallback = <a class="code" href="group__WWDG__Exported__Functions__Group1.html#ga9871643c1868c37613b89d1acf010cd6" title="Initialize the WWDG MSP.">HAL_WWDG_MspInit</a>;
+<a name="l00174"></a>00174     hwwdg-&gt;MspInitCallback = <a class="code" href="group/group__WWDG__Exported__Functions__Group1.html#ga9871643c1868c37613b89d1acf010cd6" title="Initialize the WWDG MSP.">HAL_WWDG_MspInit</a>;
 <a name="l00175"></a>00175   }
 <a name="l00176"></a>00176 
 <a name="l00177"></a>00177   <span class="comment">/* Init the low level hardware */</span>
 <a name="l00178"></a>00178   hwwdg-&gt;MspInitCallback(hwwdg);
 <a name="l00179"></a>00179 <span class="preprocessor">#else</span>
 <a name="l00180"></a>00180 <span class="preprocessor"></span>  <span class="comment">/* Init the low level hardware */</span>
-<a name="l00181"></a>00181   <a class="code" href="group__WWDG__Exported__Functions__Group1.html#ga9871643c1868c37613b89d1acf010cd6" title="Initialize the WWDG MSP.">HAL_WWDG_MspInit</a>(hwwdg);
+<a name="l00181"></a>00181   <a class="code" href="group/group__WWDG__Exported__Functions__Group1.html#ga9871643c1868c37613b89d1acf010cd6" title="Initialize the WWDG MSP.">HAL_WWDG_MspInit</a>(hwwdg);
 <a name="l00182"></a>00182 <span class="preprocessor">#endif</span>
 <a name="l00183"></a>00183 <span class="preprocessor"></span>
 <a name="l00184"></a>00184   <span class="comment">/* Set WWDG Counter */</span>
@@ -267,7 +267,7 @@
 <a name="l00200"></a>00200 <span class="comment">  *         again to change parameters.</span>
 <a name="l00201"></a>00201 <span class="comment">  * @retval None</span>
 <a name="l00202"></a>00202 <span class="comment">  */</span>
-<a name="l00203"></a><a class="code" href="group__WWDG__Exported__Functions__Group1.html#ga9871643c1868c37613b89d1acf010cd6">00203</a> __weak <span class="keywordtype">void</span> <a class="code" href="group__WWDG__Exported__Functions__Group1.html#ga9871643c1868c37613b89d1acf010cd6" title="Initialize the WWDG MSP.">HAL_WWDG_MspInit</a>(<a class="code" href="structWWDG__HandleTypeDef.html" title="WWDG handle Structure definition.">WWDG_HandleTypeDef</a> *hwwdg)
+<a name="l00203"></a><a class="code" href="group/group__WWDG__Exported__Functions__Group1.html#ga9871643c1868c37613b89d1acf010cd6">00203</a> __weak <span class="keywordtype">void</span> <a class="code" href="group/group__WWDG__Exported__Functions__Group1.html#ga9871643c1868c37613b89d1acf010cd6" title="Initialize the WWDG MSP.">HAL_WWDG_MspInit</a>(<a class="code" href="structWWDG__HandleTypeDef.html" title="WWDG handle Structure definition.">WWDG_HandleTypeDef</a> *hwwdg)
 <a name="l00204"></a>00204 {
 <a name="l00205"></a>00205   <span class="comment">/* Prevent unused argument(s) compilation warning */</span>
 <a name="l00206"></a>00206   UNUSED(hwwdg);
@@ -337,11 +337,11 @@
 <a name="l00270"></a>00270   <span class="keywordflow">switch</span>(CallbackID)
 <a name="l00271"></a>00271   {
 <a name="l00272"></a>00272     <span class="keywordflow">case</span> HAL_WWDG_EWI_CB_ID:
-<a name="l00273"></a>00273       hwwdg-&gt;EwiCallback = <a class="code" href="group__WWDG__Exported__Functions__Group2.html#gac939b6f7bd78682d222dacb8909b8788" title="WWDG Early Wakeup callback.">HAL_WWDG_EarlyWakeupCallback</a>;
+<a name="l00273"></a>00273       hwwdg-&gt;EwiCallback = <a class="code" href="group/group__WWDG__Exported__Functions__Group2.html#gac939b6f7bd78682d222dacb8909b8788" title="WWDG Early Wakeup callback.">HAL_WWDG_EarlyWakeupCallback</a>;
 <a name="l00274"></a>00274       <span class="keywordflow">break</span>;
 <a name="l00275"></a>00275 
 <a name="l00276"></a>00276     <span class="keywordflow">case</span> HAL_WWDG_MSPINIT_CB_ID:
-<a name="l00277"></a>00277       hwwdg-&gt;MspInitCallback = <a class="code" href="group__WWDG__Exported__Functions__Group1.html#ga9871643c1868c37613b89d1acf010cd6" title="Initialize the WWDG MSP.">HAL_WWDG_MspInit</a>;
+<a name="l00277"></a>00277       hwwdg-&gt;MspInitCallback = <a class="code" href="group/group__WWDG__Exported__Functions__Group1.html#ga9871643c1868c37613b89d1acf010cd6" title="Initialize the WWDG MSP.">HAL_WWDG_MspInit</a>;
 <a name="l00278"></a>00278       <span class="keywordflow">break</span>;
 <a name="l00279"></a>00279 
 <a name="l00280"></a>00280     <span class="keywordflow">default</span>:
@@ -379,7 +379,7 @@
 <a name="l00312"></a>00312 <span class="comment">  *                the configuration information for the specified WWDG module.</span>
 <a name="l00313"></a>00313 <span class="comment">  * @retval HAL status</span>
 <a name="l00314"></a>00314 <span class="comment">  */</span>
-<a name="l00315"></a><a class="code" href="group__WWDG__Exported__Functions__Group2.html#gaf88d543a2fe8520439b69c9f55e70d48">00315</a> HAL_StatusTypeDef <a class="code" href="group__WWDG__Exported__Functions__Group2.html#gaf88d543a2fe8520439b69c9f55e70d48" title="Refresh the WWDG.">HAL_WWDG_Refresh</a>(<a class="code" href="structWWDG__HandleTypeDef.html" title="WWDG handle Structure definition.">WWDG_HandleTypeDef</a> *hwwdg)
+<a name="l00315"></a><a class="code" href="group/group__WWDG__Exported__Functions__Group2.html#gaf88d543a2fe8520439b69c9f55e70d48">00315</a> HAL_StatusTypeDef <a class="code" href="group/group__WWDG__Exported__Functions__Group2.html#gaf88d543a2fe8520439b69c9f55e70d48" title="Refresh the WWDG.">HAL_WWDG_Refresh</a>(<a class="code" href="structWWDG__HandleTypeDef.html" title="WWDG handle Structure definition.">WWDG_HandleTypeDef</a> *hwwdg)
 <a name="l00316"></a>00316 {
 <a name="l00317"></a>00317   <span class="comment">/* Write to WWDG CR the WWDG Counter value to refresh with */</span>
 <a name="l00318"></a>00318   WRITE_REG(hwwdg-&gt;<a class="code" href="structWWDG__HandleTypeDef.html#af40eb4f45fcac91d6100bbd3c753813d">Instance</a>-&gt;CR, (hwwdg-&gt;<a class="code" href="structWWDG__HandleTypeDef.html#ae8ce42374ba68e31fae2499fe05a3dc9">Init</a>.<a class="code" href="structWWDG__InitTypeDef.html#a556cd5d451a2a51a8d65fc7cffae9184">Counter</a>));
@@ -402,23 +402,23 @@
 <a name="l00335"></a>00335 <span class="comment">  *                the configuration information for the specified WWDG module.</span>
 <a name="l00336"></a>00336 <span class="comment">  * @retval None</span>
 <a name="l00337"></a>00337 <span class="comment">  */</span>
-<a name="l00338"></a><a class="code" href="group__WWDG__Exported__Functions__Group2.html#ga6521c5a0ff3184f951561302fb540fde">00338</a> <span class="keywordtype">void</span> <a class="code" href="group__WWDG__Exported__Functions__Group2.html#ga6521c5a0ff3184f951561302fb540fde" title="Handle WWDG interrupt request.">HAL_WWDG_IRQHandler</a>(<a class="code" href="structWWDG__HandleTypeDef.html" title="WWDG handle Structure definition.">WWDG_HandleTypeDef</a> *hwwdg)
+<a name="l00338"></a><a class="code" href="group/group__WWDG__Exported__Functions__Group2.html#ga6521c5a0ff3184f951561302fb540fde">00338</a> <span class="keywordtype">void</span> <a class="code" href="group/group__WWDG__Exported__Functions__Group2.html#ga6521c5a0ff3184f951561302fb540fde" title="Handle WWDG interrupt request.">HAL_WWDG_IRQHandler</a>(<a class="code" href="structWWDG__HandleTypeDef.html" title="WWDG handle Structure definition.">WWDG_HandleTypeDef</a> *hwwdg)
 <a name="l00339"></a>00339 {
 <a name="l00340"></a>00340   <span class="comment">/* Check if Early Wakeup Interrupt is enable */</span>
-<a name="l00341"></a>00341   <span class="keywordflow">if</span> (<a class="code" href="group__WWDG__Exported__Macros.html#gaa3dae290aeb528ba7dbd1e7f481ef139" title="Checks if the specified WWDG interrupt source is enabled or disabled.">__HAL_WWDG_GET_IT_SOURCE</a>(hwwdg, <a class="code" href="group__WWDG__Interrupt__definition.html#gaf2659a7ce6e4edd7c6d1b537dbc33362">WWDG_IT_EWI</a>) != RESET)
+<a name="l00341"></a>00341   <span class="keywordflow">if</span> (<a class="code" href="group/group__WWDG__Exported__Macros.html#gaa3dae290aeb528ba7dbd1e7f481ef139" title="Checks if the specified WWDG interrupt source is enabled or disabled.">__HAL_WWDG_GET_IT_SOURCE</a>(hwwdg, <a class="code" href="group/group__WWDG__Interrupt__definition.html#gaf2659a7ce6e4edd7c6d1b537dbc33362">WWDG_IT_EWI</a>) != RESET)
 <a name="l00342"></a>00342   {
 <a name="l00343"></a>00343     <span class="comment">/* Check if WWDG Early Wakeup Interrupt occurred */</span>
-<a name="l00344"></a>00344     <span class="keywordflow">if</span> (<a class="code" href="group__WWDG__Exported__Macros.html#ga60a99447a00a7d95c18637c38147063a" title="Check whether the specified WWDG flag is set or not.">__HAL_WWDG_GET_FLAG</a>(hwwdg, <a class="code" href="group__WWDG__Flag__definition.html#gaac081893a320f1216262be063b587edb">WWDG_FLAG_EWIF</a>) != RESET)
+<a name="l00344"></a>00344     <span class="keywordflow">if</span> (<a class="code" href="group/group__WWDG__Exported__Macros.html#ga60a99447a00a7d95c18637c38147063a" title="Check whether the specified WWDG flag is set or not.">__HAL_WWDG_GET_FLAG</a>(hwwdg, <a class="code" href="group/group__WWDG__Flag__definition.html#gaac081893a320f1216262be063b587edb">WWDG_FLAG_EWIF</a>) != RESET)
 <a name="l00345"></a>00345     {
 <a name="l00346"></a>00346       <span class="comment">/* Clear the WWDG Early Wakeup flag */</span>
-<a name="l00347"></a>00347       <a class="code" href="group__WWDG__Exported__Macros.html#gae9c3b916e244deffc6a673d97df63671" title="Clears the WWDG&#39;s pending flags.">__HAL_WWDG_CLEAR_FLAG</a>(hwwdg, <a class="code" href="group__WWDG__Flag__definition.html#gaac081893a320f1216262be063b587edb">WWDG_FLAG_EWIF</a>);
+<a name="l00347"></a>00347       <a class="code" href="group/group__WWDG__Exported__Macros.html#gae9c3b916e244deffc6a673d97df63671" title="Clears the WWDG&#39;s pending flags.">__HAL_WWDG_CLEAR_FLAG</a>(hwwdg, <a class="code" href="group/group__WWDG__Flag__definition.html#gaac081893a320f1216262be063b587edb">WWDG_FLAG_EWIF</a>);
 <a name="l00348"></a>00348 
 <a name="l00349"></a>00349 <span class="preprocessor">#if (USE_HAL_WWDG_REGISTER_CALLBACKS == 1)</span>
 <a name="l00350"></a>00350 <span class="preprocessor"></span>      <span class="comment">/* Early Wakeup registered callback */</span>
 <a name="l00351"></a>00351       hwwdg-&gt;EwiCallback(hwwdg);
 <a name="l00352"></a>00352 <span class="preprocessor">#else</span>
 <a name="l00353"></a>00353 <span class="preprocessor"></span>      <span class="comment">/* Early Wakeup callback */</span>
-<a name="l00354"></a>00354       <a class="code" href="group__WWDG__Exported__Functions__Group2.html#gac939b6f7bd78682d222dacb8909b8788" title="WWDG Early Wakeup callback.">HAL_WWDG_EarlyWakeupCallback</a>(hwwdg);
+<a name="l00354"></a>00354       <a class="code" href="group/group__WWDG__Exported__Functions__Group2.html#gac939b6f7bd78682d222dacb8909b8788" title="WWDG Early Wakeup callback.">HAL_WWDG_EarlyWakeupCallback</a>(hwwdg);
 <a name="l00355"></a>00355 <span class="preprocessor">#endif</span>
 <a name="l00356"></a>00356 <span class="preprocessor"></span>    }
 <a name="l00357"></a>00357   }
@@ -430,7 +430,7 @@
 <a name="l00363"></a>00363 <span class="comment">  *                the configuration information for the specified WWDG module.</span>
 <a name="l00364"></a>00364 <span class="comment">  * @retval None</span>
 <a name="l00365"></a>00365 <span class="comment">  */</span>
-<a name="l00366"></a><a class="code" href="group__WWDG__Exported__Functions__Group2.html#gac939b6f7bd78682d222dacb8909b8788">00366</a> __weak <span class="keywordtype">void</span> <a class="code" href="group__WWDG__Exported__Functions__Group2.html#gac939b6f7bd78682d222dacb8909b8788" title="WWDG Early Wakeup callback.">HAL_WWDG_EarlyWakeupCallback</a>(<a class="code" href="structWWDG__HandleTypeDef.html" title="WWDG handle Structure definition.">WWDG_HandleTypeDef</a> *hwwdg)
+<a name="l00366"></a><a class="code" href="group/group__WWDG__Exported__Functions__Group2.html#gac939b6f7bd78682d222dacb8909b8788">00366</a> __weak <span class="keywordtype">void</span> <a class="code" href="group/group__WWDG__Exported__Functions__Group2.html#gac939b6f7bd78682d222dacb8909b8788" title="WWDG Early Wakeup callback.">HAL_WWDG_EarlyWakeupCallback</a>(<a class="code" href="structWWDG__HandleTypeDef.html" title="WWDG handle Structure definition.">WWDG_HandleTypeDef</a> *hwwdg)
 <a name="l00367"></a>00367 {
 <a name="l00368"></a>00368   <span class="comment">/* Prevent unused argument(s) compilation warning */</span>
 <a name="l00369"></a>00369   UNUSED(hwwdg);

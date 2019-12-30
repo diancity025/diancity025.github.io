@@ -51,16 +51,16 @@
 <a href="#define-members">Defines</a>  </div>
   <div class="headertitle">
 <div class="title">Convert DMAxChannely</div>  </div>
-<div class="ingroups"><a class="el" href="group__DMA__LL__Exported__Macros.html">DMA Exported Macros</a></div></div><!--header-->
+<div class="ingroups"><a class="el" href="group/group__DMA__LL__Exported__Macros.html">DMA Exported Macros</a></div></div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA__LL__EM__CONVERT__DMAxCHANNELy.html#gaecc67c5db4d1d81d679cf1996db9be51">__LL_DMA_GET_INSTANCE</a>(__CHANNEL_INSTANCE__)&#160;&#160;&#160;(((uint32_t)(__CHANNEL_INSTANCE__) &gt; ((uint32_t)DMA1_Channel7)) ?  DMA2 : DMA1)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__DMA__LL__EM__CONVERT__DMAxCHANNELy.html#gaecc67c5db4d1d81d679cf1996db9be51">__LL_DMA_GET_INSTANCE</a>(__CHANNEL_INSTANCE__)&#160;&#160;&#160;(((uint32_t)(__CHANNEL_INSTANCE__) &gt; ((uint32_t)DMA1_Channel7)) ?  DMA2 : DMA1)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert DMAx_Channely into DMAx.  <a href="#gaecc67c5db4d1d81d679cf1996db9be51"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA__LL__EM__CONVERT__DMAxCHANNELy.html#ga6740277e137ba04d70c154427bd09dd0">__LL_DMA_GET_CHANNEL</a>(__CHANNEL_INSTANCE__)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__DMA__LL__EM__CONVERT__DMAxCHANNELy.html#ga6740277e137ba04d70c154427bd09dd0">__LL_DMA_GET_CHANNEL</a>(__CHANNEL_INSTANCE__)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert DMAx_Channely into LL_DMA_CHANNEL_y.  <a href="#ga6740277e137ba04d70c154427bd09dd0"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA__LL__EM__CONVERT__DMAxCHANNELy.html#ga35320615e1aeadd607644318af107a4f">__LL_DMA_GET_CHANNEL_INSTANCE</a>(__DMA_INSTANCE__, __CHANNEL__)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__DMA__LL__EM__CONVERT__DMAxCHANNELy.html#ga35320615e1aeadd607644318af107a4f">__LL_DMA_GET_CHANNEL_INSTANCE</a>(__DMA_INSTANCE__, __CHANNEL__)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert DMA Instance DMAx and LL_DMA_CHANNEL_y into DMAx_Channely.  <a href="#ga35320615e1aeadd607644318af107a4f"></a><br/></td></tr>
 </table>
 <hr/><h2>Define Documentation</h2>
@@ -69,7 +69,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__DMA__LL__EM__CONVERT__DMAxCHANNELy.html#ga6740277e137ba04d70c154427bd09dd0">__LL_DMA_GET_CHANNEL</a></td>
+          <td class="memname">#define <a class="el" href="group/group__DMA__LL__EM__CONVERT__DMAxCHANNELy.html#ga6740277e137ba04d70c154427bd09dd0">__LL_DMA_GET_CHANNEL</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__CHANNEL_INSTANCE__</td><td>)</td>
@@ -78,18 +78,18 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA1_Channel1)) ? <a class="code" href="group__DMA__LL__EC__CHANNEL.html#ga3b663261ca351fcad84df9fed17f1d44">LL_DMA_CHANNEL_1</a> : \
- ((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA2_Channel1)) ? <a class="code" href="group__DMA__LL__EC__CHANNEL.html#ga3b663261ca351fcad84df9fed17f1d44">LL_DMA_CHANNEL_1</a> : \
- ((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA1_Channel2)) ? <a class="code" href="group__DMA__LL__EC__CHANNEL.html#ga04666e2cba3a2cbc164f9482d5f0bc5c">LL_DMA_CHANNEL_2</a> : \
- ((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA2_Channel2)) ? <a class="code" href="group__DMA__LL__EC__CHANNEL.html#ga04666e2cba3a2cbc164f9482d5f0bc5c">LL_DMA_CHANNEL_2</a> : \
- ((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA1_Channel3)) ? <a class="code" href="group__DMA__LL__EC__CHANNEL.html#gacb803bfa50f9413e15e1c141d78c4c13">LL_DMA_CHANNEL_3</a> : \
- ((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA2_Channel3)) ? <a class="code" href="group__DMA__LL__EC__CHANNEL.html#gacb803bfa50f9413e15e1c141d78c4c13">LL_DMA_CHANNEL_3</a> : \
- ((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA1_Channel4)) ? <a class="code" href="group__DMA__LL__EC__CHANNEL.html#gacfa79c7e9cf545ea236c7d615545c573">LL_DMA_CHANNEL_4</a> : \
- ((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA2_Channel4)) ? <a class="code" href="group__DMA__LL__EC__CHANNEL.html#gacfa79c7e9cf545ea236c7d615545c573">LL_DMA_CHANNEL_4</a> : \
- ((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA1_Channel5)) ? <a class="code" href="group__DMA__LL__EC__CHANNEL.html#ga029ed049accb0c851617101d14f18e4d">LL_DMA_CHANNEL_5</a> : \
- ((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA2_Channel5)) ? <a class="code" href="group__DMA__LL__EC__CHANNEL.html#ga029ed049accb0c851617101d14f18e4d">LL_DMA_CHANNEL_5</a> : \
- ((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA1_Channel6)) ? <a class="code" href="group__DMA__LL__EC__CHANNEL.html#gaaeb217bdb966acfbf4f189816d77a8c7">LL_DMA_CHANNEL_6</a> : \
- <a class="code" href="group__DMA__LL__EC__CHANNEL.html#ga4d42ca4b9a67f9e597a132e9020cb16f">LL_DMA_CHANNEL_7</a>)
+<b>Value:</b><div class="fragment"><pre class="fragment">(((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA1_Channel1)) ? <a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#ga3b663261ca351fcad84df9fed17f1d44">LL_DMA_CHANNEL_1</a> : \
+ ((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA2_Channel1)) ? <a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#ga3b663261ca351fcad84df9fed17f1d44">LL_DMA_CHANNEL_1</a> : \
+ ((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA1_Channel2)) ? <a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#ga04666e2cba3a2cbc164f9482d5f0bc5c">LL_DMA_CHANNEL_2</a> : \
+ ((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA2_Channel2)) ? <a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#ga04666e2cba3a2cbc164f9482d5f0bc5c">LL_DMA_CHANNEL_2</a> : \
+ ((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA1_Channel3)) ? <a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#gacb803bfa50f9413e15e1c141d78c4c13">LL_DMA_CHANNEL_3</a> : \
+ ((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA2_Channel3)) ? <a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#gacb803bfa50f9413e15e1c141d78c4c13">LL_DMA_CHANNEL_3</a> : \
+ ((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA1_Channel4)) ? <a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#gacfa79c7e9cf545ea236c7d615545c573">LL_DMA_CHANNEL_4</a> : \
+ ((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA2_Channel4)) ? <a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#gacfa79c7e9cf545ea236c7d615545c573">LL_DMA_CHANNEL_4</a> : \
+ ((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA1_Channel5)) ? <a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#ga029ed049accb0c851617101d14f18e4d">LL_DMA_CHANNEL_5</a> : \
+ ((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA2_Channel5)) ? <a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#ga029ed049accb0c851617101d14f18e4d">LL_DMA_CHANNEL_5</a> : \
+ ((uint32_t)(__CHANNEL_INSTANCE__) == ((uint32_t)DMA1_Channel6)) ? <a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#gaaeb217bdb966acfbf4f189816d77a8c7">LL_DMA_CHANNEL_6</a> : \
+ <a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#ga4d42ca4b9a67f9e597a132e9020cb16f">LL_DMA_CHANNEL_7</a>)
 </pre></div>
 <p>Convert DMAx_Channely into LL_DMA_CHANNEL_y. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
@@ -114,7 +114,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__DMA__LL__EM__CONVERT__DMAxCHANNELy.html#ga35320615e1aeadd607644318af107a4f">__LL_DMA_GET_CHANNEL_INSTANCE</a></td>
+          <td class="memname">#define <a class="el" href="group/group__DMA__LL__EM__CONVERT__DMAxCHANNELy.html#ga35320615e1aeadd607644318af107a4f">__LL_DMA_GET_CHANNEL_INSTANCE</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__DMA_INSTANCE__, </td>
@@ -133,17 +133,17 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">((((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA1)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)<a class="code" href="group__DMA__LL__EC__CHANNEL.html#ga3b663261ca351fcad84df9fed17f1d44">LL_DMA_CHANNEL_1</a>))) ? DMA1_Channel1 : \
- (((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA2)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)<a class="code" href="group__DMA__LL__EC__CHANNEL.html#ga3b663261ca351fcad84df9fed17f1d44">LL_DMA_CHANNEL_1</a>))) ? DMA2_Channel1 : \
- (((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA1)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)<a class="code" href="group__DMA__LL__EC__CHANNEL.html#ga04666e2cba3a2cbc164f9482d5f0bc5c">LL_DMA_CHANNEL_2</a>))) ? DMA1_Channel2 : \
- (((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA2)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)<a class="code" href="group__DMA__LL__EC__CHANNEL.html#ga04666e2cba3a2cbc164f9482d5f0bc5c">LL_DMA_CHANNEL_2</a>))) ? DMA2_Channel2 : \
- (((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA1)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)<a class="code" href="group__DMA__LL__EC__CHANNEL.html#gacb803bfa50f9413e15e1c141d78c4c13">LL_DMA_CHANNEL_3</a>))) ? DMA1_Channel3 : \
- (((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA2)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)<a class="code" href="group__DMA__LL__EC__CHANNEL.html#gacb803bfa50f9413e15e1c141d78c4c13">LL_DMA_CHANNEL_3</a>))) ? DMA2_Channel3 : \
- (((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA1)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)<a class="code" href="group__DMA__LL__EC__CHANNEL.html#gacfa79c7e9cf545ea236c7d615545c573">LL_DMA_CHANNEL_4</a>))) ? DMA1_Channel4 : \
- (((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA2)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)<a class="code" href="group__DMA__LL__EC__CHANNEL.html#gacfa79c7e9cf545ea236c7d615545c573">LL_DMA_CHANNEL_4</a>))) ? DMA2_Channel4 : \
- (((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA1)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)<a class="code" href="group__DMA__LL__EC__CHANNEL.html#ga029ed049accb0c851617101d14f18e4d">LL_DMA_CHANNEL_5</a>))) ? DMA1_Channel5 : \
- (((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA2)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)<a class="code" href="group__DMA__LL__EC__CHANNEL.html#ga029ed049accb0c851617101d14f18e4d">LL_DMA_CHANNEL_5</a>))) ? DMA2_Channel5 : \
- (((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA1)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)<a class="code" href="group__DMA__LL__EC__CHANNEL.html#gaaeb217bdb966acfbf4f189816d77a8c7">LL_DMA_CHANNEL_6</a>))) ? DMA1_Channel6 : \
+<b>Value:</b><div class="fragment"><pre class="fragment">((((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA1)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)<a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#ga3b663261ca351fcad84df9fed17f1d44">LL_DMA_CHANNEL_1</a>))) ? DMA1_Channel1 : \
+ (((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA2)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)<a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#ga3b663261ca351fcad84df9fed17f1d44">LL_DMA_CHANNEL_1</a>))) ? DMA2_Channel1 : \
+ (((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA1)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)<a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#ga04666e2cba3a2cbc164f9482d5f0bc5c">LL_DMA_CHANNEL_2</a>))) ? DMA1_Channel2 : \
+ (((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA2)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)<a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#ga04666e2cba3a2cbc164f9482d5f0bc5c">LL_DMA_CHANNEL_2</a>))) ? DMA2_Channel2 : \
+ (((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA1)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)<a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#gacb803bfa50f9413e15e1c141d78c4c13">LL_DMA_CHANNEL_3</a>))) ? DMA1_Channel3 : \
+ (((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA2)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)<a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#gacb803bfa50f9413e15e1c141d78c4c13">LL_DMA_CHANNEL_3</a>))) ? DMA2_Channel3 : \
+ (((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA1)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)<a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#gacfa79c7e9cf545ea236c7d615545c573">LL_DMA_CHANNEL_4</a>))) ? DMA1_Channel4 : \
+ (((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA2)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)<a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#gacfa79c7e9cf545ea236c7d615545c573">LL_DMA_CHANNEL_4</a>))) ? DMA2_Channel4 : \
+ (((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA1)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)<a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#ga029ed049accb0c851617101d14f18e4d">LL_DMA_CHANNEL_5</a>))) ? DMA1_Channel5 : \
+ (((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA2)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)<a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#ga029ed049accb0c851617101d14f18e4d">LL_DMA_CHANNEL_5</a>))) ? DMA2_Channel5 : \
+ (((uint32_t)(__DMA_INSTANCE__) == ((uint32_t)DMA1)) &amp;&amp; ((uint32_t)(__CHANNEL__) == ((uint32_t)<a class="code" href="group/group__DMA__LL__EC__CHANNEL.html#gaaeb217bdb966acfbf4f189816d77a8c7">LL_DMA_CHANNEL_6</a>))) ? DMA1_Channel6 : \
  DMA1_Channel7)
 </pre></div>
 <p>Convert DMA Instance DMAx and LL_DMA_CHANNEL_y into DMAx_Channely. </p>
@@ -172,7 +172,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__DMA__LL__EM__CONVERT__DMAxCHANNELy.html#gaecc67c5db4d1d81d679cf1996db9be51">__LL_DMA_GET_INSTANCE</a></td>
+          <td class="memname">#define <a class="el" href="group/group__DMA__LL__EM__CONVERT__DMAxCHANNELy.html#gaecc67c5db4d1d81d679cf1996db9be51">__LL_DMA_GET_INSTANCE</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__CHANNEL_INSTANCE__</td><td>)</td>

@@ -171,7 +171,7 @@
 <a name="l00104"></a>00104 <span class="comment">/* Status register need 5 RC LSI divided by prescaler clock to be updated. With</span>
 <a name="l00105"></a>00105 <span class="comment">   higher prescaler (256), and according to HSI variation, we need to wait at</span>
 <a name="l00106"></a>00106 <span class="comment">   least 6 cycles so 48 ms. */</span>
-<a name="l00107"></a><a class="code" href="group__IWDG__Private__Defines.html#ga56c125597584c83bc331ea557754921d">00107</a> <span class="preprocessor">#define HAL_IWDG_DEFAULT_TIMEOUT            48U</span>
+<a name="l00107"></a><a class="code" href="group/group__IWDG__Private__Defines.html#ga56c125597584c83bc331ea557754921d">00107</a> <span class="preprocessor">#define HAL_IWDG_DEFAULT_TIMEOUT            48U</span>
 <a name="l00108"></a>00108 <span class="preprocessor"></span><span class="comment">/**</span>
 <a name="l00109"></a>00109 <span class="comment">  * @}</span>
 <a name="l00110"></a>00110 <span class="comment">  */</span>
@@ -210,7 +210,7 @@
 <a name="l00143"></a>00143 <span class="comment">  *                the configuration information for the specified IWDG module.</span>
 <a name="l00144"></a>00144 <span class="comment">  * @retval HAL status</span>
 <a name="l00145"></a>00145 <span class="comment">  */</span>
-<a name="l00146"></a><a class="code" href="group__IWDG__Exported__Functions__Group1.html#ga2e1669e60f2dc298fecaed919e7ae810">00146</a> HAL_StatusTypeDef <a class="code" href="group__IWDG__Exported__Functions__Group1.html#ga2e1669e60f2dc298fecaed919e7ae810" title="Initialize the IWDG according to the specified parameters in the IWDG_InitTypeDef and start watchdog...">HAL_IWDG_Init</a>(<a class="code" href="structIWDG__HandleTypeDef.html" title="IWDG Handle Structure definition.">IWDG_HandleTypeDef</a> *hiwdg)
+<a name="l00146"></a><a class="code" href="group/group__IWDG__Exported__Functions__Group1.html#ga2e1669e60f2dc298fecaed919e7ae810">00146</a> HAL_StatusTypeDef <a class="code" href="group/group__IWDG__Exported__Functions__Group1.html#ga2e1669e60f2dc298fecaed919e7ae810" title="Initialize the IWDG according to the specified parameters in the IWDG_InitTypeDef and start watchdog...">HAL_IWDG_Init</a>(<a class="code" href="structIWDG__HandleTypeDef.html" title="IWDG Handle Structure definition.">IWDG_HandleTypeDef</a> *hiwdg)
 <a name="l00147"></a>00147 {
 <a name="l00148"></a>00148   uint32_t tickstart;
 <a name="l00149"></a>00149 
@@ -222,33 +222,33 @@
 <a name="l00155"></a>00155 
 <a name="l00156"></a>00156   <span class="comment">/* Check the parameters */</span>
 <a name="l00157"></a>00157   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(IS_IWDG_ALL_INSTANCE(hiwdg-&gt;<a class="code" href="structIWDG__HandleTypeDef.html#ad3fd4c46ef1e9b842328ca4e3290708e">Instance</a>));
-<a name="l00158"></a>00158   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__IWDG__Private__Macros.html#ga2b1af237dca5c067fbc9088185cb8185" title="Check IWDG prescaler value.">IS_IWDG_PRESCALER</a>(hiwdg-&gt;<a class="code" href="structIWDG__HandleTypeDef.html#ae308075a425af205912feb4059c6f213">Init</a>.<a class="code" href="structIWDG__InitTypeDef.html#adb8ce67e656492f5ac26473bb70c5daa">Prescaler</a>));
-<a name="l00159"></a>00159   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__IWDG__Private__Macros.html#gad7ade0982243f56ba89ff764534f553c" title="Check IWDG reload value.">IS_IWDG_RELOAD</a>(hiwdg-&gt;<a class="code" href="structIWDG__HandleTypeDef.html#ae308075a425af205912feb4059c6f213">Init</a>.<a class="code" href="structIWDG__InitTypeDef.html#af5a275e4c73292039258a0287fb7901d">Reload</a>));
+<a name="l00158"></a>00158   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__IWDG__Private__Macros.html#ga2b1af237dca5c067fbc9088185cb8185" title="Check IWDG prescaler value.">IS_IWDG_PRESCALER</a>(hiwdg-&gt;<a class="code" href="structIWDG__HandleTypeDef.html#ae308075a425af205912feb4059c6f213">Init</a>.<a class="code" href="structIWDG__InitTypeDef.html#adb8ce67e656492f5ac26473bb70c5daa">Prescaler</a>));
+<a name="l00159"></a>00159   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__IWDG__Private__Macros.html#gad7ade0982243f56ba89ff764534f553c" title="Check IWDG reload value.">IS_IWDG_RELOAD</a>(hiwdg-&gt;<a class="code" href="structIWDG__HandleTypeDef.html#ae308075a425af205912feb4059c6f213">Init</a>.<a class="code" href="structIWDG__InitTypeDef.html#af5a275e4c73292039258a0287fb7901d">Reload</a>));
 <a name="l00160"></a>00160 
 <a name="l00161"></a>00161   <span class="comment">/* Enable IWDG. LSI is turned on automaticaly */</span>
-<a name="l00162"></a>00162   <a class="code" href="group__IWDG__Exported__Macros.html#ga5914aff5b85e3151bb75377a32d83d6a" title="Enable the IWDG peripheral.">__HAL_IWDG_START</a>(hiwdg);
+<a name="l00162"></a>00162   <a class="code" href="group/group__IWDG__Exported__Macros.html#ga5914aff5b85e3151bb75377a32d83d6a" title="Enable the IWDG peripheral.">__HAL_IWDG_START</a>(hiwdg);
 <a name="l00163"></a>00163 
 <a name="l00164"></a>00164   <span class="comment">/* Enable write access to IWDG_PR and IWDG_RLR registers by writing 0x5555 in KR */</span>
-<a name="l00165"></a>00165   <a class="code" href="group__IWDG__Private__Macros.html#ga65cf77f3cfd45d3fd66c0cf33d23d7ab" title="Enable write access to IWDG_PR and IWDG_RLR registers.">IWDG_ENABLE_WRITE_ACCESS</a>(hiwdg);
+<a name="l00165"></a>00165   <a class="code" href="group/group__IWDG__Private__Macros.html#ga65cf77f3cfd45d3fd66c0cf33d23d7ab" title="Enable write access to IWDG_PR and IWDG_RLR registers.">IWDG_ENABLE_WRITE_ACCESS</a>(hiwdg);
 <a name="l00166"></a>00166 
 <a name="l00167"></a>00167   <span class="comment">/* Write to IWDG registers the Prescaler &amp; Reload values to work with */</span>
 <a name="l00168"></a>00168   hiwdg-&gt;<a class="code" href="structIWDG__HandleTypeDef.html#ad3fd4c46ef1e9b842328ca4e3290708e">Instance</a>-&gt;PR = hiwdg-&gt;<a class="code" href="structIWDG__HandleTypeDef.html#ae308075a425af205912feb4059c6f213">Init</a>.<a class="code" href="structIWDG__InitTypeDef.html#adb8ce67e656492f5ac26473bb70c5daa">Prescaler</a>;
 <a name="l00169"></a>00169   hiwdg-&gt;<a class="code" href="structIWDG__HandleTypeDef.html#ad3fd4c46ef1e9b842328ca4e3290708e">Instance</a>-&gt;RLR = hiwdg-&gt;<a class="code" href="structIWDG__HandleTypeDef.html#ae308075a425af205912feb4059c6f213">Init</a>.<a class="code" href="structIWDG__InitTypeDef.html#af5a275e4c73292039258a0287fb7901d">Reload</a>;
 <a name="l00170"></a>00170 
 <a name="l00171"></a>00171   <span class="comment">/* Check pending flag, if previous update not done, return timeout */</span>
-<a name="l00172"></a>00172   tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l00172"></a>00172   tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l00173"></a>00173 
 <a name="l00174"></a>00174   <span class="comment">/* Wait for register to be updated */</span>
 <a name="l00175"></a>00175   <span class="keywordflow">while</span> (hiwdg-&gt;<a class="code" href="structIWDG__HandleTypeDef.html#ad3fd4c46ef1e9b842328ca4e3290708e">Instance</a>-&gt;SR != RESET)
 <a name="l00176"></a>00176   {
-<a name="l00177"></a>00177     <span class="keywordflow">if</span> ((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; <a class="code" href="group__IWDG__Private__Defines.html#ga56c125597584c83bc331ea557754921d">HAL_IWDG_DEFAULT_TIMEOUT</a>)
+<a name="l00177"></a>00177     <span class="keywordflow">if</span> ((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; <a class="code" href="group/group__IWDG__Private__Defines.html#ga56c125597584c83bc331ea557754921d">HAL_IWDG_DEFAULT_TIMEOUT</a>)
 <a name="l00178"></a>00178     {
 <a name="l00179"></a>00179       <span class="keywordflow">return</span> HAL_TIMEOUT;
 <a name="l00180"></a>00180     }
 <a name="l00181"></a>00181   }
 <a name="l00182"></a>00182 
 <a name="l00183"></a>00183   <span class="comment">/* Reload IWDG counter with value defined in the reload register */</span>
-<a name="l00184"></a>00184   <a class="code" href="group__IWDG__Exported__Macros.html#gac0eaf381e60a654d6b51c43f645e088f" title="Reload IWDG counter with value defined in the reload register (write access to IWDG_PR &amp; IWDG_RLR reg...">__HAL_IWDG_RELOAD_COUNTER</a>(hiwdg);
+<a name="l00184"></a>00184   <a class="code" href="group/group__IWDG__Exported__Macros.html#gac0eaf381e60a654d6b51c43f645e088f" title="Reload IWDG counter with value defined in the reload register (write access to IWDG_PR &amp; IWDG_RLR reg...">__HAL_IWDG_RELOAD_COUNTER</a>(hiwdg);
 <a name="l00185"></a>00185 
 <a name="l00186"></a>00186   <span class="comment">/* Return function status */</span>
 <a name="l00187"></a>00187   <span class="keywordflow">return</span> HAL_OK;
@@ -278,10 +278,10 @@
 <a name="l00211"></a>00211 <span class="comment">  *                the configuration information for the specified IWDG module.</span>
 <a name="l00212"></a>00212 <span class="comment">  * @retval HAL status</span>
 <a name="l00213"></a>00213 <span class="comment">  */</span>
-<a name="l00214"></a><a class="code" href="group__IWDG__Exported__Functions__Group2.html#ga7e86236aea6d2f3638397fdf90333e4a">00214</a> HAL_StatusTypeDef <a class="code" href="group__IWDG__Exported__Functions__Group2.html#ga7e86236aea6d2f3638397fdf90333e4a" title="Refresh the IWDG.">HAL_IWDG_Refresh</a>(<a class="code" href="structIWDG__HandleTypeDef.html" title="IWDG Handle Structure definition.">IWDG_HandleTypeDef</a> *hiwdg)
+<a name="l00214"></a><a class="code" href="group/group__IWDG__Exported__Functions__Group2.html#ga7e86236aea6d2f3638397fdf90333e4a">00214</a> HAL_StatusTypeDef <a class="code" href="group/group__IWDG__Exported__Functions__Group2.html#ga7e86236aea6d2f3638397fdf90333e4a" title="Refresh the IWDG.">HAL_IWDG_Refresh</a>(<a class="code" href="structIWDG__HandleTypeDef.html" title="IWDG Handle Structure definition.">IWDG_HandleTypeDef</a> *hiwdg)
 <a name="l00215"></a>00215 {
 <a name="l00216"></a>00216   <span class="comment">/* Reload IWDG counter with value defined in the reload register */</span>
-<a name="l00217"></a>00217   <a class="code" href="group__IWDG__Exported__Macros.html#gac0eaf381e60a654d6b51c43f645e088f" title="Reload IWDG counter with value defined in the reload register (write access to IWDG_PR &amp; IWDG_RLR reg...">__HAL_IWDG_RELOAD_COUNTER</a>(hiwdg);
+<a name="l00217"></a>00217   <a class="code" href="group/group__IWDG__Exported__Macros.html#gac0eaf381e60a654d6b51c43f645e088f" title="Reload IWDG counter with value defined in the reload register (write access to IWDG_PR &amp; IWDG_RLR reg...">__HAL_IWDG_RELOAD_COUNTER</a>(hiwdg);
 <a name="l00218"></a>00218 
 <a name="l00219"></a>00219   <span class="comment">/* Return function status */</span>
 <a name="l00220"></a>00220   <span class="keywordflow">return</span> HAL_OK;

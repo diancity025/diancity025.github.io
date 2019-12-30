@@ -51,22 +51,22 @@
 <a href="#define-members">Defines</a>  </div>
   <div class="headertitle">
 <div class="title">RCC RTC Clock Configuration</div>  </div>
-<div class="ingroups"><a class="el" href="group__RCC__Exported__Macros.html">RCC Exported Macros</a></div></div><!--header-->
+<div class="ingroups"><a class="el" href="group/group__RCC__Exported__Macros.html">RCC Exported Macros</a></div></div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RCC__RTC__Clock__Configuration.html#ga2d6c4c7e951bfd007d26988fbfe6eaa4">__HAL_RCC_RTC_CONFIG</a>(__RTC_CLKSOURCE__)&#160;&#160;&#160;MODIFY_REG(RCC-&gt;BDCR, RCC_BDCR_RTCSEL, (__RTC_CLKSOURCE__))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__RCC__RTC__Clock__Configuration.html#ga2d6c4c7e951bfd007d26988fbfe6eaa4">__HAL_RCC_RTC_CONFIG</a>(__RTC_CLKSOURCE__)&#160;&#160;&#160;MODIFY_REG(RCC-&gt;BDCR, RCC_BDCR_RTCSEL, (__RTC_CLKSOURCE__))</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to configure the RTC clock (RTCCLK).  <a href="#ga2d6c4c7e951bfd007d26988fbfe6eaa4"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RCC__RTC__Clock__Configuration.html#gad40d00ff1c984ebd011ea9f6e7f93c44">__HAL_RCC_GET_RTC_SOURCE</a>()&#160;&#160;&#160;(READ_BIT(RCC-&gt;BDCR, RCC_BDCR_RTCSEL))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__RCC__RTC__Clock__Configuration.html#gad40d00ff1c984ebd011ea9f6e7f93c44">__HAL_RCC_GET_RTC_SOURCE</a>()&#160;&#160;&#160;(READ_BIT(RCC-&gt;BDCR, RCC_BDCR_RTCSEL))</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to get the RTC clock source.  <a href="#gad40d00ff1c984ebd011ea9f6e7f93c44"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RCC__RTC__Clock__Configuration.html#gab7cc36427c31da645a0e38e181f8ce0f">__HAL_RCC_RTC_ENABLE</a>()&#160;&#160;&#160;(*(__IO uint32_t *) <a class="el" href="group__RCC__BitAddress__AliasRegion.html#ga583ba8653153b48a06473d0a331f781d">RCC_BDCR_RTCEN_BB</a> = ENABLE)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__RCC__RTC__Clock__Configuration.html#gab7cc36427c31da645a0e38e181f8ce0f">__HAL_RCC_RTC_ENABLE</a>()&#160;&#160;&#160;(*(__IO uint32_t *) <a class="el" href="group/group__RCC__BitAddress__AliasRegion.html#ga583ba8653153b48a06473d0a331f781d">RCC_BDCR_RTCEN_BB</a> = ENABLE)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to enable the the RTC clock.  <a href="#gab7cc36427c31da645a0e38e181f8ce0f"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RCC__RTC__Clock__Configuration.html#gaab5eeb81fc9f0c8d4450069f7a751855">__HAL_RCC_RTC_DISABLE</a>()&#160;&#160;&#160;(*(__IO uint32_t *) <a class="el" href="group__RCC__BitAddress__AliasRegion.html#ga583ba8653153b48a06473d0a331f781d">RCC_BDCR_RTCEN_BB</a> = DISABLE)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__RCC__RTC__Clock__Configuration.html#gaab5eeb81fc9f0c8d4450069f7a751855">__HAL_RCC_RTC_DISABLE</a>()&#160;&#160;&#160;(*(__IO uint32_t *) <a class="el" href="group/group__RCC__BitAddress__AliasRegion.html#ga583ba8653153b48a06473d0a331f781d">RCC_BDCR_RTCEN_BB</a> = DISABLE)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to disable the the RTC clock.  <a href="#gaab5eeb81fc9f0c8d4450069f7a751855"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RCC__RTC__Clock__Configuration.html#ga3bf7da608ff985873ca8e248fb1dc4f0">__HAL_RCC_BACKUPRESET_FORCE</a>()&#160;&#160;&#160;(*(__IO uint32_t *) <a class="el" href="group__RCC__BitAddress__AliasRegion.html#ga5e5805d3c5b9ad3ebc13e030e5fdd86c">RCC_BDCR_BDRST_BB</a> = ENABLE)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__RCC__RTC__Clock__Configuration.html#ga3bf7da608ff985873ca8e248fb1dc4f0">__HAL_RCC_BACKUPRESET_FORCE</a>()&#160;&#160;&#160;(*(__IO uint32_t *) <a class="el" href="group/group__RCC__BitAddress__AliasRegion.html#ga5e5805d3c5b9ad3ebc13e030e5fdd86c">RCC_BDCR_BDRST_BB</a> = ENABLE)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro to force the Backup domain reset.  <a href="#ga3bf7da608ff985873ca8e248fb1dc4f0"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RCC__RTC__Clock__Configuration.html#ga14f32622c65f4ae239ba8cb00d510321">__HAL_RCC_BACKUPRESET_RELEASE</a>()&#160;&#160;&#160;(*(__IO uint32_t *) <a class="el" href="group__RCC__BitAddress__AliasRegion.html#ga5e5805d3c5b9ad3ebc13e030e5fdd86c">RCC_BDCR_BDRST_BB</a> = DISABLE)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__RCC__RTC__Clock__Configuration.html#ga14f32622c65f4ae239ba8cb00d510321">__HAL_RCC_BACKUPRESET_RELEASE</a>()&#160;&#160;&#160;(*(__IO uint32_t *) <a class="el" href="group/group__RCC__BitAddress__AliasRegion.html#ga5e5805d3c5b9ad3ebc13e030e5fdd86c">RCC_BDCR_BDRST_BB</a> = DISABLE)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Macros to release the Backup domain reset.  <a href="#ga14f32622c65f4ae239ba8cb00d510321"></a><br/></td></tr>
 </table>
 <hr/><h2>Define Documentation</h2>
@@ -75,10 +75,10 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__RCC__RTC__Clock__Configuration.html#ga3bf7da608ff985873ca8e248fb1dc4f0">__HAL_RCC_BACKUPRESET_FORCE</a></td>
+          <td class="memname">#define <a class="el" href="group/group__RCC__RTC__Clock__Configuration.html#ga3bf7da608ff985873ca8e248fb1dc4f0">__HAL_RCC_BACKUPRESET_FORCE</a></td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;(*(__IO uint32_t *) <a class="el" href="group__RCC__BitAddress__AliasRegion.html#ga5e5805d3c5b9ad3ebc13e030e5fdd86c">RCC_BDCR_BDRST_BB</a> = ENABLE)</td>
+          <td>&#160;&#160;&#160;(*(__IO uint32_t *) <a class="el" href="group/group__RCC__BitAddress__AliasRegion.html#ga5e5805d3c5b9ad3ebc13e030e5fdd86c">RCC_BDCR_BDRST_BB</a> = ENABLE)</td>
         </tr>
       </table>
 </div>
@@ -98,10 +98,10 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__RCC__RTC__Clock__Configuration.html#ga14f32622c65f4ae239ba8cb00d510321">__HAL_RCC_BACKUPRESET_RELEASE</a></td>
+          <td class="memname">#define <a class="el" href="group/group__RCC__RTC__Clock__Configuration.html#ga14f32622c65f4ae239ba8cb00d510321">__HAL_RCC_BACKUPRESET_RELEASE</a></td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;(*(__IO uint32_t *) <a class="el" href="group__RCC__BitAddress__AliasRegion.html#ga5e5805d3c5b9ad3ebc13e030e5fdd86c">RCC_BDCR_BDRST_BB</a> = DISABLE)</td>
+          <td>&#160;&#160;&#160;(*(__IO uint32_t *) <a class="el" href="group/group__RCC__BitAddress__AliasRegion.html#ga5e5805d3c5b9ad3ebc13e030e5fdd86c">RCC_BDCR_BDRST_BB</a> = DISABLE)</td>
         </tr>
       </table>
 </div>
@@ -120,7 +120,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__RCC__RTC__Clock__Configuration.html#gad40d00ff1c984ebd011ea9f6e7f93c44">__HAL_RCC_GET_RTC_SOURCE</a></td>
+          <td class="memname">#define <a class="el" href="group/group__RCC__RTC__Clock__Configuration.html#gad40d00ff1c984ebd011ea9f6e7f93c44">__HAL_RCC_GET_RTC_SOURCE</a></td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td>&#160;&#160;&#160;(READ_BIT(RCC-&gt;BDCR, RCC_BDCR_RTCSEL))</td>
@@ -133,10 +133,10 @@ Defines</h2></td></tr>
 <dl class="retval"><dt><b>Return values:</b></dt><dd>
   <table class="retval">
     <tr><td class="paramname">The</td><td>clock source can be one of the following values: <ul>
-<li><a class="el" href="group__RCC__RTC__Clock__Source.html#gacce0b2f54d103340d8c3a218e86e295d">RCC_RTCCLKSOURCE_NO_CLK</a> No clock selected as RTC clock </li>
-<li><a class="el" href="group__RCC__RTC__Clock__Source.html#ga5dca8d63f250a20bd6bc005670d0c150">RCC_RTCCLKSOURCE_LSE</a> LSE selected as RTC clock </li>
-<li><a class="el" href="group__RCC__RTC__Clock__Source.html#gab47a1afb8b5eef9f20f4772961d0a5f4">RCC_RTCCLKSOURCE_LSI</a> LSI selected as RTC clock </li>
-<li><a class="el" href="group__RCC__RTC__Clock__Source.html#ga7e022374ec3ceffa94e5bb6310c35c83">RCC_RTCCLKSOURCE_HSE_DIV128</a> HSE divided by 128 selected as RTC clock </li>
+<li><a class="el" href="group/group__RCC__RTC__Clock__Source.html#gacce0b2f54d103340d8c3a218e86e295d">RCC_RTCCLKSOURCE_NO_CLK</a> No clock selected as RTC clock </li>
+<li><a class="el" href="group/group__RCC__RTC__Clock__Source.html#ga5dca8d63f250a20bd6bc005670d0c150">RCC_RTCCLKSOURCE_LSE</a> LSE selected as RTC clock </li>
+<li><a class="el" href="group/group__RCC__RTC__Clock__Source.html#gab47a1afb8b5eef9f20f4772961d0a5f4">RCC_RTCCLKSOURCE_LSI</a> LSI selected as RTC clock </li>
+<li><a class="el" href="group/group__RCC__RTC__Clock__Source.html#ga7e022374ec3ceffa94e5bb6310c35c83">RCC_RTCCLKSOURCE_HSE_DIV128</a> HSE divided by 128 selected as RTC clock </li>
 </ul>
 </td></tr>
   </table>
@@ -154,7 +154,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__RCC__RTC__Clock__Configuration.html#ga2d6c4c7e951bfd007d26988fbfe6eaa4">__HAL_RCC_RTC_CONFIG</a></td>
+          <td class="memname">#define <a class="el" href="group/group__RCC__RTC__Clock__Configuration.html#ga2d6c4c7e951bfd007d26988fbfe6eaa4">__HAL_RCC_RTC_CONFIG</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__RTC_CLKSOURCE__</td><td>)</td>
@@ -167,14 +167,14 @@ Defines</h2></td></tr>
 <p>Macro to configure the RTC clock (RTCCLK). </p>
 <dl class="note"><dt><b>Note:</b></dt><dd>As the RTC clock configuration bits are in the Backup domain and write access is denied to this domain after reset, you have to enable write access using the Power Backup Access macro before to configure the RTC clock source (to be done once after reset). </dd>
 <dd>
-Once the RTC clock is configured it can't be changed unless the Backup domain is reset using <a class="el" href="group__RCC__RTC__Clock__Configuration.html#ga3bf7da608ff985873ca8e248fb1dc4f0">__HAL_RCC_BACKUPRESET_FORCE()</a> macro, or by a Power On Reset (POR).</dd></dl>
+Once the RTC clock is configured it can't be changed unless the Backup domain is reset using <a class="el" href="group/group__RCC__RTC__Clock__Configuration.html#ga3bf7da608ff985873ca8e248fb1dc4f0">__HAL_RCC_BACKUPRESET_FORCE()</a> macro, or by a Power On Reset (POR).</dd></dl>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">__RTC_CLKSOURCE__</td><td>specifies the RTC clock source. This parameter can be one of the following values: <ul>
-<li><a class="el" href="group__RCC__RTC__Clock__Source.html#gacce0b2f54d103340d8c3a218e86e295d">RCC_RTCCLKSOURCE_NO_CLK</a> No clock selected as RTC clock </li>
-<li><a class="el" href="group__RCC__RTC__Clock__Source.html#ga5dca8d63f250a20bd6bc005670d0c150">RCC_RTCCLKSOURCE_LSE</a> LSE selected as RTC clock </li>
-<li><a class="el" href="group__RCC__RTC__Clock__Source.html#gab47a1afb8b5eef9f20f4772961d0a5f4">RCC_RTCCLKSOURCE_LSI</a> LSI selected as RTC clock </li>
-<li><a class="el" href="group__RCC__RTC__Clock__Source.html#ga7e022374ec3ceffa94e5bb6310c35c83">RCC_RTCCLKSOURCE_HSE_DIV128</a> HSE divided by 128 selected as RTC clock </li>
+<li><a class="el" href="group/group__RCC__RTC__Clock__Source.html#gacce0b2f54d103340d8c3a218e86e295d">RCC_RTCCLKSOURCE_NO_CLK</a> No clock selected as RTC clock </li>
+<li><a class="el" href="group/group__RCC__RTC__Clock__Source.html#ga5dca8d63f250a20bd6bc005670d0c150">RCC_RTCCLKSOURCE_LSE</a> LSE selected as RTC clock </li>
+<li><a class="el" href="group/group__RCC__RTC__Clock__Source.html#gab47a1afb8b5eef9f20f4772961d0a5f4">RCC_RTCCLKSOURCE_LSI</a> LSI selected as RTC clock </li>
+<li><a class="el" href="group/group__RCC__RTC__Clock__Source.html#ga7e022374ec3ceffa94e5bb6310c35c83">RCC_RTCCLKSOURCE_HSE_DIV128</a> HSE divided by 128 selected as RTC clock </li>
 </ul>
 </td></tr>
   </table>
@@ -195,10 +195,10 @@ The maximum input clock frequency for RTC is 1MHz (when using HSE as RTC clock s
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__RCC__RTC__Clock__Configuration.html#gaab5eeb81fc9f0c8d4450069f7a751855">__HAL_RCC_RTC_DISABLE</a></td>
+          <td class="memname">#define <a class="el" href="group/group__RCC__RTC__Clock__Configuration.html#gaab5eeb81fc9f0c8d4450069f7a751855">__HAL_RCC_RTC_DISABLE</a></td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;(*(__IO uint32_t *) <a class="el" href="group__RCC__BitAddress__AliasRegion.html#ga583ba8653153b48a06473d0a331f781d">RCC_BDCR_RTCEN_BB</a> = DISABLE)</td>
+          <td>&#160;&#160;&#160;(*(__IO uint32_t *) <a class="el" href="group/group__RCC__BitAddress__AliasRegion.html#ga583ba8653153b48a06473d0a331f781d">RCC_BDCR_RTCEN_BB</a> = DISABLE)</td>
         </tr>
       </table>
 </div>
@@ -216,10 +216,10 @@ The maximum input clock frequency for RTC is 1MHz (when using HSE as RTC clock s
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__RCC__RTC__Clock__Configuration.html#gab7cc36427c31da645a0e38e181f8ce0f">__HAL_RCC_RTC_ENABLE</a></td>
+          <td class="memname">#define <a class="el" href="group/group__RCC__RTC__Clock__Configuration.html#gab7cc36427c31da645a0e38e181f8ce0f">__HAL_RCC_RTC_ENABLE</a></td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;(*(__IO uint32_t *) <a class="el" href="group__RCC__BitAddress__AliasRegion.html#ga583ba8653153b48a06473d0a331f781d">RCC_BDCR_RTCEN_BB</a> = ENABLE)</td>
+          <td>&#160;&#160;&#160;(*(__IO uint32_t *) <a class="el" href="group/group__RCC__BitAddress__AliasRegion.html#ga583ba8653153b48a06473d0a331f781d">RCC_BDCR_RTCEN_BB</a> = ENABLE)</td>
         </tr>
       </table>
 </div>

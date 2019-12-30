@@ -245,11 +245,11 @@
 <a name="l00178"></a>00178 <span class="comment">  */</span>
 <a name="l00179"></a>00179 
 <a name="l00180"></a>00180 <span class="comment">/* Initialization/de-initialization functions  ********************************/</span>
-<a name="l00181"></a>00181 HAL_StatusTypeDef <a class="code" href="group__NOR__Exported__Functions__Group1.html#gafb1053d993dbf6c92f3ee7d82ef37730" title="Perform the NOR memory Initialization sequence.">HAL_NOR_Init</a>(NOR_HandleTypeDef *hnor, FSMC_NORSRAM_TimingTypeDef *Timing, FSMC_NORSRAM_TimingTypeDef *ExtTiming);
-<a name="l00182"></a>00182 HAL_StatusTypeDef <a class="code" href="group__NOR__Exported__Functions__Group1.html#ga3e14008ba2ebbf6f65d377ff80750d32" title="Perform NOR memory De-Initialization sequence.">HAL_NOR_DeInit</a>(NOR_HandleTypeDef *hnor);
-<a name="l00183"></a>00183 <span class="keywordtype">void</span> <a class="code" href="group__NOR__Exported__Functions__Group1.html#ga411a5ba6cd2c582052182b122426e08a" title="NOR MSP Init.">HAL_NOR_MspInit</a>(NOR_HandleTypeDef *hnor);
-<a name="l00184"></a>00184 <span class="keywordtype">void</span> <a class="code" href="group__NOR__Exported__Functions__Group1.html#gaed23fceff032f617a79c70dbd6a038e4" title="NOR MSP DeInit.">HAL_NOR_MspDeInit</a>(NOR_HandleTypeDef *hnor);
-<a name="l00185"></a>00185 <span class="keywordtype">void</span> <a class="code" href="group__NOR__Exported__Functions__Group1.html#gafe7f646426cbc3f37703e8b4f78bd5cf" title="NOR MSP Wait for Ready/Busy signal.">HAL_NOR_MspWait</a>(NOR_HandleTypeDef *hnor, uint32_t Timeout);<span class="comment"></span>
+<a name="l00181"></a>00181 HAL_StatusTypeDef <a class="code" href="group/group__NOR__Exported__Functions__Group1.html#gafb1053d993dbf6c92f3ee7d82ef37730" title="Perform the NOR memory Initialization sequence.">HAL_NOR_Init</a>(NOR_HandleTypeDef *hnor, FSMC_NORSRAM_TimingTypeDef *Timing, FSMC_NORSRAM_TimingTypeDef *ExtTiming);
+<a name="l00182"></a>00182 HAL_StatusTypeDef <a class="code" href="group/group__NOR__Exported__Functions__Group1.html#ga3e14008ba2ebbf6f65d377ff80750d32" title="Perform NOR memory De-Initialization sequence.">HAL_NOR_DeInit</a>(NOR_HandleTypeDef *hnor);
+<a name="l00183"></a>00183 <span class="keywordtype">void</span> <a class="code" href="group/group__NOR__Exported__Functions__Group1.html#ga411a5ba6cd2c582052182b122426e08a" title="NOR MSP Init.">HAL_NOR_MspInit</a>(NOR_HandleTypeDef *hnor);
+<a name="l00184"></a>00184 <span class="keywordtype">void</span> <a class="code" href="group/group__NOR__Exported__Functions__Group1.html#gaed23fceff032f617a79c70dbd6a038e4" title="NOR MSP DeInit.">HAL_NOR_MspDeInit</a>(NOR_HandleTypeDef *hnor);
+<a name="l00185"></a>00185 <span class="keywordtype">void</span> <a class="code" href="group/group__NOR__Exported__Functions__Group1.html#gafe7f646426cbc3f37703e8b4f78bd5cf" title="NOR MSP Wait for Ready/Busy signal.">HAL_NOR_MspWait</a>(NOR_HandleTypeDef *hnor, uint32_t Timeout);<span class="comment"></span>
 <a name="l00186"></a>00186 <span class="comment">/**</span>
 <a name="l00187"></a>00187 <span class="comment">  * @}</span>
 <a name="l00188"></a>00188 <span class="comment">  */</span>
@@ -259,17 +259,17 @@
 <a name="l00192"></a>00192 <span class="comment">  */</span>
 <a name="l00193"></a>00193 
 <a name="l00194"></a>00194 <span class="comment">/* I/O operation functions  ***************************************************/</span>
-<a name="l00195"></a>00195 HAL_StatusTypeDef <a class="code" href="group__NOR__Exported__Functions__Group2.html#gaa16e94393f91d07f9a8966172c5dc6cd" title="Read NOR flash IDs.">HAL_NOR_Read_ID</a>(NOR_HandleTypeDef *hnor, NOR_IDTypeDef *pNOR_ID);
-<a name="l00196"></a>00196 HAL_StatusTypeDef <a class="code" href="group__NOR__Exported__Functions__Group2.html#ga79e8adf80e019820997bc0421c4e2ea1" title="Returns the NOR memory to Read mode.">HAL_NOR_ReturnToReadMode</a>(NOR_HandleTypeDef *hnor);
-<a name="l00197"></a>00197 HAL_StatusTypeDef <a class="code" href="group__NOR__Exported__Functions__Group2.html#ga01974433194ba7a15aabc85093592864" title="Read data from NOR memory.">HAL_NOR_Read</a>(NOR_HandleTypeDef *hnor, uint32_t *pAddress, uint16_t *pData);
-<a name="l00198"></a>00198 HAL_StatusTypeDef <a class="code" href="group__NOR__Exported__Functions__Group2.html#ga6c7a89185d8144198daa0ec4a7975885" title="Program data to NOR memory.">HAL_NOR_Program</a>(NOR_HandleTypeDef *hnor, uint32_t *pAddress, uint16_t *pData);
+<a name="l00195"></a>00195 HAL_StatusTypeDef <a class="code" href="group/group__NOR__Exported__Functions__Group2.html#gaa16e94393f91d07f9a8966172c5dc6cd" title="Read NOR flash IDs.">HAL_NOR_Read_ID</a>(NOR_HandleTypeDef *hnor, NOR_IDTypeDef *pNOR_ID);
+<a name="l00196"></a>00196 HAL_StatusTypeDef <a class="code" href="group/group__NOR__Exported__Functions__Group2.html#ga79e8adf80e019820997bc0421c4e2ea1" title="Returns the NOR memory to Read mode.">HAL_NOR_ReturnToReadMode</a>(NOR_HandleTypeDef *hnor);
+<a name="l00197"></a>00197 HAL_StatusTypeDef <a class="code" href="group/group__NOR__Exported__Functions__Group2.html#ga01974433194ba7a15aabc85093592864" title="Read data from NOR memory.">HAL_NOR_Read</a>(NOR_HandleTypeDef *hnor, uint32_t *pAddress, uint16_t *pData);
+<a name="l00198"></a>00198 HAL_StatusTypeDef <a class="code" href="group/group__NOR__Exported__Functions__Group2.html#ga6c7a89185d8144198daa0ec4a7975885" title="Program data to NOR memory.">HAL_NOR_Program</a>(NOR_HandleTypeDef *hnor, uint32_t *pAddress, uint16_t *pData);
 <a name="l00199"></a>00199 
-<a name="l00200"></a>00200 HAL_StatusTypeDef <a class="code" href="group__NOR__Exported__Functions__Group2.html#ga22431e5a29da32f11ab53d9b75050260" title="Reads a half-word buffer from the NOR memory.">HAL_NOR_ReadBuffer</a>(NOR_HandleTypeDef *hnor, uint32_t uwAddress, uint16_t *pData, uint32_t uwBufferSize);
-<a name="l00201"></a>00201 HAL_StatusTypeDef <a class="code" href="group__NOR__Exported__Functions__Group2.html#gad0d5d37b853ae47ea51edd679b69cab7" title="Writes a half-word buffer to the NOR memory.">HAL_NOR_ProgramBuffer</a>(NOR_HandleTypeDef *hnor, uint32_t uwAddress, uint16_t *pData, uint32_t uwBufferSize);
+<a name="l00200"></a>00200 HAL_StatusTypeDef <a class="code" href="group/group__NOR__Exported__Functions__Group2.html#ga22431e5a29da32f11ab53d9b75050260" title="Reads a half-word buffer from the NOR memory.">HAL_NOR_ReadBuffer</a>(NOR_HandleTypeDef *hnor, uint32_t uwAddress, uint16_t *pData, uint32_t uwBufferSize);
+<a name="l00201"></a>00201 HAL_StatusTypeDef <a class="code" href="group/group__NOR__Exported__Functions__Group2.html#gad0d5d37b853ae47ea51edd679b69cab7" title="Writes a half-word buffer to the NOR memory.">HAL_NOR_ProgramBuffer</a>(NOR_HandleTypeDef *hnor, uint32_t uwAddress, uint16_t *pData, uint32_t uwBufferSize);
 <a name="l00202"></a>00202 
-<a name="l00203"></a>00203 HAL_StatusTypeDef <a class="code" href="group__NOR__Exported__Functions__Group2.html#ga03743dacce574287f5aafaea55d208be" title="Erase the specified block of the NOR memory.">HAL_NOR_Erase_Block</a>(NOR_HandleTypeDef *hnor, uint32_t BlockAddress, uint32_t Address);
-<a name="l00204"></a>00204 HAL_StatusTypeDef <a class="code" href="group__NOR__Exported__Functions__Group2.html#gacc65b35b69ad174b9c64345f67f05203" title="Erase the entire NOR chip.">HAL_NOR_Erase_Chip</a>(NOR_HandleTypeDef *hnor, uint32_t Address);
-<a name="l00205"></a>00205 HAL_StatusTypeDef <a class="code" href="group__NOR__Exported__Functions__Group2.html#ga7ee7838ac0f6f39715fecd111ca038d0" title="Read NOR flash CFI IDs.">HAL_NOR_Read_CFI</a>(NOR_HandleTypeDef *hnor, NOR_CFITypeDef *pNOR_CFI);
+<a name="l00203"></a>00203 HAL_StatusTypeDef <a class="code" href="group/group__NOR__Exported__Functions__Group2.html#ga03743dacce574287f5aafaea55d208be" title="Erase the specified block of the NOR memory.">HAL_NOR_Erase_Block</a>(NOR_HandleTypeDef *hnor, uint32_t BlockAddress, uint32_t Address);
+<a name="l00204"></a>00204 HAL_StatusTypeDef <a class="code" href="group/group__NOR__Exported__Functions__Group2.html#gacc65b35b69ad174b9c64345f67f05203" title="Erase the entire NOR chip.">HAL_NOR_Erase_Chip</a>(NOR_HandleTypeDef *hnor, uint32_t Address);
+<a name="l00205"></a>00205 HAL_StatusTypeDef <a class="code" href="group/group__NOR__Exported__Functions__Group2.html#ga7ee7838ac0f6f39715fecd111ca038d0" title="Read NOR flash CFI IDs.">HAL_NOR_Read_CFI</a>(NOR_HandleTypeDef *hnor, NOR_CFITypeDef *pNOR_CFI);
 <a name="l00206"></a>00206 
 <a name="l00207"></a>00207 <span class="preprocessor">#if (USE_HAL_NOR_REGISTER_CALLBACKS == 1)</span>
 <a name="l00208"></a>00208 <span class="preprocessor"></span><span class="comment">/* NOR callback registering/unregistering */</span>
@@ -285,8 +285,8 @@
 <a name="l00218"></a>00218 <span class="comment">  */</span>
 <a name="l00219"></a>00219 
 <a name="l00220"></a>00220 <span class="comment">/* NOR Control functions  *****************************************************/</span>
-<a name="l00221"></a>00221 HAL_StatusTypeDef <a class="code" href="group__NOR__Exported__Functions__Group3.html#gaea7f0591cc6c11e1b302955a2394be88" title="Enables dynamically NOR write operation.">HAL_NOR_WriteOperation_Enable</a>(NOR_HandleTypeDef *hnor);
-<a name="l00222"></a>00222 HAL_StatusTypeDef <a class="code" href="group__NOR__Exported__Functions__Group3.html#gab26a28b91f2674bdcec4b604f2757ad2" title="Disables dynamically NOR write operation.">HAL_NOR_WriteOperation_Disable</a>(NOR_HandleTypeDef *hnor);<span class="comment"></span>
+<a name="l00221"></a>00221 HAL_StatusTypeDef <a class="code" href="group/group__NOR__Exported__Functions__Group3.html#gaea7f0591cc6c11e1b302955a2394be88" title="Enables dynamically NOR write operation.">HAL_NOR_WriteOperation_Enable</a>(NOR_HandleTypeDef *hnor);
+<a name="l00222"></a>00222 HAL_StatusTypeDef <a class="code" href="group/group__NOR__Exported__Functions__Group3.html#gab26a28b91f2674bdcec4b604f2757ad2" title="Disables dynamically NOR write operation.">HAL_NOR_WriteOperation_Disable</a>(NOR_HandleTypeDef *hnor);<span class="comment"></span>
 <a name="l00223"></a>00223 <span class="comment">/**</span>
 <a name="l00224"></a>00224 <span class="comment">  * @}</span>
 <a name="l00225"></a>00225 <span class="comment">  */</span>
@@ -296,8 +296,8 @@
 <a name="l00229"></a>00229 <span class="comment">  */</span>
 <a name="l00230"></a>00230 
 <a name="l00231"></a>00231 <span class="comment">/* NOR State functions ********************************************************/</span>
-<a name="l00232"></a>00232 HAL_NOR_StateTypeDef  <a class="code" href="group__NOR__Exported__Functions__Group4.html#ga43c13418d19e31d689d4ca6aa4634732" title="return the NOR controller state">HAL_NOR_GetState</a>(NOR_HandleTypeDef *hnor);
-<a name="l00233"></a>00233 HAL_NOR_StatusTypeDef <a class="code" href="group__NOR__Exported__Functions__Group4.html#ga573ac00076a2ea1d96d7ea65eedb9edc" title="Returns the NOR operation status.">HAL_NOR_GetStatus</a>(NOR_HandleTypeDef *hnor, uint32_t Address, uint32_t Timeout);<span class="comment"></span>
+<a name="l00232"></a>00232 HAL_NOR_StateTypeDef  <a class="code" href="group/group__NOR__Exported__Functions__Group4.html#ga43c13418d19e31d689d4ca6aa4634732" title="return the NOR controller state">HAL_NOR_GetState</a>(NOR_HandleTypeDef *hnor);
+<a name="l00233"></a>00233 HAL_NOR_StatusTypeDef <a class="code" href="group/group__NOR__Exported__Functions__Group4.html#ga573ac00076a2ea1d96d7ea65eedb9edc" title="Returns the NOR operation status.">HAL_NOR_GetStatus</a>(NOR_HandleTypeDef *hnor, uint32_t Address, uint32_t Timeout);<span class="comment"></span>
 <a name="l00234"></a>00234 <span class="comment">/**</span>
 <a name="l00235"></a>00235 <span class="comment">  * @}</span>
 <a name="l00236"></a>00236 <span class="comment">  */</span>

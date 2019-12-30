@@ -57,7 +57,7 @@
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">ADC_InitTypeDef Struct Reference<div class="ingroups"><a class="el" href="group__ADC__Exported__Types.html">ADC Exported Types</a></div></div>  </div>
+<div class="title">ADC_InitTypeDef Struct Reference<div class="ingroups"><a class="el" href="group/group__ADC__Exported__Types.html">ADC Exported Types</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="ADC_InitTypeDef" -->
@@ -84,7 +84,7 @@ Data Fields</h2></td></tr>
 </ul>
 </dd>
 <dd>
-The setting of these parameters with function <a class="el" href="group__ADC__Exported__Functions__Group1.html#ga33ddb73d4880bd425aaa43c5c52bb13a" title="Initializes the ADC peripheral and regular group according to parameters specified in structure &quot;ADC_...">HAL_ADC_Init()</a> is conditioned to ADC state. ADC can be either disabled or enabled without conversion on going on regular group. </dd></dl>
+The setting of these parameters with function <a class="el" href="group/group__ADC__Exported__Functions__Group1.html#ga33ddb73d4880bd425aaa43c5c52bb13a" title="Initializes the ADC peripheral and regular group according to parameters specified in structure &quot;ADC_...">HAL_ADC_Init()</a> is conditioned to ADC state. ADC can be either disabled or enabled without conversion on going on regular group. </dd></dl>
 
 <p>Definition at line <a class="el" href="stm32f1xx__hal__adc_8h_source.html#l00052">52</a> of file <a class="el" href="stm32f1xx__hal__adc_8h_source.html">stm32f1xx_hal_adc.h</a>.</p>
 </div><hr/><h2>Field Documentation</h2>
@@ -116,7 +116,7 @@ The setting of these parameters with function <a class="el" href="group__ADC__Ex
       </table>
 </div>
 <div class="memdoc">
-<p>Specifies ADC data alignment to right (MSB on register bit 11 and LSB on register bit 0) (default setting) or to left (if regular group: MSB on register bit 15 and LSB on register bit 4, if injected group (MSB kept as signed value due to potential negative value after offset application): MSB on register bit 14 and LSB on register bit 3). This parameter can be a value of <a class="el" href="group__ADC__Data__align.html">ADC data alignment</a> </p>
+<p>Specifies ADC data alignment to right (MSB on register bit 11 and LSB on register bit 0) (default setting) or to left (if regular group: MSB on register bit 15 and LSB on register bit 4, if injected group (MSB kept as signed value due to potential negative value after offset application): MSB on register bit 14 and LSB on register bit 3). This parameter can be a value of <a class="el" href="group/group__ADC__Data__align.html">ADC data alignment</a> </p>
 
 <p>Definition at line <a class="el" href="stm32f1xx__hal__adc_8h_source.html#l00054">54</a> of file <a class="el" href="stm32f1xx__hal__adc_8h_source.html">stm32f1xx_hal_adc.h</a>.</p>
 
@@ -152,7 +152,7 @@ The setting of these parameters with function <a class="el" href="group__ADC__Ex
       </table>
 </div>
 <div class="memdoc">
-<p>Selects the external event used to trigger the conversion start of regular group. If set to ADC_SOFTWARE_START, external triggers are disabled. If set to external trigger source, triggering is on event rising edge. This parameter can be a value of <a class="el" href="group__ADC__External__trigger__source__Regular.html">ADC External trigger selection for regular group</a> </p>
+<p>Selects the external event used to trigger the conversion start of regular group. If set to ADC_SOFTWARE_START, external triggers are disabled. If set to external trigger source, triggering is on event rising edge. This parameter can be a value of <a class="el" href="group/group__ADC__External__trigger__source__Regular.html">ADC External trigger selection for regular group</a> </p>
 
 <p>Definition at line <a class="el" href="stm32f1xx__hal__adc_8h_source.html#l00081">81</a> of file <a class="el" href="stm32f1xx__hal__adc_8h_source.html">stm32f1xx_hal_adc.h</a>.</p>
 
@@ -206,7 +206,7 @@ The setting of these parameters with function <a class="el" href="group__ADC__Ex
       </table>
 </div>
 <div class="memdoc">
-<p>Configures the sequencer of regular and injected groups. This parameter can be associated to parameter 'DiscontinuousConvMode' to have main sequence subdivided in successive parts. If disabled: Conversion is performed in single mode (one channel converted, the one defined in rank 1). Parameters 'NbrOfConversion' and 'InjectedNbrOfConversion' are discarded (equivalent to set to 1). If enabled: Conversions are performed in sequence mode (multiple ranks defined by 'NbrOfConversion'/'InjectedNbrOfConversion' and each channel rank). Scan direction is upward: from rank1 to rank 'n'. This parameter can be a value of <a class="el" href="group__ADC__Scan__mode.html">ADC scan mode</a> Note: For regular group, this parameter should be enabled in conversion either by polling (HAL_ADC_Start with Discontinuous mode and NbrOfDiscConversion=1) or by DMA (HAL_ADC_Start_DMA), but not by interruption (HAL_ADC_Start_IT): in scan mode, interruption is triggered only on the the last conversion of the sequence. All previous conversions would be overwritten by the last one. Injected group used with scan mode has not this constraint: each rank has its own result register, no data is overwritten. </p>
+<p>Configures the sequencer of regular and injected groups. This parameter can be associated to parameter 'DiscontinuousConvMode' to have main sequence subdivided in successive parts. If disabled: Conversion is performed in single mode (one channel converted, the one defined in rank 1). Parameters 'NbrOfConversion' and 'InjectedNbrOfConversion' are discarded (equivalent to set to 1). If enabled: Conversions are performed in sequence mode (multiple ranks defined by 'NbrOfConversion'/'InjectedNbrOfConversion' and each channel rank). Scan direction is upward: from rank1 to rank 'n'. This parameter can be a value of <a class="el" href="group/group__ADC__Scan__mode.html">ADC scan mode</a> Note: For regular group, this parameter should be enabled in conversion either by polling (HAL_ADC_Start with Discontinuous mode and NbrOfDiscConversion=1) or by DMA (HAL_ADC_Start_DMA), but not by interruption (HAL_ADC_Start_IT): in scan mode, interruption is triggered only on the the last conversion of the sequence. All previous conversions would be overwritten by the last one. Injected group used with scan mode has not this constraint: each rank has its own result register, no data is overwritten. </p>
 
 <p>Definition at line <a class="el" href="stm32f1xx__hal__adc_8h_source.html#l00057">57</a> of file <a class="el" href="stm32f1xx__hal__adc_8h_source.html">stm32f1xx_hal_adc.h</a>.</p>
 

@@ -164,7 +164,7 @@
 <a name="l00097"></a>00097 <span class="comment">  *</span>
 <a name="l00098"></a>00098 <span class="comment">  * @retval HAL status</span>
 <a name="l00099"></a>00099 <span class="comment">  */</span>
-<a name="l00100"></a><a class="code" href="group__RCCEx__Exported__Functions__Group1.html#ga0c0f61a1e2f47cc81bc43d83ba3e0d95">00100</a> HAL_StatusTypeDef <a class="code" href="group__RCCEx__Exported__Functions__Group1.html#ga0c0f61a1e2f47cc81bc43d83ba3e0d95" title="Initializes the RCC extended peripherals clocks according to the specified parameters in the RCC_Peri...">HAL_RCCEx_PeriphCLKConfig</a>(<a class="code" href="structRCC__PeriphCLKInitTypeDef.html" title="RCC extended clocks structure definition.">RCC_PeriphCLKInitTypeDef</a>  *PeriphClkInit)
+<a name="l00100"></a><a class="code" href="group/group__RCCEx__Exported__Functions__Group1.html#ga0c0f61a1e2f47cc81bc43d83ba3e0d95">00100</a> HAL_StatusTypeDef <a class="code" href="group/group__RCCEx__Exported__Functions__Group1.html#ga0c0f61a1e2f47cc81bc43d83ba3e0d95" title="Initializes the RCC extended peripherals clocks according to the specified parameters in the RCC_Peri...">HAL_RCCEx_PeriphCLKConfig</a>(<a class="code" href="structRCC__PeriphCLKInitTypeDef.html" title="RCC extended clocks structure definition.">RCC_PeriphCLKInitTypeDef</a>  *PeriphClkInit)
 <a name="l00101"></a>00101 {
 <a name="l00102"></a>00102   uint32_t tickstart = 0U, temp_reg = 0U;
 <a name="l00103"></a>00103 <span class="preprocessor">#if defined(STM32F105xC) || defined(STM32F107xC)</span>
@@ -172,22 +172,22 @@
 <a name="l00105"></a>00105 <span class="preprocessor">#endif </span><span class="comment">/* STM32F105xC || STM32F107xC */</span>
 <a name="l00106"></a>00106 
 <a name="l00107"></a>00107   <span class="comment">/* Check the parameters */</span>
-<a name="l00108"></a>00108   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__RCCEx__Private__Macros.html#ga7ef5298a4d0e7b186c4a4e5471987084">IS_RCC_PERIPHCLOCK</a>(PeriphClkInit-&gt;<a class="code" href="structRCC__PeriphCLKInitTypeDef.html#a1fe6e3d75864d85b911eef15dfc35925">PeriphClockSelection</a>));
+<a name="l00108"></a>00108   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__RCCEx__Private__Macros.html#ga7ef5298a4d0e7b186c4a4e5471987084">IS_RCC_PERIPHCLOCK</a>(PeriphClkInit-&gt;<a class="code" href="structRCC__PeriphCLKInitTypeDef.html#a1fe6e3d75864d85b911eef15dfc35925">PeriphClockSelection</a>));
 <a name="l00109"></a>00109   
 <a name="l00110"></a>00110   <span class="comment">/*------------------------------- RTC/LCD Configuration ------------------------*/</span> 
-<a name="l00111"></a>00111   <span class="keywordflow">if</span> ((((PeriphClkInit-&gt;<a class="code" href="structRCC__PeriphCLKInitTypeDef.html#a1fe6e3d75864d85b911eef15dfc35925">PeriphClockSelection</a>) &amp; <a class="code" href="group__RCCEx__Periph__Clock__Selection.html#gaede03aaafb5319bb39767bf50182406f">RCC_PERIPHCLK_RTC</a>) == <a class="code" href="group__RCCEx__Periph__Clock__Selection.html#gaede03aaafb5319bb39767bf50182406f">RCC_PERIPHCLK_RTC</a>))
+<a name="l00111"></a>00111   <span class="keywordflow">if</span> ((((PeriphClkInit-&gt;<a class="code" href="structRCC__PeriphCLKInitTypeDef.html#a1fe6e3d75864d85b911eef15dfc35925">PeriphClockSelection</a>) &amp; <a class="code" href="group/group__RCCEx__Periph__Clock__Selection.html#gaede03aaafb5319bb39767bf50182406f">RCC_PERIPHCLK_RTC</a>) == <a class="code" href="group/group__RCCEx__Periph__Clock__Selection.html#gaede03aaafb5319bb39767bf50182406f">RCC_PERIPHCLK_RTC</a>))
 <a name="l00112"></a>00112   {
 <a name="l00113"></a>00113     <span class="comment">/* check for RTC Parameters used to output RTCCLK */</span>
-<a name="l00114"></a>00114     <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__RCC__Private__Macros.html#gacd1d98013cd9a28e8b1544adf931e7b3">IS_RCC_RTCCLKSOURCE</a>(PeriphClkInit-&gt;<a class="code" href="structRCC__PeriphCLKInitTypeDef.html#ad2c422d62b056a61d7bbb599c89dbc1e">RTCClockSelection</a>));
+<a name="l00114"></a>00114     <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__RCC__Private__Macros.html#gacd1d98013cd9a28e8b1544adf931e7b3">IS_RCC_RTCCLKSOURCE</a>(PeriphClkInit-&gt;<a class="code" href="structRCC__PeriphCLKInitTypeDef.html#ad2c422d62b056a61d7bbb599c89dbc1e">RTCClockSelection</a>));
 <a name="l00115"></a>00115 
 <a name="l00116"></a>00116     FlagStatus       pwrclkchanged = RESET;
 <a name="l00117"></a>00117 
 <a name="l00118"></a>00118     <span class="comment">/* As soon as function is called to change RTC clock source, activation of the </span>
 <a name="l00119"></a>00119 <span class="comment">       power domain is done. */</span>
 <a name="l00120"></a>00120     <span class="comment">/* Requires to enable write access to Backup Domain of necessary */</span>
-<a name="l00121"></a>00121     <span class="keywordflow">if</span>(<a class="code" href="group__RCC__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga1019fdeb30eb4bcb23a0bea2278a94a2">__HAL_RCC_PWR_IS_CLK_DISABLED</a>())
+<a name="l00121"></a>00121     <span class="keywordflow">if</span>(<a class="code" href="group/group__RCC__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga1019fdeb30eb4bcb23a0bea2278a94a2">__HAL_RCC_PWR_IS_CLK_DISABLED</a>())
 <a name="l00122"></a>00122     {
-<a name="l00123"></a>00123     <a class="code" href="group__RCC__APB1__Clock__Enable__Disable.html#ga6c7399cc977622172aeda52a86ceed92">__HAL_RCC_PWR_CLK_ENABLE</a>();
+<a name="l00123"></a>00123     <a class="code" href="group/group__RCC__APB1__Clock__Enable__Disable.html#ga6c7399cc977622172aeda52a86ceed92">__HAL_RCC_PWR_CLK_ENABLE</a>();
 <a name="l00124"></a>00124       pwrclkchanged = SET;
 <a name="l00125"></a>00125     }
 <a name="l00126"></a>00126     
@@ -197,11 +197,11 @@
 <a name="l00130"></a>00130       SET_BIT(PWR-&gt;CR, PWR_CR_DBP);
 <a name="l00131"></a>00131       
 <a name="l00132"></a>00132       <span class="comment">/* Wait for Backup domain Write protection disable */</span>
-<a name="l00133"></a>00133       tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l00133"></a>00133       tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l00134"></a>00134       
 <a name="l00135"></a>00135       <span class="keywordflow">while</span>(HAL_IS_BIT_CLR(PWR-&gt;CR, PWR_CR_DBP))
 <a name="l00136"></a>00136       {
-<a name="l00137"></a>00137         <span class="keywordflow">if</span>((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; <a class="code" href="group__RCC__Timeout.html#gae578b5efd6bd38193ab426ce65cb77b1">RCC_DBP_TIMEOUT_VALUE</a>)
+<a name="l00137"></a>00137         <span class="keywordflow">if</span>((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; <a class="code" href="group/group__RCC__Timeout.html#gae578b5efd6bd38193ab426ce65cb77b1">RCC_DBP_TIMEOUT_VALUE</a>)
 <a name="l00138"></a>00138         {
 <a name="l00139"></a>00139           <span class="keywordflow">return</span> HAL_TIMEOUT;
 <a name="l00140"></a>00140         }
@@ -215,8 +215,8 @@
 <a name="l00148"></a>00148       <span class="comment">/* Store the content of BDCR register before the reset of Backup Domain */</span>
 <a name="l00149"></a>00149       temp_reg = (RCC-&gt;BDCR &amp; ~(RCC_BDCR_RTCSEL));
 <a name="l00150"></a>00150       <span class="comment">/* RTC Clock selection can be changed only if the Backup Domain is reset */</span>
-<a name="l00151"></a>00151       <a class="code" href="group__RCC__RTC__Clock__Configuration.html#ga3bf7da608ff985873ca8e248fb1dc4f0" title="Macro to force the Backup domain reset.">__HAL_RCC_BACKUPRESET_FORCE</a>();
-<a name="l00152"></a>00152       <a class="code" href="group__RCC__RTC__Clock__Configuration.html#ga14f32622c65f4ae239ba8cb00d510321" title="Macros to release the Backup domain reset.">__HAL_RCC_BACKUPRESET_RELEASE</a>();
+<a name="l00151"></a>00151       <a class="code" href="group/group__RCC__RTC__Clock__Configuration.html#ga3bf7da608ff985873ca8e248fb1dc4f0" title="Macro to force the Backup domain reset.">__HAL_RCC_BACKUPRESET_FORCE</a>();
+<a name="l00152"></a>00152       <a class="code" href="group/group__RCC__RTC__Clock__Configuration.html#ga14f32622c65f4ae239ba8cb00d510321" title="Macros to release the Backup domain reset.">__HAL_RCC_BACKUPRESET_RELEASE</a>();
 <a name="l00153"></a>00153       <span class="comment">/* Restore the Content of BDCR register */</span>
 <a name="l00154"></a>00154       RCC-&gt;BDCR = temp_reg;
 <a name="l00155"></a>00155 
@@ -224,35 +224,35 @@
 <a name="l00157"></a>00157       <span class="keywordflow">if</span> (HAL_IS_BIT_SET(temp_reg, RCC_BDCR_LSEON))
 <a name="l00158"></a>00158       {
 <a name="l00159"></a>00159         <span class="comment">/* Get Start Tick */</span>
-<a name="l00160"></a>00160         tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l00160"></a>00160         tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l00161"></a>00161       
 <a name="l00162"></a>00162         <span class="comment">/* Wait till LSE is ready */</span>  
-<a name="l00163"></a>00163         <span class="keywordflow">while</span>(<a class="code" href="group__RCC__Flags__Interrupts__Management.html#gae2d7d461630562bf2a2ddb31b1f96449" title="Check RCC flag is set or not.">__HAL_RCC_GET_FLAG</a>(<a class="code" href="group__RCC__Flag.html#gac9fb963db446c16e46a18908f7fe1927">RCC_FLAG_LSERDY</a>) == RESET)
+<a name="l00163"></a>00163         <span class="keywordflow">while</span>(<a class="code" href="group/group__RCC__Flags__Interrupts__Management.html#gae2d7d461630562bf2a2ddb31b1f96449" title="Check RCC flag is set or not.">__HAL_RCC_GET_FLAG</a>(<a class="code" href="group/group__RCC__Flag.html#gac9fb963db446c16e46a18908f7fe1927">RCC_FLAG_LSERDY</a>) == RESET)
 <a name="l00164"></a>00164         {
-<a name="l00165"></a>00165           <span class="keywordflow">if</span>((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; <a class="code" href="group__RCC__Timeout.html#gafe8ed1c0ca0e1c17ea69e09391498cc7">RCC_LSE_TIMEOUT_VALUE</a>)
+<a name="l00165"></a>00165           <span class="keywordflow">if</span>((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; <a class="code" href="group/group__RCC__Timeout.html#gafe8ed1c0ca0e1c17ea69e09391498cc7">RCC_LSE_TIMEOUT_VALUE</a>)
 <a name="l00166"></a>00166           {
 <a name="l00167"></a>00167             <span class="keywordflow">return</span> HAL_TIMEOUT;
 <a name="l00168"></a>00168           }      
 <a name="l00169"></a>00169         }  
 <a name="l00170"></a>00170       }
 <a name="l00171"></a>00171     }
-<a name="l00172"></a>00172     <a class="code" href="group__RCC__RTC__Clock__Configuration.html#ga2d6c4c7e951bfd007d26988fbfe6eaa4" title="Macro to configure the RTC clock (RTCCLK).">__HAL_RCC_RTC_CONFIG</a>(PeriphClkInit-&gt;<a class="code" href="structRCC__PeriphCLKInitTypeDef.html#ad2c422d62b056a61d7bbb599c89dbc1e">RTCClockSelection</a>); 
+<a name="l00172"></a>00172     <a class="code" href="group/group__RCC__RTC__Clock__Configuration.html#ga2d6c4c7e951bfd007d26988fbfe6eaa4" title="Macro to configure the RTC clock (RTCCLK).">__HAL_RCC_RTC_CONFIG</a>(PeriphClkInit-&gt;<a class="code" href="structRCC__PeriphCLKInitTypeDef.html#ad2c422d62b056a61d7bbb599c89dbc1e">RTCClockSelection</a>); 
 <a name="l00173"></a>00173 
 <a name="l00174"></a>00174     <span class="comment">/* Require to disable power clock if necessary */</span>
 <a name="l00175"></a>00175     <span class="keywordflow">if</span>(pwrclkchanged == SET)
 <a name="l00176"></a>00176     {
-<a name="l00177"></a>00177       <a class="code" href="group__RCC__APB1__Clock__Enable__Disable.html#gaf3db86d2db2bad45732a742b6a91ea0b">__HAL_RCC_PWR_CLK_DISABLE</a>();
+<a name="l00177"></a>00177       <a class="code" href="group/group__RCC__APB1__Clock__Enable__Disable.html#gaf3db86d2db2bad45732a742b6a91ea0b">__HAL_RCC_PWR_CLK_DISABLE</a>();
 <a name="l00178"></a>00178     }
 <a name="l00179"></a>00179   }
 <a name="l00180"></a>00180 
 <a name="l00181"></a>00181   <span class="comment">/*------------------------------ ADC clock Configuration ------------------*/</span> 
-<a name="l00182"></a>00182   <span class="keywordflow">if</span>(((PeriphClkInit-&gt;<a class="code" href="structRCC__PeriphCLKInitTypeDef.html#a1fe6e3d75864d85b911eef15dfc35925">PeriphClockSelection</a>) &amp; <a class="code" href="group__RCCEx__Periph__Clock__Selection.html#gaa234e496ace2f188b106dc15a95ed6bc">RCC_PERIPHCLK_ADC</a>) == <a class="code" href="group__RCCEx__Periph__Clock__Selection.html#gaa234e496ace2f188b106dc15a95ed6bc">RCC_PERIPHCLK_ADC</a>)
+<a name="l00182"></a>00182   <span class="keywordflow">if</span>(((PeriphClkInit-&gt;<a class="code" href="structRCC__PeriphCLKInitTypeDef.html#a1fe6e3d75864d85b911eef15dfc35925">PeriphClockSelection</a>) &amp; <a class="code" href="group/group__RCCEx__Periph__Clock__Selection.html#gaa234e496ace2f188b106dc15a95ed6bc">RCC_PERIPHCLK_ADC</a>) == <a class="code" href="group/group__RCCEx__Periph__Clock__Selection.html#gaa234e496ace2f188b106dc15a95ed6bc">RCC_PERIPHCLK_ADC</a>)
 <a name="l00183"></a>00183   {
 <a name="l00184"></a>00184     <span class="comment">/* Check the parameters */</span>
-<a name="l00185"></a>00185     <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__RCCEx__Private__Macros.html#ga755487c23148a5a52184ff6dc796c1d1">IS_RCC_ADCPLLCLK_DIV</a>(PeriphClkInit-&gt;<a class="code" href="structRCC__PeriphCLKInitTypeDef.html#ab69770bf33cdee0878e1c0db0faf748c">AdcClockSelection</a>));
+<a name="l00185"></a>00185     <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__RCCEx__Private__Macros.html#ga755487c23148a5a52184ff6dc796c1d1">IS_RCC_ADCPLLCLK_DIV</a>(PeriphClkInit-&gt;<a class="code" href="structRCC__PeriphCLKInitTypeDef.html#ab69770bf33cdee0878e1c0db0faf748c">AdcClockSelection</a>));
 <a name="l00186"></a>00186     
 <a name="l00187"></a>00187     <span class="comment">/* Configure the ADC clock source */</span>
-<a name="l00188"></a>00188     <a class="code" href="group__RCCEx__Peripheral__Configuration.html#ga4c75b81d1b7d65cda934c9f1350ea97b" title="Macro to configure the ADCx clock (x=1 to 3 depending on devices).">__HAL_RCC_ADC_CONFIG</a>(PeriphClkInit-&gt;<a class="code" href="structRCC__PeriphCLKInitTypeDef.html#ab69770bf33cdee0878e1c0db0faf748c">AdcClockSelection</a>);
+<a name="l00188"></a>00188     <a class="code" href="group/group__RCCEx__Peripheral__Configuration.html#ga4c75b81d1b7d65cda934c9f1350ea97b" title="Macro to configure the ADCx clock (x=1 to 3 depending on devices).">__HAL_RCC_ADC_CONFIG</a>(PeriphClkInit-&gt;<a class="code" href="structRCC__PeriphCLKInitTypeDef.html#ab69770bf33cdee0878e1c0db0faf748c">AdcClockSelection</a>);
 <a name="l00189"></a>00189   }
 <a name="l00190"></a>00190 
 <a name="l00191"></a>00191 <span class="preprocessor">#if defined(STM32F105xC) || defined(STM32F107xC)</span>
@@ -312,12 +312,12 @@
 <a name="l00245"></a>00245       __HAL_RCC_PLLI2S_ENABLE();
 <a name="l00246"></a>00246       
 <a name="l00247"></a>00247       <span class="comment">/* Get Start Tick*/</span>
-<a name="l00248"></a>00248       tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l00248"></a>00248       tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l00249"></a>00249       
 <a name="l00250"></a>00250       <span class="comment">/* Wait till PLLI2S is ready */</span>
-<a name="l00251"></a>00251       <span class="keywordflow">while</span>(<a class="code" href="group__RCC__Flags__Interrupts__Management.html#gae2d7d461630562bf2a2ddb31b1f96449" title="Check RCC flag is set or not.">__HAL_RCC_GET_FLAG</a>(RCC_FLAG_PLLI2SRDY)  == RESET)
+<a name="l00251"></a>00251       <span class="keywordflow">while</span>(<a class="code" href="group/group__RCC__Flags__Interrupts__Management.html#gae2d7d461630562bf2a2ddb31b1f96449" title="Check RCC flag is set or not.">__HAL_RCC_GET_FLAG</a>(RCC_FLAG_PLLI2SRDY)  == RESET)
 <a name="l00252"></a>00252       {
-<a name="l00253"></a>00253         <span class="keywordflow">if</span>((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart ) &gt; PLLI2S_TIMEOUT_VALUE)
+<a name="l00253"></a>00253         <span class="keywordflow">if</span>((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart ) &gt; PLLI2S_TIMEOUT_VALUE)
 <a name="l00254"></a>00254         {
 <a name="l00255"></a>00255           <span class="keywordflow">return</span> HAL_TIMEOUT;
 <a name="l00256"></a>00256         }
@@ -358,21 +358,21 @@
 <a name="l00291"></a>00291 <span class="comment">  *         returns the configuration information for the Extended Peripherals clocks(RTC, I2S, ADC clocks).</span>
 <a name="l00292"></a>00292 <span class="comment">  * @retval None</span>
 <a name="l00293"></a>00293 <span class="comment">  */</span>
-<a name="l00294"></a><a class="code" href="group__RCCEx__Exported__Functions__Group1.html#ga754fc5136c63ad52b7c459aafc8a3927">00294</a> <span class="keywordtype">void</span> <a class="code" href="group__RCCEx__Exported__Functions__Group1.html#ga754fc5136c63ad52b7c459aafc8a3927" title="Get the PeriphClkInit according to the internal RCC configuration registers.">HAL_RCCEx_GetPeriphCLKConfig</a>(<a class="code" href="structRCC__PeriphCLKInitTypeDef.html" title="RCC extended clocks structure definition.">RCC_PeriphCLKInitTypeDef</a>  *PeriphClkInit)
+<a name="l00294"></a><a class="code" href="group/group__RCCEx__Exported__Functions__Group1.html#ga754fc5136c63ad52b7c459aafc8a3927">00294</a> <span class="keywordtype">void</span> <a class="code" href="group/group__RCCEx__Exported__Functions__Group1.html#ga754fc5136c63ad52b7c459aafc8a3927" title="Get the PeriphClkInit according to the internal RCC configuration registers.">HAL_RCCEx_GetPeriphCLKConfig</a>(<a class="code" href="structRCC__PeriphCLKInitTypeDef.html" title="RCC extended clocks structure definition.">RCC_PeriphCLKInitTypeDef</a>  *PeriphClkInit)
 <a name="l00295"></a>00295 {
 <a name="l00296"></a>00296   uint32_t srcclk = 0U;
 <a name="l00297"></a>00297   
 <a name="l00298"></a>00298   <span class="comment">/* Set all possible values for the extended clock type parameter------------*/</span>
-<a name="l00299"></a>00299   PeriphClkInit-&gt;<a class="code" href="structRCC__PeriphCLKInitTypeDef.html#a1fe6e3d75864d85b911eef15dfc35925">PeriphClockSelection</a> = <a class="code" href="group__RCCEx__Periph__Clock__Selection.html#gaede03aaafb5319bb39767bf50182406f">RCC_PERIPHCLK_RTC</a>;
+<a name="l00299"></a>00299   PeriphClkInit-&gt;<a class="code" href="structRCC__PeriphCLKInitTypeDef.html#a1fe6e3d75864d85b911eef15dfc35925">PeriphClockSelection</a> = <a class="code" href="group/group__RCCEx__Periph__Clock__Selection.html#gaede03aaafb5319bb39767bf50182406f">RCC_PERIPHCLK_RTC</a>;
 <a name="l00300"></a>00300 
 <a name="l00301"></a>00301   <span class="comment">/* Get the RTC configuration -----------------------------------------------*/</span>
-<a name="l00302"></a>00302   srcclk = <a class="code" href="group__RCC__RTC__Clock__Configuration.html#gad40d00ff1c984ebd011ea9f6e7f93c44" title="Macro to get the RTC clock source.">__HAL_RCC_GET_RTC_SOURCE</a>();
+<a name="l00302"></a>00302   srcclk = <a class="code" href="group/group__RCC__RTC__Clock__Configuration.html#gad40d00ff1c984ebd011ea9f6e7f93c44" title="Macro to get the RTC clock source.">__HAL_RCC_GET_RTC_SOURCE</a>();
 <a name="l00303"></a>00303   <span class="comment">/* Source clock is LSE or LSI*/</span>
 <a name="l00304"></a>00304   PeriphClkInit-&gt;<a class="code" href="structRCC__PeriphCLKInitTypeDef.html#ad2c422d62b056a61d7bbb599c89dbc1e">RTCClockSelection</a> = srcclk;
 <a name="l00305"></a>00305 
 <a name="l00306"></a>00306   <span class="comment">/* Get the ADC clock configuration -----------------------------------------*/</span>
-<a name="l00307"></a>00307   PeriphClkInit-&gt;<a class="code" href="structRCC__PeriphCLKInitTypeDef.html#a1fe6e3d75864d85b911eef15dfc35925">PeriphClockSelection</a> |= <a class="code" href="group__RCCEx__Periph__Clock__Selection.html#gaa234e496ace2f188b106dc15a95ed6bc">RCC_PERIPHCLK_ADC</a>;
-<a name="l00308"></a>00308   PeriphClkInit-&gt;<a class="code" href="structRCC__PeriphCLKInitTypeDef.html#ab69770bf33cdee0878e1c0db0faf748c">AdcClockSelection</a> = <a class="code" href="group__RCCEx__Peripheral__Configuration.html#ga2ee9f1838a8450f949b548a06ed3bc58" title="Macro to get the ADC clock (ADCxCLK, x=1 to 3 depending on devices).">__HAL_RCC_GET_ADC_SOURCE</a>();
+<a name="l00307"></a>00307   PeriphClkInit-&gt;<a class="code" href="structRCC__PeriphCLKInitTypeDef.html#a1fe6e3d75864d85b911eef15dfc35925">PeriphClockSelection</a> |= <a class="code" href="group/group__RCCEx__Periph__Clock__Selection.html#gaa234e496ace2f188b106dc15a95ed6bc">RCC_PERIPHCLK_ADC</a>;
+<a name="l00308"></a>00308   PeriphClkInit-&gt;<a class="code" href="structRCC__PeriphCLKInitTypeDef.html#ab69770bf33cdee0878e1c0db0faf748c">AdcClockSelection</a> = <a class="code" href="group/group__RCCEx__Peripheral__Configuration.html#ga2ee9f1838a8450f949b548a06ed3bc58" title="Macro to get the ADC clock (ADCxCLK, x=1 to 3 depending on devices).">__HAL_RCC_GET_ADC_SOURCE</a>();
 <a name="l00309"></a>00309 
 <a name="l00310"></a>00310 <span class="preprocessor">#if defined(STM32F105xC) || defined(STM32F107xC)</span>
 <a name="l00311"></a>00311 <span class="preprocessor"></span>  <span class="comment">/* Get the I2S2 clock configuration -----------------------------------------*/</span>
@@ -451,7 +451,7 @@
 <a name="l00384"></a>00384 <span class="comment">  @endif</span>
 <a name="l00385"></a>00385 <span class="comment">  * @retval Frequency in Hz (0: means that no available frequency for the peripheral)</span>
 <a name="l00386"></a>00386 <span class="comment">  */</span>
-<a name="l00387"></a><a class="code" href="group__RCCEx__Exported__Functions__Group1.html#ga14acaeb88163a6bb0839470b753ba1bd">00387</a> uint32_t <a class="code" href="group__RCCEx__Exported__Functions__Group1.html#ga14acaeb88163a6bb0839470b753ba1bd" title="Returns the peripheral clock frequency.">HAL_RCCEx_GetPeriphCLKFreq</a>(uint32_t PeriphClk)
+<a name="l00387"></a><a class="code" href="group/group__RCCEx__Exported__Functions__Group1.html#ga14acaeb88163a6bb0839470b753ba1bd">00387</a> uint32_t <a class="code" href="group/group__RCCEx__Exported__Functions__Group1.html#ga14acaeb88163a6bb0839470b753ba1bd" title="Returns the peripheral clock frequency.">HAL_RCCEx_GetPeriphCLKFreq</a>(uint32_t PeriphClk)
 <a name="l00388"></a>00388 {
 <a name="l00389"></a>00389 <span class="preprocessor">#if defined(STM32F105xC) || defined(STM32F107xC)</span>
 <a name="l00390"></a>00390 <span class="preprocessor"></span>  <span class="keyword">const</span> uint8_t aPLLMULFactorTable[14] = {0, 0, 4, 5, 6, 7, 8, 9, 0, 0, 0, 0, 0, 13};
@@ -470,7 +470,7 @@
 <a name="l00403"></a>00403   uint32_t temp_reg = 0U, frequency = 0U;
 <a name="l00404"></a>00404 
 <a name="l00405"></a>00405   <span class="comment">/* Check the parameters */</span>
-<a name="l00406"></a>00406   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__RCCEx__Private__Macros.html#ga7ef5298a4d0e7b186c4a4e5471987084">IS_RCC_PERIPHCLOCK</a>(PeriphClk));
+<a name="l00406"></a>00406   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__RCCEx__Private__Macros.html#ga7ef5298a4d0e7b186c4a4e5471987084">IS_RCC_PERIPHCLOCK</a>(PeriphClk));
 <a name="l00407"></a>00407   
 <a name="l00408"></a>00408   <span class="keywordflow">switch</span> (PeriphClk)
 <a name="l00409"></a>00409   {
@@ -486,7 +486,7 @@
 <a name="l00419"></a>00419       <span class="keywordflow">if</span> (HAL_IS_BIT_SET(RCC-&gt;CR,RCC_CR_PLLON))
 <a name="l00420"></a>00420       {
 <a name="l00421"></a>00421         pllmul = aPLLMULFactorTable[(uint32_t)(temp_reg &amp; RCC_CFGR_PLLMULL) &gt;&gt; RCC_CFGR_PLLMULL_Pos];
-<a name="l00422"></a>00422         <span class="keywordflow">if</span> ((temp_reg &amp; RCC_CFGR_PLLSRC) != <a class="code" href="group__RCC__PLL__Clock__Source.html#ga09fff12a4e92f4da5980321b7f99b632">RCC_PLLSOURCE_HSI_DIV2</a>)
+<a name="l00422"></a>00422         <span class="keywordflow">if</span> ((temp_reg &amp; RCC_CFGR_PLLSRC) != <a class="code" href="group/group__RCC__PLL__Clock__Source.html#ga09fff12a4e92f4da5980321b7f99b632">RCC_PLLSOURCE_HSI_DIV2</a>)
 <a name="l00423"></a>00423         {
 <a name="l00424"></a>00424 <span class="preprocessor">#if defined(STM32F105xC) || defined(STM32F107xC) || defined(STM32F100xB)\</span>
 <a name="l00425"></a>00425 <span class="preprocessor"> || defined(STM32F100xE)</span>
@@ -517,7 +517,7 @@
 <a name="l00450"></a>00450               pllclk = pllclk / 2;
 <a name="l00451"></a>00451           }
 <a name="l00452"></a>00452 <span class="preprocessor">#else</span>
-<a name="l00453"></a>00453 <span class="preprocessor"></span>          <span class="keywordflow">if</span> ((temp_reg &amp; RCC_CFGR_PLLSRC) != <a class="code" href="group__RCC__PLL__Clock__Source.html#ga09fff12a4e92f4da5980321b7f99b632">RCC_PLLSOURCE_HSI_DIV2</a>)
+<a name="l00453"></a>00453 <span class="preprocessor"></span>          <span class="keywordflow">if</span> ((temp_reg &amp; RCC_CFGR_PLLSRC) != <a class="code" href="group/group__RCC__PLL__Clock__Source.html#ga09fff12a4e92f4da5980321b7f99b632">RCC_PLLSOURCE_HSI_DIV2</a>)
 <a name="l00454"></a>00454           {
 <a name="l00455"></a>00455             <span class="comment">/* HSE used as PLL clock source : PLLCLK = HSE/PREDIV1 * PLLMUL */</span>
 <a name="l00456"></a>00456             pllclk = (uint32_t)((<a class="code" href="stm32f1xx__hal__conf_8h.html#aeafcff4f57440c60e64812dddd13e7cb" title="Adjust the value of External High Speed oscillator (HSE) used in your application.">HSE_VALUE</a> / prediv1) * pllmul);
@@ -565,12 +565,12 @@
 <a name="l00498"></a>00498     {
 <a name="l00499"></a>00499 <span class="preprocessor">#if defined(STM32F103xE) || defined(STM32F103xG)</span>
 <a name="l00500"></a>00500 <span class="preprocessor"></span>      <span class="comment">/* SYSCLK used as source clock for I2S2 */</span>
-<a name="l00501"></a>00501       frequency = <a class="code" href="group__RCC__Exported__Functions__Group2.html#ga887cafe88b21a059061b077a1e3fa7d8" title="Returns the SYSCLK frequency.">HAL_RCC_GetSysClockFreq</a>();
+<a name="l00501"></a>00501       frequency = <a class="code" href="group/group__RCC__Exported__Functions__Group2.html#ga887cafe88b21a059061b077a1e3fa7d8" title="Returns the SYSCLK frequency.">HAL_RCC_GetSysClockFreq</a>();
 <a name="l00502"></a>00502 <span class="preprocessor">#else</span>
 <a name="l00503"></a>00503 <span class="preprocessor"></span>      <span class="keywordflow">if</span> (__HAL_RCC_GET_I2S2_SOURCE() == RCC_I2S2CLKSOURCE_SYSCLK)
 <a name="l00504"></a>00504       {
 <a name="l00505"></a>00505         <span class="comment">/* SYSCLK used as source clock for I2S2 */</span>
-<a name="l00506"></a>00506         frequency = <a class="code" href="group__RCC__Exported__Functions__Group2.html#ga887cafe88b21a059061b077a1e3fa7d8" title="Returns the SYSCLK frequency.">HAL_RCC_GetSysClockFreq</a>();
+<a name="l00506"></a>00506         frequency = <a class="code" href="group/group__RCC__Exported__Functions__Group2.html#ga887cafe88b21a059061b077a1e3fa7d8" title="Returns the SYSCLK frequency.">HAL_RCC_GetSysClockFreq</a>();
 <a name="l00507"></a>00507       }
 <a name="l00508"></a>00508       <span class="keywordflow">else</span>
 <a name="l00509"></a>00509       {
@@ -590,12 +590,12 @@
 <a name="l00523"></a>00523     {
 <a name="l00524"></a>00524 <span class="preprocessor">#if defined(STM32F103xE) || defined(STM32F103xG)</span>
 <a name="l00525"></a>00525 <span class="preprocessor"></span>      <span class="comment">/* SYSCLK used as source clock for I2S3 */</span>
-<a name="l00526"></a>00526       frequency = <a class="code" href="group__RCC__Exported__Functions__Group2.html#ga887cafe88b21a059061b077a1e3fa7d8" title="Returns the SYSCLK frequency.">HAL_RCC_GetSysClockFreq</a>();
+<a name="l00526"></a>00526       frequency = <a class="code" href="group/group__RCC__Exported__Functions__Group2.html#ga887cafe88b21a059061b077a1e3fa7d8" title="Returns the SYSCLK frequency.">HAL_RCC_GetSysClockFreq</a>();
 <a name="l00527"></a>00527 <span class="preprocessor">#else</span>
 <a name="l00528"></a>00528 <span class="preprocessor"></span>      <span class="keywordflow">if</span> (__HAL_RCC_GET_I2S3_SOURCE() == RCC_I2S3CLKSOURCE_SYSCLK)
 <a name="l00529"></a>00529       {
 <a name="l00530"></a>00530         <span class="comment">/* SYSCLK used as source clock for I2S3 */</span>
-<a name="l00531"></a>00531         frequency = <a class="code" href="group__RCC__Exported__Functions__Group2.html#ga887cafe88b21a059061b077a1e3fa7d8" title="Returns the SYSCLK frequency.">HAL_RCC_GetSysClockFreq</a>();
+<a name="l00531"></a>00531         frequency = <a class="code" href="group/group__RCC__Exported__Functions__Group2.html#ga887cafe88b21a059061b077a1e3fa7d8" title="Returns the SYSCLK frequency.">HAL_RCC_GetSysClockFreq</a>();
 <a name="l00532"></a>00532       }
 <a name="l00533"></a>00533       <span class="keywordflow">else</span>
 <a name="l00534"></a>00534       {
@@ -612,22 +612,22 @@
 <a name="l00545"></a>00545       <span class="keywordflow">break</span>;
 <a name="l00546"></a>00546     }
 <a name="l00547"></a>00547 <span class="preprocessor">#endif </span><span class="comment">/* STM32F103xE || STM32F103xG || STM32F105xC || STM32F107xC */</span>
-<a name="l00548"></a>00548   <span class="keywordflow">case</span> <a class="code" href="group__RCCEx__Periph__Clock__Selection.html#gaede03aaafb5319bb39767bf50182406f">RCC_PERIPHCLK_RTC</a>:  
+<a name="l00548"></a>00548   <span class="keywordflow">case</span> <a class="code" href="group/group__RCCEx__Periph__Clock__Selection.html#gaede03aaafb5319bb39767bf50182406f">RCC_PERIPHCLK_RTC</a>:  
 <a name="l00549"></a>00549     {
 <a name="l00550"></a>00550       <span class="comment">/* Get RCC BDCR configuration ------------------------------------------------------*/</span>
 <a name="l00551"></a>00551       temp_reg = RCC-&gt;BDCR;
 <a name="l00552"></a>00552 
 <a name="l00553"></a>00553       <span class="comment">/* Check if LSE is ready if RTC clock selection is LSE */</span>
-<a name="l00554"></a>00554       <span class="keywordflow">if</span> (((temp_reg &amp; RCC_BDCR_RTCSEL) == <a class="code" href="group__RCC__RTC__Clock__Source.html#ga5dca8d63f250a20bd6bc005670d0c150">RCC_RTCCLKSOURCE_LSE</a>) &amp;&amp; (HAL_IS_BIT_SET(temp_reg, RCC_BDCR_LSERDY)))
+<a name="l00554"></a>00554       <span class="keywordflow">if</span> (((temp_reg &amp; RCC_BDCR_RTCSEL) == <a class="code" href="group/group__RCC__RTC__Clock__Source.html#ga5dca8d63f250a20bd6bc005670d0c150">RCC_RTCCLKSOURCE_LSE</a>) &amp;&amp; (HAL_IS_BIT_SET(temp_reg, RCC_BDCR_LSERDY)))
 <a name="l00555"></a>00555       {
 <a name="l00556"></a>00556         frequency = <a class="code" href="stm32f1xx__hal__conf_8h.html#a7bbb9d19e5189a6ccd0fb6fa6177d20d" title="External Low Speed oscillator (LSE) value.">LSE_VALUE</a>;
 <a name="l00557"></a>00557       }
 <a name="l00558"></a>00558       <span class="comment">/* Check if LSI is ready if RTC clock selection is LSI */</span>
-<a name="l00559"></a>00559       <span class="keywordflow">else</span> <span class="keywordflow">if</span> (((temp_reg &amp; RCC_BDCR_RTCSEL) == <a class="code" href="group__RCC__RTC__Clock__Source.html#gab47a1afb8b5eef9f20f4772961d0a5f4">RCC_RTCCLKSOURCE_LSI</a>) &amp;&amp; (HAL_IS_BIT_SET(RCC-&gt;CSR, RCC_CSR_LSIRDY)))
+<a name="l00559"></a>00559       <span class="keywordflow">else</span> <span class="keywordflow">if</span> (((temp_reg &amp; RCC_BDCR_RTCSEL) == <a class="code" href="group/group__RCC__RTC__Clock__Source.html#gab47a1afb8b5eef9f20f4772961d0a5f4">RCC_RTCCLKSOURCE_LSI</a>) &amp;&amp; (HAL_IS_BIT_SET(RCC-&gt;CSR, RCC_CSR_LSIRDY)))
 <a name="l00560"></a>00560       {
 <a name="l00561"></a>00561         frequency = <a class="code" href="stm32f1xx__hal__conf_8h.html#a4872023e65449c0506aac3ea6bec99e9" title="Internal Low Speed oscillator (LSI) value.">LSI_VALUE</a>;
 <a name="l00562"></a>00562       }
-<a name="l00563"></a>00563       <span class="keywordflow">else</span> <span class="keywordflow">if</span> (((temp_reg &amp; RCC_BDCR_RTCSEL) == <a class="code" href="group__RCC__RTC__Clock__Source.html#ga7e022374ec3ceffa94e5bb6310c35c83">RCC_RTCCLKSOURCE_HSE_DIV128</a>) &amp;&amp; (HAL_IS_BIT_SET(RCC-&gt;CR, RCC_CR_HSERDY)))
+<a name="l00563"></a>00563       <span class="keywordflow">else</span> <span class="keywordflow">if</span> (((temp_reg &amp; RCC_BDCR_RTCSEL) == <a class="code" href="group/group__RCC__RTC__Clock__Source.html#ga7e022374ec3ceffa94e5bb6310c35c83">RCC_RTCCLKSOURCE_HSE_DIV128</a>) &amp;&amp; (HAL_IS_BIT_SET(RCC-&gt;CR, RCC_CR_HSERDY)))
 <a name="l00564"></a>00564       {
 <a name="l00565"></a>00565         frequency = <a class="code" href="stm32f1xx__hal__conf_8h.html#aeafcff4f57440c60e64812dddd13e7cb" title="Adjust the value of External High Speed oscillator (HSE) used in your application.">HSE_VALUE</a> / 128U;
 <a name="l00566"></a>00566       }
@@ -638,9 +638,9 @@
 <a name="l00571"></a>00571       }
 <a name="l00572"></a>00572       <span class="keywordflow">break</span>;
 <a name="l00573"></a>00573     }
-<a name="l00574"></a>00574   <span class="keywordflow">case</span> <a class="code" href="group__RCCEx__Periph__Clock__Selection.html#gaa234e496ace2f188b106dc15a95ed6bc">RCC_PERIPHCLK_ADC</a>:  
+<a name="l00574"></a>00574   <span class="keywordflow">case</span> <a class="code" href="group/group__RCCEx__Periph__Clock__Selection.html#gaa234e496ace2f188b106dc15a95ed6bc">RCC_PERIPHCLK_ADC</a>:  
 <a name="l00575"></a>00575     {
-<a name="l00576"></a>00576       frequency = <a class="code" href="group__RCC__Exported__Functions__Group2.html#gabbd5f8933a5ee05e4b3384e33026aca1" title="Returns the PCLK2 frequency.">HAL_RCC_GetPCLK2Freq</a>() / (((<a class="code" href="group__RCCEx__Peripheral__Configuration.html#ga2ee9f1838a8450f949b548a06ed3bc58" title="Macro to get the ADC clock (ADCxCLK, x=1 to 3 depending on devices).">__HAL_RCC_GET_ADC_SOURCE</a>() &gt;&gt; RCC_CFGR_ADCPRE_Pos) + 1) * 2);
+<a name="l00576"></a>00576       frequency = <a class="code" href="group/group__RCC__Exported__Functions__Group2.html#gabbd5f8933a5ee05e4b3384e33026aca1" title="Returns the PCLK2 frequency.">HAL_RCC_GetPCLK2Freq</a>() / (((<a class="code" href="group/group__RCCEx__Peripheral__Configuration.html#ga2ee9f1838a8450f949b548a06ed3bc58" title="Macro to get the ADC clock (ADCxCLK, x=1 to 3 depending on devices).">__HAL_RCC_GET_ADC_SOURCE</a>() &gt;&gt; RCC_CFGR_ADCPRE_Pos) + 1) * 2);
 <a name="l00577"></a>00577       <span class="keywordflow">break</span>;
 <a name="l00578"></a>00578     }
 <a name="l00579"></a>00579   <span class="keywordflow">default</span>: 
@@ -700,12 +700,12 @@
 <a name="l00633"></a>00633     __HAL_RCC_PLLI2S_DISABLE();
 <a name="l00634"></a>00634 
 <a name="l00635"></a>00635     <span class="comment">/* Get Start Tick*/</span>
-<a name="l00636"></a>00636     tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l00636"></a>00636     tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l00637"></a>00637     
 <a name="l00638"></a>00638     <span class="comment">/* Wait till PLLI2S is ready */</span>  
-<a name="l00639"></a>00639     <span class="keywordflow">while</span>(<a class="code" href="group__RCC__Flags__Interrupts__Management.html#gae2d7d461630562bf2a2ddb31b1f96449" title="Check RCC flag is set or not.">__HAL_RCC_GET_FLAG</a>(RCC_FLAG_PLLI2SRDY)  != RESET)
+<a name="l00639"></a>00639     <span class="keywordflow">while</span>(<a class="code" href="group/group__RCC__Flags__Interrupts__Management.html#gae2d7d461630562bf2a2ddb31b1f96449" title="Check RCC flag is set or not.">__HAL_RCC_GET_FLAG</a>(RCC_FLAG_PLLI2SRDY)  != RESET)
 <a name="l00640"></a>00640     {
-<a name="l00641"></a>00641       <span class="keywordflow">if</span>((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart ) &gt; PLLI2S_TIMEOUT_VALUE)
+<a name="l00641"></a>00641       <span class="keywordflow">if</span>((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart ) &gt; PLLI2S_TIMEOUT_VALUE)
 <a name="l00642"></a>00642       {
 <a name="l00643"></a>00643         <span class="keywordflow">return</span> HAL_TIMEOUT;
 <a name="l00644"></a>00644       }
@@ -722,12 +722,12 @@
 <a name="l00655"></a>00655     __HAL_RCC_PLLI2S_ENABLE();
 <a name="l00656"></a>00656     
 <a name="l00657"></a>00657     <span class="comment">/* Get Start Tick*/</span>
-<a name="l00658"></a>00658     tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l00658"></a>00658     tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l00659"></a>00659     
 <a name="l00660"></a>00660     <span class="comment">/* Wait till PLLI2S is ready */</span>
-<a name="l00661"></a>00661     <span class="keywordflow">while</span>(<a class="code" href="group__RCC__Flags__Interrupts__Management.html#gae2d7d461630562bf2a2ddb31b1f96449" title="Check RCC flag is set or not.">__HAL_RCC_GET_FLAG</a>(RCC_FLAG_PLLI2SRDY)  == RESET)
+<a name="l00661"></a>00661     <span class="keywordflow">while</span>(<a class="code" href="group/group__RCC__Flags__Interrupts__Management.html#gae2d7d461630562bf2a2ddb31b1f96449" title="Check RCC flag is set or not.">__HAL_RCC_GET_FLAG</a>(RCC_FLAG_PLLI2SRDY)  == RESET)
 <a name="l00662"></a>00662     {
-<a name="l00663"></a>00663       <span class="keywordflow">if</span>((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart ) &gt; PLLI2S_TIMEOUT_VALUE)
+<a name="l00663"></a>00663       <span class="keywordflow">if</span>((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart ) &gt; PLLI2S_TIMEOUT_VALUE)
 <a name="l00664"></a>00664       {
 <a name="l00665"></a>00665         <span class="keywordflow">return</span> HAL_TIMEOUT;
 <a name="l00666"></a>00666       }
@@ -758,12 +758,12 @@
 <a name="l00691"></a>00691     __HAL_RCC_PLLI2S_DISABLE();
 <a name="l00692"></a>00692 
 <a name="l00693"></a>00693     <span class="comment">/* Get Start Tick*/</span>
-<a name="l00694"></a>00694     tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l00694"></a>00694     tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l00695"></a>00695     
 <a name="l00696"></a>00696     <span class="comment">/* Wait till PLLI2S is ready */</span>  
-<a name="l00697"></a>00697     <span class="keywordflow">while</span>(<a class="code" href="group__RCC__Flags__Interrupts__Management.html#gae2d7d461630562bf2a2ddb31b1f96449" title="Check RCC flag is set or not.">__HAL_RCC_GET_FLAG</a>(RCC_FLAG_PLLI2SRDY)  != RESET)
+<a name="l00697"></a>00697     <span class="keywordflow">while</span>(<a class="code" href="group/group__RCC__Flags__Interrupts__Management.html#gae2d7d461630562bf2a2ddb31b1f96449" title="Check RCC flag is set or not.">__HAL_RCC_GET_FLAG</a>(RCC_FLAG_PLLI2SRDY)  != RESET)
 <a name="l00698"></a>00698     {
-<a name="l00699"></a>00699       <span class="keywordflow">if</span>((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart ) &gt; PLLI2S_TIMEOUT_VALUE)
+<a name="l00699"></a>00699       <span class="keywordflow">if</span>((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart ) &gt; PLLI2S_TIMEOUT_VALUE)
 <a name="l00700"></a>00700       {
 <a name="l00701"></a>00701         <span class="keywordflow">return</span> HAL_TIMEOUT;
 <a name="l00702"></a>00702       }
@@ -809,8 +809,8 @@
 <a name="l00742"></a>00742 
 <a name="l00743"></a>00743   <span class="comment">/* This bit can not be cleared if the PLL2 clock is used indirectly as system </span>
 <a name="l00744"></a>00744 <span class="comment">    clock (i.e. it is used as PLL clock entry that is used as system clock). */</span>
-<a name="l00745"></a>00745   <span class="keywordflow">if</span>((<a class="code" href="group__RCC__PLL__Configuration.html#ga3ea1390f8124e2b3b8d53e95541d6e53" title="Get oscillator clock selected as PLL input clock.">__HAL_RCC_GET_PLL_OSCSOURCE</a>() == <a class="code" href="group__RCC__PLL__Clock__Source.html#ga197cea7fe5c2db26fe7fcdb0f99dd4d7">RCC_PLLSOURCE_HSE</a>) &amp;&amp; \
-<a name="l00746"></a>00746         (<a class="code" href="group__RCC__Get__Clock__source.html#gac99c2453d9e77c8b457acc0210e754c2" title="Macro to get the clock source used as system clock.">__HAL_RCC_GET_SYSCLK_SOURCE</a>() == <a class="code" href="group__RCC__System__Clock__Source__Status.html#ga4f05019ec09da478d084f44dbaad7d6d">RCC_SYSCLKSOURCE_STATUS_PLLCLK</a>) &amp;&amp; \
+<a name="l00745"></a>00745   <span class="keywordflow">if</span>((<a class="code" href="group/group__RCC__PLL__Configuration.html#ga3ea1390f8124e2b3b8d53e95541d6e53" title="Get oscillator clock selected as PLL input clock.">__HAL_RCC_GET_PLL_OSCSOURCE</a>() == <a class="code" href="group/group__RCC__PLL__Clock__Source.html#ga197cea7fe5c2db26fe7fcdb0f99dd4d7">RCC_PLLSOURCE_HSE</a>) &amp;&amp; \
+<a name="l00746"></a>00746         (<a class="code" href="group/group__RCC__Get__Clock__source.html#gac99c2453d9e77c8b457acc0210e754c2" title="Macro to get the clock source used as system clock.">__HAL_RCC_GET_SYSCLK_SOURCE</a>() == <a class="code" href="group/group__RCC__System__Clock__Source__Status.html#ga4f05019ec09da478d084f44dbaad7d6d">RCC_SYSCLKSOURCE_STATUS_PLLCLK</a>) &amp;&amp; \
 <a name="l00747"></a>00747         ((READ_BIT(RCC-&gt;CFGR2,RCC_CFGR2_PREDIV1SRC)) == RCC_CFGR2_PREDIV1SRC_PLL2))
 <a name="l00748"></a>00748   {
 <a name="l00749"></a>00749     <span class="keywordflow">return</span> HAL_ERROR;
@@ -833,12 +833,12 @@
 <a name="l00766"></a>00766     __HAL_RCC_PLL2_DISABLE();
 <a name="l00767"></a>00767     
 <a name="l00768"></a>00768     <span class="comment">/* Get Start Tick*/</span>
-<a name="l00769"></a>00769     tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l00769"></a>00769     tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l00770"></a>00770     
 <a name="l00771"></a>00771     <span class="comment">/* Wait till PLL2 is disabled */</span>
-<a name="l00772"></a>00772     <span class="keywordflow">while</span>(<a class="code" href="group__RCC__Flags__Interrupts__Management.html#gae2d7d461630562bf2a2ddb31b1f96449" title="Check RCC flag is set or not.">__HAL_RCC_GET_FLAG</a>(RCC_FLAG_PLL2RDY) != RESET)
+<a name="l00772"></a>00772     <span class="keywordflow">while</span>(<a class="code" href="group/group__RCC__Flags__Interrupts__Management.html#gae2d7d461630562bf2a2ddb31b1f96449" title="Check RCC flag is set or not.">__HAL_RCC_GET_FLAG</a>(RCC_FLAG_PLL2RDY) != RESET)
 <a name="l00773"></a>00773     {
-<a name="l00774"></a>00774       <span class="keywordflow">if</span>((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart ) &gt; PLL2_TIMEOUT_VALUE)
+<a name="l00774"></a>00774       <span class="keywordflow">if</span>((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart ) &gt; PLL2_TIMEOUT_VALUE)
 <a name="l00775"></a>00775       {
 <a name="l00776"></a>00776         <span class="keywordflow">return</span> HAL_TIMEOUT;
 <a name="l00777"></a>00777       }
@@ -854,12 +854,12 @@
 <a name="l00787"></a>00787     __HAL_RCC_PLL2_ENABLE();
 <a name="l00788"></a>00788     
 <a name="l00789"></a>00789     <span class="comment">/* Get Start Tick*/</span>
-<a name="l00790"></a>00790     tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l00790"></a>00790     tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l00791"></a>00791     
 <a name="l00792"></a>00792     <span class="comment">/* Wait till PLL2 is ready */</span>
-<a name="l00793"></a>00793     <span class="keywordflow">while</span>(<a class="code" href="group__RCC__Flags__Interrupts__Management.html#gae2d7d461630562bf2a2ddb31b1f96449" title="Check RCC flag is set or not.">__HAL_RCC_GET_FLAG</a>(RCC_FLAG_PLL2RDY)  == RESET)
+<a name="l00793"></a>00793     <span class="keywordflow">while</span>(<a class="code" href="group/group__RCC__Flags__Interrupts__Management.html#gae2d7d461630562bf2a2ddb31b1f96449" title="Check RCC flag is set or not.">__HAL_RCC_GET_FLAG</a>(RCC_FLAG_PLL2RDY)  == RESET)
 <a name="l00794"></a>00794     {
-<a name="l00795"></a>00795       <span class="keywordflow">if</span>((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart ) &gt; PLL2_TIMEOUT_VALUE)
+<a name="l00795"></a>00795       <span class="keywordflow">if</span>((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart ) &gt; PLL2_TIMEOUT_VALUE)
 <a name="l00796"></a>00796       {
 <a name="l00797"></a>00797         <span class="keywordflow">return</span> HAL_TIMEOUT;
 <a name="l00798"></a>00798       }
@@ -880,8 +880,8 @@
 <a name="l00813"></a>00813 
 <a name="l00814"></a>00814   <span class="comment">/* This bit can not be cleared if the PLL2 clock is used indirectly as system </span>
 <a name="l00815"></a>00815 <span class="comment">    clock (i.e. it is used as PLL clock entry that is used as system clock). */</span>
-<a name="l00816"></a>00816   <span class="keywordflow">if</span>((<a class="code" href="group__RCC__PLL__Configuration.html#ga3ea1390f8124e2b3b8d53e95541d6e53" title="Get oscillator clock selected as PLL input clock.">__HAL_RCC_GET_PLL_OSCSOURCE</a>() == <a class="code" href="group__RCC__PLL__Clock__Source.html#ga197cea7fe5c2db26fe7fcdb0f99dd4d7">RCC_PLLSOURCE_HSE</a>) &amp;&amp; \
-<a name="l00817"></a>00817         (<a class="code" href="group__RCC__Get__Clock__source.html#gac99c2453d9e77c8b457acc0210e754c2" title="Macro to get the clock source used as system clock.">__HAL_RCC_GET_SYSCLK_SOURCE</a>() == <a class="code" href="group__RCC__System__Clock__Source__Status.html#ga4f05019ec09da478d084f44dbaad7d6d">RCC_SYSCLKSOURCE_STATUS_PLLCLK</a>) &amp;&amp; \
+<a name="l00816"></a>00816   <span class="keywordflow">if</span>((<a class="code" href="group/group__RCC__PLL__Configuration.html#ga3ea1390f8124e2b3b8d53e95541d6e53" title="Get oscillator clock selected as PLL input clock.">__HAL_RCC_GET_PLL_OSCSOURCE</a>() == <a class="code" href="group/group__RCC__PLL__Clock__Source.html#ga197cea7fe5c2db26fe7fcdb0f99dd4d7">RCC_PLLSOURCE_HSE</a>) &amp;&amp; \
+<a name="l00817"></a>00817         (<a class="code" href="group/group__RCC__Get__Clock__source.html#gac99c2453d9e77c8b457acc0210e754c2" title="Macro to get the clock source used as system clock.">__HAL_RCC_GET_SYSCLK_SOURCE</a>() == <a class="code" href="group/group__RCC__System__Clock__Source__Status.html#ga4f05019ec09da478d084f44dbaad7d6d">RCC_SYSCLKSOURCE_STATUS_PLLCLK</a>) &amp;&amp; \
 <a name="l00818"></a>00818         ((READ_BIT(RCC-&gt;CFGR2,RCC_CFGR2_PREDIV1SRC)) == RCC_CFGR2_PREDIV1SRC_PLL2))
 <a name="l00819"></a>00819   {
 <a name="l00820"></a>00820     <span class="keywordflow">return</span> HAL_ERROR;
@@ -892,12 +892,12 @@
 <a name="l00825"></a>00825     __HAL_RCC_PLL2_DISABLE();
 <a name="l00826"></a>00826 
 <a name="l00827"></a>00827     <span class="comment">/* Get Start Tick*/</span>
-<a name="l00828"></a>00828     tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l00828"></a>00828     tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l00829"></a>00829     
 <a name="l00830"></a>00830     <span class="comment">/* Wait till PLL2 is disabled */</span>  
-<a name="l00831"></a>00831     <span class="keywordflow">while</span>(<a class="code" href="group__RCC__Flags__Interrupts__Management.html#gae2d7d461630562bf2a2ddb31b1f96449" title="Check RCC flag is set or not.">__HAL_RCC_GET_FLAG</a>(RCC_FLAG_PLL2RDY)  != RESET)
+<a name="l00831"></a>00831     <span class="keywordflow">while</span>(<a class="code" href="group/group__RCC__Flags__Interrupts__Management.html#gae2d7d461630562bf2a2ddb31b1f96449" title="Check RCC flag is set or not.">__HAL_RCC_GET_FLAG</a>(RCC_FLAG_PLL2RDY)  != RESET)
 <a name="l00832"></a>00832     {
-<a name="l00833"></a>00833       <span class="keywordflow">if</span>((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart ) &gt; PLL2_TIMEOUT_VALUE)
+<a name="l00833"></a>00833       <span class="keywordflow">if</span>((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart ) &gt; PLL2_TIMEOUT_VALUE)
 <a name="l00834"></a>00834       {
 <a name="l00835"></a>00835         <span class="keywordflow">return</span> HAL_TIMEOUT;
 <a name="l00836"></a>00836       }

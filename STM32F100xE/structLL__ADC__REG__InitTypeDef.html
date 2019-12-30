@@ -57,7 +57,7 @@
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">LL_ADC_REG_InitTypeDef Struct Reference<div class="ingroups"><a class="el" href="group__ADC__LL__ES__INIT.html">ADC Exported Init structure</a></div></div>  </div>
+<div class="title">LL_ADC_REG_InitTypeDef Struct Reference<div class="ingroups"><a class="el" href="group/group__ADC__LL__ES__INIT.html">ADC Exported Init structure</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="LL_ADC_REG_InitTypeDef" -->
@@ -76,9 +76,9 @@ Data Fields</h2></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Structure definition of some features of ADC group regular. </p>
-<dl class="note"><dt><b>Note:</b></dt><dd>These parameters have an impact on ADC scope: ADC group regular. Refer to corresponding unitary functions into <a class="el" href="group__ADC__LL__EF__Configuration__ADC__Group__Regular.html">Configuration of ADC hierarchical scope: group regular</a> (functions with prefix "REG"). </dd>
+<dl class="note"><dt><b>Note:</b></dt><dd>These parameters have an impact on ADC scope: ADC group regular. Refer to corresponding unitary functions into <a class="el" href="group/group__ADC__LL__EF__Configuration__ADC__Group__Regular.html">Configuration of ADC hierarchical scope: group regular</a> (functions with prefix "REG"). </dd>
 <dd>
-The setting of these parameters by function <a class="el" href="group__ADC__LL__EF__Init.html#ga842216ce3c54aca39aac803a5f005c94">LL_ADC_REG_Init()</a> is conditioned to ADC state: ADC instance must be disabled. This condition is applied to all ADC features, for efficiency and compatibility over all STM32 families. However, the different features can be set under different ADC state conditions (setting possible with ADC enabled without conversion on going, ADC enabled with conversion on going, ...) Each feature can be updated afterwards with a unitary function and potentially with ADC in a different state than disabled, refer to description of each function for setting conditioned to ADC state. </dd></dl>
+The setting of these parameters by function <a class="el" href="group/group__ADC__LL__EF__Init.html#ga842216ce3c54aca39aac803a5f005c94">LL_ADC_REG_Init()</a> is conditioned to ADC state: ADC instance must be disabled. This condition is applied to all ADC features, for efficiency and compatibility over all STM32 families. However, the different features can be set under different ADC state conditions (setting possible with ADC enabled without conversion on going, ADC enabled with conversion on going, ...) Each feature can be updated afterwards with a unitary function and potentially with ADC in a different state than disabled, refer to description of each function for setting conditioned to ADC state. </dd></dl>
 
 <p>Definition at line <a class="el" href="stm32f1xx__ll__adc_8h_source.html#l00312">312</a> of file <a class="el" href="stm32f1xx__ll__adc_8h_source.html">stm32f1xx_ll_adc.h</a>.</p>
 </div><hr/><h2>Field Documentation</h2>
@@ -92,8 +92,8 @@ The setting of these parameters by function <a class="el" href="group__ADC__LL__
       </table>
 </div>
 <div class="memdoc">
-<p>Set ADC continuous conversion mode on ADC group regular, whether ADC conversions are performed in single mode (one conversion per trigger) or in continuous mode (after the first trigger, following conversions launched successively automatically). This parameter can be a value of <a class="el" href="group__ADC__LL__EC__REG__CONTINUOUS__MODE.html">ADC group regular - Continuous mode</a> Note: It is not possible to enable both ADC group regular continuous mode and discontinuous mode.</p>
-<p>This feature can be modified afterwards using unitary function <a class="el" href="group__ADC__LL__EF__Configuration__ADC__Group__Regular.html#ga1f66e2c13cc70fec9584f58baf136f34">LL_ADC_REG_SetContinuousMode()</a>. </p>
+<p>Set ADC continuous conversion mode on ADC group regular, whether ADC conversions are performed in single mode (one conversion per trigger) or in continuous mode (after the first trigger, following conversions launched successively automatically). This parameter can be a value of <a class="el" href="group/group__ADC__LL__EC__REG__CONTINUOUS__MODE.html">ADC group regular - Continuous mode</a> Note: It is not possible to enable both ADC group regular continuous mode and discontinuous mode.</p>
+<p>This feature can be modified afterwards using unitary function <a class="el" href="group/group__ADC__LL__EF__Configuration__ADC__Group__Regular.html#ga1f66e2c13cc70fec9584f58baf136f34">LL_ADC_REG_SetContinuousMode()</a>. </p>
 
 <p>Definition at line <a class="el" href="stm32f1xx__ll__adc_8h_source.html#l00334">334</a> of file <a class="el" href="stm32f1xx__ll__adc_8h_source.html">stm32f1xx_ll_adc.h</a>.</p>
 
@@ -111,8 +111,8 @@ The setting of these parameters by function <a class="el" href="group__ADC__LL__
       </table>
 </div>
 <div class="memdoc">
-<p>Set ADC group regular conversion data transfer: no transfer or transfer by DMA, and DMA requests mode. This parameter can be a value of <a class="el" href="group__ADC__LL__EC__REG__DMA__TRANSFER.html">ADC group regular - DMA transfer of ADC conversion data</a></p>
-<p>This feature can be modified afterwards using unitary function <a class="el" href="group__ADC__LL__EF__Configuration__ADC__Group__Regular.html#ga9b37d974442ef9d415338c3174a7b8e2">LL_ADC_REG_SetDMATransfer()</a>. </p>
+<p>Set ADC group regular conversion data transfer: no transfer or transfer by DMA, and DMA requests mode. This parameter can be a value of <a class="el" href="group/group__ADC__LL__EC__REG__DMA__TRANSFER.html">ADC group regular - DMA transfer of ADC conversion data</a></p>
+<p>This feature can be modified afterwards using unitary function <a class="el" href="group/group__ADC__LL__EF__Configuration__ADC__Group__Regular.html#ga9b37d974442ef9d415338c3174a7b8e2">LL_ADC_REG_SetDMATransfer()</a>. </p>
 
 <p>Definition at line <a class="el" href="stm32f1xx__ll__adc_8h_source.html#l00340">340</a> of file <a class="el" href="stm32f1xx__ll__adc_8h_source.html">stm32f1xx_ll_adc.h</a>.</p>
 
@@ -130,9 +130,9 @@ The setting of these parameters by function <a class="el" href="group__ADC__LL__
       </table>
 </div>
 <div class="memdoc">
-<p>Set ADC group regular sequencer discontinuous mode: sequence subdivided and scan conversions interrupted every selected number of ranks. This parameter can be a value of <a class="el" href="group__ADC__LL__EC__REG__SEQ__DISCONT__MODE.html">ADC group regular - Sequencer discontinuous mode</a> </p>
+<p>Set ADC group regular sequencer discontinuous mode: sequence subdivided and scan conversions interrupted every selected number of ranks. This parameter can be a value of <a class="el" href="group/group__ADC__LL__EC__REG__SEQ__DISCONT__MODE.html">ADC group regular - Sequencer discontinuous mode</a> </p>
 <dl class="note"><dt><b>Note:</b></dt><dd>This parameter has an effect only if group regular sequencer is enabled (scan length of 2 ranks or more).</dd></dl>
-<p>This feature can be modified afterwards using unitary function <a class="el" href="group__ADC__LL__EF__Configuration__ADC__Group__Regular.html#ga12a6e0ce4a5f8cf96c02307bbfa32e48">LL_ADC_REG_SetSequencerDiscont()</a>. </p>
+<p>This feature can be modified afterwards using unitary function <a class="el" href="group/group__ADC__LL__EF__Configuration__ADC__Group__Regular.html#ga12a6e0ce4a5f8cf96c02307bbfa32e48">LL_ADC_REG_SetSequencerDiscont()</a>. </p>
 
 <p>Definition at line <a class="el" href="stm32f1xx__ll__adc_8h_source.html#l00327">327</a> of file <a class="el" href="stm32f1xx__ll__adc_8h_source.html">stm32f1xx_ll_adc.h</a>.</p>
 
@@ -150,9 +150,9 @@ The setting of these parameters by function <a class="el" href="group__ADC__LL__
       </table>
 </div>
 <div class="memdoc">
-<p>Set ADC group regular sequencer length. This parameter can be a value of <a class="el" href="group__ADC__LL__EC__REG__SEQ__SCAN__LENGTH.html">ADC group regular - Sequencer scan length</a> </p>
+<p>Set ADC group regular sequencer length. This parameter can be a value of <a class="el" href="group/group__ADC__LL__EC__REG__SEQ__SCAN__LENGTH.html">ADC group regular - Sequencer scan length</a> </p>
 <dl class="note"><dt><b>Note:</b></dt><dd>This parameter is discarded if scan mode is disabled (refer to parameter 'ADC_SequencersScanMode').</dd></dl>
-<p>This feature can be modified afterwards using unitary function <a class="el" href="group__ADC__LL__EF__Configuration__ADC__Group__Regular.html#gaad2d56f5d16468ef4672cc9d24883a64">LL_ADC_REG_SetSequencerLength()</a>. </p>
+<p>This feature can be modified afterwards using unitary function <a class="el" href="group/group__ADC__LL__EF__Configuration__ADC__Group__Regular.html#gaad2d56f5d16468ef4672cc9d24883a64">LL_ADC_REG_SetSequencerLength()</a>. </p>
 
 <p>Definition at line <a class="el" href="stm32f1xx__ll__adc_8h_source.html#l00321">321</a> of file <a class="el" href="stm32f1xx__ll__adc_8h_source.html">stm32f1xx_ll_adc.h</a>.</p>
 
@@ -170,9 +170,9 @@ The setting of these parameters by function <a class="el" href="group__ADC__LL__
       </table>
 </div>
 <div class="memdoc">
-<p>Set ADC group regular conversion trigger source: internal (SW start) or from external IP (timer event, external interrupt line). This parameter can be a value of <a class="el" href="group__ADC__LL__EC__REG__TRIGGER__SOURCE.html">ADC group regular - Trigger source</a> </p>
+<p>Set ADC group regular conversion trigger source: internal (SW start) or from external IP (timer event, external interrupt line). This parameter can be a value of <a class="el" href="group/group__ADC__LL__EC__REG__TRIGGER__SOURCE.html">ADC group regular - Trigger source</a> </p>
 <dl class="note"><dt><b>Note:</b></dt><dd>On this STM32 serie, external trigger is set with trigger polarity: rising edge (only trigger polarity available on this STM32 serie).</dd></dl>
-<p>This feature can be modified afterwards using unitary function <a class="el" href="group__ADC__LL__EF__Configuration__ADC__Group__Regular.html#ga46331bb05afe971e9ad6b54efd5f07ee">LL_ADC_REG_SetTriggerSource()</a>. </p>
+<p>This feature can be modified afterwards using unitary function <a class="el" href="group/group__ADC__LL__EF__Configuration__ADC__Group__Regular.html#ga46331bb05afe971e9ad6b54efd5f07ee">LL_ADC_REG_SetTriggerSource()</a>. </p>
 
 <p>Definition at line <a class="el" href="stm32f1xx__ll__adc_8h_source.html#l00314">314</a> of file <a class="el" href="stm32f1xx__ll__adc_8h_source.html">stm32f1xx_ll_adc.h</a>.</p>
 

@@ -325,13 +325,13 @@
 <a name="l00258"></a>00258   (heth-&gt;Instance)-&gt;DMABMR |= ETH_DMABMR_SR;
 <a name="l00259"></a>00259 
 <a name="l00260"></a>00260   <span class="comment">/* Get tick */</span>
-<a name="l00261"></a>00261   tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l00261"></a>00261   tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l00262"></a>00262 
 <a name="l00263"></a>00263   <span class="comment">/* Wait for software reset */</span>
 <a name="l00264"></a>00264   <span class="keywordflow">while</span> (((heth-&gt;Instance)-&gt;DMABMR &amp; ETH_DMABMR_SR) != (uint32_t)RESET)
 <a name="l00265"></a>00265   {
 <a name="l00266"></a>00266     <span class="comment">/* Check for the Timeout */</span>
-<a name="l00267"></a>00267     <span class="keywordflow">if</span> ((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; ETH_TIMEOUT_SWRESET)
+<a name="l00267"></a>00267     <span class="keywordflow">if</span> ((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; ETH_TIMEOUT_SWRESET)
 <a name="l00268"></a>00268     {
 <a name="l00269"></a>00269       heth-&gt;State = HAL_ETH_STATE_TIMEOUT;
 <a name="l00270"></a>00270 
@@ -351,7 +351,7 @@
 <a name="l00284"></a>00284   tmpreg1 &amp;= ETH_MACMIIAR_CR_MASK;
 <a name="l00285"></a>00285 
 <a name="l00286"></a>00286   <span class="comment">/* Get hclk frequency value */</span>
-<a name="l00287"></a>00287   hclk = <a class="code" href="group__RCC__Exported__Functions__Group2.html#ga38d6c5c7a5d8758849912c9aa0a2156d" title="Returns the HCLK frequency.">HAL_RCC_GetHCLKFreq</a>();
+<a name="l00287"></a>00287   hclk = <a class="code" href="group/group__RCC__Exported__Functions__Group2.html#ga38d6c5c7a5d8758849912c9aa0a2156d" title="Returns the HCLK frequency.">HAL_RCC_GetHCLKFreq</a>();
 <a name="l00288"></a>00288 
 <a name="l00289"></a>00289   <span class="comment">/* Set CR bits depending on hclk value */</span>
 <a name="l00290"></a>00290   <span class="keywordflow">if</span> ((hclk &gt;= 20000000U) &amp;&amp; (hclk &lt; 35000000U))
@@ -391,12 +391,12 @@
 <a name="l00324"></a>00324   }
 <a name="l00325"></a>00325 
 <a name="l00326"></a>00326   <span class="comment">/* Delay to assure PHY reset */</span>
-<a name="l00327"></a>00327   <a class="code" href="group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(<a class="code" href="stm32f1xx__hal__conf_8h.html#a0ede6087f7b71403bcddb5d3a8f47ff4">PHY_RESET_DELAY</a>);
+<a name="l00327"></a>00327   <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(<a class="code" href="stm32f1xx__hal__conf_8h.html#a0ede6087f7b71403bcddb5d3a8f47ff4">PHY_RESET_DELAY</a>);
 <a name="l00328"></a>00328 
 <a name="l00329"></a>00329   <span class="keywordflow">if</span> ((heth-&gt;Init).AutoNegotiation != ETH_AUTONEGOTIATION_DISABLE)
 <a name="l00330"></a>00330   {
 <a name="l00331"></a>00331     <span class="comment">/* Get tick */</span>
-<a name="l00332"></a>00332     tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l00332"></a>00332     tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l00333"></a>00333 
 <a name="l00334"></a>00334     <span class="comment">/* We wait for linked status */</span>
 <a name="l00335"></a>00335     <span class="keywordflow">do</span>
@@ -404,7 +404,7 @@
 <a name="l00337"></a>00337       HAL_ETH_ReadPHYRegister(heth, <a class="code" href="stm32f1xx__hal__conf_8h.html#a4b8f2c29a9e74412395e1b1809666838">PHY_BSR</a>, &amp;phyreg);
 <a name="l00338"></a>00338 
 <a name="l00339"></a>00339       <span class="comment">/* Check for the Timeout */</span>
-<a name="l00340"></a>00340       <span class="keywordflow">if</span> ((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; ETH_TIMEOUT_LINKED_STATE)
+<a name="l00340"></a>00340       <span class="keywordflow">if</span> ((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; ETH_TIMEOUT_LINKED_STATE)
 <a name="l00341"></a>00341       {
 <a name="l00342"></a>00342         <span class="comment">/* In case of write timeout */</span>
 <a name="l00343"></a>00343         err = ETH_ERROR;
@@ -440,7 +440,7 @@
 <a name="l00373"></a>00373     }
 <a name="l00374"></a>00374 
 <a name="l00375"></a>00375     <span class="comment">/* Get tick */</span>
-<a name="l00376"></a>00376     tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l00376"></a>00376     tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l00377"></a>00377 
 <a name="l00378"></a>00378     <span class="comment">/* Wait until the auto-negotiation will be completed */</span>
 <a name="l00379"></a>00379     <span class="keywordflow">do</span>
@@ -448,7 +448,7 @@
 <a name="l00381"></a>00381       HAL_ETH_ReadPHYRegister(heth, <a class="code" href="stm32f1xx__hal__conf_8h.html#a4b8f2c29a9e74412395e1b1809666838">PHY_BSR</a>, &amp;phyreg);
 <a name="l00382"></a>00382 
 <a name="l00383"></a>00383       <span class="comment">/* Check for the Timeout */</span>
-<a name="l00384"></a>00384       <span class="keywordflow">if</span> ((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; ETH_TIMEOUT_AUTONEGO_COMPLETED)
+<a name="l00384"></a>00384       <span class="keywordflow">if</span> ((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; ETH_TIMEOUT_AUTONEGO_COMPLETED)
 <a name="l00385"></a>00385       {
 <a name="l00386"></a>00386         <span class="comment">/* In case of write timeout */</span>
 <a name="l00387"></a>00387         err = ETH_ERROR;
@@ -530,7 +530,7 @@
 <a name="l00463"></a>00463     }
 <a name="l00464"></a>00464 
 <a name="l00465"></a>00465     <span class="comment">/* Delay to assure PHY configuration */</span>
-<a name="l00466"></a>00466     <a class="code" href="group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(<a class="code" href="stm32f1xx__hal__conf_8h.html#abba7114255a2a41b81fdcb2a3702c270">PHY_CONFIG_DELAY</a>);
+<a name="l00466"></a>00466     <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(<a class="code" href="stm32f1xx__hal__conf_8h.html#abba7114255a2a41b81fdcb2a3702c270">PHY_CONFIG_DELAY</a>);
 <a name="l00467"></a>00467   }
 <a name="l00468"></a>00468 
 <a name="l00469"></a>00469   <span class="comment">/* Config MAC and DMA */</span>
@@ -1379,13 +1379,13 @@
 <a name="l01312"></a>01312   heth-&gt;Instance-&gt;MACMIIAR = tmpreg1;
 <a name="l01313"></a>01313 
 <a name="l01314"></a>01314   <span class="comment">/* Get tick */</span>
-<a name="l01315"></a>01315   tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l01315"></a>01315   tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l01316"></a>01316 
 <a name="l01317"></a>01317   <span class="comment">/* Check for the Busy flag */</span>
 <a name="l01318"></a>01318   <span class="keywordflow">while</span> ((tmpreg1 &amp; ETH_MACMIIAR_MB) == ETH_MACMIIAR_MB)
 <a name="l01319"></a>01319   {
 <a name="l01320"></a>01320     <span class="comment">/* Check for the Timeout */</span>
-<a name="l01321"></a>01321     <span class="keywordflow">if</span> ((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; <a class="code" href="stm32f1xx__hal__conf_8h.html#a9d356ada86535630c403690bef0fb887">PHY_READ_TO</a>)
+<a name="l01321"></a>01321     <span class="keywordflow">if</span> ((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; <a class="code" href="stm32f1xx__hal__conf_8h.html#a9d356ada86535630c403690bef0fb887">PHY_READ_TO</a>)
 <a name="l01322"></a>01322     {
 <a name="l01323"></a>01323       heth-&gt;State = HAL_ETH_STATE_READY;
 <a name="l01324"></a>01324 
@@ -1454,13 +1454,13 @@
 <a name="l01387"></a>01387   heth-&gt;Instance-&gt;MACMIIAR = tmpreg1;
 <a name="l01388"></a>01388 
 <a name="l01389"></a>01389   <span class="comment">/* Get tick */</span>
-<a name="l01390"></a>01390   tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l01390"></a>01390   tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l01391"></a>01391 
 <a name="l01392"></a>01392   <span class="comment">/* Check for the Busy flag */</span>
 <a name="l01393"></a>01393   <span class="keywordflow">while</span> ((tmpreg1 &amp; ETH_MACMIIAR_MB) == ETH_MACMIIAR_MB)
 <a name="l01394"></a>01394   {
 <a name="l01395"></a>01395     <span class="comment">/* Check for the Timeout */</span>
-<a name="l01396"></a>01396     <span class="keywordflow">if</span> ((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; <a class="code" href="stm32f1xx__hal__conf_8h.html#a474bf13e28d09b667e41b151140ee39d">PHY_WRITE_TO</a>)
+<a name="l01396"></a>01396     <span class="keywordflow">if</span> ((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; <a class="code" href="stm32f1xx__hal__conf_8h.html#a474bf13e28d09b667e41b151140ee39d">PHY_WRITE_TO</a>)
 <a name="l01397"></a>01397     {
 <a name="l01398"></a>01398       heth-&gt;State = HAL_ETH_STATE_READY;
 <a name="l01399"></a>01399 
@@ -1660,7 +1660,7 @@
 <a name="l01593"></a>01593     <span class="comment">/* Wait until the write operation will be taken into account :</span>
 <a name="l01594"></a>01594 <span class="comment">    at least four TX_CLK/RX_CLK clock cycles */</span>
 <a name="l01595"></a>01595     tmpreg1 = (heth-&gt;Instance)-&gt;MACCR;
-<a name="l01596"></a>01596     <a class="code" href="group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
+<a name="l01596"></a>01596     <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
 <a name="l01597"></a>01597     (heth-&gt;Instance)-&gt;MACCR = tmpreg1;
 <a name="l01598"></a>01598 
 <a name="l01599"></a>01599     <span class="comment">/*----------------------- ETHERNET MACFFR Configuration --------------------*/</span>
@@ -1677,7 +1677,7 @@
 <a name="l01610"></a>01610     <span class="comment">/* Wait until the write operation will be taken into account :</span>
 <a name="l01611"></a>01611 <span class="comment">    at least four TX_CLK/RX_CLK clock cycles */</span>
 <a name="l01612"></a>01612     tmpreg1 = (heth-&gt;Instance)-&gt;MACFFR;
-<a name="l01613"></a>01613     <a class="code" href="group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
+<a name="l01613"></a>01613     <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
 <a name="l01614"></a>01614     (heth-&gt;Instance)-&gt;MACFFR = tmpreg1;
 <a name="l01615"></a>01615 
 <a name="l01616"></a>01616     <span class="comment">/*--------------- ETHERNET MACHTHR and MACHTLR Configuration ---------------*/</span>
@@ -1706,7 +1706,7 @@
 <a name="l01639"></a>01639     <span class="comment">/* Wait until the write operation will be taken into account :</span>
 <a name="l01640"></a>01640 <span class="comment">    at least four TX_CLK/RX_CLK clock cycles */</span>
 <a name="l01641"></a>01641     tmpreg1 = (heth-&gt;Instance)-&gt;MACFCR;
-<a name="l01642"></a>01642     <a class="code" href="group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
+<a name="l01642"></a>01642     <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
 <a name="l01643"></a>01643     (heth-&gt;Instance)-&gt;MACFCR = tmpreg1;
 <a name="l01644"></a>01644 
 <a name="l01645"></a>01645     <span class="comment">/*----------------------- ETHERNET MACVLANTR Configuration -----------------*/</span>
@@ -1716,7 +1716,7 @@
 <a name="l01649"></a>01649     <span class="comment">/* Wait until the write operation will be taken into account :</span>
 <a name="l01650"></a>01650 <span class="comment">    at least four TX_CLK/RX_CLK clock cycles */</span>
 <a name="l01651"></a>01651     tmpreg1 = (heth-&gt;Instance)-&gt;MACVLANTR;
-<a name="l01652"></a>01652     <a class="code" href="group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
+<a name="l01652"></a>01652     <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
 <a name="l01653"></a>01653     (heth-&gt;Instance)-&gt;MACVLANTR = tmpreg1;
 <a name="l01654"></a>01654   }
 <a name="l01655"></a>01655   <span class="keywordflow">else</span> <span class="comment">/* macconf == NULL : here we just configure Speed and Duplex mode */</span>
@@ -1736,7 +1736,7 @@
 <a name="l01669"></a>01669     <span class="comment">/* Wait until the write operation will be taken into account:</span>
 <a name="l01670"></a>01670 <span class="comment">    at least four TX_CLK/RX_CLK clock cycles */</span>
 <a name="l01671"></a>01671     tmpreg1 = (heth-&gt;Instance)-&gt;MACCR;
-<a name="l01672"></a>01672     <a class="code" href="group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
+<a name="l01672"></a>01672     <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
 <a name="l01673"></a>01673     (heth-&gt;Instance)-&gt;MACCR = tmpreg1;
 <a name="l01674"></a>01674   }
 <a name="l01675"></a>01675 
@@ -1806,7 +1806,7 @@
 <a name="l01739"></a>01739   <span class="comment">/* Wait until the write operation will be taken into account:</span>
 <a name="l01740"></a>01740 <span class="comment">  at least four TX_CLK/RX_CLK clock cycles */</span>
 <a name="l01741"></a>01741   tmpreg1 = (heth-&gt;Instance)-&gt;DMAOMR;
-<a name="l01742"></a>01742   <a class="code" href="group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
+<a name="l01742"></a>01742   <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
 <a name="l01743"></a>01743   (heth-&gt;Instance)-&gt;DMAOMR = tmpreg1;
 <a name="l01744"></a>01744 
 <a name="l01745"></a>01745   <span class="comment">/*----------------------- ETHERNET DMABMR Configuration --------------------*/</span>
@@ -1821,7 +1821,7 @@
 <a name="l01754"></a>01754   <span class="comment">/* Wait until the write operation will be taken into account:</span>
 <a name="l01755"></a>01755 <span class="comment">     at least four TX_CLK/RX_CLK clock cycles */</span>
 <a name="l01756"></a>01756   tmpreg1 = (heth-&gt;Instance)-&gt;DMABMR;
-<a name="l01757"></a>01757   <a class="code" href="group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
+<a name="l01757"></a>01757   <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
 <a name="l01758"></a>01758   (heth-&gt;Instance)-&gt;DMABMR = tmpreg1;
 <a name="l01759"></a>01759 
 <a name="l01760"></a>01760   <span class="comment">/* Set the ETH state to Ready */</span>
@@ -1978,7 +1978,7 @@
 <a name="l01911"></a>01911   <span class="comment">/* Wait until the write operation will be taken into account:</span>
 <a name="l01912"></a>01912 <span class="comment">     at least four TX_CLK/RX_CLK clock cycles */</span>
 <a name="l01913"></a>01913   tmpreg1 = (heth-&gt;Instance)-&gt;MACCR;
-<a name="l01914"></a>01914   <a class="code" href="group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
+<a name="l01914"></a>01914   <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
 <a name="l01915"></a>01915   (heth-&gt;Instance)-&gt;MACCR = tmpreg1;
 <a name="l01916"></a>01916 
 <a name="l01917"></a>01917   <span class="comment">/*----------------------- ETHERNET MACFFR Configuration --------------------*/</span>
@@ -2003,7 +2003,7 @@
 <a name="l01936"></a>01936   <span class="comment">/* Wait until the write operation will be taken into account:</span>
 <a name="l01937"></a>01937 <span class="comment">     at least four TX_CLK/RX_CLK clock cycles */</span>
 <a name="l01938"></a>01938   tmpreg1 = (heth-&gt;Instance)-&gt;MACFFR;
-<a name="l01939"></a>01939   <a class="code" href="group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
+<a name="l01939"></a>01939   <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
 <a name="l01940"></a>01940   (heth-&gt;Instance)-&gt;MACFFR = tmpreg1;
 <a name="l01941"></a>01941 
 <a name="l01942"></a>01942   <span class="comment">/*--------------- ETHERNET MACHTHR and MACHTLR Configuration --------------*/</span>
@@ -2038,7 +2038,7 @@
 <a name="l01971"></a>01971   <span class="comment">/* Wait until the write operation will be taken into account:</span>
 <a name="l01972"></a>01972 <span class="comment">  at least four TX_CLK/RX_CLK clock cycles */</span>
 <a name="l01973"></a>01973   tmpreg1 = (heth-&gt;Instance)-&gt;MACFCR;
-<a name="l01974"></a>01974   <a class="code" href="group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
+<a name="l01974"></a>01974   <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
 <a name="l01975"></a>01975   (heth-&gt;Instance)-&gt;MACFCR = tmpreg1;
 <a name="l01976"></a>01976 
 <a name="l01977"></a>01977   <span class="comment">/*----------------------- ETHERNET MACVLANTR Configuration ----------------*/</span>
@@ -2050,7 +2050,7 @@
 <a name="l01983"></a>01983   <span class="comment">/* Wait until the write operation will be taken into account:</span>
 <a name="l01984"></a>01984 <span class="comment">     at least four TX_CLK/RX_CLK clock cycles */</span>
 <a name="l01985"></a>01985   tmpreg1 = (heth-&gt;Instance)-&gt;MACVLANTR;
-<a name="l01986"></a>01986   <a class="code" href="group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
+<a name="l01986"></a>01986   <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
 <a name="l01987"></a>01987   (heth-&gt;Instance)-&gt;MACVLANTR = tmpreg1;
 <a name="l01988"></a>01988 
 <a name="l01989"></a>01989   <span class="comment">/* Ethernet DMA default initialization ************************************/</span>
@@ -2100,7 +2100,7 @@
 <a name="l02033"></a>02033   <span class="comment">/* Wait until the write operation will be taken into account:</span>
 <a name="l02034"></a>02034 <span class="comment">     at least four TX_CLK/RX_CLK clock cycles */</span>
 <a name="l02035"></a>02035   tmpreg1 = (heth-&gt;Instance)-&gt;DMAOMR;
-<a name="l02036"></a>02036   <a class="code" href="group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
+<a name="l02036"></a>02036   <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
 <a name="l02037"></a>02037   (heth-&gt;Instance)-&gt;DMAOMR = tmpreg1;
 <a name="l02038"></a>02038 
 <a name="l02039"></a>02039   <span class="comment">/*----------------------- ETHERNET DMABMR Configuration ------------------*/</span>
@@ -2121,7 +2121,7 @@
 <a name="l02054"></a>02054   <span class="comment">/* Wait until the write operation will be taken into account:</span>
 <a name="l02055"></a>02055 <span class="comment">     at least four TX_CLK/RX_CLK clock cycles */</span>
 <a name="l02056"></a>02056   tmpreg1 = (heth-&gt;Instance)-&gt;DMABMR;
-<a name="l02057"></a>02057   <a class="code" href="group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
+<a name="l02057"></a>02057   <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gae63b34eea12780ca2e1100c2402da18e" title="This function provides minimum delay (in milliseconds) based on variable incremented.">HAL_Delay</a>(ETH_REG_WRITE_DELAY);
 <a name="l02058"></a>02058   (heth-&gt;Instance)-&gt;DMABMR = tmpreg1;
 <a name="l02059"></a>02059 
 <a name="l02060"></a>02060   <span class="keywordflow">if</span> ((heth-&gt;Init).RxMode == ETH_RXINTERRUPT_MODE)

@@ -401,12 +401,12 @@
 <a name="l00334"></a>00334   CLEAR_BIT(hcan-&gt;Instance-&gt;MCR, CAN_MCR_SLEEP);
 <a name="l00335"></a>00335 
 <a name="l00336"></a>00336   <span class="comment">/* Get tick */</span>
-<a name="l00337"></a>00337   tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l00337"></a>00337   tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l00338"></a>00338 
 <a name="l00339"></a>00339   <span class="comment">/* Check Sleep mode leave acknowledge */</span>
 <a name="l00340"></a>00340   <span class="keywordflow">while</span> ((hcan-&gt;Instance-&gt;MSR &amp; CAN_MSR_SLAK) != 0U)
 <a name="l00341"></a>00341   {
-<a name="l00342"></a>00342     <span class="keywordflow">if</span> ((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; CAN_TIMEOUT_VALUE)
+<a name="l00342"></a>00342     <span class="keywordflow">if</span> ((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; CAN_TIMEOUT_VALUE)
 <a name="l00343"></a>00343     {
 <a name="l00344"></a>00344       <span class="comment">/* Update error code */</span>
 <a name="l00345"></a>00345       hcan-&gt;ErrorCode |= HAL_CAN_ERROR_TIMEOUT;
@@ -422,12 +422,12 @@
 <a name="l00355"></a>00355   SET_BIT(hcan-&gt;Instance-&gt;MCR, CAN_MCR_INRQ);
 <a name="l00356"></a>00356 
 <a name="l00357"></a>00357   <span class="comment">/* Get tick */</span>
-<a name="l00358"></a>00358   tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l00358"></a>00358   tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l00359"></a>00359 
 <a name="l00360"></a>00360   <span class="comment">/* Wait initialisation acknowledge */</span>
 <a name="l00361"></a>00361   <span class="keywordflow">while</span> ((hcan-&gt;Instance-&gt;MSR &amp; CAN_MSR_INAK) == 0U)
 <a name="l00362"></a>00362   {
-<a name="l00363"></a>00363     <span class="keywordflow">if</span> ((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; CAN_TIMEOUT_VALUE)
+<a name="l00363"></a>00363     <span class="keywordflow">if</span> ((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; CAN_TIMEOUT_VALUE)
 <a name="l00364"></a>00364     {
 <a name="l00365"></a>00365       <span class="comment">/* Update error code */</span>
 <a name="l00366"></a>00366       hcan-&gt;ErrorCode |= HAL_CAN_ERROR_TIMEOUT;
@@ -1081,13 +1081,13 @@
 <a name="l01014"></a>01014     CLEAR_BIT(hcan-&gt;Instance-&gt;MCR, CAN_MCR_INRQ);
 <a name="l01015"></a>01015 
 <a name="l01016"></a>01016     <span class="comment">/* Get tick */</span>
-<a name="l01017"></a>01017     tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l01017"></a>01017     tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l01018"></a>01018 
 <a name="l01019"></a>01019     <span class="comment">/* Wait the acknowledge */</span>
 <a name="l01020"></a>01020     <span class="keywordflow">while</span> ((hcan-&gt;Instance-&gt;MSR &amp; CAN_MSR_INAK) != 0U)
 <a name="l01021"></a>01021     {
 <a name="l01022"></a>01022       <span class="comment">/* Check for the Timeout */</span>
-<a name="l01023"></a>01023       <span class="keywordflow">if</span> ((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; CAN_TIMEOUT_VALUE)
+<a name="l01023"></a>01023       <span class="keywordflow">if</span> ((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; CAN_TIMEOUT_VALUE)
 <a name="l01024"></a>01024       {
 <a name="l01025"></a>01025         <span class="comment">/* Update error code */</span>
 <a name="l01026"></a>01026         hcan-&gt;ErrorCode |= HAL_CAN_ERROR_TIMEOUT;
@@ -1130,13 +1130,13 @@
 <a name="l01063"></a>01063     SET_BIT(hcan-&gt;Instance-&gt;MCR, CAN_MCR_INRQ);
 <a name="l01064"></a>01064 
 <a name="l01065"></a>01065     <span class="comment">/* Get tick */</span>
-<a name="l01066"></a>01066     tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l01066"></a>01066     tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l01067"></a>01067 
 <a name="l01068"></a>01068     <span class="comment">/* Wait the acknowledge */</span>
 <a name="l01069"></a>01069     <span class="keywordflow">while</span> ((hcan-&gt;Instance-&gt;MSR &amp; CAN_MSR_INAK) == 0U)
 <a name="l01070"></a>01070     {
 <a name="l01071"></a>01071       <span class="comment">/* Check for the Timeout */</span>
-<a name="l01072"></a>01072       <span class="keywordflow">if</span> ((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; CAN_TIMEOUT_VALUE)
+<a name="l01072"></a>01072       <span class="keywordflow">if</span> ((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; CAN_TIMEOUT_VALUE)
 <a name="l01073"></a>01073       {
 <a name="l01074"></a>01074         <span class="comment">/* Update error code */</span>
 <a name="l01075"></a>01075         hcan-&gt;ErrorCode |= HAL_CAN_ERROR_TIMEOUT;

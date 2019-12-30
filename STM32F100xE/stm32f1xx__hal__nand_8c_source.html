@@ -694,12 +694,12 @@
 <a name="l00627"></a>00627       <span class="keywordflow">if</span> (hnand-&gt;Config.ExtraCommandEnable == ENABLE)
 <a name="l00628"></a>00628       {
 <a name="l00629"></a>00629         <span class="comment">/* Get tick */</span>
-<a name="l00630"></a>00630         tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l00630"></a>00630         tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l00631"></a>00631 
 <a name="l00632"></a>00632         <span class="comment">/* Read status until NAND is ready */</span>
 <a name="l00633"></a>00633         <span class="keywordflow">while</span> (HAL_NAND_Read_Status(hnand) != NAND_READY)
 <a name="l00634"></a>00634         {
-<a name="l00635"></a>00635           <span class="keywordflow">if</span> ((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; NAND_WRITE_TIMEOUT)
+<a name="l00635"></a>00635           <span class="keywordflow">if</span> ((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; NAND_WRITE_TIMEOUT)
 <a name="l00636"></a>00636           {
 <a name="l00637"></a>00637             <span class="comment">/* Update the NAND controller state */</span>
 <a name="l00638"></a>00638             hnand-&gt;State = HAL_NAND_STATE_ERROR;
@@ -854,12 +854,12 @@
 <a name="l00787"></a>00787       <span class="keywordflow">if</span> (hnand-&gt;Config.ExtraCommandEnable == ENABLE)
 <a name="l00788"></a>00788       {
 <a name="l00789"></a>00789         <span class="comment">/* Get tick */</span>
-<a name="l00790"></a>00790         tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l00790"></a>00790         tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l00791"></a>00791 
 <a name="l00792"></a>00792         <span class="comment">/* Read status until NAND is ready */</span>
 <a name="l00793"></a>00793         <span class="keywordflow">while</span> (HAL_NAND_Read_Status(hnand) != NAND_READY)
 <a name="l00794"></a>00794         {
-<a name="l00795"></a>00795           <span class="keywordflow">if</span> ((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; NAND_WRITE_TIMEOUT)
+<a name="l00795"></a>00795           <span class="keywordflow">if</span> ((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; NAND_WRITE_TIMEOUT)
 <a name="l00796"></a>00796           {
 <a name="l00797"></a>00797             <span class="comment">/* Update the NAND controller state */</span>
 <a name="l00798"></a>00798             hnand-&gt;State = HAL_NAND_STATE_ERROR;
@@ -1022,12 +1022,12 @@
 <a name="l00955"></a>00955       __DSB();
 <a name="l00956"></a>00956 
 <a name="l00957"></a>00957       <span class="comment">/* Get tick */</span>
-<a name="l00958"></a>00958       tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l00958"></a>00958       tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l00959"></a>00959 
 <a name="l00960"></a>00960       <span class="comment">/* Read status until NAND is ready */</span>
 <a name="l00961"></a>00961       <span class="keywordflow">while</span> (HAL_NAND_Read_Status(hnand) != NAND_READY)
 <a name="l00962"></a>00962       {
-<a name="l00963"></a>00963         <span class="keywordflow">if</span> ((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; NAND_WRITE_TIMEOUT)
+<a name="l00963"></a>00963         <span class="keywordflow">if</span> ((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; NAND_WRITE_TIMEOUT)
 <a name="l00964"></a>00964         {
 <a name="l00965"></a>00965           <span class="comment">/* Update the NAND controller state */</span>
 <a name="l00966"></a>00966           hnand-&gt;State = HAL_NAND_STATE_ERROR;
@@ -1178,12 +1178,12 @@
 <a name="l01111"></a>01111       __DSB();
 <a name="l01112"></a>01112 
 <a name="l01113"></a>01113       <span class="comment">/* Get tick */</span>
-<a name="l01114"></a>01114       tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l01114"></a>01114       tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l01115"></a>01115 
 <a name="l01116"></a>01116       <span class="comment">/* Read status until NAND is ready */</span>
 <a name="l01117"></a>01117       <span class="keywordflow">while</span> (HAL_NAND_Read_Status(hnand) != NAND_READY)
 <a name="l01118"></a>01118       {
-<a name="l01119"></a>01119         <span class="keywordflow">if</span> ((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; NAND_WRITE_TIMEOUT)
+<a name="l01119"></a>01119         <span class="keywordflow">if</span> ((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; NAND_WRITE_TIMEOUT)
 <a name="l01120"></a>01120         {
 <a name="l01121"></a>01121           <span class="comment">/* Update the NAND controller state */</span>
 <a name="l01122"></a>01122           hnand-&gt;State = HAL_NAND_STATE_ERROR;
@@ -1333,12 +1333,12 @@
 <a name="l01266"></a>01266       <span class="keywordflow">if</span> (hnand-&gt;Config.ExtraCommandEnable == ENABLE)
 <a name="l01267"></a>01267       {
 <a name="l01268"></a>01268         <span class="comment">/* Get tick */</span>
-<a name="l01269"></a>01269         tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l01269"></a>01269         tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l01270"></a>01270 
 <a name="l01271"></a>01271         <span class="comment">/* Read status until NAND is ready */</span>
 <a name="l01272"></a>01272         <span class="keywordflow">while</span> (HAL_NAND_Read_Status(hnand) != NAND_READY)
 <a name="l01273"></a>01273         {
-<a name="l01274"></a>01274           <span class="keywordflow">if</span> ((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; NAND_WRITE_TIMEOUT)
+<a name="l01274"></a>01274           <span class="keywordflow">if</span> ((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; NAND_WRITE_TIMEOUT)
 <a name="l01275"></a>01275           {
 <a name="l01276"></a>01276             <span class="comment">/* Update the NAND controller state */</span>
 <a name="l01277"></a>01277             hnand-&gt;State = HAL_NAND_STATE_ERROR;
@@ -1500,12 +1500,12 @@
 <a name="l01433"></a>01433       <span class="keywordflow">if</span> (hnand-&gt;Config.ExtraCommandEnable == ENABLE)
 <a name="l01434"></a>01434       {
 <a name="l01435"></a>01435         <span class="comment">/* Get tick */</span>
-<a name="l01436"></a>01436         tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l01436"></a>01436         tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l01437"></a>01437 
 <a name="l01438"></a>01438         <span class="comment">/* Read status until NAND is ready */</span>
 <a name="l01439"></a>01439         <span class="keywordflow">while</span> (HAL_NAND_Read_Status(hnand) != NAND_READY)
 <a name="l01440"></a>01440         {
-<a name="l01441"></a>01441           <span class="keywordflow">if</span> ((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; NAND_WRITE_TIMEOUT)
+<a name="l01441"></a>01441           <span class="keywordflow">if</span> ((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; NAND_WRITE_TIMEOUT)
 <a name="l01442"></a>01442           {
 <a name="l01443"></a>01443             <span class="comment">/* Update the NAND controller state */</span>
 <a name="l01444"></a>01444             hnand-&gt;State = HAL_NAND_STATE_ERROR;
@@ -1677,12 +1677,12 @@
 <a name="l01610"></a>01610       __DSB();
 <a name="l01611"></a>01611 
 <a name="l01612"></a>01612       <span class="comment">/* Get tick */</span>
-<a name="l01613"></a>01613       tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l01613"></a>01613       tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l01614"></a>01614 
 <a name="l01615"></a>01615       <span class="comment">/* Read status until NAND is ready */</span>
 <a name="l01616"></a>01616       <span class="keywordflow">while</span> (HAL_NAND_Read_Status(hnand) != NAND_READY)
 <a name="l01617"></a>01617       {
-<a name="l01618"></a>01618         <span class="keywordflow">if</span> ((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; NAND_WRITE_TIMEOUT)
+<a name="l01618"></a>01618         <span class="keywordflow">if</span> ((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; NAND_WRITE_TIMEOUT)
 <a name="l01619"></a>01619         {
 <a name="l01620"></a>01620           <span class="comment">/* Update the NAND controller state */</span>
 <a name="l01621"></a>01621           hnand-&gt;State = HAL_NAND_STATE_ERROR;
@@ -1842,12 +1842,12 @@
 <a name="l01775"></a>01775       __DSB();
 <a name="l01776"></a>01776 
 <a name="l01777"></a>01777       <span class="comment">/* Get tick */</span>
-<a name="l01778"></a>01778       tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l01778"></a>01778       tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l01779"></a>01779 
 <a name="l01780"></a>01780       <span class="comment">/* Read status until NAND is ready */</span>
 <a name="l01781"></a>01781       <span class="keywordflow">while</span> (HAL_NAND_Read_Status(hnand) != NAND_READY)
 <a name="l01782"></a>01782       {
-<a name="l01783"></a>01783         <span class="keywordflow">if</span> ((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; NAND_WRITE_TIMEOUT)
+<a name="l01783"></a>01783         <span class="keywordflow">if</span> ((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt; NAND_WRITE_TIMEOUT)
 <a name="l01784"></a>01784         {
 <a name="l01785"></a>01785           <span class="comment">/* Update the NAND controller state */</span>
 <a name="l01786"></a>01786           hnand-&gt;State = HAL_NAND_STATE_ERROR;

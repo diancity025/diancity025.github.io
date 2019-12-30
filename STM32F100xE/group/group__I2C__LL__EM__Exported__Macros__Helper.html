@@ -51,28 +51,28 @@
 <a href="#define-members">Defines</a>  </div>
   <div class="headertitle">
 <div class="title">Exported_Macros_Helper</div>  </div>
-<div class="ingroups"><a class="el" href="group__I2C__LL__Exported__Macros.html">I2C Exported Macros</a></div></div><!--header-->
+<div class="ingroups"><a class="el" href="group/group__I2C__LL__Exported__Macros.html">I2C Exported Macros</a></div></div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__I2C__LL__EM__Exported__Macros__Helper.html#gad071134e1b8c2d8f4a3c7a0e22119e01">__LL_I2C_FREQ_HZ_TO_MHZ</a>(__PCLK__)&#160;&#160;&#160;(uint32_t)((__PCLK__)/1000000U)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__I2C__LL__EM__Exported__Macros__Helper.html#gad071134e1b8c2d8f4a3c7a0e22119e01">__LL_I2C_FREQ_HZ_TO_MHZ</a>(__PCLK__)&#160;&#160;&#160;(uint32_t)((__PCLK__)/1000000U)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert Peripheral Clock Frequency in Mhz.  <a href="#gad071134e1b8c2d8f4a3c7a0e22119e01"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__I2C__LL__EM__Exported__Macros__Helper.html#ga9dcac320f2c5915813d8cc25bab90b4c">__LL_I2C_FREQ_MHZ_TO_HZ</a>(__PCLK__)&#160;&#160;&#160;(uint32_t)((__PCLK__)*1000000U)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__I2C__LL__EM__Exported__Macros__Helper.html#ga9dcac320f2c5915813d8cc25bab90b4c">__LL_I2C_FREQ_MHZ_TO_HZ</a>(__PCLK__)&#160;&#160;&#160;(uint32_t)((__PCLK__)*1000000U)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert Peripheral Clock Frequency in Hz.  <a href="#ga9dcac320f2c5915813d8cc25bab90b4c"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__I2C__LL__EM__Exported__Macros__Helper.html#gaf27c31a58fe8d160b31df4bc204c3dff">__LL_I2C_RISE_TIME</a>(__FREQRANGE__, __SPEED__)&#160;&#160;&#160;(uint32_t)(((__SPEED__) &lt;= <a class="el" href="group__I2C__LL__Private__Constants.html#ga7d17f559e4a014de10d94fdb2685711e">LL_I2C_MAX_SPEED_STANDARD</a>) ? ((__FREQRANGE__) + 1U) : ((((__FREQRANGE__) * 300U) / 1000U) + 1U))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__I2C__LL__EM__Exported__Macros__Helper.html#gaf27c31a58fe8d160b31df4bc204c3dff">__LL_I2C_RISE_TIME</a>(__FREQRANGE__, __SPEED__)&#160;&#160;&#160;(uint32_t)(((__SPEED__) &lt;= <a class="el" href="group/group__I2C__LL__Private__Constants.html#ga7d17f559e4a014de10d94fdb2685711e">LL_I2C_MAX_SPEED_STANDARD</a>) ? ((__FREQRANGE__) + 1U) : ((((__FREQRANGE__) * 300U) / 1000U) + 1U))</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute I2C Clock rising time.  <a href="#gaf27c31a58fe8d160b31df4bc204c3dff"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__I2C__LL__EM__Exported__Macros__Helper.html#ga883a8e21fd9bba9f57a546359f2061bd">__LL_I2C_SPEED_TO_CCR</a>(__PCLK__, __SPEED__, __DUTYCYCLE__)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__I2C__LL__EM__Exported__Macros__Helper.html#ga883a8e21fd9bba9f57a546359f2061bd">__LL_I2C_SPEED_TO_CCR</a>(__PCLK__, __SPEED__, __DUTYCYCLE__)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute Speed clock range to a Clock Control Register (I2C_CCR_CCR) value.  <a href="#ga883a8e21fd9bba9f57a546359f2061bd"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__I2C__LL__EM__Exported__Macros__Helper.html#ga5665e4f2a57a0373abb1007fcbfd85cb">__LL_I2C_SPEED_STANDARD_TO_CCR</a>(__PCLK__, __SPEED__)&#160;&#160;&#160;(uint32_t)(((((__PCLK__)/((__SPEED__) &lt;&lt; 1U)) &amp; I2C_CCR_CCR) &lt; 4U)? 4U:((__PCLK__) / ((__SPEED__) &lt;&lt; 1U)))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__I2C__LL__EM__Exported__Macros__Helper.html#ga5665e4f2a57a0373abb1007fcbfd85cb">__LL_I2C_SPEED_STANDARD_TO_CCR</a>(__PCLK__, __SPEED__)&#160;&#160;&#160;(uint32_t)(((((__PCLK__)/((__SPEED__) &lt;&lt; 1U)) &amp; I2C_CCR_CCR) &lt; 4U)? 4U:((__PCLK__) / ((__SPEED__) &lt;&lt; 1U)))</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute Speed Standard clock range to a Clock Control Register (I2C_CCR_CCR) value.  <a href="#ga5665e4f2a57a0373abb1007fcbfd85cb"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__I2C__LL__EM__Exported__Macros__Helper.html#gac63dad5d7c229ec43eb5c8e1cf2821af">__LL_I2C_SPEED_FAST_TO_CCR</a>(__PCLK__, __SPEED__, __DUTYCYCLE__)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__I2C__LL__EM__Exported__Macros__Helper.html#gac63dad5d7c229ec43eb5c8e1cf2821af">__LL_I2C_SPEED_FAST_TO_CCR</a>(__PCLK__, __SPEED__, __DUTYCYCLE__)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute Speed Fast clock range to a Clock Control Register (I2C_CCR_CCR) value.  <a href="#gac63dad5d7c229ec43eb5c8e1cf2821af"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__I2C__LL__EM__Exported__Macros__Helper.html#ga630da736ba7165e3f8ce00058d67465b">__LL_I2C_10BIT_ADDRESS</a>(__ADDRESS__)&#160;&#160;&#160;((uint8_t)((uint16_t)((__ADDRESS__) &amp; (uint16_t)(0x00FF))))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__I2C__LL__EM__Exported__Macros__Helper.html#ga630da736ba7165e3f8ce00058d67465b">__LL_I2C_10BIT_ADDRESS</a>(__ADDRESS__)&#160;&#160;&#160;((uint8_t)((uint16_t)((__ADDRESS__) &amp; (uint16_t)(0x00FF))))</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Least significant bits of a 10-Bits address.  <a href="#ga630da736ba7165e3f8ce00058d67465b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__I2C__LL__EM__Exported__Macros__Helper.html#ga6d2d4407a1affe4b4536d993d6316921">__LL_I2C_10BIT_HEADER_WRITE</a>(__ADDRESS__)&#160;&#160;&#160;((uint8_t)((uint16_t)((uint16_t)(((uint16_t)((__ADDRESS__) &amp; (uint16_t)(0x0300))) &gt;&gt; 7) | (uint16_t)(0xF0))))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__I2C__LL__EM__Exported__Macros__Helper.html#ga6d2d4407a1affe4b4536d993d6316921">__LL_I2C_10BIT_HEADER_WRITE</a>(__ADDRESS__)&#160;&#160;&#160;((uint8_t)((uint16_t)((uint16_t)(((uint16_t)((__ADDRESS__) &amp; (uint16_t)(0x0300))) &gt;&gt; 7) | (uint16_t)(0xF0))))</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a 10-Bits address to a 10-Bits header with Write direction.  <a href="#ga6d2d4407a1affe4b4536d993d6316921"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__I2C__LL__EM__Exported__Macros__Helper.html#ga39c1bfe2ae81b8beff9179fb3dda9dcd">__LL_I2C_10BIT_HEADER_READ</a>(__ADDRESS__)&#160;&#160;&#160;((uint8_t)((uint16_t)((uint16_t)(((uint16_t)((__ADDRESS__) &amp; (uint16_t)(0x0300))) &gt;&gt; 7) | (uint16_t)(0xF1))))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__I2C__LL__EM__Exported__Macros__Helper.html#ga39c1bfe2ae81b8beff9179fb3dda9dcd">__LL_I2C_10BIT_HEADER_READ</a>(__ADDRESS__)&#160;&#160;&#160;((uint8_t)((uint16_t)((uint16_t)(((uint16_t)((__ADDRESS__) &amp; (uint16_t)(0x0300))) &gt;&gt; 7) | (uint16_t)(0xF1))))</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a 10-Bits address to a 10-Bits header with Read direction.  <a href="#ga39c1bfe2ae81b8beff9179fb3dda9dcd"></a><br/></td></tr>
 </table>
 <hr/><h2>Define Documentation</h2>
@@ -81,7 +81,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__I2C__LL__EM__Exported__Macros__Helper.html#ga630da736ba7165e3f8ce00058d67465b">__LL_I2C_10BIT_ADDRESS</a></td>
+          <td class="memname">#define <a class="el" href="group/group__I2C__LL__EM__Exported__Macros__Helper.html#ga630da736ba7165e3f8ce00058d67465b">__LL_I2C_10BIT_ADDRESS</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__ADDRESS__</td><td>)</td>
@@ -114,7 +114,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__I2C__LL__EM__Exported__Macros__Helper.html#ga39c1bfe2ae81b8beff9179fb3dda9dcd">__LL_I2C_10BIT_HEADER_READ</a></td>
+          <td class="memname">#define <a class="el" href="group/group__I2C__LL__EM__Exported__Macros__Helper.html#ga39c1bfe2ae81b8beff9179fb3dda9dcd">__LL_I2C_10BIT_HEADER_READ</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__ADDRESS__</td><td>)</td>
@@ -147,7 +147,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__I2C__LL__EM__Exported__Macros__Helper.html#ga6d2d4407a1affe4b4536d993d6316921">__LL_I2C_10BIT_HEADER_WRITE</a></td>
+          <td class="memname">#define <a class="el" href="group/group__I2C__LL__EM__Exported__Macros__Helper.html#ga6d2d4407a1affe4b4536d993d6316921">__LL_I2C_10BIT_HEADER_WRITE</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__ADDRESS__</td><td>)</td>
@@ -180,7 +180,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__I2C__LL__EM__Exported__Macros__Helper.html#gad071134e1b8c2d8f4a3c7a0e22119e01">__LL_I2C_FREQ_HZ_TO_MHZ</a></td>
+          <td class="memname">#define <a class="el" href="group/group__I2C__LL__EM__Exported__Macros__Helper.html#gad071134e1b8c2d8f4a3c7a0e22119e01">__LL_I2C_FREQ_HZ_TO_MHZ</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__PCLK__</td><td>)</td>
@@ -215,7 +215,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__I2C__LL__EM__Exported__Macros__Helper.html#ga9dcac320f2c5915813d8cc25bab90b4c">__LL_I2C_FREQ_MHZ_TO_HZ</a></td>
+          <td class="memname">#define <a class="el" href="group/group__I2C__LL__EM__Exported__Macros__Helper.html#ga9dcac320f2c5915813d8cc25bab90b4c">__LL_I2C_FREQ_MHZ_TO_HZ</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__PCLK__</td><td>)</td>
@@ -250,7 +250,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__I2C__LL__EM__Exported__Macros__Helper.html#gaf27c31a58fe8d160b31df4bc204c3dff">__LL_I2C_RISE_TIME</a></td>
+          <td class="memname">#define <a class="el" href="group/group__I2C__LL__EM__Exported__Macros__Helper.html#gaf27c31a58fe8d160b31df4bc204c3dff">__LL_I2C_RISE_TIME</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__FREQRANGE__, </td>
@@ -264,7 +264,7 @@ Defines</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(uint32_t)(((__SPEED__) &lt;= <a class="el" href="group__I2C__LL__Private__Constants.html#ga7d17f559e4a014de10d94fdb2685711e">LL_I2C_MAX_SPEED_STANDARD</a>) ? ((__FREQRANGE__) + 1U) : ((((__FREQRANGE__) * 300U) / 1000U) + 1U))</td>
+          <td></td><td>&#160;&#160;&#160;(uint32_t)(((__SPEED__) &lt;= <a class="el" href="group/group__I2C__LL__Private__Constants.html#ga7d17f559e4a014de10d94fdb2685711e">LL_I2C_MAX_SPEED_STANDARD</a>) ? ((__FREQRANGE__) + 1U) : ((((__FREQRANGE__) * 300U) / 1000U) + 1U))</td>
         </tr>
       </table>
 </div>
@@ -296,7 +296,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__I2C__LL__EM__Exported__Macros__Helper.html#gac63dad5d7c229ec43eb5c8e1cf2821af">__LL_I2C_SPEED_FAST_TO_CCR</a></td>
+          <td class="memname">#define <a class="el" href="group/group__I2C__LL__EM__Exported__Macros__Helper.html#gac63dad5d7c229ec43eb5c8e1cf2821af">__LL_I2C_SPEED_FAST_TO_CCR</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__PCLK__, </td>
@@ -321,7 +321,7 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(uint32_t)(((__DUTYCYCLE__) == <a class="code" href="group__I2C__LL__EC__DUTYCYCLE.html#ga13e2ca4d6bb9a065cb1ebd9c5ddb78eb">LL_I2C_DUTYCYCLE_2</a>)? \
+<b>Value:</b><div class="fragment"><pre class="fragment">(uint32_t)(((__DUTYCYCLE__) == <a class="code" href="group/group__I2C__LL__EC__DUTYCYCLE.html#ga13e2ca4d6bb9a065cb1ebd9c5ddb78eb">LL_I2C_DUTYCYCLE_2</a>)? \
                                                                             (((((__PCLK__) / ((__SPEED__) * 3U)) &amp; I2C_CCR_CCR) == 0U)? 1U:((__PCLK__) / ((__SPEED__) * 3U))) : \
                                                                             (((((__PCLK__) / ((__SPEED__) * 25U)) &amp; I2C_CCR_CCR) == 0U)? 1U:((__PCLK__) / ((__SPEED__) * 25U))))
 </pre></div>
@@ -331,8 +331,8 @@ Defines</h2></td></tr>
     <tr><td class="paramname">__PCLK__</td><td>This parameter must be a value of peripheral clock (in Hz). </td></tr>
     <tr><td class="paramname">__SPEED__</td><td>This parameter must be a value between Min_Data=100Khz and Max_Data=400Khz (in Hz). </td></tr>
     <tr><td class="paramname">__DUTYCYCLE__</td><td>This parameter can be one of the following values: <ul>
-<li><a class="el" href="group__I2C__LL__EC__DUTYCYCLE.html#ga13e2ca4d6bb9a065cb1ebd9c5ddb78eb">LL_I2C_DUTYCYCLE_2</a> </li>
-<li><a class="el" href="group__I2C__LL__EC__DUTYCYCLE.html#gaef023a2e538e7f3608dd387b7099997a">LL_I2C_DUTYCYCLE_16_9</a> </li>
+<li><a class="el" href="group/group__I2C__LL__EC__DUTYCYCLE.html#ga13e2ca4d6bb9a065cb1ebd9c5ddb78eb">LL_I2C_DUTYCYCLE_2</a> </li>
+<li><a class="el" href="group/group__I2C__LL__EC__DUTYCYCLE.html#gaef023a2e538e7f3608dd387b7099997a">LL_I2C_DUTYCYCLE_16_9</a> </li>
 </ul>
 </td></tr>
   </table>
@@ -354,7 +354,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__I2C__LL__EM__Exported__Macros__Helper.html#ga5665e4f2a57a0373abb1007fcbfd85cb">__LL_I2C_SPEED_STANDARD_TO_CCR</a></td>
+          <td class="memname">#define <a class="el" href="group/group__I2C__LL__EM__Exported__Macros__Helper.html#ga5665e4f2a57a0373abb1007fcbfd85cb">__LL_I2C_SPEED_STANDARD_TO_CCR</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__PCLK__, </td>
@@ -398,7 +398,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__I2C__LL__EM__Exported__Macros__Helper.html#ga883a8e21fd9bba9f57a546359f2061bd">__LL_I2C_SPEED_TO_CCR</a></td>
+          <td class="memname">#define <a class="el" href="group/group__I2C__LL__EM__Exported__Macros__Helper.html#ga883a8e21fd9bba9f57a546359f2061bd">__LL_I2C_SPEED_TO_CCR</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__PCLK__, </td>
@@ -423,9 +423,9 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(uint32_t)(((__SPEED__) &lt;= <a class="code" href="group__I2C__LL__Private__Constants.html#ga7d17f559e4a014de10d94fdb2685711e">LL_I2C_MAX_SPEED_STANDARD</a>)? \
-                                                                                  (<a class="code" href="group__I2C__LL__EM__Exported__Macros__Helper.html#ga5665e4f2a57a0373abb1007fcbfd85cb" title="Compute Speed Standard clock range to a Clock Control Register (I2C_CCR_CCR) value.">__LL_I2C_SPEED_STANDARD_TO_CCR</a>((__PCLK__), (__SPEED__))) : \
-                                                                                  (<a class="code" href="group__I2C__LL__EM__Exported__Macros__Helper.html#gac63dad5d7c229ec43eb5c8e1cf2821af" title="Compute Speed Fast clock range to a Clock Control Register (I2C_CCR_CCR) value.">__LL_I2C_SPEED_FAST_TO_CCR</a>((__PCLK__), (__SPEED__), (__DUTYCYCLE__))))
+<b>Value:</b><div class="fragment"><pre class="fragment">(uint32_t)(((__SPEED__) &lt;= <a class="code" href="group/group__I2C__LL__Private__Constants.html#ga7d17f559e4a014de10d94fdb2685711e">LL_I2C_MAX_SPEED_STANDARD</a>)? \
+                                                                                  (<a class="code" href="group/group__I2C__LL__EM__Exported__Macros__Helper.html#ga5665e4f2a57a0373abb1007fcbfd85cb" title="Compute Speed Standard clock range to a Clock Control Register (I2C_CCR_CCR) value.">__LL_I2C_SPEED_STANDARD_TO_CCR</a>((__PCLK__), (__SPEED__))) : \
+                                                                                  (<a class="code" href="group/group__I2C__LL__EM__Exported__Macros__Helper.html#gac63dad5d7c229ec43eb5c8e1cf2821af" title="Compute Speed Fast clock range to a Clock Control Register (I2C_CCR_CCR) value.">__LL_I2C_SPEED_FAST_TO_CCR</a>((__PCLK__), (__SPEED__), (__DUTYCYCLE__))))
 </pre></div>
 <p>Compute Speed clock range to a Clock Control Register (I2C_CCR_CCR) value. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
@@ -433,8 +433,8 @@ Defines</h2></td></tr>
     <tr><td class="paramname">__PCLK__</td><td>This parameter must be a value of peripheral clock (in Hz). </td></tr>
     <tr><td class="paramname">__SPEED__</td><td>This parameter must be a value lower than 400kHz (in Hz). </td></tr>
     <tr><td class="paramname">__DUTYCYCLE__</td><td>This parameter can be one of the following values: <ul>
-<li><a class="el" href="group__I2C__LL__EC__DUTYCYCLE.html#ga13e2ca4d6bb9a065cb1ebd9c5ddb78eb">LL_I2C_DUTYCYCLE_2</a> </li>
-<li><a class="el" href="group__I2C__LL__EC__DUTYCYCLE.html#gaef023a2e538e7f3608dd387b7099997a">LL_I2C_DUTYCYCLE_16_9</a> </li>
+<li><a class="el" href="group/group__I2C__LL__EC__DUTYCYCLE.html#ga13e2ca4d6bb9a065cb1ebd9c5ddb78eb">LL_I2C_DUTYCYCLE_2</a> </li>
+<li><a class="el" href="group/group__I2C__LL__EC__DUTYCYCLE.html#gaef023a2e538e7f3608dd387b7099997a">LL_I2C_DUTYCYCLE_16_9</a> </li>
 </ul>
 </td></tr>
   </table>

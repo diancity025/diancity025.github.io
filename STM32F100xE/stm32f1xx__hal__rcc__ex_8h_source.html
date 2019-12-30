@@ -122,7 +122,7 @@
 <a name="l00055"></a>00055 <span class="preprocessor">#endif </span><span class="comment">/* STM32F105xC || STM32F107xC */</span>
 <a name="l00056"></a>00056 
 <a name="l00057"></a>00057 
-<a name="l00058"></a><a class="code" href="group__RCCEx__Private__Constants.html#ga56feb1abcd35b22427fa55164c585afa">00058</a> <span class="preprocessor">#define CR_REG_INDEX                 ((uint8_t)1)    </span>
+<a name="l00058"></a><a class="code" href="group/group__RCCEx__Private__Constants.html#ga56feb1abcd35b22427fa55164c585afa">00058</a> <span class="preprocessor">#define CR_REG_INDEX                 ((uint8_t)1)    </span>
 <a name="l00059"></a>00059 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00060"></a>00060 <span class="comment">/**</span>
 <a name="l00061"></a>00061 <span class="comment">  * @}</span>
@@ -139,7 +139,7 @@
 <a name="l00072"></a>00072 
 <a name="l00073"></a>00073 <span class="preprocessor">#if defined(STM32F105xC) || defined(STM32F107xC) || defined(STM32F100xB)\</span>
 <a name="l00074"></a>00074 <span class="preprocessor"> || defined(STM32F100xE)</span>
-<a name="l00075"></a><a class="code" href="group__RCCEx__Private__Macros.html#gac11d788cab2ff6f84e2cab45da43c5d4">00075</a> <span class="preprocessor"></span><span class="preprocessor">#define IS_RCC_HSE_PREDIV(__DIV__) (((__DIV__) == RCC_HSE_PREDIV_DIV1)  || ((__DIV__) == RCC_HSE_PREDIV_DIV2)  || \</span>
+<a name="l00075"></a><a class="code" href="group/group__RCCEx__Private__Macros.html#gac11d788cab2ff6f84e2cab45da43c5d4">00075</a> <span class="preprocessor"></span><span class="preprocessor">#define IS_RCC_HSE_PREDIV(__DIV__) (((__DIV__) == RCC_HSE_PREDIV_DIV1)  || ((__DIV__) == RCC_HSE_PREDIV_DIV2)  || \</span>
 <a name="l00076"></a>00076 <span class="preprocessor">                                    ((__DIV__) == RCC_HSE_PREDIV_DIV3)  || ((__DIV__) == RCC_HSE_PREDIV_DIV4)  || \</span>
 <a name="l00077"></a>00077 <span class="preprocessor">                                    ((__DIV__) == RCC_HSE_PREDIV_DIV5)  || ((__DIV__) == RCC_HSE_PREDIV_DIV6)  || \</span>
 <a name="l00078"></a>00078 <span class="preprocessor">                                    ((__DIV__) == RCC_HSE_PREDIV_DIV7)  || ((__DIV__) == RCC_HSE_PREDIV_DIV8)  || \</span>
@@ -165,7 +165,7 @@
 <a name="l00098"></a>00098 <span class="preprocessor">                                    || ((__SOURCE__) == RCC_MCO1SOURCE_NOCLOCK))</span>
 <a name="l00099"></a>00099 <span class="preprocessor"></span>
 <a name="l00100"></a>00100 <span class="preprocessor">#else</span>
-<a name="l00101"></a><a class="code" href="group__RCCEx__Private__Macros.html#gaaa87e62aba8556651b5d09e2f7ec4db5">00101</a> <span class="preprocessor"></span><span class="preprocessor">#define IS_RCC_PLL_MUL(__MUL__) (((__MUL__) == RCC_PLL_MUL2)  || ((__MUL__) == RCC_PLL_MUL3)  || \</span>
+<a name="l00101"></a><a class="code" href="group/group__RCCEx__Private__Macros.html#gaaa87e62aba8556651b5d09e2f7ec4db5">00101</a> <span class="preprocessor"></span><span class="preprocessor">#define IS_RCC_PLL_MUL(__MUL__) (((__MUL__) == RCC_PLL_MUL2)  || ((__MUL__) == RCC_PLL_MUL3)  || \</span>
 <a name="l00102"></a>00102 <span class="preprocessor">                                 ((__MUL__) == RCC_PLL_MUL4)  || ((__MUL__) == RCC_PLL_MUL5)  || \</span>
 <a name="l00103"></a>00103 <span class="preprocessor">                                 ((__MUL__) == RCC_PLL_MUL6)  || ((__MUL__) == RCC_PLL_MUL7)  || \</span>
 <a name="l00104"></a>00104 <span class="preprocessor">                                 ((__MUL__) == RCC_PLL_MUL8)  || ((__MUL__) == RCC_PLL_MUL9)  || \</span>
@@ -174,13 +174,13 @@
 <a name="l00107"></a>00107 <span class="preprocessor">                                 ((__MUL__) == RCC_PLL_MUL14) || ((__MUL__) == RCC_PLL_MUL15) || \</span>
 <a name="l00108"></a>00108 <span class="preprocessor">                                 ((__MUL__) == RCC_PLL_MUL16))</span>
 <a name="l00109"></a>00109 <span class="preprocessor"></span>
-<a name="l00110"></a><a class="code" href="group__RCCEx__Private__Macros.html#ga17690472f266a032db5324907a0ddc31">00110</a> <span class="preprocessor">#define IS_RCC_MCO1SOURCE(__SOURCE__) (((__SOURCE__) == RCC_MCO1SOURCE_SYSCLK)  || ((__SOURCE__) == RCC_MCO1SOURCE_HSI) \</span>
+<a name="l00110"></a><a class="code" href="group/group__RCCEx__Private__Macros.html#ga17690472f266a032db5324907a0ddc31">00110</a> <span class="preprocessor">#define IS_RCC_MCO1SOURCE(__SOURCE__) (((__SOURCE__) == RCC_MCO1SOURCE_SYSCLK)  || ((__SOURCE__) == RCC_MCO1SOURCE_HSI) \</span>
 <a name="l00111"></a>00111 <span class="preprocessor">                                    || ((__SOURCE__) == RCC_MCO1SOURCE_HSE)     || ((__SOURCE__) == RCC_MCO1SOURCE_PLLCLK) \</span>
 <a name="l00112"></a>00112 <span class="preprocessor">                                    || ((__SOURCE__) == RCC_MCO1SOURCE_NOCLOCK))</span>
 <a name="l00113"></a>00113 <span class="preprocessor"></span>
 <a name="l00114"></a>00114 <span class="preprocessor">#endif </span><span class="comment">/* STM32F105xC || STM32F107xC*/</span>
 <a name="l00115"></a>00115 
-<a name="l00116"></a><a class="code" href="group__RCCEx__Private__Macros.html#ga755487c23148a5a52184ff6dc796c1d1">00116</a> <span class="preprocessor">#define IS_RCC_ADCPLLCLK_DIV(__ADCCLK__) (((__ADCCLK__) == RCC_ADCPCLK2_DIV2)  || ((__ADCCLK__) == RCC_ADCPCLK2_DIV4)   || \</span>
+<a name="l00116"></a><a class="code" href="group/group__RCCEx__Private__Macros.html#ga755487c23148a5a52184ff6dc796c1d1">00116</a> <span class="preprocessor">#define IS_RCC_ADCPLLCLK_DIV(__ADCCLK__) (((__ADCCLK__) == RCC_ADCPCLK2_DIV2)  || ((__ADCCLK__) == RCC_ADCPCLK2_DIV4)   || \</span>
 <a name="l00117"></a>00117 <span class="preprocessor">                                          ((__ADCCLK__) == RCC_ADCPCLK2_DIV6)  || ((__ADCCLK__) == RCC_ADCPCLK2_DIV8))</span>
 <a name="l00118"></a>00118 <span class="preprocessor"></span>
 <a name="l00119"></a>00119 <span class="preprocessor">#if defined(STM32F105xC) || defined(STM32F107xC)</span>
@@ -245,7 +245,7 @@
 <a name="l00178"></a>00178 <span class="preprocessor"></span>
 <a name="l00179"></a>00179 <span class="preprocessor">#else</span>
 <a name="l00180"></a>00180 <span class="preprocessor"></span>
-<a name="l00181"></a><a class="code" href="group__RCCEx__Private__Macros.html#ga7ef5298a4d0e7b186c4a4e5471987084">00181</a> <span class="preprocessor">#define IS_RCC_PERIPHCLOCK(__SELECTION__)  \</span>
+<a name="l00181"></a><a class="code" href="group/group__RCCEx__Private__Macros.html#ga7ef5298a4d0e7b186c4a4e5471987084">00181</a> <span class="preprocessor">#define IS_RCC_PERIPHCLOCK(__SELECTION__)  \</span>
 <a name="l00182"></a>00182 <span class="preprocessor">               ((((__SELECTION__) &amp; RCC_PERIPHCLK_RTC)  == RCC_PERIPHCLK_RTC)  || \</span>
 <a name="l00183"></a>00183 <span class="preprocessor">                (((__SELECTION__) &amp; RCC_PERIPHCLK_ADC)  == RCC_PERIPHCLK_ADC))</span>
 <a name="l00184"></a>00184 <span class="preprocessor"></span>
@@ -395,8 +395,8 @@
 <a name="l00328"></a>00328 <span class="comment">/** @defgroup RCCEx_Periph_Clock_Selection Periph Clock Selection</span>
 <a name="l00329"></a>00329 <span class="comment">  * @{</span>
 <a name="l00330"></a>00330 <span class="comment">  */</span>
-<a name="l00331"></a><a class="code" href="group__RCCEx__Periph__Clock__Selection.html#gaede03aaafb5319bb39767bf50182406f">00331</a> <span class="preprocessor">#define RCC_PERIPHCLK_RTC           0x00000001U</span>
-<a name="l00332"></a><a class="code" href="group__RCCEx__Periph__Clock__Selection.html#gaa234e496ace2f188b106dc15a95ed6bc">00332</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PERIPHCLK_ADC           0x00000002U</span>
+<a name="l00331"></a><a class="code" href="group/group__RCCEx__Periph__Clock__Selection.html#gaede03aaafb5319bb39767bf50182406f">00331</a> <span class="preprocessor">#define RCC_PERIPHCLK_RTC           0x00000001U</span>
+<a name="l00332"></a><a class="code" href="group/group__RCCEx__Periph__Clock__Selection.html#gaa234e496ace2f188b106dc15a95ed6bc">00332</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PERIPHCLK_ADC           0x00000002U</span>
 <a name="l00333"></a>00333 <span class="preprocessor"></span><span class="preprocessor">#if defined(STM32F103xE) || defined(STM32F103xG) || defined(STM32F105xC)\</span>
 <a name="l00334"></a>00334 <span class="preprocessor"> || defined(STM32F107xC)</span>
 <a name="l00335"></a>00335 <span class="preprocessor"></span><span class="preprocessor">#define RCC_PERIPHCLK_I2S2          0x00000004U</span>
@@ -415,10 +415,10 @@
 <a name="l00348"></a>00348 <span class="comment">/** @defgroup RCCEx_ADC_Prescaler ADC Prescaler</span>
 <a name="l00349"></a>00349 <span class="comment">  * @{</span>
 <a name="l00350"></a>00350 <span class="comment">  */</span>
-<a name="l00351"></a><a class="code" href="group__RCCEx__ADC__Prescaler.html#gabf0c62e72916675e7a7fb4d1ff6daa17">00351</a> <span class="preprocessor">#define RCC_ADCPCLK2_DIV2              RCC_CFGR_ADCPRE_DIV2</span>
-<a name="l00352"></a><a class="code" href="group__RCCEx__ADC__Prescaler.html#ga8faad39ce8c436a2db1b0c26e27ee5c3">00352</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_ADCPCLK2_DIV4              RCC_CFGR_ADCPRE_DIV4</span>
-<a name="l00353"></a><a class="code" href="group__RCCEx__ADC__Prescaler.html#gac487ed2d7f4c9d67b72c847ae2a2e292">00353</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_ADCPCLK2_DIV6              RCC_CFGR_ADCPRE_DIV6</span>
-<a name="l00354"></a><a class="code" href="group__RCCEx__ADC__Prescaler.html#gaabcb60850e93dcba0a166361166eecaf">00354</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_ADCPCLK2_DIV8              RCC_CFGR_ADCPRE_DIV8</span>
+<a name="l00351"></a><a class="code" href="group/group__RCCEx__ADC__Prescaler.html#gabf0c62e72916675e7a7fb4d1ff6daa17">00351</a> <span class="preprocessor">#define RCC_ADCPCLK2_DIV2              RCC_CFGR_ADCPRE_DIV2</span>
+<a name="l00352"></a><a class="code" href="group/group__RCCEx__ADC__Prescaler.html#ga8faad39ce8c436a2db1b0c26e27ee5c3">00352</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_ADCPCLK2_DIV4              RCC_CFGR_ADCPRE_DIV4</span>
+<a name="l00353"></a><a class="code" href="group/group__RCCEx__ADC__Prescaler.html#gac487ed2d7f4c9d67b72c847ae2a2e292">00353</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_ADCPCLK2_DIV6              RCC_CFGR_ADCPRE_DIV6</span>
+<a name="l00354"></a><a class="code" href="group/group__RCCEx__ADC__Prescaler.html#gaabcb60850e93dcba0a166361166eecaf">00354</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_ADCPCLK2_DIV8              RCC_CFGR_ADCPRE_DIV8</span>
 <a name="l00355"></a>00355 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l00356"></a>00356 <span class="comment">/**</span>
 <a name="l00357"></a>00357 <span class="comment">  * @}</span>
@@ -515,25 +515,25 @@
 <a name="l00448"></a>00448 <span class="comment">  * @{</span>
 <a name="l00449"></a>00449 <span class="comment">  */</span>
 <a name="l00450"></a>00450 
-<a name="l00451"></a><a class="code" href="group__RCCEx__Prediv1__Factor.html#gaab87e46cf9de9a7bd69b5844e3fb6e8d">00451</a> <span class="preprocessor">#define RCC_HSE_PREDIV_DIV1              0x00000000U</span>
+<a name="l00451"></a><a class="code" href="group/group__RCCEx__Prediv1__Factor.html#gaab87e46cf9de9a7bd69b5844e3fb6e8d">00451</a> <span class="preprocessor">#define RCC_HSE_PREDIV_DIV1              0x00000000U</span>
 <a name="l00452"></a>00452 <span class="preprocessor"></span>
 <a name="l00453"></a>00453 <span class="preprocessor">#if defined(STM32F105xC) || defined(STM32F107xC) || defined(STM32F100xB)\</span>
 <a name="l00454"></a>00454 <span class="preprocessor"> || defined(STM32F100xE)</span>
-<a name="l00455"></a><a class="code" href="group__RCCEx__Prediv1__Factor.html#gaac01eab0da229849f4619a7d69dda65e">00455</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV2              RCC_CFGR2_PREDIV1_DIV2</span>
-<a name="l00456"></a><a class="code" href="group__RCCEx__Prediv1__Factor.html#ga21d9afb7cd5438365890cdb0dfb66bd4">00456</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV3              RCC_CFGR2_PREDIV1_DIV3</span>
-<a name="l00457"></a><a class="code" href="group__RCCEx__Prediv1__Factor.html#gadd89fe878b2647bfaefd57c1de89703d">00457</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV4              RCC_CFGR2_PREDIV1_DIV4</span>
-<a name="l00458"></a><a class="code" href="group__RCCEx__Prediv1__Factor.html#gaedc0a17db25dd50148b3fb3f84e1a863">00458</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV5              RCC_CFGR2_PREDIV1_DIV5</span>
-<a name="l00459"></a><a class="code" href="group__RCCEx__Prediv1__Factor.html#gabf410b380d5ab856c2c37e63668d3d7b">00459</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV6              RCC_CFGR2_PREDIV1_DIV6</span>
-<a name="l00460"></a><a class="code" href="group__RCCEx__Prediv1__Factor.html#ga16a6b373c24d0c9abb03bd3049e82b8e">00460</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV7              RCC_CFGR2_PREDIV1_DIV7</span>
-<a name="l00461"></a><a class="code" href="group__RCCEx__Prediv1__Factor.html#gad900d15f8e083b94273bc60b3c2a4408">00461</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV8              RCC_CFGR2_PREDIV1_DIV8</span>
-<a name="l00462"></a><a class="code" href="group__RCCEx__Prediv1__Factor.html#ga67eef0466cd83bf872fd803a0e253301">00462</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV9              RCC_CFGR2_PREDIV1_DIV9</span>
-<a name="l00463"></a><a class="code" href="group__RCCEx__Prediv1__Factor.html#ga0d3652b80568e08739d8817019ebe603">00463</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV10             RCC_CFGR2_PREDIV1_DIV10</span>
-<a name="l00464"></a><a class="code" href="group__RCCEx__Prediv1__Factor.html#gac6efdbd5e4f7e0982324eeaf5b4c65de">00464</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV11             RCC_CFGR2_PREDIV1_DIV11</span>
-<a name="l00465"></a><a class="code" href="group__RCCEx__Prediv1__Factor.html#ga10ca73283fb221cedc667954f943279e">00465</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV12             RCC_CFGR2_PREDIV1_DIV12</span>
-<a name="l00466"></a><a class="code" href="group__RCCEx__Prediv1__Factor.html#ga5004f9799373ec8bea8716c50a016507">00466</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV13             RCC_CFGR2_PREDIV1_DIV13</span>
-<a name="l00467"></a><a class="code" href="group__RCCEx__Prediv1__Factor.html#gaa29e20bfed4699e510cd55c5d5fff9db">00467</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV14             RCC_CFGR2_PREDIV1_DIV14</span>
-<a name="l00468"></a><a class="code" href="group__RCCEx__Prediv1__Factor.html#ga2011997a95a554617569d24f6c35bbd3">00468</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV15             RCC_CFGR2_PREDIV1_DIV15</span>
-<a name="l00469"></a><a class="code" href="group__RCCEx__Prediv1__Factor.html#ga79d4cdf96f9d45f3aecc3962a1d85a00">00469</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV16             RCC_CFGR2_PREDIV1_DIV16</span>
+<a name="l00455"></a><a class="code" href="group/group__RCCEx__Prediv1__Factor.html#gaac01eab0da229849f4619a7d69dda65e">00455</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV2              RCC_CFGR2_PREDIV1_DIV2</span>
+<a name="l00456"></a><a class="code" href="group/group__RCCEx__Prediv1__Factor.html#ga21d9afb7cd5438365890cdb0dfb66bd4">00456</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV3              RCC_CFGR2_PREDIV1_DIV3</span>
+<a name="l00457"></a><a class="code" href="group/group__RCCEx__Prediv1__Factor.html#gadd89fe878b2647bfaefd57c1de89703d">00457</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV4              RCC_CFGR2_PREDIV1_DIV4</span>
+<a name="l00458"></a><a class="code" href="group/group__RCCEx__Prediv1__Factor.html#gaedc0a17db25dd50148b3fb3f84e1a863">00458</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV5              RCC_CFGR2_PREDIV1_DIV5</span>
+<a name="l00459"></a><a class="code" href="group/group__RCCEx__Prediv1__Factor.html#gabf410b380d5ab856c2c37e63668d3d7b">00459</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV6              RCC_CFGR2_PREDIV1_DIV6</span>
+<a name="l00460"></a><a class="code" href="group/group__RCCEx__Prediv1__Factor.html#ga16a6b373c24d0c9abb03bd3049e82b8e">00460</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV7              RCC_CFGR2_PREDIV1_DIV7</span>
+<a name="l00461"></a><a class="code" href="group/group__RCCEx__Prediv1__Factor.html#gad900d15f8e083b94273bc60b3c2a4408">00461</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV8              RCC_CFGR2_PREDIV1_DIV8</span>
+<a name="l00462"></a><a class="code" href="group/group__RCCEx__Prediv1__Factor.html#ga67eef0466cd83bf872fd803a0e253301">00462</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV9              RCC_CFGR2_PREDIV1_DIV9</span>
+<a name="l00463"></a><a class="code" href="group/group__RCCEx__Prediv1__Factor.html#ga0d3652b80568e08739d8817019ebe603">00463</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV10             RCC_CFGR2_PREDIV1_DIV10</span>
+<a name="l00464"></a><a class="code" href="group/group__RCCEx__Prediv1__Factor.html#gac6efdbd5e4f7e0982324eeaf5b4c65de">00464</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV11             RCC_CFGR2_PREDIV1_DIV11</span>
+<a name="l00465"></a><a class="code" href="group/group__RCCEx__Prediv1__Factor.html#ga10ca73283fb221cedc667954f943279e">00465</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV12             RCC_CFGR2_PREDIV1_DIV12</span>
+<a name="l00466"></a><a class="code" href="group/group__RCCEx__Prediv1__Factor.html#ga5004f9799373ec8bea8716c50a016507">00466</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV13             RCC_CFGR2_PREDIV1_DIV13</span>
+<a name="l00467"></a><a class="code" href="group/group__RCCEx__Prediv1__Factor.html#gaa29e20bfed4699e510cd55c5d5fff9db">00467</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV14             RCC_CFGR2_PREDIV1_DIV14</span>
+<a name="l00468"></a><a class="code" href="group/group__RCCEx__Prediv1__Factor.html#ga2011997a95a554617569d24f6c35bbd3">00468</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV15             RCC_CFGR2_PREDIV1_DIV15</span>
+<a name="l00469"></a><a class="code" href="group/group__RCCEx__Prediv1__Factor.html#ga79d4cdf96f9d45f3aecc3962a1d85a00">00469</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV16             RCC_CFGR2_PREDIV1_DIV16</span>
 <a name="l00470"></a>00470 <span class="preprocessor"></span><span class="preprocessor">#else</span>
 <a name="l00471"></a>00471 <span class="preprocessor"></span><span class="preprocessor">#define RCC_HSE_PREDIV_DIV2              RCC_CFGR_PLLXTPRE</span>
 <a name="l00472"></a>00472 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F105xC || STM32F107xC || STM32F100xB || STM32F100xE */</span>
@@ -605,25 +605,25 @@
 <a name="l00538"></a>00538 
 <a name="l00539"></a>00539 <span class="preprocessor">#if defined(STM32F105xC) || defined(STM32F107xC)</span>
 <a name="l00540"></a>00540 <span class="preprocessor"></span><span class="preprocessor">#else</span>
-<a name="l00541"></a><a class="code" href="group__RCCEx__PLL__Multiplication__Factor.html#ga1ebc7b8473983247312ff095c242285f">00541</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL2                    RCC_CFGR_PLLMULL2</span>
-<a name="l00542"></a><a class="code" href="group__RCCEx__PLL__Multiplication__Factor.html#ga4ee529382af73885706795fd81538781">00542</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL3                    RCC_CFGR_PLLMULL3</span>
+<a name="l00541"></a><a class="code" href="group/group__RCCEx__PLL__Multiplication__Factor.html#ga1ebc7b8473983247312ff095c242285f">00541</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL2                    RCC_CFGR_PLLMULL2</span>
+<a name="l00542"></a><a class="code" href="group/group__RCCEx__PLL__Multiplication__Factor.html#ga4ee529382af73885706795fd81538781">00542</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL3                    RCC_CFGR_PLLMULL3</span>
 <a name="l00543"></a>00543 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F105xC || STM32F107xC */</span>
-<a name="l00544"></a><a class="code" href="group__RCCEx__PLL__Multiplication__Factor.html#ga2aedc8bc6552d98fb748b58a2379820b">00544</a> <span class="preprocessor">#define RCC_PLL_MUL4                    RCC_CFGR_PLLMULL4</span>
-<a name="l00545"></a><a class="code" href="group__RCCEx__PLL__Multiplication__Factor.html#ga3b2b6019d1b1de880b009ff2a6769f03">00545</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL5                    RCC_CFGR_PLLMULL5</span>
-<a name="l00546"></a><a class="code" href="group__RCCEx__PLL__Multiplication__Factor.html#gae2f8dd748556470dcac6901ac7a3e650">00546</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL6                    RCC_CFGR_PLLMULL6</span>
-<a name="l00547"></a><a class="code" href="group__RCCEx__PLL__Multiplication__Factor.html#gae215b8ba691fe0ea413c45d56e77eca0">00547</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL7                    RCC_CFGR_PLLMULL7</span>
-<a name="l00548"></a><a class="code" href="group__RCCEx__PLL__Multiplication__Factor.html#gaddfa6ebdecba8c5951a774b271fa82eb">00548</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL8                    RCC_CFGR_PLLMULL8</span>
-<a name="l00549"></a><a class="code" href="group__RCCEx__PLL__Multiplication__Factor.html#ga653f185ecd0b9b440180433fb1a6ff3d">00549</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL9                    RCC_CFGR_PLLMULL9</span>
+<a name="l00544"></a><a class="code" href="group/group__RCCEx__PLL__Multiplication__Factor.html#ga2aedc8bc6552d98fb748b58a2379820b">00544</a> <span class="preprocessor">#define RCC_PLL_MUL4                    RCC_CFGR_PLLMULL4</span>
+<a name="l00545"></a><a class="code" href="group/group__RCCEx__PLL__Multiplication__Factor.html#ga3b2b6019d1b1de880b009ff2a6769f03">00545</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL5                    RCC_CFGR_PLLMULL5</span>
+<a name="l00546"></a><a class="code" href="group/group__RCCEx__PLL__Multiplication__Factor.html#gae2f8dd748556470dcac6901ac7a3e650">00546</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL6                    RCC_CFGR_PLLMULL6</span>
+<a name="l00547"></a><a class="code" href="group/group__RCCEx__PLL__Multiplication__Factor.html#gae215b8ba691fe0ea413c45d56e77eca0">00547</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL7                    RCC_CFGR_PLLMULL7</span>
+<a name="l00548"></a><a class="code" href="group/group__RCCEx__PLL__Multiplication__Factor.html#gaddfa6ebdecba8c5951a774b271fa82eb">00548</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL8                    RCC_CFGR_PLLMULL8</span>
+<a name="l00549"></a><a class="code" href="group/group__RCCEx__PLL__Multiplication__Factor.html#ga653f185ecd0b9b440180433fb1a6ff3d">00549</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL9                    RCC_CFGR_PLLMULL9</span>
 <a name="l00550"></a>00550 <span class="preprocessor"></span><span class="preprocessor">#if defined(STM32F105xC) || defined(STM32F107xC)</span>
 <a name="l00551"></a>00551 <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL6_5                  RCC_CFGR_PLLMULL6_5</span>
 <a name="l00552"></a>00552 <span class="preprocessor"></span><span class="preprocessor">#else</span>
-<a name="l00553"></a><a class="code" href="group__RCCEx__PLL__Multiplication__Factor.html#ga07cdf351bcf4ffc95cd45a28008e43e5">00553</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL10                   RCC_CFGR_PLLMULL10</span>
-<a name="l00554"></a><a class="code" href="group__RCCEx__PLL__Multiplication__Factor.html#ga33153db08feae4d86a5c170e8a1781bd">00554</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL11                   RCC_CFGR_PLLMULL11</span>
-<a name="l00555"></a><a class="code" href="group__RCCEx__PLL__Multiplication__Factor.html#gaca5a5ddd829f682dd9a211e6a9be452a">00555</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL12                   RCC_CFGR_PLLMULL12</span>
-<a name="l00556"></a><a class="code" href="group__RCCEx__PLL__Multiplication__Factor.html#ga9b8d76a17aeb979992e61ec3a1e32a14">00556</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL13                   RCC_CFGR_PLLMULL13</span>
-<a name="l00557"></a><a class="code" href="group__RCCEx__PLL__Multiplication__Factor.html#ga6a96dc75a1fb43fb7f032a4cf34db287">00557</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL14                   RCC_CFGR_PLLMULL14</span>
-<a name="l00558"></a><a class="code" href="group__RCCEx__PLL__Multiplication__Factor.html#gaa75ceb816d75a0d384b67d1bf489bb44">00558</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL15                   RCC_CFGR_PLLMULL15</span>
-<a name="l00559"></a><a class="code" href="group__RCCEx__PLL__Multiplication__Factor.html#ga39bd735dbbdf7f4bbc122b833d2c92f3">00559</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL16                   RCC_CFGR_PLLMULL16</span>
+<a name="l00553"></a><a class="code" href="group/group__RCCEx__PLL__Multiplication__Factor.html#ga07cdf351bcf4ffc95cd45a28008e43e5">00553</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL10                   RCC_CFGR_PLLMULL10</span>
+<a name="l00554"></a><a class="code" href="group/group__RCCEx__PLL__Multiplication__Factor.html#ga33153db08feae4d86a5c170e8a1781bd">00554</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL11                   RCC_CFGR_PLLMULL11</span>
+<a name="l00555"></a><a class="code" href="group/group__RCCEx__PLL__Multiplication__Factor.html#gaca5a5ddd829f682dd9a211e6a9be452a">00555</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL12                   RCC_CFGR_PLLMULL12</span>
+<a name="l00556"></a><a class="code" href="group/group__RCCEx__PLL__Multiplication__Factor.html#ga9b8d76a17aeb979992e61ec3a1e32a14">00556</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL13                   RCC_CFGR_PLLMULL13</span>
+<a name="l00557"></a><a class="code" href="group/group__RCCEx__PLL__Multiplication__Factor.html#ga6a96dc75a1fb43fb7f032a4cf34db287">00557</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL14                   RCC_CFGR_PLLMULL14</span>
+<a name="l00558"></a><a class="code" href="group/group__RCCEx__PLL__Multiplication__Factor.html#gaa75ceb816d75a0d384b67d1bf489bb44">00558</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL15                   RCC_CFGR_PLLMULL15</span>
+<a name="l00559"></a><a class="code" href="group/group__RCCEx__PLL__Multiplication__Factor.html#ga39bd735dbbdf7f4bbc122b833d2c92f3">00559</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_PLL_MUL16                   RCC_CFGR_PLLMULL16</span>
 <a name="l00560"></a>00560 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F105xC || STM32F107xC */</span>
 <a name="l00561"></a>00561 <span class="comment"></span>
 <a name="l00562"></a>00562 <span class="comment">/**</span>
@@ -633,11 +633,11 @@
 <a name="l00566"></a>00566 <span class="comment">/** @defgroup RCCEx_MCO1_Clock_Source MCO1 Clock Source</span>
 <a name="l00567"></a>00567 <span class="comment">  * @{</span>
 <a name="l00568"></a>00568 <span class="comment">  */</span>
-<a name="l00569"></a><a class="code" href="group__RCCEx__MCO1__Clock__Source.html#ga725a16362f3324ef5866dc5a1ff07cf5">00569</a> <span class="preprocessor">#define RCC_MCO1SOURCE_NOCLOCK           ((uint32_t)RCC_CFGR_MCO_NOCLOCK)</span>
-<a name="l00570"></a><a class="code" href="group__RCCEx__MCO1__Clock__Source.html#gae8ca2959a1252ecd319843da02c79526">00570</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_MCO1SOURCE_SYSCLK            ((uint32_t)RCC_CFGR_MCO_SYSCLK)</span>
-<a name="l00571"></a><a class="code" href="group__RCCEx__MCO1__Clock__Source.html#gad99c388c455852143220397db3730635">00571</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_MCO1SOURCE_HSI               ((uint32_t)RCC_CFGR_MCO_HSI)</span>
-<a name="l00572"></a><a class="code" href="group__RCCEx__MCO1__Clock__Source.html#ga5582d2ab152eb440a6cc3ae4833b043f">00572</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_MCO1SOURCE_HSE               ((uint32_t)RCC_CFGR_MCO_HSE)</span>
-<a name="l00573"></a><a class="code" href="group__RCCEx__MCO1__Clock__Source.html#ga79d888f2238eaa4e4b8d02b3900ea18b">00573</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_MCO1SOURCE_PLLCLK            ((uint32_t)RCC_CFGR_MCO_PLLCLK_DIV2)</span>
+<a name="l00569"></a><a class="code" href="group/group__RCCEx__MCO1__Clock__Source.html#ga725a16362f3324ef5866dc5a1ff07cf5">00569</a> <span class="preprocessor">#define RCC_MCO1SOURCE_NOCLOCK           ((uint32_t)RCC_CFGR_MCO_NOCLOCK)</span>
+<a name="l00570"></a><a class="code" href="group/group__RCCEx__MCO1__Clock__Source.html#gae8ca2959a1252ecd319843da02c79526">00570</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_MCO1SOURCE_SYSCLK            ((uint32_t)RCC_CFGR_MCO_SYSCLK)</span>
+<a name="l00571"></a><a class="code" href="group/group__RCCEx__MCO1__Clock__Source.html#gad99c388c455852143220397db3730635">00571</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_MCO1SOURCE_HSI               ((uint32_t)RCC_CFGR_MCO_HSI)</span>
+<a name="l00572"></a><a class="code" href="group/group__RCCEx__MCO1__Clock__Source.html#ga5582d2ab152eb440a6cc3ae4833b043f">00572</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_MCO1SOURCE_HSE               ((uint32_t)RCC_CFGR_MCO_HSE)</span>
+<a name="l00573"></a><a class="code" href="group/group__RCCEx__MCO1__Clock__Source.html#ga79d888f2238eaa4e4b8d02b3900ea18b">00573</a> <span class="preprocessor"></span><span class="preprocessor">#define RCC_MCO1SOURCE_PLLCLK            ((uint32_t)RCC_CFGR_MCO_PLLCLK_DIV2)</span>
 <a name="l00574"></a>00574 <span class="preprocessor"></span><span class="preprocessor">#if defined(STM32F105xC) || defined(STM32F107xC)</span>
 <a name="l00575"></a>00575 <span class="preprocessor"></span><span class="preprocessor">#define RCC_MCO1SOURCE_PLL2CLK           ((uint32_t)RCC_CFGR_MCO_PLL2CLK)</span>
 <a name="l00576"></a>00576 <span class="preprocessor"></span><span class="preprocessor">#define RCC_MCO1SOURCE_PLL3CLK_DIV2      ((uint32_t)RCC_CFGR_MCO_PLL3CLK_DIV2)</span>
@@ -693,7 +693,7 @@
 <a name="l00626"></a>00626 <span class="preprocessor">#if defined(STM32F101xE) || defined(STM32F103xE) || defined(STM32F101xG)\</span>
 <a name="l00627"></a>00627 <span class="preprocessor"> || defined(STM32F103xG) || defined(STM32F105xC) || defined  (STM32F107xC)\</span>
 <a name="l00628"></a>00628 <span class="preprocessor"> || defined  (STM32F100xE)</span>
-<a name="l00629"></a><a class="code" href="group__RCCEx__Peripheral__Clock__Enable__Disable.html#ga1b5c4bd52d8e7c70e105dd415a191afd">00629</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_DMA2_CLK_ENABLE()   do { \</span>
+<a name="l00629"></a><a class="code" href="group/group__RCCEx__Peripheral__Clock__Enable__Disable.html#ga1b5c4bd52d8e7c70e105dd415a191afd">00629</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_DMA2_CLK_ENABLE()   do { \</span>
 <a name="l00630"></a>00630 <span class="preprocessor">                                        __IO uint32_t tmpreg; \</span>
 <a name="l00631"></a>00631 <span class="preprocessor">                                        SET_BIT(RCC-&gt;AHBENR, RCC_AHBENR_DMA2EN);\</span>
 <a name="l00632"></a>00632 <span class="preprocessor">                                        </span><span class="comment">/* Delay after an RCC peripheral clock enabling */</span> \
@@ -701,12 +701,12 @@
 <a name="l00634"></a>00634                                         UNUSED(tmpreg); \
 <a name="l00635"></a>00635                                       } while(0U)
 <a name="l00636"></a>00636 
-<a name="l00637"></a><a class="code" href="group__RCCEx__Peripheral__Clock__Enable__Disable.html#gaa97383d7ee14e9a638eb8c9ba35658f0">00637</a> <span class="preprocessor">#define __HAL_RCC_DMA2_CLK_DISABLE()        (RCC-&gt;AHBENR &amp;= ~(RCC_AHBENR_DMA2EN))</span>
+<a name="l00637"></a><a class="code" href="group/group__RCCEx__Peripheral__Clock__Enable__Disable.html#gaa97383d7ee14e9a638eb8c9ba35658f0">00637</a> <span class="preprocessor">#define __HAL_RCC_DMA2_CLK_DISABLE()        (RCC-&gt;AHBENR &amp;= ~(RCC_AHBENR_DMA2EN))</span>
 <a name="l00638"></a>00638 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F101xE || STM32F103xE || STM32F101xG || STM32F103xG || STM32F105xC || STM32F107xC || STM32F100xE */</span>
 <a name="l00639"></a>00639 
 <a name="l00640"></a>00640 <span class="preprocessor">#if defined(STM32F101xE) || defined(STM32F103xE) || defined(STM32F101xG)\</span>
 <a name="l00641"></a>00641 <span class="preprocessor"> || defined(STM32F103xG) || defined  (STM32F100xE)</span>
-<a name="l00642"></a><a class="code" href="group__RCCEx__Peripheral__Clock__Enable__Disable.html#ga3fe2124975ee2cd38004d475171e82f3">00642</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_FSMC_CLK_ENABLE()   do { \</span>
+<a name="l00642"></a><a class="code" href="group/group__RCCEx__Peripheral__Clock__Enable__Disable.html#ga3fe2124975ee2cd38004d475171e82f3">00642</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_FSMC_CLK_ENABLE()   do { \</span>
 <a name="l00643"></a>00643 <span class="preprocessor">                                        __IO uint32_t tmpreg; \</span>
 <a name="l00644"></a>00644 <span class="preprocessor">                                        SET_BIT(RCC-&gt;AHBENR, RCC_AHBENR_FSMCEN);\</span>
 <a name="l00645"></a>00645 <span class="preprocessor">                                        </span><span class="comment">/* Delay after an RCC peripheral clock enabling */</span> \
@@ -714,7 +714,7 @@
 <a name="l00647"></a>00647                                         UNUSED(tmpreg); \
 <a name="l00648"></a>00648                                       } while(0U)
 <a name="l00649"></a>00649 
-<a name="l00650"></a><a class="code" href="group__RCCEx__Peripheral__Clock__Enable__Disable.html#ga9500e7516e734148a3c6a31d3e5e3238">00650</a> <span class="preprocessor">#define __HAL_RCC_FSMC_CLK_DISABLE()        (RCC-&gt;AHBENR &amp;= ~(RCC_AHBENR_FSMCEN))</span>
+<a name="l00650"></a><a class="code" href="group/group__RCCEx__Peripheral__Clock__Enable__Disable.html#ga9500e7516e734148a3c6a31d3e5e3238">00650</a> <span class="preprocessor">#define __HAL_RCC_FSMC_CLK_DISABLE()        (RCC-&gt;AHBENR &amp;= ~(RCC_AHBENR_FSMCEN))</span>
 <a name="l00651"></a>00651 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F101xE || STM32F103xE || STM32F101xG || STM32F103xG || STM32F100xE */</span>
 <a name="l00652"></a>00652 
 <a name="l00653"></a>00653 <span class="preprocessor">#if defined(STM32F103xE) || defined(STM32F103xG)</span>
@@ -806,13 +806,13 @@
 <a name="l00739"></a>00739 <span class="preprocessor">#if defined(STM32F101xE) || defined(STM32F103xE) || defined(STM32F101xG)\</span>
 <a name="l00740"></a>00740 <span class="preprocessor"> || defined(STM32F103xG) || defined(STM32F105xC) || defined  (STM32F107xC)\</span>
 <a name="l00741"></a>00741 <span class="preprocessor"> || defined  (STM32F100xE)</span>
-<a name="l00742"></a><a class="code" href="group__RCCEx__AHB1__Peripheral__Clock__Enable__Disable__Status.html#gad0ccdaf669ea327e80c455db4dc36177">00742</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_DMA2_IS_CLK_ENABLED()       ((RCC-&gt;AHBENR &amp; (RCC_AHBENR_DMA2EN)) != RESET)</span>
-<a name="l00743"></a><a class="code" href="group__RCCEx__AHB1__Peripheral__Clock__Enable__Disable__Status.html#ga725d2a38d8519867922438d48a5885cf">00743</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_DMA2_IS_CLK_DISABLED()      ((RCC-&gt;AHBENR &amp; (RCC_AHBENR_DMA2EN)) == RESET)</span>
+<a name="l00742"></a><a class="code" href="group/group__RCCEx__AHB1__Peripheral__Clock__Enable__Disable__Status.html#gad0ccdaf669ea327e80c455db4dc36177">00742</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_DMA2_IS_CLK_ENABLED()       ((RCC-&gt;AHBENR &amp; (RCC_AHBENR_DMA2EN)) != RESET)</span>
+<a name="l00743"></a><a class="code" href="group/group__RCCEx__AHB1__Peripheral__Clock__Enable__Disable__Status.html#ga725d2a38d8519867922438d48a5885cf">00743</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_DMA2_IS_CLK_DISABLED()      ((RCC-&gt;AHBENR &amp; (RCC_AHBENR_DMA2EN)) == RESET)</span>
 <a name="l00744"></a>00744 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F101xE || STM32F103xE || STM32F101xG || STM32F103xG || STM32F105xC || STM32F107xC || STM32F100xE */</span>
 <a name="l00745"></a>00745 <span class="preprocessor">#if defined(STM32F101xE) || defined(STM32F103xE) || defined(STM32F101xG)\</span>
 <a name="l00746"></a>00746 <span class="preprocessor"> || defined(STM32F103xG) || defined  (STM32F100xE)</span>
-<a name="l00747"></a><a class="code" href="group__RCCEx__AHB1__Peripheral__Clock__Enable__Disable__Status.html#ga53a0af184ba69444a9e4921098f2a9f9">00747</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_FSMC_IS_CLK_ENABLED()       ((RCC-&gt;AHBENR &amp; (RCC_AHBENR_FSMCEN)) != RESET)</span>
-<a name="l00748"></a><a class="code" href="group__RCCEx__AHB1__Peripheral__Clock__Enable__Disable__Status.html#gac04d358ac33aee41b6be28c752aaf3e6">00748</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_FSMC_IS_CLK_DISABLED()      ((RCC-&gt;AHBENR &amp; (RCC_AHBENR_FSMCEN)) == RESET)</span>
+<a name="l00747"></a><a class="code" href="group/group__RCCEx__AHB1__Peripheral__Clock__Enable__Disable__Status.html#ga53a0af184ba69444a9e4921098f2a9f9">00747</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_FSMC_IS_CLK_ENABLED()       ((RCC-&gt;AHBENR &amp; (RCC_AHBENR_FSMCEN)) != RESET)</span>
+<a name="l00748"></a><a class="code" href="group/group__RCCEx__AHB1__Peripheral__Clock__Enable__Disable__Status.html#gac04d358ac33aee41b6be28c752aaf3e6">00748</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_FSMC_IS_CLK_DISABLED()      ((RCC-&gt;AHBENR &amp; (RCC_AHBENR_FSMCEN)) == RESET)</span>
 <a name="l00749"></a>00749 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F101xE || STM32F103xE || STM32F101xG || STM32F103xG || STM32F100xE */</span>
 <a name="l00750"></a>00750 <span class="preprocessor">#if defined(STM32F103xE) || defined(STM32F103xG)</span>
 <a name="l00751"></a>00751 <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_SDIO_IS_CLK_ENABLED()       ((RCC-&gt;AHBENR &amp; (RCC_AHBENR_SDIOEN)) != RESET)</span>
@@ -860,7 +860,7 @@
 <a name="l00793"></a>00793 <span class="preprocessor"> || defined(STM32F101xE) || defined(STM32F101xG) || defined(STM32F102xB)\</span>
 <a name="l00794"></a>00794 <span class="preprocessor"> || defined(STM32F103xB) || defined(STM32F103xE) || defined(STM32F103xG)\</span>
 <a name="l00795"></a>00795 <span class="preprocessor"> || defined(STM32F105xC) || defined(STM32F107xC)</span>
-<a name="l00796"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#gaf9b08205c361d1779b6c7a3afdb67e7c">00796</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM4_CLK_ENABLE()   do { \</span>
+<a name="l00796"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#gaf9b08205c361d1779b6c7a3afdb67e7c">00796</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM4_CLK_ENABLE()   do { \</span>
 <a name="l00797"></a>00797 <span class="preprocessor">                                        __IO uint32_t tmpreg; \</span>
 <a name="l00798"></a>00798 <span class="preprocessor">                                        SET_BIT(RCC-&gt;APB1ENR, RCC_APB1ENR_TIM4EN);\</span>
 <a name="l00799"></a>00799 <span class="preprocessor">                                        </span><span class="comment">/* Delay after an RCC peripheral clock enabling */</span> \
@@ -868,7 +868,7 @@
 <a name="l00801"></a>00801                                         UNUSED(tmpreg); \
 <a name="l00802"></a>00802                                       } while(0U)
 <a name="l00803"></a>00803 
-<a name="l00804"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#ga12352adbb876f2b827d6ac3a04d94e26">00804</a> <span class="preprocessor">#define __HAL_RCC_SPI2_CLK_ENABLE()   do { \</span>
+<a name="l00804"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#ga12352adbb876f2b827d6ac3a04d94e26">00804</a> <span class="preprocessor">#define __HAL_RCC_SPI2_CLK_ENABLE()   do { \</span>
 <a name="l00805"></a>00805 <span class="preprocessor">                                        __IO uint32_t tmpreg; \</span>
 <a name="l00806"></a>00806 <span class="preprocessor">                                        SET_BIT(RCC-&gt;APB1ENR, RCC_APB1ENR_SPI2EN);\</span>
 <a name="l00807"></a>00807 <span class="preprocessor">                                        </span><span class="comment">/* Delay after an RCC peripheral clock enabling */</span> \
@@ -876,7 +876,7 @@
 <a name="l00809"></a>00809                                         UNUSED(tmpreg); \
 <a name="l00810"></a>00810                                       } while(0U)
 <a name="l00811"></a>00811 
-<a name="l00812"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#ga34a7bf921d694c001b67dcd531c807a3">00812</a> <span class="preprocessor">#define __HAL_RCC_USART3_CLK_ENABLE()   do { \</span>
+<a name="l00812"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#ga34a7bf921d694c001b67dcd531c807a3">00812</a> <span class="preprocessor">#define __HAL_RCC_USART3_CLK_ENABLE()   do { \</span>
 <a name="l00813"></a>00813 <span class="preprocessor">                                        __IO uint32_t tmpreg; \</span>
 <a name="l00814"></a>00814 <span class="preprocessor">                                        SET_BIT(RCC-&gt;APB1ENR, RCC_APB1ENR_USART3EN);\</span>
 <a name="l00815"></a>00815 <span class="preprocessor">                                        </span><span class="comment">/* Delay after an RCC peripheral clock enabling */</span> \
@@ -884,7 +884,7 @@
 <a name="l00817"></a>00817                                         UNUSED(tmpreg); \
 <a name="l00818"></a>00818                                       } while(0U)
 <a name="l00819"></a>00819 
-<a name="l00820"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#ga7826848ae938c7f59984d12bc883a6f0">00820</a> <span class="preprocessor">#define __HAL_RCC_I2C2_CLK_ENABLE()   do { \</span>
+<a name="l00820"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#ga7826848ae938c7f59984d12bc883a6f0">00820</a> <span class="preprocessor">#define __HAL_RCC_I2C2_CLK_ENABLE()   do { \</span>
 <a name="l00821"></a>00821 <span class="preprocessor">                                        __IO uint32_t tmpreg; \</span>
 <a name="l00822"></a>00822 <span class="preprocessor">                                        SET_BIT(RCC-&gt;APB1ENR, RCC_APB1ENR_I2C2EN);\</span>
 <a name="l00823"></a>00823 <span class="preprocessor">                                        </span><span class="comment">/* Delay after an RCC peripheral clock enabling */</span> \
@@ -892,10 +892,10 @@
 <a name="l00825"></a>00825                                         UNUSED(tmpreg); \
 <a name="l00826"></a>00826                                       } while(0U)
 <a name="l00827"></a>00827 
-<a name="l00828"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#ga8888dfd8a1e50f8019f581506ec776d8">00828</a> <span class="preprocessor">#define __HAL_RCC_TIM4_CLK_DISABLE()        (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_TIM4EN))</span>
-<a name="l00829"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#gabb56a85a6424a60da8edc681f3a1c918">00829</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_SPI2_CLK_DISABLE()        (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_SPI2EN))</span>
-<a name="l00830"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#ga5b0866dac14f73ddeafa6308ac447bec">00830</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_USART3_CLK_DISABLE()      (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_USART3EN))</span>
-<a name="l00831"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#ga3ebc5988bcf1e2965ed482fd76c67b22">00831</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_I2C2_CLK_DISABLE()        (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_I2C2EN))</span>
+<a name="l00828"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#ga8888dfd8a1e50f8019f581506ec776d8">00828</a> <span class="preprocessor">#define __HAL_RCC_TIM4_CLK_DISABLE()        (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_TIM4EN))</span>
+<a name="l00829"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#gabb56a85a6424a60da8edc681f3a1c918">00829</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_SPI2_CLK_DISABLE()        (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_SPI2EN))</span>
+<a name="l00830"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#ga5b0866dac14f73ddeafa6308ac447bec">00830</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_USART3_CLK_DISABLE()      (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_USART3EN))</span>
+<a name="l00831"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#ga3ebc5988bcf1e2965ed482fd76c67b22">00831</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_I2C2_CLK_DISABLE()        (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_I2C2EN))</span>
 <a name="l00832"></a>00832 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F100xB || STM32F101xB || STM32F101xE || (...) || STM32F105xC || STM32F107xC */</span>
 <a name="l00833"></a>00833 
 <a name="l00834"></a>00834 <span class="preprocessor">#if defined(STM32F102x6) || defined(STM32F102xB) || defined(STM32F103x6)\</span>
@@ -979,7 +979,7 @@
 <a name="l00912"></a>00912 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F101xE || STM32F103xE || STM32F101xG || (...) || STM32F105xC || STM32F107xC */</span>
 <a name="l00913"></a>00913 
 <a name="l00914"></a>00914 <span class="preprocessor">#if defined(STM32F100xB) || defined  (STM32F100xE)</span>
-<a name="l00915"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#ga669982035ad2dd6cf095fd8b281f9dab">00915</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM6_CLK_ENABLE()   do { \</span>
+<a name="l00915"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#ga669982035ad2dd6cf095fd8b281f9dab">00915</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM6_CLK_ENABLE()   do { \</span>
 <a name="l00916"></a>00916 <span class="preprocessor">                                        __IO uint32_t tmpreg; \</span>
 <a name="l00917"></a>00917 <span class="preprocessor">                                        SET_BIT(RCC-&gt;APB1ENR, RCC_APB1ENR_TIM6EN);\</span>
 <a name="l00918"></a>00918 <span class="preprocessor">                                        </span><span class="comment">/* Delay after an RCC peripheral clock enabling */</span> \
@@ -987,7 +987,7 @@
 <a name="l00920"></a>00920                                         UNUSED(tmpreg); \
 <a name="l00921"></a>00921                                       } while(0U)
 <a name="l00922"></a>00922 
-<a name="l00923"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#ga92313068bbe6883497ca424b24f31d44">00923</a> <span class="preprocessor">#define __HAL_RCC_TIM7_CLK_ENABLE()   do { \</span>
+<a name="l00923"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#ga92313068bbe6883497ca424b24f31d44">00923</a> <span class="preprocessor">#define __HAL_RCC_TIM7_CLK_ENABLE()   do { \</span>
 <a name="l00924"></a>00924 <span class="preprocessor">                                        __IO uint32_t tmpreg; \</span>
 <a name="l00925"></a>00925 <span class="preprocessor">                                        SET_BIT(RCC-&gt;APB1ENR, RCC_APB1ENR_TIM7EN);\</span>
 <a name="l00926"></a>00926 <span class="preprocessor">                                        </span><span class="comment">/* Delay after an RCC peripheral clock enabling */</span> \
@@ -995,7 +995,7 @@
 <a name="l00928"></a>00928                                         UNUSED(tmpreg); \
 <a name="l00929"></a>00929                                       } while(0U)
 <a name="l00930"></a>00930 
-<a name="l00931"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#gabf537ba2ca2f41342fdfb724b1f3f260">00931</a> <span class="preprocessor">#define __HAL_RCC_DAC_CLK_ENABLE()   do { \</span>
+<a name="l00931"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#gabf537ba2ca2f41342fdfb724b1f3f260">00931</a> <span class="preprocessor">#define __HAL_RCC_DAC_CLK_ENABLE()   do { \</span>
 <a name="l00932"></a>00932 <span class="preprocessor">                                        __IO uint32_t tmpreg; \</span>
 <a name="l00933"></a>00933 <span class="preprocessor">                                        SET_BIT(RCC-&gt;APB1ENR, RCC_APB1ENR_DACEN);\</span>
 <a name="l00934"></a>00934 <span class="preprocessor">                                        </span><span class="comment">/* Delay after an RCC peripheral clock enabling */</span> \
@@ -1003,7 +1003,7 @@
 <a name="l00936"></a>00936                                         UNUSED(tmpreg); \
 <a name="l00937"></a>00937                                       } while(0U)
 <a name="l00938"></a>00938 
-<a name="l00939"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#gaf9c86fbf588ae5fecb93cc2228dd2e73">00939</a> <span class="preprocessor">#define __HAL_RCC_CEC_CLK_ENABLE()   do { \</span>
+<a name="l00939"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#gaf9c86fbf588ae5fecb93cc2228dd2e73">00939</a> <span class="preprocessor">#define __HAL_RCC_CEC_CLK_ENABLE()   do { \</span>
 <a name="l00940"></a>00940 <span class="preprocessor">                                        __IO uint32_t tmpreg; \</span>
 <a name="l00941"></a>00941 <span class="preprocessor">                                        SET_BIT(RCC-&gt;APB1ENR, RCC_APB1ENR_CECEN);\</span>
 <a name="l00942"></a>00942 <span class="preprocessor">                                        </span><span class="comment">/* Delay after an RCC peripheral clock enabling */</span> \
@@ -1011,14 +1011,14 @@
 <a name="l00944"></a>00944                                         UNUSED(tmpreg); \
 <a name="l00945"></a>00945                                       } while(0U)
 <a name="l00946"></a>00946 
-<a name="l00947"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#ga1ee14a6e314a50eee7a1a09482a25abf">00947</a> <span class="preprocessor">#define __HAL_RCC_TIM6_CLK_DISABLE()        (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_TIM6EN))</span>
-<a name="l00948"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#ga865f11c3f70a9b85ebc5f09baf60eec9">00948</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM7_CLK_DISABLE()        (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_TIM7EN))</span>
-<a name="l00949"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#ga6817d8397756e235e5d29e980c7dbb47">00949</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_DAC_CLK_DISABLE()         (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_DACEN))</span>
-<a name="l00950"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#gaaa44f4d83019efe5a909604812851991">00950</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_CEC_CLK_DISABLE()         (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_CECEN))</span>
+<a name="l00947"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#ga1ee14a6e314a50eee7a1a09482a25abf">00947</a> <span class="preprocessor">#define __HAL_RCC_TIM6_CLK_DISABLE()        (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_TIM6EN))</span>
+<a name="l00948"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#ga865f11c3f70a9b85ebc5f09baf60eec9">00948</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM7_CLK_DISABLE()        (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_TIM7EN))</span>
+<a name="l00949"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#ga6817d8397756e235e5d29e980c7dbb47">00949</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_DAC_CLK_DISABLE()         (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_DACEN))</span>
+<a name="l00950"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#gaaa44f4d83019efe5a909604812851991">00950</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_CEC_CLK_DISABLE()         (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_CECEN))</span>
 <a name="l00951"></a>00951 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F100xB || STM32F100xE */</span>
 <a name="l00952"></a>00952 
 <a name="l00953"></a>00953 <span class="preprocessor">#ifdef STM32F100xE</span>
-<a name="l00954"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#gab6669f7a9f892e39fb22b349c1afd78d">00954</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM5_CLK_ENABLE()   do { \</span>
+<a name="l00954"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#gab6669f7a9f892e39fb22b349c1afd78d">00954</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM5_CLK_ENABLE()   do { \</span>
 <a name="l00955"></a>00955 <span class="preprocessor">                                        __IO uint32_t tmpreg; \</span>
 <a name="l00956"></a>00956 <span class="preprocessor">                                        SET_BIT(RCC-&gt;APB1ENR, RCC_APB1ENR_TIM5EN);\</span>
 <a name="l00957"></a>00957 <span class="preprocessor">                                        </span><span class="comment">/* Delay after an RCC peripheral clock enabling */</span> \
@@ -1026,7 +1026,7 @@
 <a name="l00959"></a>00959                                         UNUSED(tmpreg); \
 <a name="l00960"></a>00960                                       } while(0U)
 <a name="l00961"></a>00961 
-<a name="l00962"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#ga72597483d0d6da14553329d2da3ad45e">00962</a> <span class="preprocessor">#define __HAL_RCC_TIM12_CLK_ENABLE()   do { \</span>
+<a name="l00962"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#ga72597483d0d6da14553329d2da3ad45e">00962</a> <span class="preprocessor">#define __HAL_RCC_TIM12_CLK_ENABLE()   do { \</span>
 <a name="l00963"></a>00963 <span class="preprocessor">                                        __IO uint32_t tmpreg; \</span>
 <a name="l00964"></a>00964 <span class="preprocessor">                                        SET_BIT(RCC-&gt;APB1ENR, RCC_APB1ENR_TIM12EN);\</span>
 <a name="l00965"></a>00965 <span class="preprocessor">                                        </span><span class="comment">/* Delay after an RCC peripheral clock enabling */</span> \
@@ -1034,7 +1034,7 @@
 <a name="l00967"></a>00967                                         UNUSED(tmpreg); \
 <a name="l00968"></a>00968                                       } while(0U)
 <a name="l00969"></a>00969 
-<a name="l00970"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#gade7a5313eb8b50127a40c5c130c7f3e1">00970</a> <span class="preprocessor">#define __HAL_RCC_TIM13_CLK_ENABLE()   do { \</span>
+<a name="l00970"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#gade7a5313eb8b50127a40c5c130c7f3e1">00970</a> <span class="preprocessor">#define __HAL_RCC_TIM13_CLK_ENABLE()   do { \</span>
 <a name="l00971"></a>00971 <span class="preprocessor">                                        __IO uint32_t tmpreg; \</span>
 <a name="l00972"></a>00972 <span class="preprocessor">                                        SET_BIT(RCC-&gt;APB1ENR, RCC_APB1ENR_TIM13EN);\</span>
 <a name="l00973"></a>00973 <span class="preprocessor">                                        </span><span class="comment">/* Delay after an RCC peripheral clock enabling */</span> \
@@ -1042,7 +1042,7 @@
 <a name="l00975"></a>00975                                         UNUSED(tmpreg); \
 <a name="l00976"></a>00976                                       } while(0U)
 <a name="l00977"></a>00977 
-<a name="l00978"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#ga28c0bd63fbc7500f9c209ef42c0931b6">00978</a> <span class="preprocessor">#define __HAL_RCC_TIM14_CLK_ENABLE()   do { \</span>
+<a name="l00978"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#ga28c0bd63fbc7500f9c209ef42c0931b6">00978</a> <span class="preprocessor">#define __HAL_RCC_TIM14_CLK_ENABLE()   do { \</span>
 <a name="l00979"></a>00979 <span class="preprocessor">                                        __IO uint32_t tmpreg; \</span>
 <a name="l00980"></a>00980 <span class="preprocessor">                                        SET_BIT(RCC-&gt;APB1ENR, RCC_APB1ENR_TIM14EN);\</span>
 <a name="l00981"></a>00981 <span class="preprocessor">                                        </span><span class="comment">/* Delay after an RCC peripheral clock enabling */</span> \
@@ -1050,7 +1050,7 @@
 <a name="l00983"></a>00983                                         UNUSED(tmpreg); \
 <a name="l00984"></a>00984                                       } while(0U)
 <a name="l00985"></a>00985 
-<a name="l00986"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#ga16612e19c1a7d4cd3c601bf2be916026">00986</a> <span class="preprocessor">#define __HAL_RCC_SPI3_CLK_ENABLE()   do { \</span>
+<a name="l00986"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#ga16612e19c1a7d4cd3c601bf2be916026">00986</a> <span class="preprocessor">#define __HAL_RCC_SPI3_CLK_ENABLE()   do { \</span>
 <a name="l00987"></a>00987 <span class="preprocessor">                                        __IO uint32_t tmpreg; \</span>
 <a name="l00988"></a>00988 <span class="preprocessor">                                        SET_BIT(RCC-&gt;APB1ENR, RCC_APB1ENR_SPI3EN);\</span>
 <a name="l00989"></a>00989 <span class="preprocessor">                                        </span><span class="comment">/* Delay after an RCC peripheral clock enabling */</span> \
@@ -1058,7 +1058,7 @@
 <a name="l00991"></a>00991                                         UNUSED(tmpreg); \
 <a name="l00992"></a>00992                                       } while(0U)
 <a name="l00993"></a>00993 
-<a name="l00994"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#ga4a09294d81a526606fb6e2a8bd8f2955">00994</a> <span class="preprocessor">#define __HAL_RCC_UART4_CLK_ENABLE()   do { \</span>
+<a name="l00994"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#ga4a09294d81a526606fb6e2a8bd8f2955">00994</a> <span class="preprocessor">#define __HAL_RCC_UART4_CLK_ENABLE()   do { \</span>
 <a name="l00995"></a>00995 <span class="preprocessor">                                        __IO uint32_t tmpreg; \</span>
 <a name="l00996"></a>00996 <span class="preprocessor">                                        SET_BIT(RCC-&gt;APB1ENR, RCC_APB1ENR_UART4EN);\</span>
 <a name="l00997"></a>00997 <span class="preprocessor">                                        </span><span class="comment">/* Delay after an RCC peripheral clock enabling */</span> \
@@ -1066,7 +1066,7 @@
 <a name="l00999"></a>00999                                         UNUSED(tmpreg); \
 <a name="l01000"></a>01000                                       } while(0U)
 <a name="l01001"></a>01001 
-<a name="l01002"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#ga801a26037f0fd4fa1bad78fefe677f89">01002</a> <span class="preprocessor">#define __HAL_RCC_UART5_CLK_ENABLE()   do { \</span>
+<a name="l01002"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#ga801a26037f0fd4fa1bad78fefe677f89">01002</a> <span class="preprocessor">#define __HAL_RCC_UART5_CLK_ENABLE()   do { \</span>
 <a name="l01003"></a>01003 <span class="preprocessor">                                        __IO uint32_t tmpreg; \</span>
 <a name="l01004"></a>01004 <span class="preprocessor">                                        SET_BIT(RCC-&gt;APB1ENR, RCC_APB1ENR_UART5EN);\</span>
 <a name="l01005"></a>01005 <span class="preprocessor">                                        </span><span class="comment">/* Delay after an RCC peripheral clock enabling */</span> \
@@ -1074,13 +1074,13 @@
 <a name="l01007"></a>01007                                         UNUSED(tmpreg); \
 <a name="l01008"></a>01008                                       } while(0U)
 <a name="l01009"></a>01009 
-<a name="l01010"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#ga44f246a1407fadc350e416e4c3256f6e">01010</a> <span class="preprocessor">#define __HAL_RCC_TIM5_CLK_DISABLE()        (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_TIM5EN))</span>
-<a name="l01011"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#ga40b70e57e0b7741e6f62d1f2a25b0a3e">01011</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM12_CLK_DISABLE()       (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_TIM12EN))</span>
-<a name="l01012"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#ga501dca0467cb5d6119144dbab79243f6">01012</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM13_CLK_DISABLE()       (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_TIM13EN))</span>
-<a name="l01013"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#ga492911cce1e54350519e7793c897102b">01013</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM14_CLK_DISABLE()       (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_TIM14EN))</span>
-<a name="l01014"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#gadc6ab93c1c538a7f2ee24a85a6831274">01014</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_SPI3_CLK_DISABLE()        (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_SPI3EN))</span>
-<a name="l01015"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#ga0c7d9a072dd5ad3f28220667001bfc08">01015</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_UART4_CLK_DISABLE()       (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_UART4EN))</span>
-<a name="l01016"></a><a class="code" href="group__RCCEx__APB1__Clock__Enable__Disable.html#ga8a95ee8616f039fd0b00b0efa7297e6c">01016</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_UART5_CLK_DISABLE()       (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_UART5EN))</span>
+<a name="l01010"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#ga44f246a1407fadc350e416e4c3256f6e">01010</a> <span class="preprocessor">#define __HAL_RCC_TIM5_CLK_DISABLE()        (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_TIM5EN))</span>
+<a name="l01011"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#ga40b70e57e0b7741e6f62d1f2a25b0a3e">01011</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM12_CLK_DISABLE()       (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_TIM12EN))</span>
+<a name="l01012"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#ga501dca0467cb5d6119144dbab79243f6">01012</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM13_CLK_DISABLE()       (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_TIM13EN))</span>
+<a name="l01013"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#ga492911cce1e54350519e7793c897102b">01013</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM14_CLK_DISABLE()       (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_TIM14EN))</span>
+<a name="l01014"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#gadc6ab93c1c538a7f2ee24a85a6831274">01014</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_SPI3_CLK_DISABLE()        (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_SPI3EN))</span>
+<a name="l01015"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#ga0c7d9a072dd5ad3f28220667001bfc08">01015</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_UART4_CLK_DISABLE()       (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_UART4EN))</span>
+<a name="l01016"></a><a class="code" href="group/group__RCCEx__APB1__Clock__Enable__Disable.html#ga8a95ee8616f039fd0b00b0efa7297e6c">01016</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_UART5_CLK_DISABLE()       (RCC-&gt;APB1ENR &amp;= ~(RCC_APB1ENR_UART5EN))</span>
 <a name="l01017"></a>01017 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F100xE */</span>
 <a name="l01018"></a>01018 
 <a name="l01019"></a>01019 <span class="preprocessor">#if defined(STM32F105xC) || defined(STM32F107xC)</span>
@@ -1146,14 +1146,14 @@
 <a name="l01079"></a>01079 <span class="preprocessor"> || defined(STM32F101xE) || defined(STM32F101xG) || defined(STM32F102xB)\</span>
 <a name="l01080"></a>01080 <span class="preprocessor"> || defined(STM32F103xB) || defined(STM32F103xE) || defined(STM32F103xG)\</span>
 <a name="l01081"></a>01081 <span class="preprocessor"> || defined(STM32F105xC) || defined(STM32F107xC)</span>
-<a name="l01082"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga62bee605d886067f86f890ee3af68eb5">01082</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM4_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM4EN)) != RESET)</span>
-<a name="l01083"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga30913be6e4b95cf2ebdf79647af18f34">01083</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM4_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM4EN)) == RESET)</span>
-<a name="l01084"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga282522dda9557cf715be3ee13c031a5b">01084</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_SPI2_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_SPI2EN)) != RESET)</span>
-<a name="l01085"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#gaab213cf8807d6e7e8b3867ffb404d763">01085</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_SPI2_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_SPI2EN)) == RESET)</span>
-<a name="l01086"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga5addec8b6604857d81c1386cad21c391">01086</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_USART3_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_USART3EN)) != RESET)</span>
-<a name="l01087"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga9c6b66352f998564a6492d3e5d6aa536">01087</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_USART3_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_USART3EN)) == RESET)</span>
-<a name="l01088"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga2ae540056d72f4230da38c082b6c34c1">01088</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_I2C2_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_I2C2EN)) != RESET)</span>
-<a name="l01089"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#gae051ecb26de5c5b44f1827923c9837a5">01089</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_I2C2_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_I2C2EN)) == RESET)</span>
+<a name="l01082"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga62bee605d886067f86f890ee3af68eb5">01082</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM4_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM4EN)) != RESET)</span>
+<a name="l01083"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga30913be6e4b95cf2ebdf79647af18f34">01083</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM4_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM4EN)) == RESET)</span>
+<a name="l01084"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga282522dda9557cf715be3ee13c031a5b">01084</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_SPI2_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_SPI2EN)) != RESET)</span>
+<a name="l01085"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#gaab213cf8807d6e7e8b3867ffb404d763">01085</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_SPI2_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_SPI2EN)) == RESET)</span>
+<a name="l01086"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga5addec8b6604857d81c1386cad21c391">01086</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_USART3_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_USART3EN)) != RESET)</span>
+<a name="l01087"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga9c6b66352f998564a6492d3e5d6aa536">01087</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_USART3_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_USART3EN)) == RESET)</span>
+<a name="l01088"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga2ae540056d72f4230da38c082b6c34c1">01088</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_I2C2_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_I2C2EN)) != RESET)</span>
+<a name="l01089"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#gae051ecb26de5c5b44f1827923c9837a5">01089</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_I2C2_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_I2C2EN)) == RESET)</span>
 <a name="l01090"></a>01090 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F100xB || STM32F101xB || STM32F101xE || (...) || STM32F105xC || STM32F107xC */</span>
 <a name="l01091"></a>01091 <span class="preprocessor">#if defined(STM32F102x6) || defined(STM32F102xB) || defined(STM32F103x6)\</span>
 <a name="l01092"></a>01092 <span class="preprocessor"> || defined(STM32F103xB) || defined(STM32F103xE) || defined(STM32F103xG)</span>
@@ -1178,32 +1178,32 @@
 <a name="l01111"></a>01111 <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_DAC_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_DACEN)) == RESET)</span>
 <a name="l01112"></a>01112 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F101xE || STM32F103xE || STM32F101xG || (...) || STM32F105xC || STM32F107xC */</span>
 <a name="l01113"></a>01113 <span class="preprocessor">#if defined(STM32F100xB) || defined  (STM32F100xE)</span>
-<a name="l01114"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#gabb273361eaae66c857b5db26b639ff45">01114</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM6_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM6EN)) != RESET)</span>
-<a name="l01115"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga70e84a0b11a0dab64a048f8dd6bbafb2">01115</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM6_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM6EN)) == RESET)</span>
-<a name="l01116"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga5642c4226ce18792efeca9d39cb0c5e0">01116</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM7_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM7EN)) != RESET)</span>
-<a name="l01117"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#gac230813514cd9ee769f8f46b83d83f23">01117</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM7_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM7EN)) == RESET)</span>
-<a name="l01118"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga22c9af6855a6f9f9c947497908adcc9f">01118</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_DAC_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_DACEN)) != RESET)</span>
-<a name="l01119"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#gadb2c1ec9bfcc21993094506a39e08f33">01119</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_DAC_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_DACEN)) == RESET)</span>
-<a name="l01120"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#gaeeda9e9945cc58b67cfc877118fea250">01120</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_CEC_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_CECEN)) != RESET)</span>
-<a name="l01121"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#gad1d752e67f2432510722aa5384f5cdfc">01121</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_CEC_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_CECEN)) == RESET)</span>
+<a name="l01114"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#gabb273361eaae66c857b5db26b639ff45">01114</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM6_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM6EN)) != RESET)</span>
+<a name="l01115"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga70e84a0b11a0dab64a048f8dd6bbafb2">01115</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM6_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM6EN)) == RESET)</span>
+<a name="l01116"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga5642c4226ce18792efeca9d39cb0c5e0">01116</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM7_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM7EN)) != RESET)</span>
+<a name="l01117"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#gac230813514cd9ee769f8f46b83d83f23">01117</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM7_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM7EN)) == RESET)</span>
+<a name="l01118"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga22c9af6855a6f9f9c947497908adcc9f">01118</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_DAC_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_DACEN)) != RESET)</span>
+<a name="l01119"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#gadb2c1ec9bfcc21993094506a39e08f33">01119</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_DAC_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_DACEN)) == RESET)</span>
+<a name="l01120"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#gaeeda9e9945cc58b67cfc877118fea250">01120</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_CEC_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_CECEN)) != RESET)</span>
+<a name="l01121"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#gad1d752e67f2432510722aa5384f5cdfc">01121</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_CEC_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_CECEN)) == RESET)</span>
 <a name="l01122"></a>01122 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F100xB || STM32F100xE */</span>
 <a name="l01123"></a>01123 <span class="preprocessor">#ifdef STM32F100xE</span>
-<a name="l01124"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga76f0a16fed0812fbab8bf15621939c8b">01124</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM5_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM5EN)) != RESET)</span>
-<a name="l01125"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#gacbe7ae446991adf3d9d6102549a3faac">01125</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM5_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM5EN)) == RESET)</span>
-<a name="l01126"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga7afed5bd30e0175ae5e46e78173b112f">01126</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM12_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM12EN)) != RESET)</span>
-<a name="l01127"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga211c8274b7043802f9c746ac4f18e0fd">01127</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM12_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM12EN)) == RESET)</span>
-<a name="l01128"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#gaeb7cf0d708375a807c690fbb070298dd">01128</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM13_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM13EN)) != RESET)</span>
-<a name="l01129"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga3b40e8e614be95d4a667a3f924ac1bb7">01129</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM13_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM13EN)) == RESET)</span>
-<a name="l01130"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#gaf40a1f6a134b09aaa211ad159e613d1a">01130</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM14_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM14EN)) != RESET)</span>
-<a name="l01131"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga89072bbdf8efacb3d243c50711f60766">01131</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM14_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM14EN)) == RESET)</span>
-<a name="l01132"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga3de049f8b2ad6c2d4561863021f9e2f9">01132</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_SPI3_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_SPI3EN)) != RESET)</span>
-<a name="l01133"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga625e04cf32d6c74d418ba29368f680d4">01133</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_SPI3_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_SPI3EN)) == RESET)</span>
-<a name="l01134"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga76b47e85a8669651c01256ec11ebdc3f">01134</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_UART4_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_UART4EN)) != RESET)</span>
-<a name="l01135"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga1384af5e720a24c083a2154c22e60391">01135</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_UART4_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_UART4EN)) == RESET)</span>
-<a name="l01136"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#gabb2b7e20045558372779949fb841ae00">01136</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_UART5_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_UART5EN)) != RESET)</span>
-<a name="l01137"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga1e5611011911ef745b5e9d2c8d3160f6">01137</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_UART5_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_UART5EN)) == RESET)</span>
-<a name="l01138"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga3f06a13164f56a48336a9c7b2ca51319">01138</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_CAN2_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_CAN2EN)) != RESET)</span>
-<a name="l01139"></a><a class="code" href="group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga9e56e6e37ebda522d1f291874fddca2b">01139</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_CAN2_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_CAN2EN)) == RESET)</span>
+<a name="l01124"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga76f0a16fed0812fbab8bf15621939c8b">01124</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM5_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM5EN)) != RESET)</span>
+<a name="l01125"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#gacbe7ae446991adf3d9d6102549a3faac">01125</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM5_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM5EN)) == RESET)</span>
+<a name="l01126"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga7afed5bd30e0175ae5e46e78173b112f">01126</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM12_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM12EN)) != RESET)</span>
+<a name="l01127"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga211c8274b7043802f9c746ac4f18e0fd">01127</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM12_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM12EN)) == RESET)</span>
+<a name="l01128"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#gaeb7cf0d708375a807c690fbb070298dd">01128</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM13_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM13EN)) != RESET)</span>
+<a name="l01129"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga3b40e8e614be95d4a667a3f924ac1bb7">01129</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM13_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM13EN)) == RESET)</span>
+<a name="l01130"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#gaf40a1f6a134b09aaa211ad159e613d1a">01130</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM14_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM14EN)) != RESET)</span>
+<a name="l01131"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga89072bbdf8efacb3d243c50711f60766">01131</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM14_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM14EN)) == RESET)</span>
+<a name="l01132"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga3de049f8b2ad6c2d4561863021f9e2f9">01132</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_SPI3_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_SPI3EN)) != RESET)</span>
+<a name="l01133"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga625e04cf32d6c74d418ba29368f680d4">01133</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_SPI3_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_SPI3EN)) == RESET)</span>
+<a name="l01134"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga76b47e85a8669651c01256ec11ebdc3f">01134</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_UART4_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_UART4EN)) != RESET)</span>
+<a name="l01135"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga1384af5e720a24c083a2154c22e60391">01135</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_UART4_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_UART4EN)) == RESET)</span>
+<a name="l01136"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#gabb2b7e20045558372779949fb841ae00">01136</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_UART5_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_UART5EN)) != RESET)</span>
+<a name="l01137"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga1e5611011911ef745b5e9d2c8d3160f6">01137</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_UART5_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_UART5EN)) == RESET)</span>
+<a name="l01138"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga3f06a13164f56a48336a9c7b2ca51319">01138</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_CAN2_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_CAN2EN)) != RESET)</span>
+<a name="l01139"></a><a class="code" href="group/group__RCCEx__APB1__Peripheral__Clock__Enable__Disable__Status.html#ga9e56e6e37ebda522d1f291874fddca2b">01139</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_CAN2_IS_CLK_DISABLED()      ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_CAN2EN)) == RESET)</span>
 <a name="l01140"></a>01140 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F100xE */</span>
 <a name="l01141"></a>01141 <span class="preprocessor">#if defined(STM32F105xC) || defined(STM32F107xC)</span>
 <a name="l01142"></a>01142 <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM12_IS_CLK_ENABLED()       ((RCC-&gt;APB1ENR &amp; (RCC_APB1ENR_TIM12EN)) != RESET)</span>
@@ -1243,7 +1243,7 @@
 <a name="l01176"></a>01176 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F101xG || STM32F103x6 || STM32F103xB || STM32F105xC || STM32F107xC || STM32F103xE || STM32F103xG */</span>
 <a name="l01177"></a>01177 
 <a name="l01178"></a>01178 <span class="preprocessor">#if defined(STM32F100xB) || defined(STM32F100xE)</span>
-<a name="l01179"></a><a class="code" href="group__RCCEx__APB2__Clock__Enable__Disable.html#gae809da64734c2dbfef1fb6ac8d00d39c">01179</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM15_CLK_ENABLE()   do { \</span>
+<a name="l01179"></a><a class="code" href="group/group__RCCEx__APB2__Clock__Enable__Disable.html#gae809da64734c2dbfef1fb6ac8d00d39c">01179</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM15_CLK_ENABLE()   do { \</span>
 <a name="l01180"></a>01180 <span class="preprocessor">                                        __IO uint32_t tmpreg; \</span>
 <a name="l01181"></a>01181 <span class="preprocessor">                                        SET_BIT(RCC-&gt;APB2ENR, RCC_APB2ENR_TIM15EN);\</span>
 <a name="l01182"></a>01182 <span class="preprocessor">                                        </span><span class="comment">/* Delay after an RCC peripheral clock enabling */</span> \
@@ -1251,7 +1251,7 @@
 <a name="l01184"></a>01184                                         UNUSED(tmpreg); \
 <a name="l01185"></a>01185                                       } while(0U)
 <a name="l01186"></a>01186 
-<a name="l01187"></a><a class="code" href="group__RCCEx__APB2__Clock__Enable__Disable.html#ga9753b09f531d9d48d31abd4f74c26d26">01187</a> <span class="preprocessor">#define __HAL_RCC_TIM16_CLK_ENABLE()   do { \</span>
+<a name="l01187"></a><a class="code" href="group/group__RCCEx__APB2__Clock__Enable__Disable.html#ga9753b09f531d9d48d31abd4f74c26d26">01187</a> <span class="preprocessor">#define __HAL_RCC_TIM16_CLK_ENABLE()   do { \</span>
 <a name="l01188"></a>01188 <span class="preprocessor">                                        __IO uint32_t tmpreg; \</span>
 <a name="l01189"></a>01189 <span class="preprocessor">                                        SET_BIT(RCC-&gt;APB2ENR, RCC_APB2ENR_TIM16EN);\</span>
 <a name="l01190"></a>01190 <span class="preprocessor">                                        </span><span class="comment">/* Delay after an RCC peripheral clock enabling */</span> \
@@ -1259,7 +1259,7 @@
 <a name="l01192"></a>01192                                         UNUSED(tmpreg); \
 <a name="l01193"></a>01193                                       } while(0U)
 <a name="l01194"></a>01194 
-<a name="l01195"></a><a class="code" href="group__RCCEx__APB2__Clock__Enable__Disable.html#ga983ec0b6719bbf98e40818a8e6817c58">01195</a> <span class="preprocessor">#define __HAL_RCC_TIM17_CLK_ENABLE()   do { \</span>
+<a name="l01195"></a><a class="code" href="group/group__RCCEx__APB2__Clock__Enable__Disable.html#ga983ec0b6719bbf98e40818a8e6817c58">01195</a> <span class="preprocessor">#define __HAL_RCC_TIM17_CLK_ENABLE()   do { \</span>
 <a name="l01196"></a>01196 <span class="preprocessor">                                        __IO uint32_t tmpreg; \</span>
 <a name="l01197"></a>01197 <span class="preprocessor">                                        SET_BIT(RCC-&gt;APB2ENR, RCC_APB2ENR_TIM17EN);\</span>
 <a name="l01198"></a>01198 <span class="preprocessor">                                        </span><span class="comment">/* Delay after an RCC peripheral clock enabling */</span> \
@@ -1267,16 +1267,16 @@
 <a name="l01200"></a>01200                                         UNUSED(tmpreg); \
 <a name="l01201"></a>01201                                       } while(0U)
 <a name="l01202"></a>01202 
-<a name="l01203"></a><a class="code" href="group__RCCEx__APB2__Clock__Enable__Disable.html#ga71501a0d6be9e1d0a17ff4c27a7cd8e6">01203</a> <span class="preprocessor">#define __HAL_RCC_TIM15_CLK_DISABLE()       (RCC-&gt;APB2ENR &amp;= ~(RCC_APB2ENR_TIM15EN))</span>
-<a name="l01204"></a><a class="code" href="group__RCCEx__APB2__Clock__Enable__Disable.html#ga4f23f7c1565e07731f200059c8ed4db9">01204</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM16_CLK_DISABLE()       (RCC-&gt;APB2ENR &amp;= ~(RCC_APB2ENR_TIM16EN))</span>
-<a name="l01205"></a><a class="code" href="group__RCCEx__APB2__Clock__Enable__Disable.html#ga6c046db26bd6495179e6171dc6caeff3">01205</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM17_CLK_DISABLE()       (RCC-&gt;APB2ENR &amp;= ~(RCC_APB2ENR_TIM17EN))</span>
+<a name="l01203"></a><a class="code" href="group/group__RCCEx__APB2__Clock__Enable__Disable.html#ga71501a0d6be9e1d0a17ff4c27a7cd8e6">01203</a> <span class="preprocessor">#define __HAL_RCC_TIM15_CLK_DISABLE()       (RCC-&gt;APB2ENR &amp;= ~(RCC_APB2ENR_TIM15EN))</span>
+<a name="l01204"></a><a class="code" href="group/group__RCCEx__APB2__Clock__Enable__Disable.html#ga4f23f7c1565e07731f200059c8ed4db9">01204</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM16_CLK_DISABLE()       (RCC-&gt;APB2ENR &amp;= ~(RCC_APB2ENR_TIM16EN))</span>
+<a name="l01205"></a><a class="code" href="group/group__RCCEx__APB2__Clock__Enable__Disable.html#ga6c046db26bd6495179e6171dc6caeff3">01205</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM17_CLK_DISABLE()       (RCC-&gt;APB2ENR &amp;= ~(RCC_APB2ENR_TIM17EN))</span>
 <a name="l01206"></a>01206 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F100xB || STM32F100xE */</span>
 <a name="l01207"></a>01207 
 <a name="l01208"></a>01208 <span class="preprocessor">#if defined(STM32F100xE) || defined(STM32F101xB) || defined(STM32F101xE)\</span>
 <a name="l01209"></a>01209 <span class="preprocessor"> || defined(STM32F101xG) || defined(STM32F100xB) || defined(STM32F103xB)\</span>
 <a name="l01210"></a>01210 <span class="preprocessor"> || defined(STM32F103xE) || defined(STM32F103xG) || defined(STM32F105xC)\</span>
 <a name="l01211"></a>01211 <span class="preprocessor"> || defined(STM32F107xC)</span>
-<a name="l01212"></a><a class="code" href="group__RCCEx__APB2__Clock__Enable__Disable.html#ga2cba7d47b6aee57d469f1d8972d442f1">01212</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOE_CLK_ENABLE()   do { \</span>
+<a name="l01212"></a><a class="code" href="group/group__RCCEx__APB2__Clock__Enable__Disable.html#ga2cba7d47b6aee57d469f1d8972d442f1">01212</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOE_CLK_ENABLE()   do { \</span>
 <a name="l01213"></a>01213 <span class="preprocessor">                                        __IO uint32_t tmpreg; \</span>
 <a name="l01214"></a>01214 <span class="preprocessor">                                        SET_BIT(RCC-&gt;APB2ENR, RCC_APB2ENR_IOPEEN);\</span>
 <a name="l01215"></a>01215 <span class="preprocessor">                                        </span><span class="comment">/* Delay after an RCC peripheral clock enabling */</span> \
@@ -1284,7 +1284,7 @@
 <a name="l01217"></a>01217                                         UNUSED(tmpreg); \
 <a name="l01218"></a>01218                                       } while(0U)
 <a name="l01219"></a>01219 
-<a name="l01220"></a><a class="code" href="group__RCCEx__APB2__Clock__Enable__Disable.html#gad8982750e98b22493ae0677b3021b01b">01220</a> <span class="preprocessor">#define __HAL_RCC_GPIOE_CLK_DISABLE()       (RCC-&gt;APB2ENR &amp;= ~(RCC_APB2ENR_IOPEEN))</span>
+<a name="l01220"></a><a class="code" href="group/group__RCCEx__APB2__Clock__Enable__Disable.html#gad8982750e98b22493ae0677b3021b01b">01220</a> <span class="preprocessor">#define __HAL_RCC_GPIOE_CLK_DISABLE()       (RCC-&gt;APB2ENR &amp;= ~(RCC_APB2ENR_IOPEEN))</span>
 <a name="l01221"></a>01221 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F101x6 || STM32F101xB || STM32F101xE || (...) || STM32F105xC || STM32F107xC */</span>
 <a name="l01222"></a>01222 
 <a name="l01223"></a>01223 <span class="preprocessor">#if defined(STM32F101xE) || defined(STM32F103xE) || defined(STM32F101xG)\</span>
@@ -1331,7 +1331,7 @@
 <a name="l01264"></a>01264 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F103xE || STM32F103xG */</span>
 <a name="l01265"></a>01265 
 <a name="l01266"></a>01266 <span class="preprocessor">#if defined(STM32F100xE)</span>
-<a name="l01267"></a><a class="code" href="group__RCCEx__APB2__Clock__Enable__Disable.html#ga84098c3c8735d401024a1fb762e9527f">01267</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOF_CLK_ENABLE()   do { \</span>
+<a name="l01267"></a><a class="code" href="group/group__RCCEx__APB2__Clock__Enable__Disable.html#ga84098c3c8735d401024a1fb762e9527f">01267</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOF_CLK_ENABLE()   do { \</span>
 <a name="l01268"></a>01268 <span class="preprocessor">                                        __IO uint32_t tmpreg; \</span>
 <a name="l01269"></a>01269 <span class="preprocessor">                                        SET_BIT(RCC-&gt;APB2ENR, RCC_APB2ENR_IOPFEN);\</span>
 <a name="l01270"></a>01270 <span class="preprocessor">                                        </span><span class="comment">/* Delay after an RCC peripheral clock enabling */</span> \
@@ -1339,7 +1339,7 @@
 <a name="l01272"></a>01272                                         UNUSED(tmpreg); \
 <a name="l01273"></a>01273                                       } while(0U)
 <a name="l01274"></a>01274 
-<a name="l01275"></a><a class="code" href="group__RCCEx__APB2__Clock__Enable__Disable.html#gaf0816a01f8153700ff758c8783e84e9e">01275</a> <span class="preprocessor">#define __HAL_RCC_GPIOG_CLK_ENABLE()   do { \</span>
+<a name="l01275"></a><a class="code" href="group/group__RCCEx__APB2__Clock__Enable__Disable.html#gaf0816a01f8153700ff758c8783e84e9e">01275</a> <span class="preprocessor">#define __HAL_RCC_GPIOG_CLK_ENABLE()   do { \</span>
 <a name="l01276"></a>01276 <span class="preprocessor">                                        __IO uint32_t tmpreg; \</span>
 <a name="l01277"></a>01277 <span class="preprocessor">                                        SET_BIT(RCC-&gt;APB2ENR, RCC_APB2ENR_IOPGEN);\</span>
 <a name="l01278"></a>01278 <span class="preprocessor">                                        </span><span class="comment">/* Delay after an RCC peripheral clock enabling */</span> \
@@ -1347,8 +1347,8 @@
 <a name="l01280"></a>01280                                         UNUSED(tmpreg); \
 <a name="l01281"></a>01281                                       } while(0U)
 <a name="l01282"></a>01282 
-<a name="l01283"></a><a class="code" href="group__RCCEx__APB2__Clock__Enable__Disable.html#ga84c2248eab0a30bd8f4912233abbf34a">01283</a> <span class="preprocessor">#define __HAL_RCC_GPIOF_CLK_DISABLE()       (RCC-&gt;APB2ENR &amp;= ~(RCC_APB2ENR_IOPFEN))</span>
-<a name="l01284"></a><a class="code" href="group__RCCEx__APB2__Clock__Enable__Disable.html#ga9d4578e9566823639e049fe69cbaba69">01284</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOG_CLK_DISABLE()       (RCC-&gt;APB2ENR &amp;= ~(RCC_APB2ENR_IOPGEN))</span>
+<a name="l01283"></a><a class="code" href="group/group__RCCEx__APB2__Clock__Enable__Disable.html#ga84c2248eab0a30bd8f4912233abbf34a">01283</a> <span class="preprocessor">#define __HAL_RCC_GPIOF_CLK_DISABLE()       (RCC-&gt;APB2ENR &amp;= ~(RCC_APB2ENR_IOPFEN))</span>
+<a name="l01284"></a><a class="code" href="group/group__RCCEx__APB2__Clock__Enable__Disable.html#ga9d4578e9566823639e049fe69cbaba69">01284</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOG_CLK_DISABLE()       (RCC-&gt;APB2ENR &amp;= ~(RCC_APB2ENR_IOPGEN))</span>
 <a name="l01285"></a>01285 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F100xE */</span>
 <a name="l01286"></a>01286 
 <a name="l01287"></a>01287 <span class="preprocessor">#if defined(STM32F101xG) || defined(STM32F103xG)</span>
@@ -1400,19 +1400,19 @@
 <a name="l01333"></a>01333 <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_ADC2_IS_CLK_DISABLED()      ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_ADC2EN)) == RESET)</span>
 <a name="l01334"></a>01334 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F101xG || STM32F103x6 || STM32F103xB || STM32F105xC || STM32F107xC || STM32F103xE || STM32F103xG */</span>
 <a name="l01335"></a>01335 <span class="preprocessor">#if defined(STM32F100xB) || defined(STM32F100xE)</span>
-<a name="l01336"></a><a class="code" href="group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#gab8bba755c5ee38df4fb1e27d32cada06">01336</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM15_IS_CLK_ENABLED()       ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_TIM15EN)) != RESET)</span>
-<a name="l01337"></a><a class="code" href="group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#gaa649af8007f817b25312fe2a82a2dc2d">01337</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM15_IS_CLK_DISABLED()      ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_TIM15EN)) == RESET)</span>
-<a name="l01338"></a><a class="code" href="group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#ga52afd021e3f0970ce10549dbfb69abac">01338</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM16_IS_CLK_ENABLED()       ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_TIM16EN)) != RESET)</span>
-<a name="l01339"></a><a class="code" href="group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#ga55adb9971771c35d36a549a1948b7b1e">01339</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM16_IS_CLK_DISABLED()      ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_TIM16EN)) == RESET)</span>
-<a name="l01340"></a><a class="code" href="group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#ga9cb697e01267c3ee783f0fabf3eefda1">01340</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM17_IS_CLK_ENABLED()       ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_TIM17EN)) != RESET)</span>
-<a name="l01341"></a><a class="code" href="group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#gaf55e3121b3ce93da44a1ac83f3cdac8a">01341</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM17_IS_CLK_DISABLED()      ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_TIM17EN)) == RESET)</span>
+<a name="l01336"></a><a class="code" href="group/group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#gab8bba755c5ee38df4fb1e27d32cada06">01336</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM15_IS_CLK_ENABLED()       ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_TIM15EN)) != RESET)</span>
+<a name="l01337"></a><a class="code" href="group/group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#gaa649af8007f817b25312fe2a82a2dc2d">01337</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM15_IS_CLK_DISABLED()      ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_TIM15EN)) == RESET)</span>
+<a name="l01338"></a><a class="code" href="group/group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#ga52afd021e3f0970ce10549dbfb69abac">01338</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM16_IS_CLK_ENABLED()       ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_TIM16EN)) != RESET)</span>
+<a name="l01339"></a><a class="code" href="group/group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#ga55adb9971771c35d36a549a1948b7b1e">01339</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM16_IS_CLK_DISABLED()      ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_TIM16EN)) == RESET)</span>
+<a name="l01340"></a><a class="code" href="group/group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#ga9cb697e01267c3ee783f0fabf3eefda1">01340</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM17_IS_CLK_ENABLED()       ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_TIM17EN)) != RESET)</span>
+<a name="l01341"></a><a class="code" href="group/group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#gaf55e3121b3ce93da44a1ac83f3cdac8a">01341</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM17_IS_CLK_DISABLED()      ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_TIM17EN)) == RESET)</span>
 <a name="l01342"></a>01342 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F100xB || STM32F100xE */</span>
 <a name="l01343"></a>01343 <span class="preprocessor">#if defined(STM32F100xE) || defined(STM32F101xB) || defined(STM32F101xE)\</span>
 <a name="l01344"></a>01344 <span class="preprocessor"> || defined(STM32F101xG) || defined(STM32F100xB) || defined(STM32F103xB)\</span>
 <a name="l01345"></a>01345 <span class="preprocessor"> || defined(STM32F103xE) || defined(STM32F103xG) || defined(STM32F105xC)\</span>
 <a name="l01346"></a>01346 <span class="preprocessor"> || defined(STM32F107xC)</span>
-<a name="l01347"></a><a class="code" href="group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#ga2c0dd8ae5cf2026dab691c05f55fa384">01347</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOE_IS_CLK_ENABLED()       ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_IOPEEN)) != RESET)</span>
-<a name="l01348"></a><a class="code" href="group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#ga04deb9fe7c5fad8f1644682c1114613f">01348</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOE_IS_CLK_DISABLED()      ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_IOPEEN)) == RESET)</span>
+<a name="l01347"></a><a class="code" href="group/group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#ga2c0dd8ae5cf2026dab691c05f55fa384">01347</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOE_IS_CLK_ENABLED()       ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_IOPEEN)) != RESET)</span>
+<a name="l01348"></a><a class="code" href="group/group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#ga04deb9fe7c5fad8f1644682c1114613f">01348</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOE_IS_CLK_DISABLED()      ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_IOPEEN)) == RESET)</span>
 <a name="l01349"></a>01349 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F101x6 || STM32F101xB || STM32F101xE || (...) || STM32F105xC || STM32F107xC */</span>
 <a name="l01350"></a>01350 <span class="preprocessor">#if defined(STM32F101xE) || defined(STM32F103xE) || defined(STM32F101xG)\</span>
 <a name="l01351"></a>01351 <span class="preprocessor"> || defined(STM32F103xG)</span>
@@ -1428,10 +1428,10 @@
 <a name="l01361"></a>01361 <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_ADC3_IS_CLK_DISABLED()      ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_ADC3EN)) == RESET)</span>
 <a name="l01362"></a>01362 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F103xE || STM32F103xG */</span>
 <a name="l01363"></a>01363 <span class="preprocessor">#if defined(STM32F100xE)</span>
-<a name="l01364"></a><a class="code" href="group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#ga5c997b15dc4bc3fd8e5b43193e4b1a2d">01364</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOF_IS_CLK_ENABLED()       ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_IOPFEN)) != RESET)</span>
-<a name="l01365"></a><a class="code" href="group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#ga843a7fcc2441b978cadacbea548dff93">01365</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOF_IS_CLK_DISABLED()      ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_IOPFEN)) == RESET)</span>
-<a name="l01366"></a><a class="code" href="group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#ga3770796716f63a656285dcfedf8c0651">01366</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOG_IS_CLK_ENABLED()       ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_IOPGEN)) != RESET)</span>
-<a name="l01367"></a><a class="code" href="group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#ga56838183bdecd8b53c8b23bfcad5b28f">01367</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOG_IS_CLK_DISABLED()      ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_IOPGEN)) == RESET)</span>
+<a name="l01364"></a><a class="code" href="group/group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#ga5c997b15dc4bc3fd8e5b43193e4b1a2d">01364</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOF_IS_CLK_ENABLED()       ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_IOPFEN)) != RESET)</span>
+<a name="l01365"></a><a class="code" href="group/group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#ga843a7fcc2441b978cadacbea548dff93">01365</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOF_IS_CLK_DISABLED()      ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_IOPFEN)) == RESET)</span>
+<a name="l01366"></a><a class="code" href="group/group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#ga3770796716f63a656285dcfedf8c0651">01366</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOG_IS_CLK_ENABLED()       ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_IOPGEN)) != RESET)</span>
+<a name="l01367"></a><a class="code" href="group/group__RCCEx__APB2__Peripheral__Clock__Enable__Disable__Status.html#ga56838183bdecd8b53c8b23bfcad5b28f">01367</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOG_IS_CLK_DISABLED()      ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_IOPGEN)) == RESET)</span>
 <a name="l01368"></a>01368 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F100xE */</span>
 <a name="l01369"></a>01369 <span class="preprocessor">#if defined(STM32F101xG) || defined(STM32F103xG)</span>
 <a name="l01370"></a>01370 <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM9_IS_CLK_ENABLED()       ((RCC-&gt;APB2ENR &amp; (RCC_APB2ENR_TIM9EN)) != RESET)</span>
@@ -1484,15 +1484,15 @@
 <a name="l01417"></a>01417 <span class="preprocessor"> || defined(STM32F101xE) || defined(STM32F101xG) || defined(STM32F102xB)\</span>
 <a name="l01418"></a>01418 <span class="preprocessor"> || defined(STM32F103xB) || defined(STM32F103xE) || defined(STM32F103xG)\</span>
 <a name="l01419"></a>01419 <span class="preprocessor"> || defined(STM32F105xC) || defined(STM32F107xC)</span>
-<a name="l01420"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#ga16ff4de009e6cf02e8bfff068866837a">01420</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM4_FORCE_RESET()        (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_TIM4RST))</span>
-<a name="l01421"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#ga869e4f5c1132e3dfce084099cf454c51">01421</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_SPI2_FORCE_RESET()        (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_SPI2RST))</span>
-<a name="l01422"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#ga8902e16d49b4335d213b6a115c19127b">01422</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_USART3_FORCE_RESET()      (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_USART3RST))</span>
-<a name="l01423"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#gaed404dfdc9bc032cf718b7ed17f664f0">01423</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_I2C2_FORCE_RESET()        (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_I2C2RST))</span>
+<a name="l01420"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#ga16ff4de009e6cf02e8bfff068866837a">01420</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM4_FORCE_RESET()        (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_TIM4RST))</span>
+<a name="l01421"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#ga869e4f5c1132e3dfce084099cf454c51">01421</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_SPI2_FORCE_RESET()        (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_SPI2RST))</span>
+<a name="l01422"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#ga8902e16d49b4335d213b6a115c19127b">01422</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_USART3_FORCE_RESET()      (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_USART3RST))</span>
+<a name="l01423"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#gaed404dfdc9bc032cf718b7ed17f664f0">01423</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_I2C2_FORCE_RESET()        (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_I2C2RST))</span>
 <a name="l01424"></a>01424 <span class="preprocessor"></span>
-<a name="l01425"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#gaab43d37f4682740d15c4b1fadb908d51">01425</a> <span class="preprocessor">#define __HAL_RCC_TIM4_RELEASE_RESET()      (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_TIM4RST))</span>
-<a name="l01426"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#gacb910fd0c3c5a27d020ef3df20fce4c7">01426</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_SPI2_RELEASE_RESET()      (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_SPI2RST))</span>
-<a name="l01427"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#ga25b71d0f7fb3b9455fb360fcb780c492">01427</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_USART3_RELEASE_RESET()    (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_USART3RST))</span>
-<a name="l01428"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#ga2fa8cc909b285813af86c253ec110356">01428</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_I2C2_RELEASE_RESET()      (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_I2C2RST))</span>
+<a name="l01425"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#gaab43d37f4682740d15c4b1fadb908d51">01425</a> <span class="preprocessor">#define __HAL_RCC_TIM4_RELEASE_RESET()      (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_TIM4RST))</span>
+<a name="l01426"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#gacb910fd0c3c5a27d020ef3df20fce4c7">01426</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_SPI2_RELEASE_RESET()      (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_SPI2RST))</span>
+<a name="l01427"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#ga25b71d0f7fb3b9455fb360fcb780c492">01427</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_USART3_RELEASE_RESET()    (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_USART3RST))</span>
+<a name="l01428"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#ga2fa8cc909b285813af86c253ec110356">01428</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_I2C2_RELEASE_RESET()      (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_I2C2RST))</span>
 <a name="l01429"></a>01429 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F100xB || STM32F101xB || STM32F101xE || (...) || STM32F105xC || STM32F107xC */</span>
 <a name="l01430"></a>01430 
 <a name="l01431"></a>01431 <span class="preprocessor">#if defined(STM32F102x6) || defined(STM32F102xB) || defined(STM32F103x6)\</span>
@@ -1521,33 +1521,33 @@
 <a name="l01454"></a>01454 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F101xE || STM32F103xE || STM32F101xG || (...) || STM32F105xC || STM32F107xC */</span>
 <a name="l01455"></a>01455 
 <a name="l01456"></a>01456 <span class="preprocessor">#if defined(STM32F100xB) || defined  (STM32F100xE)</span>
-<a name="l01457"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#ga3446c3ea4d5e101b591fcb0222d0fb10">01457</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM6_FORCE_RESET()        (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_TIM6RST))</span>
-<a name="l01458"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#ga350e60b0e21e094ff1624e1da9855e65">01458</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM7_FORCE_RESET()        (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_TIM7RST))</span>
-<a name="l01459"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#gad8ea14ca039a7298fecf64b829dc6384">01459</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_DAC_FORCE_RESET()         (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_DACRST))</span>
-<a name="l01460"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#ga0bc74333a544b2c4b8dc6eddd8fe5a8f">01460</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_CEC_FORCE_RESET()         (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_CECRST))</span>
+<a name="l01457"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#ga3446c3ea4d5e101b591fcb0222d0fb10">01457</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM6_FORCE_RESET()        (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_TIM6RST))</span>
+<a name="l01458"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#ga350e60b0e21e094ff1624e1da9855e65">01458</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM7_FORCE_RESET()        (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_TIM7RST))</span>
+<a name="l01459"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#gad8ea14ca039a7298fecf64b829dc6384">01459</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_DAC_FORCE_RESET()         (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_DACRST))</span>
+<a name="l01460"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#ga0bc74333a544b2c4b8dc6eddd8fe5a8f">01460</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_CEC_FORCE_RESET()         (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_CECRST))</span>
 <a name="l01461"></a>01461 <span class="preprocessor"></span>
-<a name="l01462"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#ga7eba1763b83169bc7cec3e10bfbccf20">01462</a> <span class="preprocessor">#define __HAL_RCC_TIM6_RELEASE_RESET()      (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_TIM6RST))</span>
-<a name="l01463"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#ga4451d9cbc82223d913fae1f6b8187996">01463</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM7_RELEASE_RESET()      (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_TIM7RST))</span>
-<a name="l01464"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#ga1ac476b29c9395378bc16a7c4df08c7c">01464</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_DAC_RELEASE_RESET()       (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_DACRST))</span>
-<a name="l01465"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#ga6a8c5a752f83da738f47125c3d754fc9">01465</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_CEC_RELEASE_RESET()       (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_CECRST))</span>
+<a name="l01462"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#ga7eba1763b83169bc7cec3e10bfbccf20">01462</a> <span class="preprocessor">#define __HAL_RCC_TIM6_RELEASE_RESET()      (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_TIM6RST))</span>
+<a name="l01463"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#ga4451d9cbc82223d913fae1f6b8187996">01463</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM7_RELEASE_RESET()      (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_TIM7RST))</span>
+<a name="l01464"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#ga1ac476b29c9395378bc16a7c4df08c7c">01464</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_DAC_RELEASE_RESET()       (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_DACRST))</span>
+<a name="l01465"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#ga6a8c5a752f83da738f47125c3d754fc9">01465</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_CEC_RELEASE_RESET()       (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_CECRST))</span>
 <a name="l01466"></a>01466 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F100xB || STM32F100xE */</span>
 <a name="l01467"></a>01467 
 <a name="l01468"></a>01468 <span class="preprocessor">#if defined  (STM32F100xE)</span>
-<a name="l01469"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#ga20ca12317dd14485d79902863aad063b">01469</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM5_FORCE_RESET()        (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_TIM5RST))</span>
-<a name="l01470"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#ga1c4fa1efafbaad1e9ac513412df04f21">01470</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM12_FORCE_RESET()       (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_TIM12RST))</span>
-<a name="l01471"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#gac3ec3222d8441040695cb64a7be91026">01471</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM13_FORCE_RESET()       (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_TIM13RST))</span>
-<a name="l01472"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#gaee5b3b45c9e419c7dc2815fea8ca131f">01472</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM14_FORCE_RESET()       (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_TIM14RST))</span>
-<a name="l01473"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#gafb0c679992eba330a2d47ac722a5c143">01473</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_SPI3_FORCE_RESET()        (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_SPI3RST))</span>
-<a name="l01474"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#ga462f7bbb84307a5841556d43d7932d83">01474</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_UART4_FORCE_RESET()       (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_UART4RST))</span>
-<a name="l01475"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#ga326264be9dae134e1bdccdd0161b23d1">01475</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_UART5_FORCE_RESET()       (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_UART5RST))</span>
+<a name="l01469"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#ga20ca12317dd14485d79902863aad063b">01469</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM5_FORCE_RESET()        (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_TIM5RST))</span>
+<a name="l01470"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#ga1c4fa1efafbaad1e9ac513412df04f21">01470</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM12_FORCE_RESET()       (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_TIM12RST))</span>
+<a name="l01471"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#gac3ec3222d8441040695cb64a7be91026">01471</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM13_FORCE_RESET()       (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_TIM13RST))</span>
+<a name="l01472"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#gaee5b3b45c9e419c7dc2815fea8ca131f">01472</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM14_FORCE_RESET()       (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_TIM14RST))</span>
+<a name="l01473"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#gafb0c679992eba330a2d47ac722a5c143">01473</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_SPI3_FORCE_RESET()        (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_SPI3RST))</span>
+<a name="l01474"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#ga462f7bbb84307a5841556d43d7932d83">01474</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_UART4_FORCE_RESET()       (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_UART4RST))</span>
+<a name="l01475"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#ga326264be9dae134e1bdccdd0161b23d1">01475</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_UART5_FORCE_RESET()       (RCC-&gt;APB1RSTR |= (RCC_APB1RSTR_UART5RST))</span>
 <a name="l01476"></a>01476 <span class="preprocessor"></span>
-<a name="l01477"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#gaf7e0cde5ea8f6425d87ebf2d91e8b360">01477</a> <span class="preprocessor">#define __HAL_RCC_TIM5_RELEASE_RESET()      (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_TIM5RST))</span>
-<a name="l01478"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#gab26147981205dd120cfc129d3031459c">01478</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM12_RELEASE_RESET()     (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_TIM12RST))</span>
-<a name="l01479"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#gad95dc322d87913d9bee93a1f41ff5403">01479</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM13_RELEASE_RESET()     (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_TIM13RST))</span>
-<a name="l01480"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#ga241bf274a6fba46a49b50aedaf1e08d3">01480</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM14_RELEASE_RESET()     (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_TIM14RST))</span>
-<a name="l01481"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#ga1fb7a5367cfed25545058af0eb4f55f1">01481</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_SPI3_RELEASE_RESET()      (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_SPI3RST))</span>
-<a name="l01482"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#gabbfb393dffbb0652bbd581302f4de609">01482</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_UART4_RELEASE_RESET()     (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_UART4RST))</span>
-<a name="l01483"></a><a class="code" href="group__RCCEx__APB1__Force__Release__Reset.html#ga7009cc550412874444d1d519b0b56b07">01483</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_UART5_RELEASE_RESET()     (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_UART5RST))</span>
+<a name="l01477"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#gaf7e0cde5ea8f6425d87ebf2d91e8b360">01477</a> <span class="preprocessor">#define __HAL_RCC_TIM5_RELEASE_RESET()      (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_TIM5RST))</span>
+<a name="l01478"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#gab26147981205dd120cfc129d3031459c">01478</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM12_RELEASE_RESET()     (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_TIM12RST))</span>
+<a name="l01479"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#gad95dc322d87913d9bee93a1f41ff5403">01479</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM13_RELEASE_RESET()     (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_TIM13RST))</span>
+<a name="l01480"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#ga241bf274a6fba46a49b50aedaf1e08d3">01480</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM14_RELEASE_RESET()     (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_TIM14RST))</span>
+<a name="l01481"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#ga1fb7a5367cfed25545058af0eb4f55f1">01481</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_SPI3_RELEASE_RESET()      (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_SPI3RST))</span>
+<a name="l01482"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#gabbfb393dffbb0652bbd581302f4de609">01482</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_UART4_RELEASE_RESET()     (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_UART4RST))</span>
+<a name="l01483"></a><a class="code" href="group/group__RCCEx__APB1__Force__Release__Reset.html#ga7009cc550412874444d1d519b0b56b07">01483</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_UART5_RELEASE_RESET()     (RCC-&gt;APB1RSTR &amp;= ~(RCC_APB1RSTR_UART5RST))</span>
 <a name="l01484"></a>01484 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F100xE */</span>
 <a name="l01485"></a>01485 
 <a name="l01486"></a>01486 <span class="preprocessor">#if defined(STM32F105xC) || defined(STM32F107xC)</span>
@@ -1584,22 +1584,22 @@
 <a name="l01517"></a>01517 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F101xG || STM32F103x6 || STM32F103xB || STM32F105xC || STM32F107xC || STM32F103xE || STM32F103xG */</span>
 <a name="l01518"></a>01518 
 <a name="l01519"></a>01519 <span class="preprocessor">#if defined(STM32F100xB) || defined(STM32F100xE)</span>
-<a name="l01520"></a><a class="code" href="group__RCCEx__APB2__Force__Release__Reset.html#gaff60b9ea69452692f5d15054cf45c0d5">01520</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM15_FORCE_RESET()       (RCC-&gt;APB2RSTR |= (RCC_APB2RSTR_TIM15RST))</span>
-<a name="l01521"></a><a class="code" href="group__RCCEx__APB2__Force__Release__Reset.html#ga08cdf6a4295cfb02eae6a70aecf2e3ee">01521</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM16_FORCE_RESET()       (RCC-&gt;APB2RSTR |= (RCC_APB2RSTR_TIM16RST))</span>
-<a name="l01522"></a><a class="code" href="group__RCCEx__APB2__Force__Release__Reset.html#ga829f154bfefa2317311c97650f1264aa">01522</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM17_FORCE_RESET()       (RCC-&gt;APB2RSTR |= (RCC_APB2RSTR_TIM17RST))</span>
+<a name="l01520"></a><a class="code" href="group/group__RCCEx__APB2__Force__Release__Reset.html#gaff60b9ea69452692f5d15054cf45c0d5">01520</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM15_FORCE_RESET()       (RCC-&gt;APB2RSTR |= (RCC_APB2RSTR_TIM15RST))</span>
+<a name="l01521"></a><a class="code" href="group/group__RCCEx__APB2__Force__Release__Reset.html#ga08cdf6a4295cfb02eae6a70aecf2e3ee">01521</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM16_FORCE_RESET()       (RCC-&gt;APB2RSTR |= (RCC_APB2RSTR_TIM16RST))</span>
+<a name="l01522"></a><a class="code" href="group/group__RCCEx__APB2__Force__Release__Reset.html#ga829f154bfefa2317311c97650f1264aa">01522</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM17_FORCE_RESET()       (RCC-&gt;APB2RSTR |= (RCC_APB2RSTR_TIM17RST))</span>
 <a name="l01523"></a>01523 <span class="preprocessor"></span>
-<a name="l01524"></a><a class="code" href="group__RCCEx__APB2__Force__Release__Reset.html#ga2a3e73be86af6fa124bbd5447b732de4">01524</a> <span class="preprocessor">#define __HAL_RCC_TIM15_RELEASE_RESET()     (RCC-&gt;APB2RSTR &amp;= ~(RCC_APB2RSTR_TIM15RST))</span>
-<a name="l01525"></a><a class="code" href="group__RCCEx__APB2__Force__Release__Reset.html#gaccce3b7168e4357d179cb5c978a7bfe6">01525</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM16_RELEASE_RESET()     (RCC-&gt;APB2RSTR &amp;= ~(RCC_APB2RSTR_TIM16RST))</span>
-<a name="l01526"></a><a class="code" href="group__RCCEx__APB2__Force__Release__Reset.html#ga48ebe709fd10e1594c70752a05644a85">01526</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM17_RELEASE_RESET()     (RCC-&gt;APB2RSTR &amp;= ~(RCC_APB2RSTR_TIM17RST))</span>
+<a name="l01524"></a><a class="code" href="group/group__RCCEx__APB2__Force__Release__Reset.html#ga2a3e73be86af6fa124bbd5447b732de4">01524</a> <span class="preprocessor">#define __HAL_RCC_TIM15_RELEASE_RESET()     (RCC-&gt;APB2RSTR &amp;= ~(RCC_APB2RSTR_TIM15RST))</span>
+<a name="l01525"></a><a class="code" href="group/group__RCCEx__APB2__Force__Release__Reset.html#gaccce3b7168e4357d179cb5c978a7bfe6">01525</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM16_RELEASE_RESET()     (RCC-&gt;APB2RSTR &amp;= ~(RCC_APB2RSTR_TIM16RST))</span>
+<a name="l01526"></a><a class="code" href="group/group__RCCEx__APB2__Force__Release__Reset.html#ga48ebe709fd10e1594c70752a05644a85">01526</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_TIM17_RELEASE_RESET()     (RCC-&gt;APB2RSTR &amp;= ~(RCC_APB2RSTR_TIM17RST))</span>
 <a name="l01527"></a>01527 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F100xB || STM32F100xE */</span>
 <a name="l01528"></a>01528 
 <a name="l01529"></a>01529 <span class="preprocessor">#if defined(STM32F100xE) || defined(STM32F101xB) || defined(STM32F101xE)\</span>
 <a name="l01530"></a>01530 <span class="preprocessor"> || defined(STM32F101xG) || defined(STM32F100xB) || defined(STM32F103xB)\</span>
 <a name="l01531"></a>01531 <span class="preprocessor"> || defined(STM32F103xE) || defined(STM32F103xG) || defined(STM32F105xC)\</span>
 <a name="l01532"></a>01532 <span class="preprocessor"> || defined(STM32F107xC)</span>
-<a name="l01533"></a><a class="code" href="group__RCCEx__APB2__Force__Release__Reset.html#ga00bf47b2dc642a42de9c96477db2a2c3">01533</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOE_FORCE_RESET()       (RCC-&gt;APB2RSTR |= (RCC_APB2RSTR_IOPERST))</span>
+<a name="l01533"></a><a class="code" href="group/group__RCCEx__APB2__Force__Release__Reset.html#ga00bf47b2dc642a42de9c96477db2a2c3">01533</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOE_FORCE_RESET()       (RCC-&gt;APB2RSTR |= (RCC_APB2RSTR_IOPERST))</span>
 <a name="l01534"></a>01534 <span class="preprocessor"></span>
-<a name="l01535"></a><a class="code" href="group__RCCEx__APB2__Force__Release__Reset.html#ga38fcc37f656d6f5e5698d9eb01d4c552">01535</a> <span class="preprocessor">#define __HAL_RCC_GPIOE_RELEASE_RESET()     (RCC-&gt;APB2RSTR &amp;= ~(RCC_APB2RSTR_IOPERST))</span>
+<a name="l01535"></a><a class="code" href="group/group__RCCEx__APB2__Force__Release__Reset.html#ga38fcc37f656d6f5e5698d9eb01d4c552">01535</a> <span class="preprocessor">#define __HAL_RCC_GPIOE_RELEASE_RESET()     (RCC-&gt;APB2RSTR &amp;= ~(RCC_APB2RSTR_IOPERST))</span>
 <a name="l01536"></a>01536 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F101x6 || STM32F101xB || STM32F101xE || (...) || STM32F105xC || STM32F107xC */</span>
 <a name="l01537"></a>01537 
 <a name="l01538"></a>01538 <span class="preprocessor">#if defined(STM32F101xE) || defined(STM32F103xE) || defined(STM32F101xG)\</span>
@@ -1620,11 +1620,11 @@
 <a name="l01553"></a>01553 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F103xE || STM32F103xG */</span>
 <a name="l01554"></a>01554 
 <a name="l01555"></a>01555 <span class="preprocessor">#if defined(STM32F100xE)</span>
-<a name="l01556"></a><a class="code" href="group__RCCEx__APB2__Force__Release__Reset.html#gaddfca42e493e7c163e9decf0462183df">01556</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOF_FORCE_RESET()       (RCC-&gt;APB2RSTR |= (RCC_APB2RSTR_IOPFRST))</span>
-<a name="l01557"></a><a class="code" href="group__RCCEx__APB2__Force__Release__Reset.html#gaf9d186d1ede1071931d87645bddb07d0">01557</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOG_FORCE_RESET()       (RCC-&gt;APB2RSTR |= (RCC_APB2RSTR_IOPGRST))</span>
+<a name="l01556"></a><a class="code" href="group/group__RCCEx__APB2__Force__Release__Reset.html#gaddfca42e493e7c163e9decf0462183df">01556</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOF_FORCE_RESET()       (RCC-&gt;APB2RSTR |= (RCC_APB2RSTR_IOPFRST))</span>
+<a name="l01557"></a><a class="code" href="group/group__RCCEx__APB2__Force__Release__Reset.html#gaf9d186d1ede1071931d87645bddb07d0">01557</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOG_FORCE_RESET()       (RCC-&gt;APB2RSTR |= (RCC_APB2RSTR_IOPGRST))</span>
 <a name="l01558"></a>01558 <span class="preprocessor"></span>
-<a name="l01559"></a><a class="code" href="group__RCCEx__APB2__Force__Release__Reset.html#ga9f9a67f57c0ca219d0cf0c2e07114f27">01559</a> <span class="preprocessor">#define __HAL_RCC_GPIOF_RELEASE_RESET()     (RCC-&gt;APB2RSTR &amp;= ~(RCC_APB2RSTR_IOPFRST))</span>
-<a name="l01560"></a><a class="code" href="group__RCCEx__APB2__Force__Release__Reset.html#gae5e39d5fdc6dee36bba521d096ca320d">01560</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOG_RELEASE_RESET()     (RCC-&gt;APB2RSTR &amp;= ~(RCC_APB2RSTR_IOPGRST))</span>
+<a name="l01559"></a><a class="code" href="group/group__RCCEx__APB2__Force__Release__Reset.html#ga9f9a67f57c0ca219d0cf0c2e07114f27">01559</a> <span class="preprocessor">#define __HAL_RCC_GPIOF_RELEASE_RESET()     (RCC-&gt;APB2RSTR &amp;= ~(RCC_APB2RSTR_IOPFRST))</span>
+<a name="l01560"></a><a class="code" href="group/group__RCCEx__APB2__Force__Release__Reset.html#gae5e39d5fdc6dee36bba521d096ca320d">01560</a> <span class="preprocessor"></span><span class="preprocessor">#define __HAL_RCC_GPIOG_RELEASE_RESET()     (RCC-&gt;APB2RSTR &amp;= ~(RCC_APB2RSTR_IOPGRST))</span>
 <a name="l01561"></a>01561 <span class="preprocessor"></span><span class="preprocessor">#endif </span><span class="comment">/* STM32F100xE */</span>
 <a name="l01562"></a>01562 
 <a name="l01563"></a>01563 <span class="preprocessor">#if defined(STM32F101xG) || defined(STM32F103xG)</span>
@@ -1655,7 +1655,7 @@
 <a name="l01588"></a>01588 <span class="comment">  * @param  __HSE_PREDIV_VALUE__ specifies the division value applied to HSE.</span>
 <a name="l01589"></a>01589 <span class="comment">  *         This parameter must be a number between RCC_HSE_PREDIV_DIV1 and RCC_HSE_PREDIV_DIV16.</span>
 <a name="l01590"></a>01590 <span class="comment">  */</span>
-<a name="l01591"></a><a class="code" href="group__RCCEx__HSE__Configuration.html#gafc6bfe4fd172ea49871172fa137b60e0">01591</a> <span class="preprocessor">#define __HAL_RCC_HSE_PREDIV_CONFIG(__HSE_PREDIV_VALUE__) MODIFY_REG(RCC-&gt;CFGR2, RCC_CFGR2_PREDIV1, (uint32_t)(__HSE_PREDIV_VALUE__))</span>
+<a name="l01591"></a><a class="code" href="group/group__RCCEx__HSE__Configuration.html#gafc6bfe4fd172ea49871172fa137b60e0">01591</a> <span class="preprocessor">#define __HAL_RCC_HSE_PREDIV_CONFIG(__HSE_PREDIV_VALUE__) MODIFY_REG(RCC-&gt;CFGR2, RCC_CFGR2_PREDIV1, (uint32_t)(__HSE_PREDIV_VALUE__))</span>
 <a name="l01592"></a>01592 <span class="preprocessor"></span><span class="preprocessor">#else</span>
 <a name="l01593"></a>01593 <span class="preprocessor"></span><span class="comment">/**</span>
 <a name="l01594"></a>01594 <span class="comment">  * @brief  Macro to configure the External High Speed oscillator (HSE) Predivision factor for PLL.</span>
@@ -1675,7 +1675,7 @@
 <a name="l01608"></a>01608 <span class="preprocessor"></span><span class="comment">/**</span>
 <a name="l01609"></a>01609 <span class="comment">  * @brief  Macro to get prediv1 factor for PLL.</span>
 <a name="l01610"></a>01610 <span class="comment">  */</span>
-<a name="l01611"></a><a class="code" href="group__RCCEx__HSE__Configuration.html#ga33799456f6dcbcdb9e66374277083d4c">01611</a> <span class="preprocessor">#define __HAL_RCC_HSE_GET_PREDIV() READ_BIT(RCC-&gt;CFGR2, RCC_CFGR2_PREDIV1)</span>
+<a name="l01611"></a><a class="code" href="group/group__RCCEx__HSE__Configuration.html#ga33799456f6dcbcdb9e66374277083d4c">01611</a> <span class="preprocessor">#define __HAL_RCC_HSE_GET_PREDIV() READ_BIT(RCC-&gt;CFGR2, RCC_CFGR2_PREDIV1)</span>
 <a name="l01612"></a>01612 <span class="preprocessor"></span>
 <a name="l01613"></a>01613 <span class="preprocessor">#else</span>
 <a name="l01614"></a>01614 <span class="preprocessor"></span><span class="comment">/**</span>
@@ -1785,7 +1785,7 @@
 <a name="l01718"></a>01718 <span class="comment">  *            @arg @ref RCC_ADCPCLK2_DIV6 PCLK2 clock divided by 6 selected as ADC clock</span>
 <a name="l01719"></a>01719 <span class="comment">  *            @arg @ref RCC_ADCPCLK2_DIV8 PCLK2 clock divided by 8 selected as ADC clock</span>
 <a name="l01720"></a>01720 <span class="comment">  */</span>
-<a name="l01721"></a><a class="code" href="group__RCCEx__Peripheral__Configuration.html#ga4c75b81d1b7d65cda934c9f1350ea97b">01721</a> <span class="preprocessor">#define __HAL_RCC_ADC_CONFIG(__ADCCLKSOURCE__) \</span>
+<a name="l01721"></a><a class="code" href="group/group__RCCEx__Peripheral__Configuration.html#ga4c75b81d1b7d65cda934c9f1350ea97b">01721</a> <span class="preprocessor">#define __HAL_RCC_ADC_CONFIG(__ADCCLKSOURCE__) \</span>
 <a name="l01722"></a>01722 <span class="preprocessor">                  MODIFY_REG(RCC-&gt;CFGR, RCC_CFGR_ADCPRE, (uint32_t)(__ADCCLKSOURCE__))</span>
 <a name="l01723"></a>01723 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l01724"></a>01724 <span class="comment">/** @brief  Macro to get the ADC clock (ADCxCLK, x=1 to 3 depending on devices).</span>
@@ -1795,7 +1795,7 @@
 <a name="l01728"></a>01728 <span class="comment">  *            @arg @ref RCC_ADCPCLK2_DIV6 PCLK2 clock divided by 6 selected as ADC clock</span>
 <a name="l01729"></a>01729 <span class="comment">  *            @arg @ref RCC_ADCPCLK2_DIV8 PCLK2 clock divided by 8 selected as ADC clock</span>
 <a name="l01730"></a>01730 <span class="comment">  */</span>
-<a name="l01731"></a><a class="code" href="group__RCCEx__Peripheral__Configuration.html#ga2ee9f1838a8450f949b548a06ed3bc58">01731</a> <span class="preprocessor">#define __HAL_RCC_GET_ADC_SOURCE() ((uint32_t)(READ_BIT(RCC-&gt;CFGR, RCC_CFGR_ADCPRE)))</span>
+<a name="l01731"></a><a class="code" href="group/group__RCCEx__Peripheral__Configuration.html#ga2ee9f1838a8450f949b548a06ed3bc58">01731</a> <span class="preprocessor">#define __HAL_RCC_GET_ADC_SOURCE() ((uint32_t)(READ_BIT(RCC-&gt;CFGR, RCC_CFGR_ADCPRE)))</span>
 <a name="l01732"></a>01732 <span class="preprocessor"></span><span class="comment"></span>
 <a name="l01733"></a>01733 <span class="comment">/**</span>
 <a name="l01734"></a>01734 <span class="comment">  * @}</span>
@@ -1923,9 +1923,9 @@
 <a name="l01856"></a>01856 <span class="comment">  * @{</span>
 <a name="l01857"></a>01857 <span class="comment">  */</span>
 <a name="l01858"></a>01858 
-<a name="l01859"></a>01859 HAL_StatusTypeDef <a class="code" href="group__RCCEx__Exported__Functions__Group1.html#ga0c0f61a1e2f47cc81bc43d83ba3e0d95" title="Initializes the RCC extended peripherals clocks according to the specified parameters in the RCC_Peri...">HAL_RCCEx_PeriphCLKConfig</a>(<a class="code" href="structRCC__PeriphCLKInitTypeDef.html" title="RCC extended clocks structure definition.">RCC_PeriphCLKInitTypeDef</a>  *PeriphClkInit);
-<a name="l01860"></a>01860 <span class="keywordtype">void</span>              <a class="code" href="group__RCCEx__Exported__Functions__Group1.html#ga754fc5136c63ad52b7c459aafc8a3927" title="Get the PeriphClkInit according to the internal RCC configuration registers.">HAL_RCCEx_GetPeriphCLKConfig</a>(<a class="code" href="structRCC__PeriphCLKInitTypeDef.html" title="RCC extended clocks structure definition.">RCC_PeriphCLKInitTypeDef</a>  *PeriphClkInit);
-<a name="l01861"></a>01861 uint32_t          <a class="code" href="group__RCCEx__Exported__Functions__Group1.html#ga14acaeb88163a6bb0839470b753ba1bd" title="Returns the peripheral clock frequency.">HAL_RCCEx_GetPeriphCLKFreq</a>(uint32_t PeriphClk);
+<a name="l01859"></a>01859 HAL_StatusTypeDef <a class="code" href="group/group__RCCEx__Exported__Functions__Group1.html#ga0c0f61a1e2f47cc81bc43d83ba3e0d95" title="Initializes the RCC extended peripherals clocks according to the specified parameters in the RCC_Peri...">HAL_RCCEx_PeriphCLKConfig</a>(<a class="code" href="structRCC__PeriphCLKInitTypeDef.html" title="RCC extended clocks structure definition.">RCC_PeriphCLKInitTypeDef</a>  *PeriphClkInit);
+<a name="l01860"></a>01860 <span class="keywordtype">void</span>              <a class="code" href="group/group__RCCEx__Exported__Functions__Group1.html#ga754fc5136c63ad52b7c459aafc8a3927" title="Get the PeriphClkInit according to the internal RCC configuration registers.">HAL_RCCEx_GetPeriphCLKConfig</a>(<a class="code" href="structRCC__PeriphCLKInitTypeDef.html" title="RCC extended clocks structure definition.">RCC_PeriphCLKInitTypeDef</a>  *PeriphClkInit);
+<a name="l01861"></a>01861 uint32_t          <a class="code" href="group/group__RCCEx__Exported__Functions__Group1.html#ga14acaeb88163a6bb0839470b753ba1bd" title="Returns the peripheral clock frequency.">HAL_RCCEx_GetPeriphCLKFreq</a>(uint32_t PeriphClk);
 <a name="l01862"></a>01862 <span class="comment"></span>
 <a name="l01863"></a>01863 <span class="comment">/**</span>
 <a name="l01864"></a>01864 <span class="comment">  * @}</span>

@@ -51,32 +51,32 @@
 <a href="#define-members">Defines</a>  </div>
   <div class="headertitle">
 <div class="title">UART Private Macros</div>  </div>
-<div class="ingroups"><a class="el" href="group__UART.html">UART</a></div></div><!--header-->
+<div class="ingroups"><a class="el" href="group/group__UART.html">UART</a></div></div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UART__Private__Macros.html#ga4fb6c975f14bd141ec282820823a2fff">IS_UART_WORD_LENGTH</a>(LENGTH)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UART__Private__Macros.html#ga12e732e82119829947fb0c97da82bd69">IS_UART_LIN_WORD_LENGTH</a>(LENGTH)&#160;&#160;&#160;(((LENGTH) == <a class="el" href="group__UART__Word__Length.html#gaf394e9abaf17932ee89591f990fe6407">UART_WORDLENGTH_8B</a>))</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UART__Private__Macros.html#ga2c61795ef4affdddf3854c8f59568e41">IS_UART_STOPBITS</a>(STOPBITS)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UART__Private__Macros.html#gaf2f542d273738ee3cb4a93d169827744">IS_UART_PARITY</a>(PARITY)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UART__Private__Macros.html#ga4da792d3bbb8e04d97dd45b963ac2464">IS_UART_HARDWARE_FLOW_CONTROL</a>(CONTROL)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UART__Private__Macros.html#ga748d45fbdc96c743bee170b749f961ba">IS_UART_MODE</a>(MODE)&#160;&#160;&#160;((((MODE) &amp; 0x0000FFF3U) == 0x00U) &amp;&amp; ((MODE) != 0x00U))</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UART__Private__Macros.html#ga202315393e18f29b20eb49ad9f8934dd">IS_UART_STATE</a>(STATE)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UART__Private__Macros.html#ga8486e4a622ab62a11d82389d4aa0305d">IS_UART_OVERSAMPLING</a>(SAMPLING)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UART__Private__Macros.html#gacd5577cca731f8ef51badd665f6aa5e6">IS_UART_LIN_OVERSAMPLING</a>(SAMPLING)&#160;&#160;&#160;(((SAMPLING) == <a class="el" href="group__UART__Over__Sampling.html#gaa6a320ec65d248d76f21de818db1a2f0">UART_OVERSAMPLING_16</a>))</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UART__Private__Macros.html#ga5f09f62c88629a872d9b6ebf1d068950">IS_UART_LIN_BREAK_DETECT_LENGTH</a>(LENGTH)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UART__Private__Macros.html#ga6fea268c66482e36fb38844b808cf695">IS_UART_WAKEUPMETHOD</a>(WAKEUP)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UART__Private__Macros.html#ga5d657d5c8e47b147a834e0018e9407c2">IS_UART_BAUDRATE</a>(BAUDRATE)&#160;&#160;&#160;((BAUDRATE) &lt;= 4500000U)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UART__Private__Macros.html#ga2c4dce8c60f202455e6f1481fc441f98">IS_UART_ADDRESS</a>(ADDRESS)&#160;&#160;&#160;((ADDRESS) &lt;= 0x0FU)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UART__Private__Macros.html#gabd6dd99fff6cd5c0374780fd72a61e6e">UART_DIV_SAMPLING16</a>(_PCLK_, _BAUD_)&#160;&#160;&#160;(((_PCLK_)*25U)/(4U*(_BAUD_)))</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UART__Private__Macros.html#ga9cd479aff25c454d9d4f3c1c20517c86">UART_DIVMANT_SAMPLING16</a>(_PCLK_, _BAUD_)&#160;&#160;&#160;(<a class="el" href="group__UART__Private__Macros.html#gabd6dd99fff6cd5c0374780fd72a61e6e">UART_DIV_SAMPLING16</a>((_PCLK_), (_BAUD_))/100U)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UART__Private__Macros.html#gade99ebfd7502df11b366c48fac5417d7">UART_DIVFRAQ_SAMPLING16</a>(_PCLK_, _BAUD_)&#160;&#160;&#160;(((<a class="el" href="group__UART__Private__Macros.html#gabd6dd99fff6cd5c0374780fd72a61e6e">UART_DIV_SAMPLING16</a>((_PCLK_), (_BAUD_)) - (<a class="el" href="group__UART__Private__Macros.html#ga9cd479aff25c454d9d4f3c1c20517c86">UART_DIVMANT_SAMPLING16</a>((_PCLK_), (_BAUD_)) * 100U)) * 16U + 50U) / 100U)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UART__Private__Macros.html#gaed98b14acfc939985cc9909a6fa64d71">UART_BRR_SAMPLING16</a>(_PCLK_, _BAUD_)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UART__Private__Macros.html#ga97075bc06a62c182b0b9a00bbf04b170">UART_DIV_SAMPLING8</a>(_PCLK_, _BAUD_)&#160;&#160;&#160;(((_PCLK_)*25U)/(2U*(_BAUD_)))</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UART__Private__Macros.html#ga3dafeed17fc4cf319b0dd88d7d0fb614">UART_DIVMANT_SAMPLING8</a>(_PCLK_, _BAUD_)&#160;&#160;&#160;(<a class="el" href="group__UART__Private__Macros.html#ga97075bc06a62c182b0b9a00bbf04b170">UART_DIV_SAMPLING8</a>((_PCLK_), (_BAUD_))/100U)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UART__Private__Macros.html#gae0c8a28dbc006a93dd8e90e8ff8a37a0">UART_DIVFRAQ_SAMPLING8</a>(_PCLK_, _BAUD_)&#160;&#160;&#160;(((<a class="el" href="group__UART__Private__Macros.html#ga97075bc06a62c182b0b9a00bbf04b170">UART_DIV_SAMPLING8</a>((_PCLK_), (_BAUD_)) - (<a class="el" href="group__UART__Private__Macros.html#ga3dafeed17fc4cf319b0dd88d7d0fb614">UART_DIVMANT_SAMPLING8</a>((_PCLK_), (_BAUD_)) * 100U)) * 8U + 50U) / 100U)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UART__Private__Macros.html#gae36ed9e94681494a31a9d8a7bbcc1a2c">UART_BRR_SAMPLING8</a>(_PCLK_, _BAUD_)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UART__Private__Macros.html#ga4fb6c975f14bd141ec282820823a2fff">IS_UART_WORD_LENGTH</a>(LENGTH)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UART__Private__Macros.html#ga12e732e82119829947fb0c97da82bd69">IS_UART_LIN_WORD_LENGTH</a>(LENGTH)&#160;&#160;&#160;(((LENGTH) == <a class="el" href="group/group__UART__Word__Length.html#gaf394e9abaf17932ee89591f990fe6407">UART_WORDLENGTH_8B</a>))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UART__Private__Macros.html#ga2c61795ef4affdddf3854c8f59568e41">IS_UART_STOPBITS</a>(STOPBITS)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UART__Private__Macros.html#gaf2f542d273738ee3cb4a93d169827744">IS_UART_PARITY</a>(PARITY)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UART__Private__Macros.html#ga4da792d3bbb8e04d97dd45b963ac2464">IS_UART_HARDWARE_FLOW_CONTROL</a>(CONTROL)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UART__Private__Macros.html#ga748d45fbdc96c743bee170b749f961ba">IS_UART_MODE</a>(MODE)&#160;&#160;&#160;((((MODE) &amp; 0x0000FFF3U) == 0x00U) &amp;&amp; ((MODE) != 0x00U))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UART__Private__Macros.html#ga202315393e18f29b20eb49ad9f8934dd">IS_UART_STATE</a>(STATE)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UART__Private__Macros.html#ga8486e4a622ab62a11d82389d4aa0305d">IS_UART_OVERSAMPLING</a>(SAMPLING)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UART__Private__Macros.html#gacd5577cca731f8ef51badd665f6aa5e6">IS_UART_LIN_OVERSAMPLING</a>(SAMPLING)&#160;&#160;&#160;(((SAMPLING) == <a class="el" href="group/group__UART__Over__Sampling.html#gaa6a320ec65d248d76f21de818db1a2f0">UART_OVERSAMPLING_16</a>))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UART__Private__Macros.html#ga5f09f62c88629a872d9b6ebf1d068950">IS_UART_LIN_BREAK_DETECT_LENGTH</a>(LENGTH)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UART__Private__Macros.html#ga6fea268c66482e36fb38844b808cf695">IS_UART_WAKEUPMETHOD</a>(WAKEUP)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UART__Private__Macros.html#ga5d657d5c8e47b147a834e0018e9407c2">IS_UART_BAUDRATE</a>(BAUDRATE)&#160;&#160;&#160;((BAUDRATE) &lt;= 4500000U)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UART__Private__Macros.html#ga2c4dce8c60f202455e6f1481fc441f98">IS_UART_ADDRESS</a>(ADDRESS)&#160;&#160;&#160;((ADDRESS) &lt;= 0x0FU)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UART__Private__Macros.html#gabd6dd99fff6cd5c0374780fd72a61e6e">UART_DIV_SAMPLING16</a>(_PCLK_, _BAUD_)&#160;&#160;&#160;(((_PCLK_)*25U)/(4U*(_BAUD_)))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UART__Private__Macros.html#ga9cd479aff25c454d9d4f3c1c20517c86">UART_DIVMANT_SAMPLING16</a>(_PCLK_, _BAUD_)&#160;&#160;&#160;(<a class="el" href="group/group__UART__Private__Macros.html#gabd6dd99fff6cd5c0374780fd72a61e6e">UART_DIV_SAMPLING16</a>((_PCLK_), (_BAUD_))/100U)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UART__Private__Macros.html#gade99ebfd7502df11b366c48fac5417d7">UART_DIVFRAQ_SAMPLING16</a>(_PCLK_, _BAUD_)&#160;&#160;&#160;(((<a class="el" href="group/group__UART__Private__Macros.html#gabd6dd99fff6cd5c0374780fd72a61e6e">UART_DIV_SAMPLING16</a>((_PCLK_), (_BAUD_)) - (<a class="el" href="group/group__UART__Private__Macros.html#ga9cd479aff25c454d9d4f3c1c20517c86">UART_DIVMANT_SAMPLING16</a>((_PCLK_), (_BAUD_)) * 100U)) * 16U + 50U) / 100U)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UART__Private__Macros.html#gaed98b14acfc939985cc9909a6fa64d71">UART_BRR_SAMPLING16</a>(_PCLK_, _BAUD_)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UART__Private__Macros.html#ga97075bc06a62c182b0b9a00bbf04b170">UART_DIV_SAMPLING8</a>(_PCLK_, _BAUD_)&#160;&#160;&#160;(((_PCLK_)*25U)/(2U*(_BAUD_)))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UART__Private__Macros.html#ga3dafeed17fc4cf319b0dd88d7d0fb614">UART_DIVMANT_SAMPLING8</a>(_PCLK_, _BAUD_)&#160;&#160;&#160;(<a class="el" href="group/group__UART__Private__Macros.html#ga97075bc06a62c182b0b9a00bbf04b170">UART_DIV_SAMPLING8</a>((_PCLK_), (_BAUD_))/100U)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UART__Private__Macros.html#gae0c8a28dbc006a93dd8e90e8ff8a37a0">UART_DIVFRAQ_SAMPLING8</a>(_PCLK_, _BAUD_)&#160;&#160;&#160;(((<a class="el" href="group/group__UART__Private__Macros.html#ga97075bc06a62c182b0b9a00bbf04b170">UART_DIV_SAMPLING8</a>((_PCLK_), (_BAUD_)) - (<a class="el" href="group/group__UART__Private__Macros.html#ga3dafeed17fc4cf319b0dd88d7d0fb614">UART_DIVMANT_SAMPLING8</a>((_PCLK_), (_BAUD_)) * 100U)) * 8U + 50U) / 100U)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__UART__Private__Macros.html#gae36ed9e94681494a31a9d8a7bbcc1a2c">UART_BRR_SAMPLING8</a>(_PCLK_, _BAUD_)</td></tr>
 </table>
 <hr/><h2>Define Documentation</h2>
 <a class="anchor" id="ga2c4dce8c60f202455e6f1481fc441f98"></a><!-- doxytag: member="stm32f1xx_hal_uart.h::IS_UART_ADDRESS" ref="ga2c4dce8c60f202455e6f1481fc441f98" args="(ADDRESS)" -->
@@ -84,7 +84,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__UART__Private__Macros.html#ga2c4dce8c60f202455e6f1481fc441f98">IS_UART_ADDRESS</a></td>
+          <td class="memname">#define <a class="el" href="group/group__UART__Private__Macros.html#ga2c4dce8c60f202455e6f1481fc441f98">IS_UART_ADDRESS</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">ADDRESS</td><td>)</td>
@@ -105,7 +105,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__UART__Private__Macros.html#ga5d657d5c8e47b147a834e0018e9407c2">IS_UART_BAUDRATE</a></td>
+          <td class="memname">#define <a class="el" href="group/group__UART__Private__Macros.html#ga5d657d5c8e47b147a834e0018e9407c2">IS_UART_BAUDRATE</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">BAUDRATE</td><td>)</td>
@@ -126,7 +126,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__UART__Private__Macros.html#ga4da792d3bbb8e04d97dd45b963ac2464">IS_UART_HARDWARE_FLOW_CONTROL</a></td>
+          <td class="memname">#define <a class="el" href="group/group__UART__Private__Macros.html#ga4da792d3bbb8e04d97dd45b963ac2464">IS_UART_HARDWARE_FLOW_CONTROL</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">CONTROL</td><td>)</td>
@@ -135,10 +135,10 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((CONTROL) == <a class="code" href="group__UART__Hardware__Flow__Control.html#gae0569001c06b7760cd38c481f84116cf">UART_HWCONTROL_NONE</a>) || \
-                               ((CONTROL) == <a class="code" href="group__UART__Hardware__Flow__Control.html#ga6d5dad09c6abf30f252084ba0f8c0b7d">UART_HWCONTROL_RTS</a>) || \
-                               ((CONTROL) == <a class="code" href="group__UART__Hardware__Flow__Control.html#ga352f517245986e3b86bc75f8472c51ea">UART_HWCONTROL_CTS</a>) || \
-                               ((CONTROL) == <a class="code" href="group__UART__Hardware__Flow__Control.html#ga7c91698e8f08ba7ed3f2a0ba9aa27d73">UART_HWCONTROL_RTS_CTS</a>))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((CONTROL) == <a class="code" href="group/group__UART__Hardware__Flow__Control.html#gae0569001c06b7760cd38c481f84116cf">UART_HWCONTROL_NONE</a>) || \
+                               ((CONTROL) == <a class="code" href="group/group__UART__Hardware__Flow__Control.html#ga6d5dad09c6abf30f252084ba0f8c0b7d">UART_HWCONTROL_RTS</a>) || \
+                               ((CONTROL) == <a class="code" href="group/group__UART__Hardware__Flow__Control.html#ga352f517245986e3b86bc75f8472c51ea">UART_HWCONTROL_CTS</a>) || \
+                               ((CONTROL) == <a class="code" href="group/group__UART__Hardware__Flow__Control.html#ga7c91698e8f08ba7ed3f2a0ba9aa27d73">UART_HWCONTROL_RTS_CTS</a>))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__uart_8h_source.html#l00787">787</a> of file <a class="el" href="stm32f1xx__hal__uart_8h_source.html">stm32f1xx_hal_uart.h</a>.</p>
 
@@ -151,7 +151,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__UART__Private__Macros.html#ga5f09f62c88629a872d9b6ebf1d068950">IS_UART_LIN_BREAK_DETECT_LENGTH</a></td>
+          <td class="memname">#define <a class="el" href="group/group__UART__Private__Macros.html#ga5f09f62c88629a872d9b6ebf1d068950">IS_UART_LIN_BREAK_DETECT_LENGTH</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">LENGTH</td><td>)</td>
@@ -160,8 +160,8 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((LENGTH) == <a class="code" href="group__UART__LIN__Break__Detection__Length.html#ga027616b7a36b36e0e51ffee947533624">UART_LINBREAKDETECTLENGTH_10B</a>) || \
-                                                 ((LENGTH) == <a class="code" href="group__UART__LIN__Break__Detection__Length.html#ga2f66fcd37de7a3ca9e1101305f2e23e6">UART_LINBREAKDETECTLENGTH_11B</a>))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((LENGTH) == <a class="code" href="group/group__UART__LIN__Break__Detection__Length.html#ga027616b7a36b36e0e51ffee947533624">UART_LINBREAKDETECTLENGTH_10B</a>) || \
+                                                 ((LENGTH) == <a class="code" href="group/group__UART__LIN__Break__Detection__Length.html#ga2f66fcd37de7a3ca9e1101305f2e23e6">UART_LINBREAKDETECTLENGTH_11B</a>))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__uart_8h_source.html#l00800">800</a> of file <a class="el" href="stm32f1xx__hal__uart_8h_source.html">stm32f1xx_hal_uart.h</a>.</p>
 
@@ -174,11 +174,11 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__UART__Private__Macros.html#gacd5577cca731f8ef51badd665f6aa5e6">IS_UART_LIN_OVERSAMPLING</a></td>
+          <td class="memname">#define <a class="el" href="group/group__UART__Private__Macros.html#gacd5577cca731f8ef51badd665f6aa5e6">IS_UART_LIN_OVERSAMPLING</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">SAMPLING</td><td>)</td>
-          <td>&#160;&#160;&#160;(((SAMPLING) == <a class="el" href="group__UART__Over__Sampling.html#gaa6a320ec65d248d76f21de818db1a2f0">UART_OVERSAMPLING_16</a>))</td>
+          <td>&#160;&#160;&#160;(((SAMPLING) == <a class="el" href="group/group__UART__Over__Sampling.html#gaa6a320ec65d248d76f21de818db1a2f0">UART_OVERSAMPLING_16</a>))</td>
         </tr>
       </table>
 </div>
@@ -195,11 +195,11 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__UART__Private__Macros.html#ga12e732e82119829947fb0c97da82bd69">IS_UART_LIN_WORD_LENGTH</a></td>
+          <td class="memname">#define <a class="el" href="group/group__UART__Private__Macros.html#ga12e732e82119829947fb0c97da82bd69">IS_UART_LIN_WORD_LENGTH</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">LENGTH</td><td>)</td>
-          <td>&#160;&#160;&#160;(((LENGTH) == <a class="el" href="group__UART__Word__Length.html#gaf394e9abaf17932ee89591f990fe6407">UART_WORDLENGTH_8B</a>))</td>
+          <td>&#160;&#160;&#160;(((LENGTH) == <a class="el" href="group/group__UART__Word__Length.html#gaf394e9abaf17932ee89591f990fe6407">UART_WORDLENGTH_8B</a>))</td>
         </tr>
       </table>
 </div>
@@ -216,7 +216,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__UART__Private__Macros.html#ga748d45fbdc96c743bee170b749f961ba">IS_UART_MODE</a></td>
+          <td class="memname">#define <a class="el" href="group/group__UART__Private__Macros.html#ga748d45fbdc96c743bee170b749f961ba">IS_UART_MODE</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">MODE</td><td>)</td>
@@ -237,7 +237,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__UART__Private__Macros.html#ga8486e4a622ab62a11d82389d4aa0305d">IS_UART_OVERSAMPLING</a></td>
+          <td class="memname">#define <a class="el" href="group/group__UART__Private__Macros.html#ga8486e4a622ab62a11d82389d4aa0305d">IS_UART_OVERSAMPLING</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">SAMPLING</td><td>)</td>
@@ -246,8 +246,8 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((SAMPLING) == <a class="code" href="group__UART__Over__Sampling.html#gaa6a320ec65d248d76f21de818db1a2f0">UART_OVERSAMPLING_16</a>) || \
-                                        ((SAMPLING) == <a class="code" href="group__UART__Over__Sampling.html#gaeb13896e8bdc1bb041e01a86a868ee0b">UART_OVERSAMPLING_8</a>))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((SAMPLING) == <a class="code" href="group/group__UART__Over__Sampling.html#gaa6a320ec65d248d76f21de818db1a2f0">UART_OVERSAMPLING_16</a>) || \
+                                        ((SAMPLING) == <a class="code" href="group/group__UART__Over__Sampling.html#gaeb13896e8bdc1bb041e01a86a868ee0b">UART_OVERSAMPLING_8</a>))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__uart_8h_source.html#l00796">796</a> of file <a class="el" href="stm32f1xx__hal__uart_8h_source.html">stm32f1xx_hal_uart.h</a>.</p>
 
@@ -260,7 +260,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__UART__Private__Macros.html#gaf2f542d273738ee3cb4a93d169827744">IS_UART_PARITY</a></td>
+          <td class="memname">#define <a class="el" href="group/group__UART__Private__Macros.html#gaf2f542d273738ee3cb4a93d169827744">IS_UART_PARITY</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">PARITY</td><td>)</td>
@@ -269,9 +269,9 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((PARITY) == <a class="code" href="group__UART__Parity.html#ga270dea6e1a92dd83fe58802450bdd60c">UART_PARITY_NONE</a>) || \
-                                ((PARITY) == <a class="code" href="group__UART__Parity.html#ga063b14ac42ef9e8f4246c17a586b14eb">UART_PARITY_EVEN</a>) || \
-                                ((PARITY) == <a class="code" href="group__UART__Parity.html#ga229615e64964f68f7a856ea6ffea359e">UART_PARITY_ODD</a>))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((PARITY) == <a class="code" href="group/group__UART__Parity.html#ga270dea6e1a92dd83fe58802450bdd60c">UART_PARITY_NONE</a>) || \
+                                ((PARITY) == <a class="code" href="group/group__UART__Parity.html#ga063b14ac42ef9e8f4246c17a586b14eb">UART_PARITY_EVEN</a>) || \
+                                ((PARITY) == <a class="code" href="group/group__UART__Parity.html#ga229615e64964f68f7a856ea6ffea359e">UART_PARITY_ODD</a>))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__uart_8h_source.html#l00784">784</a> of file <a class="el" href="stm32f1xx__hal__uart_8h_source.html">stm32f1xx_hal_uart.h</a>.</p>
 
@@ -284,7 +284,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__UART__Private__Macros.html#ga202315393e18f29b20eb49ad9f8934dd">IS_UART_STATE</a></td>
+          <td class="memname">#define <a class="el" href="group/group__UART__Private__Macros.html#ga202315393e18f29b20eb49ad9f8934dd">IS_UART_STATE</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">STATE</td><td>)</td>
@@ -293,8 +293,8 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((STATE) == <a class="code" href="group__UART__State.html#gaf32492459be708981ebc5615194cdae9">UART_STATE_DISABLE</a>) || \
-                              ((STATE) == <a class="code" href="group__UART__State.html#gab6b470dccef2a518a45554b171acff5b">UART_STATE_ENABLE</a>))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((STATE) == <a class="code" href="group/group__UART__State.html#gaf32492459be708981ebc5615194cdae9">UART_STATE_DISABLE</a>) || \
+                              ((STATE) == <a class="code" href="group/group__UART__State.html#gab6b470dccef2a518a45554b171acff5b">UART_STATE_ENABLE</a>))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__uart_8h_source.html#l00793">793</a> of file <a class="el" href="stm32f1xx__hal__uart_8h_source.html">stm32f1xx_hal_uart.h</a>.</p>
 
@@ -305,7 +305,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__UART__Private__Macros.html#ga2c61795ef4affdddf3854c8f59568e41">IS_UART_STOPBITS</a></td>
+          <td class="memname">#define <a class="el" href="group/group__UART__Private__Macros.html#ga2c61795ef4affdddf3854c8f59568e41">IS_UART_STOPBITS</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">STOPBITS</td><td>)</td>
@@ -314,8 +314,8 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((STOPBITS) == <a class="code" href="group__UART__Stop__Bits.html#ga7cf97e555292d574de8abc596ba0e2ce">UART_STOPBITS_1</a>) || \
-                                    ((STOPBITS) == <a class="code" href="group__UART__Stop__Bits.html#ga91616523380f7450aac6cb7e17f0c0f2">UART_STOPBITS_2</a>))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((STOPBITS) == <a class="code" href="group/group__UART__Stop__Bits.html#ga7cf97e555292d574de8abc596ba0e2ce">UART_STOPBITS_1</a>) || \
+                                    ((STOPBITS) == <a class="code" href="group/group__UART__Stop__Bits.html#ga91616523380f7450aac6cb7e17f0c0f2">UART_STOPBITS_2</a>))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__uart_8h_source.html#l00782">782</a> of file <a class="el" href="stm32f1xx__hal__uart_8h_source.html">stm32f1xx_hal_uart.h</a>.</p>
 
@@ -328,7 +328,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__UART__Private__Macros.html#ga6fea268c66482e36fb38844b808cf695">IS_UART_WAKEUPMETHOD</a></td>
+          <td class="memname">#define <a class="el" href="group/group__UART__Private__Macros.html#ga6fea268c66482e36fb38844b808cf695">IS_UART_WAKEUPMETHOD</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">WAKEUP</td><td>)</td>
@@ -337,8 +337,8 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((WAKEUP) == <a class="code" href="group__UART__WakeUp__functions.html#ga2411ed44c5d82db84c5819e1e2b5b8b3">UART_WAKEUPMETHOD_IDLELINE</a>) || \
-                                      ((WAKEUP) == <a class="code" href="group__UART__WakeUp__functions.html#ga4c6935f26f8f2a9fe70fd6306a9882cb">UART_WAKEUPMETHOD_ADDRESSMARK</a>))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((WAKEUP) == <a class="code" href="group/group__UART__WakeUp__functions.html#ga2411ed44c5d82db84c5819e1e2b5b8b3">UART_WAKEUPMETHOD_IDLELINE</a>) || \
+                                      ((WAKEUP) == <a class="code" href="group/group__UART__WakeUp__functions.html#ga4c6935f26f8f2a9fe70fd6306a9882cb">UART_WAKEUPMETHOD_ADDRESSMARK</a>))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__uart_8h_source.html#l00802">802</a> of file <a class="el" href="stm32f1xx__hal__uart_8h_source.html">stm32f1xx_hal_uart.h</a>.</p>
 
@@ -351,7 +351,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__UART__Private__Macros.html#ga4fb6c975f14bd141ec282820823a2fff">IS_UART_WORD_LENGTH</a></td>
+          <td class="memname">#define <a class="el" href="group/group__UART__Private__Macros.html#ga4fb6c975f14bd141ec282820823a2fff">IS_UART_WORD_LENGTH</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">LENGTH</td><td>)</td>
@@ -360,8 +360,8 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((LENGTH) == <a class="code" href="group__UART__Word__Length.html#gaf394e9abaf17932ee89591f990fe6407">UART_WORDLENGTH_8B</a>) || \
-                                     ((LENGTH) == <a class="code" href="group__UART__Word__Length.html#gaf867be43de35fd3c32fe0b4dd4058f7e">UART_WORDLENGTH_9B</a>))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((LENGTH) == <a class="code" href="group/group__UART__Word__Length.html#gaf394e9abaf17932ee89591f990fe6407">UART_WORDLENGTH_8B</a>) || \
+                                     ((LENGTH) == <a class="code" href="group/group__UART__Word__Length.html#gaf867be43de35fd3c32fe0b4dd4058f7e">UART_WORDLENGTH_9B</a>))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__uart_8h_source.html#l00779">779</a> of file <a class="el" href="stm32f1xx__hal__uart_8h_source.html">stm32f1xx_hal_uart.h</a>.</p>
 
@@ -374,7 +374,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__UART__Private__Macros.html#gaed98b14acfc939985cc9909a6fa64d71">UART_BRR_SAMPLING16</a></td>
+          <td class="memname">#define <a class="el" href="group/group__UART__Private__Macros.html#gaed98b14acfc939985cc9909a6fa64d71">UART_BRR_SAMPLING16</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_PCLK_, </td>
@@ -393,9 +393,9 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((<a class="code" href="group__UART__Private__Macros.html#ga9cd479aff25c454d9d4f3c1c20517c86">UART_DIVMANT_SAMPLING16</a>((_PCLK_), (_BAUD_)) &lt;&lt; 4U) + \
-                                                        (<a class="code" href="group__UART__Private__Macros.html#gade99ebfd7502df11b366c48fac5417d7">UART_DIVFRAQ_SAMPLING16</a>((_PCLK_), (_BAUD_)) &amp; 0xF0U)) + \
-                                                        (<a class="code" href="group__UART__Private__Macros.html#gade99ebfd7502df11b366c48fac5417d7">UART_DIVFRAQ_SAMPLING16</a>((_PCLK_), (_BAUD_)) &amp; 0x0FU))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((<a class="code" href="group/group__UART__Private__Macros.html#ga9cd479aff25c454d9d4f3c1c20517c86">UART_DIVMANT_SAMPLING16</a>((_PCLK_), (_BAUD_)) &lt;&lt; 4U) + \
+                                                        (<a class="code" href="group/group__UART__Private__Macros.html#gade99ebfd7502df11b366c48fac5417d7">UART_DIVFRAQ_SAMPLING16</a>((_PCLK_), (_BAUD_)) &amp; 0xF0U)) + \
+                                                        (<a class="code" href="group/group__UART__Private__Macros.html#gade99ebfd7502df11b366c48fac5417d7">UART_DIVFRAQ_SAMPLING16</a>((_PCLK_), (_BAUD_)) &amp; 0x0FU))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__uart_8h_source.html#l00812">812</a> of file <a class="el" href="stm32f1xx__hal__uart_8h_source.html">stm32f1xx_hal_uart.h</a>.</p>
 
@@ -408,7 +408,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__UART__Private__Macros.html#gae36ed9e94681494a31a9d8a7bbcc1a2c">UART_BRR_SAMPLING8</a></td>
+          <td class="memname">#define <a class="el" href="group/group__UART__Private__Macros.html#gae36ed9e94681494a31a9d8a7bbcc1a2c">UART_BRR_SAMPLING8</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_PCLK_, </td>
@@ -427,9 +427,9 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((<a class="code" href="group__UART__Private__Macros.html#ga3dafeed17fc4cf319b0dd88d7d0fb614">UART_DIVMANT_SAMPLING8</a>((_PCLK_), (_BAUD_)) &lt;&lt; 4U) + \
-                                                        ((<a class="code" href="group__UART__Private__Macros.html#gae0c8a28dbc006a93dd8e90e8ff8a37a0">UART_DIVFRAQ_SAMPLING8</a>((_PCLK_), (_BAUD_)) &amp; 0xF8U) &lt;&lt; 1U)) + \
-                                                        (<a class="code" href="group__UART__Private__Macros.html#gae0c8a28dbc006a93dd8e90e8ff8a37a0">UART_DIVFRAQ_SAMPLING8</a>((_PCLK_), (_BAUD_)) &amp; 0x07U))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((<a class="code" href="group/group__UART__Private__Macros.html#ga3dafeed17fc4cf319b0dd88d7d0fb614">UART_DIVMANT_SAMPLING8</a>((_PCLK_), (_BAUD_)) &lt;&lt; 4U) + \
+                                                        ((<a class="code" href="group/group__UART__Private__Macros.html#gae0c8a28dbc006a93dd8e90e8ff8a37a0">UART_DIVFRAQ_SAMPLING8</a>((_PCLK_), (_BAUD_)) &amp; 0xF8U) &lt;&lt; 1U)) + \
+                                                        (<a class="code" href="group/group__UART__Private__Macros.html#gae0c8a28dbc006a93dd8e90e8ff8a37a0">UART_DIVFRAQ_SAMPLING8</a>((_PCLK_), (_BAUD_)) &amp; 0x07U))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__uart_8h_source.html#l00821">821</a> of file <a class="el" href="stm32f1xx__hal__uart_8h_source.html">stm32f1xx_hal_uart.h</a>.</p>
 
@@ -442,7 +442,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__UART__Private__Macros.html#gabd6dd99fff6cd5c0374780fd72a61e6e">UART_DIV_SAMPLING16</a></td>
+          <td class="memname">#define <a class="el" href="group/group__UART__Private__Macros.html#gabd6dd99fff6cd5c0374780fd72a61e6e">UART_DIV_SAMPLING16</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_PCLK_, </td>
@@ -471,7 +471,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__UART__Private__Macros.html#ga97075bc06a62c182b0b9a00bbf04b170">UART_DIV_SAMPLING8</a></td>
+          <td class="memname">#define <a class="el" href="group/group__UART__Private__Macros.html#ga97075bc06a62c182b0b9a00bbf04b170">UART_DIV_SAMPLING8</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_PCLK_, </td>
@@ -500,7 +500,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__UART__Private__Macros.html#gade99ebfd7502df11b366c48fac5417d7">UART_DIVFRAQ_SAMPLING16</a></td>
+          <td class="memname">#define <a class="el" href="group/group__UART__Private__Macros.html#gade99ebfd7502df11b366c48fac5417d7">UART_DIVFRAQ_SAMPLING16</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_PCLK_, </td>
@@ -514,7 +514,7 @@ Defines</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(((<a class="el" href="group__UART__Private__Macros.html#gabd6dd99fff6cd5c0374780fd72a61e6e">UART_DIV_SAMPLING16</a>((_PCLK_), (_BAUD_)) - (<a class="el" href="group__UART__Private__Macros.html#ga9cd479aff25c454d9d4f3c1c20517c86">UART_DIVMANT_SAMPLING16</a>((_PCLK_), (_BAUD_)) * 100U)) * 16U + 50U) / 100U)</td>
+          <td></td><td>&#160;&#160;&#160;(((<a class="el" href="group/group__UART__Private__Macros.html#gabd6dd99fff6cd5c0374780fd72a61e6e">UART_DIV_SAMPLING16</a>((_PCLK_), (_BAUD_)) - (<a class="el" href="group/group__UART__Private__Macros.html#ga9cd479aff25c454d9d4f3c1c20517c86">UART_DIVMANT_SAMPLING16</a>((_PCLK_), (_BAUD_)) * 100U)) * 16U + 50U) / 100U)</td>
         </tr>
       </table>
 </div>
@@ -529,7 +529,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__UART__Private__Macros.html#gae0c8a28dbc006a93dd8e90e8ff8a37a0">UART_DIVFRAQ_SAMPLING8</a></td>
+          <td class="memname">#define <a class="el" href="group/group__UART__Private__Macros.html#gae0c8a28dbc006a93dd8e90e8ff8a37a0">UART_DIVFRAQ_SAMPLING8</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_PCLK_, </td>
@@ -543,7 +543,7 @@ Defines</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(((<a class="el" href="group__UART__Private__Macros.html#ga97075bc06a62c182b0b9a00bbf04b170">UART_DIV_SAMPLING8</a>((_PCLK_), (_BAUD_)) - (<a class="el" href="group__UART__Private__Macros.html#ga3dafeed17fc4cf319b0dd88d7d0fb614">UART_DIVMANT_SAMPLING8</a>((_PCLK_), (_BAUD_)) * 100U)) * 8U + 50U) / 100U)</td>
+          <td></td><td>&#160;&#160;&#160;(((<a class="el" href="group/group__UART__Private__Macros.html#ga97075bc06a62c182b0b9a00bbf04b170">UART_DIV_SAMPLING8</a>((_PCLK_), (_BAUD_)) - (<a class="el" href="group/group__UART__Private__Macros.html#ga3dafeed17fc4cf319b0dd88d7d0fb614">UART_DIVMANT_SAMPLING8</a>((_PCLK_), (_BAUD_)) * 100U)) * 8U + 50U) / 100U)</td>
         </tr>
       </table>
 </div>
@@ -558,7 +558,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__UART__Private__Macros.html#ga9cd479aff25c454d9d4f3c1c20517c86">UART_DIVMANT_SAMPLING16</a></td>
+          <td class="memname">#define <a class="el" href="group/group__UART__Private__Macros.html#ga9cd479aff25c454d9d4f3c1c20517c86">UART_DIVMANT_SAMPLING16</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_PCLK_, </td>
@@ -572,7 +572,7 @@ Defines</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(<a class="el" href="group__UART__Private__Macros.html#gabd6dd99fff6cd5c0374780fd72a61e6e">UART_DIV_SAMPLING16</a>((_PCLK_), (_BAUD_))/100U)</td>
+          <td></td><td>&#160;&#160;&#160;(<a class="el" href="group/group__UART__Private__Macros.html#gabd6dd99fff6cd5c0374780fd72a61e6e">UART_DIV_SAMPLING16</a>((_PCLK_), (_BAUD_))/100U)</td>
         </tr>
       </table>
 </div>
@@ -587,7 +587,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__UART__Private__Macros.html#ga3dafeed17fc4cf319b0dd88d7d0fb614">UART_DIVMANT_SAMPLING8</a></td>
+          <td class="memname">#define <a class="el" href="group/group__UART__Private__Macros.html#ga3dafeed17fc4cf319b0dd88d7d0fb614">UART_DIVMANT_SAMPLING8</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_PCLK_, </td>
@@ -601,7 +601,7 @@ Defines</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(<a class="el" href="group__UART__Private__Macros.html#ga97075bc06a62c182b0b9a00bbf04b170">UART_DIV_SAMPLING8</a>((_PCLK_), (_BAUD_))/100U)</td>
+          <td></td><td>&#160;&#160;&#160;(<a class="el" href="group/group__UART__Private__Macros.html#ga97075bc06a62c182b0b9a00bbf04b170">UART_DIV_SAMPLING8</a>((_PCLK_), (_BAUD_))/100U)</td>
         </tr>
       </table>
 </div>

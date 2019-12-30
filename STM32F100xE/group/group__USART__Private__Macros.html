@@ -51,25 +51,25 @@
 <a href="#define-members">Defines</a>  </div>
   <div class="headertitle">
 <div class="title">USART Private Macros</div>  </div>
-<div class="ingroups"><a class="el" href="group__USART.html">USART</a></div></div><!--header-->
+<div class="ingroups"><a class="el" href="group/group__USART.html">USART</a></div></div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USART__Private__Macros.html#ga92c8c26cb4d4f8f20c67a85c2d457797">IS_USART_NACK_STATE</a>(NACK)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USART__Private__Macros.html#gaa941695e5612b53e9c2aca6a9fa0d695">IS_USART_LASTBIT</a>(LASTBIT)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USART__Private__Macros.html#ga6ea3d074e9204eb593472e03452e537b">IS_USART_PHASE</a>(CPHA)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USART__Private__Macros.html#ga365cbaaf0cc68a8c689b4ee418cd287d">IS_USART_POLARITY</a>(CPOL)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USART__Private__Macros.html#ga0f1e1ba37690b21b7338ed3b06614cf6">IS_USART_CLOCK</a>(CLOCK)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USART__Private__Macros.html#ga5b07b29ee91f0bea4c10ec0fd74fbc04">IS_USART_WORD_LENGTH</a>(LENGTH)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USART__Private__Macros.html#ga6f9153c1fbee1058ba26ec88f0f20828">IS_USART_STOPBITS</a>(STOPBITS)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USART__Private__Macros.html#gaa87b2e338e0ccc42887d3c56901bee87">IS_USART_PARITY</a>(PARITY)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USART__Private__Macros.html#gae9140e5ca405d2377fe0e82c79e136a2">IS_USART_MODE</a>(MODE)&#160;&#160;&#160;((((MODE) &amp; (~((uint32_t)<a class="el" href="group__USART__Mode.html#ga82418ff60ab8dac647eb7a6ba6db1284">USART_MODE_TX_RX</a>))) == 0x00U) &amp;&amp; ((MODE) != 0x00U))</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USART__Private__Macros.html#ga9dc365e0a1e01031a8e0757a34b9d420">IS_USART_BAUDRATE</a>(BAUDRATE)&#160;&#160;&#160;((BAUDRATE) &lt;= 4500000U)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USART__Private__Macros.html#ga97e94c06b8493c8eafac36cb787dcb26">USART_DIV</a>(_PCLK_, _BAUD_)&#160;&#160;&#160;(((_PCLK_)*25U)/(4U*(_BAUD_)))</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USART__Private__Macros.html#gaa2c98efc6728b5c725cb8d0105e877a5">USART_DIVMANT</a>(_PCLK_, _BAUD_)&#160;&#160;&#160;(<a class="el" href="group__USART__Private__Macros.html#ga97e94c06b8493c8eafac36cb787dcb26">USART_DIV</a>((_PCLK_), (_BAUD_))/100U)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USART__Private__Macros.html#ga00df975ff1f97cde5c9aff11decf858b">USART_DIVFRAQ</a>(_PCLK_, _BAUD_)&#160;&#160;&#160;(((<a class="el" href="group__USART__Private__Macros.html#ga97e94c06b8493c8eafac36cb787dcb26">USART_DIV</a>((_PCLK_), (_BAUD_)) - (<a class="el" href="group__USART__Private__Macros.html#gaa2c98efc6728b5c725cb8d0105e877a5">USART_DIVMANT</a>((_PCLK_), (_BAUD_)) * 100U)) * 16U + 50U) / 100U)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USART__Private__Macros.html#ga783dc52032f468497a8affe268751909">USART_BRR</a>(_PCLK_, _BAUD_)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__USART__Private__Macros.html#ga92c8c26cb4d4f8f20c67a85c2d457797">IS_USART_NACK_STATE</a>(NACK)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__USART__Private__Macros.html#gaa941695e5612b53e9c2aca6a9fa0d695">IS_USART_LASTBIT</a>(LASTBIT)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__USART__Private__Macros.html#ga6ea3d074e9204eb593472e03452e537b">IS_USART_PHASE</a>(CPHA)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__USART__Private__Macros.html#ga365cbaaf0cc68a8c689b4ee418cd287d">IS_USART_POLARITY</a>(CPOL)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__USART__Private__Macros.html#ga0f1e1ba37690b21b7338ed3b06614cf6">IS_USART_CLOCK</a>(CLOCK)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__USART__Private__Macros.html#ga5b07b29ee91f0bea4c10ec0fd74fbc04">IS_USART_WORD_LENGTH</a>(LENGTH)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__USART__Private__Macros.html#ga6f9153c1fbee1058ba26ec88f0f20828">IS_USART_STOPBITS</a>(STOPBITS)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__USART__Private__Macros.html#gaa87b2e338e0ccc42887d3c56901bee87">IS_USART_PARITY</a>(PARITY)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__USART__Private__Macros.html#gae9140e5ca405d2377fe0e82c79e136a2">IS_USART_MODE</a>(MODE)&#160;&#160;&#160;((((MODE) &amp; (~((uint32_t)<a class="el" href="group/group__USART__Mode.html#ga82418ff60ab8dac647eb7a6ba6db1284">USART_MODE_TX_RX</a>))) == 0x00U) &amp;&amp; ((MODE) != 0x00U))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__USART__Private__Macros.html#ga9dc365e0a1e01031a8e0757a34b9d420">IS_USART_BAUDRATE</a>(BAUDRATE)&#160;&#160;&#160;((BAUDRATE) &lt;= 4500000U)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__USART__Private__Macros.html#ga97e94c06b8493c8eafac36cb787dcb26">USART_DIV</a>(_PCLK_, _BAUD_)&#160;&#160;&#160;(((_PCLK_)*25U)/(4U*(_BAUD_)))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__USART__Private__Macros.html#gaa2c98efc6728b5c725cb8d0105e877a5">USART_DIVMANT</a>(_PCLK_, _BAUD_)&#160;&#160;&#160;(<a class="el" href="group/group__USART__Private__Macros.html#ga97e94c06b8493c8eafac36cb787dcb26">USART_DIV</a>((_PCLK_), (_BAUD_))/100U)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__USART__Private__Macros.html#ga00df975ff1f97cde5c9aff11decf858b">USART_DIVFRAQ</a>(_PCLK_, _BAUD_)&#160;&#160;&#160;(((<a class="el" href="group/group__USART__Private__Macros.html#ga97e94c06b8493c8eafac36cb787dcb26">USART_DIV</a>((_PCLK_), (_BAUD_)) - (<a class="el" href="group/group__USART__Private__Macros.html#gaa2c98efc6728b5c725cb8d0105e877a5">USART_DIVMANT</a>((_PCLK_), (_BAUD_)) * 100U)) * 16U + 50U) / 100U)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group/group__USART__Private__Macros.html#ga783dc52032f468497a8affe268751909">USART_BRR</a>(_PCLK_, _BAUD_)</td></tr>
 </table>
 <hr/><h2>Define Documentation</h2>
 <a class="anchor" id="ga9dc365e0a1e01031a8e0757a34b9d420"></a><!-- doxytag: member="stm32f1xx_hal_usart.h::IS_USART_BAUDRATE" ref="ga9dc365e0a1e01031a8e0757a34b9d420" args="(BAUDRATE)" -->
@@ -77,7 +77,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__USART__Private__Macros.html#ga9dc365e0a1e01031a8e0757a34b9d420">IS_USART_BAUDRATE</a></td>
+          <td class="memname">#define <a class="el" href="group/group__USART__Private__Macros.html#ga9dc365e0a1e01031a8e0757a34b9d420">IS_USART_BAUDRATE</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">BAUDRATE</td><td>)</td>
@@ -98,7 +98,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__USART__Private__Macros.html#ga0f1e1ba37690b21b7338ed3b06614cf6">IS_USART_CLOCK</a></td>
+          <td class="memname">#define <a class="el" href="group/group__USART__Private__Macros.html#ga0f1e1ba37690b21b7338ed3b06614cf6">IS_USART_CLOCK</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">CLOCK</td><td>)</td>
@@ -107,8 +107,8 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((CLOCK) == <a class="code" href="group__USART__Clock.html#ga7c889a9b9716214fc680eb75ca18c009">USART_CLOCK_DISABLE</a>) || \
-                                      ((CLOCK) == <a class="code" href="group__USART__Clock.html#gac055ca6ca9647277e3f89a5df9529730">USART_CLOCK_ENABLE</a>))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((CLOCK) == <a class="code" href="group/group__USART__Clock.html#ga7c889a9b9716214fc680eb75ca18c009">USART_CLOCK_DISABLE</a>) || \
+                                      ((CLOCK) == <a class="code" href="group/group__USART__Clock.html#gac055ca6ca9647277e3f89a5df9529730">USART_CLOCK_ENABLE</a>))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__usart_8h_source.html#l00587">587</a> of file <a class="el" href="stm32f1xx__hal__usart_8h_source.html">stm32f1xx_hal_usart.h</a>.</p>
 
@@ -119,7 +119,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__USART__Private__Macros.html#gaa941695e5612b53e9c2aca6a9fa0d695">IS_USART_LASTBIT</a></td>
+          <td class="memname">#define <a class="el" href="group/group__USART__Private__Macros.html#gaa941695e5612b53e9c2aca6a9fa0d695">IS_USART_LASTBIT</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">LASTBIT</td><td>)</td>
@@ -128,8 +128,8 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((LASTBIT) == <a class="code" href="group__USART__Last__Bit.html#gac96499244ffa44ff6fa739da9cc9d53f">USART_LASTBIT_DISABLE</a>) || \
-                                      ((LASTBIT) == <a class="code" href="group__USART__Last__Bit.html#gae851e2151668c666028dc10f20f4f676">USART_LASTBIT_ENABLE</a>))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((LASTBIT) == <a class="code" href="group/group__USART__Last__Bit.html#gac96499244ffa44ff6fa739da9cc9d53f">USART_LASTBIT_DISABLE</a>) || \
+                                      ((LASTBIT) == <a class="code" href="group/group__USART__Last__Bit.html#gae851e2151668c666028dc10f20f4f676">USART_LASTBIT_ENABLE</a>))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__usart_8h_source.html#l00578">578</a> of file <a class="el" href="stm32f1xx__hal__usart_8h_source.html">stm32f1xx_hal_usart.h</a>.</p>
 
@@ -142,11 +142,11 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__USART__Private__Macros.html#gae9140e5ca405d2377fe0e82c79e136a2">IS_USART_MODE</a></td>
+          <td class="memname">#define <a class="el" href="group/group__USART__Private__Macros.html#gae9140e5ca405d2377fe0e82c79e136a2">IS_USART_MODE</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">MODE</td><td>)</td>
-          <td>&#160;&#160;&#160;((((MODE) &amp; (~((uint32_t)<a class="el" href="group__USART__Mode.html#ga82418ff60ab8dac647eb7a6ba6db1284">USART_MODE_TX_RX</a>))) == 0x00U) &amp;&amp; ((MODE) != 0x00U))</td>
+          <td>&#160;&#160;&#160;((((MODE) &amp; (~((uint32_t)<a class="el" href="group/group__USART__Mode.html#ga82418ff60ab8dac647eb7a6ba6db1284">USART_MODE_TX_RX</a>))) == 0x00U) &amp;&amp; ((MODE) != 0x00U))</td>
         </tr>
       </table>
 </div>
@@ -163,7 +163,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__USART__Private__Macros.html#ga92c8c26cb4d4f8f20c67a85c2d457797">IS_USART_NACK_STATE</a></td>
+          <td class="memname">#define <a class="el" href="group/group__USART__Private__Macros.html#ga92c8c26cb4d4f8f20c67a85c2d457797">IS_USART_NACK_STATE</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">NACK</td><td>)</td>
@@ -172,8 +172,8 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((NACK) == <a class="code" href="group__USART__NACK__State.html#ga89002469e32e3a236d534eac7db048eb">USART_NACK_ENABLE</a>) || \
-                                      ((NACK) == <a class="code" href="group__USART__NACK__State.html#gac92ccec5e433d1707f71f51f49a6ccc7">USART_NACK_DISABLE</a>))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((NACK) == <a class="code" href="group/group__USART__NACK__State.html#ga89002469e32e3a236d534eac7db048eb">USART_NACK_ENABLE</a>) || \
+                                      ((NACK) == <a class="code" href="group/group__USART__NACK__State.html#gac92ccec5e433d1707f71f51f49a6ccc7">USART_NACK_DISABLE</a>))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__usart_8h_source.html#l00575">575</a> of file <a class="el" href="stm32f1xx__hal__usart_8h_source.html">stm32f1xx_hal_usart.h</a>.</p>
 
@@ -184,7 +184,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__USART__Private__Macros.html#gaa87b2e338e0ccc42887d3c56901bee87">IS_USART_PARITY</a></td>
+          <td class="memname">#define <a class="el" href="group/group__USART__Private__Macros.html#gaa87b2e338e0ccc42887d3c56901bee87">IS_USART_PARITY</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">PARITY</td><td>)</td>
@@ -193,9 +193,9 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((PARITY) == <a class="code" href="group__USART__Parity.html#ga85bfcbeb5ba1c34bbcda3f3e3b994846">USART_PARITY_NONE</a>) || \
-                                      ((PARITY) == <a class="code" href="group__USART__Parity.html#gae7630824c78a39366b7e5b4c55996200">USART_PARITY_EVEN</a>) || \
-                                      ((PARITY) == <a class="code" href="group__USART__Parity.html#ga184f3e22cb30ea94b797b02e94e774a1">USART_PARITY_ODD</a>))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((PARITY) == <a class="code" href="group/group__USART__Parity.html#ga85bfcbeb5ba1c34bbcda3f3e3b994846">USART_PARITY_NONE</a>) || \
+                                      ((PARITY) == <a class="code" href="group/group__USART__Parity.html#gae7630824c78a39366b7e5b4c55996200">USART_PARITY_EVEN</a>) || \
+                                      ((PARITY) == <a class="code" href="group/group__USART__Parity.html#ga184f3e22cb30ea94b797b02e94e774a1">USART_PARITY_ODD</a>))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__usart_8h_source.html#l00598">598</a> of file <a class="el" href="stm32f1xx__hal__usart_8h_source.html">stm32f1xx_hal_usart.h</a>.</p>
 
@@ -208,7 +208,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__USART__Private__Macros.html#ga6ea3d074e9204eb593472e03452e537b">IS_USART_PHASE</a></td>
+          <td class="memname">#define <a class="el" href="group/group__USART__Private__Macros.html#ga6ea3d074e9204eb593472e03452e537b">IS_USART_PHASE</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">CPHA</td><td>)</td>
@@ -217,8 +217,8 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((CPHA) == <a class="code" href="group__USART__Clock__Phase.html#gab050873df3eb3844f973e61681e02e6a">USART_PHASE_1EDGE</a>) || \
-                                      ((CPHA) == <a class="code" href="group__USART__Clock__Phase.html#ga080cff411c6cefbb511162fcc91c43ec">USART_PHASE_2EDGE</a>))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((CPHA) == <a class="code" href="group/group__USART__Clock__Phase.html#gab050873df3eb3844f973e61681e02e6a">USART_PHASE_1EDGE</a>) || \
+                                      ((CPHA) == <a class="code" href="group/group__USART__Clock__Phase.html#ga080cff411c6cefbb511162fcc91c43ec">USART_PHASE_2EDGE</a>))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__usart_8h_source.html#l00581">581</a> of file <a class="el" href="stm32f1xx__hal__usart_8h_source.html">stm32f1xx_hal_usart.h</a>.</p>
 
@@ -231,7 +231,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__USART__Private__Macros.html#ga365cbaaf0cc68a8c689b4ee418cd287d">IS_USART_POLARITY</a></td>
+          <td class="memname">#define <a class="el" href="group/group__USART__Private__Macros.html#ga365cbaaf0cc68a8c689b4ee418cd287d">IS_USART_POLARITY</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">CPOL</td><td>)</td>
@@ -240,8 +240,8 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((CPOL) == <a class="code" href="group__USART__Clock__Polarity.html#ga5afb62c05704ca0e750ca8f4bb5ccc7d">USART_POLARITY_LOW</a>) || \
-                                      ((CPOL) == <a class="code" href="group__USART__Clock__Polarity.html#ga3b3e3d798d4797a220346f6b14d257ee">USART_POLARITY_HIGH</a>))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((CPOL) == <a class="code" href="group/group__USART__Clock__Polarity.html#ga5afb62c05704ca0e750ca8f4bb5ccc7d">USART_POLARITY_LOW</a>) || \
+                                      ((CPOL) == <a class="code" href="group/group__USART__Clock__Polarity.html#ga3b3e3d798d4797a220346f6b14d257ee">USART_POLARITY_HIGH</a>))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__usart_8h_source.html#l00584">584</a> of file <a class="el" href="stm32f1xx__hal__usart_8h_source.html">stm32f1xx_hal_usart.h</a>.</p>
 
@@ -254,7 +254,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__USART__Private__Macros.html#ga6f9153c1fbee1058ba26ec88f0f20828">IS_USART_STOPBITS</a></td>
+          <td class="memname">#define <a class="el" href="group/group__USART__Private__Macros.html#ga6f9153c1fbee1058ba26ec88f0f20828">IS_USART_STOPBITS</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">STOPBITS</td><td>)</td>
@@ -263,10 +263,10 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((STOPBITS) == <a class="code" href="group__USART__Stop__Bits.html#ga82aae3118e9cd59bb270c028e21c23b4">USART_STOPBITS_1</a>) || \
-                                      ((STOPBITS) == <a class="code" href="group__USART__Stop__Bits.html#gaa6e5782774150ff935df3fc06d9ec0c4">USART_STOPBITS_0_5</a>) || \
-                                      ((STOPBITS) == <a class="code" href="group__USART__Stop__Bits.html#ga5b799017a5d9ab7de71a49c625f87532">USART_STOPBITS_1_5</a>) || \
-                                      ((STOPBITS) == <a class="code" href="group__USART__Stop__Bits.html#gaf8d022e62f55ceb7b5e03eea336b5c45">USART_STOPBITS_2</a>))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((STOPBITS) == <a class="code" href="group/group__USART__Stop__Bits.html#ga82aae3118e9cd59bb270c028e21c23b4">USART_STOPBITS_1</a>) || \
+                                      ((STOPBITS) == <a class="code" href="group/group__USART__Stop__Bits.html#gaa6e5782774150ff935df3fc06d9ec0c4">USART_STOPBITS_0_5</a>) || \
+                                      ((STOPBITS) == <a class="code" href="group/group__USART__Stop__Bits.html#ga5b799017a5d9ab7de71a49c625f87532">USART_STOPBITS_1_5</a>) || \
+                                      ((STOPBITS) == <a class="code" href="group/group__USART__Stop__Bits.html#gaf8d022e62f55ceb7b5e03eea336b5c45">USART_STOPBITS_2</a>))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__usart_8h_source.html#l00593">593</a> of file <a class="el" href="stm32f1xx__hal__usart_8h_source.html">stm32f1xx_hal_usart.h</a>.</p>
 
@@ -279,7 +279,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__USART__Private__Macros.html#ga5b07b29ee91f0bea4c10ec0fd74fbc04">IS_USART_WORD_LENGTH</a></td>
+          <td class="memname">#define <a class="el" href="group/group__USART__Private__Macros.html#ga5b07b29ee91f0bea4c10ec0fd74fbc04">IS_USART_WORD_LENGTH</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">LENGTH</td><td>)</td>
@@ -288,8 +288,8 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((LENGTH) == <a class="code" href="group__USART__Word__Length.html#gae2978458689a31bed9a8a3e66ed84f50">USART_WORDLENGTH_8B</a>) || \
-                                      ((LENGTH) == <a class="code" href="group__USART__Word__Length.html#ga3a8363f7dccf85ccb52d698e0900f347">USART_WORDLENGTH_9B</a>))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((LENGTH) == <a class="code" href="group/group__USART__Word__Length.html#gae2978458689a31bed9a8a3e66ed84f50">USART_WORDLENGTH_8B</a>) || \
+                                      ((LENGTH) == <a class="code" href="group/group__USART__Word__Length.html#ga3a8363f7dccf85ccb52d698e0900f347">USART_WORDLENGTH_9B</a>))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__usart_8h_source.html#l00590">590</a> of file <a class="el" href="stm32f1xx__hal__usart_8h_source.html">stm32f1xx_hal_usart.h</a>.</p>
 
@@ -302,7 +302,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__USART__Private__Macros.html#ga783dc52032f468497a8affe268751909">USART_BRR</a></td>
+          <td class="memname">#define <a class="el" href="group/group__USART__Private__Macros.html#ga783dc52032f468497a8affe268751909">USART_BRR</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_PCLK_, </td>
@@ -321,9 +321,9 @@ Defines</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment">(((<a class="code" href="group__USART__Private__Macros.html#gaa2c98efc6728b5c725cb8d0105e877a5">USART_DIVMANT</a>((_PCLK_), (_BAUD_)) &lt;&lt; 4U) + \
-                                        ((<a class="code" href="group__USART__Private__Macros.html#ga00df975ff1f97cde5c9aff11decf858b">USART_DIVFRAQ</a>((_PCLK_), (_BAUD_)) &amp; 0xF0U) &lt;&lt; 1U)) + \
-                                         (<a class="code" href="group__USART__Private__Macros.html#ga00df975ff1f97cde5c9aff11decf858b">USART_DIVFRAQ</a>((_PCLK_), (_BAUD_)) &amp; 0x0FU))
+<b>Value:</b><div class="fragment"><pre class="fragment">(((<a class="code" href="group/group__USART__Private__Macros.html#gaa2c98efc6728b5c725cb8d0105e877a5">USART_DIVMANT</a>((_PCLK_), (_BAUD_)) &lt;&lt; 4U) + \
+                                        ((<a class="code" href="group/group__USART__Private__Macros.html#ga00df975ff1f97cde5c9aff11decf858b">USART_DIVFRAQ</a>((_PCLK_), (_BAUD_)) &amp; 0xF0U) &lt;&lt; 1U)) + \
+                                         (<a class="code" href="group/group__USART__Private__Macros.html#ga00df975ff1f97cde5c9aff11decf858b">USART_DIVFRAQ</a>((_PCLK_), (_BAUD_)) &amp; 0x0FU))
 </pre></div>
 <p>Definition at line <a class="el" href="stm32f1xx__hal__usart_8h_source.html#l00615">615</a> of file <a class="el" href="stm32f1xx__hal__usart_8h_source.html">stm32f1xx_hal_usart.h</a>.</p>
 
@@ -336,7 +336,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__USART__Private__Macros.html#ga97e94c06b8493c8eafac36cb787dcb26">USART_DIV</a></td>
+          <td class="memname">#define <a class="el" href="group/group__USART__Private__Macros.html#ga97e94c06b8493c8eafac36cb787dcb26">USART_DIV</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_PCLK_, </td>
@@ -365,7 +365,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__USART__Private__Macros.html#ga00df975ff1f97cde5c9aff11decf858b">USART_DIVFRAQ</a></td>
+          <td class="memname">#define <a class="el" href="group/group__USART__Private__Macros.html#ga00df975ff1f97cde5c9aff11decf858b">USART_DIVFRAQ</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_PCLK_, </td>
@@ -379,7 +379,7 @@ Defines</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(((<a class="el" href="group__USART__Private__Macros.html#ga97e94c06b8493c8eafac36cb787dcb26">USART_DIV</a>((_PCLK_), (_BAUD_)) - (<a class="el" href="group__USART__Private__Macros.html#gaa2c98efc6728b5c725cb8d0105e877a5">USART_DIVMANT</a>((_PCLK_), (_BAUD_)) * 100U)) * 16U + 50U) / 100U)</td>
+          <td></td><td>&#160;&#160;&#160;(((<a class="el" href="group/group__USART__Private__Macros.html#ga97e94c06b8493c8eafac36cb787dcb26">USART_DIV</a>((_PCLK_), (_BAUD_)) - (<a class="el" href="group/group__USART__Private__Macros.html#gaa2c98efc6728b5c725cb8d0105e877a5">USART_DIVMANT</a>((_PCLK_), (_BAUD_)) * 100U)) * 16U + 50U) / 100U)</td>
         </tr>
       </table>
 </div>
@@ -394,7 +394,7 @@ Defines</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="group__USART__Private__Macros.html#gaa2c98efc6728b5c725cb8d0105e877a5">USART_DIVMANT</a></td>
+          <td class="memname">#define <a class="el" href="group/group__USART__Private__Macros.html#gaa2c98efc6728b5c725cb8d0105e877a5">USART_DIVMANT</a></td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">_PCLK_, </td>
@@ -408,7 +408,7 @@ Defines</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(<a class="el" href="group__USART__Private__Macros.html#ga97e94c06b8493c8eafac36cb787dcb26">USART_DIV</a>((_PCLK_), (_BAUD_))/100U)</td>
+          <td></td><td>&#160;&#160;&#160;(<a class="el" href="group/group__USART__Private__Macros.html#ga97e94c06b8493c8eafac36cb787dcb26">USART_DIV</a>((_PCLK_), (_BAUD_))/100U)</td>
         </tr>
       </table>
 </div>

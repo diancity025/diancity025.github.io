@@ -628,7 +628,7 @@
 <a name="l00561"></a>00561 {
 <a name="l00562"></a>00562   SDIO_DataInitTypeDef config;
 <a name="l00563"></a>00563   uint32_t errorstate;
-<a name="l00564"></a>00564   uint32_t tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l00564"></a>00564   uint32_t tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l00565"></a>00565   uint32_t count, data, dataremaining;
 <a name="l00566"></a>00566   uint32_t add = BlockAdd;
 <a name="l00567"></a>00567   uint8_t *tempbuff = pData;
@@ -729,7 +729,7 @@
 <a name="l00662"></a>00662         }
 <a name="l00663"></a>00663       }
 <a name="l00664"></a>00664 
-<a name="l00665"></a>00665       <span class="keywordflow">if</span>(((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>()-tickstart) &gt;=  Timeout) || (Timeout == 0U))
+<a name="l00665"></a>00665       <span class="keywordflow">if</span>(((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>()-tickstart) &gt;=  Timeout) || (Timeout == 0U))
 <a name="l00666"></a>00666       {
 <a name="l00667"></a>00667         <span class="comment">/* Clear all the static flags */</span>
 <a name="l00668"></a>00668         __HAL_SD_CLEAR_FLAG(hsd, SDIO_STATIC_FLAGS);
@@ -809,7 +809,7 @@
 <a name="l00742"></a>00742       tempbuff++;
 <a name="l00743"></a>00743       dataremaining--;
 <a name="l00744"></a>00744 
-<a name="l00745"></a>00745       <span class="keywordflow">if</span>(((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>()-tickstart) &gt;=  Timeout) || (Timeout == 0U))
+<a name="l00745"></a>00745       <span class="keywordflow">if</span>(((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>()-tickstart) &gt;=  Timeout) || (Timeout == 0U))
 <a name="l00746"></a>00746       {
 <a name="l00747"></a>00747         <span class="comment">/* Clear all the static flags */</span>
 <a name="l00748"></a>00748         __HAL_SD_CLEAR_FLAG(hsd, SDIO_STATIC_FLAGS);
@@ -850,7 +850,7 @@
 <a name="l00783"></a>00783 {
 <a name="l00784"></a>00784   SDIO_DataInitTypeDef config;
 <a name="l00785"></a>00785   uint32_t errorstate;
-<a name="l00786"></a>00786   uint32_t tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l00786"></a>00786   uint32_t tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l00787"></a>00787   uint32_t count, data, dataremaining;
 <a name="l00788"></a>00788   uint32_t add = BlockAdd;
 <a name="l00789"></a>00789   uint8_t *tempbuff = pData;
@@ -951,7 +951,7 @@
 <a name="l00884"></a>00884         }
 <a name="l00885"></a>00885       }
 <a name="l00886"></a>00886 
-<a name="l00887"></a>00887       <span class="keywordflow">if</span>(((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>()-tickstart) &gt;=  Timeout) || (Timeout == 0U))
+<a name="l00887"></a>00887       <span class="keywordflow">if</span>(((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>()-tickstart) &gt;=  Timeout) || (Timeout == 0U))
 <a name="l00888"></a>00888       {
 <a name="l00889"></a>00889         <span class="comment">/* Clear all the static flags */</span>
 <a name="l00890"></a>00890         __HAL_SD_CLEAR_FLAG(hsd, SDIO_STATIC_FLAGS);
@@ -1287,7 +1287,7 @@
 <a name="l01220"></a>01220     hsd-&gt;hdmarx-&gt;XferAbortCallback = NULL;
 <a name="l01221"></a>01221 
 <a name="l01222"></a>01222     <span class="comment">/* Enable the DMA Channel */</span>
-<a name="l01223"></a>01223     <span class="keywordflow">if</span>(<a class="code" href="group__DMA__Exported__Functions__Group2.html#ga7eddc0931ac8a3d77b23d6d5e68407c7" title="Start the DMA Transfer with interrupt enabled.">HAL_DMA_Start_IT</a>(hsd-&gt;hdmarx, (uint32_t)&amp;hsd-&gt;Instance-&gt;FIFO, (uint32_t)pData, (uint32_t)(BLOCKSIZE * NumberOfBlocks)/4U) != HAL_OK)
+<a name="l01223"></a>01223     <span class="keywordflow">if</span>(<a class="code" href="group/group__DMA__Exported__Functions__Group2.html#ga7eddc0931ac8a3d77b23d6d5e68407c7" title="Start the DMA Transfer with interrupt enabled.">HAL_DMA_Start_IT</a>(hsd-&gt;hdmarx, (uint32_t)&amp;hsd-&gt;Instance-&gt;FIFO, (uint32_t)pData, (uint32_t)(BLOCKSIZE * NumberOfBlocks)/4U) != HAL_OK)
 <a name="l01224"></a>01224     {
 <a name="l01225"></a>01225       __HAL_SD_DISABLE_IT(hsd, (SDIO_IT_DCRCFAIL | SDIO_IT_DTIMEOUT | SDIO_IT_RXOVERR | SDIO_IT_DATAEND));
 <a name="l01226"></a>01226       __HAL_SD_CLEAR_FLAG(hsd, SDIO_STATIC_FLAGS);
@@ -1456,7 +1456,7 @@
 <a name="l01389"></a>01389     __HAL_SD_DMA_ENABLE(hsd);
 <a name="l01390"></a>01390 
 <a name="l01391"></a>01391     <span class="comment">/* Enable the DMA Channel */</span>
-<a name="l01392"></a>01392     <span class="keywordflow">if</span>(<a class="code" href="group__DMA__Exported__Functions__Group2.html#ga7eddc0931ac8a3d77b23d6d5e68407c7" title="Start the DMA Transfer with interrupt enabled.">HAL_DMA_Start_IT</a>(hsd-&gt;hdmatx, (uint32_t)pData, (uint32_t)&amp;hsd-&gt;Instance-&gt;FIFO, (uint32_t)(BLOCKSIZE * NumberOfBlocks)/4U) != HAL_OK)
+<a name="l01392"></a>01392     <span class="keywordflow">if</span>(<a class="code" href="group/group__DMA__Exported__Functions__Group2.html#ga7eddc0931ac8a3d77b23d6d5e68407c7" title="Start the DMA Transfer with interrupt enabled.">HAL_DMA_Start_IT</a>(hsd-&gt;hdmatx, (uint32_t)pData, (uint32_t)&amp;hsd-&gt;Instance-&gt;FIFO, (uint32_t)(BLOCKSIZE * NumberOfBlocks)/4U) != HAL_OK)
 <a name="l01393"></a>01393     {
 <a name="l01394"></a>01394       __HAL_SD_DISABLE_IT(hsd, (SDIO_IT_DCRCFAIL | SDIO_IT_DTIMEOUT | SDIO_IT_TXUNDERR | SDIO_IT_STBITERR));
 <a name="l01395"></a>01395       __HAL_SD_CLEAR_FLAG(hsd, SDIO_STATIC_FLAGS);
@@ -1748,7 +1748,7 @@
 <a name="l01681"></a>01681         <span class="comment">/* Set the DMA Tx abort callback */</span>
 <a name="l01682"></a>01682         hsd-&gt;hdmatx-&gt;XferAbortCallback = SD_DMATxAbort;
 <a name="l01683"></a>01683         <span class="comment">/* Abort DMA in IT mode */</span>
-<a name="l01684"></a>01684         <span class="keywordflow">if</span>(<a class="code" href="group__DMA__Exported__Functions__Group2.html#ga6677d7e614747341a58ffd7a048fd390" title="Aborts the DMA Transfer in Interrupt mode.">HAL_DMA_Abort_IT</a>(hsd-&gt;hdmatx) != HAL_OK)
+<a name="l01684"></a>01684         <span class="keywordflow">if</span>(<a class="code" href="group/group__DMA__Exported__Functions__Group2.html#ga6677d7e614747341a58ffd7a048fd390" title="Aborts the DMA Transfer in Interrupt mode.">HAL_DMA_Abort_IT</a>(hsd-&gt;hdmatx) != HAL_OK)
 <a name="l01685"></a>01685         {
 <a name="l01686"></a>01686           SD_DMATxAbort(hsd-&gt;hdmatx);
 <a name="l01687"></a>01687         }
@@ -1758,7 +1758,7 @@
 <a name="l01691"></a>01691         <span class="comment">/* Set the DMA Rx abort callback */</span>
 <a name="l01692"></a>01692         hsd-&gt;hdmarx-&gt;XferAbortCallback = SD_DMARxAbort;
 <a name="l01693"></a>01693         <span class="comment">/* Abort DMA in IT mode */</span>
-<a name="l01694"></a>01694         <span class="keywordflow">if</span>(<a class="code" href="group__DMA__Exported__Functions__Group2.html#ga6677d7e614747341a58ffd7a048fd390" title="Aborts the DMA Transfer in Interrupt mode.">HAL_DMA_Abort_IT</a>(hsd-&gt;hdmarx) != HAL_OK)
+<a name="l01694"></a>01694         <span class="keywordflow">if</span>(<a class="code" href="group/group__DMA__Exported__Functions__Group2.html#ga6677d7e614747341a58ffd7a048fd390" title="Aborts the DMA Transfer in Interrupt mode.">HAL_DMA_Abort_IT</a>(hsd-&gt;hdmarx) != HAL_OK)
 <a name="l01695"></a>01695         {
 <a name="l01696"></a>01696           SD_DMARxAbort(hsd-&gt;hdmarx);
 <a name="l01697"></a>01697         }
@@ -2404,7 +2404,7 @@
 <a name="l02337"></a>02337     <span class="comment">/* Abort the SD DMA Tx channel */</span>
 <a name="l02338"></a>02338     <span class="keywordflow">if</span> (((context &amp; SD_CONTEXT_WRITE_SINGLE_BLOCK) != 0U) || ((context &amp; SD_CONTEXT_WRITE_MULTIPLE_BLOCK) != 0U))
 <a name="l02339"></a>02339     {
-<a name="l02340"></a>02340       <span class="keywordflow">if</span>(<a class="code" href="group__DMA__Exported__Functions__Group2.html#ga001f9fb04328a7460f9ff16908ff987c" title="Abort the DMA Transfer.">HAL_DMA_Abort</a>(hsd-&gt;hdmatx) != HAL_OK)
+<a name="l02340"></a>02340       <span class="keywordflow">if</span>(<a class="code" href="group/group__DMA__Exported__Functions__Group2.html#ga001f9fb04328a7460f9ff16908ff987c" title="Abort the DMA Transfer.">HAL_DMA_Abort</a>(hsd-&gt;hdmatx) != HAL_OK)
 <a name="l02341"></a>02341       {
 <a name="l02342"></a>02342         hsd-&gt;ErrorCode |= HAL_SD_ERROR_DMA;
 <a name="l02343"></a>02343       }
@@ -2412,7 +2412,7 @@
 <a name="l02345"></a>02345     <span class="comment">/* Abort the SD DMA Rx channel */</span>
 <a name="l02346"></a>02346     <span class="keywordflow">else</span> <span class="keywordflow">if</span> (((context &amp; SD_CONTEXT_READ_SINGLE_BLOCK) != 0U) || ((context &amp; SD_CONTEXT_READ_MULTIPLE_BLOCK) != 0U))
 <a name="l02347"></a>02347     {
-<a name="l02348"></a>02348       <span class="keywordflow">if</span>(<a class="code" href="group__DMA__Exported__Functions__Group2.html#ga001f9fb04328a7460f9ff16908ff987c" title="Abort the DMA Transfer.">HAL_DMA_Abort</a>(hsd-&gt;hdmarx) != HAL_OK)
+<a name="l02348"></a>02348       <span class="keywordflow">if</span>(<a class="code" href="group/group__DMA__Exported__Functions__Group2.html#ga001f9fb04328a7460f9ff16908ff987c" title="Abort the DMA Transfer.">HAL_DMA_Abort</a>(hsd-&gt;hdmarx) != HAL_OK)
 <a name="l02349"></a>02349       {
 <a name="l02350"></a>02350         hsd-&gt;ErrorCode |= HAL_SD_ERROR_DMA;
 <a name="l02351"></a>02351       }
@@ -2466,7 +2466,7 @@
 <a name="l02399"></a>02399     <span class="keywordflow">if</span> (((context &amp; SD_CONTEXT_WRITE_SINGLE_BLOCK) != 0U) || ((context &amp; SD_CONTEXT_WRITE_MULTIPLE_BLOCK) != 0U))
 <a name="l02400"></a>02400     {
 <a name="l02401"></a>02401       hsd-&gt;hdmatx-&gt;XferAbortCallback = SD_DMATxAbort;
-<a name="l02402"></a>02402       <span class="keywordflow">if</span>(<a class="code" href="group__DMA__Exported__Functions__Group2.html#ga6677d7e614747341a58ffd7a048fd390" title="Aborts the DMA Transfer in Interrupt mode.">HAL_DMA_Abort_IT</a>(hsd-&gt;hdmatx) != HAL_OK)
+<a name="l02402"></a>02402       <span class="keywordflow">if</span>(<a class="code" href="group/group__DMA__Exported__Functions__Group2.html#ga6677d7e614747341a58ffd7a048fd390" title="Aborts the DMA Transfer in Interrupt mode.">HAL_DMA_Abort_IT</a>(hsd-&gt;hdmatx) != HAL_OK)
 <a name="l02403"></a>02403       {
 <a name="l02404"></a>02404         hsd-&gt;hdmatx = NULL;
 <a name="l02405"></a>02405       }
@@ -2475,7 +2475,7 @@
 <a name="l02408"></a>02408     <span class="keywordflow">else</span> <span class="keywordflow">if</span> (((context &amp; SD_CONTEXT_READ_SINGLE_BLOCK) != 0U) || ((context &amp; SD_CONTEXT_READ_MULTIPLE_BLOCK) != 0U))
 <a name="l02409"></a>02409     {
 <a name="l02410"></a>02410       hsd-&gt;hdmarx-&gt;XferAbortCallback = SD_DMARxAbort;
-<a name="l02411"></a>02411       <span class="keywordflow">if</span>(<a class="code" href="group__DMA__Exported__Functions__Group2.html#ga6677d7e614747341a58ffd7a048fd390" title="Aborts the DMA Transfer in Interrupt mode.">HAL_DMA_Abort_IT</a>(hsd-&gt;hdmarx) != HAL_OK)
+<a name="l02411"></a>02411       <span class="keywordflow">if</span>(<a class="code" href="group/group__DMA__Exported__Functions__Group2.html#ga6677d7e614747341a58ffd7a048fd390" title="Aborts the DMA Transfer in Interrupt mode.">HAL_DMA_Abort_IT</a>(hsd-&gt;hdmarx) != HAL_OK)
 <a name="l02412"></a>02412       {
 <a name="l02413"></a>02413         hsd-&gt;hdmarx = NULL;
 <a name="l02414"></a>02414       }
@@ -2596,7 +2596,7 @@
 <a name="l02529"></a>02529 
 <a name="l02530"></a>02530     RxErrorCode = hsd-&gt;hdmarx-&gt;ErrorCode;
 <a name="l02531"></a>02531     TxErrorCode = hsd-&gt;hdmatx-&gt;ErrorCode;  
-<a name="l02532"></a>02532     <span class="keywordflow">if</span>((RxErrorCode == <a class="code" href="group__DMA__Error__Code.html#ga9882442c5f8f0170917934bbee1cc92d">HAL_DMA_ERROR_TE</a>) || (TxErrorCode == <a class="code" href="group__DMA__Error__Code.html#ga9882442c5f8f0170917934bbee1cc92d">HAL_DMA_ERROR_TE</a>))
+<a name="l02532"></a>02532     <span class="keywordflow">if</span>((RxErrorCode == <a class="code" href="group/group__DMA__Error__Code.html#ga9882442c5f8f0170917934bbee1cc92d">HAL_DMA_ERROR_TE</a>) || (TxErrorCode == <a class="code" href="group/group__DMA__Error__Code.html#ga9882442c5f8f0170917934bbee1cc92d">HAL_DMA_ERROR_TE</a>))
 <a name="l02533"></a>02533     {
 <a name="l02534"></a>02534       <span class="comment">/* Clear All flags */</span>
 <a name="l02535"></a>02535       __HAL_SD_CLEAR_FLAG(hsd, SDIO_STATIC_FLAGS);
@@ -2905,7 +2905,7 @@
 <a name="l02838"></a>02838 {
 <a name="l02839"></a>02839   SDIO_DataInitTypeDef config;
 <a name="l02840"></a>02840   uint32_t errorstate;
-<a name="l02841"></a>02841   uint32_t tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l02841"></a>02841   uint32_t tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l02842"></a>02842   uint32_t count;
 <a name="l02843"></a>02843   uint32_t *pData = pSDstatus;
 <a name="l02844"></a>02844 
@@ -2960,7 +2960,7 @@
 <a name="l02893"></a>02893       }
 <a name="l02894"></a>02894     }
 <a name="l02895"></a>02895 
-<a name="l02896"></a>02896     <span class="keywordflow">if</span>((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt;=  SDMMC_DATATIMEOUT)
+<a name="l02896"></a>02896     <span class="keywordflow">if</span>((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt;=  SDMMC_DATATIMEOUT)
 <a name="l02897"></a>02897     {
 <a name="l02898"></a>02898       <span class="keywordflow">return</span> HAL_SD_ERROR_TIMEOUT;
 <a name="l02899"></a>02899     }
@@ -2988,7 +2988,7 @@
 <a name="l02921"></a>02921     *pData = SDIO_ReadFIFO(hsd-&gt;Instance);
 <a name="l02922"></a>02922     pData++;
 <a name="l02923"></a>02923 
-<a name="l02924"></a>02924     <span class="keywordflow">if</span>((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt;=  SDMMC_DATATIMEOUT)
+<a name="l02924"></a>02924     <span class="keywordflow">if</span>((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt;=  SDMMC_DATATIMEOUT)
 <a name="l02925"></a>02925     {
 <a name="l02926"></a>02926       <span class="keywordflow">return</span> HAL_SD_ERROR_TIMEOUT;
 <a name="l02927"></a>02927     }
@@ -3134,7 +3134,7 @@
 <a name="l03067"></a>03067 {
 <a name="l03068"></a>03068   SDIO_DataInitTypeDef config;
 <a name="l03069"></a>03069   uint32_t errorstate;
-<a name="l03070"></a>03070   uint32_t tickstart = <a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
+<a name="l03070"></a>03070   uint32_t tickstart = <a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>();
 <a name="l03071"></a>03071   uint32_t index = 0U;
 <a name="l03072"></a>03072   uint32_t tempscr[2U] = {0U, 0U};
 <a name="l03073"></a>03073   uint32_t *scr = pSCR;
@@ -3176,7 +3176,7 @@
 <a name="l03109"></a>03109       index++;
 <a name="l03110"></a>03110     }
 <a name="l03111"></a>03111 
-<a name="l03112"></a>03112     <span class="keywordflow">if</span>((<a class="code" href="group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt;=  SDMMC_DATATIMEOUT)
+<a name="l03112"></a>03112     <span class="keywordflow">if</span>((<a class="code" href="group/group__HAL__Exported__Functions__Group2.html#gaf2c4f03d53e997a54e1fd5e80daa55c4" title="Provides a tick value in millisecond.">HAL_GetTick</a>() - tickstart) &gt;=  SDMMC_DATATIMEOUT)
 <a name="l03113"></a>03113     {
 <a name="l03114"></a>03114       <span class="keywordflow">return</span> HAL_SD_ERROR_TIMEOUT;
 <a name="l03115"></a>03115     }

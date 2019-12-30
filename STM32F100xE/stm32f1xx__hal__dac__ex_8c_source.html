@@ -177,23 +177,23 @@
 <a name="l00110"></a>00110 <span class="comment">  *            @arg DAC_TRIANGLEAMPLITUDE_4095: Select max triangle amplitude of 4095</span>
 <a name="l00111"></a>00111 <span class="comment">  * @retval HAL status</span>
 <a name="l00112"></a>00112 <span class="comment">  */</span>
-<a name="l00113"></a><a class="code" href="group__DACEx__Exported__Functions__Group2.html#gaab5fcb54ac9721673810965d72bfc408">00113</a> HAL_StatusTypeDef <a class="code" href="group__DACEx__Exported__Functions__Group2.html#gaab5fcb54ac9721673810965d72bfc408" title="Enable or disable the selected DAC channel wave generation.">HAL_DACEx_TriangleWaveGenerate</a>(<a class="code" href="structDAC__HandleTypeDef.html" title="DAC handle Structure definition.">DAC_HandleTypeDef</a> *hdac, uint32_t Channel, uint32_t Amplitude)
+<a name="l00113"></a><a class="code" href="group/group__DACEx__Exported__Functions__Group2.html#gaab5fcb54ac9721673810965d72bfc408">00113</a> HAL_StatusTypeDef <a class="code" href="group/group__DACEx__Exported__Functions__Group2.html#gaab5fcb54ac9721673810965d72bfc408" title="Enable or disable the selected DAC channel wave generation.">HAL_DACEx_TriangleWaveGenerate</a>(<a class="code" href="structDAC__HandleTypeDef.html" title="DAC handle Structure definition.">DAC_HandleTypeDef</a> *hdac, uint32_t Channel, uint32_t Amplitude)
 <a name="l00114"></a>00114 {
 <a name="l00115"></a>00115   <span class="comment">/* Check the parameters */</span>
-<a name="l00116"></a>00116   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__DAC__Private__Macros.html#gafb2b9bdaccb3a5e3396925d7cba02cc3">IS_DAC_CHANNEL</a>(Channel));
-<a name="l00117"></a>00117   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__DACEx__Private__Macros.html#ga20f7c3c43f917f14593f0c478c2412e1">IS_DAC_LFSR_UNMASK_TRIANGLE_AMPLITUDE</a>(Amplitude));
+<a name="l00116"></a>00116   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__DAC__Private__Macros.html#gafb2b9bdaccb3a5e3396925d7cba02cc3">IS_DAC_CHANNEL</a>(Channel));
+<a name="l00117"></a>00117   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__DACEx__Private__Macros.html#ga20f7c3c43f917f14593f0c478c2412e1">IS_DAC_LFSR_UNMASK_TRIANGLE_AMPLITUDE</a>(Amplitude));
 <a name="l00118"></a>00118 
 <a name="l00119"></a>00119   <span class="comment">/* Process locked */</span>
 <a name="l00120"></a>00120   __HAL_LOCK(hdac);
 <a name="l00121"></a>00121 
 <a name="l00122"></a>00122   <span class="comment">/* Change DAC state */</span>
-<a name="l00123"></a>00123   hdac-&gt;<a class="code" href="structDAC__HandleTypeDef.html#a3e25489ceea69107572037728e9ac5f3">State</a> = <a class="code" href="group__DAC__Exported__Types.html#gga4e917340aba1cc3afd4e9a7fef15e4a5affada80e942967574be53057d5605972">HAL_DAC_STATE_BUSY</a>;
+<a name="l00123"></a>00123   hdac-&gt;<a class="code" href="structDAC__HandleTypeDef.html#a3e25489ceea69107572037728e9ac5f3">State</a> = <a class="code" href="group/group__DAC__Exported__Types.html#gga4e917340aba1cc3afd4e9a7fef15e4a5affada80e942967574be53057d5605972">HAL_DAC_STATE_BUSY</a>;
 <a name="l00124"></a>00124 
 <a name="l00125"></a>00125   <span class="comment">/* Enable the triangle wave generation for the selected DAC channel */</span>
 <a name="l00126"></a>00126   MODIFY_REG(hdac-&gt;<a class="code" href="structDAC__HandleTypeDef.html#ac25a3f9270f3e98c4104361209ed1a49">Instance</a>-&gt;CR, ((DAC_CR_WAVE1) | (DAC_CR_MAMP1)) &lt;&lt; (Channel &amp; 0x10UL), (DAC_CR_WAVE1_1 | Amplitude) &lt;&lt; (Channel &amp; 0x10UL));
 <a name="l00127"></a>00127 
 <a name="l00128"></a>00128   <span class="comment">/* Change DAC state */</span>
-<a name="l00129"></a>00129   hdac-&gt;<a class="code" href="structDAC__HandleTypeDef.html#a3e25489ceea69107572037728e9ac5f3">State</a> = <a class="code" href="group__DAC__Exported__Types.html#gga4e917340aba1cc3afd4e9a7fef15e4a5a1aa309188f7914d5f784844845e2fea1">HAL_DAC_STATE_READY</a>;
+<a name="l00129"></a>00129   hdac-&gt;<a class="code" href="structDAC__HandleTypeDef.html#a3e25489ceea69107572037728e9ac5f3">State</a> = <a class="code" href="group/group__DAC__Exported__Types.html#gga4e917340aba1cc3afd4e9a7fef15e4a5a1aa309188f7914d5f784844845e2fea1">HAL_DAC_STATE_READY</a>;
 <a name="l00130"></a>00130 
 <a name="l00131"></a>00131   <span class="comment">/* Process unlocked */</span>
 <a name="l00132"></a>00132   __HAL_UNLOCK(hdac);
@@ -226,23 +226,23 @@
 <a name="l00159"></a>00159 <span class="comment">  *            @arg DAC_LFSRUNMASK_BITS11_0: Unmask DAC channel LFSR bit[11:0] for noise wave generation</span>
 <a name="l00160"></a>00160 <span class="comment">  * @retval HAL status</span>
 <a name="l00161"></a>00161 <span class="comment">  */</span>
-<a name="l00162"></a><a class="code" href="group__DACEx__Exported__Functions__Group2.html#ga6081e8d9d87bd7bfa96d0456def1e1d5">00162</a> HAL_StatusTypeDef <a class="code" href="group__DACEx__Exported__Functions__Group2.html#ga6081e8d9d87bd7bfa96d0456def1e1d5" title="Enable or disable the selected DAC channel wave generation.">HAL_DACEx_NoiseWaveGenerate</a>(<a class="code" href="structDAC__HandleTypeDef.html" title="DAC handle Structure definition.">DAC_HandleTypeDef</a> *hdac, uint32_t Channel, uint32_t Amplitude)
+<a name="l00162"></a><a class="code" href="group/group__DACEx__Exported__Functions__Group2.html#ga6081e8d9d87bd7bfa96d0456def1e1d5">00162</a> HAL_StatusTypeDef <a class="code" href="group/group__DACEx__Exported__Functions__Group2.html#ga6081e8d9d87bd7bfa96d0456def1e1d5" title="Enable or disable the selected DAC channel wave generation.">HAL_DACEx_NoiseWaveGenerate</a>(<a class="code" href="structDAC__HandleTypeDef.html" title="DAC handle Structure definition.">DAC_HandleTypeDef</a> *hdac, uint32_t Channel, uint32_t Amplitude)
 <a name="l00163"></a>00163 {
 <a name="l00164"></a>00164   <span class="comment">/* Check the parameters */</span>
-<a name="l00165"></a>00165   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__DAC__Private__Macros.html#gafb2b9bdaccb3a5e3396925d7cba02cc3">IS_DAC_CHANNEL</a>(Channel));
-<a name="l00166"></a>00166   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__DACEx__Private__Macros.html#ga20f7c3c43f917f14593f0c478c2412e1">IS_DAC_LFSR_UNMASK_TRIANGLE_AMPLITUDE</a>(Amplitude));
+<a name="l00165"></a>00165   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__DAC__Private__Macros.html#gafb2b9bdaccb3a5e3396925d7cba02cc3">IS_DAC_CHANNEL</a>(Channel));
+<a name="l00166"></a>00166   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__DACEx__Private__Macros.html#ga20f7c3c43f917f14593f0c478c2412e1">IS_DAC_LFSR_UNMASK_TRIANGLE_AMPLITUDE</a>(Amplitude));
 <a name="l00167"></a>00167 
 <a name="l00168"></a>00168   <span class="comment">/* Process locked */</span>
 <a name="l00169"></a>00169   __HAL_LOCK(hdac);
 <a name="l00170"></a>00170 
 <a name="l00171"></a>00171   <span class="comment">/* Change DAC state */</span>
-<a name="l00172"></a>00172   hdac-&gt;<a class="code" href="structDAC__HandleTypeDef.html#a3e25489ceea69107572037728e9ac5f3">State</a> = <a class="code" href="group__DAC__Exported__Types.html#gga4e917340aba1cc3afd4e9a7fef15e4a5affada80e942967574be53057d5605972">HAL_DAC_STATE_BUSY</a>;
+<a name="l00172"></a>00172   hdac-&gt;<a class="code" href="structDAC__HandleTypeDef.html#a3e25489ceea69107572037728e9ac5f3">State</a> = <a class="code" href="group/group__DAC__Exported__Types.html#gga4e917340aba1cc3afd4e9a7fef15e4a5affada80e942967574be53057d5605972">HAL_DAC_STATE_BUSY</a>;
 <a name="l00173"></a>00173 
 <a name="l00174"></a>00174   <span class="comment">/* Enable the noise wave generation for the selected DAC channel */</span>
 <a name="l00175"></a>00175   MODIFY_REG(hdac-&gt;<a class="code" href="structDAC__HandleTypeDef.html#ac25a3f9270f3e98c4104361209ed1a49">Instance</a>-&gt;CR, ((DAC_CR_WAVE1) | (DAC_CR_MAMP1)) &lt;&lt; (Channel &amp; 0x10UL), (DAC_CR_WAVE1_0 | Amplitude) &lt;&lt; (Channel &amp; 0x10UL));
 <a name="l00176"></a>00176 
 <a name="l00177"></a>00177   <span class="comment">/* Change DAC state */</span>
-<a name="l00178"></a>00178   hdac-&gt;<a class="code" href="structDAC__HandleTypeDef.html#a3e25489ceea69107572037728e9ac5f3">State</a> = <a class="code" href="group__DAC__Exported__Types.html#gga4e917340aba1cc3afd4e9a7fef15e4a5a1aa309188f7914d5f784844845e2fea1">HAL_DAC_STATE_READY</a>;
+<a name="l00178"></a>00178   hdac-&gt;<a class="code" href="structDAC__HandleTypeDef.html#a3e25489ceea69107572037728e9ac5f3">State</a> = <a class="code" href="group/group__DAC__Exported__Types.html#gga4e917340aba1cc3afd4e9a7fef15e4a5a1aa309188f7914d5f784844845e2fea1">HAL_DAC_STATE_READY</a>;
 <a name="l00179"></a>00179 
 <a name="l00180"></a>00180   <span class="comment">/* Process unlocked */</span>
 <a name="l00181"></a>00181   __HAL_UNLOCK(hdac);
@@ -266,18 +266,18 @@
 <a name="l00199"></a>00199 <span class="comment">  *          DAC channels at the same time.</span>
 <a name="l00200"></a>00200 <span class="comment">  * @retval HAL status</span>
 <a name="l00201"></a>00201 <span class="comment">  */</span>
-<a name="l00202"></a><a class="code" href="group__DACEx__Exported__Functions__Group2.html#ga9c8472b2be242429225f1c9aa722df75">00202</a> HAL_StatusTypeDef <a class="code" href="group__DACEx__Exported__Functions__Group2.html#ga9c8472b2be242429225f1c9aa722df75" title="Set the specified data holding register value for dual DAC channel.">HAL_DACEx_DualSetValue</a>(<a class="code" href="structDAC__HandleTypeDef.html" title="DAC handle Structure definition.">DAC_HandleTypeDef</a> *hdac, uint32_t Alignment, uint32_t Data1, uint32_t Data2)
+<a name="l00202"></a><a class="code" href="group/group__DACEx__Exported__Functions__Group2.html#ga9c8472b2be242429225f1c9aa722df75">00202</a> HAL_StatusTypeDef <a class="code" href="group/group__DACEx__Exported__Functions__Group2.html#ga9c8472b2be242429225f1c9aa722df75" title="Set the specified data holding register value for dual DAC channel.">HAL_DACEx_DualSetValue</a>(<a class="code" href="structDAC__HandleTypeDef.html" title="DAC handle Structure definition.">DAC_HandleTypeDef</a> *hdac, uint32_t Alignment, uint32_t Data1, uint32_t Data2)
 <a name="l00203"></a>00203 {
 <a name="l00204"></a>00204   uint32_t data;
 <a name="l00205"></a>00205   uint32_t tmp;
 <a name="l00206"></a>00206 
 <a name="l00207"></a>00207   <span class="comment">/* Check the parameters */</span>
-<a name="l00208"></a>00208   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__DAC__Private__Macros.html#ga7779c36606827a6a2c4423414a441bde">IS_DAC_ALIGN</a>(Alignment));
-<a name="l00209"></a>00209   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__DAC__Private__Macros.html#ga903e28d4971e172b37c1c2fc17c2a884">IS_DAC_DATA</a>(Data1));
-<a name="l00210"></a>00210   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group__DAC__Private__Macros.html#ga903e28d4971e172b37c1c2fc17c2a884">IS_DAC_DATA</a>(Data2));
+<a name="l00208"></a>00208   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__DAC__Private__Macros.html#ga7779c36606827a6a2c4423414a441bde">IS_DAC_ALIGN</a>(Alignment));
+<a name="l00209"></a>00209   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__DAC__Private__Macros.html#ga903e28d4971e172b37c1c2fc17c2a884">IS_DAC_DATA</a>(Data1));
+<a name="l00210"></a>00210   <a class="code" href="stm32f1xx__hal__conf_8h.html#a631dea7b230e600555f979c62af1de21" title="Include module&#39;s header file.">assert_param</a>(<a class="code" href="group/group__DAC__Private__Macros.html#ga903e28d4971e172b37c1c2fc17c2a884">IS_DAC_DATA</a>(Data2));
 <a name="l00211"></a>00211 
 <a name="l00212"></a>00212   <span class="comment">/* Calculate and set dual DAC data holding register value */</span>
-<a name="l00213"></a>00213   <span class="keywordflow">if</span> (Alignment == <a class="code" href="group__DAC__data__alignment.html#ga40c587f9c50207dcda458e6c0a2a9b5b">DAC_ALIGN_8B_R</a>)
+<a name="l00213"></a>00213   <span class="keywordflow">if</span> (Alignment == <a class="code" href="group/group__DAC__data__alignment.html#ga40c587f9c50207dcda458e6c0a2a9b5b">DAC_ALIGN_8B_R</a>)
 <a name="l00214"></a>00214   {
 <a name="l00215"></a>00215     data = ((uint32_t)Data2 &lt;&lt; 8U) | Data1;
 <a name="l00216"></a>00216   }
@@ -287,7 +287,7 @@
 <a name="l00220"></a>00220   }
 <a name="l00221"></a>00221 
 <a name="l00222"></a>00222   tmp = (uint32_t)hdac-&gt;<a class="code" href="structDAC__HandleTypeDef.html#ac25a3f9270f3e98c4104361209ed1a49">Instance</a>;
-<a name="l00223"></a>00223   tmp += <a class="code" href="group__DAC__Exported__Macros.html#ga3d35c7e3872d5b79f83a7efdfe3df5f0" title="Set DHR12RD alignment.">DAC_DHR12RD_ALIGNMENT</a>(Alignment);
+<a name="l00223"></a>00223   tmp += <a class="code" href="group/group__DAC__Exported__Macros.html#ga3d35c7e3872d5b79f83a7efdfe3df5f0" title="Set DHR12RD alignment.">DAC_DHR12RD_ALIGNMENT</a>(Alignment);
 <a name="l00224"></a>00224 
 <a name="l00225"></a>00225   <span class="comment">/* Set the dual DAC selected data holding register */</span>
 <a name="l00226"></a>00226   *(__IO uint32_t *)tmp = data;
@@ -302,7 +302,7 @@
 <a name="l00235"></a>00235 <span class="comment">  *         the configuration information for the specified DAC.</span>
 <a name="l00236"></a>00236 <span class="comment">  * @retval None</span>
 <a name="l00237"></a>00237 <span class="comment">  */</span>
-<a name="l00238"></a><a class="code" href="group__DACEx__Exported__Functions__Group2.html#gadf84b0c08bfe452d7861563fd4ee424d">00238</a> __weak <span class="keywordtype">void</span> <a class="code" href="group__DACEx__Exported__Functions__Group2.html#gadf84b0c08bfe452d7861563fd4ee424d" title="Conversion complete callback in non-blocking mode for Channel2.">HAL_DACEx_ConvCpltCallbackCh2</a>(<a class="code" href="structDAC__HandleTypeDef.html" title="DAC handle Structure definition.">DAC_HandleTypeDef</a> *hdac)
+<a name="l00238"></a><a class="code" href="group/group__DACEx__Exported__Functions__Group2.html#gadf84b0c08bfe452d7861563fd4ee424d">00238</a> __weak <span class="keywordtype">void</span> <a class="code" href="group/group__DACEx__Exported__Functions__Group2.html#gadf84b0c08bfe452d7861563fd4ee424d" title="Conversion complete callback in non-blocking mode for Channel2.">HAL_DACEx_ConvCpltCallbackCh2</a>(<a class="code" href="structDAC__HandleTypeDef.html" title="DAC handle Structure definition.">DAC_HandleTypeDef</a> *hdac)
 <a name="l00239"></a>00239 {
 <a name="l00240"></a>00240   <span class="comment">/* Prevent unused argument(s) compilation warning */</span>
 <a name="l00241"></a>00241   UNUSED(hdac);
@@ -318,7 +318,7 @@
 <a name="l00251"></a>00251 <span class="comment">  *         the configuration information for the specified DAC.</span>
 <a name="l00252"></a>00252 <span class="comment">  * @retval None</span>
 <a name="l00253"></a>00253 <span class="comment">  */</span>
-<a name="l00254"></a><a class="code" href="group__DACEx__Exported__Functions__Group2.html#gae8d236b1014fad4b2246f1ff553f8fd4">00254</a> __weak <span class="keywordtype">void</span> <a class="code" href="group__DACEx__Exported__Functions__Group2.html#gae8d236b1014fad4b2246f1ff553f8fd4" title="Conversion half DMA transfer callback in non-blocking mode for Channel2.">HAL_DACEx_ConvHalfCpltCallbackCh2</a>(<a class="code" href="structDAC__HandleTypeDef.html" title="DAC handle Structure definition.">DAC_HandleTypeDef</a> *hdac)
+<a name="l00254"></a><a class="code" href="group/group__DACEx__Exported__Functions__Group2.html#gae8d236b1014fad4b2246f1ff553f8fd4">00254</a> __weak <span class="keywordtype">void</span> <a class="code" href="group/group__DACEx__Exported__Functions__Group2.html#gae8d236b1014fad4b2246f1ff553f8fd4" title="Conversion half DMA transfer callback in non-blocking mode for Channel2.">HAL_DACEx_ConvHalfCpltCallbackCh2</a>(<a class="code" href="structDAC__HandleTypeDef.html" title="DAC handle Structure definition.">DAC_HandleTypeDef</a> *hdac)
 <a name="l00255"></a>00255 {
 <a name="l00256"></a>00256   <span class="comment">/* Prevent unused argument(s) compilation warning */</span>
 <a name="l00257"></a>00257   UNUSED(hdac);
@@ -334,7 +334,7 @@
 <a name="l00267"></a>00267 <span class="comment">  *         the configuration information for the specified DAC.</span>
 <a name="l00268"></a>00268 <span class="comment">  * @retval None</span>
 <a name="l00269"></a>00269 <span class="comment">  */</span>
-<a name="l00270"></a><a class="code" href="group__DACEx__Exported__Functions__Group2.html#ga7cb20eb27136a27b9b5bdf1c263e69cf">00270</a> __weak <span class="keywordtype">void</span> <a class="code" href="group__DACEx__Exported__Functions__Group2.html#ga7cb20eb27136a27b9b5bdf1c263e69cf" title="Error DAC callback for Channel2.">HAL_DACEx_ErrorCallbackCh2</a>(<a class="code" href="structDAC__HandleTypeDef.html" title="DAC handle Structure definition.">DAC_HandleTypeDef</a> *hdac)
+<a name="l00270"></a><a class="code" href="group/group__DACEx__Exported__Functions__Group2.html#ga7cb20eb27136a27b9b5bdf1c263e69cf">00270</a> __weak <span class="keywordtype">void</span> <a class="code" href="group/group__DACEx__Exported__Functions__Group2.html#ga7cb20eb27136a27b9b5bdf1c263e69cf" title="Error DAC callback for Channel2.">HAL_DACEx_ErrorCallbackCh2</a>(<a class="code" href="structDAC__HandleTypeDef.html" title="DAC handle Structure definition.">DAC_HandleTypeDef</a> *hdac)
 <a name="l00271"></a>00271 {
 <a name="l00272"></a>00272   <span class="comment">/* Prevent unused argument(s) compilation warning */</span>
 <a name="l00273"></a>00273   UNUSED(hdac);
@@ -350,7 +350,7 @@
 <a name="l00283"></a>00283 <span class="comment">  *         the configuration information for the specified DAC.</span>
 <a name="l00284"></a>00284 <span class="comment">  * @retval None</span>
 <a name="l00285"></a>00285 <span class="comment">  */</span>
-<a name="l00286"></a><a class="code" href="group__DACEx__Exported__Functions__Group2.html#ga27693be11fb6b5d5232b0e36ea4aad45">00286</a> __weak <span class="keywordtype">void</span> <a class="code" href="group__DACEx__Exported__Functions__Group2.html#ga27693be11fb6b5d5232b0e36ea4aad45" title="DMA underrun DAC callback for Channel2.">HAL_DACEx_DMAUnderrunCallbackCh2</a>(<a class="code" href="structDAC__HandleTypeDef.html" title="DAC handle Structure definition.">DAC_HandleTypeDef</a> *hdac)
+<a name="l00286"></a><a class="code" href="group/group__DACEx__Exported__Functions__Group2.html#ga27693be11fb6b5d5232b0e36ea4aad45">00286</a> __weak <span class="keywordtype">void</span> <a class="code" href="group/group__DACEx__Exported__Functions__Group2.html#ga27693be11fb6b5d5232b0e36ea4aad45" title="DMA underrun DAC callback for Channel2.">HAL_DACEx_DMAUnderrunCallbackCh2</a>(<a class="code" href="structDAC__HandleTypeDef.html" title="DAC handle Structure definition.">DAC_HandleTypeDef</a> *hdac)
 <a name="l00287"></a>00287 {
 <a name="l00288"></a>00288   <span class="comment">/* Prevent unused argument(s) compilation warning */</span>
 <a name="l00289"></a>00289   UNUSED(hdac);
@@ -384,7 +384,7 @@
 <a name="l00317"></a>00317 <span class="comment">  *         the configuration information for the specified DAC.</span>
 <a name="l00318"></a>00318 <span class="comment">  * @retval The selected DAC channel data output value.</span>
 <a name="l00319"></a>00319 <span class="comment">  */</span>
-<a name="l00320"></a><a class="code" href="group__DACEx__Exported__Functions__Group2.html#ga519cdeb156249b400365746b65a1d445">00320</a> uint32_t <a class="code" href="group__DACEx__Exported__Functions__Group3.html#ga519cdeb156249b400365746b65a1d445" title="Return the last data output value of the selected DAC channel.">HAL_DACEx_DualGetValue</a>(<a class="code" href="structDAC__HandleTypeDef.html" title="DAC handle Structure definition.">DAC_HandleTypeDef</a> *hdac)
+<a name="l00320"></a><a class="code" href="group/group__DACEx__Exported__Functions__Group2.html#ga519cdeb156249b400365746b65a1d445">00320</a> uint32_t <a class="code" href="group/group__DACEx__Exported__Functions__Group3.html#ga519cdeb156249b400365746b65a1d445" title="Return the last data output value of the selected DAC channel.">HAL_DACEx_DualGetValue</a>(<a class="code" href="structDAC__HandleTypeDef.html" title="DAC handle Structure definition.">DAC_HandleTypeDef</a> *hdac)
 <a name="l00321"></a>00321 {
 <a name="l00322"></a>00322   uint32_t tmp = 0U;
 <a name="l00323"></a>00323 
@@ -416,17 +416,17 @@
 <a name="l00349"></a>00349 <span class="comment">  *                the configuration information for the specified DMA module.</span>
 <a name="l00350"></a>00350 <span class="comment">  * @retval None</span>
 <a name="l00351"></a>00351 <span class="comment">  */</span>
-<a name="l00352"></a><a class="code" href="group__DACEx__Private__Functions.html#ga55af4c0ba08114de3bf33da8f7dd8c2d">00352</a> <span class="keywordtype">void</span> <a class="code" href="group__DACEx__Private__Functions.html#ga55af4c0ba08114de3bf33da8f7dd8c2d" title="DMA conversion complete callback.">DAC_DMAConvCpltCh2</a>(<a class="code" href="struct____DMA__HandleTypeDef.html" title="DMA handle Structure definition.">DMA_HandleTypeDef</a> *hdma)
+<a name="l00352"></a><a class="code" href="group/group__DACEx__Private__Functions.html#ga55af4c0ba08114de3bf33da8f7dd8c2d">00352</a> <span class="keywordtype">void</span> <a class="code" href="group/group__DACEx__Private__Functions.html#ga55af4c0ba08114de3bf33da8f7dd8c2d" title="DMA conversion complete callback.">DAC_DMAConvCpltCh2</a>(<a class="code" href="struct____DMA__HandleTypeDef.html" title="DMA handle Structure definition.">DMA_HandleTypeDef</a> *hdma)
 <a name="l00353"></a>00353 {
 <a name="l00354"></a>00354   <a class="code" href="structDAC__HandleTypeDef.html" title="DAC handle Structure definition.">DAC_HandleTypeDef</a> *hdac = (<a class="code" href="structDAC__HandleTypeDef.html" title="DAC handle Structure definition.">DAC_HandleTypeDef</a> *)((<a class="code" href="struct____DMA__HandleTypeDef.html" title="DMA handle Structure definition.">DMA_HandleTypeDef</a> *)hdma)-&gt;Parent;
 <a name="l00355"></a>00355 
 <a name="l00356"></a>00356 <span class="preprocessor">#if (USE_HAL_DAC_REGISTER_CALLBACKS == 1)</span>
 <a name="l00357"></a>00357 <span class="preprocessor"></span>  hdac-&gt;ConvCpltCallbackCh2(hdac);
 <a name="l00358"></a>00358 <span class="preprocessor">#else</span>
-<a name="l00359"></a>00359 <span class="preprocessor"></span>  <a class="code" href="group__DACEx__Exported__Functions__Group2.html#gadf84b0c08bfe452d7861563fd4ee424d" title="Conversion complete callback in non-blocking mode for Channel2.">HAL_DACEx_ConvCpltCallbackCh2</a>(hdac);
+<a name="l00359"></a>00359 <span class="preprocessor"></span>  <a class="code" href="group/group__DACEx__Exported__Functions__Group2.html#gadf84b0c08bfe452d7861563fd4ee424d" title="Conversion complete callback in non-blocking mode for Channel2.">HAL_DACEx_ConvCpltCallbackCh2</a>(hdac);
 <a name="l00360"></a>00360 <span class="preprocessor">#endif </span><span class="comment">/* USE_HAL_DAC_REGISTER_CALLBACKS */</span>
 <a name="l00361"></a>00361 
-<a name="l00362"></a>00362   hdac-&gt;<a class="code" href="structDAC__HandleTypeDef.html#a3e25489ceea69107572037728e9ac5f3">State</a> = <a class="code" href="group__DAC__Exported__Types.html#gga4e917340aba1cc3afd4e9a7fef15e4a5a1aa309188f7914d5f784844845e2fea1">HAL_DAC_STATE_READY</a>;
+<a name="l00362"></a>00362   hdac-&gt;<a class="code" href="structDAC__HandleTypeDef.html#a3e25489ceea69107572037728e9ac5f3">State</a> = <a class="code" href="group/group__DAC__Exported__Types.html#gga4e917340aba1cc3afd4e9a7fef15e4a5a1aa309188f7914d5f784844845e2fea1">HAL_DAC_STATE_READY</a>;
 <a name="l00363"></a>00363 }
 <a name="l00364"></a>00364 <span class="comment"></span>
 <a name="l00365"></a>00365 <span class="comment">/**</span>
@@ -435,14 +435,14 @@
 <a name="l00368"></a>00368 <span class="comment">  *                the configuration information for the specified DMA module.</span>
 <a name="l00369"></a>00369 <span class="comment">  * @retval None</span>
 <a name="l00370"></a>00370 <span class="comment">  */</span>
-<a name="l00371"></a><a class="code" href="group__DACEx__Private__Functions.html#ga380b73079b417164d4e7a3dd3d31f5ed">00371</a> <span class="keywordtype">void</span> <a class="code" href="group__DACEx__Private__Functions.html#ga380b73079b417164d4e7a3dd3d31f5ed" title="DMA half transfer complete callback.">DAC_DMAHalfConvCpltCh2</a>(<a class="code" href="struct____DMA__HandleTypeDef.html" title="DMA handle Structure definition.">DMA_HandleTypeDef</a> *hdma)
+<a name="l00371"></a><a class="code" href="group/group__DACEx__Private__Functions.html#ga380b73079b417164d4e7a3dd3d31f5ed">00371</a> <span class="keywordtype">void</span> <a class="code" href="group/group__DACEx__Private__Functions.html#ga380b73079b417164d4e7a3dd3d31f5ed" title="DMA half transfer complete callback.">DAC_DMAHalfConvCpltCh2</a>(<a class="code" href="struct____DMA__HandleTypeDef.html" title="DMA handle Structure definition.">DMA_HandleTypeDef</a> *hdma)
 <a name="l00372"></a>00372 {
 <a name="l00373"></a>00373   <a class="code" href="structDAC__HandleTypeDef.html" title="DAC handle Structure definition.">DAC_HandleTypeDef</a> *hdac = (<a class="code" href="structDAC__HandleTypeDef.html" title="DAC handle Structure definition.">DAC_HandleTypeDef</a> *)((<a class="code" href="struct____DMA__HandleTypeDef.html" title="DMA handle Structure definition.">DMA_HandleTypeDef</a> *)hdma)-&gt;Parent;
 <a name="l00374"></a>00374   <span class="comment">/* Conversion complete callback */</span>
 <a name="l00375"></a>00375 <span class="preprocessor">#if (USE_HAL_DAC_REGISTER_CALLBACKS == 1)</span>
 <a name="l00376"></a>00376 <span class="preprocessor"></span>  hdac-&gt;ConvHalfCpltCallbackCh2(hdac);
 <a name="l00377"></a>00377 <span class="preprocessor">#else</span>
-<a name="l00378"></a>00378 <span class="preprocessor"></span>  <a class="code" href="group__DACEx__Exported__Functions__Group2.html#gae8d236b1014fad4b2246f1ff553f8fd4" title="Conversion half DMA transfer callback in non-blocking mode for Channel2.">HAL_DACEx_ConvHalfCpltCallbackCh2</a>(hdac);
+<a name="l00378"></a>00378 <span class="preprocessor"></span>  <a class="code" href="group/group__DACEx__Exported__Functions__Group2.html#gae8d236b1014fad4b2246f1ff553f8fd4" title="Conversion half DMA transfer callback in non-blocking mode for Channel2.">HAL_DACEx_ConvHalfCpltCallbackCh2</a>(hdac);
 <a name="l00379"></a>00379 <span class="preprocessor">#endif </span><span class="comment">/* USE_HAL_DAC_REGISTER_CALLBACKS */</span>
 <a name="l00380"></a>00380 }
 <a name="l00381"></a>00381 <span class="comment"></span>
@@ -452,20 +452,20 @@
 <a name="l00385"></a>00385 <span class="comment">  *                the configuration information for the specified DMA module.</span>
 <a name="l00386"></a>00386 <span class="comment">  * @retval None</span>
 <a name="l00387"></a>00387 <span class="comment">  */</span>
-<a name="l00388"></a><a class="code" href="group__DACEx__Private__Functions.html#ga5c7cd88fe87cc3ac2395fdb30ed523af">00388</a> <span class="keywordtype">void</span> <a class="code" href="group__DACEx__Private__Functions.html#ga5c7cd88fe87cc3ac2395fdb30ed523af" title="DMA error callback.">DAC_DMAErrorCh2</a>(<a class="code" href="struct____DMA__HandleTypeDef.html" title="DMA handle Structure definition.">DMA_HandleTypeDef</a> *hdma)
+<a name="l00388"></a><a class="code" href="group/group__DACEx__Private__Functions.html#ga5c7cd88fe87cc3ac2395fdb30ed523af">00388</a> <span class="keywordtype">void</span> <a class="code" href="group/group__DACEx__Private__Functions.html#ga5c7cd88fe87cc3ac2395fdb30ed523af" title="DMA error callback.">DAC_DMAErrorCh2</a>(<a class="code" href="struct____DMA__HandleTypeDef.html" title="DMA handle Structure definition.">DMA_HandleTypeDef</a> *hdma)
 <a name="l00389"></a>00389 {
 <a name="l00390"></a>00390   <a class="code" href="structDAC__HandleTypeDef.html" title="DAC handle Structure definition.">DAC_HandleTypeDef</a> *hdac = (<a class="code" href="structDAC__HandleTypeDef.html" title="DAC handle Structure definition.">DAC_HandleTypeDef</a> *)((<a class="code" href="struct____DMA__HandleTypeDef.html" title="DMA handle Structure definition.">DMA_HandleTypeDef</a> *)hdma)-&gt;Parent;
 <a name="l00391"></a>00391 
 <a name="l00392"></a>00392   <span class="comment">/* Set DAC error code to DMA error */</span>
-<a name="l00393"></a>00393   hdac-&gt;<a class="code" href="structDAC__HandleTypeDef.html#ae0b1350155ba53babd8797c4e0c8bd0b">ErrorCode</a> |= <a class="code" href="group__DAC__Error__Code.html#ga6c79ec71467a1438b97e3c0bc2017b10">HAL_DAC_ERROR_DMA</a>;
+<a name="l00393"></a>00393   hdac-&gt;<a class="code" href="structDAC__HandleTypeDef.html#ae0b1350155ba53babd8797c4e0c8bd0b">ErrorCode</a> |= <a class="code" href="group/group__DAC__Error__Code.html#ga6c79ec71467a1438b97e3c0bc2017b10">HAL_DAC_ERROR_DMA</a>;
 <a name="l00394"></a>00394 
 <a name="l00395"></a>00395 <span class="preprocessor">#if (USE_HAL_DAC_REGISTER_CALLBACKS == 1)</span>
 <a name="l00396"></a>00396 <span class="preprocessor"></span>  hdac-&gt;ErrorCallbackCh2(hdac);
 <a name="l00397"></a>00397 <span class="preprocessor">#else</span>
-<a name="l00398"></a>00398 <span class="preprocessor"></span>  <a class="code" href="group__DACEx__Exported__Functions__Group2.html#ga7cb20eb27136a27b9b5bdf1c263e69cf" title="Error DAC callback for Channel2.">HAL_DACEx_ErrorCallbackCh2</a>(hdac);
+<a name="l00398"></a>00398 <span class="preprocessor"></span>  <a class="code" href="group/group__DACEx__Exported__Functions__Group2.html#ga7cb20eb27136a27b9b5bdf1c263e69cf" title="Error DAC callback for Channel2.">HAL_DACEx_ErrorCallbackCh2</a>(hdac);
 <a name="l00399"></a>00399 <span class="preprocessor">#endif </span><span class="comment">/* USE_HAL_DAC_REGISTER_CALLBACKS */</span>
 <a name="l00400"></a>00400 
-<a name="l00401"></a>00401   hdac-&gt;<a class="code" href="structDAC__HandleTypeDef.html#a3e25489ceea69107572037728e9ac5f3">State</a> = <a class="code" href="group__DAC__Exported__Types.html#gga4e917340aba1cc3afd4e9a7fef15e4a5a1aa309188f7914d5f784844845e2fea1">HAL_DAC_STATE_READY</a>;
+<a name="l00401"></a>00401   hdac-&gt;<a class="code" href="structDAC__HandleTypeDef.html#a3e25489ceea69107572037728e9ac5f3">State</a> = <a class="code" href="group/group__DAC__Exported__Types.html#gga4e917340aba1cc3afd4e9a7fef15e4a5a1aa309188f7914d5f784844845e2fea1">HAL_DAC_STATE_READY</a>;
 <a name="l00402"></a>00402 }
 <a name="l00403"></a>00403 <span class="comment"></span>
 <a name="l00404"></a>00404 <span class="comment">/**</span>
